@@ -1,5 +1,5 @@
 import { Map as MLMap, Marker, type LngLatLike, type StyleSpecification } from 'maplibre-gl';
-import { basemapStyle, getPreferredBasemap, setPreferredBasemap } from './basemap';
+import { basemapStyle, getPreferredBasemap, preloadOffline, setPreferredBasemap } from './basemap';
 import { basemaps, histMaps, periodById, places } from './data';
 import { lt, t } from './i18n';
 import type { HistMap, Place } from './types';
@@ -56,11 +56,13 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   const center: LngLatLike = inside(god) || !hm?.coordinates ? god : [(hm.coordinates[0][0] + hm.coordinates[2][0]) / 2, (hm.coordinates[0][1] + hm.coordinates[2][1]) / 2];
   const common = { center, zoom: 12, attributionControl: { compact: true } as const, pitchWithRotate: false, dragRotate: false };
   const top = new MLMap({ container: topEl, style: EMPTY_STYLE, ...common });
-  const bot = new MLMap({ container: botEl, style: basemapStyle(base), ...common });
+  const bot = new MLMap({ container: botEl, style: base.id === 'offline' ? EMPTY_STYLE : basemapStyle(base), ...common });
   const period = opts.periodId ?? null;
 
-  top.on('load', () => { addPlacesLayers(top, period); if (hm) addOverlay(top, hm); });
-  bot.on('load', () => addPlacesLayers(bot, period));
+  // style.load спрацьовує і при першому завантаженні, і після зміни стилю
+  top.on('style.load', () => { if (!top.getSource('cmp-places')) { addPlacesLayers(top, period); if (hm) addOverlay(top, hm); } });
+  bot.on('style.load', () => { if (!bot.getSource('cmp-places')) addPlacesLayers(bot, period); });
+  if (base.id === 'offline') preloadOffline().then(() => bot.setStyle(basemapStyle(base))).catch(() => undefined);
 
   // синхронізація положення
   let lock = false;

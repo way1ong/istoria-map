@@ -6,6 +6,7 @@ import {
   type GeoJSONSource,
   type MapLayerMouseEvent,
   type MapMouseEvent,
+  type StyleSpecification,
   setWorkerUrl,
 } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
@@ -14,7 +15,7 @@ import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 
 setWorkerUrl(workerUrl);
 import { basemaps, histMaps, periodById, places } from './data';
-import { basemapStyle, getPreferredBasemap, setPreferredBasemap } from './basemap';
+import { basemapStyle, getPreferredBasemap, preloadOffline, setPreferredBasemap } from './basemap';
 import { lt } from './i18n';
 import type { HistMap, Place } from './types';
 
@@ -85,9 +86,11 @@ function featureCollection(periodId: string | null, lang: string) {
 
 export function createMap(container: HTMLElement, onSelect: (id: string | null) => void): MapController {
   let basemap = getPreferredBasemap();
+  const blank: StyleSpecification = { version: 8, sources: {}, layers: [{ id: 'bg', type: 'background', paint: { 'background-color': '#e5e7eb' } }], glyphs: 'fonts/{fontstack}/{range}.pbf' };
   const map = new MLMap({
     container,
-    style: basemapStyle(basemap),
+    // Офлайн-вирізку спершу треба завантажити в пам'ять, тому починаємо з порожнього стилю
+    style: basemap.id === 'offline' ? blank : basemapStyle(basemap),
     center: CENTER,
     zoom: 11,
     attributionControl: { compact: true },
@@ -148,6 +151,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     }
   };
   map.on('load', addLayers);
+  if (basemap.id === 'offline') preloadOffline().then(() => map.setStyle(basemapStyle(basemap))).catch(() => undefined);
   // Після зміни стилю підкладки шари місць і накладання треба додати знову
   map.on('style.load', () => { addLayers(); applySelection(); if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); });
   map.on('click', (e: MapMouseEvent) => {
@@ -231,7 +235,9 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       if (!b || b.id === basemap.id) return;
       basemap = b;
       setPreferredBasemap(id);
-      map.setStyle(basemapStyle(b));
+      const apply = () => map.setStyle(basemapStyle(b));
+      if (b.id === 'offline') preloadOffline().then(apply).catch(() => undefined);
+      else apply();
     },
     currentBasemap() { return basemap.id; },
   };
