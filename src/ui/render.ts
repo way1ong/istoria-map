@@ -5,8 +5,26 @@ import type { CoordsPrecision, DatePrecision, HistEvent, Photo, Place, Source } 
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
 
+/**
+ * Markdown → HTML. Підтримує прості виноски: посилання `[^1]` у тексті
+ * та визначення `[^1]: ...` на окремих рядках (виносяться в список унизу).
+ * Перший заголовок `# ...` відкидається, бо сторінка вже має заголовок.
+ */
 export function md(text: string | undefined): string {
-  return text ? (marked.parse(text, { async: false }) as string) : '';
+  if (!text) return '';
+  const notes: string[] = [];
+  const body = text
+    .replace(/^# .*\n?/, '')
+    .split('\n')
+    .filter((line) => {
+      const m = line.match(/^\[\^(\w+)\]:\s*(.*)$/);
+      if (m) { notes.push(`<li id="fn-${m[1]}">${m[2]}</li>`); return false; }
+      return true;
+    })
+    .join('\n')
+    .replace(/\[\^(\w+)\]/g, '<sup><a href="#fn-$1">$1</a></sup>');
+  const html = marked.parse(body, { async: false }) as string;
+  return notes.length ? `${html}<hr /><ol class="sources footnotes">${notes.join('')}</ol>` : html;
 }
 
 export function precisionLabel(p: CoordsPrecision | DatePrecision): string {
