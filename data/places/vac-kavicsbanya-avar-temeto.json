@@ -1,0 +1,18 @@
+{
+  "id": "vac-kavicsbanya-avar-temeto",
+  "name": { "uk": "Аварський могильник Vác-Kavicsbánya", "hu": "Vác-Kavicsbánya avar kori temető" },
+  "type": "archaeological",
+  "coords": [19.1311, 47.7753],
+  "coordsPrecision": "settlement",
+  "periods": ["migration"],
+  "summary": {
+    "uk": "Могильник на місці гравійного кар'єру, яким від середини VII століття користувалися дві громади з різною матеріальною культурою; пізніша фаза показує їхнє злиття в нову пізньоаварську культуру. Місце на мапі умовне (центр Вацу).",
+    "hu": "A kavicsbánya területén feltárt temetőt a 7. század közepétől két, eltérő tárgyi kultúrájú csoport használta; a későbbi szakasz összeolvadásukról és a késő avar kultúra kialakulásáról vall. A térképi hely jelképes (Vác központja)."
+  },
+  "description": {
+    "uk": "За анотацією статті Gergely Szenthe в «Archaeologiai Értesítő» (2014), могильник Vác-Kavicsbánya від середини VII століття використовували дві групи з різною матеріальною культурою і різними культурними зв'язками. Пізніша фаза використання могильника свідчить про процес злиття. За археологічними слідами можна реконструювати, як місцева громада, що жила тут раніше, втрачала ідентичність і як виникала нова, пізньоаварська культура.\n\nПовний текст статті в репозиторії закритий, точне місце могильника в анотації не вказане, тому на мапі точка поставлена в центрі Вацу."
+  },
+  "sources": [
+    { "title": "Szenthe G., Kulturális összeolvadás a „középavar korban”. A Vác-kavicsbányai temető. Archaeologiai Értesítő 139 (2014) 99–125", "url": "https://real.mtak.hu/42977/", "note": "Анотація угорською та англійською." }
+  ]
+}
