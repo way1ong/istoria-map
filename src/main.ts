@@ -1,14 +1,8 @@
 import './style.css';
-import { registerSW } from 'virtual:pwa-register';
 
-// Офлайн: сервіс-воркер кешує застосунок, старі мапи, вирізку тайлів і шрифти
-registerSW({ immediate: true });
-// Вирізка тайлів для офлайну вантажиться у фоні, щоб перемикання на неї було миттєвим
-window.addEventListener('load', () => { preloadOffline().catch(() => undefined); });
 import { basemaps, histMaps, placeById, places, routesForEvent } from './data';
 import { mountAnimation, type AnimHandle } from './anim';
 import { mountCompare, type CompareHandle } from './compare';
-import { preloadOffline } from './basemap';
 import { getLang, lt, setLang, t } from './i18n';
 import { createMap, type MapController } from './map';
 import { eventPage, historyIndex, periodPage, placePage } from './pages/history';

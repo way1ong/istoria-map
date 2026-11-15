@@ -13,22 +13,6 @@
       "license": "ODbL"
     },
     {
-      "id": "offline",
-      "title": {
-        "uk": "Мапа офлайн (Protomaps)",
-        "hu": "Offline térkép (Protomaps)"
-      },
-      "type": "style",
-      "url": "basemap-offline.json",
-      "attribution": "Protomaps © OpenStreetMap",
-      "license": "ODbL (дані OpenStreetMap), стиль Protomaps BSD-3",
-      "source": {
-        "title": "Protomaps basemap downloads",
-        "url": "https://docs.protomaps.com/basemaps/downloads",
-        "note": "Вирізка зі збірки build.protomaps.com/20251027.pmtiles: z0–7 для Угорщини, z8–12 для околиці Göd–Vác, z13–14 для ядра. Лежить у public/tiles/god.pmtiles і працює без інтернету."
-      }
-    },
-    {
       "id": "s2cloudless-2024",
       "title": {
         "uk": "Супутник (Sentinel-2, 2024)",

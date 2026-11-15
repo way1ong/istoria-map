@@ -6,4 +6,4 @@
 - Дані для редагування: папка [`data/`](data/README.md)
 - Правила проєкту для Claude: [`CLAUDE.md`](CLAUDE.md)
 
-Мапа: MapLibre GL JS, базові тайли OpenFreeMap (дані © OpenStreetMap, ODbL). Працює офлайн як PWA: після першого відкриття застосунок, старі мапи й вирізка векторних тайлів Protomaps для околиці Göd зберігаються на телефоні.
+Мапа: MapLibre GL JS, базові тайли OpenFreeMap (дані © OpenStreetMap, ODbL).
