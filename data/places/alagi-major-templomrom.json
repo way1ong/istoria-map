@@ -6,10 +6,10 @@
   },
   "type": "archaeological",
   "coords": [
-    19.1381,
-    47.6297
+    19.149574,
+    47.604082
   ],
-  "coordsPrecision": "settlement",
+  "coordsPrecision": "exact",
   "periods": [
     "arpad",
     "late-medieval"
@@ -26,6 +26,24 @@
       "title": "Dunakeszi – Wikipédia (hu)",
       "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
       "note": "Розділи «Dunakeszi és Alag a középkorban» і «Alagi-majori templomrom»."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Ruins of medieval churches in Alag",
+      "url": "https://commons.wikimedia.org/wiki/Category:Ruins_of_medieval_churches_in_Alag",
+      "note": "Object location 47.604082, 19.149574 (координати об'єкта, вказані в категорії Commons). Координати опубліковані відкрито: пам'ятка з інформаційною таблицею, у категорії Commons вказано object location."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Alagi_templomrom.jpg",
+      "author": "Livvyfan",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Alagi_templomrom.jpg",
+      "caption": {
+        "uk": "Руїни церкви в Alagi-major, 2017",
+        "hu": "Alagi templomrom, 2017"
+      }
     }
   ]
 }

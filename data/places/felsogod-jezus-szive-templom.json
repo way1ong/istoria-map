@@ -6,10 +6,10 @@
   },
   "type": "church",
   "coords": [
-    19.1344,
-    47.6906
+    19.148382,
+    47.703627
   ],
-  "coordsPrecision": "settlement",
+  "coordsPrecision": "exact",
   "periods": [
     "interwar-ww2",
     "modern"
@@ -26,6 +26,11 @@
       "title": "Göd – Wikipédia (hu)",
       "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
       "note": "Розділи «A település kialakulása» і «Templomok»."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Sacred Heart Church (Fels%C5%91g%C3%B6d)",
+      "url": "https://commons.wikimedia.org/wiki/Category:Sacred_Heart_Church_(Fels%C5%91g%C3%B6d)",
+      "note": "Object location 47.703627, 19.148382 (координати об'єкта, вказані в категорії Commons)."
     }
   ]
 }

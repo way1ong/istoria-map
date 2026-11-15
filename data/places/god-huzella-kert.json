@@ -6,10 +6,10 @@
   },
   "type": "nature",
   "coords": [
-    19.1344,
-    47.6906
+    19.12931,
+    47.68263
   ],
-  "coordsPrecision": "settlement",
+  "coordsPrecision": "exact",
   "periods": [
     "long-19",
     "interwar-ww2",
@@ -27,6 +27,24 @@
       "title": "Göd – Wikipédia (hu)",
       "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
       "note": "Розділи «A település kialakulása», «Természeti értékek», «Neves személyek»."
+    },
+    {
+      "title": "OpenStreetMap (Nominatim): Huzella Kert Göd",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Huzella+Kert+Göd",
+      "note": "Координати 47.68263, 19.12931 за даними OpenStreetMap (ODbL)."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Huzella_villa._Fortepan_19727.jpg",
+      "author": "FOTO:FORTEPAN / Szávoszt-Vass Dániel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Huzella_villa._Fortepan_19727.jpg",
+      "caption": {
+        "uk": "Вілла Huzella з боку Дунаю, 1930",
+        "hu": "A Huzella-villa a Duna felől, 1930"
+      }
     }
   ]
 }

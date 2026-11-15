@@ -6,10 +6,10 @@
   },
   "type": "other",
   "coords": [
-    19.1381,
-    47.6297
+    19.14454,
+    47.61833
   ],
-  "coordsPrecision": "settlement",
+  "coordsPrecision": "approximate",
   "periods": [
     "long-19",
     "interwar-ww2",
@@ -27,6 +27,35 @@
       "title": "Dunakeszi – Wikipédia (hu)",
       "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
       "note": "Розділи «Alag», «Lósport», «Alagi lóversenypálya és tréningközpont»."
+    },
+    {
+      "title": "OpenStreetMap (Nominatim): Alagi Lósport és Tréningközpont",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Alagi+Lósport+és+Tréningközpont",
+      "note": "Координати 47.61833, 19.14454 за даними OpenStreetMap (ODbL). Точка позначає центр тренувального комплексу, а не трибуну."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Tr%C3%A9ningtelep._Fortepan_19902.jpg",
+      "author": "FOTO:FORTEPAN / Kölcsey Ferenc Dunakeszi Városi Könyvtár / Petanovics fényképek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Tr%C3%A9ningtelep._Fortepan_19902.jpg",
+      "caption": {
+        "uk": "Тренувальна база в Alag, 1938",
+        "hu": "Az alagi tréningtelep, 1938"
+      }
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Az_els%C5%91_Magyar_Derby.jpg",
+      "author": "невідомий автор, Vasárnapi Újság, 19 червня 1921",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Az_els%C5%91_Magyar_Derby.jpg",
+      "caption": {
+        "uk": "Перше Угорське дербі в Alag, 1921",
+        "hu": "Az első Magyar Derby Alagon, 1921"
+      }
     }
   ]
 }

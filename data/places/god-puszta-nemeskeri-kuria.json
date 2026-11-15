@@ -6,10 +6,10 @@
   },
   "type": "monument",
   "coords": [
-    19.1344,
-    47.6906
+    19.14556,
+    47.68007
   ],
-  "coordsPrecision": "settlement",
+  "coordsPrecision": "exact",
   "periods": [
     "habsburg-18",
     "long-19"
@@ -26,6 +26,11 @@
       "title": "Göd – Wikipédia (hu)",
       "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
       "note": "Розділи «Újjáépülés», «Fejlődés megindulása», «A település kialakulása», «Nevezetességei»."
+    },
+    {
+      "title": "OpenStreetMap (Nominatim): Nemeskéri-Kiss-kúria Göd",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Nemeskéri-Kiss-kúria+Göd",
+      "note": "Координати 47.68007, 19.14556 за даними OpenStreetMap (ODbL)."
     }
   ]
 }

@@ -6,10 +6,10 @@
   },
   "type": "church",
   "coords": [
-    19.1381,
-    47.6297
+    19.131058,
+    47.631997
   ],
-  "coordsPrecision": "settlement",
+  "coordsPrecision": "exact",
   "periods": [
     "habsburg-18",
     "long-19",
@@ -41,6 +41,11 @@
       "title": "Dunakeszi – Wikipédia (hu)",
       "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
       "note": "Розділи «Dunakeszi a 18. században» і «Szent Mihály-templom»."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Saint Michael church in Dunakeszi",
+      "url": "https://commons.wikimedia.org/wiki/Category:Saint_Michael_church_in_Dunakeszi",
+      "note": "Object location 47.631997, 19.131058 (координати об'єкта, вказані в категорії Commons)."
     }
   ]
 }

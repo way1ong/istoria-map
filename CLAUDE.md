@@ -69,8 +69,8 @@ src/                   код застосунку
 Середовище `istoria-map` з дозволеними хостами: Вікіпедія (hu/en/uk), Wikimedia Commons, Hungaricana, Arcanum, archeodatabase.hnm.hu, Pleiades, Protomaps, OpenFreeMap, muemlekem.hu, mnl.gov.hu, real.mtak.hu, epa.oszk.hu, Allmaps. Wikipedia API віддає 429 при частих запитах: робити паузи, по одному запиту.
 
 ## Відомі прогалини (станом на 2026-11-15)
-- Багато місць мають `coordsPrecision: "settlement"` (центр міста). Потрібне відкрите джерело точних координат: статті Вікіпедії про об'єкт, Commons (object location), OSM. Мапа розводить такі мітки по колу лише для показу.
-- Фото є лише в 3 місць. Решту брати з Commons, перевіряючи ліцензію на сторінці файлу (API Commons віддає 429 з проксі, HTML сторінки файлів працюють).
-- Hétkápolna, вацький замок, Hegyes torony, Kőszentes híd, Alag Nepomuki-kápolna ще не додані як місця.
+- Точність «settlement» лишилася у 3 місць (Székesdűlő, Várdomb-район, млин Sződrákos). Джерела точних координат: категорії Commons (object location) і Nominatim; Overpass через проксі не працює (обрив з'єднання).
+- Фото: 20 у 17 місць. Решту брати з Commons, перевіряючи ліцензію на сторінці файлу (API Commons віддає 429, HTML сторінки файлів і категорій працюють).
+- Ще не додані: Alag Nepomuki-kápolna, Göd Nemeskéri-kúria фото, вацький замок як окреме місце, Dunakeszi Hősi emlékmű.
 - Старих мап (`data/maps`) ще немає; умови Arcanum/Hungaricana не прочитані (сайти блокують запити з сервера).
 - Wikipedia API віддає 429; працює лише завантаження HTML статей по одній.

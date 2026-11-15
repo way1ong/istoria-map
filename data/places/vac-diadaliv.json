@@ -34,5 +34,18 @@
       "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
       "note": "Контекст візиту Марії Терезії 1764 року."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/V%C3%A1c%2C_diadal%C3%ADv%2C_1.jpg",
+      "author": "Random photos 1989",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A1c,_diadal%C3%ADv,_1.jpg",
+      "caption": {
+        "uk": "Кам'яна брама, 2020",
+        "hu": "A váci diadalív, 2020"
+      }
+    }
   ]
 }

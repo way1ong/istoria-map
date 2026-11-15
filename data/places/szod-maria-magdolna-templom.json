@@ -6,10 +6,10 @@
   },
   "type": "church",
   "coords": [
-    19.2,
-    47.7167
+    19.18891,
+    47.71558
   ],
-  "coordsPrecision": "settlement",
+  "coordsPrecision": "exact",
   "periods": [
     "arpad",
     "habsburg-18",
@@ -28,6 +28,24 @@
       "title": "Sződ – Wikipédia (hu)",
       "url": "https://hu.wikipedia.org/wiki/Sz%C5%91d",
       "note": "Розділи «Története» і «Nevezetességei»."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Mary Magdalene church in Sz%C5%91d",
+      "url": "https://commons.wikimedia.org/wiki/Category:Mary_Magdalene_church_in_Sz%C5%91d",
+      "note": "Object location 47.71558, 19.18891 (координати об'єкта, вказані в категорії Commons)."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Sz%C5%91d%2C_r%C3%B3mai_katolikus_templom_2021_05.jpg",
+      "author": "Pasztilla (Attila Terbócs)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Sz%C5%91d,_r%C3%B3mai_katolikus_templom_2021_05.jpg",
+      "caption": {
+        "uk": "Церква Марії Магдалини в Sződ, 2021",
+        "hu": "A sződi római katolikus templom, 2021"
+      }
     }
   ]
 }

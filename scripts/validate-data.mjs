@@ -80,8 +80,9 @@ for (const { file, path, name } of listJson('places')) {
   checkCoords(file, p.coords);
   if (!['exact', 'approximate', 'settlement'].includes(p.coordsPrecision))
     err(file, 'coordsPrecision має бути exact | approximate | settlement');
-  if (p.type === 'archaeological' && p.coordsPrecision === 'exact')
-    err(file, 'археологічна пам\'ятка з coordsPrecision "exact": підтвердьте в note джерела, що офіційне джерело публікує точні координати, або змініть на approximate/settlement');
+  const openCoords = (p.sources ?? []).some((s) => /координати опубліковані відкрито/i.test(s?.note ?? ''));
+  if (p.type === 'archaeological' && p.coordsPrecision === 'exact' && !openCoords)
+    err(file, 'археологічна пам\'ятка з coordsPrecision "exact": додайте в note джерела фразу «Координати опубліковані відкрито» з поясненням, або змініть на approximate/settlement');
   if (!Array.isArray(p.periods) || p.periods.length === 0) err(file, 'periods порожній');
   else p.periods.forEach((id) => periodIds.has(id) || err(file, `невідомий період "${id}"`));
   if (!isLText(p.summary)) err(file, 'summary.uk відсутній');

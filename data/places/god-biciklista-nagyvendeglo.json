@@ -6,10 +6,10 @@
   },
   "type": "monument",
   "coords": [
-    19.1344,
-    47.6906
+    19.134191,
+    47.68402
   ],
-  "coordsPrecision": "settlement",
+  "coordsPrecision": "exact",
   "periods": [
     "long-19",
     "modern"
@@ -26,6 +26,24 @@
       "title": "Göd – Wikipédia (hu)",
       "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
       "note": "Розділи «A település kialakulása» і «Nevezetességei»."
+    },
+    {
+      "title": "Wikimedia Commons: Category:J%C3%B3zsef Attila M%C5%B1vel%C5%91d%C3%A9si H%C3%A1z (G%C3%B6d)",
+      "url": "https://commons.wikimedia.org/wiki/Category:J%C3%B3zsef_Attila_M%C5%B1vel%C5%91d%C3%A9si_H%C3%A1z_(G%C3%B6d)",
+      "note": "Object location 47.68402, 19.134191 (координати об'єкта, вказані в категорії Commons)."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/J%C3%B3zsef_Attila_M%C5%B1vel%C5%91d%C3%A9si_H%C3%A1z%2C_2020_G%C3%B6d.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:J%C3%B3zsef_Attila_M%C5%B1vel%C5%91d%C3%A9si_H%C3%A1z,_2020_G%C3%B6d.jpg",
+      "caption": {
+        "uk": "Будинок культури ім. Аттіли Йожефа, 2020",
+        "hu": "József Attila Művelődési Ház, 2020"
+      }
     }
   ]
 }

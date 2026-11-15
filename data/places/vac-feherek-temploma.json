@@ -38,5 +38,18 @@
       "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
       "note": "Експозиція Memento Mori; датування знахідки початком 1990-х."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/V%C3%A1c%2C_Feh%C3%A9rek_temploma_2022_01.jpg",
+      "author": "Pasztilla (Attila Terbócs)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A1c,_Feh%C3%A9rek_temploma_2022_01.jpg",
+      "caption": {
+        "uk": "Fehérek temploma, 2022",
+        "hu": "A Fehérek temploma, 2022"
+      }
+    }
   ]
 }
