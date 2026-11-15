@@ -47,5 +47,40 @@
   "coords": [
     19.1312,
     47.7736
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/The_first_battle_of_V%C3%A1c_%281849%29._The_situation_at_noon._The_situation_at_noon%2C_before_the_Hungarian_battalions_attacked_the_stone_bridge.png",
+      "author": "Sylvain1975",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:The_first_battle_of_V%C3%A1c_(1849)._The_situation_at_noon._The_situation_at_noon,_before_the_Hungarian_battalions_attacked_the_stone_bridge.png",
+      "caption": {
+        "uk": "Схема першої битви під Вацом 10 квітня 1849, ситуація опівдні перед атакою на кам'яний міст",
+        "hu": "Az első váci csata, 1849. április 10., a déli helyzet a kőhíd elleni roham előtt"
+      }
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/V%C3%A1ci_csata_hely%C3%A9nek_korabeli_t%C3%A9rk%C3%A9pe.jpg",
+      "author": "Друга військова зйомка Габсбурзької монархії (1806–1869)",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A1ci_csata_hely%C3%A9nek_korabeli_t%C3%A9rk%C3%A9pe.jpg",
+      "caption": {
+        "uk": "Поле битви під Вацом на мапі другої військової зйомки",
+        "hu": "A váci csata helyszíne a második katonai felmérés térképén"
+      }
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/The_second_battle_of_V%C3%A1c_15-17_July_1849.jpg",
+      "author": "F. Werner",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:The_second_battle_of_V%C3%A1c_15-17_July_1849.jpg",
+      "caption": {
+        "uk": "Друга битва під Вацом, 15–17 липня 1849: російський генерал Засс проти угорських гусарів",
+        "hu": "A második váci csata, 1849. július 15–17.: Zass orosz tábornok a magyar huszárok ellen"
+      }
+    }
   ]
 }

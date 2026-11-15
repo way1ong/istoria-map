@@ -53,7 +53,7 @@ src/                   код застосунку
 2. ✅ Схема даних, валідатор, перші 22 місця і 19 подій з джерелами (hu.wikipedia, Pleiades, HNM).
 3. Шкала часу, перемикання періодів, картки, підсвічування.
 4. ✅ Перша версія текстів усіх 10 періодів у `data/texts/uk`. Далі: поглиблення за науковими джерелами, угорські версії.
-5. Старі мапи: ліцензії, прив'язка, прозорість.
+5. ✅ Старі мапи: 3 аркуші (Spezialkarte 14:XX, 15:XX з NYPL, CC0; Generalkarte 37°48°, PD) вирівняні по сітці й лежать у `public/maps/`. Далі: перша/друга зйомки, кадастр.
 6. Сторінки місць і подій.
 7. Анімації руху/кордонів у розділі «Історія».
 8. Офлайн: PMTiles + PWA.
@@ -66,11 +66,11 @@ src/                   код застосунку
 - Protomaps basemap: ODbL, атрибуція «Protomaps © OpenStreetMap».
 
 ## Мережа сесії
-Середовище `istoria-map` з дозволеними хостами: Вікіпедія (hu/en/uk), Wikimedia Commons, Hungaricana, Arcanum, archeodatabase.hnm.hu, Pleiades, Protomaps, OpenFreeMap, muemlekem.hu, mnl.gov.hu, real.mtak.hu, epa.oszk.hu, Allmaps. Wikipedia API віддає 429 при частих запитах: робити паузи, по одному запиту.
+Середовище `istoria-map` з дозволеними хостами: Вікіпедія (hu/en/uk), Wikimedia Commons, Hungaricana, Arcanum, archeodatabase.hnm.hu, Pleiades, Protomaps, OpenFreeMap, muemlekem.hu, mnl.gov.hu, real.mtak.hu, epa.oszk.hu, Allmaps. Також overpass-api.de (через проксі обривається), nominatim.openstreetmap.org (працює, 1 запит/с), thumb.wikimedia.org. Wikipedia API і upload.wikimedia.org віддають 429: читати HTML статей/категорій/файлів по одному, зображення брати з thumb.wikimedia.org стандартних розмірів.
 
 ## Відомі прогалини (станом на 2026-11-15)
 - Точність «settlement» лишилася у 3 місць (Székesdűlő, Várdomb-район, млин Sződrákos). Джерела точних координат: категорії Commons (object location) і Nominatim; Overpass через проксі не працює (обрив з'єднання).
 - Фото: 20 у 17 місць. Решту брати з Commons, перевіряючи ліцензію на сторінці файлу (API Commons віддає 429, HTML сторінки файлів і категорій працюють).
 - Ще не додані: Alag Nepomuki-kápolna, Göd Nemeskéri-kúria фото, вацький замок як окреме місце, Dunakeszi Hősi emlékmű.
-- Старих мап (`data/maps`) ще немає; умови Arcanum/Hungaricana не прочитані (сайти блокують запити з сервера).
+- Старі мапи: прив'язка робиться так: скан з Commons через thumb.wikimedia.org (стандартні розміри 960/1920 px; upload.wikimedia.org віддає 429), кути внутрішньої рамки визначаються скриптами в скретчпаді, довготи Ферро − 17°40′, PIL QUAD-трансформація. Умови Arcanum не прочитані (класифікатор блокує запит), Hungaricana виводить список лише через JavaScript.
 - Wikipedia API віддає 429; працює лише завантаження HTML статей по одній.

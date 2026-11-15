@@ -42,5 +42,18 @@
       "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
       "note": "Реакція купців."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/1846_Pest_V%C3%A1c_megnyit%C3%B3.jpg",
+      "author": "невідомий автор, 1846",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:1846_Pest_V%C3%A1c_megnyit%C3%B3.jpg",
+      "caption": {
+        "uk": "Відкриття першої угорської залізниці, 15 липня 1846",
+        "hu": "Az első magyarországi vasútvonal megnyitója, 1846. július 15."
+      }
+    }
   ]
 }
