@@ -1,0 +1,25 @@
+{
+  "_comment": "Сучасні підкладки для мапи й режиму порівняння. type: style (стиль MapLibre) або raster (тайли {z}/{x}/{y} чи {z}/{y}/{x}).",
+  "basemaps": [
+    {
+      "id": "osm",
+      "title": { "uk": "Мапа (OpenStreetMap)", "hu": "Térkép (OpenStreetMap)" },
+      "type": "style",
+      "url": "https://tiles.openfreemap.org/styles/liberty",
+      "attribution": "OpenFreeMap © OpenMapTiles, дані © OpenStreetMap",
+      "license": "ODbL"
+    },
+    {
+      "id": "s2cloudless-2024",
+      "title": { "uk": "Супутник (Sentinel-2, 2024)", "hu": "Műhold (Sentinel-2, 2024)" },
+      "type": "raster",
+      "tiles": ["https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg"],
+      "tileSize": 256,
+      "maxzoom": 17,
+      "attribution": "Sentinel-2 cloudless – <a href=\"https://s2maps.eu\">s2maps.eu</a> by <a href=\"https://eox.at\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024)",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "source": { "title": "OpenStreetMap wiki: Sentinel-2 (EOX tile template)", "url": "https://wiki.openstreetmap.org/wiki/Sentinel-2", "note": "Шаблон тайлів {z}/{y}/{x}; роки 2018–2024. Роздільність 10 м/px." }
+    }
+  ]
+}

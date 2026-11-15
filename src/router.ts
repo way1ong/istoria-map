@@ -3,7 +3,8 @@ export type Route =
   | { page: 'history' }
   | { page: 'period'; id: string }
   | { page: 'place'; id: string }
-  | { page: 'event'; id: string };
+  | { page: 'event'; id: string }
+  | { page: 'compare'; map?: string; period?: string; base?: string };
 
 export function parseRoute(hash: string): Route {
   const clean = hash.replace(/^#\/?/, '');
@@ -13,6 +14,8 @@ export function parseRoute(hash: string): Route {
   switch (parts[0]) {
     case 'history':
       return { page: 'history' };
+    case 'compare':
+      return { page: 'compare', map: params.get('map') ?? undefined, period: params.get('period') ?? undefined, base: params.get('base') ?? undefined };
     case 'period':
       return parts[1] ? { page: 'period', id: parts[1] } : { page: 'history' };
     case 'place':

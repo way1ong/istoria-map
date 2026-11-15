@@ -73,7 +73,7 @@ if (periodsDoc) {
 
 // places
 const placeIds = new Set();
-const placeTypes = ['settlement', 'archaeological', 'church', 'castle', 'monument', 'nature', 'other'];
+const placeTypes = ['settlement', 'archaeological', 'church', 'castle', 'monument', 'nature', 'farmstead', 'inn', 'mill', 'other'];
 for (const { file, path, name } of listJson('places')) {
   const p = readJson(path);
   if (!p) continue;
@@ -90,6 +90,7 @@ for (const { file, path, name } of listJson('places')) {
   if (!Array.isArray(p.periods) || p.periods.length === 0) err(file, 'periods порожній');
   else p.periods.forEach((id) => periodIds.has(id) || err(file, `невідомий період "${id}"`));
   if (!isLText(p.summary)) err(file, 'summary.uk відсутній');
+  if (p.vanished !== undefined && typeof p.vanished !== 'boolean') err(file, 'vanished має бути true/false');
   if (p.description !== undefined && !isLText(p.description)) err(file, 'description.uk відсутній');
   checkPhotos(file, p.photos);
   checkSources(file, p.sources);
@@ -134,6 +135,18 @@ for (const { file, path, name } of listJson('maps')) {
   if (m.periods) m.periods.forEach((id) => periodIds.has(id) || err(file, `невідомий період "${id}"`));
   if (!m.source || typeof m.source.title !== 'string') err(file, 'source.title відсутній');
 }
+
+// basemaps
+const bm = readJson(join(root, 'basemaps.json'));
+if (bm) (bm.basemaps ?? []).forEach((b, i) => {
+  const f = `data/basemaps.json[${i}]`;
+  if (typeof b.id !== 'string') err(f, 'id відсутній');
+  if (!isLText(b.title)) err(f, 'title.uk відсутній');
+  if (!['style', 'raster'].includes(b.type)) err(f, 'type має бути style | raster');
+  if (b.type === 'style' && typeof b.url !== 'string') err(f, 'url відсутній');
+  if (b.type === 'raster' && !Array.isArray(b.tiles)) err(f, 'tiles має бути масивом');
+  for (const k of ['attribution', 'license']) if (typeof b[k] !== 'string') err(f, `${k} відсутній`);
+});
 
 // routes
 const routesDir = join(root, 'routes');

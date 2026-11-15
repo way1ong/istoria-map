@@ -73,6 +73,7 @@ function featureCollection(periodId: string | null, lang: string) {
             id: p.id,
             label: lt(p.name),
             color: period?.color ?? '#6b7280',
+            vanished: p.vanished ? 1 : 0,
             lang,
           },
         };
@@ -112,9 +113,10 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       source: SRC,
       paint: {
         'circle-radius': 7,
-        'circle-color': ['get', 'color'],
-        'circle-stroke-color': '#ffffff',
-        'circle-stroke-width': 2,
+        // Зниклі об'єкти (хутори, корчми, млини) малюються порожнім кружком
+        'circle-color': ['case', ['==', ['get', 'vanished'], 1], '#ffffff', ['get', 'color']],
+        'circle-stroke-color': ['case', ['==', ['get', 'vanished'], 1], ['get', 'color'], '#ffffff'],
+        'circle-stroke-width': 2.5,
       },
     });
     map.addLayer({

@@ -33,6 +33,9 @@ export type PlaceType =
   | 'castle'
   | 'monument'
   | 'nature'
+  | 'farmstead'
+  | 'inn'
+  | 'mill'
   | 'other';
 
 export interface Photo {
@@ -54,6 +57,8 @@ export interface Place {
   coords: [number, number];
   coordsPrecision: CoordsPrecision;
   periods: string[];
+  /** true, якщо об'єкта вже немає на місцевості (хутір, корчма, млин зі старої мапи). */
+  vanished?: boolean;
   summary: LText;
   /** Markdown */
   description?: LText;
@@ -128,4 +133,19 @@ export interface RouteCollection {
       | { type: 'Polygon'; coordinates: [number, number][][] };
     properties: RouteProps;
   }[];
+}
+
+/** Сучасна підкладка (data/basemaps.json). */
+export interface Basemap {
+  id: string;
+  title: LText;
+  type: 'style' | 'raster';
+  url?: string;
+  tiles?: string[];
+  tileSize?: number;
+  maxzoom?: number;
+  attribution: string;
+  license: string;
+  licenseUrl?: string;
+  source?: Source;
 }

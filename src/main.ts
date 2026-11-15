@@ -1,6 +1,7 @@
 import './style.css';
 import { histMaps, placeById, places, routesForEvent } from './data';
 import { mountAnimation, type AnimHandle } from './anim';
+import { mountCompare, type CompareHandle } from './compare';
 import { getLang, lt, setLang, t } from './i18n';
 import { createMap, type MapController } from './map';
 import { eventPage, historyIndex, periodPage, placePage } from './pages/history';
@@ -14,7 +15,7 @@ const app = document.getElementById('app')!;
 app.innerHTML = `
   <header class="topbar">
     <h1 id="title"></h1>
-    <nav class="tabs"><button id="tab-map"></button><button id="tab-history"></button></nav>
+    <nav class="tabs"><button id="tab-map"></button><button id="tab-history"></button><button id="tab-compare"></button></nav>
     <div class="lang"><button data-lang="uk">UK</button><button data-lang="hu">HU</button></div>
   </header>
   <main>
@@ -28,6 +29,7 @@ app.innerHTML = `
       <div id="sheet" class="sheet"><div class="handle"></div><button class="close" aria-label="close">×</button><div id="sheet-body"></div></div>
     </section>
     <section id="view-page" class="view"><div id="page" class="page"></div></section>
+    <section id="view-compare" class="view"><div id="compare" class="compare"></div></section>
   </main>
 `;
 
@@ -36,6 +38,7 @@ let state: { period: string | null; place: string | null } = { period: null, pla
 let mapCtl: MapController | null = null;
 let route: Route = { page: 'map' };
 let anims: AnimHandle[] = [];
+let cmp: CompareHandle | null = null;
 
 function ensureMap(): MapController {
   if (!mapCtl) {
@@ -51,10 +54,11 @@ function renderChrome() {
   $('title').textContent = t('appTitle');
   $('tab-map').textContent = t('tabMap');
   $('tab-history').textContent = t('tabHistory');
+  $('tab-compare').textContent = t('tabCompare');
   document.querySelectorAll<HTMLButtonElement>('.lang button').forEach((b) => b.classList.toggle('active', b.dataset.lang === getLang()));
-  const isMap = route.page === 'map';
-  $('tab-map').classList.toggle('active', isMap);
-  $('tab-history').classList.toggle('active', !isMap);
+  $('tab-map').classList.toggle('active', route.page === 'map');
+  $('tab-history').classList.toggle('active', route.page !== 'map' && route.page !== 'compare');
+  $('tab-compare').classList.toggle('active', route.page === 'compare');
 }
 
 function renderOverlayCtl(ctl: MapController) {
@@ -93,8 +97,21 @@ function renderMapView() {
 function render() {
   renderChrome();
   const isMap = route.page === 'map';
+  const isCmp = route.page === 'compare';
   $('view-map').classList.toggle('active', isMap);
-  $('view-page').classList.toggle('active', !isMap);
+  $('view-page').classList.toggle('active', !isMap && !isCmp);
+  $('view-compare').classList.toggle('active', isCmp);
+  if (!isCmp && cmp) { cmp.destroy(); cmp = null; }
+  if (isCmp) {
+    const r = route as Extract<Route, { page: 'compare' }>;
+    cmp?.destroy();
+    cmp = mountCompare($('compare'), {
+      mapId: r.map, periodId: r.period ?? state.period, baseId: r.base,
+      onChange: (q) => navigate(`#/compare?map=${q.map}&base=${q.base}${r.period ? `&period=${r.period}` : ''}`),
+      onPlace: (id) => navigate(`#/place/${id}`),
+    });
+    return;
+  }
   if (route.page === 'map') {
     state = { period: route.period ?? null, place: route.place ?? null };
     renderMapView();
@@ -121,6 +138,7 @@ function render() {
 
 $('tab-map').onclick = () => navigate(`#/map${state.period ? `?period=${state.period}` : ''}`);
 $('tab-history').onclick = () => navigate('#/history');
+$('tab-compare').onclick = () => navigate(`#/compare${state.period ? `?period=${state.period}` : ''}`);
 document.querySelectorAll<HTMLButtonElement>('.lang button').forEach((b) => {
   b.onclick = () => {
     setLang(b.dataset.lang as 'uk' | 'hu');

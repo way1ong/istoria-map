@@ -1,5 +1,6 @@
-import type { HistEvent, HistMap, Period, Place, RouteCollection } from './types';
+import type { Basemap, HistEvent, HistMap, Period, Place, RouteCollection } from './types';
 import periodsJson from '../data/periods.json';
+import basemapsJson from '../data/basemaps.json';
 
 const placeModules = import.meta.glob<Place>('../data/places/*.json', {
   eager: true,
@@ -25,6 +26,7 @@ const textModules = import.meta.glob<string>('../data/texts/*/*.md', {
 
 export const periods: Period[] = (periodsJson as { periods: Period[] }).periods;
 export const places: Place[] = Object.values(placeModules);
+export const basemaps: Basemap[] = (basemapsJson as { basemaps: Basemap[] }).basemaps;
 export const events: HistEvent[] = Object.values(eventModules);
 export const histMaps: HistMap[] = Object.values(mapModules);
 export const routes: RouteCollection[] = Object.values(routeModules);

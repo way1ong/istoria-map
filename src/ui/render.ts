@@ -75,7 +75,7 @@ export function coordsLine(coords: [number, number], precision: CoordsPrecision)
 export function placeCard(p: Place, full: boolean): string {
   return `
     <h2>${esc(lt(p.name))}</h2>
-    <div class="meta">${periodBadges(p.periods)}</div>
+    <div class="meta">${p.vanished ? `<span class="badge badge-vanished">${t('vanished')}</span> ` : ''}${periodBadges(p.periods)}</div>
     <p>${esc(lt(p.summary))}</p>
     ${full ? `<div class="prose">${md(lt(p.description))}</div>${photos(p.photos)}` : ''}
     <p class="meta">${coordsLine(p.coords, p.coordsPrecision)}</p>
