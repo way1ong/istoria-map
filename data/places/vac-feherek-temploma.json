@@ -1,0 +1,42 @@
+{
+  "id": "vac-feherek-temploma",
+  "name": {
+    "uk": "Домініканська церква «Білих» (Fehérek temploma) і крипта з муміями",
+    "hu": "Fehérek temploma és a váci múmiák kriptája"
+  },
+  "type": "church",
+  "coords": [
+    19.127889,
+    47.777773
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Будівництво почали домініканці 1699 року, освячено 1755 року. У крипті, де ховали в 1731–1838 роках, під час реставрації 1994 року знайшли 265 природно муміфікованих тіл.",
+    "hu": "Építését a domonkosok 1699-ben kezdték, 1755-ben szentelték fel. Kriptájában (temetkezés 1731–1838) az 1994-es felújításkor 265 természetes múmiát találtak."
+  },
+  "description": {
+    "uk": "Церква на Március 15. tér 22: домініканці розпочали будівництво 1699 року, освячення відбулося 1755 року. Народна назва походить від білого вбрання ченців. До храму належали дві крипти, де ховали в 1731–1838 роках переважно заможних містян і духовенство.\n\nПід час реставрації 1994 року знайдено 265 природно муміфікованих тіл і кісткові рештки ще 40 осіб у розписаних дерев'яних трунах з іменами та датами смерті; дослідження вела робоча група музею Tragor Ignác. Стаття про Вац датує знахідку «самим початком 1990-х», стаття про мумії називає 1994 рік, тому дата позначена як приблизна. Нині експозиція Memento Mori музею Tragor Ignác."
+  },
+  "sources": [
+    {
+      "title": "Fehérek temploma – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Feh%C3%A9rek_temploma",
+      "note": "Координати, 1699, 1755."
+    },
+    {
+      "title": "Váci múmiák – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_m%C3%BAmi%C3%A1k",
+      "note": "265 мумій, крипти 1731–1838, реставрація 1994."
+    },
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Експозиція Memento Mori; датування знахідки початком 1990-х."
+    }
+  ]
+}

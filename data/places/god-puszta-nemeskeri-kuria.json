@@ -1,0 +1,31 @@
+{
+  "id": "god-puszta-nemeskeri-kuria",
+  "name": {
+    "uk": "Göd-puszta і садиба Nemeskéri-Kiss",
+    "hu": "Göd-puszta, Nemeskéri-Kiss-kúria"
+  },
+  "type": "monument",
+  "coords": [
+    19.1344,
+    47.6906
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "habsburg-18",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Центр маєтку, що виник близько 1700 року на місці спустошеного села: володіння Madách (1718), Grassalkovich (1736), орендар Mayerffy, з 1830 року власність Mayerffy, далі Sina і бельгійський банк.",
+    "hu": "Az 1700 körül kialakult uradalmi központ: Madách (1718), Grassalkovich (1736), Mayerffy bérlő majd tulajdonos (1830), később Sina és a belga bank birtoka."
+  },
+  "description": {
+    "uk": "Після османської доби Göd був, за записами, покинутою випаленою пустою, що належала до Sződ. Близько 1700 року сформувалася Göd-puszta навколо нинішньої садиби Nemeskéri; за переписом 1715 року це була пуста Вацу. 1718 року власником разом зі Sződ став László Madách, збудовано замок Madách. 1736 року маєток увійшов до володінь родини Grassalkovich: постав центр Göd-puszta, пізніший Kincsem telep, ґуральня й броварня. Орендар József Mayerffy запровадив вівчарство та виноробство; 1805 року відлито його дзвін з угорським написом, зображений на гербі міста. 1830 року родина Mayerffy викупила Göd. Під час визвольної війни 1848–1849 років маєток і садибу сплюндрували; до 1864 року землі належали родині Sina, потім бельгійський банк розпарцелював ділянки. Серед нових власників Nemeskéri-Kiss Miklós, полковник гонведів 1848–1849 років. У будівлі садиби працювали школа і поштова агенція."
+  },
+  "sources": [
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділи «Újjáépülés», «Fejlődés megindulása», «A település kialakulása», «Nevezetességei»."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "god-kincsem-istallo",
+  "name": {
+    "uk": "Стайня Kincsem",
+    "hu": "Kincsem istálló és csárda"
+  },
+  "type": "monument",
+  "coords": [
+    19.1344,
+    47.6906
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Одна з найстаріших будівель Göd. У 1875–1880 роках тут тримали й готували до перегонів Kincsem, непереможену кобилу Ernő Blaskovich.",
+    "hu": "Göd egyik legrégibb épülete. 1875–1880 között itt állt és készült a versenyekre Kincsem, Blaskovich Ernő veretlen kancája."
+  },
+  "description": {
+    "uk": "За статтею про Göd, у 1875–1880 роках мешканкою ґедської стайні була Kincsem, «диво-кінь», яку вважають найуспішнішим скаковим конем усіх часів; її заводчик Ernő Blaskovich створив тут тренувальну базу. Стайня Kincsem, що стоїть донині, належить до найстаріших будівель міста. 1876 року збудовано корчму Fácán як притулок для журналістів, що приїздили через Kincsem. Стаття про саму Kincsem подає власником Ernő Blaskovich, засновника кінного заводу в Tápiószentmárton."
+  },
+  "sources": [
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділи «A település kialakulása» і «Nevezetességei»."
+    },
+    {
+      "title": "Kincsem (versenyló) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kincsem_(versenyl%C3%B3)",
+      "note": "Власник Ernő Blaskovich."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "vasut-megnyitasa-1846",
+  "title": {
+    "uk": "Відкриття першої угорської залізниці Пешт–Вац",
+    "hu": "Az első magyar vasútvonal, Pest–Vác megnyitása"
+  },
+  "date": {
+    "from": "1846-07-15",
+    "precision": "exact"
+  },
+  "period": "long-19",
+  "places": [
+    "dunakeszi-jarmujavito",
+    "god-biciklista-nagyvendeglo",
+    "vac-marcius-15-ter"
+  ],
+  "summary": {
+    "uk": "15 липня 1846 року в присутності палатина Йосифа відкрито лінію Пешт–Вац: 33,6 км спецпотяг подолав за 59 хвилин із 10-хвилинною зупинкою в Dunakeszi. Göd став третьою станцією.",
+    "hu": "1846. július 15-én József nádor jelenlétében megnyílt a Pest–Vác vonal: a 33,6 km-t a különvonat 59 perc alatt tette meg, 10 perces dunakeszi tartózkodással. Göd a harmadik állomás lett."
+  },
+  "description": {
+    "uk": "За статтею про лінію Будапешт–Соб, будівництво почалося 5 жовтня 1844 року під керівництвом прусського інженера August Wilhelm Beyse; перший пробний рейс паротяга між Пештом і Палотою відбувся 10 листопада 1845 року, а 15 липня 1846 року одноколійну лінію Пешт–Вац урочисто відкрили в присутності палатина Йосифа. Спеціальний потяг подолав 33,6 км за 59 хвилин із 10-хвилинною зупинкою в Dunakeszi; лінією їхав і Шандор Петефі, написавши вірш «Vasúton». За статтею про Dunakeszi, пасажирами були також Кошут і Сечені. За статтею про Göd, після станцій Palota і Dunakeszi третьою станцією став Göd. За статтею про Вац, місцеві купці не поділяли ентузіазму, бо швидке сполучення зі столицею підірвало місцеву торгівлю."
+  },
+  "sources": [
+    {
+      "title": "Budapest–Szob-vasútvonal – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Budapest%E2%80%93Szob-vas%C3%BAtvonal",
+      "note": "Розділ «Története»: дати, 33,6 км, 59 хвилин, Петефі."
+    },
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Кошут і Сечені у потязі."
+    },
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Göd як третя станція."
+    },
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Реакція купців."
+    }
+  ]
+}

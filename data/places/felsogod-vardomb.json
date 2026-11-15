@@ -1,0 +1,49 @@
+{
+  "id": "felsogod-vardomb",
+  "name": {
+    "uk": "Várdomb у Felsőgöd: городище аварської доби і місце круглої церкви",
+    "hu": "Felsőgöd, Várdomb (avar kori földvár)"
+  },
+  "type": "archaeological",
+  "coords": [
+    19.138,
+    47.7027
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "migration",
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Земляне укріплення аварської доби на пагорбі Várdomb, з якого контролювали дорогу й Дунай; поруч виникла церква з круглим планом і село Gud/Göde.",
+    "hu": "Avar kori földvár a Várdombon, ahonnan az utat és a Dunát lehetett ellenőrizni; itt alakult ki a kör alapú templom és a Gud, Göde nevű falu."
+  },
+  "description": {
+    "uk": "За статтею про Göd, на території нинішнього Felsőgöd розташоване земляне укріплення аварської доби, з якого можна було захищати дорогу й Дунай. Тут виникла церква з круглим планом і село під назвою Gud, Göde. Опис аерофотознімка на Wikimedia Commons називає пагорб городищем приблизно доби Арпадів, тож датування потребує перевірки за археологічною літературою.\n\nКоординати приблизні: взято з позиції камери аерофотознімка 2018 року, а не з офіційного реєстру."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Fels%C5%91g%C3%B6d_-_V%C3%A1rdomb%2C_l%C3%A9gi_fot%C3%B3.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Fels%C5%91g%C3%B6d_-_V%C3%A1rdomb,_l%C3%A9gi_fot%C3%B3.jpg",
+      "caption": {
+        "uk": "Várdomb у Felsőgöd з повітря, 2018",
+        "hu": "Felsőgöd, Várdomb légi fotón, 2018"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділ «Mohácsig»."
+    },
+    {
+      "title": "Wikimedia Commons: Felsőgöd - Várdomb, légi fotó",
+      "url": "https://commons.wikimedia.org/wiki/File:Fels%C5%91g%C3%B6d_-_V%C3%A1rdomb,_l%C3%A9gi_fot%C3%B3.jpg",
+      "note": "Позиція камери 47.702715, 19.138029; опис «~Árpád Age Hillfort»."
+    }
+  ]
+}

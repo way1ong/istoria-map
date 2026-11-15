@@ -1,0 +1,35 @@
+{
+  "id": "samsung-god-2018",
+  "title": {
+    "uk": "Завод акумуляторів Samsung у Göd",
+    "hu": "A Samsung akkumulátorgyár Gödön"
+  },
+  "date": {
+    "from": "2018",
+    "precision": "exact"
+  },
+  "period": "modern",
+  "places": [
+    "god-samsung-gyar",
+    "god-bocsaujtelep-fort"
+  ],
+  "summary": {
+    "uk": "2018 року в Göd запрацював завод акумуляторів Samsung; восени 2018 року під розширення вирубано 25 га лісу. На ділянці археологи вели спостереження через сусідство з пізньоримським фортом.",
+    "hu": "2018-ban Gödön megindult a Samsung akkumulátorgyár; 2018 őszén a bővítés miatt 25 hektár erdőt vágtak ki. A területen a késő római erőd miatt régészeti megfigyelés zajlott."
+  },
+  "description": {
+    "uk": "За статтею про Göd, 2018 року в місті розмістився завод акумуляторів Samsung; стаття описує його як джерело зростання податкових надходжень і водночас постійного навантаження на довкілля, зазначає, що завод п'ять років працював без дозволу на використання довкілля, 2023 року отримав дозвіл до 2033 року, а приписані два плани заходів щодо шуму не виконав. У розділі про природні цінності вказано, що восени 2018 року через розширення південнокорейського заводу вирубано 25 га лісу. База Угорського національного музею містить проєкти «Göd, Samsung, Akkumulátor gyártó üzem» та інші роботи 2016–2024 років на ділянці пам'ятки Göd-Bócsaújtelep."
+  },
+  "sources": [
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділи «Gazdaság» і «Természeti értékek»."
+    },
+    {
+      "title": "Archeodatabase HNM: Göd, Bócsaújtelep (Ilkamajor), site 10356",
+      "url": "https://archeodatabase.hnm.hu/en/node/3785",
+      "note": "Проєкти на території пам'ятки."
+    }
+  ]
+}

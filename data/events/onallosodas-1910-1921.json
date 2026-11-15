@@ -1,0 +1,42 @@
+{
+  "id": "onallosodas-1910-1921",
+  "title": {
+    "uk": "Утворення самостійних громад Alag, Felsőgöd і Alsógöd",
+    "hu": "Alag, Felsőgöd és Alsógöd önállósodása"
+  },
+  "date": {
+    "from": "1910",
+    "precision": "exact",
+    "to": "1921"
+  },
+  "period": "long-19",
+  "places": [
+    "alag-loversenypalya",
+    "felsogod-jezus-szive-templom",
+    "felsogod-vardomb"
+  ],
+  "summary": {
+    "uk": "1910 року Alag відокремився від Dunakeszi, 1914 року Felsőgöd від Sződ, 1921 року Alsógöd став малою громадою. 1950 року Alag знову приєднали до Dunakeszi, 1970 року Alsógöd і Felsőgöd об'єдналися в Göd.",
+    "hu": "1910-ben Alag különvált Dunakeszitől, 1914-ben Felsőgöd Sződtől, 1921-ben Alsógöd kisközség lett. 1950-ben Alag újra Dunakeszihez került, 1970-ben Alsó- és Felsőgöd Göd néven egyesült."
+  },
+  "description": {
+    "uk": "За статтею про Dunakeszi, 1910 року Alag став окремою громадою, що спричинило Dunakeszi фінансові труднощі, бо податки Lovaregylet були головним доходом села; вихід знайшли в кредитній спілці, заснованій парохом István Révész. За статтею про Göd, дачне селище Felsőgödtelep з'явилося 1873 року на землях графа Szapáry; 1908 року у Felsőgöd почалося шкільне навчання, 1914 року Felsőgöd відокремився від Sződ і став самостійною громадою, незабаром великою громадою; Alsógöd 1921 року став малою громадою. 1950 року самостійність Alag скасовано, і він знову належить до Dunakeszi; того ж року Sződliget став окремою громадою. 1970 року Alsógöd і Felsőgöd об'єдналися під назвою Göd."
+  },
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділ «1910 és 1950 között»."
+    },
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділи «A település kialakulása» і «A második világháború után»."
+    },
+    {
+      "title": "Sződ – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sz%C5%91d",
+      "note": "Sződliget 1950."
+    }
+  ]
+}

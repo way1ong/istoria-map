@@ -1,0 +1,35 @@
+{
+  "id": "matyas-god-1485",
+  "title": {
+    "uk": "Король Матяш проходить через Göd на Вацький сейм",
+    "hu": "Mátyás király átvonul Gödön a váci országgyűlésre"
+  },
+  "date": {
+    "from": "1485",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [
+    "god-puszta-nemeskeri-kuria",
+    "vac-marcius-15-ter"
+  ],
+  "summary": {
+    "uk": "1485 року король Матяш, прямуючи на державні збори у Ваці, пройшов через село Göd. У XV столітті на фундаментах римської сторожової вежі знову звели вежу.",
+    "hu": "1485-ben a váci országgyűlésre érkező Mátyás király átvonult a falun. A 15. században a római őrtorony alapjaira ismét őrtornyot építettek."
+  },
+  "description": {
+    "uk": "За статтею про Göd, 1485 року король Матяш, прибуваючи на вацький сейм, пройшов через село. Там само зазначено, що в XV столітті на фундаментах римської сторожової вежі на березі Дунаю знову збудували сторожову вежу, а на потоці Sződ-rákosi працював водяний млин. Стаття про Вац додає, що в XIV–XV століттях єпископ-гуманіст Miklós Báthory запрошував до міста скульпторів, художників і архітекторів."
+  },
+  "sources": [
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділ «Mohácsig»."
+    },
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділ «Középkor»."
+    }
+  ]
+}

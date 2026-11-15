@@ -1,0 +1,31 @@
+{
+  "id": "felsogod-jezus-szive-templom",
+  "name": {
+    "uk": "Церква Серця Ісуса у Felsőgöd",
+    "hu": "Felsőgödi Jézus Szíve plébániatemplom"
+  },
+  "type": "church",
+  "coords": [
+    19.1344,
+    47.6906
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Неороманський храм, освячений 1924 року; будівництво організував полковник Gyula Bozóky.",
+    "hu": "Neoromán templom, 1924-ben szentelték fel; építését Bozóky Gyula ezredes szervezte."
+  },
+  "description": {
+    "uk": "За статтею про Göd, храм у Felsőgöd освячено 1924 року; його спорудженню сприяв Gyula Bozóky (в одному місці статті названий генерал-полковником, в іншому полковником). До того на місці майбутньої церкви стояла католицька дзвіниця. Felsőgöd 1914 року відокремився від Sződ і став самостійною громадою. Поруч, 1939 року, зведено реформатську церкву, обидві у неороманському стилі."
+  },
+  "sources": [
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділи «A település kialakulása» і «Templomok»."
+    }
+  ]
+}

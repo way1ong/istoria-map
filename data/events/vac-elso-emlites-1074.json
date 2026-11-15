@@ -1,0 +1,35 @@
+{
+  "id": "vac-elso-emlites-1074",
+  "title": {
+    "uk": "Перші писемні згадки про Вац і будівництво собору Ґези I",
+    "hu": "Vác első írásos említései és I. Géza székesegyháza"
+  },
+  "date": {
+    "from": "1074",
+    "precision": "exact",
+    "to": "1077"
+  },
+  "period": "arpad",
+  "places": [
+    "vac-marcius-15-ter"
+  ],
+  "summary": {
+    "uk": "1074 року аннали Ібурга називають місто Watzenburg, 1075 року грамота Гарамсентбенедека згадує Wac civitas. Король Ґеза I (1074–1077) збудував собор Діви Марії і був у ньому похований.",
+    "hu": "1074-ben az yburgi évkönyv Watzenburg néven, 1075-ben a garamszentbenedeki alapítólevél Wac civitasként említi. I. Géza (1074–1077) építtette a Szűz Mária-székesegyházat, és ott temették el."
+  },
+  "description": {
+    "uk": "За статтею про Вац, перша писемна згадка походить з 1074 року з анналів нижньосаксонського міста Ібург, де місто назване Watzenburg; у грамоті про заснування абатства Гарамсентбенедек 1075 року воно фігурує як Wac civitas. За статтею про Вацьку єпархію, історіографія від часів Gyula Pauler приймає, що єпархію заснував король Іштван I (після 1009 року), а собор, освячений Діві Марії, збудував Ґеза I (1074–1077), який за власним розпорядженням був тут похований. Легенда з Віденської ілюстрованої хроніки пов'язує назву міста з пустельником Вацем, якого Ґеза і Ласло зустріли тут перед битвою 1074 року."
+  },
+  "sources": [
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділи «Nevének eredete» і «Középkor»."
+    },
+    {
+      "title": "Váci egyházmegye – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_egyh%C3%A1zmegye",
+      "note": "Заснування єпархії, собор Ґези I."
+    }
+  ]
+}

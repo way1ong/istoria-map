@@ -1,0 +1,31 @@
+{
+  "id": "dunakeszi-szekesdulo",
+  "name": {
+    "uk": "Археологічний комплекс Székesdűlő",
+    "hu": "Dunakeszi, Székesdűlő lelőhely"
+  },
+  "type": "archaeological",
+  "coords": [
+    19.1381,
+    47.6297
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory",
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Найбільше неолітичне поселення в межах міста, три кельтські будинки, сарматське село та поховання язигів.",
+    "hu": "A város legjelentősebb újkőkori telepe, három kelta ház, szarmata (jazig) falurészlet és sírok."
+  },
+  "description": {
+    "uk": "За статтею про Dunakeszi, розкопки в урочищі Székesdűlő виявили найзначніше неолітичне поселення в адміністративних межах міста. В античну добу тут оселилися кельти, археологи розкопали три їхні будинки; у римський час на лівому березі Дунаю жили сармати, зокрема язиги, частину села і два поховання яких також знайдено тут. Мідну добу представляють знахідки з Koplya-tető, Hegyrejáró dűlő і зони будівництва дороги M2; бронзову добу посуд культури Ватя та стовпові будинки й колодязі курганної культури."
+  },
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділи «Dunakeszi térsége az őskorban» і «Dunakeszi területe az ókorban»."
+    }
+  ]
+}

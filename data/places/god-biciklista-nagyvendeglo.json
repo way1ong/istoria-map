@@ -1,0 +1,31 @@
+{
+  "id": "god-biciklista-nagyvendeglo",
+  "name": {
+    "uk": "Biciklista Nagyvendéglő, нині будинок культури ім. Аттіли Йожефа",
+    "hu": "Biciklista Nagyvendéglő (József Attila Művelődési Ház)"
+  },
+  "type": "monument",
+  "coords": [
+    19.1344,
+    47.6906
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Збудований 1902 року великий ресторан, названий на честь перших угорських аматорських велоперегонів Будапешт–Göd; пізніше тут працював кінотеатр.",
+    "hu": "1902-ben épült nagyvendéglő, nevét az első magyar amatőr kerékpárversenyről (Budapest–Göd) kapta; később mozi működött benne."
+  },
+  "description": {
+    "uk": "За статтею про Göd, 1902 року збудовано нинішній будинок культури, Biciklista Nagyvendéglő, у якому пізніше працював кінотеатр. Назва походить від перших угорських аматорських велосипедних перегонів між Будапештом і Göd, фінішем яких було селище."
+  },
+  "sources": [
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділи «A település kialakulása» і «Nevezetességei»."
+    }
+  ]
+}

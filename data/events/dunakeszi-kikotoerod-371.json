@@ -1,0 +1,41 @@
+{
+  "id": "dunakeszi-kikotoerod-371",
+  "title": {
+    "uk": "Будівництво римського портового форту в Dunakeszi",
+    "hu": "A dunakeszi római kikötőerőd építése"
+  },
+  "date": {
+    "from": "371",
+    "precision": "approximate",
+    "to": "372"
+  },
+  "period": "roman-barbaricum",
+  "places": [
+    "dunakeszi-romai-kikotoerod",
+    "god-bocsaujtelep-fort"
+  ],
+  "summary": {
+    "uk": "За Валентиніана I римляни звели на лівому березі укріплений порт і переправу, частину системи contra castrum. У той самий час розпочато велике будівництво форту біля Göd, яке так і не завершили.",
+    "hu": "I. Valentinianus alatt a rómaiak erődített kikötőt és átkelőt építettek a bal parton, a contra castrumok rendszerének részeként. Ugyanekkor kezdték a gödi nagy erőd építését, amely befejezetlen maradt."
+  },
+  "description": {
+    "uk": "За статтею про Dunakeszi, укріплений порт збудовано в 371–372 роках як частину системи фортів на лівому березі, яку започаткував Марк Аврелій після маркоманських воєн, ущільнив Діоклетіан і розбудував Валентиніан I. База Pleiades описує пам'ятку в Göd-Bócsaújtelep як недобудований пізньоримський форт із правління Валентиніана на Limes Sarmatiae; стаття про Göd додає, що форт мав постати глибоко в межах ворожої території і, за її словами, опосередковано став причиною війни та смерті короля й імператора. Ці оцінки потребують перевірки за науковою літературою."
+  },
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "371–372, система contra castrum."
+    },
+    {
+      "title": "Pleiades: Göd-Bócsaújtelep",
+      "url": "https://pleiades.stoa.org/places/487248321",
+      "note": "Датування форту в Göd правлінням Валентиніана."
+    },
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділ «Kezdetek»."
+    }
+  ]
+}

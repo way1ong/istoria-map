@@ -1,0 +1,35 @@
+{
+  "id": "kincsem-god-1875",
+  "title": {
+    "uk": "Kincsem у Göd",
+    "hu": "Kincsem Gödön"
+  },
+  "date": {
+    "from": "1875",
+    "precision": "exact",
+    "to": "1880"
+  },
+  "period": "long-19",
+  "places": [
+    "god-kincsem-istallo"
+  ],
+  "summary": {
+    "uk": "У 1875–1880 роках у ґедській стайні тримали Kincsem, непереможену кобилу заводчика Ernő Blaskovich; довкола неї виникла тренувальна база для скакових коней.",
+    "hu": "1875–1880 között a gödi istálló lakója volt Kincsem, Blaskovich Ernő veretlen kancája; körülötte versenyló-tréningtelep alakult ki."
+  },
+  "description": {
+    "uk": "За статтею про Göd, з 1875 до 1880 року мешканкою ґедської стайні була Kincsem, найуспішніший скаковий кінь усіх часів; завдяки діяльності її заводчика Ernő Blaskovich тут склалася тренувальна база. 1876 року для журналістів, які приїздили через Kincsem, збудовано корчму Fácán. Стаття про Kincsem описує її власника Ernő Blaskovich як засновника кінного заводу в Tápiószentmárton, якого 1860 року прийняли до Pesti Lovar-Egylet."
+  },
+  "sources": [
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділи «A település kialakulása» і «Nevezetességei»."
+    },
+    {
+      "title": "Kincsem (versenyló) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kincsem_(versenyl%C3%B3)",
+      "note": "Власник і його членство в Lovaregylet."
+    }
+  ]
+}

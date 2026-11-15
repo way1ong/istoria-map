@@ -1,0 +1,51 @@
+{
+  "id": "vaci-csata-1849",
+  "title": {
+    "uk": "Битви під Вацом 1849 року",
+    "hu": "Az 1849-es váci csaták"
+  },
+  "date": {
+    "from": "1849-04-10",
+    "precision": "exact",
+    "to": "1849-07-17"
+  },
+  "period": "long-19",
+  "places": [
+    "vac-marcius-15-ter",
+    "dunakeszi-szent-mihaly-templom",
+    "god-puszta-nemeskeri-kuria"
+  ],
+  "summary": {
+    "uk": "10 квітня 1849 року III корпус Яноша Дам'янича розбив під Вацом австрійців генерала Ґьотца; 8 квітня дивізія Kmety стала в Dunakeszi для прикриття. Друга битва 17 липня закінчилася перемогою росіян.",
+    "hu": "1849. április 10-én Damjanich III. hadteste megverte Götz osztrák csapatait Vácnál; április 8-án a Kmety-hadosztály Dunakeszin fedezte a főerőket. A július 17-i második csata orosz győzelemmel zárult."
+  },
+  "description": {
+    "uk": "За статтею про битву, зіткнення під Вацом відбулося 10 квітня 1849 року між австрійськими військами генерал-майора Christian Götz і угорським III корпусом генерал-майора János Damjanich у межах весняного походу після перемоги під Ішасеґом; 9 квітня I корпус стояв у Csomád, VII у Fót, III просунувся до Veresegyház. За статтею про Dunakeszi, 8 квітня до села прибула дивізія Kmety із завданням прикрити головні сили, що рухалися на Вац; на селян ліг тягар розквартирування та харчування, а холера після війни забрала близько 14 життів за два місяці. За статтею про Вац, Гонведи розгромили австрійські сили в місті після великої битви 10 квітня, а друга битва 17 липня завершилася перемогою росіян; пам'ятник обом битвам стоїть біля південних воріт міста, поблизу Hétkápolna. За статтею про Göd, під час визвольної війни маєток і садибу в Göd сплюндрували."
+  },
+  "sources": [
+    {
+      "title": "Váci csata (1849. április 10.) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1849._%C3%A1prilis_10.)",
+      "note": "Дата, командувачі, диспозиція."
+    },
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Друга битва 17 липня, пам'ятник."
+    },
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Дивізія Kmety 8 квітня, холера."
+    },
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Сплюндрування маєтку."
+    }
+  ],
+  "coords": [
+    19.1312,
+    47.7736
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "god-huzella-kert",
+  "name": {
+    "uk": "Сад Huzella і вілла Huzella",
+    "hu": "Huzella-kert és Huzella-villa"
+  },
+  "type": "nature",
+  "coords": [
+    19.1344,
+    47.6906
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Маєток, який біолог Tivadar Huzella купив у László Arany; тут створено біологічну дослідну станцію, 1939 року проведено світовий конгрес анатомів. З 1951 року власність Академії наук, нині ботанічний сад ELTE.",
+    "hu": "Huzella Tivadar biológus Arany Lászlótól vásárolt birtoka; biológiai kutatóállomás, 1939-ben anatómus világkongresszus. 1951-től az MTA, ma az ELTE Füvészkert állomása."
+  },
+  "description": {
+    "uk": "За статтею про Göd, Tivadar Huzella, біолог і дослідник раку, купив маєток у László Arany і створив у Alsógöd біологічну дослідну станцію; 1939 року у віллі Huzella відбувся світовий конгрес анатомів. З 1951 року маєток належав Угорській академії наук. Нині Huzella-kert належить ELTE, тут працює природоохоронна та екотуристична станція ботанічного саду ELTE."
+  },
+  "sources": [
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділи «A település kialakulása», «Természeti értékek», «Neves személyek»."
+    }
+  ]
+}

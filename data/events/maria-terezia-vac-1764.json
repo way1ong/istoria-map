@@ -1,0 +1,41 @@
+{
+  "id": "maria-terezia-vac-1764",
+  "title": {
+    "uk": "Візит Марії Терезії до Вацу і зведення Кам'яної брами",
+    "hu": "Mária Terézia váci látogatása és a Kőkapu"
+  },
+  "date": {
+    "from": "1764",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [
+    "vac-diadaliv",
+    "vac-szekesegyhaz",
+    "vac-fegyhaz"
+  ],
+  "summary": {
+    "uk": "1764 року Марія Терезія особисто відвідала Вац; на її честь єпископ Мігацці звів єдину в країні тріумфальну арку. Поруч за її розпорядженням 1762 року засновано шляхетський Терезіанум.",
+    "hu": "1764-ben Mária Terézia személyesen látogatott Vácra; tiszteletére Migazzi püspök felépíttette az ország egyetlen diadalívét. Mellette 1762-es rendelkezésére nemesi Theresianum létesült."
+  },
+  "description": {
+    "uk": "За статтею про Вац, 1764 року Марія Терезія особисто відвідала місто, і на її честь збудовано єдину в Угорщині тріумфальну арку; за анекдотом, королева прийняла подарунок з підозрою і не наважилася проїхати під брамою. За статтею про арку, будівництво замовив єпископ Мігацці за проєктом Ізидора Каневале, і від закладення до відкриття минуло шість місяців. За статтею про в'язницю, ще 1762 року королева розпорядилася створити в сусідній будівлі виховний інститут для шляхетської молоді. Той самий Мігацці разом із Mihály Althann у другій половині XVIII століття розбудовував місто: 1745 року завершено піаристську церкву, 1755 року домініканську, 1766 року францисканську, 1772 року єпископський палац."
+  },
+  "sources": [
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділ «Újkor»."
+    },
+    {
+      "title": "Váci diadalív – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_diadal%C3%ADv",
+      "note": "Замовник, архітектор, тривалість будівництва."
+    },
+    {
+      "title": "Váci Fegyház és Börtön – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_Fegyh%C3%A1z_%C3%A9s_B%C3%B6rt%C3%B6n",
+      "note": "Розпорядження 1762 року."
+    }
+  ]
+}

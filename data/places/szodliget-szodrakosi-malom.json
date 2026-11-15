@@ -1,0 +1,37 @@
+{
+  "id": "szodliget-szodrakosi-malom",
+  "name": {
+    "uk": "Млин на потоці Sződrákos",
+    "hu": "Sződrákosi malom"
+  },
+  "type": "monument",
+  "coords": [
+    19.15,
+    47.7333
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "late-medieval",
+    "habsburg-18",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "На старому березі потоку Sződrákos млин стояв уже в середньовіччі: 1458 року його купили паулини з Kékes. Нинішній млин збудував на початку XVIII століття маєток Grassalkovich.",
+    "hu": "A Sződrákosi-patak régi partján már a középkorban malom állt: 1458-ban a kékesi pálosok vették meg. A ma is álló malmot a 18. század elején a Grassalkovich-uradalom építette."
+  },
+  "description": {
+    "uk": "За статтею про Sződliget, на старому березі потоку Sződrákos уже в середньовіччі стояв млин, який 1458 року купили паулини з Kékes у сентендрейських госпітів; пізніше вже зруйнований млин у володінні János Paksi продали монастирю Ґюль-Баба. На початку XVIII століття маєток Grassalkovich на тому самому місці звів млин, що існує донині і є вартою уваги промисловою пам'яткою. Стаття про Göd також згадує водяний млин на потоці Sződ-rákosi в середньовіччі. Саме селище Sződliget виникло 1910 року з парцеляції маєтку Alfréd Floch-Reyhersberg і стало самостійною громадою 1 січня 1950 року."
+  },
+  "sources": [
+    {
+      "title": "Sződliget – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sz%C5%91dliget",
+      "note": "Розділ «Története»."
+    },
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Згадка про водяний млин на потоці Sződ-rákosi."
+    }
+  ]
+}

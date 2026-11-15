@@ -34,17 +34,41 @@ export interface MapController {
   refreshLabels(): void;
 }
 
+/**
+ * Місця з однаковими координатами (наприклад, кілька об'єктів з точністю «центр
+ * населеного пункту») розводяться по колу радіусом ~120 м лише для показу, щоб
+ * кожну мітку можна було натиснути. Дані в картці лишаються незмінними.
+ */
+function spread(list: Place[]): Map<string, [number, number]> {
+  const groups = new Map<string, Place[]>();
+  for (const p of list) {
+    const k = p.coords.join(',');
+    groups.set(k, [...(groups.get(k) ?? []), p]);
+  }
+  const out = new Map<string, [number, number]>();
+  for (const g of groups.values()) {
+    if (g.length === 1) { out.set(g[0].id, g[0].coords); continue; }
+    const r = 0.0012;
+    g.forEach((p, i) => {
+      const a = (2 * Math.PI * i) / g.length;
+      out.set(p.id, [p.coords[0] + (r * Math.cos(a)) / Math.cos((p.coords[1] * Math.PI) / 180), p.coords[1] + r * Math.sin(a)]);
+    });
+  }
+  return out;
+}
+
 function featureCollection(periodId: string | null, lang: string) {
+  const visible = places.filter((p) => !periodId || p.periods.includes(periodId));
+  const pos = spread(visible);
   return {
     type: 'FeatureCollection' as const,
-    features: places
-      .filter((p) => !periodId || p.periods.includes(periodId))
+    features: visible
       .map((p) => {
         const period = periodById(p.periods[0]);
         return {
           type: 'Feature' as const,
           id: p.id,
-          geometry: { type: 'Point' as const, coordinates: p.coords },
+          geometry: { type: 'Point' as const, coordinates: pos.get(p.id) ?? p.coords },
           properties: {
             id: p.id,
             label: lt(p.name),
