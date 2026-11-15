@@ -33,7 +33,7 @@ function checkCoords(file, coords, label = 'coords') {
   if (!Array.isArray(coords) || coords.length !== 2 || coords.some((n) => typeof n !== 'number'))
     return err(file, `${label} має бути [lon, lat]`);
   const [lon, lat] = coords;
-  if (lon < 18 || lon > 20.5 || lat < 46.5 || lat > 48.5)
+  if (lon < 18 || lon > 20.5 || lat < 46.5 || lat > 48.6)
     err(file, `${label} [${lon}, ${lat}] поза регіоном (очікується околиця Göd); можливо, переплутано lon/lat`);
 }
 function checkPhotos(file, photos) {
@@ -92,11 +92,13 @@ for (const { file, path, name } of listJson('places')) {
 }
 
 // events
+const eventIds = new Set();
 const dateRe = /^-?\d{1,4}(-\d{2}(-\d{2})?)?$/;
 for (const { file, path, name } of listJson('events')) {
   const e = readJson(path);
   if (!e) continue;
   if (e.id !== name) err(file, `id "${e.id}" має збігатися з назвою файлу "${name}"`);
+  eventIds.add(e.id);
   if (!isLText(e.title)) err(file, 'title.uk відсутній');
   if (!e.date || typeof e.date.from !== 'string' || !dateRe.test(e.date.from))
     err(file, 'date.from має бути рядком виду "1241", "1241-04" або "1241-04-11"');
@@ -137,11 +139,23 @@ if (existsSync(routesDir))
     const g = readJson(join(routesDir, f));
     if (!g) continue;
     if (g.type !== 'FeatureCollection') err(file, 'очікується FeatureCollection');
+    const dtRe = /^-?\d{1,4}(-\d{2}(-\d{2}(T\d{2}:\d{2})?)?)?$/;
+    if (g.animation) {
+      const a = g.animation;
+      if (!dtRe.test(a.from ?? '') || !dtRe.test(a.to ?? '')) err(file, 'animation.from/to у неправильному форматі');
+      if (!isLText(a.title)) err(file, 'animation.title.uk відсутній');
+      if (a.event !== undefined && !eventIds.has(a.event)) err(file, `animation.event: невідома подія "${a.event}"`);
+    }
     (g.features ?? []).forEach((ft, i) => {
       const pr = ft.properties ?? {};
       if (!periodIds.has(pr.period)) err(file, `features[${i}]: невідомий період "${pr.period}"`);
-      if (!['military', 'trade', 'border', 'growth'].includes(pr.kind)) err(file, `features[${i}]: kind має бути military | trade | border | growth`);
+      if (!['military', 'trade', 'transport', 'border', 'growth'].includes(pr.kind)) err(file, `features[${i}]: kind має бути military | trade | transport | border | growth`);
       if (!isLText(pr.title)) err(file, `features[${i}]: title.uk відсутній`);
+      for (const k of ['start', 'end']) if (pr[k] !== undefined && !dtRe.test(pr[k])) err(file, `features[${i}].${k} у неправильному форматі`);
+      if (!['Point', 'LineString', 'Polygon'].includes(ft.geometry?.type)) err(file, `features[${i}]: geometry має бути Point | LineString | Polygon`);
+      const coords = ft.geometry?.type === 'Point' ? [ft.geometry.coordinates] : ft.geometry?.type === 'LineString' ? ft.geometry.coordinates : (ft.geometry?.coordinates ?? []).flat();
+      (coords ?? []).forEach((c, j) => checkCoords(`${file} features[${i}]`, c, `coords[${j}]`));
+      if (pr.values) pr.values.forEach((v, j) => { if (!dtRe.test(v.date ?? '') || typeof v.value !== 'number') err(file, `features[${i}].values[${j}] потребує date і числове value`); });
       checkSources(`${file} features[${i}]`, pr.sources);
     });
   }
@@ -162,4 +176,4 @@ if (errors.length) {
   for (const e of errors) console.error(' - ' + e);
   process.exit(1);
 }
-console.log(`Дані перевірено: ${periodIds.size} періодів, ${placeIds.size} місць, ${listJson('events').length} подій, ${listJson('maps').length} мап.`);
+console.log(`Дані перевірено: ${periodIds.size} періодів, ${placeIds.size} місць, ${listJson("events").length} подій, ${listJson("maps").length} мап, ${existsSync(routesDir) ? readdirSync(routesDir).filter((f) => f.endsWith(".geojson")).length : 0} анімацій.`);

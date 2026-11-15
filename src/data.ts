@@ -1,4 +1,4 @@
-import type { HistEvent, HistMap, Period, Place } from './types';
+import type { HistEvent, HistMap, Period, Place, RouteCollection } from './types';
 import periodsJson from '../data/periods.json';
 
 const placeModules = import.meta.glob<Place>('../data/places/*.json', {
@@ -13,6 +13,10 @@ const mapModules = import.meta.glob<HistMap>('../data/maps/*.json', {
   eager: true,
   import: 'default',
 });
+const routeModules = import.meta.glob<RouteCollection>('../data/routes/*.geojson', {
+  eager: true,
+  import: 'default',
+});
 const textModules = import.meta.glob<string>('../data/texts/*/*.md', {
   eager: true,
   query: '?raw',
@@ -23,6 +27,12 @@ export const periods: Period[] = (periodsJson as { periods: Period[] }).periods;
 export const places: Place[] = Object.values(placeModules);
 export const events: HistEvent[] = Object.values(eventModules);
 export const histMaps: HistMap[] = Object.values(mapModules);
+export const routes: RouteCollection[] = Object.values(routeModules);
+
+/** Анімації, прив'язані до події. */
+export function routesForEvent(eventId: string): RouteCollection[] {
+  return routes.filter((r) => r.animation?.event === eventId);
+}
 
 export function periodById(id: string): Period | undefined {
   return periods.find((p) => p.id === id);

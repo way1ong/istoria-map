@@ -29,6 +29,12 @@ const dict = {
     bce: 'до н. е.',
     notFound: 'Запис не знайдено.',
     noPlaces: 'У цьому періоді ще немає міток.',
+    play: 'Відтворити',
+    pause: 'Пауза',
+    animation: 'Анімована мапа',
+    animations: 'Анімовані мапи',
+    reconstruction: 'Лінії проведено між пунктами, названими в джерелах. Це реконструкція, а не точні маршрути.',
+    legend: 'Умовні позначення',
   },
   hu: {
     appTitle: 'Göd környékének története',
@@ -58,6 +64,12 @@ const dict = {
     bce: 'i. e.',
     notFound: 'A bejegyzés nem található.',
     noPlaces: 'Ebben a korszakban még nincsenek jelölők.',
+    play: 'Lejátszás',
+    pause: 'Szünet',
+    animation: 'Animált térkép',
+    animations: 'Animált térképek',
+    reconstruction: 'A vonalak a forrásokban megnevezett pontok között húzódnak. Rekonstrukció, nem pontos útvonal.',
+    legend: 'Jelmagyarázat',
   },
 } satisfies Record<Lang, Record<string, string>>;
 

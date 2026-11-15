@@ -1,0 +1,330 @@
+{
+ "type": "FeatureCollection",
+ "animation": {
+  "event": "vaci-csata-1849",
+  "from": "1849-04-08",
+  "to": "1849-04-10T18:00",
+  "title": {
+   "uk": "Весняний похід: підхід до Вацу, 8–10 квітня 1849",
+   "hu": "Tavaszi hadjárat: felvonulás Vác ellen, 1849. április 8–10."
+  },
+  "note": {
+   "uk": "Позиції корпусів за статтями про битву під Вацом і Dunakeszi; точний час переходів у джерелах не вказаний, тому рух розподілено рівномірно в межах дня.",
+   "hu": "A hadtestek állásai a váci csatáról és Dunakesziről szóló szócikkek alapján; a menetek pontos ideje nem ismert."
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.1381,
+     47.6297
+    ]
+   },
+   "properties": {
+    "id": "kmety-dunakeszi",
+    "period": "long-19",
+    "kind": "military",
+    "side": "hu",
+    "start": "1849-04-08",
+    "title": {
+     "uk": "Дивізія Kmety у Dunakeszi (8 квітня)",
+     "hu": "Kmety-hadosztály Dunakeszin (április 8.)"
+    },
+    "note": {
+     "uk": "прикриває головні сили від Пешта",
+     "hu": "fedezi a főerőket Pest felől"
+    },
+    "sources": [
+     {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділ «Dunakeszi és Alag a hosszú 19. században»: 8 квітня дивізія Kmety прибула до села."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Dunakeszi",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Dunakeszi",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.2869,
+      47.5616
+     ],
+     [
+      19.2369,
+      47.6548
+     ]
+    ]
+   },
+   "properties": {
+    "id": "i-hadtest-csomad",
+    "period": "long-19",
+    "kind": "military",
+    "side": "hu",
+    "start": "1849-04-09",
+    "end": "1849-04-09T18:00",
+    "title": {
+     "uk": "I корпус: Kerepes → Csomád (9 квітня)",
+     "hu": "I. hadtest: Kerepes → Csomád (április 9.)"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1849. április 10.) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1849._%C3%A1prilis_10.)",
+      "note": "«Április 9-én az I. hadtest Kerepesről Csomádra vonult, Vác felé előőrsöket állított ki.»"
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Kerepes",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Kerepes",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Csomád",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Csomád",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.2384,
+      47.5987
+     ],
+     [
+      19.2869,
+      47.6552
+     ]
+    ]
+   },
+   "properties": {
+    "id": "iii-hadtest-veresegyhaz",
+    "period": "long-19",
+    "kind": "military",
+    "side": "hu",
+    "start": "1849-04-09",
+    "end": "1849-04-09T18:00",
+    "title": {
+     "uk": "III корпус (Damjanich): Mogyoród → Veresegyház (9 квітня)",
+     "hu": "III. hadtest (Damjanich): Mogyoród → Veresegyház (április 9.)"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1849. április 10.) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1849._%C3%A1prilis_10.)",
+      "note": "«A III. hadtest Mogyoródról Veresegyházára nyomult és érintkezésre lépett az I. hadtesttel.»"
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Mogyoród",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Mogyoród",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Veresegyház",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Veresegyház",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.198,
+     47.6126
+    ]
+   },
+   "properties": {
+    "id": "vii-hadtest-fot",
+    "period": "long-19",
+    "kind": "military",
+    "side": "hu",
+    "start": "1849-04-09",
+    "title": {
+     "uk": "VII корпус у Fót (9 квітня)",
+     "hu": "VII. hadtest Fóton (április 9.)"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1849. április 10.) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1849._%C3%A1prilis_10.)",
+      "note": "«A VII. hadtest Fót városában állomásozott.»"
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Fót",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Fót",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.1311,
+     47.7753
+    ]
+   },
+   "properties": {
+    "id": "gotz-vac",
+    "period": "long-19",
+    "kind": "military",
+    "side": "at",
+    "start": "1849-04-08",
+    "title": {
+     "uk": "Австрійська бригада Götz у Ваці",
+     "hu": "Götz császári dandárja Vácott"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1849. április 10.) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1849._%C3%A1prilis_10.)",
+      "note": "Битва між військами генерал-майора Christian Götz і III корпусом Damjanich 10 квітня 1849 року у Вацу."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Vác",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Vác",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.2369,
+      47.6548
+     ],
+     [
+      19.13931,
+      47.76413
+     ]
+    ]
+   },
+   "properties": {
+    "id": "i-hadtest-vac",
+    "period": "long-19",
+    "kind": "military",
+    "side": "hu",
+    "start": "1849-04-10T06:00",
+    "end": "1849-04-10T12:00",
+    "title": {
+     "uk": "I корпус: Csomád → південний в'їзд до Вацу (10 квітня)",
+     "hu": "I. hadtest: Csomád → Vác déli bejárata (április 10.)"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1849. április 10.) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1849._%C3%A1prilis_10.)",
+      "note": "За планом I і III корпуси разом беруть Вац; зіткнення 10 квітня."
+     },
+     {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Пам'ятник битві біля південних воріт міста, поблизу Hétkápolna."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.2869,
+      47.6552
+     ],
+     [
+      19.13931,
+      47.76413
+     ]
+    ]
+   },
+   "properties": {
+    "id": "iii-hadtest-vac",
+    "period": "long-19",
+    "kind": "military",
+    "side": "hu",
+    "start": "1849-04-10T06:00",
+    "end": "1849-04-10T12:00",
+    "title": {
+     "uk": "III корпус: Veresegyház → південний в'їзд до Вацу (10 квітня)",
+     "hu": "III. hadtest: Veresegyház → Vác déli bejárata (április 10.)"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1849. április 10.) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1849._%C3%A1prilis_10.)",
+      "note": "Битва 10 квітня між III корпусом Damjanich і бригадою Götz."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.13931,
+      47.76413
+     ],
+     [
+      19.139584,
+      47.769229
+     ],
+     [
+      19.1311,
+      47.7753
+     ]
+    ]
+   },
+   "properties": {
+    "id": "roham-kohid",
+    "period": "long-19",
+    "kind": "military",
+    "side": "hu",
+    "start": "1849-04-10T12:00",
+    "end": "1849-04-10T15:00",
+    "title": {
+     "uk": "Штурм кам'яного мосту через Gombás і вхід у місто (після полудня)",
+     "hu": "A Gombás-patak kőhídjának rohama és bevonulás a városba (délután)"
+    },
+    "sources": [
+     {
+      "title": "Wikimedia Commons: схеми першої битви під Вацом (Sylvain1975)",
+      "url": "https://commons.wikimedia.org/wiki/Category:First_Battle_of_V%C3%A1c_(1849)",
+      "note": "Схема «ситуація опівдні, перед атакою угорських батальйонів на кам'яний міст» і «ситуація після 15:00»."
+     },
+     {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Гонведи розбили австрійські сили в місті після великої битви 10 квітня 1849 року."
+     }
+    ]
+   }
+  }
+ ]
+}

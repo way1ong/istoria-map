@@ -1,0 +1,125 @@
+{
+ "type": "FeatureCollection",
+ "animation": {
+  "event": "csorsz-arok-epitese",
+  "from": "324",
+  "to": "337",
+  "title": {
+   "uk": "Вал Чорса: південна траса від Дунаю до Тиси",
+   "hu": "Csörsz-árok: a déli árok nyomvonala a Dunától a Tiszáig"
+  },
+  "note": {
+   "uk": "Лінія з'єднує населені пункти, перелічені в статті про вал, по прямій. Справжня траса звивиста; датування 324–337 роками наведено за статтею про Dunakeszi і є приблизним.",
+   "hu": "A vonal a szócikkben felsorolt településeket köti össze egyenesekkel. A valódi nyomvonal kanyargós; a 324–337-es datálás hozzávetőleges."
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.1381,
+      47.6297
+     ],
+     [
+      19.198,
+      47.6126
+     ],
+     [
+      19.2384,
+      47.5987
+     ],
+     [
+      19.2869,
+      47.5616
+     ],
+     [
+      19.3477,
+      47.6015
+     ],
+     [
+      19.4017,
+      47.5303
+     ],
+     [
+      19.5949,
+      47.6094
+     ],
+     [
+      19.7168,
+      47.5692
+     ]
+    ]
+   },
+   "properties": {
+    "id": "csorsz-del",
+    "period": "roman-barbaricum",
+    "kind": "border",
+    "start": "324",
+    "end": "337",
+    "title": {
+     "uk": "Вал Чорса (ділянка Dunakeszi – Jászfényszaru)",
+     "hu": "Csörsz-árok (Dunakeszi – Jászfényszaru szakasz)"
+    },
+    "note": {
+     "uk": "реконструкція по центрах сіл",
+     "hu": "rekonstrukció a települések középpontjai mentén"
+    },
+    "sources": [
+     {
+      "title": "Csörsz árka – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Cs%C3%B6rsz-%C3%A1rok",
+      "note": "Розділ «Nyomvonala»: Dunakeszi, Fót, Mogyoród, Kerepes, Gödöllő, Isaszeg, …, Tura, …, Jászfényszaru."
+     },
+     {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Вал починається на південь від міста від Дунаю; датування 324–337."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Dunakeszi",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Dunakeszi",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Fót",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Fót",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Mogyoród",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Mogyoród",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Kerepes",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Kerepes",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Gödöllő",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Gödöllő",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Isaszeg",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Isaszeg",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Tura",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Tura",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Jászfényszaru",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Jászfényszaru",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  }
+ ]
+}

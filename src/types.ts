@@ -92,3 +92,40 @@ export interface HistMap {
   coordinates?: [number, number][];
   periods?: string[];
 }
+
+/** Властивості об'єкта в data/routes/*.geojson */
+export interface RouteProps {
+  id: string;
+  period: string;
+  kind: 'military' | 'trade' | 'transport' | 'border' | 'growth';
+  title: LText;
+  /** Початок і кінець руху: "1849-04-09", "1849-04-10T12:00" або рік "324". */
+  start?: string;
+  end?: string;
+  /** Сторона/колір групи, напр. "hu" або "at"; колір беруть із палітри. */
+  side?: string;
+  note?: LText;
+  /** Для kind=growth: ряд значень у часі (населення тощо). */
+  values?: { date: string; value: number; label?: LText }[];
+  sources: Source[];
+}
+
+export interface RouteCollection {
+  type: 'FeatureCollection';
+  /** Параметри анімації для всього файлу. */
+  animation?: {
+    event?: string;
+    from: string;
+    to: string;
+    title: LText;
+    note?: LText;
+  };
+  features: {
+    type: 'Feature';
+    geometry:
+      | { type: 'LineString'; coordinates: [number, number][] }
+      | { type: 'Point'; coordinates: [number, number] }
+      | { type: 'Polygon'; coordinates: [number, number][][] };
+    properties: RouteProps;
+  }[];
+}

@@ -27,7 +27,17 @@
 Стара мапа для накладання. Поля: `id`, `title`, `year`, `author`, `license`, `licenseUrl`, `attribution`, `source`, `type`: `image` або `xyz`, `url`, `coordinates` (для `image`: 4 кути NW, NE, SE, SW), `periods`.
 
 ## routes/<id>.geojson
-Лінії та полігони для анімацій: властивості `id`, `period`, `kind` (`military | trade | border | growth`), `title`, `from`, `to`, `sources`.
+Анімовані мапи. Файл FeatureCollection з додатковим полем `animation`:
+```json
+"animation": { "event": "vaci-csata-1849", "from": "1849-04-08", "to": "1849-04-10T18:00", "title": { "uk": "..." }, "note": { "uk": "..." } }
+```
+Анімація показується на сторінці події `event`. Кожен feature має `properties`:
+- `id`, `period`, `kind`: `military | trade | transport | border | growth`
+- `title`, `note` (локалізовані), `side` (`hu`, `at`, `ru` задають колір сторони)
+- `start`, `end`: момент початку і кінця руху, формати `"324"`, `"1849-04-10"`, `"1849-04-10T12:00"`. Лінія «малюється» від `start` до `end`, точка з'являється у `start`.
+- для `kind: growth` на точці: `values: [{ "date": "1850", "value": 988 }, ...]`, коло росте за значенням.
+- `sources` обов'язкові для кожного feature.
+Геометрія: `LineString` (рух), `Point` (позиція або ріст), `Polygon` (територія, проявляється між `start` і `end`).
 
 ## texts/uk/<period-id>.md, texts/hu/<period-id>.md
 Довгий текст періоду. Угорський варіант необов'язковий.

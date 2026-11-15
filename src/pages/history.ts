@@ -1,4 +1,4 @@
-import { eventById, events, periodById, periodText, periods, placeById, places } from '../data';
+import { eventById, events, periodById, periodText, periods, placeById, places, routes, routesForEvent } from '../data';
 import { formatYear, getLang, lt, t } from '../i18n';
 import { eventCard, md, placeCard } from '../ui/render';
 
@@ -21,6 +21,7 @@ export function periodPage(id: string): string {
   const text = periodText(id, getLang());
   const pl = places.filter((x) => x.periods.includes(id));
   const ev = events.filter((x) => x.period === id);
+  const an = routes.filter((r) => r.animation?.event && r.features.some((f) => f.properties.period === id));
   const list = (items: { href: string; title: string; sub: string }[]) =>
     items.length
       ? `<div class="card-list">${items.map((i) => `<a href="${i.href}" style="--c:${p.color}"><strong>${esc(i.title)}</strong><p>${esc(i.sub)}</p></a>`).join('')}</div>`
@@ -34,6 +35,7 @@ export function periodPage(id: string): string {
     <div class="prose">${text ? md(text) : `<p class="empty">${t('noText')}</p>`}</div>
     ${pl.length ? `<h2>${t('places')}</h2>` : ''}${list(pl.map((x) => ({ href: `#/place/${x.id}`, title: lt(x.name), sub: lt(x.summary) })))}
     ${ev.length ? `<h2>${t('events')}</h2>` : ''}${list(ev.map((x) => ({ href: `#/event/${x.id}`, title: lt(x.title), sub: lt(x.summary) })))}
+    ${an.length ? `<h2>${t('animations')}</h2>` : ''}${list(an.map((x) => ({ href: `#/event/${x.animation!.event}`, title: lt(x.animation!.title), sub: lt(x.animation!.note) })))}
   `;
 }
 
@@ -47,5 +49,8 @@ export function eventPage(id: string): string {
   const e = eventById(id);
   if (!e) return `<p class="empty">${t('notFound')}</p>`;
   const back = e.places[0] ? `#/map?period=${e.period}&place=${e.places[0]}` : `#/map?period=${e.period}`;
-  return `<a class="back" href="${back}">← ${t('showOnMap')}</a>${eventCard(e)}`;
+  const anims = routesForEvent(id)
+    .map((r, i) => `<section class="anim" data-anim="${i}"><h2>${t('animation')}: ${esc(lt(r.animation!.title))}</h2>${r.animation?.note ? `<p class="meta">${esc(lt(r.animation.note))}</p>` : ''}<div class="anim-host"></div>${r.features.some((f) => f.geometry.type === 'LineString') ? `<p class="meta">${t('reconstruction')}</p>` : ''}</section>`)
+    .join('');
+  return `<a class="back" href="${back}">← ${t('showOnMap')}</a>${eventCard(e)}${anims}`;
 }

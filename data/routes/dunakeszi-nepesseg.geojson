@@ -1,0 +1,67 @@
+{
+ "type": "FeatureCollection",
+ "animation": {
+  "event": "onallosodas-1910-1921",
+  "from": "1768",
+  "to": "1910",
+  "title": {
+   "uk": "Зростання населення Dunakeszi, 1768–1910",
+   "hu": "Dunakeszi népességének növekedése, 1768–1910"
+  },
+  "note": {
+   "uk": "Коло росте пропорційно до кількості мешканців за роками, наведеними в статті про Dunakeszi; між точками значення інтерпольовано.",
+   "hu": "A kör a szócikkben megadott lakosságszámokkal arányosan nő; a köztes értékek interpoláltak."
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.1381,
+     47.6297
+    ]
+   },
+   "properties": {
+    "id": "dk-nepesseg",
+    "period": "long-19",
+    "kind": "growth",
+    "title": {
+     "uk": "Dunakeszi, мешканців",
+     "hu": "Dunakeszi, lakos"
+    },
+    "values": [
+     {
+      "date": "1768",
+      "value": 600
+     },
+     {
+      "date": "1785",
+      "value": 740
+     },
+     {
+      "date": "1850",
+      "value": 988
+     },
+     {
+      "date": "1910",
+      "value": 4980
+     }
+    ],
+    "sources": [
+     {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "1768: 600 мешканців; перепис 1785: 740; 1850: 988; 1910: 4980 (розділи про XVIII і XIX століття)."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Dunakeszi",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Dunakeszi",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  }
+ ]
+}

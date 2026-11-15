@@ -1,5 +1,6 @@
 import './style.css';
-import { histMaps, placeById, places } from './data';
+import { histMaps, placeById, places, routesForEvent } from './data';
+import { mountAnimation, type AnimHandle } from './anim';
 import { getLang, lt, setLang, t } from './i18n';
 import { createMap, type MapController } from './map';
 import { eventPage, historyIndex, periodPage, placePage } from './pages/history';
@@ -34,6 +35,7 @@ const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as 
 let state: { period: string | null; place: string | null } = { period: null, place: null };
 let mapCtl: MapController | null = null;
 let route: Route = { page: 'map' };
+let anims: AnimHandle[] = [];
 
 function ensureMap(): MapController {
   if (!mapCtl) {
@@ -100,11 +102,20 @@ function render() {
   }
   const page = $('page');
   page.scrollTop = 0;
+  anims.forEach((a) => a.destroy());
+  anims = [];
   switch (route.page) {
     case 'history': page.innerHTML = historyIndex(); break;
     case 'period': page.innerHTML = periodPage(route.id); break;
     case 'place': page.innerHTML = placePage(route.id); break;
-    case 'event': page.innerHTML = eventPage(route.id); break;
+    case 'event': {
+      page.innerHTML = eventPage(route.id);
+      const rs = routesForEvent(route.id);
+      page.querySelectorAll<HTMLElement>('.anim-host').forEach((host, i) => {
+        if (rs[i]) anims.push(mountAnimation(host, rs[i]));
+      });
+      break;
+    }
   }
 }
 

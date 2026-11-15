@@ -102,3 +102,15 @@ figcaption { font-size: 12px; color: var(--muted); }
 #view-map .maplibregl-ctrl-bottom-left, #view-map .maplibregl-ctrl-bottom-right { bottom: calc(56px + env(safe-area-inset-bottom)); }
 .footnotes { word-break: break-word; }
 .prose sup + sup::before { content: ", "; color: var(--muted); }
+
+/* Анімовані мапи на сторінці події */
+.anim { margin-top: 20px; }
+.anim-map { height: 58vh; min-height: 320px; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); }
+.anim-ctl { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+.anim-play { width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: #fff; font-size: 18px; flex: none; }
+.anim-range { flex: 1; }
+.anim-time { font-variant-numeric: tabular-nums; font-size: 14px; color: var(--muted); white-space: nowrap; }
+.anim-legend { list-style: none; padding: 0; margin: 8px 0 0; font-size: 14px; }
+.anim-legend li { display: flex; gap: 8px; align-items: baseline; margin: 2px 0; }
+.anim-legend .sw { width: 14px; height: 14px; border-radius: 3px; flex: none; position: relative; top: 2px; }
+.anim-legend small { color: var(--muted); }
