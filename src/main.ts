@@ -1,5 +1,9 @@
 import './style.css';
-import { histMaps, placeById, places, routesForEvent } from './data';
+import { registerSW } from 'virtual:pwa-register';
+
+// Офлайн: сервіс-воркер кешує застосунок, старі мапи, вирізку тайлів і шрифти
+registerSW({ immediate: true });
+import { basemaps, histMaps, placeById, places, routesForEvent } from './data';
 import { mountAnimation, type AnimHandle } from './anim';
 import { mountCompare, type CompareHandle } from './compare';
 import { getLang, lt, setLang, t } from './i18n';
@@ -21,6 +25,7 @@ app.innerHTML = `
   <main>
     <section id="view-map" class="view">
       <div id="map"></div>
+      <select id="basemap-select" class="basemap-select" aria-label="basemap"></select>
       <div id="overlay-ctl" class="overlay-ctl" hidden>
         <select id="overlay-select"></select>
         <input id="overlay-opacity" type="range" min="0" max="1" step="0.05" value="0.7" />
@@ -61,6 +66,13 @@ function renderChrome() {
   $('tab-compare').classList.toggle('active', route.page === 'compare');
 }
 
+function renderBasemapCtl(ctl: MapController) {
+  const sel = $<HTMLSelectElement>('basemap-select');
+  sel.innerHTML = basemaps.map((b) => `<option value="${b.id}">${lt(b.title)}</option>`).join('');
+  sel.value = ctl.currentBasemap();
+  sel.onchange = () => ctl.setBasemap(sel.value);
+}
+
 function renderOverlayCtl(ctl: MapController) {
   const box = $('overlay-ctl');
   const sel = $<HTMLSelectElement>('overlay-select');
@@ -77,6 +89,7 @@ function renderMapView() {
   ctl.setPeriod(state.period);
   ctl.setSelected(state.place);
   renderTimeline($('timeline'), state.period, (id) => navigate(`#/map${id ? `?period=${id}` : ''}`));
+  renderBasemapCtl(ctl);
   renderOverlayCtl(ctl);
   const sheet = $('sheet');
   const place = state.place ? placeById(state.place) : undefined;

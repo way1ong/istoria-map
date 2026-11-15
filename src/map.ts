@@ -13,13 +13,13 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 
 setWorkerUrl(workerUrl);
-import { histMaps, periodById, places } from './data';
+import { basemaps, histMaps, periodById, places } from './data';
+import { basemapStyle, getPreferredBasemap, setPreferredBasemap } from './basemap';
 import { lt } from './i18n';
 import type { HistMap, Place } from './types';
 
 // Центр: околиці Göd. Стартовий вигляд охоплює Dunakeszi — Göd — Vác.
 const CENTER: [number, number] = [19.14, 47.7];
-const STYLE_URL = 'https://tiles.openfreemap.org/styles/liberty';
 const SRC = 'places';
 const OVERLAY_SRC = 'overlay';
 const OVERLAY_LAYER = 'overlay-layer';
@@ -32,6 +32,8 @@ export interface MapController {
   setOverlay(mapId: string | null): void;
   setOverlayOpacity(v: number): void;
   refreshLabels(): void;
+  setBasemap(id: string): void;
+  currentBasemap(): string;
 }
 
 /**
@@ -82,9 +84,10 @@ function featureCollection(periodId: string | null, lang: string) {
 }
 
 export function createMap(container: HTMLElement, onSelect: (id: string | null) => void): MapController {
+  let basemap = getPreferredBasemap();
   const map = new MLMap({
     container,
-    style: STYLE_URL,
+    style: basemapStyle(basemap),
     center: CENTER,
     zoom: 11,
     attributionControl: { compact: true },
@@ -99,7 +102,8 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   const opacityExpr = (sel: string | null): ExpressionSpecification | number =>
     sel ? ['case', ['==', ['get', 'id'], sel], 1, 0.25] : 1;
 
-  map.on('load', () => {
+  const addLayers = () => {
+    if (map.getSource(SRC)) return;
     map.addSource(SRC, { type: 'geojson', data: featureCollection(currentPeriod, lang) });
     map.addLayer({
       id: 'places-halo',
@@ -142,10 +146,14 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       map.on('mouseenter', layer, () => (map.getCanvas().style.cursor = 'pointer'));
       map.on('mouseleave', layer, () => (map.getCanvas().style.cursor = ''));
     }
-    map.on('click', (e: MapMouseEvent) => {
-      const hits = map.queryRenderedFeatures(e.point, { layers: ['places-dot', 'places-halo'] });
-      if (hits.length === 0) onSelect(null);
-    });
+  };
+  map.on('load', addLayers);
+  // Після зміни стилю підкладки шари місць і накладання треба додати знову
+  map.on('style.load', () => { addLayers(); applySelection(); if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); });
+  map.on('click', (e: MapMouseEvent) => {
+    if (!map.getLayer('places-dot')) return;
+    const hits = map.queryRenderedFeatures(e.point, { layers: ['places-dot', 'places-halo'] });
+    if (hits.length === 0) onSelect(null);
   });
 
   const refresh = () => {
@@ -182,6 +190,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   };
 
   let overlayOpacity = 0.7;
+  let currentOverlay: HistMap | null = null;
 
   return {
     map,
@@ -202,6 +211,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     setOverlay(mapId) {
       const run = () => {
         const m = mapId ? histMaps.find((x) => x.id === mapId) : undefined;
+        currentOverlay = m ?? null;
         if (!m) removeOverlay();
         else addOverlay(m, overlayOpacity);
       };
@@ -216,5 +226,13 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       lang = document.documentElement.lang || 'uk';
       if (map.isStyleLoaded()) refresh();
     },
+    setBasemap(id) {
+      const b = basemaps.find((x) => x.id === id);
+      if (!b || b.id === basemap.id) return;
+      basemap = b;
+      setPreferredBasemap(id);
+      map.setStyle(basemapStyle(b));
+    },
+    currentBasemap() { return basemap.id; },
   };
 }

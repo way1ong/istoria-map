@@ -1,21 +1,12 @@
 import { Map as MLMap, Marker, type LngLatLike, type StyleSpecification } from 'maplibre-gl';
+import { basemapStyle, getPreferredBasemap, setPreferredBasemap } from './basemap';
 import { basemaps, histMaps, periodById, places } from './data';
 import { lt, t } from './i18n';
-import type { Basemap, HistMap, Place } from './types';
+import type { HistMap, Place } from './types';
 
 export interface CompareHandle { destroy(): void }
 
-const EMPTY_STYLE: StyleSpecification = { version: 8, sources: {}, layers: [{ id: 'bg', type: 'background', paint: { 'background-color': '#efe9dc' } }], glyphs: 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf' };
-
-function basemapStyle(b: Basemap): StyleSpecification | string {
-  if (b.type === 'style' && b.url) return b.url;
-  return {
-    version: 8,
-    sources: { base: { type: 'raster', tiles: b.tiles ?? [], tileSize: b.tileSize ?? 256, maxzoom: b.maxzoom ?? 18, attribution: b.attribution } },
-    layers: [{ id: 'base', type: 'raster', source: 'base' }],
-    glyphs: 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf',
-  };
-}
+const EMPTY_STYLE: StyleSpecification = { version: 8, sources: {}, layers: [{ id: 'bg', type: 'background', paint: { 'background-color': '#efe9dc' } }], glyphs: 'fonts/{fontstack}/{range}.pbf' };
 
 function placesGeo(periodId: string | null, lang: string) {
   return {
@@ -48,7 +39,8 @@ function addOverlay(map: MLMap, m: HistMap) {
 /** Дві синхронні мапи: стара зверху, сучасна знизу; хрестик і дзеркальний курсор. */
 export function mountCompare(container: HTMLElement, opts: { mapId?: string; periodId?: string | null; baseId?: string; onChange: (q: { map: string; base: string }) => void; onPlace: (id: string) => void }): CompareHandle {
   const hm = histMaps.find((m) => m.id === opts.mapId) ?? histMaps[0];
-  const base = basemaps.find((b) => b.id === opts.baseId) ?? basemaps[0];
+  const base = basemaps.find((b) => b.id === opts.baseId) ?? getPreferredBasemap();
+  setPreferredBasemap(base.id);
   container.innerHTML = `
     <div class="cmp-bar">
       <select class="cmp-map">${histMaps.map((m) => `<option value="${m.id}" ${m.id === hm?.id ? 'selected' : ''}>${lt(m.title)} (${m.year})</option>`).join('')}</select>

@@ -56,7 +56,10 @@ main { flex: 1; min-height: 0; position: relative; }
 .chip.active .dot { background: #fff; }
 .chip small { color: inherit; opacity: .75; }
 
-/* Панель старих мап */
+/* Перемикач підкладки і панель старих мап */
+.basemap-select { position: absolute; top: 10px; left: 10px; right: 56px; font: inherit; font-size: 13px; background: var(--card); color: inherit; border: 1px solid var(--line); border-radius: 10px; padding: 6px 8px; }
+.overlay-ctl { top: 52px !important; }
+
 .overlay-ctl {
   position: absolute; top: 10px; left: 10px; right: 56px; display: flex; gap: 8px; align-items: center;
   background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 6px 8px; font-size: 14px;

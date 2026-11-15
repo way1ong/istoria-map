@@ -25,7 +25,7 @@
 ## Стек
 - Vite + TypeScript, без фреймворку. Хеш-маршрутизація (`#/map`, `#/history`, `#/place/:id`, `#/event/:id`, `#/period/:id`).
 - Мапа: MapLibre GL JS. Базовий стиль: OpenFreeMap (`https://tiles.openfreemap.org/styles/liberty`), дані OpenStreetMap, ODbL.
-- Офлайн (пізніший етап): PMTiles-вирізка регіону з Protomaps у `public/tiles/`, PWA через vite-plugin-pwa.
+- Офлайн: PMTiles-вирізка регіону з Protomaps у `public/tiles/`, стиль `public/basemap-offline.json`, PWA через vite-plugin-pwa. Підкладки описані в `data/basemaps.json` (модуль `src/basemap.ts`).
 - Старі мапи: `data/maps/*.json`; типи `image` (скан із 4 кутовими координатами) і `xyz` (тайли, напр. Allmaps).
 - Тексти: Markdown у `data/texts/<lang>/<period>.md`, рендер через `marked`.
 - Хостинг: GitHub Pages, base `/istoria-map/`.
@@ -58,7 +58,8 @@ src/                   код застосунку
 7. ✅ Анімації (`data/routes/*.geojson`, модуль `src/anim.ts`): навала 1241, битва 1684, битва 1849, перший потяг 1846, вал Чорса, ріст Dunakeszi, забудова 1885/1904 за аркушами Spezialkarte. Лінії між пунктами з джерел, позначені як реконструкція. Далі: більше подій, полігони зростання поселень за старими мапами.
 8. ✅ Режим «Порівняти» (`#/compare`, `src/compare.ts`): стара мапа зверху, сучасна знизу, синхронний рух, хрестик, дзеркальний курсор; підкладки в `data/basemaps.json` (OpenFreeMap і Sentinel-2 cloudless від EOX, CC BY-NC-SA).
 9. Зниклі об'єкти (`vanished: true`, типи farmstead/inn/mill): хутори й пусти з аркушів 1885/1904 і статей. Далі: решта підписів після отримання сканів у повній роздільності.
-10. Офлайн: PMTiles + PWA.
+10. ✅ Офлайн: PWA (vite-plugin-pwa, autoUpdate) кешує застосунок, старі мапи, шрифти (`public/fonts`, з OpenFreeMap) і вирізку `public/tiles/god.pmtiles` (Protomaps 20251027: z0–6 лише тайли над Göd, z7–9 ширша околиця, z10–12 регіон, z13–14 ядро). Стиль `public/basemap-offline.json` генерує `scripts/build-offline-style.mjs` (Protomaps light без іконок). Без мережі застосунок сам перемикається на підкладку «offline». Скрипт вирізки: скретчпад `tools/pm_extract.py` (curl range-запити, бо urllib через проксі зависав).
+11. Майбутнє: окрема мапа сигналів з застосунку для металошукача (Kotlin, окремий репозиторій). Дані імпортуються з телефона файлом GeoJSON/GeoPackage і зберігаються ЛИШЕ локально в браузері (IndexedDB або File System Access), ніколи в `data/` і ніколи в git, бо репозиторій публічний. Поля знахідки за макетом: номер, дата-час, координати з точністю, глибина (число + аудіо), категорія, ID і тон сигналу, нотатка, кліп, фото. На мапі сигналів ті самі підкладки, старі мапи й зниклі хутори, що й у режимі «Порівняти».
 
 ## Джерела, які вже перевірено
 - Pleiades (CC BY 3.0): https://pleiades.stoa.org/places/487248321 — форт Göd-Bócsaújtelep.
