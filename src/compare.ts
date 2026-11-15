@@ -44,7 +44,7 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   container.innerHTML = `
     <div class="cmp-bar">
       <select class="cmp-map">${histMaps.map((m) => `<option value="${m.id}" ${m.id === hm?.id ? 'selected' : ''}>${lt(m.title)} (${m.year})</option>`).join('')}</select>
-      <div class="cmp-base">${basemaps.map((b) => `<button data-base="${b.id}" class="${b.id === base.id ? 'active' : ''}">${lt(b.title).split(' (')[0]}</button>`).join('')}</div>
+      <div class="cmp-base">${basemaps.map((b) => `<button data-base="${b.id}" class="${b.id === base.id ? 'active' : ''}">${lt(b.short) || lt(b.title)}</button>`).join('')}</div>
     </div>
     <div class="cmp-pane cmp-top"><div class="cmp-map-el"></div><div class="cmp-cross"></div><span class="cmp-tag">${t('oldMap')}</span></div>
     <div class="cmp-pane cmp-bottom"><div class="cmp-map-el"></div><div class="cmp-cross"></div><span class="cmp-tag">${t('modernMap')}</span></div>

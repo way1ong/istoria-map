@@ -10,7 +10,11 @@
       "type": "style",
       "url": "https://tiles.openfreemap.org/styles/liberty",
       "attribution": "OpenFreeMap © OpenMapTiles, дані © OpenStreetMap",
-      "license": "ODbL"
+      "license": "ODbL",
+      "short": {
+        "uk": "Мапа",
+        "hu": "Térkép"
+      }
     },
     {
       "id": "s2cloudless-2024",
@@ -31,6 +35,10 @@
         "title": "OpenStreetMap wiki: Sentinel-2 (EOX tile template)",
         "url": "https://wiki.openstreetmap.org/wiki/Sentinel-2",
         "note": "Шаблон тайлів {z}/{y}/{x}; роки 2018–2024. Роздільність 10 м/px."
+      },
+      "short": {
+        "uk": "Sentinel-2",
+        "hu": "Sentinel-2"
       }
     },
     {
@@ -53,6 +61,10 @@
         "title": "Esri ArcGIS Blog: the new ArcGIS basemap layer service; Esri attribution docs",
         "url": "https://developers.arcgis.com/documentation/esri-and-data-attribution/",
         "note": "Шаблон тайлів з параметром token за блогом Esri; ліміт 2 млн тайлів/міс за сторінкою цін location.arcgis.com. Ключ створює користувач у своєму акаунті ArcGIS Location Platform з обмеженням на реферер way1ong.github.io; поле key у цьому файлі."
+      },
+      "short": {
+        "uk": "Esri",
+        "hu": "Esri"
       }
     }
   ]

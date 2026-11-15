@@ -139,6 +139,8 @@ export interface RouteCollection {
 export interface Basemap {
   id: string;
   title: LText;
+  /** Коротка назва для кнопок. */
+  short?: LText;
   type: 'style' | 'raster';
   url?: string;
   tiles?: string[];
