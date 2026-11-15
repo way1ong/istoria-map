@@ -1,0 +1,49 @@
+{
+  "id": "dunakeszi-hosi-emlekmu",
+  "name": {
+    "uk": "Пам'ятник полеглим у Першій світовій війні",
+    "hu": "Hősi emlékmű, Dunakeszi"
+  },
+  "type": "monument",
+  "coords": [
+    19.1308357,
+    47.6309052
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Вапняковий пам'ятник 1928 року на Szent István utca біля церкви Св. Михайла: вдова з двома сиротами внизу, солдат із прапором угорі, на дошках 116 імен.",
+    "hu": "1928-as mészkő emlékmű a Szent István utcán a Szent Mihály-templom mellett: özvegy két árvájával, felül katona a zászlóval, a táblákon 116 név."
+  },
+  "description": {
+    "uk": "За статтею про Dunakeszi, пам'ятник полеглим Першої світової війни поставлено 1928 року за дві хвилини ходу від церкви Св. Михайла (Szent István utca 29). Його виконали скульптори Sziegfried Pongrácz і József Reichenberger: у нижній частині мати-вдова обіймає двох сиріт, для яких позували місцеві мешканці, угорі солдат із подвійним хрестом тримає древко прапора; на мармурових дошках 116 імен загиблих, напис «1914–1918 hősei dicső emlékének emeltette Dunakeszi népe 1928»."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/World_War_I_memorial_%281928%29%2C_2016_Dunakeszi.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:World_War_I_memorial_(1928),_2016_Dunakeszi.jpg",
+      "caption": {
+        "uk": "Пам'ятник полеглим, 2016",
+        "hu": "A Hősi emlékmű, 2016"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділ «Hősi emlékmű»."
+    },
+    {
+      "title": "OpenStreetMap (Nominatim): Hősi emlékmű Dunakeszi",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Hősi+emlékmű+Dunakeszi",
+      "note": "Координати 47.6309052, 19.1308357 за OpenStreetMap (ODbL)."
+    }
+  ]
+}

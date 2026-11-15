@@ -40,21 +40,22 @@ main { flex: 1; min-height: 0; position: relative; }
 .view.active { display: block; }
 #map { position: absolute; inset: 0; }
 
-/* Шкала періодів над низом мапи */
+/* Повзунок за роками над низом мапи */
 .timeline {
-  position: absolute; left: 0; right: 0; bottom: 0; padding: 8px 8px calc(8px + env(safe-area-inset-bottom));
-  display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
-  background: linear-gradient(to top, var(--bg) 70%, transparent);
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  display: flex; gap: 10px; align-items: center;
+  background: linear-gradient(to top, var(--bg) 75%, transparent);
 }
-.timeline::-webkit-scrollbar { display: none; }
-.chip {
-  flex: none; padding: 8px 12px; border-radius: 999px; background: var(--card); border: 1px solid var(--line);
-  font-size: 14px; white-space: nowrap; box-shadow: 0 1px 3px rgba(0,0,0,.12); display: flex; align-items: center; gap: 6px;
-}
-.chip .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--c, var(--muted)); }
-.chip.active { border-color: var(--c, var(--accent)); background: var(--c, var(--accent)); color: #fff; }
-.chip.active .dot { background: #fff; }
-.chip small { color: inherit; opacity: .75; }
+.tl-all { flex: none; padding: 8px 12px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); font-size: 14px; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+.tl-all.active { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.tl-main { flex: 1; min-width: 0; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 6px 12px 4px; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+.tl-label { display: flex; align-items: center; gap: 6px; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tl-label .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+.tl-label .yr { color: var(--muted); font-variant-numeric: tabular-nums; }
+.tl-all-mode .tl-label { opacity: .55; }
+.tl-range { width: 100%; margin: 4px 0 0; accent-color: var(--c, var(--accent)); height: 28px; }
+.tl-ticks { display: flex; height: 4px; border-radius: 2px; overflow: hidden; margin: 0 2px; }
+.tl-ticks span { flex: 1; background: var(--c); opacity: .7; }
 
 /* Перемикач підкладки і панель старих мап */
 .basemap-select { position: absolute; top: 10px; left: 10px; right: 56px; font: inherit; font-size: 13px; background: var(--card); color: inherit; border: 1px solid var(--line); border-radius: 10px; padding: 6px 8px; }

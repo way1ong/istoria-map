@@ -1,0 +1,50 @@
+{
+  "id": "alag-nepomuki-kapolna",
+  "name": {
+    "uk": "Каплиця Св. Яна Непомуцького (каплиця товариства перегонів) в Alag",
+    "hu": "Nepomuki Szent János (Lovaregyleti) kápolna, Alag"
+  },
+  "type": "church",
+  "coords": [
+    19.1392206,
+    47.6240837
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Неоготична каплиця 1905–1906 років на Kápolna utca біля іподрому, збудована коштом трьох графських родин для мешканців Alag; пошкоджена вибухом складу боєприпасів 1952 року, відновлена 2003 року.",
+    "hu": "1905–1906-ban három grófi család adományából épült neogótikus kápolna a Kápolna utcában, a lóversenypálya közelében; az 1952-es lőszerraktár-robbanás megrongálta, 2003-ra állították helyre."
+  },
+  "description": {
+    "uk": "За статтею про Dunakeszi, каплицю Св. Яна Непомуцького, відому як каплиця товариства перегонів, збудовано в 1905–1906 роках на пожертви трьох графських родин для дедалі численніших вірян Alag, який 1910 року став окремою громадою; поруч працювала школа. Каплиця пережила обидві світові війни, але 8 вересня 1952 року вибух складу боєприпасів неподалік завдав їй значних пошкоджень, відновлених лише 2003 року. Стаття пов'язує появу каплиці також із парохом István Révész. Категорія Wikimedia Commons відносить будівлю до неоготики XX століття."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Dunakeszi%2C_alagi_lovaregyleti_k%C3%A1polna_2022_01.jpg",
+      "author": "Pasztilla (Attila Terbócs)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Dunakeszi,_alagi_lovaregyleti_k%C3%A1polna_2022_01.jpg",
+      "caption": {
+        "uk": "Каплиця в Alag, 2022",
+        "hu": "Az alagi kápolna, 2022"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділи «1910 és 1950 között» і «Nepomuki Szent János (Lovaregyleti) kápolna»."
+    },
+    {
+      "title": "OpenStreetMap (Nominatim): Nepomuki Szent János kápolna Dunakeszi",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Nepomuki+Szent+János+kápolna+Dunakeszi",
+      "note": "Координати 47.6240837, 19.1392206 за OpenStreetMap (ODbL)."
+    }
+  ]
+}

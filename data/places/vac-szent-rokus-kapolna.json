@@ -1,0 +1,50 @@
+{
+  "id": "vac-szent-rokus-kapolna",
+  "name": {
+    "uk": "Каплиця Св. Роха",
+    "hu": "Szent Rókus-kápolna"
+  },
+  "type": "church",
+  "coords": [
+    19.131261,
+    47.781607
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Каплиця, зведена на початку 1740-х років як обітниця під час епідемії чуми, за єпископа Mihály Frigyes Althann.",
+    "hu": "Az 1740-es évek elején, a pestisjárvány idején fogadalomból emelt kápolna Althann Mihály Frigyes püspök korában."
+  },
+  "description": {
+    "uk": "За статтею про Вац, каплицю Св. Роха звели, щоб зупинити епідемію чуми, яка лютувала на початку 1740-х років. Категорія Wikimedia Commons пов'язує каплицю з єпископом Michael Friedrich von Althann; пам'ятка з реєстровим номером 7550. Св. Рох традиційно вважався заступником від чуми, звідси посвята."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/V%C3%A1c%2C_Szent_R%C3%B3kus-k%C3%A1polna_2021_01.jpg",
+      "author": "Pasztilla (Attila Terbócs)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A1c,_Szent_R%C3%B3kus-k%C3%A1polna_2021_01.jpg",
+      "caption": {
+        "uk": "Каплиця Св. Роха, 2021",
+        "hu": "Szent Rókus-kápolna, 2021"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділ «Újkor»: Szent Rókus-kápolna і чума 1740-х."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Saint Roch Chapel, V%C3%A1c",
+      "url": "https://commons.wikimedia.org/wiki/Category:Saint_Roch_Chapel,_V%C3%A1c",
+      "note": "Object location 47.781607, 19.131261."
+    }
+  ]
+}

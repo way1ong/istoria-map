@@ -32,5 +32,18 @@
       "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Nemeskéri-Kiss-kúria+Göd",
       "note": "Координати 47.68007, 19.14556 за даними OpenStreetMap (ODbL)."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Nemesk%C3%A9ry-Kiss_Country_House_Park_gate%2C_2020_G%C3%B6d.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Nemesk%C3%A9ry-Kiss_Country_House_Park_gate,_2020_G%C3%B6d.jpg",
+      "caption": {
+        "uk": "Брама парку садиби Nemeskéri-Kiss, 2020",
+        "hu": "A Nemeskéri-Kiss-kúria parkjának kapuja, 2020"
+      }
+    }
   ]
 }
