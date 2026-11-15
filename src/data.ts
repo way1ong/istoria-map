@@ -26,7 +26,10 @@ const textModules = import.meta.glob<string>('../data/texts/*/*.md', {
 
 export const periods: Period[] = (periodsJson as { periods: Period[] }).periods;
 export const places: Place[] = Object.values(placeModules);
-export const basemaps: Basemap[] = (basemapsJson as { basemaps: Basemap[] }).basemaps;
+export const basemaps: Basemap[] = (basemapsJson as { basemaps: Basemap[] }).basemaps
+  // Підкладки з {key} в адресі доступні лише із заповненим ключем.
+  .filter((b) => !(b.tiles ?? []).some((u) => u.includes('{key}')) || (b.key ?? '').trim() !== '')
+  .map((b) => ({ ...b, tiles: b.tiles?.map((u) => u.replace('{key}', encodeURIComponent(b.key ?? ''))) }));
 export const events: HistEvent[] = Object.values(eventModules);
 export const histMaps: HistMap[] = Object.values(mapModules);
 export const routes: RouteCollection[] = Object.values(routeModules);

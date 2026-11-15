@@ -145,6 +145,7 @@ if (bm) (bm.basemaps ?? []).forEach((b, i) => {
   if (!['style', 'raster'].includes(b.type)) err(f, 'type має бути style | raster');
   if (b.type === 'style' && typeof b.url !== 'string') err(f, 'url відсутній');
   if (b.type === 'raster' && !Array.isArray(b.tiles)) err(f, 'tiles має бути масивом');
+  if (b.key !== undefined && typeof b.key !== 'string') err(f, 'key має бути рядком');
   for (const k of ['attribution', 'license']) if (typeof b[k] !== 'string') err(f, `${k} відсутній`);
 });
 

@@ -142,6 +142,8 @@ export interface Basemap {
   type: 'style' | 'raster';
   url?: string;
   tiles?: string[];
+  /** Ключ API для сервісів, що його вимагають; підставляється замість {key}. */
+  key?: string;
   tileSize?: number;
   maxzoom?: number;
   attribution: string;
