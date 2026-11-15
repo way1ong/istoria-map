@@ -1,0 +1,99 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1f2937;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --accent: #b45309;
+  --card: #ffffff;
+  --sheet-shadow: 0 -4px 24px rgba(0, 0, 0, 0.18);
+  --header-h: 52px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111827;
+    --fg: #f3f4f6;
+    --muted: #9ca3af;
+    --line: #374151;
+    --accent: #f59e0b;
+    --card: #1f2937;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+#app { height: 100%; display: flex; flex-direction: column; }
+a { color: var(--accent); }
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+
+header.topbar {
+  height: var(--header-h); display: flex; align-items: center; gap: 8px; padding: 0 12px;
+  padding-top: env(safe-area-inset-top); border-bottom: 1px solid var(--line); background: var(--bg); flex: none;
+}
+header.topbar h1 { font-size: 16px; margin: 0; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tabs { display: flex; gap: 4px; }
+.tabs button { padding: 6px 10px; border-radius: 8px; color: var(--muted); }
+.tabs button.active { background: var(--line); color: var(--fg); font-weight: 600; }
+.lang button { padding: 6px 8px; border-radius: 8px; color: var(--muted); font-weight: 600; }
+.lang button.active { color: var(--fg); text-decoration: underline; }
+
+main { flex: 1; min-height: 0; position: relative; }
+.view { position: absolute; inset: 0; display: none; }
+.view.active { display: block; }
+#map { position: absolute; inset: 0; }
+
+/* Шкала періодів над низом мапи */
+.timeline {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 8px 8px calc(8px + env(safe-area-inset-bottom));
+  display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  background: linear-gradient(to top, var(--bg) 70%, transparent);
+}
+.timeline::-webkit-scrollbar { display: none; }
+.chip {
+  flex: none; padding: 8px 12px; border-radius: 999px; background: var(--card); border: 1px solid var(--line);
+  font-size: 14px; white-space: nowrap; box-shadow: 0 1px 3px rgba(0,0,0,.12); display: flex; align-items: center; gap: 6px;
+}
+.chip .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--c, var(--muted)); }
+.chip.active { border-color: var(--c, var(--accent)); background: var(--c, var(--accent)); color: #fff; }
+.chip.active .dot { background: #fff; }
+.chip small { color: inherit; opacity: .75; }
+
+/* Панель старих мап */
+.overlay-ctl {
+  position: absolute; top: 10px; left: 10px; right: 56px; display: flex; gap: 8px; align-items: center;
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 6px 8px; font-size: 14px;
+}
+.overlay-ctl select { flex: 1; min-width: 0; font: inherit; background: transparent; color: inherit; border: none; }
+.overlay-ctl input[type=range] { width: 90px; }
+.overlay-ctl[hidden] { display: none; }
+
+/* Нижня картка */
+.sheet {
+  position: absolute; left: 0; right: 0; bottom: 0; max-height: 60%; overflow: auto; background: var(--card);
+  border-radius: 16px 16px 0 0; box-shadow: var(--sheet-shadow); padding: 12px 16px calc(16px + env(safe-area-inset-bottom));
+  transform: translateY(100%); transition: transform .25s ease;
+}
+.sheet.open { transform: none; }
+.sheet .handle { width: 40px; height: 4px; border-radius: 2px; background: var(--line); margin: 0 auto 10px; }
+.sheet h2 { font-size: 18px; margin: 0 0 6px; }
+.sheet .close { position: absolute; top: 8px; right: 10px; font-size: 22px; color: var(--muted); padding: 4px 8px; }
+.meta { color: var(--muted); font-size: 13px; margin: 2px 0 8px; display: flex; flex-wrap: wrap; gap: 6px 12px; }
+.badge { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; color: #fff; background: var(--c, var(--muted)); }
+.btn { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; margin-top: 8px; }
+
+/* Сторінки */
+.page { position: absolute; inset: 0; overflow: auto; padding: 16px 16px calc(24px + env(safe-area-inset-bottom)); }
+.page h1 { font-size: 22px; margin: 4px 0 8px; }
+.page h2 { font-size: 18px; margin: 20px 0 8px; }
+.page img { max-width: 100%; border-radius: 8px; }
+.page .back { color: var(--muted); font-size: 14px; text-decoration: none; }
+.card-list { display: grid; gap: 10px; margin-top: 12px; }
+.card-list a { display: block; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; color: inherit; background: var(--card); border-left: 6px solid var(--c, var(--line)); }
+.card-list a .years { color: var(--muted); font-size: 13px; }
+.card-list a p { margin: 4px 0 0; font-size: 14px; color: var(--muted); }
+.sources { font-size: 13px; color: var(--muted); }
+.sources li { margin-bottom: 4px; }
+figure { margin: 12px 0; }
+figcaption { font-size: 12px; color: var(--muted); }
+.prose p { margin: 8px 0; }
+.prose sup a { text-decoration: none; }
+.empty { color: var(--muted); text-align: center; margin-top: 40px; }
+.marker-label { font-size: 12px; }

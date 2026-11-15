@@ -1,0 +1,20 @@
+{
+  "id": "god-bocsaujtelep-fort",
+  "name": { "uk": "Пізньоримський форт Ґед-Бочаюйтелеп (Göd-Bócsaújtelep)", "hu": "Göd-Bócsaújtelep késő római erőd" },
+  "type": "archaeological",
+  "coords": [19.163, 47.683],
+  "coordsPrecision": "approximate",
+  "periods": ["roman-barbaricum"],
+  "summary": {
+    "uk": "Недобудований пізньоримський форт часів імператора Валентиніана на так званому Limes Sarmatiae, на лівому березі Дунаю за межами Паннонії. Координати округлені.",
+    "hu": "Be nem fejezett késő római erőd Valentinianus korából a Limes Sarmatiae mentén, a Duna bal partján, Pannonián kívül. A koordináták kerekítettek."
+  },
+  "description": {
+    "uk": "За базою Pleiades, це недобудований пізньоримський форт із правління Валентиніана на Limes Sarmatiae.\n\nЗа звітами в базі Угорського національного музею, на руїни на південний захід від Göd-Bócsaújtelep у 1961 році звернув увагу вчитель Károly Kőrös після знахідки цегли зі штампом. Розкопки у 2000–2001 роках вів Zsolt Mráv; попередній звіт опубліковано німецькою. Пам'ятка має охоронну зону.\n\nДати правління, план форту й подробиці розкопок ще належить перевірити за повним текстом публікацій (див. джерела)."
+  },
+  "sources": [
+    { "title": "Pleiades: Göd-Bócsaújtelep", "url": "https://pleiades.stoa.org/places/487248321", "note": "Опис, координати (точність 5 м, тут округлено до ~100 м). Ліцензія CC BY 3.0." },
+    { "title": "Archeodatabase HNM: Göd, Bócsaújtelep (Ilkamajor)", "url": "https://archeodatabase.hnm.hu/en/node/3785", "note": "Звіти про розкопки та спостереження; знахідка 1961 року, розкопки 2000–2001." },
+    { "title": "Mráv Zs., Archäologische Forschungen 2000–2001 im Gebiet der spätrömischen Festung von Göd-Bócsaújtelep. Vorbericht", "url": "https://zenon.dainst.org/Record/001045831", "note": "Повний текст ще не прочитано." }
+  ]
+}
