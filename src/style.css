@@ -101,3 +101,4 @@ figcaption { font-size: 12px; color: var(--muted); }
 /* Атрибуцію і масштаб піднімаємо над шкалою періодів */
 #view-map .maplibregl-ctrl-bottom-left, #view-map .maplibregl-ctrl-bottom-right { bottom: calc(56px + env(safe-area-inset-bottom)); }
 .footnotes { word-break: break-word; }
+.prose sup + sup::before { content: ", "; color: var(--muted); }
