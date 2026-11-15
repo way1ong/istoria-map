@@ -29,12 +29,16 @@ function checkSources(file, sources) {
     if (s.url !== undefined && !/^https?:\/\//.test(s.url)) err(file, `sources[${i}].url має починатися з http(s)://`);
   });
 }
-function checkCoords(file, coords, label = 'coords') {
+// Місця й події мають лежати в околиці Göd; маршрути (походи, вали) можуть виходити далеко за неї, але лишатися в Карпатському басейні.
+const REGION = [18, 20.5, 46.5, 48.6];
+const WIDE = [16, 24, 45.5, 50];
+function checkCoords(file, coords, label = 'coords', box = REGION) {
   if (!Array.isArray(coords) || coords.length !== 2 || coords.some((n) => typeof n !== 'number'))
     return err(file, `${label} має бути [lon, lat]`);
   const [lon, lat] = coords;
-  if (lon < 18 || lon > 20.5 || lat < 46.5 || lat > 48.6)
-    err(file, `${label} [${lon}, ${lat}] поза регіоном (очікується околиця Göd); можливо, переплутано lon/lat`);
+  const [x0, x1, y0, y1] = box;
+  if (lon < x0 || lon > x1 || lat < y0 || lat > y1)
+    err(file, `${label} [${lon}, ${lat}] поза очікуваною областю; можливо, переплутано lon/lat`);
 }
 function checkPhotos(file, photos) {
   if (photos === undefined) return;
@@ -154,7 +158,7 @@ if (existsSync(routesDir))
       for (const k of ['start', 'end']) if (pr[k] !== undefined && !dtRe.test(pr[k])) err(file, `features[${i}].${k} у неправильному форматі`);
       if (!['Point', 'LineString', 'Polygon'].includes(ft.geometry?.type)) err(file, `features[${i}]: geometry має бути Point | LineString | Polygon`);
       const coords = ft.geometry?.type === 'Point' ? [ft.geometry.coordinates] : ft.geometry?.type === 'LineString' ? ft.geometry.coordinates : (ft.geometry?.coordinates ?? []).flat();
-      (coords ?? []).forEach((c, j) => checkCoords(`${file} features[${i}]`, c, `coords[${j}]`));
+      (coords ?? []).forEach((c, j) => checkCoords(`${file} features[${i}]`, c, `coords[${j}]`, WIDE));
       if (pr.values) pr.values.forEach((v, j) => { if (!dtRe.test(v.date ?? '') || typeof v.value !== 'number') err(file, `features[${i}].values[${j}] потребує date і числове value`); });
       checkSources(`${file} features[${i}]`, pr.sources);
     });

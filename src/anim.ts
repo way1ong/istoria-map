@@ -11,7 +11,7 @@ export const KIND_COLORS: Record<RouteProps['kind'], string> = {
   border: '#6a1b9a',
   growth: '#2e7d32',
 };
-const SIDE_COLORS: Record<string, string> = { hu: '#c62828', at: '#1565c0', ru: '#4e342e' };
+const SIDE_COLORS: Record<string, string> = { hu: '#c62828', at: '#1565c0', ru: '#4e342e', mn: '#37474f' };
 
 /** "1849-04-10T12:00" | "1849-04-10" | "1849-04" | "324" | "-500" → мс UTC */
 export function parseDate(s: string): number {

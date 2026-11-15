@@ -1,0 +1,230 @@
+{
+ "type": "FeatureCollection",
+ "animation": {
+  "event": "onallosodas-1910-1921",
+  "from": "1880",
+  "to": "1910",
+  "title": {
+   "uk": "Забудова на військових мапах 1885 і 1904 років",
+   "hu": "Beépített területek az 1885-ös és 1904-es katonai térképeken"
+  },
+  "note": {
+   "uk": "Контури обведено вручну по аркушах Spezialkarte: Вац за аркушем 1885 року, Dunakeszi, Alag і Göd за аркушем 1904 року. Порівняйте з сучасною забудовою на підкладці: усе поза контурами виросло пізніше. Точність ±100 м.",
+   "hu": "A körvonalak a Spezialkarte lapjairól kézzel átrajzolva: Vác az 1885-ös, Dunakeszi, Alag és Göd az 1904-es lapról. A mai beépítettség az alaptérképen látható."
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       19.11977,
+       47.79046
+      ],
+      [
+       19.13609,
+       47.79167
+      ],
+      [
+       19.14225,
+       47.78324
+      ],
+      [
+       19.14153,
+       47.7683
+      ],
+      [
+       19.1234,
+       47.76686
+      ],
+      [
+       19.11796,
+       47.77601
+      ],
+      [
+       19.11977,
+       47.79046
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "vac-1885",
+    "period": "long-19",
+    "kind": "growth",
+    "start": "1885",
+    "end": "1886",
+    "title": {
+     "uk": "Вац, забудова 1885",
+     "hu": "Vác beépített területe 1885-ben"
+    },
+    "sources": [
+     {
+      "title": "Spezialkarte 14:XX Nógrád und Waitzen (1885), NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
+      "note": "Забудову обведено вручну по вирівняному скану; точність ±100 м."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       19.11208,
+       47.64096
+      ],
+      [
+       19.13558,
+       47.64049
+      ],
+      [
+       19.13698,
+       47.62884
+      ],
+      [
+       19.13137,
+       47.62232
+      ],
+      [
+       19.11384,
+       47.62302
+      ],
+      [
+       19.11033,
+       47.63234
+      ],
+      [
+       19.11208,
+       47.64096
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "dk-1904",
+    "period": "long-19",
+    "kind": "growth",
+    "start": "1904",
+    "end": "1905",
+    "title": {
+     "uk": "Dunakeszi, забудова 1904",
+     "hu": "Dunakeszi beépített területe 1904-ben"
+    },
+    "sources": [
+     {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest) (1904), NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Забудову обведено вручну по вирівняному скану; точність ±100 м."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       19.14715,
+       47.64399
+      ],
+      [
+       19.15767,
+       47.64399
+      ],
+      [
+       19.15767,
+       47.637
+      ],
+      [
+       19.14715,
+       47.637
+      ],
+      [
+       19.14715,
+       47.64399
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "alag-1904",
+    "period": "long-19",
+    "kind": "growth",
+    "start": "1904",
+    "end": "1905",
+    "title": {
+     "uk": "Alag, стайні й селище біля іподрому, 1904",
+     "hu": "Alag, istállók és telep a versenypálya mellett, 1904"
+    },
+    "sources": [
+     {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest) (1904), NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Забудову обведено вручну по вирівняному скану; точність ±100 м."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       19.12786,
+       47.70806
+      ],
+      [
+       19.14119,
+       47.70853
+      ],
+      [
+       19.14259,
+       47.69991
+      ],
+      [
+       19.12962,
+       47.69921
+      ],
+      [
+       19.12786,
+       47.70806
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "god-1904",
+    "period": "long-19",
+    "kind": "growth",
+    "start": "1904",
+    "end": "1905",
+    "title": {
+     "uk": "Göd біля станції, 1904",
+     "hu": "Göd az állomás mellett, 1904"
+    },
+    "note": {
+     "uk": "невелика група будинків; Göd-puszta на схід від залізниці",
+     "hu": "néhány ház; Göd-puszta a vasúttól keletre"
+    },
+    "sources": [
+     {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest) (1904), NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Забудову обведено вручну по вирівняному скану; точність ±100 м."
+     }
+    ]
+   }
+  }
+ ]
+}
