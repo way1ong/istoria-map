@@ -19,8 +19,8 @@ import { lt } from './i18n';
 import { colorFor, loadBorders, loadModern } from './borders';
 import type { BorderCollection, HistMap, Place } from './types';
 
-// Центр: околиці Göd. Стартовий вигляд охоплює Dunakeszi — Göd — Vác.
-const CENTER: [number, number] = [19.14, 47.7];
+// Стартовий вигляд: уся Угорщина (центр країни, зум під екран телефона).
+const CENTER: [number, number] = [19.4, 47.15];
 const SRC = 'places';
 const OVERLAY_SRC = 'overlay';
 const OVERLAY_LAYER = 'overlay-layer';
@@ -98,7 +98,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     container,
     style: basemapStyle(basemap),
     center: CENTER,
-    zoom: 11,
+    zoom: 6,
     attributionControl: { compact: true },
   });
   map.addControl(new NavigationControl({ showCompass: false }), 'top-right');

@@ -30,8 +30,10 @@ function checkSources(file, sources) {
   });
 }
 // Місця й події мають лежати в околиці Göd; маршрути (походи, вали) можуть виходити далеко за неї, але лишатися в Карпатському басейні.
-const REGION = [18, 20.5, 46.5, 48.6];
-const WIDE = [16, 24, 45.5, 50];
+// Межі проєкту: уся Угорщина в сучасних кордонах із запасом на прикордонні об'єкти (Komárno, Štúrovo, Subotica тощо).
+const REGION = [15.5, 23.5, 45.3, 49.2];
+// Для анімацій (рухи військ тощо) межі ширші.
+const WIDE = [12, 28, 43, 52];
 function checkCoords(file, coords, label = 'coords', box = REGION) {
   if (!Array.isArray(coords) || coords.length !== 2 || coords.some((n) => typeof n !== 'number'))
     return err(file, `${label} має бути [lon, lat]`);
