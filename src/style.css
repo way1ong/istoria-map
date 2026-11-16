@@ -28,11 +28,21 @@ header.topbar {
   height: var(--header-h); display: flex; align-items: center; gap: 8px; padding: 0 12px;
   padding-top: env(safe-area-inset-top); border-bottom: 1px solid var(--line); background: var(--bg); flex: none;
 }
-header.topbar h1 { font-size: 16px; margin: 0; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.tabs { display: flex; gap: 4px; }
-.tabs button { padding: 6px 10px; border-radius: 8px; color: var(--muted); }
+header.topbar h1 { font-size: 16px; margin: 0; flex: 1 1 0; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tabs { display: flex; gap: 4px; flex: none; }
+.tabs button { padding: 6px 10px; border-radius: 8px; color: var(--muted); white-space: nowrap; }
 .tabs button.active { background: var(--line); color: var(--fg); font-weight: 600; }
-.lang button { padding: 6px 8px; border-radius: 8px; color: var(--muted); font-weight: 600; }
+.lang { display: flex; gap: 2px; flex: none; }
+.lang button { padding: 6px 6px; border-radius: 8px; color: var(--muted); font-weight: 600; white-space: nowrap; }
+/* Вузькі екрани: заголовок ховається, вкладки меншим шрифтом, перемикач мови лишається в рядку */
+@media (max-width: 480px) {
+  header.topbar { gap: 4px; padding: 0 8px; padding-top: env(safe-area-inset-top); }
+  header.topbar h1 { display: none; }
+  .tabs { flex: 1 1 auto; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tabs button { padding: 6px 8px; font-size: 14px; }
+  .lang button { padding: 6px 5px; font-size: 13px; }
+}
 .lang button.active { color: var(--fg); text-decoration: underline; }
 
 main { flex: 1; min-height: 0; position: relative; }
