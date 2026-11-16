@@ -1,5 +1,13 @@
 # Őskor: a mezolitikus vadászoktól a keltákig
 
+## Az ország egésze
+
+A Kárpát-medence első lakói az ősi emberszerűek voltak, maradványaik Rudabánya környékéről ismertek; a medence legkorábbi embere, a Homo erectus helyi változata a vértesszőlősi lelőhelyről származik (lásd a „Samu” kártyát). Az utolsó eljegesedés előtti melegebb időszakban a barlangokban neandervölgyiek éltek; a mai ember mintegy 35 000 éve jelent meg, amikor a medence hideg tundra volt, és több kultúrkörhöz tartozott: a helyi Szeleta-, az aurignaci (Istállós-kői-barlang) és a gravetti kultúrához. Az újkőkorban újabb és újabb földművelő népek hatoltak be, akiket a Kárpátok védelme, a művelhető síkságok és a vízbőség vonzott. Az i. e. 5. évezred végén megjelentek a rézeszközök: a tiszapolgári kultúra az Alföld keleti felét és Erdély nagy részét, a bodrogkeresztúri (i. e. 4. évezred) a medence egész középső részét foglalta el. Az i. e. 3. évezred első felében az éghajlatváltozás miatt az állattenyésztés lett a fő gazdasági tevékenység, és nagy népvándorlási hullám söpörte el a rézkori népességet.[^8]
+
+A bronzkort a harangedényes kultúra vándorló népe nyitja az i. e. 3. évezred második felében; a medence ekkor jelentős kapcsolatban állt a mükénéi világgal, az i. e. 2. évezred második felét állandó népmozgások jellemzik. A vaskor az i. e. 8. század második felében kezdődik (az első vastárgyak már az i. e. 9. században megjelentek); a vasművességet a korai szkíták honosították meg. A medence első név szerint ismert népei az illír pannonok és azalok, a kelta szkordiszkuszok, tauriszkuszok, boiok, eraviszkuszok, ózok, gotinok és anartok, valamint a szkíta agathürszök; az Erdélyi-medencében a szkíták uralta trák népességből alakultak ki a dákok. Időszámításunk első évtizedében a szarmaták csoportjába tartozó jazigok költöztek az Alföldre, a későbbi Dunakeszi és Göd szomszédságába.[^8]
+
+## Göd, Vác és Dunakeszi környéke
+
 A Duna bal partja Dunakeszi és Vác között a kőkortól lakott. Vácon az ember legkorábbi nyomai a gravetti kultúrához tartoznak, és a város északi határában kerültek elő (Kis-Hermány, Gombás, Alsó-Csipkés dűlő). Vác és Sződliget határán, a Duna partján a középső kőkor (mezolitikum, kb. Kr. e. 10 000–6000) vadászainak ideiglenes szálláshelyét tárták fel: sátorszerű építmény maradványait, tűzhelyeket és több száz apró kőeszközt.[^1]
 
 ## Az első földművelők: Dunakeszi-Székesdűlő
@@ -27,3 +35,4 @@ A korszak határai ebben az alkalmazásban jelképesek. A lelőhelyek rendszeres
 [^5]: Horváth L. A., Neolithische Funde und Befunde in der Gemarkung von Dunakeszi. Acta Archaeologica Academiae Scientiarum Hungaricae 53 (2002) 1–40: https://real.mtak.hu/65107/
 [^6]: Csippán P., Ökológiai módszerek a régészetben. Esettanulmány a Dunakeszi-Székes-dűlő őskori településeiről előkerült állatmaradványok kapcsán. Archaeologiai Értesítő 132 (2007) 83–110: https://real.mtak.hu/45465/
 [^7]: Kővári K., Late Copper Age vessel with cattle head decoration from Vác. Acta Archaeologica Academiae Scientiarum Hungaricae 61 (2010) 381–399: https://real.mtak.hu/66282/
+[^8]: A Kárpát-medence története a honfoglalásig – Wikipédia (hu), szakasz «bevezető, „Az őskőkortól a középső kőkorig”, „Vaskor”»: https://hu.wikipedia.org/wiki/A_K%C3%A1rp%C3%A1t-medence_t%C3%B6rt%C3%A9nete_a_honfoglal%C3%A1sig

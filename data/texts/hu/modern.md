@@ -1,5 +1,13 @@
 # A szocializmus kora és a jelen (1945-től)
 
+## Az ország egésze
+
+Magyarország vesztesként fejezte be a második világháborút: az 1947-es párizsi béke a trianoni határoknál is kisebb területet hagyott (a csehszlovák delegáció elérte a 62 km²-es pozsonyi hídfő elcsatolását), és 300 millió dollár kártérítést rótt ki. Néhány évnyi többpárti demokrácia után a Szovjetunió támogatta kommunisták választási csalással átvették a hatalmat, és 1947-től egypártrendszert építettek ki; az ötvenes évek első felében Rákosi Mátyás totális diktatúrája kényszerrel államosította a termelőeszközöket, politikai ellenségnek nyilvánított emberek százezreit érte retorzió, kitelepítés, börtön, kivégzés (a recski tábor is ebbe a korszakba esik). 1955. december 14-én az ország belépett az ENSZ-be. 1956 októberében forradalom tört ki: Nagy Imre miniszterelnök szakított a Varsói Szerződéssel, kikiáltotta a semlegességet és visszaállította a többpártrendszert, a szovjet hadosztályok azonban leverték a forradalmat, Kádár János kormánya vette át a hatalmat, csaknem kétszázezren emigráltak nyugatra, Nagy Imrét és a forradalom több száz résztvevőjét kivégezték, 1963-ban amnesztia következett.[^13]
+
+A szocialista tömb többi országához képest a Kádár-rendszer a diktatúra viszonylag enyhe változata volt, amely bizonyos kapcsolatot tarthatott a Nyugattal; az 1968-as új gazdasági mechanizmus enyhítette a tervgazdaság merevségét, a fejlesztések finanszírozása azonban jelentős külföldi adósságot halmozott fel, és a 80-as évek végén az ország belépett az IMF-be és a Világbankba. A rendszerváltás legfontosabb aktusa a Magyar Köztársaság kikiáltása volt 1989. október 23-án, 1990-ben megválasztották az első demokratikus Országgyűlést, kormányt, köztársasági elnököt és önkormányzatokat; a 90-es éveket a privatizáció jellemezte, 1999-ben az ország a NATO tagja lett. A Sopron melletti páneurópai piknik és a nagymarosi vízlépcső 1989-es leállítása külön eseményként szerepel a térképen.[^14]
+
+## Göd, Vác és Dunakeszi környéke
+
 A háború után földet osztottak: Dunakeszin a szegényparasztoknak, Alagon a volt cselédeknek, 1945-ben a Lovaregylet földjeinek kétharmadát államosították; 1951-ben az egyletet Magyar Lóverseny Vállalattá alakították. 1950-ben Alagot lakói tiltakozása ellenére ismét Dunakeszihez csatolták, ugyanabban az évben Sződliget önálló község lett, Pest-Pilis-Solt-Kiskunból pedig Pest megye alakult.[^1][^2][^3][^8] Gödön 1950-ben hévizet találtak, amelyen termálstrand épült; 1951-ben a Huzella-birtok az Akadémiához került.[^4]
 
 ## Repülőtér és vitorlázógépek
@@ -30,3 +38,5 @@ Az 1957 utáni iparosítás átalakította Dunakeszit: Mechanikai Laboratórium,
 [^10]: Legindi T., A dunakeszi repülőtér története. Dunakeszi Helytörténeti Szemle IV/1 (2011. május) 8–9: https://epa.oszk.hu/03000/03093/00010/pdf/EPA03093_dunakeszi_2011_1.pdf
 [^11]: Lévai T., Az 1956-os Munkástanács története a Lósport Vállalat alagi telepén. Dunakeszi Helytörténeti Szemle IV/1 (2011. május) 4–5: https://epa.oszk.hu/03000/03093/00010/pdf/EPA03093_dunakeszi_2011_1.pdf
 [^12]: Archeodatabase HNM, 10356. lelőhely: https://archeodatabase.hnm.hu/en/node/3785
+[^13]: Magyar történelem – Wikipédia (hu), „1945–1989: A Rákosi- és a Kádár-korszak” szakasz: https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_t%C3%B6rt%C3%A9nete
+[^14]: Magyar történelem – Wikipédia (hu), „Az 1989-es rendszerváltozás után” szakasz: https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_t%C3%B6rt%C3%A9nete
