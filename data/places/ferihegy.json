@@ -1,0 +1,45 @@
+{
+  "id": "ferihegy",
+  "name": {
+    "uk": "Аеропорт Ferihegy (Ліст Ференц)",
+    "hu": "Budapest Liszt Ferenc nemzetközi repülőtér (Ferihegy)"
+  },
+  "type": "other",
+  "coords": [
+    19.25556,
+    47.43694
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Найбільший і найвідоміший з п'яти міжнародних аеропортів Угорщини на межі Pestszentlőrinc, Rákoshegy і Vecsés; рішення про новий аеропорт 1938 року, місцевість названа за будайським пивоваром Ferenc Xavér Mayerffy, який орендував тут землю Grassalkovich; з 2011 року носить ім'я Ференца Ліста.",
+    "hu": "Magyarország öt nemzetközi repülőtere közül a legnagyobb és legismertebb Pestszentlőrinc, Rákoshegy és Vecsés határán; az új repülőtérről 1938-ban döntöttek, a terület nevét Mayerffy Xavér Ferenc budai serfőzőről kapta, aki itt bérelt a Grassalkovich-birtokból; 2011 óta Liszt Ferenc nevét viseli."
+  },
+  "description": {
+    "uk": "За статтею, міжнародний аеропорт Будапешт Ліст Ференц, раніше Budapest Ferihegy, є найбільшим і найвідомішим з п'яти міжнародних аеропортів Угорщини; нову назву дістав 2011 року до 200-річчя народження композитора. Після Першої світової війни угорська цивільна авіація розвивалася важко: після аеродрому Mátyásföld наприкінці 1930-х внутрішнім і міжнародним аеропортом став Budaörs, а 1938 року знову постало питання нового будапештського аеропорту, для якого обрали територію на межі Pestszentlőrinc, Rákoshegy і Vecsés. Рівнинна земля біля залізниці Будапешт–Сольнок з 1723 року належала родині Grassalkovich, наприкінці століття близько 650 гольдів тут орендував заможний будайський пивовар Ferenc Xavér Mayerffy, за яким місцевість назвали Ferihegy; після 1928 року вона перейшла у власність Угорської академії наук. Історія аеродрому Dunakeszi-Alag описана в окремій картці.",
+    "hu": "A szócikk szerint a Budapest Liszt Ferenc nemzetközi repülőtér, korábban Budapest Ferihegy, Magyarország öt nemzetközi repülőtere közül a legnagyobb és legismertebb; új nevét 2011-ben kapta a zeneszerző születésének 200. évfordulójára. Az első világháború után a magyar polgári repülés nehezen fejlődött: a mátyásföldi repülőtér után az 1930-as évek végén Budaörs lett a belföldi és nemzetközi repülőtér, 1938-ban pedig ismét felmerült az új budapesti repülőtér kérdése, amelyhez Pestszentlőrinc, Rákoshegy és Vecsés határán választottak területet. A Budapest–Szolnok vasútvonal melletti sík föld 1723-tól a Grassalkovich család birtoka volt, a század végén mintegy 650 holdat bérelt itt Mayerffy Ferenc Xavér jómódú budai sörfőző, akiről a helyet Ferihegynek nevezték el; 1928 után a Magyar Tudományos Akadémia tulajdonába került. A Dunakeszi-Alag repülőtér történetét külön kártya írja le."
+  },
+  "sources": [
+    {
+      "title": "Budapest Liszt Ferenc nemzetközi repülőtér – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Budapest_Liszt_Ferenc_nemzetk%C3%B6zi_rep%C3%BCl%C5%91t%C3%A9r",
+      "note": "1938, назва, 2011, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Aiurport_Budapest_Terminal_1_%289446-48%29.jpg",
+      "author": "невідомий автор",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Aiurport_Budapest_Terminal_1_%289446-48%29.jpg",
+      "caption": {
+        "uk": "Термінал 1 аеропорту",
+        "hu": "A repülőtér 1-es terminálja"
+      }
+    }
+  ]
+}

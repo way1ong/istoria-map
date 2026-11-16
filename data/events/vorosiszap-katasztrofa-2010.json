@@ -1,0 +1,43 @@
+{
+  "id": "vorosiszap-katasztrofa-2010",
+  "title": {
+    "uk": "Катастрофа червоного шламу в Айці",
+    "hu": "Az ajkai vörösiszap-katasztrófa"
+  },
+  "date": {
+    "from": "2010-10-04",
+    "precision": "exact"
+  },
+  "period": "modern",
+  "places": [
+    "kolontar"
+  ],
+  "summary": {
+    "uk": "4 жовтня 2010 року прорвало дамбу сховища червоного шламу 400 × 600 м Айкського глиноземного заводу (MAL Zrt.) між Kolontár і Ajka; понад мільйон кубометрів лужного шламу затопили низини Kolontár, Devecser і Somlóvásárhely, розлилися на 40 км², знищили все живе в потоці Torna; десять загиблих; урядова постанова 5 листопада назвала винуватцем MAL Zrt.",
+    "hu": "2010. október 4-én átszakadt az Ajkai Timföldgyár (MAL Zrt.) Kolontár és Ajka közötti, 400×600 m-es vörösiszap-tárolójának gátja; több mint egymillió köbméter lúgos zagy öntötte el Kolontár, Devecser és Somlóvásárhely mélyebb részeit, mintegy 40 km²-en terült szét, kipusztította a Torna-patak élővilágát; tíz halálos áldozat; a november 5-i kormányhatározat a MAL Zrt.-t nevezte meg károkozónak."
+  },
+  "description": {
+    "uk": "За статтею, айкська катастрофа червоного шламу була промисловою аварією й екологічною катастрофою з десятьма людськими жертвами і величезними матеріальними й екологічними збитками, одним із найтяжчих випадків угорської промислової історії. 4 жовтня 2010 року прорвало дамбу сховища червоного шламу розміром 400 × 600 м, збудованого між Kolontár і Ajka Айкським глиноземним заводом у власності MAL Magyar Alumínium Zrt.; понад мільйон кубометрів шламу затопили низинні частини Kolontár, Devecser і Somlóvásárhely, сильно лужний їдкий промисловий відхід розлився приблизно на 40 км², завдавши незліченних збитків у Девечерському мікрорегіоні, і знищив усе живе в потоці Torna та в частині Marcal нижче гирла Torna. Урядова постанова, оприлюднена 5 листопада 2010 року, назвала винуватцем катастрофи MAL Zrt. Долю села Kolontár описано в окремій картці.",
+    "hu": "A szócikk szerint az ajkai vörösiszap-katasztrófa tíz emberáldozattal, valamint óriási anyagi és környezeti kárral járó ipari baleset és ökológiai katasztrófa volt, a magyar ipartörténet egyik legsúlyosabb esete. 2010. október 4-én átszakadt a MAL Magyar Alumínium Zrt. tulajdonában lévő Ajkai Timföldgyár által Kolontár és Ajka között épített, 400 × 600 m-es vörösiszap-tároló gátja; több mint egymillió köbméter iszap öntötte el Kolontár, Devecser és Somlóvásárhely mélyebben fekvő részeit, az erősen lúgos, maró ipari hulladék mintegy 40 km²-en terült szét, felbecsülhetetlen károkat okozva a devecseri kistérségben, és elpusztított minden élőlényt a Torna-patakban és a Marcal Torna torkolata alatti szakaszán. A 2010. november 5-én közzétett kormányhatározat a MAL Zrt.-t nevezte meg a katasztrófa felelősének. Kolontár község sorsát külön kártya írja le."
+  },
+  "sources": [
+    {
+      "title": "Ajkai vörösiszap-katasztrófa – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Ajkai_v%C3%B6r%C3%B6siszap-katasztr%C3%B3fa",
+      "note": "Дата, обсяг, площа, жертви."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Ajkai_vorosiszap_tarozo_%281%29civertanlegi.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Ajkai_vorosiszap_tarozo_%281%29civertanlegi.jpg",
+      "caption": {
+        "uk": "Наслідки катастрофи",
+        "hu": "A katasztrófa következményei"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "terror-haza",
+  "name": {
+    "uk": "Будинок терору (Terror Háza), Andrássy út 60",
+    "hu": "Terror Háza Múzeum"
+  },
+  "type": "monument",
+  "coords": [
+    19.06514,
+    47.50683
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Музей пам'яті жертв диктатур XX століття на символічному місці, Andrássy út 60 біля Октогону, відкритий 24 лютого 2002 року; виставки про фашистський і комуністичний режими і пам'ять про людей, яких у цій будівлі тримали, допитували, катували чи вбивали.",
+    "hu": "A 20. századi diktatúrák áldozatainak emlékére létrehozott múzeum az Andrássy út 60. szám alatt, 2002. február 24-én nyílt meg; kiállításai a fasiszta és kommunista rezsimekről szólnak, és az épületben fogva tartott, kihallgatott, megkínzott vagy megölt embereknek állítanak emléket."
+  },
+  "description": {
+    "uk": "За статтею, музей «Будинок терору» створено на пам'ять про жертв диктатур XX століття у вельми символічному місці Будапешта, на Andrássy út 60 біля Октогону. Він містить виставки про угорські фашистський і комуністичний режими і вшановує їхніх жертв, зокрема людей, яких у цій будівлі тримали, допитували, катували чи вбивали. Музей відкрито 24 лютого 2002 року, відтоді його генеральною директоркою є Mária Schmidt.",
+    "hu": "A szócikk szerint a Terror Háza Múzeumot a 20. századi diktatúrák áldozatainak emlékére hozták létre Budapest egyik igen szimbolikus helyén, az Andrássy út 60. szám alatt, az Oktogon közelében. A magyar fasiszta és kommunista rendszerekről szóló kiállításokat tartalmaz, és áldozataiknak állít emléket, köztük azoknak, akiket ebben az épületben fogva tartottak, kihallgattak, kínoztak vagy megöltek. A múzeum 2002. február 24-én nyílt meg, azóta főigazgatója Schmidt Mária."
+  },
+  "sources": [
+    {
+      "title": "Terror Háza Múzeum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Terror_H%C3%A1za_M%C3%BAzeum",
+      "note": "Адреса, 2002, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/House_of_Terror_Museum_in_Budapest_%2810890338584%29.jpg",
+      "author": "Serge Bystro from Moscow, Russia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:House_of_Terror_Museum_in_Budapest_%2810890338584%29.jpg",
+      "caption": {
+        "uk": "Будинок терору",
+        "hu": "A Terror Háza"
+      }
+    }
+  ]
+}

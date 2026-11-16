@@ -1,0 +1,31 @@
+{
+  "id": "paks-epitese-1969",
+  "title": {
+    "uk": "Будівництво Пакшської АЕС",
+    "hu": "A Paksi Atomerőmű építése"
+  },
+  "date": {
+    "from": "1969",
+    "to": "1987",
+    "precision": "exact"
+  },
+  "period": "modern",
+  "places": [
+    "paksi-atomeromu"
+  ],
+  "summary": {
+    "uk": "Рішення 1966 року, будівництво у 1969–1987 роках; станція потужністю 2000 МВт 2014 року дала 53,6 % електроенергії Угорщини.",
+    "hu": "1966-ban határozták el, 1969 és 1987 között épült; a 2000 MW-os erőmű 2014-ben az ország áramtermelésének 53,6%-át adta."
+  },
+  "description": {
+    "uk": "За статтею, будівництво першої і єдиної діючої АЕС Угорщини вирішили 1966 року, а зводили її в Пакші між 1969 і 1987 роками; первісна потужність 1760 МВт зросла до 2000 МВт, 2014 року станція виробила 53,6 % електроенергії країни.",
+    "hu": "A szócikk szerint Magyarország első és egyetlen működő atomerőművének építéséről 1966-ban döntöttek, és 1969 és 1987 között építették fel Pakson; az eredeti 1760 MW teljesítmény 2000 MW-ra nőtt, 2014-ben az erőmű az ország villamosenergia-termelésének 53,6%-át adta."
+  },
+  "sources": [
+    {
+      "title": "MVM Paksi Atomerőmű – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/MVM_Paksi_Atomer%C5%91m%C5%B1",
+      "note": "Роки, потужність, частка."
+    }
+  ]
+}

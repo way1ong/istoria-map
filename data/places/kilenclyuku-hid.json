@@ -1,0 +1,44 @@
+{
+  "id": "kilenclyuku-hid",
+  "name": {
+    "uk": "Дев'ятиарковий міст у Гортобаді (Kilenclyukú híd)",
+    "hu": "Hortobágyi Kilenclyukú híd"
+  },
+  "type": "monument",
+  "coords": [
+    21.14757,
+    47.58179
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Класицистичний кам'яний міст через річку Гортобадь на місці старого дерев'яного, збудований у 1827–1833 роках за проєктом Ferenc Povolny; символ пусти.",
+    "hu": "A Hortobágy folyó régi fahídja helyén klasszicista stílusban, 1827 és 1833 között, Povolny Ferenc tervei alapján épült kőhíd; a puszta jelképe."
+  },
+  "description": {
+    "uk": "За статтею, гортобадський Дев'ятиарковий міст є кам'яним мостом у стилі класицизму, збудованим у 1827–1833 роках за проєктом Ferenc Povolny на місці старого дерев'яного мосту через річку Гортобадь. Міст лежить у національному парку Гортобадь (окрема картка).",
+    "hu": "A cikk szerint a hortobágyi Kilenclyukú híd klasszicista stílusú kőhíd, amely 1827–1833 között épült Povolny Ferenc tervei szerint a Hortobágy folyón átívelő régi fahíd helyén. A híd a Hortobágyi Nemzeti Parkban fekszik (külön kártya)."
+  },
+  "sources": [
+    {
+      "title": "Kilenclyukú híd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kilenclyuk%C3%BA_h%C3%ADd",
+      "note": "1827–1833, Povolny, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Hortob%C3%A1gyi_h%C3%ADd.JPG",
+      "author": "EtelkaCsilla",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Hortob%C3%A1gyi_h%C3%ADd.JPG",
+      "caption": {
+        "uk": "Дев'ятиарковий міст",
+        "hu": "A Kilenclyukú híd"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "papai-esterhazy-kastely",
+  "name": {
+    "uk": "Палац Естергазі в Папі (Pápa)",
+    "hu": "Esterházy-kastély, Pápa"
+  },
+  "type": "castle",
+  "coords": [
+    17.46583,
+    47.33056
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Бароковий палац на головній площі Папи за Великою церквою, зведений на місці замку, що втратив оборонне значення; роботи продовжували Jakab Fellner, а після його смерті József Grossmann. Палац відновлено.",
+    "hu": "Barokk kastély Pápa Fő terén, a Nagytemplom mögött, a jelentőségét vesztett vár helyén; a munkát Fellner Jakab, majd halála után Grossmann József folytatta. Megújulva fontos idegenforgalmi vonzerő."
+  },
+  "description": {
+    "uk": "За статтею, палац Естергазі стоїть у центрі Папи комітату Веспрем на головній площі за Великою церквою; бароковий палац і колишня система укріплень відіграли важливу роль в історії міста. Його зводили на місці замку, що втратив значення; після смерті першого будівничого роботу продовжив Jakab Fellner, а після нього József Grossmann. Фреска в Палатинській залі зберігає задум будівлі з ровом. Відновлений палац знову є визначною туристичною принадою.",
+    "hu": "A szócikk szerint az Esterházy-kastély a Veszprém vármegyei Pápa központjában, a főtéren, a Nagytemplom mögött áll; a barokk kastély és az egykori erődítésrendszer fontos szerepet játszott a város történetében. A jelentőségét vesztett vár helyén emelték; az első építőmester halála után a munkát Fellner Jakab, majd utána Grossmann József folytatta. A Nádor-terem freskója őrzi az árokkal körülvett épület elgondolását. A helyreállított kastély ismét kiemelkedő turisztikai vonzerő."
+  },
+  "sources": [
+    {
+      "title": "Esterházy-kastély (Pápa) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Esterh%C3%A1zy-kast%C3%A9ly_%28P%C3%A1pa%29",
+      "note": "Архітектори, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Esterh%C3%A1zy-kast%C3%A9ly_P%C3%A1pa_F%C5%91_t%C3%A9r.JPG",
+      "author": "Pan Peter12",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Esterh%C3%A1zy-kast%C3%A9ly_P%C3%A1pa_F%C5%91_t%C3%A9r.JPG",
+      "caption": {
+        "uk": "Палац Естергазі на головній площі Папи",
+        "hu": "Az Esterházy-kastély a pápai Fő téren"
+      }
+    }
+  ]
+}

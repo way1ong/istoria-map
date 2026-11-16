@@ -1,0 +1,45 @@
+{
+  "id": "gyori-bazilika",
+  "name": {
+    "uk": "Дьйорська базиліка з гермою св. Ласло",
+    "hu": "Győri bazilika"
+  },
+  "type": "church",
+  "coords": [
+    17.63135,
+    47.689
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Кафедральний собор Дьйорської єпархії на Капітульному пагорбі при злитті Раби й Дунаю, найстаріша і найзначніша пам'ятка міста; тут зберігається герма св. Ласло, одна з найважливіших національних реліквій. 1997 року Іван Павло II надав ранг малої базиліки.",
+    "hu": "A Győri egyházmegye főtemploma a Káptalandombon, a Rába és a Duna összefolyásánál, a város legrégibb műemléke; itt őrzik Szent László hermáját. 1997-ben II. János Pál kisbazilika rangot adományozott neki."
+  },
+  "description": {
+    "uk": "За статтею, собор Внебовзятої Діви Марії є головним храмом Дьйорської єпархії; він стоїть у найдавнішій частині міста на Капітульному пагорбі при злитті Раби й Дунаю навпроти Єпископського замку і є найстарішою і найзначнішою пам'яткою міста. Тут зберігається одна з винятково важливих національних реліквій, герма св. Ласло; 1997 року папа Іван Павло II надав собору ранг малої базиліки.",
+    "hu": "A szócikk szerint a Nagyboldogasszony-székesegyház a Győri egyházmegye főtemploma; a város legrégibb részén, a Káptalandombon áll, a Rába és a Duna összefolyásánál, a Püspökvárral szemben, és a város legrégibb és legjelentősebb műemléke. Itt őrzik az egyik kivételesen fontos nemzeti ereklyét, a Szent László-hermát; 1997-ben II. János Pál pápa a székesegyháznak basilica minor rangot adományozott."
+  },
+  "sources": [
+    {
+      "title": "Győri bazilika – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Gy%C5%91ri_bazilika",
+      "note": "Розташування, реліквія, 1997, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Gy%C5%91rbazilika_l%C3%A9gifot%C3%B3.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Gy%C5%91rbazilika_l%C3%A9gifot%C3%B3.jpg",
+      "caption": {
+        "uk": "Дьйорська базиліка з повітря",
+        "hu": "A győri bazilika légi fotón"
+      }
+    }
+  ]
+}

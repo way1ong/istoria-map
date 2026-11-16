@@ -1,0 +1,44 @@
+{
+  "id": "onodi-orszaggyules-1707",
+  "title": {
+    "uk": "Онодські державні збори",
+    "hu": "Az ónodi országgyűlés"
+  },
+  "date": {
+    "from": "1707-05-31",
+    "to": "1707-06-22",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [
+    "onod-korom-mezo"
+  ],
+  "summary": {
+    "uk": "З 31 травня по 22 червня 1707 року на вершині визвольної війни Ракоці на полі біля Köröm поблизу Ónod засідали куруцькі державні збори.",
+    "hu": "1707. május 31. és június 22. között a Rákóczi-szabadságharc tetőpontján Ónod közelében, a körömi mezőn ülésezett a kuruc országgyűlés."
+  },
+  "description": {
+    "uk": "За статтею, Онодські державні збори (31 травня – 22 червня 1707 року) були куруцькими державними зборами на вершині визвольної війни Ракоці, скликаними на полі біля Köröm поблизу містечка Ónod. Участь околиць Dunakeszi у цій війні описано в тексті XVIII століття.",
+    "hu": "A szócikk szerint az ónodi országgyűlés (1707. május 31. – június 22.) a Rákóczi-szabadságharc csúcspontján tartott kuruc országgyűlés volt, amelyet Ónod mezőváros közelében, a Köröm melletti mezőn hívtak össze. Dunakeszi környékének részvételét ebben a háborúban a 18. századi szöveg írja le."
+  },
+  "sources": [
+    {
+      "title": "Ónodi országgyűlés – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/%C3%93nodi_orsz%C3%A1ggy%C5%B1l%C3%A9s",
+      "note": "Дати і місце."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Than_M%C3%B3r_Az_%C3%B3nodi_orsz%C3%A1ggy%C5%B1l%C3%A9s.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Than_M%C3%B3r_Az_%C3%B3nodi_orsz%C3%A1ggy%C5%B1l%C3%A9s.jpg",
+      "caption": {
+        "uk": "Онодські збори на картині Mór Than",
+        "hu": "Az ónodi országgyűlés Than Mór festményén"
+      }
+    }
+  ]
+}

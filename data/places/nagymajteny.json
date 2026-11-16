@@ -1,0 +1,49 @@
+{
+  "id": "nagymajteny",
+  "name": {
+    "uk": "Надьмайтень (Moftinu Mare): поле складання зброї куруців, 1711",
+    "hu": "Nagymajtény, majtényi sík"
+  },
+  "type": "monument",
+  "coords": [
+    22.65884,
+    47.67529
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Село в Румунії в повіті Сату-Маре, на рівнині біля якого 30 квітня 1711 року куруцькі війська остаточно склали зброю перед лабанцями після Сатмарського миру. Прикордонний об'єкт; точка: центр села.",
+    "hu": "Romániai falu Szatmár megyében, amelynek síkján 1711. április 30-án a kuruc hadak végleg letették a fegyvert a labancok előtt a szatmári béke után. Határon túli hely; a térképi pont a falu központja."
+  },
+  "description": {
+    "uk": "За статтею про мир, Сатмарський мир, що завершив визвольну війну Ракоці, уклали 29–30 квітня 1711 року в Nagykároly Sándor Károlyi від імені союзних станів і János Pálffy, імперський головнокомандувач, уповноважений короля Карла III, за відсутності Ференца Ракоці II, який тоді вів переговори з царем Петром I; після цього 30 квітня Károlyi і деморалізовані, погано озброєні куруцькі війська на майтенській рівнині остаточно склали зброю перед лабанцями, а куруцька шляхта й офіцери підписали документ миру 1 травня. Угода стала компромісом між становістю й освіченим абсолютизмом і до 1848 року забезпечувала станову окремішність Угорщини в імперії Габсбургів. За статтею про село, Nagymajtény (румунською Moftinu Mare) лежить у Румунії в повіті Сату-Маре; координати відповідають центру села.",
+    "hu": "A békéről szóló cikk szerint a Rákóczi-szabadságharcot lezáró szatmári békét 1711. április 29–30-án kötötte meg Nagykárolyban Károlyi Sándor a szövetkezett rendek nevében és Pálffy János császári főparancsnok, III. Károly király meghatalmazottja, II. Rákóczi Ferenc távollétében, aki akkor I. Péter cárral tárgyalt; ezután április 30-án Károlyi és a demoralizált, rosszul felfegyverzett kuruc csapatok a majtényi síkon végleg letették a fegyvert a labancok előtt, a kuruc nemesség és a tisztek pedig május 1-jén írták alá a béke okmányát. A megállapodás a rendiség és a felvilágosult abszolutizmus közötti kompromisszum lett, és 1848-ig biztosította Magyarország rendi különállását a Habsburg Birodalomban. A faluról szóló cikk szerint Nagymajtény (románul Moftinu Mare) Romániában, Szatmár megyében fekszik; a koordináták a falu központjának felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Nagymajtény – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagymajt%C3%A9ny",
+      "note": "Дати, учасники."
+    },
+    {
+      "title": "Nagymajtény – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagymajt%C3%A9ny",
+      "note": "Розташування і координати села."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Nagymajt%C3%A9nyi_fegyverlet%C3%A9tel.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Nagymajt%C3%A9nyi_fegyverlet%C3%A9tel.jpg",
+      "caption": {
+        "uk": "Складання зброї під Надьмайтенем",
+        "hu": "A nagymajtényi fegyverletétel"
+      }
+    }
+  ]
+}

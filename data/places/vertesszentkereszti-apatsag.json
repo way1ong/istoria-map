@@ -1,0 +1,44 @@
+{
+  "id": "vertesszentkereszti-apatsag",
+  "name": {
+    "uk": "Руїни абатства Вертешсенткерест (Vértesszentkereszt)",
+    "hu": "Vértesszentkereszti apátság"
+  },
+  "type": "church",
+  "coords": [
+    18.27139,
+    47.44361
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Руїни бенедиктинського абатства в гущавині лісів Вертеша на території Oroszlány, родового монастиря могутнього роду Csák; пишну церкву на початку XIII століття збудували естергомський архієпископ Ugrin Csák та ішпан Miklós Csák.",
+    "hu": "A Vértes erdejében, Oroszlány területén rejtőző bencés apátság romjai, a Csák nemzetség monostora; a pompás templomot a 13. század elején Csák Ugrin esztergomi érsek és Csák Miklós ispán építtette."
+  },
+  "description": {
+    "uk": "За статтею, руїни бенедиктинського абатства ховає гущавина лісів Вертеша за 2 км на північ від Gerencsérvár поблизу Pusztavám, на території Oroszlány; один з наймогутніших родів доби Арпадів, Csák, володів багатим на дичину Вертешем з центром, імовірно, у Csákvár. На початку XIII століття двоє поважних членів роду, естергомський архієпископ Ugrin Csák і ішпан кількох комітатів Miklós Csák, вірна людина Андраша II, збудували нову пишну церкву. На момент написання статті руїна не була відкрита для відвідин.",
+    "hu": "A szócikk szerint a bencés apátság romjait a Vértes erdeinek sűrűje rejti Gerencsérvártól 2 km-re északra, Pusztavám közelében, Oroszlány területén; az Árpád-kor egyik leghatalmasabb nemzetsége, a Csák birtokolta a vadban gazdag Vértest, központja valószínűleg Csákváron volt. A 13. század elején a nemzetség két tekintélyes tagja, Csák Ugrin esztergomi érsek és Csák Miklós, több vármegye ispánja, II. András hű embere új, pompás templomot épített. A szócikk megírásakor a rom nem volt látogatható."
+  },
+  "sources": [
+    {
+      "title": "Vértesszentkereszti apátság – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A9rtesszentkereszti_ap%C3%A1ts%C3%A1g",
+      "note": "Рід Csák, датування, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/A_v%C3%A9rteszentkereszti_ap%C3%A1ts%C3%A1g_l%C3%A9gi_fot%C3%B3ja.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_v%C3%A9rteszentkereszti_ap%C3%A1ts%C3%A1g_l%C3%A9gi_fot%C3%B3ja.jpg",
+      "caption": {
+        "uk": "Руїни абатства з повітря",
+        "hu": "Az apátság légi fotója"
+      }
+    }
+  ]
+}

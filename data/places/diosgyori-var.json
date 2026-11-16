@@ -1,0 +1,47 @@
+{
+  "id": "diosgyori-var",
+  "name": {
+    "uk": "Діошдьйорський замок (Diósgyőr), Мішкольц",
+    "hu": "Diósgyőri vár"
+  },
+  "type": "castle",
+  "coords": [
+    20.68889,
+    48.09722
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval",
+    "ottoman",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Готичний замок у Diósgyőr (нині частина Мішкольца), збудований після монгольської навали; розквіт за Людовика Великого, лицарська зала якого була найбільшою в Європі; з 1340 року королівський замок, традиційне віно королев. Відбудований з 2010-х.",
+    "hu": "Gótikus vár Diósgyőrben, a tatárjárás után épült; fénykorát Nagy Lajos alatt élte, 1340-től királyi vár, a királynék jegyajándéka. A 2010-es évektől újjáépítették."
+  },
+  "description": {
+    "uk": "За статтею, замок міг стояти тут уже у XII столітті; нинішній готичний замок збудовано після монгольської навали, розквіт припав на правління Людовика Великого, лицарська зала була найбільшою в Європі. З 1340 року це королівський замок, зазвичай власність королев, аж до турецьких часів; його каштелян був водночас ішпаном Боршода. До кінця XVII століття замок став непридатним для життя; археологічні дослідження почалися в 1960-х, а з 2010-х років його відбудовують у ймовірному первісному вигляді з меблями доби.",
+    "hu": "A szócikk szerint vár már a 12. században állhatott itt; a mai gótikus várat a tatárjárás után építették, fénykora Nagy Lajos uralkodására esett, lovagterme Európa legnagyobbika volt. 1340-től királyi vár, rendszerint a királynék tulajdona, egészen a török időkig; várnagya egyben Borsod ispánja is volt. A 17. század végére a vár lakhatatlanná vált; a régészeti kutatások az 1960-as években kezdődtek, a 2010-es évektől pedig feltételezett eredeti formájában, korabeli bútorzattal építik újjá."
+  },
+  "sources": [
+    {
+      "title": "Diósgyőri vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Di%C3%B3sgy%C5%91ri_v%C3%A1r",
+      "note": "Датування, Людовик Великий, 1340, відбудова, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Di%C3%B3sgy%C5%91ri_v%C3%A1r_2016.jpg",
+      "author": "CivertanS",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Di%C3%B3sgy%C5%91ri_v%C3%A1r_2016.jpg",
+      "caption": {
+        "uk": "Діошдьйорський замок, 2016",
+        "hu": "A diósgyőri vár 2016-ban"
+      }
+    }
+  ]
+}

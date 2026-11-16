@@ -1,0 +1,43 @@
+{
+  "id": "aradi-vertanuk-1849",
+  "title": {
+    "uk": "Страта арадських мучеників",
+    "hu": "Az aradi vértanúk kivégzése"
+  },
+  "date": {
+    "from": "1849-10-06",
+    "precision": "exact"
+  },
+  "period": "long-19",
+  "places": [
+    "aradi-var"
+  ],
+  "summary": {
+    "uk": "6 жовтня 1849 року в Араді стратили тринадцять гонведських офіцерів (12 генералів і полковника Vilmos Lázár), найстаршим з яких був генерал-лейтенант Ernő Kiss; того ж дня в Пешті стратили першого відповідального прем'єра.",
+    "hu": "1849. október 6-án Aradon kivégeztek tizenhárom honvédtisztet (12 tábornokot és Lázár Vilmos ezredest), rangidősük Kiss Ernő altábornagy volt; ugyanezen a napon Pesten kivégezték az első felelős miniszterelnököt."
+  },
+  "description": {
+    "uk": "За статтею, арадськими мучениками звуть тринадцять угорських гонведських офіцерів, яких після придушення визвольної війни стратили в Араді за роль у ній; хоча таких офіцерів було шістнадцять, національна пам'ять зве так насамперед тринадцятьох, страчених 6 жовтня 1849 року. Усі вони були чинними або звільненими офіцерами австрійської армії, наприкінці війни один мав ранг генерал-лейтенанта, одинадцять генерал-майорів і один полковника; полковника Vilmos Lázár зарахували до генералів, бо він командував окремим з'єднанням, а найстаршим за рангом був Ernő Kiss. Того ж дня в Пешті стратили першого відповідального прем'єр-міністра.",
+    "hu": "A szócikk szerint aradi vértanúknak azt a tizenhárom magyar honvédtisztet nevezik, akiket a szabadságharc leverése után Aradon kivégeztek az abban játszott szerepükért; bár tizenhat ilyen tiszt volt, a nemzeti emlékezet elsősorban az 1849. október 6-án kivégzett tizenhármat nevezi így. Mindannyian az osztrák hadsereg tényleges vagy kilépett tisztjei voltak, a háború végén egyikük altábornagyi, tizenegyen vezérőrnagyi, egyikük ezredesi rangot viselt; Lázár Vilmos ezredest a tábornokok közé sorolták, mert önálló seregtestet vezényelt, a rangidős pedig Kiss Ernő volt. Ugyanazon a napon Pesten kivégezték az első felelős miniszterelnököt."
+  },
+  "sources": [
+    {
+      "title": "Aradi vértanúk – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Aradi_v%C3%A9rtan%C3%BAk",
+      "note": "Дата, склад."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Aradi13.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Aradi13.jpg",
+      "caption": {
+        "uk": "Тринадцять арадських мучеників",
+        "hu": "Az aradi tizenhármak"
+      }
+    }
+  ]
+}

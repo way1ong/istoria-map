@@ -1,0 +1,30 @@
+{
+  "id": "nyilas-hatalomatvetel-1944",
+  "title": {
+    "uk": "Спроба виходу з війни і прихід нілашистів до влади",
+    "hu": "A kiugrási kísérlet és a nyilas hatalomátvétel"
+  },
+  "date": {
+    "from": "1944-10-15",
+    "precision": "exact"
+  },
+  "period": "interwar-ww2",
+  "places": [
+    "terror-haza"
+  ],
+  "summary": {
+    "uk": "Улітку 1944 року Горті спробував вийти з війни за румунським зразком: 29 серпня замінив Sztójay на Lakatos, що тимчасово врятувало близько чверті мільйона будапештських євреїв; делегація Gábor Faragho 8 жовтня дістала умови в Москві, 11 жовтня підписала угоду, того ж дня радянські війська перейшли Тису і зайняли Сеґед; 15 жовтня спроба зірвалася.",
+    "hu": "1944 nyarán Horthy román mintára megpróbált kiugrani a háborúból: augusztus 29-én Sztójayt Lakatos váltotta, ami átmenetileg megmentette a közel negyedmillió budapesti zsidót; Faragho Gábor küldöttsége október 8-án Moszkvában megkapta a feltételeket, október 11-én aláírta az egyezményt, aznap a szovjet csapatok átkeltek a Tiszán és elfoglalták Szegedet; október 15-én a kísérlet meghiúsult."
+  },
+  "description": {
+    "uk": "За статтею, влітку 1944 року, коли Червона армія вже просувалася територією Угорщини, Міклош Горті спробував за румунським зразком «вистрибнути» з війни: у хаосі після румунського виходу 23 серпня він 29 серпня змусив Döme Sztójay піти, замінивши його на Géza Lakatos, що тимчасово врятувало близько чверті мільйона будапештських євреїв. Попередня комісія перемир'я генерала Gábor Faragho поїхала до Москви, де 8 жовтня дістала умови (припинення ворожих дій проти радянських військ, оголошення війни Німеччині, відхід за кордони 1937 року); після згоди Горті делегати 11 жовтня підписали угоду, того ж дня радянські війська перейшли Тису, зайняли Сеґед і вели під Дебреценом другу за розміром танкову битву війни. 15 жовтня спроба зірвалася, і до влади прийшли нілашисти; їхню штаб-квартиру на Andrássy út 60 описано в картці Будинку терору.",
+    "hu": "A cikk szerint 1944 nyarán, amikor a Vörös Hadsereg már Magyarország területén nyomult előre, Horthy Miklós román mintára megpróbált „kiugrani” a háborúból: az augusztus 23-i román kiugrás utáni káoszban augusztus 29-én lemondatta Sztójay Dömét, és Lakatos Gézával váltotta fel, ami átmenetileg megmentett mintegy negyedmillió budapesti zsidót. A Faragho Gábor tábornok vezette előzetes fegyverszüneti bizottság Moszkvába utazott, ahol október 8-án megkapta a feltételeket (az ellenségeskedés beszüntetése a szovjet csapatokkal szemben, hadüzenet Németországnak, visszavonulás az 1937-es határok mögé); Horthy beleegyezése után a küldöttek október 11-én aláírták a megállapodást, ugyanazon a napon a szovjet csapatok átkeltek a Tiszán, elfoglalták Szegedet, és Debrecen mellett a háború második legnagyobb páncéloscsatáját vívták. Október 15-én a kísérlet meghiúsult, és a nyilasok kerültek hatalomra; az Andrássy út 60. alatti főhadiszállásukat a Terror Háza kártyája írja le."
+  },
+  "sources": [
+    {
+      "title": "1944-es kiugrási kísérlet – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/1944-es_kiugr%C3%A1si_k%C3%ADs%C3%A9rlet",
+      "note": "Хронологія серпня–жовтня 1944."
+    }
+  ]
+}

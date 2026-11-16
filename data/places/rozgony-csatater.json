@@ -1,0 +1,49 @@
+{
+  "id": "rozgony-csatater",
+  "name": {
+    "uk": "Поле битви при Розгоні (Rozhanovce), 1312",
+    "hu": "Rozgonyi csatatér"
+  },
+  "type": "monument",
+  "coords": [
+    21.34401,
+    48.75097
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Місце найзначнішої битви війни Карла Роберта за об'єднання країни: 15 червня 1312 року біля Розгоня неподалік Кошиць король розбив військо синів Amadé Aba. Нині Rozhanovce у Словаччині; прикордонний об'єкт, координати села з OpenStreetMap.",
+    "hu": "Károly Róbert országegyesítő háborújának legjelentősebb csatája: 1312. június 15-én a Kassához közeli Rozgony mellett a király legyőzte Aba Amadé fiainak seregét. Ma Rozhanovce Szlovákiában; határon túli hely, a község koordinátái az OpenStreetMapből."
+  },
+  "description": {
+    "uk": "За статтею, битва при Розгоні була найзначнішою битвою війни Карла Роберта за об'єднання країни, у якій король 15 червня 1312 року біля Розгоня поблизу Кошиць розбив військо синів Amadé Aba. Село лежить за межами нинішньої Угорщини й додане як прикордонний об'єкт; координати центру Rozhanovce з OpenStreetMap, точне поле битви не фіксується.",
+    "hu": "A szócikk szerint a rozgonyi csata Károly Róbert országegyesítő háborújának legjelentősebb ütközete volt, amelyben a király 1312. június 15-én a Kassa melletti Rozgonynál szétverte Aba Amadé fiainak seregét. A falu a mai Magyarország határain kívül fekszik, és határ menti objektumként került be; a koordináták Rozhanovce központjáé az OpenStreetMapből, a csata pontos helye nincs rögzítve."
+  },
+  "sources": [
+    {
+      "title": "Rozgonyi csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Rozgonyi_csata",
+      "note": "Дата, сторони."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Rozhanovce",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Rozhanovce",
+      "note": "Координати 48.75097, 21.34401 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Rozgony_Battle.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Rozgony_Battle.jpg",
+      "caption": {
+        "uk": "Битва при Розгоні на зображенні",
+        "hu": "A rozgonyi csata ábrázolása"
+      }
+    }
+  ]
+}

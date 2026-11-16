@@ -1,0 +1,49 @@
+{
+  "id": "lussonium-dunakomlod",
+  "name": {
+    "uk": "Луссоній (Lussonium), форт лімесу біля Dunakömlőd",
+    "hu": "Lussonium, Dunakömlőd"
+  },
+  "type": "archaeological",
+  "coords": [
+    18.8818,
+    46.6559
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Форт римського лімесу на території Dunakömlőd, частини Пакша, розкопки якого тривають; серед знахідок римські військові дипломи, бронзові таблички 10 × 13 см.",
+    "hu": "A római limes erődje Dunakömlőd (Paks) területén, feltárása ma is folyik; leletei között római katonai diplomák, 10 × 13 cm-es bronzlemezek."
+  },
+  "description": {
+    "uk": "За статтею про Dunakömlőd (латинською Lussonium), колишнє село з 1978 року є частиною Пакша; на його території лежить форт Lussonium римського лімесу, розкопки якого тривають досі, а серед цінних знахідок є так звані римські військові дипломи: пари бронзових пластин 10 × 13 см, зшитих металевим дротом. Координати археологічного парку з OpenStreetMap.",
+    "hu": "A Dunakömlődről (latinul Lussonium) szóló cikk szerint az egykori falu 1978 óta Paks része; területén fekszik a római limes Lussonium erődje, amelynek feltárása máig tart, értékes leletei között pedig az úgynevezett római katonai diplomák vannak: 10 × 13 cm-es, fémdróttal összefűzött bronzlemezpárok. A régészeti park koordinátái az OpenStreetMapből származnak."
+  },
+  "sources": [
+    {
+      "title": "Dunakömlőd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunak%C3%B6ml%C5%91d",
+      "note": "Форт, дипломи."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Lussonium, Dunakömlőd",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Lussonium%2C%20Dunak%C3%B6ml%C5%91d",
+      "note": "Координати 46.6559, 18.8818 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Dunak%C3%B6ml%C5%91d_l%C3%A9gifot%C3%B31.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Dunak%C3%B6ml%C5%91d_l%C3%A9gifot%C3%B31.jpg",
+      "caption": {
+        "uk": "Lussonium",
+        "hu": "Lussonium"
+      }
+    }
+  ]
+}

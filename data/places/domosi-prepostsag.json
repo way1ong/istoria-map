@@ -1,0 +1,44 @@
+{
+  "id": "domosi-prepostsag",
+  "name": {
+    "uk": "Дьомьош (Dömös): пропозитура князя Алмоша, 1107",
+    "hu": "Dömösi prépostság"
+  },
+  "type": "church",
+  "coords": [
+    18.91437,
+    47.7648
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Село під Пілішем, де князь Алмош, брат короля Кальмана, 1107 року заснував біля давнішого королівського палацу пропозитуру й капітул; заснування й освячення зобразив мініатюрист Ілюстрованої хроніки. Точка: центр села.",
+    "hu": "Község a Pilis alatt, ahol Álmos herceg, Könyves Kálmán fivére 1107-ben a korábbi királyi kastély mellett prépostságot és káptalant alapított; az eseményt a Képes krónika miniátora is megörökítette. A térképi pont a falu központja."
+  },
+  "description": {
+    "uk": "За статтею про село, брат короля Кальмана Книжника, князь Алмош, 1107 року заснував біля давнішого королівського палацу пропозитуру й капітул; обставини заснування й освячення докладно описує Ілюстрована хроніка, а її мініатюрист зобразив подію на малюнках. Координати відповідають центру села.",
+    "hu": "A faluról szóló szócikk szerint Könyves Kálmán király testvére, Álmos herceg 1107-ben a korábbi királyi palota mellett prépostságot és káptalant alapított; az alapítás és a felszentelés körülményeit részletesen leírja a Képes krónika, miniátora pedig rajzokon ábrázolta az eseményt. A koordináták a falu központjának felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Dömös – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/D%C3%B6m%C3%B6s",
+      "note": "1107, Алмош, координати села."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/D%C3%B6m%C3%B6s_kolostor.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:D%C3%B6m%C3%B6s_kolostor.jpg",
+      "caption": {
+        "uk": "Руїни монастиря в Dömös з повітря",
+        "hu": "A dömösi kolostor romja légi fotón"
+      }
+    }
+  ]
+}

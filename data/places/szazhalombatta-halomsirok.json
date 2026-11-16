@@ -1,0 +1,32 @@
+{
+  "id": "szazhalombatta-halomsirok",
+  "name": {
+    "uk": "Курганний могильник залізної доби й римський табір Matrica (Százhalombatta)",
+    "hu": "Százhalombatta: vaskori halomsírok és Matrica"
+  },
+  "type": "archaeological",
+  "coords": [
+    18.91139,
+    47.31667
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory",
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Назва міста («сто курганів») походить від курганів залізної доби в його околиці, згаданих ще в Аноніма; у римський час тут стояв табір Matrica на дунайському лімесі. Точка на мапі: центр міста.",
+    "hu": "A város neve a határában húzódó vaskori halomsírokra utal; a római korban Matrica tábor állt itt a limesen. A térképi pont a város központja."
+  },
+  "description": {
+    "uk": "За статтею про місто, перша частина назви вказує на курганні поховання залізної доби в його околиці, назва в латинському перекладі є вже в Аноніма. У римський час на території міста стояв військовий табір Matrica, що захищав лімес на березі Дунаю: у I столітті н. е. палісадне укріплення, згодом кам'яне. Координати міста зі статті; розташування могильника і табору тут не уточнюється.",
+    "hu": "A városról szóló szócikk szerint a név első tagja a környékén lévő vaskori halomsírokra utal, a név latin fordításban már Anonymusnál szerepel. A római korban a város területén állt a Duna-parti limest védő Matrica katonai tábor: az i. sz. I. században palánkerőd, később kőerőd. A város koordinátái a szócikkből származnak; a temető és a tábor elhelyezkedése itt nincs pontosítva."
+  },
+  "sources": [
+    {
+      "title": "Százhalombatta – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sz%C3%A1zhalombatta",
+      "note": "Походження назви, табір Matrica, координати міста."
+    }
+  ]
+}

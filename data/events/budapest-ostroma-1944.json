@@ -1,0 +1,45 @@
+{
+  "id": "budapest-ostroma-1944",
+  "title": {
+    "uk": "Облога Будапешта",
+    "hu": "Budapest ostroma"
+  },
+  "date": {
+    "from": "1944-12-25",
+    "to": "1945-02-13",
+    "precision": "exact"
+  },
+  "period": "interwar-ww2",
+  "places": [
+    "budai-varnegyed",
+    "szechenyi-lanchid"
+  ],
+  "summary": {
+    "uk": "З 25 грудня 1944 до 13 лютого 1945 року за столицю билися радянські й румунські війська проти німецьких і угорських; перший радянський танк з'явився на околиці 3 листопада, місто капітулювало через 102 дні. Цивільних не евакуювали, спроба прориву 11 лютого майже цілком провалилася.",
+    "hu": "1944. december 25-től 1945. február 13-ig tartott a főváros ostroma; az első szovjet páncélos november 3-án jelent meg, a város 102 nap múlva adta meg magát. A február 11-i kitörési kísérlet szinte teljesen kudarcot vallott."
+  },
+  "description": {
+    "uk": "За статтею, облога Будапешта була боротьбою за угорську столицю між Радянським Союзом і Румунією з одного боку і Третім Райхом та Угорщиною з другого з 25 грудня 1944 до 13 лютого 1945 року. Перший радянський танк з'явився на межі міста 3 листопада 1944 року, і місто здалося через 102 дні; захисники близько п'ятдесяти днів чинили опір штурму, хоча більшість запасів втратили в перші дні, бо склади лежали на околицях. Цивільне населення не евакуювали, тому багато мирних мешканців загинуло; сучасники порівнювали запеклість боїв зі Сталінградом. Усупереч наказу Гітлера захисники вирішили прориватися ввечері 11 лютого, але лише жменька вояків дійшла до своїх. За два місяці до того, 8 грудня, радянські війська зайняли Вац (див. текст періоду).",
+    "hu": "A szócikk szerint Budapest ostroma a magyar fővárosért folytatott küzdelem volt egyfelől a Szovjetunió és Románia, másfelől a Harmadik Birodalom és Magyarország között 1944. december 25-től 1945. február 13-ig. Az első szovjet harckocsi 1944. november 3-án jelent meg a város határában, és a város 102 nap múlva adta meg magát; a védők mintegy ötven napig álltak ellen a rohamnak, noha a készletek nagy részét már az első napokban elveszítették, mert a raktárak a külső részeken feküdtek. A polgári lakosságot nem evakuálták, ezért sok békés lakos halt meg; a kortársak a harcok elkeseredettségét Sztálingrádhoz hasonlították. Hitler parancsa ellenére a védők február 11-én este a kitörés mellett döntöttek, de csak maroknyi katona jutott el az övéihez. Két hónappal korábban, december 8-án a szovjet csapatok elfoglalták Vácot (lásd a korszak szövegét)."
+  },
+  "sources": [
+    {
+      "title": "Budapest ostroma – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Budapest_ostroma",
+      "note": "Дати, перебіг, прорив."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Margit_h%C3%ADd_1944._november_4.jpg",
+      "author": "The original uploader was Tambo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Margit_h%C3%ADd_1944._november_4.jpg",
+      "caption": {
+        "uk": "Міст Маргіт 4 листопада 1944 року",
+        "hu": "A Margit híd 1944. november 4-én"
+      }
+    }
+  ]
+}

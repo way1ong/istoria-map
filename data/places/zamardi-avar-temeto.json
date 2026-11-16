@@ -1,0 +1,45 @@
+{
+  "id": "zamardi-avar-temeto",
+  "name": {
+    "uk": "Замарді (Zamárdi): найбільший аварський могильник Карпатського басейну",
+    "hu": "Zamárdi avar kori temető"
+  },
+  "type": "archaeological",
+  "coords": [
+    17.95051,
+    46.88434
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "migration",
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Місто на південному березі Балатона; його найвизначніша археологічна пам'ятка, аварський могильник, є найбільшим і винятково багатим на знахідки аварським місцем Карпатського басейну. Назва вперше 1082 року у формі Scamard. Точка: центр міста.",
+    "hu": "Város a Balaton déli partján; legkiemelkedőbb régészeti emléke az avar kori temető, a Kárpát-medence legnagyobb és egyedülállóan gazdag leletanyagú avar lelőhelye. Neve először 1082-ben, Scamard alakban tűnik fel. A térképi pont a város központja."
+  },
+  "description": {
+    "uk": "За статтею, територія міста заселена тисячоліттями: під час розкопок знайдено безліч доісторичних, бронзової доби, кельтських, германських і римських речей, а найвизначнішою археологічною пам'яткою є аварський могильник, найбільше і винятково багате на знахідки аварське місце Карпатського басейну. Назва міста вперше з'являється 1082 року у формі Scamard у документі про обхід меж, а 1171 року як Zamard у грамоті Іштвана III; 1594 року турки зруйнували церкву й будинки Egyházas-Zamárd. Координати відповідають центру міста, могильник не локалізується.",
+    "hu": "A szócikk szerint a város területe évezredek óta lakott: az ásatások során rengeteg őskori, bronzkori, kelta, germán és római tárgy került elő, a legjelentősebb régészeti emlék pedig az avar temető, a Kárpát-medence legnagyobb és kivételesen leletgazdag avar lelőhelye. A város neve először 1082-ben tűnik fel Scamard alakban egy határjáró oklevélben, 1171-ben pedig Zamard alakban III. István oklevelében; 1594-ben a törökök lerombolták Egyházas-Zamárd templomát és házait. A koordináták a város központjának felelnek meg, a temető nem lokalizálható."
+  },
+  "sources": [
+    {
+      "title": "Zamárdi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Zam%C3%A1rdi",
+      "note": "Могильник, 1082, 1171, координати міста."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Church_of_Zam%C3%A1rdi.JPG",
+      "author": "Antissimo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Church_of_Zam%C3%A1rdi.JPG",
+      "caption": {
+        "uk": "Церква в Замарді",
+        "hu": "Zamárdi temploma"
+      }
+    }
+  ]
+}

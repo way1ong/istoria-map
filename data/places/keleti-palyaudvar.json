@@ -1,0 +1,46 @@
+{
+  "id": "keleti-palyaudvar",
+  "name": {
+    "uk": "Східний вокзал (Keleti pályaudvar)",
+    "hu": "Keleti pályaudvar"
+  },
+  "type": "monument",
+  "coords": [
+    19.08361,
+    47.50056
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Найзавантаженіший пасажирський вокзал Будапешта на площі Baross tér, відкритий 16 серпня 1884 року як Центральний вокзал і перейменований 1892 року; архітектор Gyula Rochlitz, сталевий дах залу János Feketeházy. Назва вказує на зв'язок з Трансільванією і Балканами.",
+    "hu": "Budapest legforgalmasabb személypályaudvara a Baross téren, 1884. augusztus 16-án adták át Központi Indóház néven, 1892-ben nevezték át; építésze Rochlitz Gyula, a csarnok acélszerkezetét Feketeházy János tervezte."
+  },
+  "description": {
+    "uk": "За статтею, Східний вокзал (Budapest-Keleti) є найзавантаженішим пасажирським вокзалом Будапешта й одним із трьох діючих тупикових вокзалів столиці; назва вказує не лише на географію, а й на зв'язок зі східними Трансільванією й Балканами на відміну від Західного вокзалу, що обслуговував напрям Відень–Париж. Вокзал на площі Baross tér передано пасажирам 16 серпня 1884 року під назвою Központi Indóház, 1892 року перейменовано; архітектор Gyula Rochlitz, сталеву конструкцію залу проєктував János Feketeházy. Звідси йдуть лінії на Дьйор і Відень, Гатван і Мішкольц, Сольнок.",
+    "hu": "A szócikk szerint a Keleti pályaudvar (Budapest-Keleti) Budapest legforgalmasabb személypályaudvara és a főváros három működő fejpályaudvarának egyike; a név nemcsak a földrajzra utal, hanem a keleti Erdéllyel és a Balkánnal való kapcsolatra is, szemben a Nyugati pályaudvarral, amely a Bécs–Párizs irányt szolgálta ki. A Baross téri pályaudvart 1884. augusztus 16-án adták át az utasoknak Központi Indóház néven, 1892-ben nevezték át; építésze Rochlitz Gyula, a csarnok acélszerkezetét Feketeházy János tervezte. Innen indulnak a vonalak Győr és Bécs, Hatvan és Miskolc, valamint Szolnok felé."
+  },
+  "sources": [
+    {
+      "title": "Keleti pályaudvar – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Keleti_p%C3%A1lyaudvar",
+      "note": "1884, 1892, архітектори, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Budapest_keleti_historic.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Budapest_keleti_historic.jpg",
+      "caption": {
+        "uk": "Східний вокзал на історичному фото",
+        "hu": "A Keleti pályaudvar régi fotón"
+      }
+    }
+  ]
+}

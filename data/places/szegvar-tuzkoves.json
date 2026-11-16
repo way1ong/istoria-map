@@ -1,0 +1,45 @@
+{
+  "id": "szegvar-tuzkoves",
+  "name": {
+    "uk": "Сеґвар (Szegvár): стоянка Tűzköves",
+    "hu": "Szegvár-Tűzköves"
+  },
+  "type": "archaeological",
+  "coords": [
+    20.23333,
+    46.58333
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory",
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Велике село при злитті Kurca й Kórógy-ér; на його території лежить доісторична стоянка «Tűzköves» з кременем, що засвідчує давню майстерню; за давнім описом, знахідки відносили до III тисячоліття до н. е. Після монгольської навали ще 1284 року згадана лише як «Terra Zeg». Точка: центр села.",
+    "hu": "Nagyközség a Kurca és a Kórógy-ér összefolyásánál; területén az őskori „tűzköves” telephely kovaköveivel egykori műhelyre utal, a leleteket régi leírás a Kr. e. III. évezredre tette. A tatárjárás után 1284-ben még csak „Terra Zeg” néven szerepel. A térképi pont a falu központja."
+  },
+  "description": {
+    "uk": "За статтею, Сеґвар є другим за розміром селом комітату Чонґрад-Чанад при злитті Kurca і Kórógy-ér; це було доісторичне поселення, стоянку давньої людини й знайдені тут речі за давнім описом віднесли до III тисячоліття до н. е., а стоянка «Tűzköves» на його території з кременями, здається, засвідчує, що тут колись працювала майстерня. За приходу мадярів місце вже було заселене, про що свідчить розкопаний язичницький могильник; після монгольської навали це була безлюдна пустка, яка ще 1284 року згадується лише як «Terra Zeg», а з 1332 року відома у формі Zeegh як володіння роду Pósa з Szer. Координати відповідають центру села.",
+    "hu": "A szócikk szerint Szegvár Csongrád-Csanád vármegye második legnagyobb községe a Kurca és a Kórógy-ér összefolyásánál; őskori település volt, az ősember telephelyét és az itt talált tárgyakat egy régi leírás alapján a Kr. e. III. évezredre tették, a területén fekvő „Tűzköves” nevű lelőhely pedig tűzköveivel, úgy tűnik, azt tanúsítja, hogy itt egykor műhely működött. A magyarok bejövetelekor a hely már lakott volt, amit egy feltárt pogány temető bizonyít; a tatárjárás után lakatlan puszta volt, amelyet 1284-ben még csak „Terra Zeg” néven említenek, 1332-től pedig Zeegh alakban ismert a szeri Pósa nemzetség birtokaként. A koordináták a falu központjának felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Szegvár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szegv%C3%A1r",
+      "note": "Tűzköves, 1284, 1332, координати села."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Szegv%C3%A1r%2C_K%C3%A1rolyi-kast%C3%A9ly_2025_01.jpg",
+      "author": "Pasztilla aka Attila Terbócs",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szegv%C3%A1r%2C_K%C3%A1rolyi-kast%C3%A9ly_2025_01.jpg",
+      "caption": {
+        "uk": "Палац Károlyi у Сеґварі",
+        "hu": "A szegvári Károlyi-kastély"
+      }
+    }
+  ]
+}

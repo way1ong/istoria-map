@@ -1,0 +1,46 @@
+{
+  "id": "tihanyi-apatsag",
+  "name": {
+    "uk": "Тиганське абатство (Tihanyi apátság), 1055",
+    "hu": "Tihanyi Bencés Apátság"
+  },
+  "type": "church",
+  "coords": [
+    17.88944,
+    46.91389
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "habsburg-18",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Бенедиктинський монастир на краю вулканічного пасма Тиганського півострова над Балатоном, заснований королем Андрашем I 1055 року на честь св. Аньяна і Діви Марії; у крипті гробниця засновника.",
+    "hu": "I. András király alapította 1055-ben Szent Ányos és Szűz Mária tiszteletére a Tihanyi-félsziget peremén; altemplomában a király sírja."
+  },
+  "description": {
+    "uk": "За статтею, абатство заснував король Андраш I 1055 року на східному, стрімкому краю вулканічного пасма Тиганського півострова на честь св. Аньяна і Діви Марії. Нині це самостійний монастир Угорської бенедиктинської конгрегації з громадою з десяти ченців. Поет János Garay оспівав «восьмисотрічну могилу», в якій спить король Андраш.",
+    "hu": "A szócikk szerint az apátságot I. András király alapította 1055-ben a Tihanyi-félsziget vulkáni vonulatának keleti, meredek peremén Szent Ányos és Szűz Mária tiszteletére. Ma a Magyar Bencés Kongregáció önálló monostora, tíz szerzetesből álló közösséggel. Garay János költő megénekelte a „nyolcszáz éves sírt”, amelyben András király alszik."
+  },
+  "sources": [
+    {
+      "title": "Tihanyi apátság – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tihanyi_ap%C3%A1ts%C3%A1g",
+      "note": "Рік і засновник, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Tihanycivertanlegi1.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Tihanycivertanlegi1.jpg",
+      "caption": {
+        "uk": "Тиганське абатство з повітря",
+        "hu": "A Tihanyi apátság légi felvételen"
+      }
+    }
+  ]
+}

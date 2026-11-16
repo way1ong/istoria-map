@@ -1,0 +1,44 @@
+{
+  "id": "fuggetlensegi-nyilatkozat-1849",
+  "title": {
+    "uk": "Декларація незалежності й детронізація Габсбургів",
+    "hu": "A Függetlenségi nyilatkozat"
+  },
+  "date": {
+    "from": "1849-04-14",
+    "to": "1849-04-19",
+    "precision": "exact"
+  },
+  "period": "long-19",
+  "places": [
+    "debreceni-nagytemplom"
+  ],
+  "summary": {
+    "uk": "14 квітня 1849 року дебреценські державні збори з ініціативи Лайоша Кошута проголосили, а 19 квітня письмово ухвалили й оприлюднили документ, що оголосив детронізацію дому Габсбургів і незалежність Угорщини з Трансільванією як «вільної, самостійної і незалежної європейської держави».",
+    "hu": "1849. április 14-én a debreceni országgyűlés Kossuth Lajos kezdeményezésére kimondta, április 19-én írásba foglalva elfogadta és közzétette a nyilatkozatot, amely kimondta a Habsburg-ház trónfosztását és Magyarország függetlenségét Erdéllyel együtt „szabad, önálló és független európai status”-ként."
+  },
+  "description": {
+    "uk": "За статтею, угорська Декларація незалежності була ініційована Лайошем Кошутом і проголошена дебреценськими державними зборами 14 квітня 1849 року, а 19 квітня її ухвалили у письмовій формі й оприлюднили для широкого загалу; документ проголосив детронізацію дому Габсбургів і незалежність Угорщини, суверенну державність, повернену у визвольній війні: «Угорщина разом із законно об'єднаною з нею Трансільванією і всіма належними частинами й провінціями оголошується вільною, самостійною і незалежною європейською державою». Декларацію проголошено у Великій реформатській церкві Дебрецена (окрема картка).",
+    "hu": "A cikk szerint a magyar Függetlenségi nyilatkozatot Kossuth Lajos kezdeményezte, és a debreceni országgyűlés 1849. április 14-én mondta ki, április 19-én pedig írásban elfogadták és a széles nyilvánosság elé tárták; a dokumentum kimondta a Habsburg-ház trónfosztását és Magyarország függetlenségét, a szabadságharcban visszanyert szuverén államiságot: „Magyarország a vele törvényesen egyesült Erdéllyel és a hozzá tartozó minden részekkel és tartományokkal egyetemben szabad, önálló és független európai államnak nyilváníttatik”. A nyilatkozatot a debreceni Református Nagytemplomban (külön kártya) hirdették ki."
+  },
+  "sources": [
+    {
+      "title": "Függetlenségi nyilatkozat (Magyarország) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/F%C3%BCggetlens%C3%A9gi_nyilatkozat_%28Magyarorsz%C3%A1g%29",
+      "note": "Дати, зміст."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Kossuth_korm%C3%A1nyz%C3%B3v%C3%A1_v%C3%A1laszt%C3%A1sa.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kossuth_korm%C3%A1nyz%C3%B3v%C3%A1_v%C3%A1laszt%C3%A1sa.jpg",
+      "caption": {
+        "uk": "Обрання Кошута правителем",
+        "hu": "Kossuth kormányzóvá választása"
+      }
+    }
+  ]
+}

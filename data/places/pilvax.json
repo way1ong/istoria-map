@@ -1,0 +1,49 @@
+{
+  "id": "pilvax",
+  "name": {
+    "uk": "Кав'ярня Pilvax: де почалося 15 березня 1848 року",
+    "hu": "Pilvax kávéház"
+  },
+  "type": "monument",
+  "coords": [
+    19.05515,
+    47.49427
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Історична кав'ярня в Белвароші на місці нинішнього будинку Pilvax köz 1–3, де вранці 15 березня 1848 року почалися революційні події під проводом березневої молоді і де сформулювали відозву з 12 пунктами «Чого хоче угорська нація»; з 1844 року улюблене місце Петефі. Координати провулка з OpenStreetMap.",
+    "hu": "Történelmi nevezetességű kávéház a Belvárosban, a mai Pilvax köz 1–3. helyén, ahol 1848. március 15-én reggel a márciusi ifjak vezetésével elkezdődtek a forradalmi események, és ahol a 12 pontot tartalmazó „Mit kíván a magyar nemzet” kiáltványt megfogalmazták; 1844-től Petőfi törzshelye. A koordináták a köz OpenStreetMap-adatai."
+  },
+  "description": {
+    "uk": "За статтею, кав'ярня й ресторан Pilvax є історично знаменитим закладом у V районі Будапешта в Белвароші на місці нинішнього будинку Pilvax köz 1–3. Саме тут 15 березня 1848 року у ранкові години почалися революційні події під проводом березневої молоді, політичною метою якої було насамперед створення відповідального угорського уряду й народного представницького парламенту; тут сформулювали й відозву з 12 пунктами, що починалася словами «Чого хоче угорська нація. Хай буде мир, свобода і згода». Кав'ярня дістала назву від кавника Károly Pilwax, який 18 серпня 1842 року перебрав кав'ярню Privorszky; Sándor Petőfi 1844 року обрав освітлений газовими лампами зручний Pilvax своїм постійним місцем. Координати провулка Pilvax köz з OpenStreetMap.",
+    "hu": "A szócikk szerint a Pilvax kávéház és étterem történelmi nevezetességű vendéglátóhely Budapest V. kerületében, a Belvárosban, a mai Pilvax köz 1–3. számú ház helyén. Éppen itt kezdődtek 1848. március 15-én a reggeli órákban a forradalmi események a márciusi ifjak vezetésével, akiknek politikai célja elsősorban a felelős magyar kormány és a népképviseleti országgyűlés megteremtése volt; itt fogalmazták meg a 12 pontos kiáltványt is, amely a „Mit kíván a magyar nemzet. Legyen béke, szabadság és egyetértés.” szavakkal kezdődött. A kávéház nevét Pilwax Károly kávésról kapta, aki 1842. augusztus 18-án vette át a Privorszky kávéházat; Petőfi Sándor 1844-ben a gázlámpákkal világított, kényelmes Pilvaxot választotta törzshelyéül. A Pilvax köz koordinátái az OpenStreetMapből származnak."
+  },
+  "sources": [
+    {
+      "title": "Pilvax – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Pilvax",
+      "note": "15 березня 1848, 12 пунктів, Петефі."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Pilvax köz, Budapest",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Pilvax%20k%C3%B6z%2C%20Budapest",
+      "note": "Координати 47.49427, 19.05515 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Pilvax_Pest_Preiszler.jpg",
+      "author": "József Preiszler (?–?, 19. century)",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Pilvax_Pest_Preiszler.jpg",
+      "caption": {
+        "uk": "Кав'ярня Pilvax на малюнку József Preiszler",
+        "hu": "A Pilvax Preiszler József rajzán"
+      }
+    }
+  ]
+}

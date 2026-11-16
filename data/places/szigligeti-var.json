@@ -1,0 +1,45 @@
+{
+  "id": "szigligeti-var",
+  "name": {
+    "uk": "Сіґліґетський замок (Szigliget)",
+    "hu": "Szigligeti vár"
+  },
+  "type": "castle",
+  "coords": [
+    17.43623,
+    46.80485
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Замок на конусі вулканічної гори, колишнього острова Балатона, збудований бенедиктинцями Паннонгальми в 1260–1262 роках; 1262 року Бела IV так уподобав його, що виміняв собі.",
+    "hu": "Vár a Balaton egykori szigetét képező vulkanikus hegy kúpján, a pannonhalmi bencések építették 1260–1262 között; IV. Bélának annyira megtetszett, hogy 1262-ben cserével megszerezte."
+  },
+  "description": {
+    "uk": "За статтею, Сіґліґетський замок на Балатонському нагір'ї стоїть біля села Szigliget на конусі вулканічної гори, що колись була островом Балатона. Укріплення збудували бенедиктинці Паннонгальми в 1260–1262 роках; воно так сподобалося королю Белі IV, що 1262 року він здобув його обміном, а нагляд за королівським замком доручив родині Móriczhidai з роду Pok.",
+    "hu": "A szócikk szerint a szigligeti vár a Balaton-felvidéken, Szigliget falu mellett áll egy vulkáni hegy kúpján, amely egykor a Balaton szigete volt. Az erődítményt a pannonhalmi bencések építették 1260–1262 között; annyira megtetszett IV. Béla királynak, hogy 1262-ben csere útján megszerezte, a királyi vár felügyeletét pedig a Pok nemzetségből való Móriczhidai családra bízta."
+  },
+  "sources": [
+    {
+      "title": "Szigligeti vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szigligeti_v%C3%A1r",
+      "note": "1260–1262, Бела IV, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/V%C3%A1rrom_%2810376._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "author": "Kontiki",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A1rrom_%2810376._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "caption": {
+        "uk": "Сіґліґетський замок",
+        "hu": "A szigligeti vár"
+      }
+    }
+  ]
+}

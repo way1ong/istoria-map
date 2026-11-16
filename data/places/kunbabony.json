@@ -1,0 +1,45 @@
+{
+  "id": "kunbabony",
+  "name": {
+    "uk": "Кунбабонь (Kunbábony): поховання аварського князя",
+    "hu": "Kunbábony, avar fejedelmi sír"
+  },
+  "type": "archaeological",
+  "coords": [
+    19.12278,
+    47.02639
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "migration",
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Частина міста Кунсентміклош; великою археологічною сенсацією 1970-х стало розкопане в кунбабонській піщаній копальні поховання аварського князя. Точка: центр Кунсентміклоша.",
+    "hu": "Kunszentmiklós városrésze; a 70-es évek nagy régészeti szenzációja volt a kunbábonyi homokbányában feltárt avar fejedelmi sír. A térképi pont Kunszentmiklós központja."
+  },
+  "description": {
+    "uk": "За статтею про Кунсентміклош, з лесових берегів колишніх дунайських рукавів часто походять знахідки кам'яної й бронзової доби, кельтські й сарматські речі; великою археологічною сенсацією 1970-х років стало розкопане в кунбабонській піщаній копальні поховання аварського князя. Мадяри-завойовники теж знайшли тут місце для стійбища, а назва Szentmiklós позначала церковне місце доби Арпадів; у XIII–XIV століттях край зайняли куни, і місто вперше згадане як Tatárszállás у грамоті доби Сигізмунда. Координати відповідають центру Кунсентміклоша.",
+    "hu": "A Kunszentmiklósról szóló szócikk szerint az egykori Duna-ágak löszös partjairól gyakran kerülnek elő kőkori és bronzkori leletek, kelta és szarmata tárgyak; az 1970-es évek nagy régészeti szenzációja a kunbábonyi homokbányában feltárt avar fejedelmi sír volt. A honfoglaló magyarok is találtak itt szálláshelyet, a Szentmiklós név pedig Árpád-kori egyházas helyet jelölt; a XIII–XIV. században a vidéket a kunok szállták meg, és a várost először Tatárszállásként említi egy Zsigmond-kori oklevél. A koordináták Kunszentmiklós központjának felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Kunszentmiklós – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kunszentmikl%C3%B3s",
+      "note": "Аварське князівське поховання, куни, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Kmiklos_ref_templom.jpg",
+      "author": "hu:User:Joliet Jake",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kmiklos_ref_templom.jpg",
+      "caption": {
+        "uk": "Реформатська церква Кунсентміклоша",
+        "hu": "A kunszentmiklósi református templom"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "kisnanai-var",
+  "name": {
+    "uk": "Кішнанський замок (Kisnána) у Матрі",
+    "hu": "Kisnánai vár"
+  },
+  "type": "castle",
+  "coords": [
+    20.14417,
+    47.85139
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Одна з найкрасивіших пізньосередньовічних пам'яток угорських шляхетських резиденцій біля Kisnána в Дьондьошському окрузі комітату Гевеш, принада Матри.",
+    "hu": "A Mátra-vidék egyik látványossága Heves vármegye Gyöngyösi járásában, Kisnána mellett; a magyar nemesi rezidenciák egyik legszebb késő középkori emléke."
+  },
+  "description": {
+    "uk": "За статтею, Кішнанський замок, одна з принад Матри, стоїть біля Kisnána в Дьондьошському окрузі комітату Гевеш і є однією з найкрасивіших пізньосередньовічних пам'яток угорських шляхетських резиденцій.",
+    "hu": "A szócikk szerint a kisnánai vár, a Mátra egyik ékessége, Kisnána mellett, Heves vármegye Gyöngyösi járásában áll, és a magyar nemesi rezidenciák egyik legszebb késő középkori emléke."
+  },
+  "sources": [
+    {
+      "title": "Kisnánai vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kisn%C3%A1nai_v%C3%A1r",
+      "note": "Розташування, значення, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Kisn%C3%A1na%2C_Kompolti_v%C3%A1r_l%C3%A9gi_fot%C3%B3n.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kisn%C3%A1na%2C_Kompolti_v%C3%A1r_l%C3%A9gi_fot%C3%B3n.jpg",
+      "caption": {
+        "uk": "Кішнанський замок з повітря",
+        "hu": "A kisnánai vár légi fotón"
+      }
+    }
+  ]
+}

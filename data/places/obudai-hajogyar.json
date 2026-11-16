@@ -1,0 +1,46 @@
+{
+  "id": "obudai-hajogyar",
+  "name": {
+    "uk": "Обудайська корабельня (Óbudai Hajógyár), 1835",
+    "hu": "Óbudai Hajógyár"
+  },
+  "type": "other",
+  "coords": [
+    19.05124,
+    47.54263
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Одне з найстаріших великих підприємств Будапешта, засноване 1835 року з ініціативи графа István Széchenyi, коли Перше дунайське пароплавне товариство (DDSG) придбало Обудайський острів; перший тут збудований пароплав «Árpád» спущено на воду 1836 року, а 10 серпня 1844 року на освяченні пароплава «Széchenyi» уперше публічно прозвучав угорський гімн. Ліквідацію правонаступника завершено 29 листопада 1999 року.",
+    "hu": "Budapest egyik legrégibb nagyüzeme, Széchenyi István kezdeményezésére jött létre 1835-ben, amikor az Első Duna-gőzhajózási Társaság megszerezte az Óbudai-szigetet; az első itt készült hajót, az Árpád gőzöst 1836-ban bocsátották vízre, 1844. augusztus 10-én a Széchenyi gőzhajó avatásán itt hangzott el nyilvános közünnepen a magyar himnusz. A jogutód végelszámolása 1999. november 29-én fejeződött be."
+  },
+  "description": {
+    "uk": "За статтею, Обудайська корабельня була одним із найстаріших великих підприємств Будапешта; вона постала 1835 року з ініціативи графа István Széchenyi, коли Перше дунайське пароплавне товариство (DGT/DDSG) придбало Обудайський острів. Перший збудований тут корабель, колісний дерев'яний пароплав «Árpád», спустили на воду 1836 року, а 10 серпня 1844 року на освяченні пароплава з іменем Széchenyi тут на публічному святі прозвучав угорський гімн. Відтоді під змінними назвами тут збудували сотні пасажирських і вантажних суден, барж, плавучих кранів, буксирів і криголамів; до 1980-х корабельня боролася з господарськими труднощами, і ліквідація правонаступника GD Óbudai Hajóépítő Rt. завершилася 29 листопада 1999 року.",
+    "hu": "A szócikk szerint az Óbudai Hajógyár Budapest egyik legrégebbi nagyvállalata volt; 1835-ben gróf Széchenyi István kezdeményezésére jött létre, amikor az Első Dunagőzhajózási Társaság (DGT/DDSG) megvásárolta az Óbudai-szigetet. Az itt épült első hajót, az „Árpád” nevű lapátkerekes fagőzöst 1836-ban bocsátották vízre, 1844. augusztus 10-én pedig a Széchenyi nevét viselő gőzös felszentelésén itt, nyilvános ünnepségen hangzott el a magyar himnusz. Azóta változó nevek alatt személy- és teherhajók, uszályok, úszódaruk, vontatók és jégtörők százait építették itt; az 1980-as évekre a hajógyár gazdasági nehézségekkel küzdött, és a jogutód GD Óbudai Hajóépítő Rt. felszámolása 1999. november 29-én fejeződött be."
+  },
+  "sources": [
+    {
+      "title": "Óbudai Hajógyár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/%C3%93budai_Haj%C3%B3gy%C3%A1r",
+      "note": "1835, 1836, 1844, 1999, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/%C3%93budai_Haj%C3%B3gy%C3%A1r_-_Vas%C3%A1rnapi_%C3%9Ajs%C3%A1g_1857-3.jpg",
+      "author": "unknown/ismeretlen",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:%C3%93budai_Haj%C3%B3gy%C3%A1r_-_Vas%C3%A1rnapi_%C3%9Ajs%C3%A1g_1857-3.jpg",
+      "caption": {
+        "uk": "Обудайська корабельня у Vasárnapi Újság",
+        "hu": "Az Óbudai Hajógyár a Vasárnapi Újságban"
+      }
+    }
+  ]
+}

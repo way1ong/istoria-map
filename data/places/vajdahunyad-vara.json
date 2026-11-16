@@ -1,0 +1,45 @@
+{
+  "id": "vajdahunyad-vara",
+  "name": {
+    "uk": "Замок Вайдагуняд у Варошлігеті (Vajdahunyad vára)",
+    "hu": "Vajdahunyad vára, Városliget"
+  },
+  "type": "monument",
+  "coords": [
+    19.08222,
+    47.51528
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "«Двічі збудований» історичний комплекс Ignác Alpár на острові Сечені Варошлігетського озера: зведений як виставкова будівля до Тисячоліття 1896 року, розібраний 1899 року і вдруге збудований у 1902–1908 роках для Музею сільського господарства.",
+    "hu": "A „kétszer felépült” Történelmi Épületcsoport, Alpár Ignác műve a Városligeti-tó Széchenyi-szigetén: 1896-ban millenniumi kiállítási épületként, 1899-es lebontása után 1902–1908 között a Mezőgazdasági Múzeum számára építették fel újra."
+  },
+  "description": {
+    "uk": "За статтею, замок Вайдагуняд, офіційно Історичний комплекс будівель, є твором архітектора Ignác Alpár у XIV районі Будапешта на острові Сечені Варошлігетського озера, до якого ведуть чотири мости. Його звели 1896 року як історичну виставкову будівлю Тисячоліття, 1899 року розібрали й удруге збудували в 1902–1908 роках для Угорського сільськогосподарського музею, який працює тут і нині.",
+    "hu": "A szócikk szerint a Vajdahunyad vára, hivatalosan Történelmi Épületcsoport, Alpár Ignác építész alkotása Budapest XIV. kerületében, a Városligeti-tó Széchenyi-szigetén, amelyre négy híd vezet. 1896-ban építették a millennium történelmi kiállítási épületeként, 1899-ben lebontották, és 1902–1908 között másodszor is felépítették a Magyar Mezőgazdasági Múzeum számára, amely ma is itt működik."
+  },
+  "sources": [
+    {
+      "title": "Vajdahunyad vára – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Vajdahunyad_v%C3%A1ra",
+      "note": "1896, 1902–1908, Alpár, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Budapest%2C_V%C3%A1rosliget_-_Vajdahunyad_v%C3%A1ra_l%C3%A9gi_fot%C3%B3n.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Budapest%2C_V%C3%A1rosliget_-_Vajdahunyad_v%C3%A1ra_l%C3%A9gi_fot%C3%B3n.jpg",
+      "caption": {
+        "uk": "Замок Вайдагуняд з повітря",
+        "hu": "Vajdahunyad vára légi fotón"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "ferto-taj",
+  "name": {
+    "uk": "Культурний ландшафт Фертьо (Fertő / Neusiedlersee), Світова спадщина 2001",
+    "hu": "Fertő-táj"
+  },
+  "type": "other",
+  "coords": [
+    16.73472,
+    47.80056
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "prehistory",
+    "roman-barbaricum",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Озеро Фертьо з довколишнім краєм і поселеннями, яке ЮНЕСКО 2001 року внесло до Світової спадщини за спільним поданням Австрії та Угорщини, бо більша частина озера лежить в Австрії і по обидва боки кордону його охороняють національні парки; відзначено народну архітектуру, пам'ятки, археологічні сліди цивілізацій, виноградарство і природу. Прикордонний об'єкт.",
+    "hu": "A Fertő tavat és az azt övező tájat, településeit 2001-ben vette fel az UNESCO a világörözségek közé Ausztria és Magyarország közös kérelmére, mivel a tó túlnyomó része Ausztriához tartozik, és a határ mindkét oldalán nemzeti park védi; népi építészete, műemlékei, régészeti emlékei, szőlő- és borkultúrája, élővilága miatt. Határon átnyúló terület."
+  },
+  "description": {
+    "uk": "За статтею, край Фертьо лежить на північному заході Угорщини; озеро Фертьо з довколишнім краєм і поселеннями ЮНЕСКО 2001 року внесло до Світової спадщини за спільним поданням Австрії та Угорщини, бо переважна частина озера належить Австрії, і по обидва боки кордону його охороняє національний парк. Ландшафт заслужив внесення народною архітектурою, пам'ятками, археологічними слідами цивілізацій, що змінювали одна одну, культурою виноградарства й виноробства та різноманітною флорою і фауною; для представництва території створено громадську організацію з участю угорських поселень. Координати зі статті приблизні; меморіал Залізної завіси в Hegykő і Панєвропейський пікнік описані окремо.",
+    "hu": "A szócikk szerint a Fertő-táj Magyarország északnyugati részén fekszik; a Fertő tavat a környező tájjal és településekkel az UNESCO 2001-ben Ausztria és Magyarország közös felterjesztésére vette fel a világörökségi listára, mivel a tó túlnyomó része Ausztriához tartozik, és a határ mindkét oldalán nemzeti park védi. A táj népi építészetével, műemlékeivel, az egymást váltó civilizációk régészeti nyomaival, szőlő- és borkultúrájával, valamint változatos növény- és állatvilágával érdemelte ki a felvételt; a terület képviseletére a magyar települések részvételével civil szervezetet hoztak létre. A szócikkből vett koordináták hozzávetőlegesek; a hegykői vasfüggöny-emlékhelyet és a páneurópai pikniket külön írjuk le."
+  },
+  "sources": [
+    {
+      "title": "Fertő-táj – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Fert%C5%91-t%C3%A1j",
+      "note": "2001, критерії, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/A_Fert%C5%91_n%C3%A1dasa_%C3%A9s_a_balfi_dombok.jpg",
+      "author": "Pellinger Attila",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_Fert%C5%91_n%C3%A1dasa_%C3%A9s_a_balfi_dombok.jpg",
+      "caption": {
+        "uk": "Очерети Фертьо і пагорби Balf",
+        "hu": "A Fertő nádasa és a balfi dombok"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "nyugati-palyaudvar",
+  "name": {
+    "uk": "Західний вокзал (Nyugati pályaudvar)",
+    "hu": "Nyugati pályaudvar"
+  },
+  "type": "monument",
+  "coords": [
+    19.0575,
+    47.51083
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Найстаріший тупиковий вокзал Будапешта біля Teréz körút у VI районі; названий не за географією, а за залізничною компанією-будівничим, як і Південний вокзал. Звідси йде лінія на Вац, Göd і Dunakeszi.",
+    "hu": "Budapest legrégebbi vasúti fejállomása a Nagykörút Teréz körúti szakasza mellett a VI. kerületben; nevét nem földrajzi fekvéséről, hanem az építtető vasúttársaságról kapta, akárcsak a Déli pályaudvar. Innen indul a váci vonal Dunakeszi és Göd felé."
+  },
+  "description": {
+    "uk": "За статтею, Західний вокзал (офіційно Budapest-Nyugati) є найстарішим тупиковим залізничним вокзалом Будапешта біля відрізка Великого кільця Teréz körút у VI районі; свою назву він дістав не за географічним положенням, а за залізничним товариством-будівничим, як і Південний вокзал. Перший угорський потяг 1846 року на Вац вирушив з попередника цього вокзалу (див. анімацію й подію 1846 року).",
+    "hu": "A cikk szerint a Nyugati pályaudvar (hivatalosan Budapest-Nyugati) Budapest legrégebbi fejpályaudvara a Nagykörút Teréz körúti szakasza mellett a VI. kerületben; nevét nem földrajzi fekvéséről, hanem az építtető vasúttársaságról kapta, akárcsak a Déli pályaudvar. Az első magyar vonat 1846-ban Vácra ennek a pályaudvarnak az elődjéről indult (lásd az animációt és az 1846-os eseményt)."
+  },
+  "sources": [
+    {
+      "title": "Nyugati pályaudvar – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nyugati_p%C3%A1lyaudvar",
+      "note": "Назва, розташування, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Budapest_Nyugati_p%C3%A1lyaudvar_%2854330940654%29.jpg",
+      "author": "Jorge Franganillo",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Budapest_Nyugati_p%C3%A1lyaudvar_%2854330940654%29.jpg",
+      "caption": {
+        "uk": "Західний вокзал",
+        "hu": "A Nyugati pályaudvar"
+      }
+    }
+  ]
+}

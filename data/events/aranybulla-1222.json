@@ -1,0 +1,43 @@
+{
+  "id": "aranybulla-1222",
+  "title": {
+    "uk": "Золота булла Андраша II",
+    "hu": "Az Aranybulla kiadása"
+  },
+  "date": {
+    "from": "1222-04-24",
+    "precision": "exact"
+  },
+  "period": "arpad",
+  "places": [
+    "szekesfehervar-kiralyi-bazilika"
+  ],
+  "summary": {
+    "uk": "24 квітня 1222 року на державних зборах у Секешфегерварі король Андраш II видав королівську грамоту з подвійною золотою підвісною печаткою, що вперше зафіксувала права угорської шляхти; усі сім оригіналів утрачені, текст зберігся в багатьох джерелах.",
+    "hu": "1222. április 24-én a székesfehérvári országgyűlésen II. András király kiadta a kettős aranypecséttel ellátott okiratot, amely a magyar nemesség jogait először rögzítette; mind a hét eredeti példány elveszett, szövege sok forrásban fennmaradt."
+  },
+  "description": {
+    "uk": "За статтею, Золота булла у вузькому розумінні є королівською грамотою з підвісною печаткою, яку король Андраш II видав 24 квітня 1222 року на державних зборах у Секешфегерварі і яка вперше зафіксувала права угорської шляхти; подвійна золота печатка висіла на загнутій нижній частині пергамену, пліці. У ширшому розумінні золотою буллою звуть золоту печатку, якою угорські королі від Бели III підтверджували найважливіші документи. Усі сім оригінальних примірників Золотої булли, яку вважають наріжним каменем шляхетської свободи, втрачені, але текст зберігся в досить багатьох джерелах.",
+    "hu": "A szócikk szerint az Aranybulla szűkebb értelemben az a függőpecsétes királyi oklevél, amelyet II. András király 1222. április 24-én adott ki a székesfehérvári országgyűlésen, és amely először rögzítette a magyar nemesség jogait; a kettős aranypecsét a pergamen felhajtott alsó részén, a plicán függött. Tágabb értelemben aranybullának nevezik azt az aranypecsétet, amellyel a magyar királyok III. Bélától kezdve a legfontosabb okleveleket erősítették meg. A nemesi szabadság sarokkövének tartott Aranybulla mind a hét eredeti példánya elveszett, de szövege meglehetősen sok forrásban fennmaradt."
+  },
+  "sources": [
+    {
+      "title": "Aranybulla – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Aranybulla",
+      "note": "Дата, місце, зміст."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/II._Andr%C3%A1s_aranybull%C3%A1ja.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:II._Andr%C3%A1s_aranybull%C3%A1ja.jpg",
+      "caption": {
+        "uk": "Золота булла Андраша II",
+        "hu": "II. András aranybullája"
+      }
+    }
+  ]
+}

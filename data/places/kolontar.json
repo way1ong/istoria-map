@@ -1,0 +1,49 @@
+{
+  "id": "kolontar",
+  "name": {
+    "uk": "Колонтар (Kolontár): катастрофа червоного шламу 2010 року",
+    "hu": "Kolontár"
+  },
+  "type": "settlement",
+  "coords": [
+    17.475,
+    47.08444
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "Село в комітаті Веспрем, яке 4 жовтня 2010 року опівдні затопило 600–700 тисяч м³ лужного шламу після прориву дамби сховища Айкського глиноземного заводу; загинуло десятеро мешканців, 9 жовтня село евакуювали, на місці знесених вулиць створено меморіал. Точка: центр села.",
+    "hu": "Veszprém vármegyei község, amelyet 2010. október 4-én délben 600–700 ezer köbméter lúgos iszap árasztott el az Ajkai Timföldgyár tározójának gátszakadása után; tíz helyi lakos meghalt, október 9-én az egész falut kitelepítették, a lebontott utcák helyén emlékhely létesült. A térképi pont a falu központja."
+  },
+  "description": {
+    "uk": "За статтею про село, 4 жовтня 2010 року в полуденні години прорвало дамбу сховища червоного шламу Айкського глиноземного заводу поблизу села, і за короткий час близько 600–700 тисяч м³ лужного шламу затопили поселення; катастрофа забрала життя десяти місцевих мешканців, потік пішов долиною потоку Torna на Devecser і далі, досягнувши через Torna, Marcal, Rába і Mosoni-Duna навіть Дунаю. 9 жовтня усе село евакуювали, бо північна стіна дамби далі слабшала; після катастрофи на вищих частинах села збудували захисну дамбу, а житлові ділянки за нею і за залізницею, зокрема частину Kossuth Lajos utca і Malom utca, знесли, і на їхньому місці постав меморіал. За статтею про катастрофу, це був найтяжчий промисловий випадок угорської історії: з 400 × 600-метрового сховища між Kolontár і Ajka вилилося понад мільйон кубометрів шламу, який розлився на близько 40 км² і знищив усе живе в потоці Torna. Координати відповідають центру села.",
+    "hu": "A faluról szóló cikk szerint 2010. október 4-én a déli órákban a falu közelében átszakadt az Ajkai Timföldgyár vörösiszap-tározójának gátja, és rövid idő alatt mintegy 600–700 ezer m³ lúgos iszap öntötte el a települést; a katasztrófa tíz helyi lakos életét követelte, az áradat a Torna-patak völgyében Devecser felé és tovább haladt, és a Tornán, a Marcalon, a Rábán és a Mosoni-Dunán át még a Dunát is elérte. Október 9-én az egész falut kitelepítették, mert a gát északi fala tovább gyengült; a katasztrófa után a falu magasabban fekvő részein védőgátat építettek, a mögötte és a vasút mögött fekvő lakótelkeket, köztük a Kossuth Lajos utca és a Malom utca egy részét lebontották, és a helyükön emlékhely létesült. A katasztrófáról szóló cikk szerint ez volt a magyar történelem legsúlyosabb ipari balesete: a Kolontár és Ajka közötti 400 × 600 méteres tározóból több mint egymillió köbméter iszap ömlött ki, amely mintegy 40 km²-en terült szét, és minden élőlényt elpusztított a Torna-patakban. A koordináták a falu központjának felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Kolontár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kolont%C3%A1r",
+      "note": "Дата, наслідки, координати села."
+    },
+    {
+      "title": "Ajkai vörösiszap-katasztrófa – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Ajkai_v%C3%B6r%C3%B6siszap-katasztr%C3%B3fa",
+      "note": "Обсяг, площа, винуватець."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Kolont%C3%A1r_templom.JPG",
+      "author": "Pan Peter12",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kolont%C3%A1r_templom.JPG",
+      "caption": {
+        "uk": "Церква в Kolontár",
+        "hu": "A kolontári templom"
+      }
+    }
+  ]
+}

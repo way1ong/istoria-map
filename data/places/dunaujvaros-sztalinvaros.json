@@ -1,0 +1,45 @@
+{
+  "id": "dunaujvaros-sztalinvaros",
+  "name": {
+    "uk": "Дунауйварош (Dunaújváros), колишній Сталінварош",
+    "hu": "Dunaújváros (Sztálinváros)"
+  },
+  "type": "settlement",
+  "coords": [
+    18.91667,
+    46.98333
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "roman-barbaricum",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Місто комітатського значення на правому березі Дунаю, збудоване біля села Dunapentele: у 1951–1961 роках звалося Sztálinváros; на його території лежав римський форт Intercisa. Точка: центр міста.",
+    "hu": "Megyei jogú város a Duna jobb partján, Dunapentele mellett épült; 1951 és 1961 között Sztálinváros volt a neve; területén feküdt a római Intercisa. A térképi pont a város központja."
+  },
+  "description": {
+    "uk": "За статтею, Дунауйварош (римська Intercisa, до 1951 року Pentele, Dunapentele, у 1951–1961 роках Sztálinváros) є містом комітатського значення в регіоні Центральне Задунав'я на південному сході комітату Фейєр на правому березі Дунаю, центром Дунауйварошського округу і другим за населенням містом комітату після Секешфегервара; це значний економічний, культурний і спортивний центр та університетське місто з одними з найвищих доходів у країні. Координати відповідають центру міста.",
+    "hu": "A szócikk szerint Dunaújváros (a római Intercisa, 1951-ig Pentele, Dunapentele, 1951–1961 között Sztálinváros) megyei jogú város a Közép-Dunántúl régióban, Fejér vármegye délkeleti részén, a Duna jobb partján, a Dunaújvárosi járás központja és Székesfehérvár után a vármegye második legnépesebb városa; jelentős gazdasági, kulturális és sportközpont, valamint egyetemi város az ország egyik legmagasabb jövedelmével. A koordináták a város központjának felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Dunaújváros – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Duna%C3%BAjv%C3%A1ros",
+      "note": "Назви, статус, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Evang%C3%A9likus_templom_%C3%A9s_par%C3%B3kia%2C_Duna%C3%BAjv%C3%A1ros.jpg",
+      "author": "Hajdú József",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Evang%C3%A9likus_templom_%C3%A9s_par%C3%B3kia%2C_Duna%C3%BAjv%C3%A1ros.jpg",
+      "caption": {
+        "uk": "Євангелічна церква Дунауйвароша",
+        "hu": "Dunaújváros evangélikus temploma"
+      }
+    }
+  ]
+}

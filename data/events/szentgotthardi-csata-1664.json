@@ -1,0 +1,43 @@
+{
+  "id": "szentgotthardi-csata-1664",
+  "title": {
+    "uk": "Битва при Сентґоттгарді",
+    "hu": "A szentgotthárdi csata"
+  },
+  "date": {
+    "from": "1664-08-01",
+    "precision": "exact"
+  },
+  "period": "ottoman",
+  "places": [
+    "szentgotthard-csatater"
+  ],
+  "summary": {
+    "uk": "1 серпня 1664 року християнське військо Монтекукколі несподівано розгромило османську армію Кьопрюлю Ахмеда: перша велика відкрита битва після Могача і Мезекерестеша, що не закінчилася турецькою перемогою.",
+    "hu": "1664. augusztus 1-jén Montecuccoli keresztény hada váratlanul legyőzte Köprülü Ahmed oszmán seregét; Mohács és Mezőkeresztes után az első nagy nyílt csata, amely nem török győzelemmel végződött."
+  },
+  "description": {
+    "uk": "За статтею, битва відбулася 1 серпня 1664 року, коли християнське військо під проводом Раймондо Монтекукколі зіткнулося з османською армією Кьопрюлю Ахмеда біля Сентґоттгарда й здобуло несподівано нищівну перемогу. В історії турецьких воєн в Угорщині вона мала величезне значення: після Могача (1526) і Мезекерестеша (1596) це була перша велика відкрита битва, що не закінчилася турецькою перемогою; головним театром європейських турецьких воєн було саме Угорське королівство, де османська сухопутна армія досі воювала надзвичайно успішно.",
+    "hu": "A szócikk szerint a csata 1664. augusztus 1-jén zajlott, amikor a Raimondo Montecuccoli vezette keresztény sereg Szentgotthárd mellett ütközött meg Köprülü Ahmed oszmán hadseregével, és váratlanul megsemmisítő győzelmet aratott. A magyarországi török háborúk történetében óriási jelentősége volt: Mohács (1526) és Mezőkeresztes (1596) után ez volt az első nagy nyílt csata, amely nem török győzelemmel végződött; az európai török háborúk fő hadszíntere éppen a Magyar Királyság volt, ahol az oszmán szárazföldi hadsereg addig rendkívül sikeresen harcolt."
+  },
+  "sources": [
+    {
+      "title": "Szentgotthárdi csata (1664) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szentgotth%C3%A1rdi_csata_%281664%29",
+      "note": "Дата, командувачі, значення."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Dorfmeister-_Az_1664-es_szentgotth%C3%A1rdi_csata.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Dorfmeister-_Az_1664-es_szentgotth%C3%A1rdi_csata.jpg",
+      "caption": {
+        "uk": "Битва на картині István Dorfmeister",
+        "hu": "A csata Dorfmeister István festményén"
+      }
+    }
+  ]
+}

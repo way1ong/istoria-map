@@ -1,0 +1,31 @@
+{
+  "id": "egri-liceum",
+  "name": {
+    "uk": "Егерський ліцей (Líceum) з обсерваторією",
+    "hu": "Egri Líceum"
+  },
+  "type": "other",
+  "coords": [
+    20.37575,
+    47.90006
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Будівля навпроти Егерської базиліки, яку єпископ Ferenc Barkóczy почав зводити 1761 року для задуманого ним університету; його наступник Károly Eszterházy з 1762 року розширив задум. В осі східного фасаду 54-метрова вежа обсерваторії.",
+    "hu": "Az Eszterházy téren álló épület, amelyet Barkóczy Ferenc püspök 1761-ben kezdett építtetni egyetem céljára; utóda, Eszterházy Károly 1762-től bővíttette. Keleti homlokzatán az 54 m-es csillagvizsgáló torony."
+  },
+  "description": {
+    "uk": "За статтею, колишній ліцей стоїть на площі Eszterházy tér навпроти базиліки і від побудови належить Егерській архієпархії. Будівництво почав 1761 року єпископ Ferenc Barkóczy, щоб розмістити тут університет, який хотів заснувати; першим архітектором був Josef Ignaz Gerl. 29 червня 1762 року єпископом став Károly Eszterházy, який наказав замість одноповерхової спроєктувати двоповерхову будівлю. В осі східного фасаду височіє 54-метрова вежа обсерваторії, Егерська чільярда.",
+    "hu": "A szócikk szerint az egykori líceum az Eszterházy téren áll, a bazilikával szemben, és felépítése óta az Egri Főegyházmegyéhez tartozik. Az építést 1761-ben Barkóczy Ferenc püspök kezdte meg, hogy itt helyezze el az általa alapítani kívánt egyetemet; első építésze Josef Ignaz Gerl volt. 1762. június 29-én Eszterházy Károly lett a püspök, aki elrendelte, hogy földszintes helyett egyemeletes épületet tervezzenek. A keleti homlokzat tengelyében emelkedik a csillagvizsgáló 54 méteres tornya, az egri Csillagda."
+  },
+  "sources": [
+    {
+      "title": "Líceum (Eger) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/L%C3%ADceum_%28Eger%29",
+      "note": "Barkóczy 1761, Eszterházy 1762, обсерваторія, координати."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "parkanyi-csatater",
+  "name": {
+    "uk": "Поле битви під Парканем (Štúrovo), 1683",
+    "hu": "Párkányi csatatér"
+  },
+  "type": "monument",
+  "coords": [
+    18.71806,
+    47.79917
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Місце битви 7–9 жовтня 1683 року під Парканем навпроти Естергома через Дунай. Нині Štúrovo в Словаччині; прикордонний об'єкт.",
+    "hu": "Az 1683. október 7–9. között Párkánynál, Esztergommal szemben vívott csata helyszíne. Ma Štúrovo Szlovákiában; határon túli hely."
+  },
+  "description": {
+    "uk": "За статтею, битвою під Парканем зветься зіткнення, що відбулося 7–9 жовтня 1683 року біля Парканя. Місто лежить навпроти Естергома за Дунаєм, за межами нинішньої Угорщини; координати зі статті приблизні.",
+    "hu": "A szócikk szerint párkányi csatának az 1683. október 7–9. között Párkány mellett lezajlott összecsapást nevezik. A város Esztergommal szemben, a Duna túlsó partján, a mai Magyarország határain kívül fekszik; a szócikkből vett koordináták hozzávetőlegesek."
+  },
+  "sources": [
+    {
+      "title": "Párkányi csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/P%C3%A1rk%C3%A1nyi_csata",
+      "note": "Дати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Battle_of_Parkany_1683_oct_7_9.jpg",
+      "author": "Justus van den Nijpoort",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Battle_of_Parkany_1683_oct_7_9.jpg",
+      "caption": {
+        "uk": "Битва під Парканем",
+        "hu": "A párkányi csata"
+      }
+    }
+  ]
+}

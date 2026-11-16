@@ -1,0 +1,31 @@
+{
+  "id": "recsk-tabor-1950",
+  "title": {
+    "uk": "Табір примусової праці в Речку",
+    "hu": "A recski kényszermunkatábor"
+  },
+  "date": {
+    "from": "1950-10",
+    "to": "1953",
+    "precision": "approximate"
+  },
+  "period": "modern",
+  "places": [
+    "recsk-tabor"
+  ],
+  "summary": {
+    "uk": "З жовтня 1950 до осені 1953 року ÁVH утримувало біля каменоломні Csákány-kő найсумнозвісніший з приблизно 100 таборів інтернування: близько 1500 в'язнів без вироку працювали в каменоломні за мінімальних умов.",
+    "hu": "1950 októberétől 1953 őszéig működött az ÁVH leghírhedtebb tábora a Csákány-kő kőbányájánál; mintegy 1500, ítélet nélkül fogva tartott embert dolgoztattak."
+  },
+  "description": {
+    "uk": "За статтею, табір біля гори Csákány-kő поблизу села Recsk діяв з жовтня 1950 до осені 1953 року під управлінням Управління державної безпеки (ÁVH) і був найсумнозвіснішим з приблизно 100 таборів, «угорським ГУЛАГом». Близько 1500 ув'язнених без судового вироку безперервно працювали в каменоломні за мінімальних умов, їх жорстоко карали, катували й морили голодом. Lajos Dálnoki Miklós і György Gábori, що побували і в Дахау, і в Речку, вважали Речк тяжчим.",
+    "hu": "A szócikk szerint a Recsk község melletti Csákány-kő hegynél lévő tábor 1950 októberétől 1953 őszéig működött az Államvédelmi Hatóság (ÁVH) irányítása alatt, és a mintegy 100 tábor közül a leghírhedtebb, a „magyar Gulag” volt. Körülbelül 1500, bírósági ítélet nélkül fogva tartott rab dolgozott megállás nélkül a kőbányában minimális körülmények között, kegyetlenül büntették, kínozták és éheztették őket. Dálnoki Miklós Lajos és Gábori György, akik Dachaut és Recsket is megjárták, Recsket tartották súlyosabbnak."
+  },
+  "sources": [
+    {
+      "title": "Recski kényszermunkatábor – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Recski_k%C3%A9nyszermunkat%C3%A1bor",
+      "note": "Роки, ÁVH, умови."
+    }
+  ]
+}

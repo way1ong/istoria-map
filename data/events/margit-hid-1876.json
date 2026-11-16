@@ -1,0 +1,30 @@
+{
+  "id": "margit-hid-1876",
+  "title": {
+    "uk": "Відкриття мосту Маргіт",
+    "hu": "A Margit híd átadása"
+  },
+  "date": {
+    "from": "1876-04-30",
+    "precision": "exact"
+  },
+  "period": "long-19",
+  "places": [
+    "margit-hid"
+  ],
+  "summary": {
+    "uk": "30 квітня 1876 року відкрили другий постійний міст столиці, збудований у 1872–1876 роках за проєктом Ernest Goüin; 1879 року по ньому пішла конка, 1894 року трамвай, 19 серпня 1900 року відкрили крило на острів Маргіт.",
+    "hu": "1876. április 30-án avatták fel a főváros második állandó hídját, amely 1872 és 1876 között épült Ernest Goüin tervei szerint; 1879-ben lóvasút, 1894-ben villamos indult rajta, 1900. augusztus 19-én nyílt meg a Margit-szigetre vezető szárnyhíd."
+  },
+  "description": {
+    "uk": "За статтею, міст Маргіт як другий постійний міст столиці збудували в 1872–1876 роках і відкрили 30 квітня 1876 року; конкурс оголосили 1871 року, першу премію дістав французький інженер Ernest Goüin. Через три роки після відкриття, 1879 року, по мосту пішла конка, 1894 року трамвай, а 19 серпня 1900 року відкрили крило на острів Маргіт, до того доступний лише водою.",
+    "hu": "A cikk szerint a Margit hidat a főváros második állandó hídjaként 1872–1876 között építették, és 1876. április 30-án nyitották meg; a pályázatot 1871-ben írták ki, az első díjat Ernest Goüin francia mérnök nyerte. A megnyitás után három évvel, 1879-ben lóvasút, 1894-ben villamos indult a hídon, 1900. augusztus 19-én pedig megnyitották a Margit-szigetre vezető szárnyhidat; a sziget addig csak vízi úton volt megközelíthető."
+  },
+  "sources": [
+    {
+      "title": "Margit híd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Margit_h%C3%ADd",
+      "note": "Дати, Goüin, крило 1900."
+    }
+  ]
+}

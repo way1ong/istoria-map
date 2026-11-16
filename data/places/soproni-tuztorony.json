@@ -1,0 +1,46 @@
+{
+  "id": "soproni-tuztorony",
+  "name": {
+    "uk": "Пожежна вежа Шопрона (Tűztorony)",
+    "hu": "Soproni Tűztorony"
+  },
+  "type": "monument",
+  "coords": [
+    16.5913,
+    47.6868
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "long-19",
+    "interwar-ww2"
+  ],
+  "summary": {
+    "uk": "58-метрова вежа на головній площі, символ міста; збудована у XIII столітті й століттями служила місту, наприкінці XIX століття під час будівництва ратуші втратила стійкість; первісний архітектурний характер повернуто в 2009–2012 роках.",
+    "hu": "Az 58 méter magas torony a Fő téren, a város jelképe; a 13. században épült, a 19. század végén a Városháza építésekor elvesztette állékonyságát; eredeti jellegét a 2009–2012-es helyreállítás adta vissza."
+  },
+  "description": {
+    "uk": "За статтею, 58-метрова шопронська Пожежна вежа є символом міста і стоїть на головній площі. Її збудували у XIII столітті, і століттями вона служила місту; наприкінці XIX століття під час будівництва ратуші вежа втратила стійкість, і з огляду на статику її браму звузили. Первісний архітектурний характер вежі повернуло укріплення й відновлення 2009–2012 років. У грудні 1921 року мешканці Шопрона проголосували за Угорщину (окрема подія).",
+    "hu": "A szócikk szerint az 58 méteres soproni Tűztorony a város jelképe, és a főtéren áll. A 13. században építették, és évszázadokon át szolgálta a várost; a 19. század végén a városháza építésekor a torony elvesztette stabilitását, és statikai okokból kapuját leszűkítették. A torony eredeti építészeti jellegét a 2009–2012-es megerősítés és helyreállítás adta vissza. 1921 decemberében Sopron lakói Magyarország mellett szavaztak (külön esemény)."
+  },
+  "sources": [
+    {
+      "title": "Tűztorony (Sopron) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/T%C5%B1ztorony_%28Sopron%29",
+      "note": "Висота, датування, реставрація, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/2012-ben_meg%C3%BAjult_T%C5%B1ztorony.JPG",
+      "author": "Pan Peter12",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:2012-ben_meg%C3%BAjult_T%C5%B1ztorony.JPG",
+      "caption": {
+        "uk": "Оновлена Пожежна вежа, 2012",
+        "hu": "A megújult Tűztorony 2012-ben"
+      }
+    }
+  ]
+}

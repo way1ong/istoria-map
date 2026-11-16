@@ -1,0 +1,44 @@
+{
+  "id": "egri-minaret",
+  "name": {
+    "uk": "Егерський мінарет",
+    "hu": "Egri minaret"
+  },
+  "type": "monument",
+  "coords": [
+    20.37636,
+    47.90467
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Найпівнічніша в Європі споруда Османської імперії і найвищий і найкраще збережений з трьох цілих мінаретів Угорщини; 14-гранний, заввишки 40 м, збудований, імовірно, на початку XVII століття.",
+    "hu": "Az Oszmán Birodalom legészakibb európai épített emléke, Magyarország három ép minaretje közül a legmagasabb és legjobb állapotú; 14 szögletű, 40 m magas, valószínűleg a 17. század elején épült."
+  },
+  "description": {
+    "uk": "За статтею, Егерський мінарет є найпівнічнішою в Європі збудованою пам'яткою Османської імперії і найвищим та найкраще збереженим із трьох цілих мінаретів Угорщини; збудований, імовірно, на початку XVII століття. Його основа 14-гранна, вершина на висоті 40 м; ширший цоколь пластично звужується конічним відрізком до стовбура, у верхній третині якого над багато розчленованим рядом консолей іде балкон з кованою огорожею.",
+    "hu": "A cikk szerint az egri minaret az Oszmán Birodalom legészakibb Európában épült emléke, valamint Magyarország három ép minaretje közül a legmagasabb és a legjobban megmaradt; valószínűleg a XVII. század elején épült. Alapja 14 szögű, csúcsa 40 m magasan van; a szélesebb lábazat kúpos szakasszal plasztikusan szűkül a törzsbe, amelynek felső harmadában, a gazdagon tagolt konzolsor fölött kovácsoltvas korlátú erkély fut."
+  },
+  "sources": [
+    {
+      "title": "Egri minaret – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Egri_minaret",
+      "note": "Датування, розміри, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Minaret_%285528._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_4.jpg",
+      "author": "Mykee78",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:Minaret_%285528._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_4.jpg",
+      "caption": {
+        "uk": "Егерський мінарет",
+        "hu": "Az egri minaret"
+      }
+    }
+  ]
+}

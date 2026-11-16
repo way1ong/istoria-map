@@ -1,0 +1,44 @@
+{
+  "id": "campona-nagyteteny",
+  "name": {
+    "uk": "Кампона (Campona), форт у Надьтетені",
+    "hu": "Campona római erőd, Nagytétény"
+  },
+  "type": "archaeological",
+  "coords": [
+    18.98464,
+    47.3908
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Форт лімесу на південь від Аквінкума на березі Дунаю, імовірно з гаванню; збудований як палісадний на початку II століття у зв'язку з сарматськими війнами після смерті Траяна, кам'яним став лише наприкінці століття.",
+    "hu": "Aquincumtól délre, a Duna partján álló limeserőd, feltehetően kikötővel; a 2. század elején palánkvárként épült a Traianus halálát követő szarmata háborúk idején, és csak a század végén építették át kőerőddé."
+  },
+  "description": {
+    "uk": "За статтею, Campona був римським фортом на південь від Аквінкума, ланкою системи фортів Exercitus Pannoniae, що стояв на березі Дунаю, ймовірно, з гаванню. Його збудували як палісадне укріплення на початку II століття у зв'язку з сарматськими війнами після смерті Траяна і лише наприкінці століття перебудували на кам'яний; він не раз горів і щоразу відбудовувався з перебудовами, що й надає йому значення. Форт мав посилити оборону Аквінкума.",
+    "hu": "A szócikk szerint Campona az Aquincumtól délre fekvő római erőd volt, az Exercitus Pannoniae erődrendszerének láncszeme, amely a Duna partján állt, valószínűleg kikötővel. Palánkerődként épült a II. század elején a Traianus halála utáni szarmata háborúkkal összefüggésben, és csak a század végén építették át kőerőddé; többször leégett, és minden alkalommal átalakításokkal építették újjá, ami jelentőségét adja. Az erődnek Aquincum védelmét kellett erősítenie."
+  },
+  "sources": [
+    {
+      "title": "Campona (római erőd) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Campona_%28r%C3%B3mai_er%C5%91d%29",
+      "note": "Датування, функція, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Ferenc_Somorjai_V%C3%A9nusz_szobrocska_Nagyt%C3%A9t%C3%A9nyben.jpg",
+      "author": "невідомий автор",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Ferenc_Somorjai_V%C3%A9nusz_szobrocska_Nagyt%C3%A9t%C3%A9nyben.jpg",
+      "caption": {
+        "uk": "Статуетка Венери з Надьтетеня",
+        "hu": "Vénusz-szobrocska Nagytétényből"
+      }
+    }
+  ]
+}

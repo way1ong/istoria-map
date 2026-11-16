@@ -1,0 +1,31 @@
+{
+  "id": "fertod-esterhazy-kastely",
+  "name": {
+    "uk": "Палац Естергазі у Фертьоді (Fertőd), «угорський Версаль»",
+    "hu": "Esterházy-kastély, Fertőd"
+  },
+  "type": "castle",
+  "coords": [
+    16.87167,
+    47.61944
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Головна пам'ятка Фертьода, що набула нинішнього вигляду в другій половині XVIII століття за задумом князя Miklós Esterházy «Пишного»; над нею працювали Martinelli, Jacoby і Menyhért Hefele, комплекс постав приблизно за двадцять років.",
+    "hu": "Fertőd fő nevezetessége, mai formáját a 18. század második felében nyerte el Esterházy (Fényes) Miklós elképzelései alapján; közel húsz év alatt alakult ki az együttes."
+  },
+  "description": {
+    "uk": "За статтею, палацовий комплекс Естергазі з історичною виставкою є головною пам'яткою міста Фертьод і одним із визначних туристичних місць Угорщини; він лежить у східній частині району Eszterháza. Нинішньої форми палац набув у другій половині XVIII століття за задумами й планами князя Miklós Esterházy «Пишного»; над ним працювали кілька архітекторів (Martinelli, Jacoby, Menyhért Hefele), але творцем ансамблю був по суті сам князь, за часів якого комплекс склався приблизно за двадцять років.",
+    "hu": "A szócikk szerint a történelmi kiállítással rendelkező fertődi Esterházy-kastélyegyüttes a város fő nevezetessége és Magyarország egyik kiemelkedő turisztikai célpontja; az Eszterháza városrész keleti részén fekszik. A kastély mai formáját a 18. század második felében nyerte el „Fényes” Esterházy Miklós herceg elképzelései és tervei szerint; több építész dolgozott rajta (Martinelli, Jacoby, Hefele Menyhért), de az együttes alkotója lényegében maga a herceg volt, akinek idejében a komplexum mintegy húsz év alatt alakult ki."
+  },
+  "sources": [
+    {
+      "title": "Esterházy-kastély (Fertőd) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Esterh%C3%A1zy-kast%C3%A9ly_%28Fert%C5%91d%29",
+      "note": "Датування, замовник, архітектори, координати."
+    }
+  ]
+}

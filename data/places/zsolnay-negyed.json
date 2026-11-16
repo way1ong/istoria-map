@@ -1,0 +1,45 @@
+{
+  "id": "zsolnay-negyed",
+  "name": {
+    "uk": "Культурний квартал Жолнаї в Печі (Zsolnay Kulturális Negyed)",
+    "hu": "Zsolnay Kulturális Negyed, Pécs"
+  },
+  "type": "other",
+  "coords": [
+    18.25111,
+    46.08
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Найбільша інвестиція програми «Печ 2010: культурна столиця Європи»: за два роки на п'яти гектарах колишньої порцелянової фабрики Zsolnay створено культурний квартал з виставками про родину Zsolnay, одна з найбільших реабілітацій фабричних ансамблів Центральної Європи.",
+    "hu": "A Pécs2010 Európa Kulturális Fővárosa projekt legnagyobb beruházása: a Zsolnay porcelángyár öt hektáros területén két év alatt kialakított kulturális negyed."
+  },
+  "description": {
+    "uk": "За статтею, Культурний квартал Жолнаї був найбільшою інвестицією проєкту «Печ 2010: культурна столиця Європи»: за два роки й понад 11 мільярдів форинтів п'ятигектарну територію фабрики Zsolnay повернули до життя в рамках однієї з найбільших у Центральній Європі реабілітацій фабричних ансамблів. Квартал поділений на чотири частини; у «Ремісничому» кварталі головні елементи: виставка про родину й історію Zsolnay, «Рожева» колекція Barnabás Winkler і колекція Gyugyi в будинку Sikorski.",
+    "hu": "A szócikk szerint a Zsolnay Kulturális Negyed a „Pécs 2010 – Európa Kulturális Fővárosa” projekt legnagyobb beruházása volt: két év alatt és több mint 11 milliárd forintból a Zsolnay-gyár öthektáros területét keltették életre Közép-Európa egyik legnagyobb gyáregyüttes-rehabilitációja keretében. A negyed négy részre oszlik; a Míves negyed fő elemei: a Zsolnay családról és történetéről szóló kiállítás, Winkler Barnabás „Rózsaszín” gyűjteménye és a Gyugyi-gyűjtemény a Sikorski-házban."
+  },
+  "sources": [
+    {
+      "title": "Zsolnay Kulturális Negyed – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Zsolnay_Kultur%C3%A1lis_Negyed",
+      "note": "Програма 2010, розмір, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Zsolnay_Kultur%C3%A1lis_Negyed_l%C3%A1tk%C3%A9pe_mad%C3%A1rt%C3%A1vlatb%C3%B3l.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Zsolnay_Kultur%C3%A1lis_Negyed_l%C3%A1tk%C3%A9pe_mad%C3%A1rt%C3%A1vlatb%C3%B3l.jpg",
+      "caption": {
+        "uk": "Квартал Жолнаї з пташиного польоту",
+        "hu": "A Zsolnay Negyed madártávlatból"
+      }
+    }
+  ]
+}

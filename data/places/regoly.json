@@ -1,0 +1,45 @@
+{
+  "id": "regoly",
+  "name": {
+    "uk": "Реґьой (Regöly): кельтське городище",
+    "hu": "Regöly, kelta földvár"
+  },
+  "type": "archaeological",
+  "coords": [
+    18.39064,
+    46.57856
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory",
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Село при злитті Kapos і Koppány, заселене з доісторичних часів; кельти звели тут городище, центр одного з найзначніших своїх поселень, найбагатше в Угорщині місце знахідок латенської культури; «золота могила» аланської княжни з понад 120 оздобами. Точка: центр села.",
+    "hu": "Község a Kapos és a Koppány összefolyásánál, az őskor óta lakott; a kelták földvárat emeltek itt, Regöly a La Tène-kultúra leggazdagabb magyarországi lelőhelye; az „aranysír” egy alán hercegnőé, több mint 120 flitterrel. A térképi pont a falu központja."
+  },
+  "description": {
+    "uk": "За статтею, Реґьой заселений з доісторичних часів; пізніше кельти звели тут городище, що стало центром одного з найзначніших їхніх поселень, і Реґьой є найбагатшим в Угорщині місцем знахідок латенської культури, а групу пізньокельтських монет література зве реґьойським типом. Серед поховань вирізняється «золота могила» аланської княжни, де археологи знайшли понад 120 оздоб-блискіток і різні золоті речі; у межах городища розкопано також церкву доби Арпадів з цвинтарем. Координати відповідають центру села.",
+    "hu": "A szócikk szerint Regöly a történelem előtti idők óta lakott; később a kelták földvárat emeltek itt, amely egyik legjelentősebb településük központja lett, és Regöly Magyarország leggazdagabb La Tène-kultúrájú lelőhelye, a késő kelta érmek egy csoportját pedig a szakirodalom regölyi típusnak nevezi. A temetkezések közül kiemelkedik egy alán hercegnő „aranysírja”, ahol a régészek több mint 120 flitterdíszt és különféle aranytárgyakat találtak; a földvár területén egy Árpád-kori templomot is feltártak temetővel együtt. A koordináták a falu központjának felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Regöly – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Reg%C3%B6ly",
+      "note": "Городище, латен, золота могила, координати села."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Reg%C3%B6ly%2C_r%C3%B3mai_katolikus_templom_2020_01.jpg",
+      "author": "Pasztilla aka Attila Terbócs",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Reg%C3%B6ly%2C_r%C3%B3mai_katolikus_templom_2020_01.jpg",
+      "caption": {
+        "uk": "Римо-католицька церква в Реґьої",
+        "hu": "A regölyi római katolikus templom"
+      }
+    }
+  ]
+}

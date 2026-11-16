@@ -1,0 +1,36 @@
+{
+  "id": "hortobagyi-panceloscsata-1944",
+  "title": {
+    "uk": "Танкова битва на Альфельді (Дебреценська операція)",
+    "hu": "A hortobágyi (alföldi) páncéloscsata"
+  },
+  "date": {
+    "from": "1944-10",
+    "precision": "approximate"
+  },
+  "period": "interwar-ww2",
+  "places": [
+    "hortobagy",
+    "debreceni-reformatus-kollegium"
+  ],
+  "summary": {
+    "uk": "Битва жовтня 1944 року, у німецькій і радянській літературі Дебреценська операція: 2-й Український фронт 2–3 жовтня кинув 6-ту гвардійську танкову армію (176 танків і САУ), але атаки відбили з тяжкими втратами; наступ тривав далі. 21 грудня 1944 року в Дебрецені зібралися Тимчасові національні збори.",
+    "hu": "1944 októberében zajlott csata, a német és orosz irodalomban Debreceni hadművelet: a 2. Ukrán Front október 2–3-án a 6. gárda-harckocsihadsereggel (176 harckocsi és rohamlöveg) támadott, de súlyos veszteségekkel visszaverték; a támadás mégis folytatódott. 1944. december 21-én Debrecenben ült össze az Ideiglenes Nemzetgyűlés."
+  },
+  "description": {
+    "uk": "За статтею, гортобадська (альфельдська, помилково дебреценська) танкова битва, у німецькій і російській військовій літературі Дебреценська операція, була однією з битв Другої світової війни 1944 року: радянське командування почало наступ на Угорщину й Румунію, де їх мали зупинити посилені німецькими дивізіями війська, але Румунія 23 серпня перейшла на інший бік. 2–3 жовтня 2-й Український фронт 6-ю гвардійською танковою армією (176 танків і самохідок) намагався взяти важливий пункт, але атаки відбили з тяжкими втратами, і все ж наступ продовжився. За статтею про Дебреценський колегіум, 21 грудня 1944 року там зібралися Тимчасові національні збори. Точне поле битви в картці не фіксується, подія прив'язана до Гортобадя і Дебрецена.",
+    "hu": "A szócikk szerint a hortobágyi (alföldi, tévesen debreceni) páncéloscsata, a német és az orosz hadtörténeti irodalomban debreceni hadművelet, a második világháború egyik 1944-es csatája volt: a szovjet hadvezetés támadást indított Magyarország és Románia ellen, ahol a német hadosztályokkal megerősített csapatoknak kellett volna feltartóztatniuk őket, de Románia augusztus 23-án átállt a másik oldalra. Október 2–3-án a 2. Ukrán Front a 6. gárda-harckocsihadsereggel (176 harckocsi és önjáró löveg) próbált elfoglalni egy fontos pontot, de a támadásokat súlyos veszteségekkel visszaverték, az előrenyomulás mégis folytatódott. A Debreceni Kollégiumról szóló szócikk szerint 1944. december 21-én ott ült össze az Ideiglenes Nemzetgyűlés. A pontos csatateret a kártya nem rögzíti, az esemény a Hortobágyhoz és Debrecenhez kötődik."
+  },
+  "sources": [
+    {
+      "title": "Debreceni páncéloscsata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Debreceni_p%C3%A1nc%C3%A9loscsata",
+      "note": "Жовтень 1944, сили."
+    },
+    {
+      "title": "Debreceni Református Kollégium – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Debreceni_Reform%C3%A1tus_Koll%C3%A9gium",
+      "note": "Тимчасові національні збори 21 грудня 1944."
+    }
+  ]
+}

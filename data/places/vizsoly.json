@@ -1,0 +1,49 @@
+{
+  "id": "vizsoly",
+  "name": {
+    "uk": "Вижой (Vizsoly): місце друку Біблії Каролі, 1590",
+    "hu": "Vizsoly, a Károli-biblia nyomtatási helye"
+  },
+  "type": "settlement",
+  "coords": [
+    21.2169,
+    48.385
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Село в комітаті Боршод-Абауй-Земплен, де 1590 року надруковано перший повний переклад Біблії угорською мовою Gáspár Károli та його співпрацівників за участі друкаря Bálint Mantskovits; від місця видання її звуть Вижойською Біблією. Точка: центр села.",
+    "hu": "Község Borsod-Abaúj-Zemplénben, ahol 1590-ben kinyomtatták Károli Gáspár és lelkésztársai teljes magyar bibliafordítását Mantskovits Bálint nyomdász közreműködésével; a kiadás helyéről vizsolyi Bibliának nevezik. A térképi pont a falu központja."
+  },
+  "description": {
+    "uk": "За статтею, Біблія Каролі є найдавнішою збереженою повною Біблією в перекладі угорською мовою; її перше видання 1590 року за місцем друку відоме як Вижойська Біблія. Переклад виконали Gáspár Károlyi та його колеги-пастори, у друкуванні допомагав друкар Bálint Mantskovits; у січні 2015 року переклад внесено до переліку гунгарикумів. Координати центру села з OpenStreetMap.",
+    "hu": "A szócikk szerint a Károli-biblia a legrégibb fennmaradt teljes magyar nyelvű bibliafordítás; első, 1590-es kiadása a nyomtatás helyéről vizsolyi Bibliaként ismert. A fordítást Károlyi Gáspár és lelkésztársai készítették, a nyomtatásban Mantskovits Bálint nyomdász segített; 2015 januárjában a fordítást felvették a hungarikumok jegyzékébe. A falu központjának koordinátái az OpenStreetMapből származnak."
+  },
+  "sources": [
+    {
+      "title": "Károli-biblia – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/K%C3%A1roli-biblia",
+      "note": "1590, перекладачі, гунгарикум."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Vizsoly",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Vizsoly",
+      "note": "Координати 48.385, 21.2169 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Vizsolyi_biblia.jpg",
+      "author": "Károlyi Gáspár és társai",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Vizsolyi_biblia.jpg",
+      "caption": {
+        "uk": "Вижойська Біблія",
+        "hu": "A vizsolyi Biblia"
+      }
+    }
+  ]
+}

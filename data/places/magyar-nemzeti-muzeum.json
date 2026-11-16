@@ -1,0 +1,46 @@
+{
+  "id": "magyar-nemzeti-muzeum",
+  "name": {
+    "uk": "Угорський національний музей",
+    "hu": "Magyar Nemzeti Múzeum"
+  },
+  "type": "monument",
+  "coords": [
+    19.06278,
+    47.49111
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Національний музей історії Угорщини в класицистичній будівлі 1837–1847 років за проєктом Mihály Pollack на Múzeum körút; засновник граф Ferenc Széchényi.",
+    "hu": "A magyar történelem tárgyi emlékeit gyűjtő országos múzeum; klasszicista épülete 1837–47 között épült Pollack Mihály tervei alapján a Múzeum körúton; alapítója gróf Széchényi Ferenc."
+  },
+  "description": {
+    "uk": "За статтею, Угорський національний музей збирає й показує речові пам'ятки угорської історії; його головна будівля стоїть у VIII районі Будапешта на Múzeum körút. Класицистичну будівлю збудовано в 1837–1847 роках за проєктом архітектора Mihály Pollack; засновником музею був граф Ferenc Széchényi, батько István Széchenyi. У фондах музею лежать і звіти про розкопки форту Göd (див. римський період).",
+    "hu": "A szócikk szerint a Magyar Nemzeti Múzeum a magyar történelem tárgyi emlékeit gyűjti és mutatja be; főépülete Budapest VIII. kerületében, a Múzeum körúton áll. A klasszicista épület 1837–1847 között épült Pollack Mihály építész tervei szerint; a múzeum alapítója gróf Széchényi Ferenc, Széchenyi István apja volt. A múzeum gyűjteményeiben őrzik a gödi erőd ásatási jelentéseit is (lásd a római korszakot)."
+  },
+  "sources": [
+    {
+      "title": "Magyar Nemzeti Múzeum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Magyar_Nemzeti_M%C3%BAzeum",
+      "note": "Роки, Pollack, засновник, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Magyar_Nemzeti_M%C3%BAzeum.jpg",
+      "author": "hu:user:Pasztilla",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Magyar_Nemzeti_M%C3%BAzeum.jpg",
+      "caption": {
+        "uk": "Національний музей",
+        "hu": "A Nemzeti Múzeum"
+      }
+    }
+  ]
+}

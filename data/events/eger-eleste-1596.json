@@ -1,0 +1,31 @@
+{
+  "id": "eger-eleste-1596",
+  "title": {
+    "uk": "Падіння Еґера, 1596",
+    "hu": "Eger ostroma (1596)"
+  },
+  "date": {
+    "from": "1596-09",
+    "to": "1596-10",
+    "precision": "approximate"
+  },
+  "period": "ottoman",
+  "places": [
+    "egri-var"
+  ],
+  "summary": {
+    "uk": "Значний епізод П'ятнадцятирічної війни у вересні–жовтні 1596 року: близько 7000 захисників після тритижневого бою здали фортецю, облога завершилася вирішальною перемогою султана Мегмеда III; за кілька днів відбулася битва при Мезекерестеші.",
+    "hu": "A tizenöt éves háború jelentős fejezete 1596. szeptember–októberben: a mintegy 7000 fős véderő háromhetes harc után feladta a várat, az ostrom III. Mehmed szultán döntő győzelmével végződött; napokkal később vívták a mezőkeresztesi csatát."
+  },
+  "description": {
+    "uk": "За статтею, облога Еґера 1596 року була значним епізодом П'ятнадцятирічної війни, що тривав у вересні–жовтні 1596 року між захисниками Егерської фортеці й османськими військами; приблизно 7000 оборонців після тритижневого бою здали фортецю, і облога завершилася вирішальною перемогою османського султана Мегмеда III. Славетну оборону 1552 року й битву при Мезекерестеші описано в окремих картках.",
+    "hu": "A szócikk szerint Eger 1596-os ostroma a tizenöt éves háború jelentős epizódja volt, amely 1596 szeptember–októberében zajlott az egri vár védői és az oszmán seregek között; a mintegy 7000 védő háromhetes harc után feladta a várat, és az ostrom III. Mehmed oszmán szultán döntő győzelmével zárult. Az 1552-es dicső védelmet és a mezőkeresztesi csatát külön kártyák írják le."
+  },
+  "sources": [
+    {
+      "title": "Eger ostroma (1596) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Eger_ostroma_%281596%29",
+      "note": "Дати, сили, результат."
+    }
+  ]
+}

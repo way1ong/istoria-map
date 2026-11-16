@@ -1,0 +1,30 @@
+{
+  "id": "esztergom-eleste-1543",
+  "title": {
+    "uk": "Падіння Естергома, 1543",
+    "hu": "Esztergom eleste (1543)"
+  },
+  "date": {
+    "from": "1543",
+    "precision": "exact"
+  },
+  "period": "ottoman",
+  "places": [
+    "esztergomi-var"
+  ],
+  "summary": {
+    "uk": "1543 року Естергом боронили дві тисячі піхотинців, зокрема італійці, іспанці й німці; коли облягачі обстріляли вежу Veprech у Візівароші, звідки замок діставав питну воду, захисники за трохи більше ніж тиждень здали замок; Естергом став прикордонною фортецею і центром санджака, 80 сіл на північ від Дунаю підкорилися.",
+    "hu": "1543-ban Esztergomot kétezer gyalogos védte, köztük olaszok, spanyolok, németek; miután az ostromlók a vízivárosi Veprech-tornyot lőtték, ahonnan a vár az ivóvizet kapta, a védők alig több mint egy hét után átadták a várat; Esztergom végvár és szandzsákközpont lett, a Dunától északra 80 falu behódolt."
+  },
+  "description": {
+    "uk": "За статтею про історію Естергома, 1543 року місто боронили дві тисячі піхотинців, серед них італійці, іспанці й німці; після того як облягачі взяли під гарматний вогонь вежу Veprech у Візівароші, звідки замок діставав питну воду, захисники за трохи більше ніж тиждень почали переговори й здали замок, а переможна таблиця султана Сулеймана досі видна в мурі Візівароша. За наказом Фердинанда очільників Естергома ув'язнили, але згодом відпустили без вироку; Естергом став прикордонною фортецею Османської імперії і центром санджака, важливою ланкою оборони Буди між Задунав'ям і Верхньою Угорщиною, а після падіння замку підкорилися й 80 сіл на північ від Дунаю, мешканців яких змушували працювати на відбудові; угорське населення здебільшого втекло, а ті, хто лишився, стали рабами. Цього ж року в текстах періоду описано долю Вацу.",
+    "hu": "Az Esztergom történetéről szóló szócikk szerint 1543-ban a várost kétezer gyalogos védte, köztük olaszok, spanyolok és németek; miután az ostromlók ágyútűz alá vették a vízivárosi Veprech-tornyot, ahonnan a vár az ivóvizét kapta, a védők alig több mint egy hét után tárgyalásokba kezdtek és feladták a várat, Szulejmán szultán győzelmi táblája pedig ma is látható a Víziváros falában. Ferdinánd parancsára Esztergom vezetőit bebörtönözték, de később ítélet nélkül szabadon engedték; Esztergom az Oszmán Birodalom végvára és szandzsákközpont lett, Buda védelmének fontos láncszeme a Dunántúl és Felső-Magyarország között, a vár eleste után pedig a Dunától északra fekvő 80 falu is behódolt, amelyek lakóit az újjáépítésen dolgoztatták; a magyar lakosság nagyrészt elmenekült, akik pedig maradtak, rabszolgákká lettek. Vác ugyanezen évi sorsát a korszak szövegei írják le."
+  },
+  "sources": [
+    {
+      "title": "Esztergom története – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Esztergom_t%C3%B6rt%C3%A9nete",
+      "note": "1543, облога, наслідки."
+    }
+  ]
+}

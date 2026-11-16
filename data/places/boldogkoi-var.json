@@ -1,0 +1,45 @@
+{
+  "id": "boldogkoi-var",
+  "name": {
+    "uk": "Замок Болдоґкьо (Boldogkő)",
+    "hu": "Boldogkői vár"
+  },
+  "type": "castle",
+  "coords": [
+    21.2325,
+    48.34444
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Середньовічний замок на скельному виступі з андезитового туфу над долиною Гернада біля Boldogkőváralja; найдавніша частина, укріплена вежа, ймовірно, постала після монгольської навали. Станція Національного блакитного маршруту.",
+    "hu": "Középkori vár a Hernád völgye fölötti andezittufa sziklaszirten Boldogkőváralja mellett; legkorábbi része, az öregtorony, valószínűleg a tatárjárás után épült. Az Országos Kéktúra állomása."
+  },
+  "description": {
+    "uk": "За статтею, замок стоїть на скельному виступі східного боку долини Гернада біля Boldogkőváralja; гора Bodókő з міоценового андезитового туфу належить до Земпленського ландшафтного заказника. Завдяки красі краєвиду і відносно добрій збереженості замок є улюбленою туристичною метою й станцією Національного блакитного маршруту; його найдавніша частина, оточена укріпленням вежа, ймовірно, постала після монгольської навали.",
+    "hu": "A szócikk szerint a vár a Hernád-völgy keleti oldalának sziklanyúlványán áll Boldogkőváralja mellett; a miocén andezittufából álló Bodókő hegy a Zempléni Tájvédelmi Körzethez tartozik. A táj szépsége és viszonylag jó állapota miatt a vár kedvelt turistacélpont és az Országos Kéktúra állomása; legrégebbi része, az erődítéssel körülvett torony valószínűleg a tatárjárás után keletkezett."
+  },
+  "sources": [
+    {
+      "title": "Boldogkői vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Boldogk%C5%91i_v%C3%A1r",
+      "note": "Датування, розташування, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Boldogk%C5%91_v%C3%A1ra_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Boldogk%C5%91_v%C3%A1ra_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "caption": {
+        "uk": "Замок Boldogkő з повітря",
+        "hu": "Boldogkő vára légi felvételen"
+      }
+    }
+  ]
+}

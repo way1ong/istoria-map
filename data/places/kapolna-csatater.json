@@ -1,0 +1,44 @@
+{
+  "id": "kapolna-csatater",
+  "name": {
+    "uk": "Поле битви при Каполні (Kápolna), 1849",
+    "hu": "Kápolnai csatatér"
+  },
+  "type": "monument",
+  "coords": [
+    20.23653,
+    47.75839
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Місце єдиної дводенної битви визвольної війни 26–27 лютого 1849 року: угорська армія не зазнала поразки, хоча поле лишилося за імперськими військами, які не скористалися з цього й відступили на Буду.",
+    "hu": "A szabadságharc egyetlen kétnapos ütközetének helyszíne, 1849. február 26–27.: a honvédsereg nem szenvedett vereséget, bár a csatatér a császáriaké maradt, akik nem aknázták ki a helyzetet és visszavonultak Budára."
+  },
+  "description": {
+    "uk": "За статтею, у битві при Каполні 26–27 лютого 1849 року угорська армія гонведів не зазнала поразки, хоча поле бою лишилося в руках імперсько-королівських військ, які не скористалися з ситуації і відступили на Буду; корпус Görgei фактично не зміг втрутитися, бо запізно встановив бойовий контакт, а Klapka забув забезпечити долину Сірок, тож відступ став неминучим. Це була єдина дводенна битва визвольної війни. Координати зі статті приблизні.",
+    "hu": "A szócikk szerint az 1849. február 26–27-i kápolnai csatában a magyar honvédsereg nem szenvedett vereséget, bár a csatatér a császári-királyi csapatok kezén maradt, amelyek nem használták ki a helyzetet, és visszavonultak Buda felé; Görgei hadteste gyakorlatilag nem tudott beavatkozni, mert túl későn vette fel a harcérintkezést, Klapka pedig elfelejtette biztosítani a Siroki-völgyet, így a visszavonulás elkerülhetetlenné vált. Ez volt a szabadságharc egyetlen kétnapos csatája. A szócikkből vett koordináták hozzávetőlegesek."
+  },
+  "sources": [
+    {
+      "title": "Kápolnai csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/K%C3%A1polnai_csata",
+      "note": "Дати, перебіг."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Than_Mor_Kapolnai_csata.jpg",
+      "author": "Than Mór",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Than_Mor_Kapolnai_csata.jpg",
+      "caption": {
+        "uk": "Битва при Каполні на картині Mór Than",
+        "hu": "A kápolnai csata Than Mór festményén"
+      }
+    }
+  ]
+}

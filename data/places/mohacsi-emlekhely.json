@@ -1,0 +1,37 @@
+{
+  "id": "mohacsi-emlekhely",
+  "name": {
+    "uk": "Поле битви під Могачем (Mohács), Національний меморіал",
+    "hu": "Mohácsi Nemzeti Emlékhely, Sátorhely"
+  },
+  "type": "monument",
+  "coords": [
+    18.6469,
+    45.9424
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Меморіал біля Sátorhely на місці битви 29 серпня 1526 року між військом Лайоша II і Сулейманом I, що завершилася нищівною османською перемогою; точне місце битви досі дискусійне, тому координати меморіалу умовні.",
+    "hu": "Emlékhely Sátorhelynél az 1526. augusztus 29-i mohácsi csata helyszínén; a csata pontos helye máig vitatott, a koordináták az emlékhelyé."
+  },
+  "description": {
+    "uk": "За статтею, битва під Могачем відбулася 29 серпня 1526 року між військом Угорського королівства на чолі з королем Лайошем II і Османської імперії під проводом султана Сулеймана I й закінчилася нищівною османською перемогою, яку пізніша історіографія назвала «великою могилою нашої національної величі». Точне місце битви досі є предметом дискусії: у перші десятиліття досліджень головним місцем вважали околицю Sátorhely і Törökdomb, але до 400-річчя після розкопок пагорба цю версію відкинули на користь околиці потоку Borza. Координати меморіалу взято з OpenStreetMap.",
+    "hu": "A szócikk szerint a mohácsi csata 1526. augusztus 29-én zajlott a II. Lajos király vezette Magyar Királyság és az I. Szulejmán szultán vezette Oszmán Birodalom serege között, és megsemmisítő oszmán győzelemmel végződött, amelyet a későbbi történetírás „nemzeti nagylétünk nagy temetőjének” nevezett. A csata pontos helye máig vita tárgya: a kutatás első évtizedeiben a fő helyszínnek Sátorhely és a Törökdomb környékét tartották, de a 400. évfordulóra, a domb feltárása után ezt a változatot elvetették a Borza-patak környéke javára. Az emlékhely koordinátái az OpenStreetMapről származnak."
+  },
+  "sources": [
+    {
+      "title": "Mohácsi csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Moh%C3%A1csi_csata",
+      "note": "Дата, сторони, дискусія про місце."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Mohácsi Nemzeti Emlékhely",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Moh%C3%A1csi%20Nemzeti%20Eml%C3%A9khely",
+      "note": "Координати 45.9424, 18.6469 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "dohany-utcai-zsinagoga",
+  "name": {
+    "uk": "Велика синагога на вулиці Dohány (Будапешт)",
+    "hu": "Dohány utcai zsinagóga"
+  },
+  "type": "church",
+  "coords": [
+    19.06028,
+    47.49583
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Найбільша синагога неологічного юдаїзму Угорщини й усієї Європи в колишньому єврейському кварталі Будапешта; збудована за мавританським проєктом віденського архітектора Ludwig Förster і урочисто освячена 6 вересня 1859 року.",
+    "hu": "A magyar neológ zsidóság és egész Európa legnagyobb zsinagógája az egykori zsidónegyedben; Ludwig Förster mór stílusú terve alapján épült, 1859. szeptember 6-án avatták fel."
+  },
+  "description": {
+    "uk": "За статтею, Велика синагога на вулиці Dohány у VII районі є найбільшою синагогою угорського неологічного юдаїзму і найбільшою в Європі; вона стоїть у колишньому єврейському кварталі, де й нині живе багато вірян, і є важливим символом угорського єврейства й туристичною пам'яткою столиці, де відбуваються концерти й фестивалі. Конкурс виграв австрійський архітектор Ludwig Förster (1797–1863), професор Віденської академії, з проєктом у мавританському стилі; будівництво зайняло ледь п'ять років, урочисте освячення відбулося 6 вересня 1859 року.",
+    "hu": "A szócikk szerint a VII. kerületi Dohány utcai zsinagóga a magyar neológ zsidóság legnagyobb és Európa legnagyobb zsinagógája; az egykori zsidónegyedben áll, ahol ma is sok hívő él, a magyar zsidóság fontos jelképe és a főváros turisztikai nevezetessége, ahol koncerteket és fesztiválokat rendeznek. A pályázatot Ludwig Förster (1797–1863) osztrák építész, a bécsi akadémia professzora nyerte mór stílusú tervével; az építkezés alig öt évet vett igénybe, az ünnepélyes felszentelésre 1859. szeptember 6-án került sor."
+  },
+  "sources": [
+    {
+      "title": "Dohány utcai zsinagóga – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Doh%C3%A1ny_utcai_zsinag%C3%B3ga",
+      "note": "Архітектор, освячення 1859, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ajt%C3%B3k_nyitva.png",
+      "author": "M3peti",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Ajt%C3%B3k_nyitva.png",
+      "caption": {
+        "uk": "Відчинені двері Великої синагоги",
+        "hu": "A Dohány utcai zsinagóga nyitott ajtói"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "visegradi-kiralytalalkozo-1335",
+  "title": {
+    "uk": "Вишеградський з'їзд королів",
+    "hu": "A visegrádi királytalálkozó"
+  },
+  "date": {
+    "from": "1335-10",
+    "to": "1335-11",
+    "precision": "approximate"
+  },
+  "period": "arpad",
+  "places": [
+    "visegradi-kiralyi-palota"
+  ],
+  "summary": {
+    "uk": "Наприкінці жовтня і на початку листопада 1335 року Карл Роберт скликав у Вишеграді дипломатичну зустріч з чеським королем Яном Люксембурзьким і польським Казимиром Великим; ворожнеча Польщі й Чехії припинилася, три країни уклали союз і торговельну співпрацю.",
+    "hu": "1335 október végén és november elején Károly Róbert Visegrádon diplomáciai találkozót hívott össze Luxemburgi János cseh és Nagy Kázmér lengyel király részvételével; megszűnt a lengyel–cseh ellenségeskedés, a három ország szövetséget és kereskedelmi együttműködést kötött."
+  },
+  "description": {
+    "uk": "За статтею, Вишеградський з'їзд королів був дипломатичною зустріччю, скликаною угорським королем Карлом Робертом за участі чеського короля Яна Люксембурзького і польського короля Казимира Великого наприкінці жовтня й на початку листопада 1335 року; внаслідок неї припинилася ворожнеча між Польщею і Чехією, а замість неї між трьома країнами постали союз і торговельна співпраця. Королівський палац Вишеграда описано в окремій картці.",
+    "hu": "A szócikk szerint a visegrádi királytalálkozó Károly Róbert magyar király által összehívott diplomáciai találkozó volt Luxemburgi János cseh király és Nagy Kázmér lengyel király részvételével 1335 október végén és november elején; ennek eredményeként megszűnt a Lengyelország és Csehország közötti ellenségeskedés, helyébe pedig a három ország közötti szövetség és kereskedelmi együttműködés lépett. A visegrádi királyi palotát külön kártya írja le."
+  },
+  "sources": [
+    {
+      "title": "Visegrádi királytalálkozó – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Visegr%C3%A1di_kir%C3%A1lytal%C3%A1lkoz%C3%B3",
+      "note": "Дати, учасники, наслідки."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Charles_I_%28Chronica_Hungarorum%29.jpg",
+      "author": "János Thuróczy",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Charles_I_%28Chronica_Hungarorum%29.jpg",
+      "caption": {
+        "uk": "Карл Роберт в Ілюстрованій хроніці",
+        "hu": "Károly Róbert a Képes krónikában"
+      }
+    }
+  ]
+}

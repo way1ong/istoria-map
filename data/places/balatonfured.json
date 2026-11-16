@@ -1,0 +1,47 @@
+{
+  "id": "balatonfured",
+  "name": {
+    "uk": "Балатонфюред (Balatonfüred), найстаріший курорт Балатона",
+    "hu": "Balatonfüred"
+  },
+  "type": "settlement",
+  "coords": [
+    17.88333,
+    46.95
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "roman-barbaricum",
+    "arpad",
+    "habsburg-18",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Портове й курортне місто на північному березі Балатона, «столиця північного берега» і найстаріший курорт озера, відомий вуглекислими джерелами; перша згадка 1211 року в описі маєтків Тиганського абатства; 1717 року згадана кисла вода, 1722 року її оголошено лікувальною. Точка: центр міста.",
+    "hu": "Kikötő- és üdülőváros a Balaton északi partján, „a Balaton északi partjának fővárosa”, a Balaton-part legrégebbi üdülőhelye, szénsavas forrásairól ismert; első írásos említése 1211-ből, a Tihanyi apátság birtokösszeírásából; savanyúvizét 1717-ben említik, 1722-ben gyógyvízzé nyilvánították. A térképi pont a város központja."
+  },
+  "description": {
+    "uk": "За статтею, Балатонфюред є портовим і курортним містом комітату Веспрем, «столицею північного берега Балатона» і найстарішим курортом на березі озера; своєю відомістю він завдячує близькості Балатона, вуглекислим джерелам, корисним при хворобах кровообігу й серцево-судинної системи, і середземноморському клімату. Край Фюреда заселяла вже доісторична людина, першими відомими мешканцями були римляни, пам'ять про яких зберігають розкопані руїни й надгробки; назва Füred уперше трапляється письмово 1211 року в описі маєтків Тиганського абатства, а в добу Арпадів на нинішній території стояло сім поселень. 1717 року згадана кисла вода, 1722 року її хімічно дослідили й оголосили лікувальною, тоді вже стояв дерев'яний купальний будинок, згодом кам'яний з кімнатами для гостей. Координати відповідають центру міста.",
+    "hu": "A szócikk szerint Balatonfüred Veszprém vármegye kikötő- és üdülővárosa, „a Balaton északi partjának fővárosa” és a tó partjának legrégibb üdülőhelye; ismertségét a Balaton közelségének, a vérkeringés és a szív- és érrendszer betegségeinél hasznos szénsavas forrásoknak és a mediterrán éghajlatnak köszönheti. Füred vidékét már az őskori ember lakta, első ismert lakói a rómaiak voltak, akiknek emlékét feltárt romok és sírkövek őrzik; a Füred név először 1211-ben fordul elő írásban a tihanyi apátság birtokainak összeírásában, az Árpád-korban pedig a mai területen hét település állt. 1717-ben említik a savanyúvizet, 1722-ben vegyileg megvizsgálták és gyógyvízzé nyilvánították, ekkor már állt egy fa fürdőház, később egy kőből épült, vendégszobákkal. A koordináták a városközpontnak felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Balatonfüred – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Balatonf%C3%BCred",
+      "note": "1211, 1717, 1722, координати міста."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/100_4807_Balatonfured.JPG",
+      "author": "JanoB",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:100_4807_Balatonfured.JPG",
+      "caption": {
+        "uk": "Балатонфюред",
+        "hu": "Balatonfüred"
+      }
+    }
+  ]
+}

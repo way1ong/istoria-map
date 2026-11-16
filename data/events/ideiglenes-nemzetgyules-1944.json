@@ -1,0 +1,30 @@
+{
+  "id": "ideiglenes-nemzetgyules-1944",
+  "title": {
+    "uk": "Тимчасові національні збори в Дебрецені",
+    "hu": "Az Ideiglenes Nemzetgyűlés"
+  },
+  "date": {
+    "from": "1944-12-21",
+    "precision": "exact"
+  },
+  "period": "interwar-ww2",
+  "places": [
+    "debreceni-reformatus-kollegium"
+  ],
+  "summary": {
+    "uk": "21 грудня 1944 року в ораторії Реформатського колегіуму Дебрецена зібрався законодавчий орган з території Угорщини, зайнятої радянською армією.",
+    "hu": "1944. december 21-én Debrecenben, a Református Kollégium Oratóriumtermében ült össze a Magyarország szovjet hadsereg által megszállt területéről összegyűlt országos törvényhozó testület."
+  },
+  "description": {
+    "uk": "За статтею, Тимчасові національні збори були загальнодержавним законодавчим органом, зібраним з території Угорщини, зайнятої радянською армією, який засідав 21 грудня 1944 року в Дебрецені в ораторії Реформатського колегіуму (окрема картка).",
+    "hu": "A szócikk szerint az Ideiglenes Nemzetgyűlés a szovjet hadsereg által elfoglalt magyarországi területről összehívott országos törvényhozó testület volt, amely 1944. december 21-én Debrecenben, a Református Kollégium oratóriumában (külön kártya) ülésezett."
+  },
+  "sources": [
+    {
+      "title": "Ideiglenes Nemzetgyűlés – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Ideiglenes_Nemzetgy%C5%B1l%C3%A9s",
+      "note": "Дата, місце."
+    }
+  ]
+}

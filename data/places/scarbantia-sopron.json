@@ -1,0 +1,49 @@
+{
+  "id": "scarbantia-sopron",
+  "name": {
+    "uk": "Скарбанція (Scarbantia), римський Шопрон",
+    "hu": "Scarbantia"
+  },
+  "type": "archaeological",
+  "coords": [
+    16.5983,
+    47.6803
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Римський муніципій у західній Паннонії на Бурштиновому шляху, на місці нинішнього Шопрона; форум лежав приблизно під нинішньою головною площею, тут були амфітеатр, лазня, водогін. Точка: центр Шопрона.",
+    "hu": "Római municipium Pannonia nyugati részén, a borostyánút mentén, a mai Sopron területén; fóruma a mai Fő tér környékén volt, amfiteátrummal, fürdővel, vízvezetékkel. A térképi pont Sopron központja."
+  },
+  "description": {
+    "uk": "За статтею, Scarbantia була римським поселенням рангу муніципія в західній частині Паннонії на одному з найважливіших торговельних шляхів, Бурштиновому. Приблизно там, де нині головна площа й ратуша, збудували форум, амфітеатр, лазню, водогін, численні культові й торговельні будівлі та приватні будинки; вулиці були бруковані, питну воду вели здалеку. Координати центру Шопрона з OpenStreetMap.",
+    "hu": "A szócikk szerint Scarbantia municipium rangú római település volt Pannonia nyugati részén, az egyik legfontosabb kereskedelmi út, a Borostyánkőút mentén. Nagyjából ott, ahol ma a főtér és a városháza áll, fórumot, amfiteátrumot, fürdőt, vízvezetéket, számos kultikus és kereskedelmi épületet, valamint magánházakat építettek; az utcák kövezettek voltak, az ivóvizet messziről vezették. Sopron központjának koordinátái az OpenStreetMapből származnak."
+  },
+  "sources": [
+    {
+      "title": "Scarbantia – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Scarbantia",
+      "note": "Статус, форум, споруди."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Sopron",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Sopron",
+      "note": "Координати 47.6803, 16.5983 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Sopron_F%C5%91_t%C3%A9r_Borost%C3%A1nyk%C5%91_%C3%BAt_rekonstrukci%C3%B3.JPG",
+      "author": "Pan Peter12",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Sopron_F%C5%91_t%C3%A9r_Borost%C3%A1nyk%C5%91_%C3%BAt_rekonstrukci%C3%B3.JPG",
+      "caption": {
+        "uk": "Реконструкція Бурштинового шляху на головній площі Шопрона",
+        "hu": "A borostyánút rekonstrukciója a soproni Fő téren"
+      }
+    }
+  ]
+}

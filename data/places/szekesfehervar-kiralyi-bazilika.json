@@ -1,0 +1,45 @@
+{
+  "id": "szekesfehervar-kiralyi-bazilika",
+  "name": {
+    "uk": "Руїни королівської базиліки в Секешфегерварі (Székesfehérvár)",
+    "hu": "Székesfehérvári királyi bazilika (Romkert)"
+  },
+  "type": "archaeological",
+  "coords": [
+    18.4107,
+    47.1917
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "arpad",
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Найбільша й найважливіша церква середньовічного Угорського королівства, коронаційна й поховальна базиліка, яку почав будувати Іштван I невдовзі після заснування держави; зруйнована в османських облогах і у XVIII столітті, нині руїнний сад.",
+    "hu": "A középkori Magyar Királyság legnagyobb és legfontosabb temploma, koronázóbazilika, amelyet I. István kezdett építtetni; a török ostromok során és a 18. században elpusztult, ma Romkert."
+  },
+  "description": {
+    "uk": "За статтею, базиліка Успіння (інші назви: королівська, коронаційна) була найбільшим і найважливішим храмом середньовічного королівства; її почав будувати король Іштван I невдовзі після заснування держави. Завдяки королівським пожертвам вона стала надзвичайно багатою і століттями добудовувалась, але загинула під час облог османської доби і після неї у XVIII столітті, тож нині видно лише руїни.",
+    "hu": "A szócikk szerint a Nagyboldogasszony-bazilika (más néven királyi vagy koronázóbazilika) a középkori királyság legnagyobb és legfontosabb temploma volt; építését I. István király kezdte el nem sokkal az államalapítás után. A királyi adományok révén rendkívül gazdaggá vált, és évszázadokon át bővítették, de a török kori ostromok során és azután, a 18. században elpusztult, így ma csak romjai láthatók."
+  },
+  "sources": [
+    {
+      "title": "Nagyboldogasszony-bazilika (Székesfehérvár) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagyboldogasszony-bazilika_%28Sz%C3%A9kesfeh%C3%A9rv%C3%A1r%29",
+      "note": "Засновник, доля будівлі, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/A_Romkert_l%C3%A9gi_felv%C3%A9tele%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_Romkert_l%C3%A9gi_felv%C3%A9tele%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r.jpg",
+      "caption": {
+        "uk": "Руїнний сад Székesfehérvár з повітря",
+        "hu": "A székesfehérvári Romkert légi felvétele"
+      }
+    }
+  ]
+}

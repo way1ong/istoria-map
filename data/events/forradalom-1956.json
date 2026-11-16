@@ -1,0 +1,37 @@
+{
+  "id": "forradalom-1956",
+  "title": {
+    "uk": "Революція 1956 року в Будапешті",
+    "hu": "Az 1956-os forradalom Budapesten"
+  },
+  "date": {
+    "from": "1956-10-23",
+    "to": "1956-11-05",
+    "precision": "approximate"
+  },
+  "period": "modern",
+  "places": [
+    "sztalin-szobor-helye",
+    "corvin-koz"
+  ],
+  "summary": {
+    "uk": "У перший день революції повалено пам'ятник Сталіну; у Corvin köz повстанці на чолі з László Iván Kovács і Gergely Pongrátz утримували один з найтриваліших осередків опору радянським танкам, залишивши позиції 5 листопада після наступу 4 листопада.",
+    "hu": "A forradalom első napján ledöntötték a Sztálin-szobrot; a Corvin köz a felkelők egyik legtovább kitartó ellenállási pontja volt, amelyet a november 4-i szovjet támadás után november 5-én hagytak el."
+  },
+  "description": {
+    "uk": "За статтею про пам'ятник, встановлену 1951 року статую Сталіна 1956 року в перший день революції повалили й розбили на шматки. За статтею про Corvin köz, провулок був одним із найважливіших і найдовше утримуваних осередків опору повстанців проти радянських танків: головними командувачами були László Iván Kovács і Gergely Pongrátz, озброєних у провулку налічувалося близько 800, разом із сусідніми групами близько 2000; після радянського наступу 4 листопада це був один із двох осередків, що трималися найдовше, і 5 листопада після сильного артобстрілу повстанці залишили кінотеатр. Дати в цій картці взяті з тих самих статей (23 жовтня як перший день революції за статтею про пам'ятник не названо явно, тому позначено як приблизні). У Ваці після 1956 року в'язниця стала місцем утримання політичних в'язнів (див. текст періоду).",
+    "hu": "Az emlékműről szóló szócikk szerint az 1951-ben felállított Sztálin-szobrot 1956-ban, a forradalom első napján ledöntötték és darabokra törték. A Corvin közről szóló szócikk szerint a köz a felkelők szovjet tankokkal szembeni ellenállásának egyik legfontosabb és legtovább tartott gócpontja volt: a főparancsnokok Iván Kovács László és Pongrátz Gergely voltak, a közben mintegy 800 fegyveres volt, a szomszédos csoportokkal együtt mintegy 2000; a november 4-i szovjet támadás után ez volt a két legtovább kitartó gócpont egyike, és november 5-én, erős tüzérségi tűz után a felkelők elhagyták a mozit. A kártya dátumai ugyanezekből a szócikkekből származnak (október 23-át mint a forradalom első napját az emlékműről szóló szócikk nem nevezi meg kifejezetten, ezért hozzávetőlegesként van jelölve). Vácon 1956 után a fegyház politikai foglyok fogva tartásának helye lett (lásd a korszak szövegét)."
+  },
+  "sources": [
+    {
+      "title": "Sztálin-szobor (Budapest) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szt%C3%A1lin-szobor_%28Budapest%29",
+      "note": "Повалення в перший день революції."
+    },
+    {
+      "title": "Corvin köz – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Corvin_k%C3%B6z",
+      "note": "Командувачі, чисельність, 4–5 листопада."
+    }
+  ]
+}

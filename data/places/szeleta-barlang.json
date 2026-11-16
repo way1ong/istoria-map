@@ -1,0 +1,44 @@
+{
+  "id": "szeleta-barlang",
+  "name": {
+    "uk": "Печера Селета (Szeleta-barlang), Бюкк",
+    "hu": "Szeleta-barlang"
+  },
+  "type": "archaeological",
+  "coords": [
+    20.63162,
+    48.1082
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "prehistory"
+  ],
+  "summary": {
+    "uk": "Одна з чотирьох печер Угорщини з надійним археологічним комплексом, епонім селетської культури; заселена понад 100 тисяч років від початку останнього міжльодовиків'я. Розкопки з 1906 року.",
+    "hu": "A négy biztos régészeti leletegyüttest adó magyarországi barlang egyike, a szeleta-kultúra névadója; az utolsó interglaciális elejétől több mint 100 000 évig lakott. Ásatásai 1906-ban kezdődtek."
+  },
+  "description": {
+    "uk": "За статтею, печера була місцем одних із перших печерних розкопок в Угорщині, що почалися 1906 року й завершилися лише після Першої світової війни; знахідки зберігаються в Національному музеї, музеї Мішкольца і Геологічному інституті. Печера дала назву селетській культурі й належить до особливо охоронюваних печер країни.",
+    "hu": "A szócikk szerint a barlang Magyarország egyik első barlangi ásatásának helyszíne volt, amely 1906-ban kezdődött, és csak az első világháború után fejeződött be; a leletek a Nemzeti Múzeumban, a miskolci múzeumban és a Földtani Intézetben találhatók. A barlang a szeletai kultúra névadója, és az ország fokozottan védett barlangjai közé tartozik."
+  },
+  "sources": [
+    {
+      "title": "Szeleta-barlang – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szeleta-barlang",
+      "note": "Розкопки, датування, статус, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Szeleta-barlang.jpg",
+      "author": "Czina Tivadar.Szenti Tamás at hu.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szeleta-barlang.jpg",
+      "caption": {
+        "uk": "Вхід до печери Селета",
+        "hu": "A Szeleta-barlang bejárata"
+      }
+    }
+  ]
+}

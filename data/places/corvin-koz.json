@@ -1,0 +1,31 @@
+{
+  "id": "corvin-koz",
+  "name": {
+    "uk": "Корвін кьоз (Corvin köz), осередок опору 1956 року",
+    "hu": "Corvin köz"
+  },
+  "type": "monument",
+  "coords": [
+    19.0707,
+    47.4862
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "Провулок біля перехрестя Ferenc körút і Üllői út у VIII районі, один з найважливіших і найтриваліших осередків опору повстанців 1956 року проти радянських танків; командувачі László Iván Kovács і Gergely Pongrátz, близько 800 бійців у самому провулку.",
+    "hu": "A Ferenc körút és az Üllői út sarkánál fekvő köz, az 1956-os felkelők egyik legfontosabb, legtovább kitartó ellenállási pontja; parancsnokai Iván Kovács László és Pongrátz Gergely."
+  },
+  "description": {
+    "uk": "За статтею, Corvin köz у VIII районі Будапешта біля рогу Ferenc körút і Üllői út відомий тим, що тут був один із найважливіших і найдовше утримуваних осередків опору повстанців революції 1956 року, коли радянські танки атакували угорську революцію. Головними командувачами були László Iván Kovács і Gergely Pongrátz; чисельність озброєних у самому провулку оцінюють у 800, разом із групами Práter utca і сусідніх вулиць у 2000 осіб. Після радянського наступу 4 листопада це був один із двох осередків, що трималися найдовше; 5 листопада після сильного артобстрілу захисники залишили кінотеатр.",
+    "hu": "A szócikk szerint a Budapest VIII. kerületében, a Ferenc körút és az Üllői út sarka közelében fekvő Corvin köz arról ismert, hogy itt volt az 1956-os forradalom felkelőinek egyik legfontosabb és legtovább tartott ellenállási gócpontja, amikor a szovjet tankok megtámadták a magyar forradalmat. A főparancsnokok Iván Kovács László és Pongrátz Gergely voltak; a fegyveresek számát magában a közben 800-ra, a Práter utcai és a szomszédos utcák csoportjaival együtt 2000 főre becsülik. A november 4-i szovjet támadás után ez volt a két legtovább kitartó gócpont egyike; november 5-én, erős tüzérségi tűz után a védők elhagyták a mozit."
+  },
+  "sources": [
+    {
+      "title": "Corvin köz – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Corvin_k%C3%B6z",
+      "note": "Роль у 1956, командувачі, координати."
+    }
+  ]
+}

@@ -1,5 +1,13 @@
 # Trianon, a két háború közötti évek, a második világháború (1918–1945)
 
+## Az ország egésze
+
+A Magyar Királyság az Osztrák–Magyar Monarchia részeként, a központi hatalmak oldalán vett részt az első világháborúban, és 660 821 fős emberveszteséget szenvedett az orosz, az olasz és a balkáni fronton. 1918. október 28-án kitört az őszirózsás forradalom, 31-én Károlyi Mihály polgári demokratikus kormányt alakított, november 13-án IV. Károly eckartsaui nyilatkozatával megszűnt a királyság, november 16-án kikiáltották a Népköztársaságot. A belgrádi konvenció nyomán a szerbek, a románok, majd a csehek az ország nagy részén bevezették saját közigazgatásukat; 1919. március 21-én a kommunisták ragadták magukhoz a hatalmat, a Tanácsköztársaság 133 napig tartott, a román csapatok 1920-ban, a szerbek 1921-ben távoztak. A trianoni béke Romániának 103 093 km²-t (a királyság 31,78%-át), Csehszlovákiának mintegy 61 633 km²-t, Ausztriának Burgenlandot, Olaszországnak Fiumét juttatta; az ország Horvátország nélküli területe 282 870-ről 92 963 km²-re, lakossága 20 886 487-ről (1910) 7 615 117-re csökkent.[^10]
+
+A Tanácsköztársaság bukása után az államforma formálisan újra királyság lett, de az ország élén kormányzóként Horthy Miklós állt 1944-ig; Teleki Pál és Bethlen István miniszterelnöksége alatt a rendszer az 1920-as évek elején konszolidálódott, az 1930-as években jobbra tolódott. A fő cél az elcsatolt területek visszaszerzése volt Mussolini Olaszországa, majd Hitler Németországa segítségével; a kezdetben sikeres stratégia 1941-ben a Szovjetunióval szembeni hadba lépéshez vezetett. Az állami szintre emelt antiszemitizmus 1941 és 1945 között több mint 400 000, a mai országterületről 200 000 zsidó erőszakos halálához vezetett. 1944–45 telén a front végigvonult az országon, a legpusztítóbb Budapest ostroma volt; a háborúnak a haláltáborokban megölt százezreken kívül mintegy félmillió polgári és katonai áldozata volt, az infrastruktúra elpusztult, a visszacsatolt területek elvesztek. Vác, Alag és Dunakeszi zsidóságának sorsát az alábbi helyi szakaszok írják le.[^11]
+
+## Göd, Vác és Dunakeszi környéke
+
 Az első világháború után, amelyben Dunakeszi 1000 ágyas hadikórházat tartott fenn és szinte minden család veszteséget szenvedett, a vidék gyorsan urbanizálódott.[^1]
 
 ## A MÁV Főműhely
@@ -29,3 +37,5 @@ Gödön 1921-ben Alsógöd kisközség lett; Felsőgödön 1924-ben szentelték 
 [^7]: Lévai T., Az alagi versenypályák rövid története, II. rész. Dunakeszi Helytörténeti Szemle III/2 (2010. szeptember) 10: https://epa.oszk.hu/03000/03093/00008/pdf/EPA03093_dunakeszi_2010_2.pdf
 [^8]: Csoma A., A repülőgépgyártás története Dunakeszin. Dunakeszi Helytörténeti Szemle I/2 (2008. szeptember) 4–5: https://epa.oszk.hu/03000/03093/00002/pdf/EPA03093_dunakeszi_2008_2.pdf
 [^9]: Legindi T., A dunakeszi repülőtér története. Dunakeszi Helytörténeti Szemle IV/1 (2011. május) 8–9: https://epa.oszk.hu/03000/03093/00010/pdf/EPA03093_dunakeszi_2011_1.pdf
+[^10]: Magyar történelem – Wikipédia (hu), „Az első világháború és következményei; Trianoni békeszerződés” szakasz: https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_t%C3%B6rt%C3%A9nete
+[^11]: Magyar történelem – Wikipédia (hu), „1920-1945: A Horthy-korszak” szakasz: https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_t%C3%B6rt%C3%A9nete

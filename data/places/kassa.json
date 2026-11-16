@@ -1,0 +1,49 @@
+{
+  "id": "kassa",
+  "name": {
+    "uk": "Кошице (Kassa) і бомбардування 26 червня 1941 року",
+    "hu": "Kassa"
+  },
+  "type": "settlement",
+  "coords": [
+    21.2497,
+    48.7172
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "interwar-ww2"
+  ],
+  "summary": {
+    "uk": "Місто в нинішній Словаччині, яке тоді належало до Угорщини; досі не з'ясований авіаналіт 26 червня 1941 року завдав значних жертв і руйнувань і став приводом для вступу Угорщини у війну проти СРСР. Прикордонний об'єкт; точка: центр міста.",
+    "hu": "Ma Szlovákiában fekvő, akkor Magyarországhoz tartozó város; a máig tisztázatlan 1941. június 26-i légitámadás jelentős károkat okozott, és okot szolgáltatott a Szovjetunió elleni hadba lépésre. Határon túli hely; a térképi pont a város központja."
+  },
+  "description": {
+    "uk": "За статтею, бомбардування Кошиць, що тоді належали до Угорщини, було досі не з'ясованим авіанальотом 26 червня 1941 року, який завдав значних втрат і в людях, і в будівлях міста. Подія стала приводом для вступу Угорщини у війну проти Радянського Союзу: дізнавшись про інцидент, регент Горті під впливом прем'єра László Bárdossy і прогерманських політиків того ж дня без ґрунтовного розслідування оголосив про стан війни. Місто лежить за межами нинішньої Угорщини і додане як прикордонний об'єкт; координати центру з OpenStreetMap.",
+    "hu": "A szócikk szerint az akkor Magyarországhoz tartozó Kassa bombázása máig tisztázatlan légitámadás volt 1941. június 26-án, amely jelentős veszteségeket okozott mind emberéletben, mind a város épületeiben. Az esemény Magyarország Szovjetunió elleni hadba lépésének ürügye lett: az incidensről értesülve Horthy kormányzó Bárdossy László miniszterelnök és a németbarát politikusok hatására még aznap, alapos vizsgálat nélkül kinyilvánította a hadiállapotot. A város a mai Magyarország határain kívül fekszik, és határ menti objektumként került fel; a központ koordinátái az OpenStreetMapről származnak."
+  },
+  "sources": [
+    {
+      "title": "Kassa bombázása – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kassa_bomb%C3%A1z%C3%A1sa",
+      "note": "26 червня 1941, наслідки."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Košice",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Ko%C5%A1ice",
+      "note": "Координати 48.7172, 21.2497 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Bombardovanie_Ko%C5%A1%C3%ADc_%E2%80%93_odstra%C5%88ovanie_%C5%A1k%C3%B4d.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Bombardovanie_Ko%C5%A1%C3%ADc_%E2%80%93_odstra%C5%88ovanie_%C5%A1k%C3%B4d.jpg",
+      "caption": {
+        "uk": "Прибирання руйнувань після бомбардування Кошиць, 1941",
+        "hu": "A kassai bombázás kárainak eltakarítása, 1941"
+      }
+    }
+  ]
+}

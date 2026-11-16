@@ -1,0 +1,31 @@
+{
+  "id": "rackeve-savoyai-kastely",
+  "name": {
+    "uk": "Палац Євгена Савойського в Ракеве (Ráckeve)",
+    "hu": "Ráckevei Savoyai-kastély"
+  },
+  "type": "castle",
+  "coords": [
+    18.9443,
+    47.1694
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Палац, збудований на початку XVIII століття для принца Євгена Савойського за проєктом Йоганна Лукаса фон Гільдебрандта на острові Чепель; після смерті принца 1736 року відійшов короні і в наступному столітті втратив роль, служив складом.",
+    "hu": "A 18. század elején Savoyai Jenő számára Johann Lukas von Hildebrandt tervei alapján épült kastély a Csepel-szigeten; Savoyai 1736-os halála után a koronáé lett, később raktárként használták."
+  },
+  "description": {
+    "uk": "За статтею, палац Савойського стоїть у північній частині центру Ракеве в комітаті Пешт неподалік рукава Ráckevei-Duna, при головній дорозі острова Чепель і кінцевій станції HÉV H6. Його збудували на початку XVIII століття для Євгена Савойського за проєктом Йоганна Лукаса фон Гільдебрандта; після смерті принца 1736 року маєток перейшов до корони, а в наступному столітті будівля втратила первісну роль і служила, зокрема, складом.",
+    "hu": "A cikk szerint a Savoyai-kastély a Pest vármegyei Ráckeve központjának északi részén áll, nem messze a Ráckevei-Duna-ágtól, a Csepel-sziget főútja és a H6-os HÉV végállomása mellett. A XVIII. század elején épült Savoyai Jenő számára Johann Lucas von Hildebrandt tervei szerint; a herceg 1736-os halála után a birtok a koronára szállt, a következő században pedig az épület elveszítette eredeti szerepét, és többek között raktárként szolgált."
+  },
+  "sources": [
+    {
+      "title": "Savoyai-kastély – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Savoyai-kast%C3%A9ly",
+      "note": "Замовник, архітектор, 1736, координати."
+    }
+  ]
+}

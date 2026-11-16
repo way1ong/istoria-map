@@ -1,0 +1,35 @@
+{
+  "id": "tisza-szabalyozas-1846",
+  "title": {
+    "uk": "Початок регулювання Тиси",
+    "hu": "A Tisza-szabályozás kezdete"
+  },
+  "date": {
+    "from": "1846",
+    "precision": "exact"
+  },
+  "period": "long-19",
+  "places": [
+    "tiszadob"
+  ],
+  "summary": {
+    "uk": "1846 року в Тисадобі граф István Széchenyi зробив перший удар лопатою, що символізував початок регулювання Тиси; подію нагадує встановлений там пам'ятник.",
+    "hu": "1846-ban Tiszadobon tette az első kapavágást Széchenyi István gróf, jelképezve a Tisza szabályozásának kezdetét; az eseményre az ott állított emlékmű emlékeztet."
+  },
+  "description": {
+    "uk": "За статтею про село, 1846 року на знак початку регулювання Тиси саме тут, у Тисадобі, граф István Széchenyi зробив перший удар лопатою; учасників цієї події нагадує встановлений тут пам'ятник. За статтею про річку, Тиса є найдовшою притокою Дунаю і другою за розміром річкою Угорщини з водозбором близько 157 000 км² і дуже мінливим рівнем води.",
+    "hu": "A községről szóló szócikk szerint 1846-ban a Tisza-szabályozás kezdetének jeléül éppen itt, Tiszadobon tette meg gróf Széchenyi István az első kapavágást; az esemény résztvevőire az itt felállított emlékmű emlékeztet. A folyóról szóló szócikk szerint a Tisza a Duna leghosszabb mellékfolyója és Magyarország második legnagyobb folyója, mintegy 157 000 km²-es vízgyűjtővel és igen változó vízállással."
+  },
+  "sources": [
+    {
+      "title": "Tiszadob – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tiszadob",
+      "note": "1846, Széchenyi."
+    },
+    {
+      "title": "Tisza – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tisza",
+      "note": "Характеристика річки."
+    }
+  ]
+}

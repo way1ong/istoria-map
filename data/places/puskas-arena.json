@@ -1,0 +1,44 @@
+{
+  "id": "puskas-arena",
+  "name": {
+    "uk": "Puskás Aréna на місці Народного стадіону",
+    "hu": "Puskás Aréna (Népstadion)"
+  },
+  "type": "monument",
+  "coords": [
+    19.09833,
+    47.50306
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "Найбільша за місткістю спортивно-концертна споруда Угорщини й домашня арена збірної з футболу, відкрита 15 листопада 2019 року матчем проти Уругваю; попередником був стадіон Puskás Ferenc (до 2002 року Népstadion), збудований на початку 1950-х, бетон якого подрібнили й вбудували в стіни нової арени; центральне коло поля лишилося на тому самому місці.",
+    "hu": "Magyarország legnagyobb befogadóképességű sport- és rendezvénylétesítménye, a labdarúgó-válogatott otthona, 2019. november 15-én avatták Uruguay ellen; elődje az 1950-es évek elején épült Népstadion (2002-től Puskás Ferenc Stadion), amelynek betonját ledarálva az új stadion falaiba építették; a kezdőkör ugyanott maradt."
+  },
+  "description": {
+    "uk": "За статтею, Puskás Aréna є найбільшою за місткістю спорудою Угорщини для спортивних і музичних заходів і головною домашньою ареною збірної з футболу; матч відкриття й перший матч збірної на новій арені провели 15 листопада 2019 року проти Уругваю. Попередником був стадіон Puskás Ferenc (до 2002 року Népstadion), і центральне коло нового поля з міліметровою точністю лежить там само, де старе; бетонну конструкцію Народного стадіону, збудованого на початку 1950-х, розібрали й подрібнили, а матеріал вбудували в стіни нового стадіону. Сайт stadiumdb.com обрав арену «стадіоном 2019 року».",
+    "hu": "A cikk szerint a Puskás Aréna Magyarország legnagyobb befogadóképességű, sport- és zenei rendezvényekre szolgáló létesítménye és a labdarúgó-válogatott fő hazai pályája; a nyitómérkőzést és a válogatott első mérkőzését az új arénában 2019. november 15-én játszották Uruguay ellen. Elődje a Puskás Ferenc Stadion (2002-ig Népstadion) volt, és az új pálya középköre milliméteres pontossággal ugyanott fekszik, ahol a régié; az 1950-es évek elején épült Népstadion betonszerkezetét elbontották és felaprították, az anyagot pedig az új stadion falaiba építették be. A stadiumdb.com oldal az arénát „2019 stadionjának” választotta."
+  },
+  "sources": [
+    {
+      "title": "Puskás Aréna – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Pusk%C3%A1s_Ar%C3%A9na",
+      "note": "2019, Népstadion, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Pusk%C3%A1s_Ar%C3%A9na_05.jpg",
+      "author": "OD Pictures",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Pusk%C3%A1s_Ar%C3%A9na_05.jpg",
+      "caption": {
+        "uk": "Puskás Aréna",
+        "hu": "A Puskás Aréna"
+      }
+    }
+  ]
+}

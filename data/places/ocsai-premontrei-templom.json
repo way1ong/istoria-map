@@ -1,0 +1,45 @@
+{
+  "id": "ocsai-premontrei-templom",
+  "name": {
+    "uk": "Премонстратська церква в Очі (Ócsa)",
+    "hu": "Ócsai premontrei templom"
+  },
+  "type": "church",
+  "coords": [
+    19.22705,
+    47.28969
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Романська тринавна базиліка з трансептом XIII століття, збудована для премонстратів, найцінніший збережений твір романської доби в Угорщині; з 1560 року реформатська церква, реставрована 1922–1924 років за проєктом Ernő Foerk.",
+    "hu": "13. századi román stílusú, háromhajós, kereszthajós premontrei bazilika, a román kor legértékesebb fennmaradt magyarországi alkotása; 1560 óta református templom, 1922–1924-ben Foerk Ernő tervei szerint újították fel."
+  },
+  "description": {
+    "uk": "За статтею, колишній премонстратський монастир в Очі є романською тринавною базилікою з трансептом XIII століття, збудованою для премонстратського ордену, найціннішим збереженим твором романської доби в Угорщині. З 1560 року це храм реформатської громади Очі; реставрацію провели на початку XX століття, у 1922–1924 роках, за проєктом будапештського архітектора Ernő Foerk. У добу Арпадів околиця Очі була королівським маєтком, тож абатство, ймовірно, заснував один із королів з роду Арпадів.",
+    "hu": "A szócikk szerint az egykori ócsai premontrei monostor 13. századi, kereszthajós, háromhajós román bazilika, amely a premontrei rend számára épült, és a román kor legértékesebb fennmaradt alkotása Magyarországon. 1560 óta az ócsai református gyülekezet temploma; a helyreállítást a 20. század elején, 1922–1924-ben végezték Foerk Ernő budapesti építész tervei szerint. Az Árpád-korban Ócsa környéke királyi birtok volt, így az apátságot valószínűleg az Árpád-ház egyik királya alapította."
+  },
+  "sources": [
+    {
+      "title": "Premontrei kolostor (Ócsa) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Premontrei_kolostor_%28%C3%93csa%29",
+      "note": "Датування, 1560, реставрація, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Reform%C3%A1tus_templom%2C_volt_premontrei_pr%C3%A9posts%C3%A1gi_templom_%287192._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_23.jpg",
+      "author": "Puffancs",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:Reform%C3%A1tus_templom%2C_volt_premontrei_pr%C3%A9posts%C3%A1gi_templom_%287192._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_23.jpg",
+      "caption": {
+        "uk": "Церква в Очі",
+        "hu": "Az ócsai templom"
+      }
+    }
+  ]
+}

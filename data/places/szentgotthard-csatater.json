@@ -1,0 +1,44 @@
+{
+  "id": "szentgotthard-csatater",
+  "name": {
+    "uk": "Поле битви при Сентґоттгарді (Szentgotthárd), 1664",
+    "hu": "Szentgotthárdi csatatér"
+  },
+  "type": "monument",
+  "coords": [
+    16.21667,
+    46.94167
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Околиця Сентґоттгарда, де 1 серпня 1664 року християнське військо Раймондо Монтекукколі несподівано розгромило армію великого візира Кьопрюлю Ахмеда: перша велика польова битва після Могача і Мезекерестеша, що не закінчилася турецькою перемогою.",
+    "hu": "Szentgotthárd vidéke, ahol 1664. augusztus 1-jén Montecuccoli keresztény serege váratlanul legyőzte Köprülü Ahmed oszmán hadát; Mohács és Mezőkeresztes után az első nagy nyílt csata, amely nem török győzelemmel végződött."
+  },
+  "description": {
+    "uk": "За статтею, битва при Сентґоттгарді відбулася 1 серпня 1664 року, коли християнське військо під проводом Раймондо Монтекукколі зіткнулося з османською армією Кьопрюлю Ахмеда в околиці Сентґоттгарда; європейські війська здобули несподівано нищівну перемогу. В угорських турецьких війнах це мало величезне значення: після Могача (1526) і Мезекерестеша (1596) це була перша велика відкрита битва, що не закінчилася перемогою турків. Координати зі статті приблизні.",
+    "hu": "A szócikk szerint a szentgotthárdi csata 1664. augusztus 1-jén zajlott, amikor a Raimondo Montecuccoli vezette keresztény sereg Szentgotthárd környékén összecsapott Köprülü Ahmed oszmán hadseregével; az európai csapatok váratlanul megsemmisítő győzelmet arattak. A magyarországi török háborúkban ennek óriási jelentősége volt: Mohács (1526) és Mezőkeresztes (1596) után ez volt az első nagy nyílt csata, amely nem török győzelemmel végződött. A szócikkből vett koordináták hozzávetőlegesek."
+  },
+  "sources": [
+    {
+      "title": "Szentgotthárdi csata (1664) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szentgotth%C3%A1rdi_csata_%281664%29",
+      "note": "Дата, командувачі, значення, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Dorfmeister-_Az_1664-es_szentgotth%C3%A1rdi_csata.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Dorfmeister-_Az_1664-es_szentgotth%C3%A1rdi_csata.jpg",
+      "caption": {
+        "uk": "Битва при Сентґоттгарді 1664 року на картині Dorfmeister",
+        "hu": "Az 1664-es szentgotthárdi csata Dorfmeister festményén"
+      }
+    }
+  ]
+}

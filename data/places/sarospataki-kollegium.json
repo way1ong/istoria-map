@@ -1,0 +1,46 @@
+{
+  "id": "sarospataki-kollegium",
+  "name": {
+    "uk": "Шарошпатакський реформатський колегіум, 1531",
+    "hu": "Sárospataki Református Kollégium"
+  },
+  "type": "other",
+  "coords": [
+    21.57112,
+    48.32315
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "ottoman",
+    "habsburg-18",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Одна з найстаріших шкіл Угорщини, заснована 1531 року в дусі Реформації хранителем корони Péter Perényi; тут училося багато великих постатей країни.",
+    "hu": "Az ország egyik legrégebben fennálló iskolája, 1531-ben, a reformáció szellemében alapította Perényi Péter koronaőr; számos nagy magyar diákoskodott itt."
+  },
+  "description": {
+    "uk": "За статтею, гімназія Шарошпатакського реформатського колегіуму в комітаті Боршод-Абауй-Земплен є одним із найдавніших діючих навчальних закладів країни: її заснував 1531 року в дусі Реформації хранитель корони Péter Perényi, той самий, що розбудував і Шарошпатакський замок (окрема картка). Упродовж століть тут навчалося багато великих постатей Угорщини.",
+    "hu": "A cikk szerint a Borsod-Abaúj-Zemplén vármegyei Sárospataki Református Kollégium gimnáziuma az ország egyik legrégebbi, ma is működő oktatási intézménye: 1531-ben alapította a reformáció szellemében Perényi Péter koronaőr, ugyanaz, aki a sárospataki várat is kiépítette (külön kártya). Az évszázadok során Magyarország számos nagy alakja tanult itt."
+  },
+  "sources": [
+    {
+      "title": "Sárospataki Református Kollégium Gimnáziuma, Általános Iskolája és Diákotthona – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/S%C3%A1rospataki_Reform%C3%A1tus_Koll%C3%A9gium_Gimn%C3%A1ziuma%2C_%C3%81ltal%C3%A1nos_Iskol%C3%A1ja_%C3%A9s_Di%C3%A1kotthona",
+      "note": "1531, Perényi, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Reformiertes_Kollegium_von_S%C3%A1rospatak.jpg",
+      "author": "Carol23 de",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Reformiertes_Kollegium_von_S%C3%A1rospatak.jpg",
+      "caption": {
+        "uk": "Реформатський колегіум Шарошпатака",
+        "hu": "A sárospataki Református Kollégium"
+      }
+    }
+  ]
+}

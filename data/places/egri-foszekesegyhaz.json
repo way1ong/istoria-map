@@ -1,0 +1,44 @@
+{
+  "id": "egri-foszekesegyhaz",
+  "name": {
+    "uk": "Егерська базиліка (Egri főszékesegyház)",
+    "hu": "Egri főszékesegyház"
+  },
+  "type": "church",
+  "coords": [
+    20.37306,
+    47.89917
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Кафедральний собор Егерської архієпархії й одна з найбільших церков Угорщини, збудована в 1831–1836 роках за проєктом József Hild у стилі класицизму на площі Pyrker tér навпроти Ліцею; вежі 55 м, купол 37 м.",
+    "hu": "Az Egri főegyházmegye katedrálisa, Magyarország egyik legnagyobb temploma, 1831 és 1836 között épült Hild József tervei alapján klasszicista stílusban a Pyrker téren, a Líceummal szemben; tornyai 55, kupolája 37 m magas."
+  },
+  "description": {
+    "uk": "За статтею, егерський собор св. Івана апостола і євангеліста, св. Михаїла архангела і Непорочного зачаття є катедрою Егерської архієпархії й однією з найбільших церков Угорщини; його збудовано в 1831–1836 роках за проєктом József Hild у стилі класицизму. Собор стоїть на площі Pyrker tér, зі сходу його обмежує площа Eszterházy tér з Ліцеєм (окрема картка); з 55-метровими вежами це друга за висотою будівля міста, купол має 37 м.",
+    "hu": "A szócikk szerint az egri Szent János apostol és evangélista, Szent Mihály főangyal és Szeplőtelen fogantatás-főszékesegyház az Egri főegyházmegye székesegyháza és Magyarország egyik legnagyobb temploma; 1831–1836 között épült Hild József tervei szerint, klasszicista stílusban. A székesegyház a Pyrker téren áll, keletről az Eszterházy tér határolja a Líceummal (külön kártya); 55 méteres tornyaival a város második legmagasabb épülete, kupolája 37 m."
+  },
+  "sources": [
+    {
+      "title": "Egri főszékesegyház – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Egri_f%C5%91sz%C3%A9kesegyh%C3%A1z",
+      "note": "Роки, Hild, розміри, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Egri_Bazilika_bels%C5%91.jpg",
+      "author": "Maróthy Ádám",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Egri_Bazilika_bels%C5%91.jpg",
+      "caption": {
+        "uk": "Егерська базиліка",
+        "hu": "Az egri bazilika"
+      }
+    }
+  ]
+}

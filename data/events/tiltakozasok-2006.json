@@ -1,0 +1,44 @@
+{
+  "id": "tiltakozasok-2006",
+  "title": {
+    "uk": "Протести восени 2006 року",
+    "hu": "A 2006. őszi tiltakozások"
+  },
+  "date": {
+    "from": "2006-09-17",
+    "to": "2006-10-23",
+    "precision": "approximate"
+  },
+  "period": "modern",
+  "places": [
+    "orszaghaz"
+  ],
+  "summary": {
+    "uk": "Серія антиурядових демонстрацій, що почалася 17 вересня 2006 року після оприлюднення «ьосьодської промови» прем'єра Ференца Дюрчаня з 26 травня 2006 року; центром були Кошут тер перед Парламентом з десятитисячним натовпом вечорами, 18 вересня вночі група протестувальників «штурмувала» будинок Угорського телебачення, дві наступні ночі тривали сутички з поліцією.",
+    "hu": "2006. szeptember 17-én indult kormányellenes tüntetéssorozat, miután nyilvánosságra került Gyurcsány Ferenc 2006. május 26-i őszödi beszéde; központja a Kossuth tér volt tízezres esti tömeggel, szeptember 18-án éjjel a tüntetők egy csoportja „megostromolta” az MTV-székházat, a következő két éjszaka összecsapások voltak a rendőrséggel."
+  },
+  "description": {
+    "uk": "За статтею, протести восени 2006 року були серією антиурядових демонстрацій, що почалася 17 вересня 2006 року насамперед у Будапешті та кількох містах через кілька днів після оприлюднення так званої ьосьодської промови прем'єр-міністра Ференца Дюрчаня, виголошеної на закритому засіданні фракції MSZP 26 травня 2006 року. Центром демонстрацій у Будапешті була площа Кошута перед Парламентом, де вечорами спершу збирався десятитисячний натовп, а учасників назвали «кошуттерцями»; 18 вересня вночі група протестувальників «штурмувала» будинок Угорського телебачення, завдавши значних збитків будівлі й автомобілям, а дві наступні ночі в кількох місцях міста тривали жорсткі сутички з поліцією; у наступні місяці організації по всій країні щодня вимагали відставки прем'єра. Кінцева дата періоду приблизна й відповідає 50-й річниці революції, згаданій у статті про заворушення.",
+    "hu": "A szócikk szerint a 2006 őszi tiltakozások kormányellenes tüntetések sorozata volt, amely 2006. szeptember 17-én kezdődött elsősorban Budapesten és több városban, néhány nappal Gyurcsány Ferenc miniszterelnök úgynevezett őszödi beszédének nyilvánosságra kerülése után, amely az MSZP-frakció 2006. május 26-i zárt ülésén hangzott el. A budapesti tüntetések központja a Parlament előtti Kossuth tér volt, ahol esténként eleinte tízezres tömeg gyűlt össze, a résztvevőket pedig „kossuthtériekként” emlegették; szeptember 18-án éjjel a tüntetők egy csoportja „megostromolta” a Magyar Televízió székházát, jelentős károkat okozva az épületben és a gépkocsikban, a következő két éjszakán pedig a város több pontján kemény összecsapások zajlottak a rendőrséggel; a következő hónapokban országszerte szervezetek követelték naponta a miniszterelnök lemondását. Az időszak záró dátuma hozzávetőleges, és a forradalom 50. évfordulójának felel meg, amelyet a zavargásokról szóló szócikk említ."
+  },
+  "sources": [
+    {
+      "title": "Magyarországi tiltakozások 2006 őszén – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1gi_tiltakoz%C3%A1sok_2006_%C5%91sz%C3%A9n",
+      "note": "Дати, перебіг."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Ekrem_Kemal_Budapest_protest_2006.jpg",
+      "author": "Roger Welch",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Ekrem_Kemal_Budapest_protest_2006.jpg",
+      "caption": {
+        "uk": "Протест у Будапешті 2006 року",
+        "hu": "Budapesti tüntetés 2006-ban"
+      }
+    }
+  ]
+}

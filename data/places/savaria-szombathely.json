@@ -1,0 +1,44 @@
+{
+  "id": "savaria-szombathely",
+  "name": {
+    "uk": "Саварія (Savaria), найдавніша колонія на території Угорщини",
+    "hu": "Savaria"
+  },
+  "type": "archaeological",
+  "coords": [
+    16.61861,
+    47.22972
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Римська попередниця Szombathely на Бурштиновому шляху, найраніша colonia на нинішній території Угорщини, з II століття релігійний центр Верхньої Паннонії, пізніше столиця Pannonia Prima; батьківщина св. Мартина Турського.",
+    "hu": "Szombathely római elődje a borostyánúton, a mai Magyarország legkorábbi coloniája, később Pannonia Prima székhelye; Tours-i Szent Márton szülővárosa."
+  },
+  "description": {
+    "uk": "За статтею, Savaria (пізніше Sabaria) була станцією Бурштинового шляху і найранішою колонією, тобто поселенням міського рангу, на території нинішньої Угорщини; з II століття релігійний центр провінції Pannonia superior, згодом столиця Pannonia Prima. Тут народився св. Мартин, єпископ Турський. Місто загинуло в добу переселення народів. Координати відповідають центру Szombathely; відновлене святилище Ізіди (Iseum) стоїть у центрі міста.",
+    "hu": "A szócikk szerint Savaria (később Sabaria) a Borostyánkőút állomása és a mai Magyarország területének legkorábbi coloniája, azaz városi rangú települése volt; a II. századtól Pannonia superior provincia vallási központja, később Pannonia Prima fővárosa. Itt született Szent Márton, Tours püspöke. A város a népvándorlás korában pusztult el. A koordináták Szombathely központjának felelnek meg; a helyreállított Isis-szentély (Iseum) a városközpontban áll."
+  },
+  "sources": [
+    {
+      "title": "Savaria – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Savaria",
+      "note": "Статус, провінція, св. Мартин, координати міста."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/%C3%8Dzisz_Szent%C3%A9ly_rekonstrukci%C3%B3_Szombathely.JPG",
+      "author": "Pan Peter12",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:%C3%8Dzisz_Szent%C3%A9ly_rekonstrukci%C3%B3_Szombathely.JPG",
+      "caption": {
+        "uk": "Реконструйоване святилище Ізіди у Szombathely",
+        "hu": "Az Iseum rekonstrukciója Szombathelyen"
+      }
+    }
+  ]
+}

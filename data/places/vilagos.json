@@ -1,0 +1,49 @@
+{
+  "id": "vilagos",
+  "name": {
+    "uk": "Вілаґош (Șiria): місце складання зброї 13 серпня 1849 року",
+    "hu": "Világos, a fegyverletétel helye"
+  },
+  "type": "monument",
+  "coords": [
+    21.63856,
+    46.26731
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Над зрослими селами Magyarvilágos і Románvilágos (нині Șiria в Румунії) здіймається руїна Вілаґошського замку; на полі біля Szőlős 13 серпня 1849 року армія гонведів Artúr Görgei склала зброю перед військом царя Миколи I, що означало кінець визвольної війни. Прикордонний об'єкт; координати центру Șiria з OpenStreetMap.",
+    "hu": "A teljesen összeépült Magyarvilágos és Románvilágos (ma Șiria, Románia) fölött emelkedik a világosi vár romja; a szőlősi mezőn 1849. augusztus 13-án tette le a fegyvert Görgei Artúr honvédserege I. Miklós cár hadserege előtt, ami a szabadságharc végét jelentette. Határon túli hely; a koordináták Șiria központja az OpenStreetMapből."
+  },
+  "description": {
+    "uk": "За статтею, складання зброї під Вілаґошем означало кінець революції та визвольної війни 1848–1849 років, після чого з австрійського боку настала кривава відплата під терором генерала Haynau. Над цілком зрослими й раніше оточеними прекрасними виноградниками селами Magyarvilágos і Románvilágos здіймається Вілаґошський замок з руйнованими мурами, де на полі біля Szőlős 13 серпня 1849 року угорська гонведська армія Artúr Görgei склала зброю перед інвазійним військом російського царя Миколи I. Місце лежить за межами нинішньої Угорщини й додане як прикордонний об'єкт; координати центру Șiria з OpenStreetMap.",
+    "hu": "A szócikk szerint a világosi fegyverletétel az 1848–1849-es forradalom és szabadságharc végét jelentette, amely után osztrák részről Haynau tábornok rémuralma alatt véres megtorlás következett. A teljesen összenőtt, korábban gyönyörű szőlőkkel övezett Magyarvilágos és Románvilágos községek fölé emelkedik a világosi vár omladozó falaival, ahol a Szőlős melletti mezőn 1849. augusztus 13-án Görgei Artúr magyar honvédserege letette a fegyvert I. Miklós orosz cár intervenciós hadserege előtt. A hely a mai Magyarország határain kívül fekszik, határ menti objektumként került fel; Șiria központjának koordinátái az OpenStreetMapből származnak."
+  },
+  "sources": [
+    {
+      "title": "Világosi fegyverletétel – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Vil%C3%A1gosi_fegyverlet%C3%A9tel",
+      "note": "Дата, Görgei, наслідки."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Șiria, Arad",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=%C8%98iria%2C%20Arad",
+      "note": "Координати 46.26731, 21.63856 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Vil%C3%A1gosi_fegyverlet%C3%A9tel.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Vil%C3%A1gosi_fegyverlet%C3%A9tel.jpg",
+      "caption": {
+        "uk": "Складання зброї під Вілаґошем",
+        "hu": "A világosi fegyverletétel"
+      }
+    }
+  ]
+}

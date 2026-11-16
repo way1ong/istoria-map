@@ -1,5 +1,13 @@
 # Római kor és Barbaricum
 
+## Az ország egésze
+
+Róma, amely addig csak kereskedett a Kárpát-medence népeivel, az i. e. 1. században kiterjesztette uralmát a terület egy részére: Augustus a hároméves pannoniai háború után i. e. 9-ben elfoglalta a Dráva–Száva közét és a Keleti-Alpokat, Claudius pedig 46–50 között a Duna vonaláig terjesztette ki a római uralmat, létrehozva Pannonia provinciát. A provinciáról szóló cikk időrendje szerint a terület meghódítása i. e. 12, a tartománnyá szervezés Claudius alatt (41–54), Domitianus szarmata és dák háborúi 85–89, a kettéosztás Pannonia Inferiorra és Superiorra 106 (a Kárpát-medencéről szóló cikk 103-at és Traianust említi), a markomann–kvád–szarmata háborúk 166–180, Aquincum és Carnuntum colonia rangra emelése 194, Septimius Severus látogatása 202, szarmata–kvád betörés 260, Dacia feladása 271/273, Pannonia négy részre osztása 299/303, újabb szarmata–kvád betörések 374, az utolsó császári rendelet Sirmiumban 380, Pannonia feladása 430 körül.[^14][^15]
+
+A tartomány fővárosa Carnuntum lett, de Aquincum jelentősebb volt, és az 1. század végére 12 000 lakosú várossá nőtt; a borostyánút mentén Poetovio, Sala, Savaria, Scarbantia és Vindobona, a többi út mentén Sirmium, Sopianae, Brigetio, Arrabona, Gorsium és mások alakultak ki. Pannoniának nagy katonai szerepe is volt: a Duna természetes határvonala mentén védte a birodalmat az Alföld közepét elfoglaló alánok (a római írók „szarmatái”), a nyugati germán törzsek és a dákok ellen. A rómaiak által barbároknak nevezett alánok és germánok az Alföldet, a Felvidéket és az Erdélyi-medencét lakták, és Rómának sohasem sikerült őket beolvasztania. A Duna bal partja Váccal, Göddel és Dunakeszivel szemben éppen ebben a Barbaricumban feküdt.[^14]
+
+## Göd, Vác és Dunakeszi környéke
+
 A római korban a Duna a birodalom határa volt: a jobb part Pannonia (a késő császárkorban Valeria) provinciához tartozott, a bal part, ahol Dunakeszi, Göd és Vác fekszik, a „barbárok” földje volt. Vác környéke az iráni nyelvű szarmaták és a germán kvádok közötti határzónába esett; Ptolemaiosz a jazigok városai között említi Uscenumot, amelyet Váccal azonosítanak.[^1][^2] Dunakeszin a jazigok a Székesdűlőn telepedtek meg, ahol falurészletet és két sírt tártak fel; Sződön 2–3. századi szarmata és kvád nyomokat rögzítettek.[^2][^3] A gödi erőd kutatói szerint a 4. században ez a vidék valószínűleg már kvád területnek számított.[^9]
 
 ## A Csörsz-árok
@@ -35,3 +43,5 @@ Göd tehát nem erőd volt, hanem egy erőd terve: a római hadmérnökök rögz
 [^11]: Mráv Zs., Göd-Bócsaújtelep, késő római erőd. Régészeti Kutatások Magyarországon 2005, 163. sz. 10356_God_2005_RKM.pdf: https://archeodatabase.hnm.hu/en/node/3785
 [^12]: Mráv Zs., Göd-Bócsaújtelep, késő római erőd. Régészeti Kutatások Magyarországon 2006, 127. sz. 10356_God_2006_RKM.pdf: https://archeodatabase.hnm.hu/en/node/3785
 [^13]: Mráv Zs., Göd-Bócsaújtelep, késő római erőd. Régészeti Kutatások Magyarországon 2007, 134. sz. 10356_God_2007_RKM.pdf: https://archeodatabase.hnm.hu/en/node/3785
+[^14]: A Kárpát-medence története a honfoglalásig – Wikipédia (hu), szakasz «„Pannonia és Dacia”, „A barbárok”»: https://hu.wikipedia.org/wiki/A_K%C3%A1rp%C3%A1t-medence_t%C3%B6rt%C3%A9nete_a_honfoglal%C3%A1sig
+[^15]: Pannonia (provincia) – Wikipédia (hu), „Pannonia római kori történelmének időrendi áttekintése” szakasz: https://hu.wikipedia.org/wiki/Pannonia_(provincia)

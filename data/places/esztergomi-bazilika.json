@@ -1,0 +1,46 @@
+{
+  "id": "esztergomi-bazilika",
+  "name": {
+    "uk": "Естергомська базиліка (Esztergomi bazilika)",
+    "hu": "Esztergomi bazilika"
+  },
+  "type": "church",
+  "coords": [
+    18.73639,
+    47.79889
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Головний собор Угорщини в стилі класицизму з елементами єгипетського стилю, найбільша церковна будівля країни заввишки 100 м; освячена 31 серпня 1856 року ще до завершення, в присутності Франца Йосифа, під Естергомську месу Ліста.",
+    "hu": "Magyarország legnagyobb egyházi épülete, klasszicista bazilika; 1856. augusztus 31-én szentelték fel Ferenc József jelenlétében, Liszt Esztergomi miséjével."
+  },
+  "description": {
+    "uk": "За статтею, базиліка Успіння Богородиці і св. Адальберта є кафедральним собором Естергомсько-Будапештської архієпархії, найбільшою церковною будівлею Угорщини (100 м від крипти до кулі купола) і третьою за розміром базилікою Європи. Після вбивства керівника будівництва архієпископ доручив роботи József Hild, який змінив проєкт і надав будівлі остаточної форми; 1846 року на купол підняли хрест. Освячення відбулося 31 серпня 1856 року задовго до завершення, за участі Франца Йосифа; до нього Ференц Ліст написав Естергомську месу і сам диригував нею. Головний вівтарний образ 1856 року (13,5 × 6,6 м) є найбільшою у світі картиною на одному полотні.",
+    "hu": "A szócikk szerint a Nagyboldogasszony és Szent Adalbert-bazilika az Esztergom-Budapesti Főegyházmegye székesegyháza, Magyarország legnagyobb egyházi épülete (100 m az altemplomtól a kupola gömbjéig) és Európa harmadik legnagyobb bazilikája. Az építésvezető meggyilkolása után az érsek Hild Józsefet bízta meg a munkákkal, aki módosította a tervet, és az épületnek végleges formát adott; 1846-ban a kupolára felkerült a kereszt. A felszentelésre 1856. augusztus 31-én, jóval a befejezés előtt került sor Ferenc József részvételével; erre az alkalomra Liszt Ferenc megírta az Esztergomi misét, és maga vezényelte. Az 1856-os főoltárkép (13,5 × 6,6 m) a világ legnagyobb, egyetlen vászonra festett képe."
+  },
+  "sources": [
+    {
+      "title": "Esztergomi bazilika – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Esztergomi_bazilika",
+      "note": "Розміри, архітектор Hild, освячення 1856, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/EsztregomFotoThaler2_%281%29.JPG",
+      "author": "Thaler Tamas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:EsztregomFotoThaler2_%281%29.JPG",
+      "caption": {
+        "uk": "Естергомська базиліка",
+        "hu": "Az Esztergomi bazilika"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "buda-ostroma-1849",
+  "title": {
+    "uk": "Облога Буди 1849 року",
+    "hu": "Buda ostroma (1849)"
+  },
+  "date": {
+    "from": "1849-05-04",
+    "to": "1849-05-21",
+    "precision": "exact"
+  },
+  "period": "long-19",
+  "places": [
+    "budai-varnegyed"
+  ],
+  "summary": {
+    "uk": "Вершина весняного походу: з 4 по 21 травня 1849 року угорська армія облягала Будайський замок і здобула його; події описано в романі Мора Йокаї «Сини людини з кам'яним серцем».",
+    "hu": "A tavaszi hadjárat csúcspontja: 1849. május 4-től 21-ig a honvédsereg ostromolta és bevette a budai várat; az eseményeket Jókai Mór A kőszívű ember fiai című regénye is leírja."
+  },
+  "description": {
+    "uk": "За статтею, облога Буди була вершиною весняного походу революції та визвольної війни 1848–1849 років; вона тривала з 4 по 21 травня 1849 року і завершилася перемогою угорських військ, що облягали замок. Досить докладний опис подій дає роман Мора Йокаї «Сини людини з кам'яним серцем» очима братів Baradlay. Пам'ятник двом битвам під Вацом того ж року стоїть біля Hétkápolna (див. картку).",
+    "hu": "A szócikk szerint Buda ostroma az 1848–1849-es forradalom és szabadságharc tavaszi hadjáratának csúcspontja volt; 1849. május 4-től 21-ig tartott, és a várat ostromló magyar csapatok győzelmével ért véget. Az eseményekről meglehetősen részletes leírást ad Jókai Mór „A kőszívű ember fiai” című regénye a Baradlay fivérek szemével. Az ugyanabban az évben vívott két váci csata emlékműve a Hétkápolnánál áll (lásd a kártyát)."
+  },
+  "sources": [
+    {
+      "title": "Buda ostroma (1849) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Buda_ostroma_%281849%29",
+      "note": "Дати, результат, Йокаї."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Budaalaprajz7.jpg",
+      "author": "hu:User:Gepi",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Budaalaprajz7.jpg",
+      "caption": {
+        "uk": "План облоги Буди",
+        "hu": "Buda ostromának alaprajza"
+      }
+    }
+  ]
+}

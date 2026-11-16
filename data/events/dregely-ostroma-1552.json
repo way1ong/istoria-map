@@ -1,0 +1,30 @@
+{
+  "id": "dregely-ostroma-1552",
+  "title": {
+    "uk": "Облога Дреґея і загибель Дьордя Сонді",
+    "hu": "Drégely ostroma"
+  },
+  "date": {
+    "from": "1552-07",
+    "precision": "approximate"
+  },
+  "period": "ottoman",
+  "places": [
+    "dregely-vara"
+  ],
+  "summary": {
+    "uk": "У липні 1552 року будайський паша Алі з 12-тисячним військом обложив застарілу фортецю Дреґей, яку капітан György Szondi обороняв зі 146 вояками.",
+    "hu": "1552 júliusában Ali budai pasa 12 000 fős serege ostromolta az elavult drégelyi végvárat, amelyet Szondi György kapitány 146 katonával védett."
+  },
+  "description": {
+    "uk": "За статтею про замок, естергомський архієпископ призначив капітаном György Szondi, який намагався зміцнити застарілу прикордонну фортецю; у липні 1552 року будайський паша Алі підійшов з 12-тисячним військом, тоді як гарнізон налічував лише 146 вояків. Замок розстріляли в руїну. Того ж року турки взяли Сольнок і були відбиті від Еґера (окремі картки).",
+    "hu": "A várról szóló szócikk szerint az esztergomi érsek Szondi Györgyöt nevezte ki kapitánynak, aki megpróbálta megerősíteni az elavult végvárat; 1552 júliusában Ali budai pasa 12 ezres sereggel érkezett a vár alá, míg az őrség mindössze 146 katonát számlált. A várat rommá lőtték. Ugyanabban az évben a törökök bevették Szolnokot, Egernél viszont visszaverték őket (külön kártyák)."
+  },
+  "sources": [
+    {
+      "title": "Drégely vára – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dr%C3%A9gely_v%C3%A1ra",
+      "note": "1552, Szondi, чисельність."
+    }
+  ]
+}

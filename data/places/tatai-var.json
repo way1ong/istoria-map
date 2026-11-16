@@ -1,0 +1,32 @@
+{
+  "id": "tatai-var",
+  "name": {
+    "uk": "Татайський замок (Tatai vár) на Старому озері",
+    "hu": "Tatai vár"
+  },
+  "type": "castle",
+  "coords": [
+    18.31944,
+    47.64889
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Водний замок на березі Öreg-tó, збудований королем Сигізмундом у 1397–1409 роках; Матяш у 1470–1480-х перебудував його за зразком італійських водних замків; 1543 року захоплений османами. Збереглося південно-східне крило.",
+    "hu": "Vízi vár az Öreg-tó partján, Zsigmond király építtette 1397–1409 között; Mátyás az 1470–80-as években itáliai vízivárak mintájára építtette újjá; 1543-ban a törökök foglalták el."
+  },
+  "description": {
+    "uk": "За статтею, Татайський замок є водним замком на березі Старого озера, збудованим королем Сигізмундом Люксембурзьким у 1397–1409 роках, можливо, на місці давнішого укріплення родини Lackfi. Від квадратного замку з чотирма кутовими вежами стоїть лише південно-східне крило, до якого прилягають розкопані фундаменти решти. Король Матяш викупив замок у Rozgonyi до 1467 року і в 1470–1480-х роках перебудував його за зразком італійських водних замків; після Могача турецькі загони спустошили околицю, а 1543 року османи захопили замок.",
+    "hu": "A cikk szerint a tatai vár az Öreg-tó partján álló vízivár, amelyet Luxemburgi Zsigmond király építtetett 1397–1409 között, feltehetően a Lackfi család korábbi erődítményének helyén. A négy saroktornyos, négyzet alaprajzú várból csak a délkeleti szárny áll, amelyhez a többi rész feltárt alapfalai csatlakoznak. Mátyás király 1467 előtt vásárolta meg a várat a Rozgonyiaktól, és az 1470–1480-as években az itáliai vízivárak mintájára építtette át; Mohács után török csapatok pusztították a környéket, 1543-ban pedig az oszmánok elfoglalták a várat."
+  },
+  "sources": [
+    {
+      "title": "Tatai vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tatai_v%C3%A1r",
+      "note": "Сигізмунд, Матяш, 1543, координати."
+    }
+  ]
+}

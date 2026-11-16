@@ -1,0 +1,46 @@
+{
+  "id": "szecsenyi-var",
+  "name": {
+    "uk": "Сечень (Szécsény): замок і палац Forgách, збори 1705 року",
+    "hu": "Szécsényi vár és Forgách-kastély"
+  },
+  "type": "castle",
+  "coords": [
+    19.52136,
+    48.08225
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman",
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Колишній замок Сеченя на високому березі над Іполем стояв на місці палацу Forgách 1753–1762 років і частково входить до нього; у 1644–1645 роках належав Дьордю Ракоці I, а 1705 року тут відбулися державні збори Ференца Ракоці II.",
+    "hu": "Szécsény egykori vára az Ipoly feletti magasparton, az 1753–1762 között épült Forgách-kastély helyén állt, részben abba foglalva; 1644–45-ben I. Rákóczi György kezén volt, 1705-ben itt tartották II. Rákóczi Ferenc országgyűlését."
+  },
+  "description": {
+    "uk": "За статтею, Сечень є одним із визначальних місць історії комітату Ноґрад і, мабуть, найкраще збереженим з історичних міст; колишній замок стояв на високому березі над Іполем на місці палацу Forgách, збудованого в 1753–1762 роках, і частково зберігся в ньому. У 1644–1645 роках замок був у руках Дьордя Ракоці I; 1641 року Ádám Forgách заставив Сечень з маєтком István Kohári за 12 тисяч золотих. Давній опис зазначає, що 1705 року місто прославили «загальні збори Ракоці».",
+    "hu": "A cikk szerint Szécsény Nógrád vármegye történetének egyik meghatározó helyszíne, és talán a legjobban megmaradt történelmi város; az egykori vár az Ipoly fölötti magas parton, az 1753–1762 között épült Forgách-kastély helyén állt, és részben megmaradt benne. 1644–1645-ben a vár I. Rákóczi György kezén volt; 1641-ben Forgách Ádám Szécsényt az uradalommal együtt 12 ezer aranyért elzálogosította Kohári Istvánnak. Egy régi leírás megjegyzi, hogy 1705-ben a várost a „Rákóczi-féle közgyűlés” tette híressé."
+  },
+  "sources": [
+    {
+      "title": "Szécsényi vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sz%C3%A9cs%C3%A9nyi_v%C3%A1r",
+      "note": "Замок і палац, 1705, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Sz%C3%A9cs%C3%A9ny_-_l%C3%A9gi_fot%C3%B3.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Sz%C3%A9cs%C3%A9ny_-_l%C3%A9gi_fot%C3%B3.jpg",
+      "caption": {
+        "uk": "Сечень з повітря",
+        "hu": "Szécsény légi fotón"
+      }
+    }
+  ]
+}

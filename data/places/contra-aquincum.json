@@ -1,0 +1,44 @@
+{
+  "id": "contra-aquincum",
+  "name": {
+    "uk": "Контра-Аквінкум (Contra-Aquincum) на площі Március 15. tér",
+    "hu": "Contra-Aquincum"
+  },
+  "type": "archaeological",
+  "coords": [
+    19.0514,
+    47.4927
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Римський форт і передмостове укріплення лімесу на лівому березі Дунаю в центрі Пешта, збудований на початку II століття і перебудований наприкінці III; залишки видно на площі Március 15. tér біля мосту Ержебет.",
+    "hu": "Római erőd és hídfőállás a pannoniai limesen a pesti oldalon; a 2. század elején épült, a 3. század végén alapjaitól átépítették. Maradványai a Március 15. téren láthatók."
+  },
+  "description": {
+    "uk": "За статтею, Contra-Aquincum був фортом і передмостовим укріпленням лімесу, збудованим на початку II століття і наново від фундаментів наприкінці III. Його значення надавали незвично товсті стіни, контроль над «столицею» еравісків і нагляд за давньою торговельною переправою; античною назвою, ймовірно, було Pession. Розкопки стали можливі лише в 1930-х: 1932 року знесли старий будинок піаристів і столиця замовила розкопки під керівництвом Lajos Nagy. Це найближчий до Dunakeszi і Göd елемент системи фортів на лівому березі.",
+    "hu": "A szócikk szerint Contra-Aquincum a limes erődje és hídfőállása volt, amelyet a 2. század elején építettek, és a 3. század végén az alapoktól újjáépítettek. Jelentőségét a szokatlanul vastag falak, az eraviszkuszok „fővárosa” feletti ellenőrzés és az ősi kereskedelmi átkelő felügyelete adta; antik neve valószínűleg Pession volt. Az ásatások csak az 1930-as években váltak lehetségessé: 1932-ben lebontották a régi piarista épületet, és a főváros Nagy Lajos vezetésével ásatást rendelt meg. Ez a bal parti erődrendszer Dunakeszihez és Gödhöz legközelebb eső eleme."
+  },
+  "sources": [
+    {
+      "title": "Contra-Aquincum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Contra-Aquincum",
+      "note": "Датування, функція, розкопки 1932 року, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Az_egykori_Contra-Aquincum_l%C3%A9gi_felv%C3%A9telen_a_mai_M%C3%A1rcius_15-e_t%C3%A9ren.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Az_egykori_Contra-Aquincum_l%C3%A9gi_felv%C3%A9telen_a_mai_M%C3%A1rcius_15-e_t%C3%A9ren.jpg",
+      "caption": {
+        "uk": "Залишки Contra-Aquincum на площі Március 15. tér, 2014",
+        "hu": "Contra-Aquincum maradványai a Március 15. téren, 2014"
+      }
+    }
+  ]
+}

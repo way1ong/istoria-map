@@ -1,0 +1,33 @@
+{
+  "id": "hortobagy",
+  "name": {
+    "uk": "Гортобадь (Hortobágy), перший національний парк Угорщини",
+    "hu": "Hortobágyi Nemzeti Park"
+  },
+  "type": "nature",
+  "coords": [
+    21.03333,
+    47.61667
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Перший національний парк країни, створений 1 січня 1973 року на площі 82 000 га; 30 листопада 1999 року всю його територію внесено до списку Світової культурної і природної спадщини ЮНЕСКО. Дирекція в Дебрецені.",
+    "hu": "Az ország első nemzeti parkja, 1973. január 1-jén alapították 82 000 hektáron; 1999. november 30-án egész területét felvették a világörökségi listára."
+  },
+  "description": {
+    "uk": "За статтею, Гортобадь є першим національним парком Угорщини, створеним 1 січня 1973 року Державним управлінням охорони природи на площі 82 000 га. 30 листопада 1999 року на засіданні Комітету Світової спадщини ЮНЕСКО в Марракеші всю територію парку внесено до списку світової культурної і природної спадщини. Дирекція парку в Дебрецені; парк утримує єдину в країні пасажирську вузькоколійку до рибних ставків, що закінчується біля найбільшого штучного ставу країни.",
+    "hu": "A szócikk szerint a Hortobágy Magyarország első nemzeti parkja, amelyet 1973. január 1-jén hozott létre az Országos Természetvédelmi Hivatal 82 000 hektáron. 1999. november 30-án az UNESCO Világörökségi Bizottságának marrákesi ülésén a park teljes területét felvették a kulturális és természeti világörökség listájára. A park igazgatósága Debrecenben van; a park üzemelteti az ország egyetlen személyszállító kisvasútját a halastavakhoz, amely az ország legnagyobb mesterséges tava mellett végződik."
+  },
+  "sources": [
+    {
+      "title": "Hortobágyi Nemzeti Park – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Hortob%C3%A1gyi_Nemzeti_Park",
+      "note": "Дата створення, площа, ЮНЕСКО 1999, координати."
+    }
+  ]
+}

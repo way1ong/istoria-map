@@ -1,0 +1,32 @@
+{
+  "id": "keszthely-fenekpuszta",
+  "name": {
+    "uk": "Пізньоримська фортеця Valcum (Keszthely-Fenékpuszta)",
+    "hu": "Keszthely-Fenékpuszta, késő római erőd"
+  },
+  "type": "archaeological",
+  "coords": [
+    17.23959,
+    46.70884
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "roman-barbaricum",
+    "migration"
+  ],
+  "summary": {
+    "uk": "Римська фортеця IV століття площею близько 15 га з 44 вежами на південному березі Балатона, в античності Valcum; усередині склади, лазні, представницькі будівлі. Поруч орнітологічна станція.",
+    "hu": "A 4. században épült, kb. 15 hektáros, 44 tornyú római erőd (ókori nevén Valcum) a Balaton déli partján; belül raktárak, fürdők, reprezentatív épületek."
+  },
+  "description": {
+    "uk": "За статтею, Fenékpuszta є частиною Keszthely за 6 км на південь від центру, біля дороги 71. У IV столітті тут збудували римську фортецю площею близько 15 га з 44 вежами й масивними стінами; всередині стояли складські будівлі, лазні, представницькі й адміністративні споруди. Тут же працює одна з найзначніших станцій кільцювання птахів Угорщини.",
+    "hu": "A szócikk szerint Fenékpuszta Keszthely része a központtól 6 km-re délre, a 71-es út mellett. A 4. században itt mintegy 15 hektáros római erődöt építettek 44 toronnyal és vastag falakkal; belsejében raktárépületek, fürdők, reprezentatív és közigazgatási épületek álltak. Ugyanitt működik Magyarország egyik legjelentősebb madárgyűrűző állomása."
+  },
+  "sources": [
+    {
+      "title": "Fenékpuszta – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Fen%C3%A9kpuszta",
+      "note": "Розмір і дата фортеці, координати."
+    }
+  ]
+}

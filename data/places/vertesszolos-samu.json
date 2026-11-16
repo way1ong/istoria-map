@@ -1,0 +1,31 @@
+{
+  "id": "vertesszolos-samu",
+  "name": {
+    "uk": "Вертешсьолеш (Vértesszőlős): стоянка прадавньої людини «Samu»",
+    "hu": "Vértesszőlős, Samu-lelőhely"
+  },
+  "type": "archaeological",
+  "coords": [
+    18.38389,
+    47.62694
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "prehistory"
+  ],
+  "summary": {
+    "uk": "Кар'єр травертину біля Vértesszőlős, де 1965 року розкопки László Vértes виявили потиличну кістку і два дитячі зуби людини віком близько 350 тисяч років, одного з найдавніших мешканців Європи.",
+    "hu": "Mésztufabánya Vértesszőlős mellett, ahol 1965-ben Vértes László ásatásán egy kb. 350 ezer éves előember nyakszirtcsontja és két gyermekfoga került elő."
+  },
+  "description": {
+    "uk": "За статтею, «Samu» (Homo erectus seu sapiens paleohungaricus) є одним із найдавніших відомих мешканців Європи, жив близько 350 тисяч років тому; видова належність умовна, за віком це доба гейдельберзької людини. Сліди стоянки 1962 року знайшов Márton Pécsi, а влітку 1965 року під час розкопок László Vértes знайдено потиличну кістку і два дитячі зуби; знахідку назвали Samu, бо 21 серпня був день Самуїла. Координати зі статті округлено.",
+    "hu": "A cikk szerint „Samu” (Homo erectus seu sapiens paleohungaricus) Európa egyik legrégebbi ismert lakója, mintegy 350 ezer évvel ezelőtt élt; faji hovatartozása feltételes, kora szerint a heidelbergi ember korszakába tartozik. A telep nyomait 1962-ben Pécsi Márton találta meg, 1965 nyarán pedig Vértes László ásatásai során nyakszirtcsont és két gyermekfog került elő; a leletet Samunak nevezték el, mert augusztus 21-e Sámuel napja volt. A cikkből vett koordináták kerekítettek."
+  },
+  "sources": [
+    {
+      "title": "Samu (előember) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Samu_%28el%C5%91ember%29",
+      "note": "Вік, рік знахідки, дослідники, координати."
+    }
+  ]
+}

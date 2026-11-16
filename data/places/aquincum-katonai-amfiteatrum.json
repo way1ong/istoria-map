@@ -1,0 +1,44 @@
+{
+  "id": "aquincum-katonai-amfiteatrum",
+  "name": {
+    "uk": "Військовий амфітеатр Аквінкума",
+    "hu": "Aquincumi katonai amfiteátrum"
+  },
+  "type": "archaeological",
+  "coords": [
+    19.03889,
+    47.53278
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Більша з двох арен Аквінкума, на південь від легіонного табору в III районі Будапешта, між вулицями Nagyszombat, Pacsirtamező, Viador і Szőlő.",
+    "hu": "Aquincum két arénája közül a nagyobbik, a katonai tábortól délre, a III. kerületben, a Nagyszombat–Pacsirtamező–Viador–Szőlő utca által határolt területen."
+  },
+  "description": {
+    "uk": "За статтею, військовий (табірного міста) амфітеатр Аквінкума є більшою з двох арен поселення; друга належала цивільному місту. Він лежить у нинішньому Будапешті на південь від військового табору, в III районі на ділянці, обмеженій вулицями Nagyszombat, Pacsirtamező, Viador і Szőlő. Координати опубліковані відкрито: це міська пам'ятка на карті Будапешта.",
+    "hu": "A szócikk szerint Aquincum katonai (táborvárosi) amfiteátruma a település két arénája közül a nagyobb; a másik a polgárvároshoz tartozott. A mai Budapesten, a katonai tábortól délre, a III. kerületben fekszik a Nagyszombat, a Pacsirtamező, a Viador és a Szőlő utca által határolt telken. A koordináták nyilvánosan közzétettek: városi műemlék Budapest térképén."
+  },
+  "sources": [
+    {
+      "title": "Aquincumi katonai amfiteátrum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Aquincumi_katonai_amfite%C3%A1trum",
+      "note": "Розташування, координати. Координати опубліковані відкрито."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Aquincum_katonai_%28katonav%C3%A1rosi%29_amfite%C3%A1truma_-_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Aquincum_katonai_%28katonav%C3%A1rosi%29_amfite%C3%A1truma_-_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "caption": {
+        "uk": "Військовий амфітеатр Аквінкума з повітря",
+        "hu": "Az aquincumi katonai amfiteátrum légi fotón"
+      }
+    }
+  ]
+}

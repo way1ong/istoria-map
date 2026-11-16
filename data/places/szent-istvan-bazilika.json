@@ -1,0 +1,46 @@
+{
+  "id": "szent-istvan-bazilika",
+  "name": {
+    "uk": "Базиліка Св. Іштвана (Будапешт)",
+    "hu": "Szent István-bazilika, Budapest"
+  },
+  "type": "church",
+  "coords": [
+    19.05389,
+    47.50472
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Неоренесансний співкафедральний собор Естергомсько-Будапештської архієпархії в Ліпотвароші, одна з найзначніших сакральних будівель країни; тут як реліквія зберігається збережена права рука засновника держави, Свята Правиця. Висота 96 м, нарівні з Парламентом.",
+    "hu": "Neoreneszánsz társszékesegyház Lipótvárosban, az ország egyik legjelentősebb szakrális épülete; itt őrzik ereklyeként az államalapító Szent István épen maradt jobb kezét, a Szent Jobbot. 96 m magas, az Országházzal egy magasságban."
+  },
+  "description": {
+    "uk": "За статтею, базиліка Св. Іштвана (ліпотвароська парафіяльна церква) є неоренесансним римо-католицьким собором у V районі Будапешта, одним із найзначніших сакральних будинків Угорщини й угорської католицької церкви, співкафедральним собором Естергомсько-Будапештської архієпархії поряд з Естергомською базилікою. Названа на честь засновника держави св. Іштвана, чию збережену праву руку, Святу Правицю, тут зберігають як реліквію; 96-метрова висота робить її однією з найвищих будівель країни нарівні з Парламентом. 1938 року Святу Правицю возив країною Aranyvonat, «золотий вагон» якого зробили в майстернях Dunakeszi (див. текст міжвоєнного періоду).",
+    "hu": "A szócikk szerint a Szent István-bazilika (a lipótvárosi plébániatemplom) neoreneszánsz római katolikus székesegyház Budapest V. kerületében, Magyarország és a magyar katolikus egyház egyik legjelentősebb szakrális épülete, az Esztergom-Budapesti Főegyházmegye társszékesegyháza az esztergomi bazilika mellett. Az államalapító Szent Istvánról nevezték el, akinek épen maradt jobb kezét, a Szent Jobbot itt őrzik ereklyeként; 96 méteres magasságával az Országházzal együtt az ország legmagasabb épületei közé tartozik. 1938-ban a Szent Jobbot az Aranyvonat hordozta körbe az országban, amelynek „aranyvagonját” a dunakeszi műhelyekben készítették (lásd a két világháború közötti időszak szövegét)."
+  },
+  "sources": [
+    {
+      "title": "Szent István-bazilika (Budapest) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szent_Istv%C3%A1n-bazilika_%28Budapest%29",
+      "note": "Статус, реліквія, висота, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Bazilika_szentely.jpg",
+      "author": "Attila Terbócs",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Bazilika_szentely.jpg",
+      "caption": {
+        "uk": "Вівтарна частина базиліки",
+        "hu": "A bazilika szentélye"
+      }
+    }
+  ]
+}

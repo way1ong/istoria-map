@@ -1,0 +1,45 @@
+{
+  "id": "tiszadob",
+  "name": {
+    "uk": "Тисадоб (Tiszadob): початок регулювання Тиси, 1846",
+    "hu": "Tiszadob"
+  },
+  "type": "settlement",
+  "coords": [
+    21.17111,
+    48.00444
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "arpad",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Велике село в комітаті Саболч-Сатмар-Береґ, згадане 1220 року у Варадському реєстрі; на його околиці вал Чорса й городище; 1846 року граф István Széchenyi саме тут зробив перший удар лопатою, що символізував початок регулювання Тиси; маєток Andrássy. Точка: центр села.",
+    "hu": "Szabolcs-Szatmár-Bereg vármegyei nagyközség, 1220-ban a Váradi regestrum említi; határában a Csörsz árka és egy földvár nyomai; 1846-ban a Tisza szabályozásának kezdetét jelképezve itt tette az első kapavágást Széchenyi István gróf; Andrássy-birtok. A térképi pont a falu központja."
+  },
+  "description": {
+    "uk": "За статтею, Тисадоб і його околиця були заселені ще до приходу мадярів: розкопки виявили речі бронзової доби й сліди сарматського могильника, а на околиці села знайдено сліди валу Чорса (див. анімацію) і городища. Перший письмовий слід поселення походить з 1220 року з Варадського реєстру; село довго було королівським маєтком, потім володінням гілки Dob роду Gutkeled, 1430 року Сигізмунд подарував його егерському єпископству, з 1588 року воно серед маєтків Báthori, з кінця XVII століття належало Ференцу Ракоці II і його сестрі, а 1746 року його купив Ferenc Károlyi, після чого через шлюб село перейшло до родини Andrássy. 1846 року на знак початку регулювання Тиси саме тут, у Тисадобі, граф István Széchenyi зробив перший удар лопатою; учасників події нагадує встановлений тут пам'ятник. Координати відповідають центру села.",
+    "hu": "A szócikk szerint Tiszadob és környéke már a magyarok bejövetele előtt lakott volt: az ásatások bronzkori tárgyakat és egy szarmata temető nyomait tárták fel, a falu határában pedig a Csörsz-árok (lásd az animációt) és egy földvár nyomait találták meg. A település első írásos nyoma 1220-ból, a Váradi regestrumból származik; a falu sokáig királyi birtok volt, majd a Gutkeled nemzetség Dob ágának birtoka, 1430-ban Zsigmond az egri püspökségnek adományozta, 1588-tól a Báthori-birtokok között szerepel, a XVII. század végétől II. Rákóczi Ferencé és nővéréé volt, 1746-ban pedig Károlyi Ferenc vásárolta meg, ezután házasság révén a falu az Andrássy családhoz került. 1846-ban a Tisza-szabályozás megkezdésének jeléül éppen itt, Tiszadobon tette meg az első kapavágást gróf Széchenyi István; az esemény résztvevőire az itt felállított emlékmű emlékeztet. A koordináták a faluközpontnak felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Tiszadob – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tiszadob",
+      "note": "1220, 1846, Széchenyi, координати села."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Tiszadob%2C_Andr%C3%A1ssy-kast%C3%A9ly_%282%29.jpg",
+      "author": "Palickap",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Tiszadob%2C_Andr%C3%A1ssy-kast%C3%A9ly_%282%29.jpg",
+      "caption": {
+        "uk": "Палац Андраші в Тисадобі",
+        "hu": "A tiszadobi Andrássy-kastély"
+      }
+    }
+  ]
+}

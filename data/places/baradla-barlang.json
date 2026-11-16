@@ -1,0 +1,45 @@
+{
+  "id": "baradla-barlang",
+  "name": {
+    "uk": "Печера Барадла (Baradla) в Аґґтелеку",
+    "hu": "Baradla-barlang"
+  },
+  "type": "archaeological",
+  "coords": [
+    20.5,
+    48.46667
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "prehistory",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Найдавніше досліджувана і найвідоміша сталактитова печера Угорщини на Аґґтелецькому карсті; разом зі словацькою печерою Domica довжина перевищує 25,5 км; природний вхід відкривається під високою скелею на околиці села Aggtelek. Прикордонна система печер.",
+    "hu": "Magyarország legrégebben kutatott, legismertebb cseppkőbarlangja az Aggteleki-karszton; a szlovákiai Domica-barlanggal együtt hossza meghaladja a 25,5 kilométert; természetes bejárata Aggtelek határában, a magas sziklafal tövében nyílik. Határon átnyúló barlangrendszer."
+  },
+  "description": {
+    "uk": "За статтею, система печер Baradla–Domica (угорська частина зветься Baradla) є найдавніше досліджуваною, найвідомішою і століттями відвідуваною сталактитовою печерою Угорщини, що відкривається кількома входами на Аґґтелецькому карсті. Разом зі словацькою 5,3-кілометровою Domica, з якою вона утворює одну систему, довжина перевищує 25,5 км; природний вхід відкривається на околиці села Aggtelek під високою білою скелею, а головний хід, що тягнеться до Jósvafő, має 7 км. Координати зі статті приблизні; парк Aggtelek описано окремо.",
+    "hu": "A cikk szerint a Baradla–Domica-barlangrendszer (magyar részét Baradlának hívják) Magyarország legrégebben kutatott, legismertebb és évszázadok óta látogatott cseppkőbarlangja, amely több bejárattal nyílik az Aggteleki-karszton. A szlovákiai, 5,3 km hosszú Domicával együtt, amellyel egy rendszert alkot, hossza meghaladja a 25,5 km-t; természetes bejárata Aggtelek falu szélén, egy magas fehér sziklafal alatt nyílik, a Jósvafőig húzódó főág pedig 7 km hosszú. A cikkből vett koordináták hozzávetőlegesek; az Aggteleki Nemzeti Parkot külön kártya írja le."
+  },
+  "sources": [
+    {
+      "title": "Baradla–Domica-barlangrendszer – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Baradla%E2%80%93Domica-barlangrendszer",
+      "note": "Довжина, входи, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Minerva_sisakja.jpg",
+      "author": "Borzsák Péter.Reszegi Attila at hu.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Minerva_sisakja.jpg",
+      "caption": {
+        "uk": "Сталактит «Шолом Мінерви» в печері Baradla",
+        "hu": "A Minerva sisakja cseppkő a Baradlában"
+      }
+    }
+  ]
+}

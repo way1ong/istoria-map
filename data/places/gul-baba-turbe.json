@@ -1,0 +1,45 @@
+{
+  "id": "gul-baba-turbe",
+  "name": {
+    "uk": "Тюрбе Ґюль Баби (Gül Baba türbéje) на Рожевому пагорбі",
+    "hu": "Gül Baba türbéje"
+  },
+  "type": "monument",
+  "coords": [
+    19.0349,
+    47.516
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "ottoman",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Турецька гробниця-каплиця XVI століття на Rózsadomb біля будайського кінця мосту Маргіт; повністю відреставрована у 2016–2018 роках, нині культурний центр і виставка.",
+    "hu": "16. századi török sírkápolna a Rózsadombon, a Margit híd budai hídfője közelében; 2016–2018-ban teljesen felújították."
+  },
+  "description": {
+    "uk": "За статтею, тюрбе Ґюль Баби є турецькою поховальною каплицею XVI століття на будапештському Рожевому пагорбі неподалік будайського кінця мосту Маргіт. Раніше належала до Історичного музею Будапешта; з 2016 року будівлю з оточенням повністю відреставрували, 2018 року комплекс перейшов в управління міністерства закордонних справ, а культурний центр і виставку з осені 2018 року веде фонд охорони спадщини.",
+    "hu": "A szócikk szerint Gül Baba türbéje 16. századi török síremlékkápolna a budapesti Rózsadombon, a Margit híd budai hídfőjének közelében. Korábban a Budapesti Történeti Múzeumhoz tartozott; 2016-tól az épületet környezetével együtt teljesen felújították, 2018-ban az együttes a külügyminisztérium kezelésébe került, a kulturális központot és a kiállítást pedig 2018 őszétől örökségvédelmi alapítvány működteti."
+  },
+  "sources": [
+    {
+      "title": "Gül Baba türbéje – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%BCl_Baba_t%C3%BCrb%C3%A9je",
+      "note": "Датування, реставрація, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/G%C3%BCl_Baba_t%C3%BCrb%C3%A9je_a_leveg%C5%91b%C5%91l%2C_Budapest.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:G%C3%BCl_Baba_t%C3%BCrb%C3%A9je_a_leveg%C5%91b%C5%91l%2C_Budapest.jpg",
+      "caption": {
+        "uk": "Тюрбе Ґюль Баби з повітря",
+        "hu": "Gül Baba türbéje a levegőből"
+      }
+    }
+  ]
+}

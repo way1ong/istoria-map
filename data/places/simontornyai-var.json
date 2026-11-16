@@ -1,0 +1,45 @@
+{
+  "id": "simontornyai-var",
+  "name": {
+    "uk": "Шімонторняйський замок (Simontornya)",
+    "hu": "Simontornyai vár"
+  },
+  "type": "castle",
+  "coords": [
+    18.5525,
+    46.75278
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Ренесансна пам'ятка й головна окраса Шімонторні, збудована в готичному стилі в 1270-х роках (можливо, 1272–1277) віце-суддею Simon сином Salamon з роду Döröcske, від якого походить назва замку й міста.",
+    "hu": "Reneszánsz műemlék, Simontornya fő látnivalója; az 1270-es években (talán 1272–1277 között) építtette gótikus stílusban Döröcske nembeli Salamon fia Simon alországbíró, róla kapta nevét a vár és a város."
+  },
+  "description": {
+    "uk": "За статтею, Шімонторняйський замок є ренесансною пам'яткою і головною окрасою міста. У 1270-х роках (за деякими припущеннями між 1272 і 1277) його звів у готичному стилі віце-суддя країни Simon, син Salamon з роду Döröcske; від нього дістав назву замок, а через нього пізніше й місто.",
+    "hu": "A szócikk szerint a simontornyai vár reneszánsz műemlék és a város fő ékessége. Az 1270-es években (egyes feltételezések szerint 1272 és 1277 között) gótikus stílusban építtette Simon alországbíró, a Döröcske nemzetségbeli Salamon fia; róla kapta nevét a vár, és általa később a város is."
+  },
+  "sources": [
+    {
+      "title": "Simontornyai vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Simontornyai_v%C3%A1r",
+      "note": "Датування, засновник, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Simontornya%2C_a_v%C3%A1r_l%C3%A9gi_fot%C3%B3n.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Simontornya%2C_a_v%C3%A1r_l%C3%A9gi_fot%C3%B3n.jpg",
+      "caption": {
+        "uk": "Шімонторняйський замок з повітря",
+        "hu": "Simontornya vára légi fotón"
+      }
+    }
+  ]
+}

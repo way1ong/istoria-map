@@ -1,0 +1,31 @@
+{
+  "id": "kapolnai-csata-1849",
+  "title": {
+    "uk": "Битва при Каполні",
+    "hu": "A kápolnai csata"
+  },
+  "date": {
+    "from": "1849-02-26",
+    "to": "1849-02-27",
+    "precision": "exact"
+  },
+  "period": "long-19",
+  "places": [
+    "kapolna-csatater"
+  ],
+  "summary": {
+    "uk": "Єдина дводенна битва визвольної війни: угорська армія не зазнала поразки, хоча поле лишилося за імперськими військами, які відступили на Буду.",
+    "hu": "A szabadságharc egyetlen kétnapos ütközete: a honvédsereg nem szenvedett vereséget, bár a csatatér a császáriaké maradt, akik visszavonultak Budára."
+  },
+  "description": {
+    "uk": "За статтею, 26–27 лютого 1849 року при Каполні угорська армія не зазнала поразки, хоча поле бою лишилося за імперсько-королівськими військами, які не скористалися з цього й відступили на Буду; корпус Görgei не зміг втрутитися, а Klapka не забезпечив долину Сірок, тож відступ був неминучим.",
+    "hu": "A cikk szerint 1849. február 26–27-én Kápolnánál a magyar hadsereg nem szenvedett vereséget, bár a csatatér a császári-királyi csapatoké maradt, amelyek ezt nem használták ki, és visszavonultak Buda felé; Görgei hadteste nem tudott beavatkozni, Klapka pedig nem biztosította a Szirok völgyét, így a visszavonulás elkerülhetetlen volt."
+  },
+  "sources": [
+    {
+      "title": "Kápolnai csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/K%C3%A1polnai_csata",
+      "note": "Дати, перебіг."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "mohacsi-csata-1526",
+  "title": {
+    "uk": "Битва під Могачем",
+    "hu": "A mohácsi csata"
+  },
+  "date": {
+    "from": "1526-08-29",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [
+    "mohacsi-emlekhely"
+  ],
+  "summary": {
+    "uk": "29 серпня 1526 року військо короля Лайоша II зазнало нищівної поразки від султана Сулеймана I; подію пізніша історіографія назвала «великою могилою національної величі». Точне місце битви досі дискусійне.",
+    "hu": "1526. augusztus 29-én II. Lajos serege elsöprő vereséget szenvedett I. Szulejmán hadától; a csata pontos helyszíne máig vitatott."
+  },
+  "description": {
+    "uk": "За статтею, битва під Могачем відбулася 29 серпня 1526 року (за григоріанським календарем 8 вересня) в околиці Могача між військом Угорського королівства на чолі з Лайошем II і Османською імперією Сулеймана I. Вона закінчилася нищівною османською перемогою і стала однією з найчастіше згадуваних подій угорської воєнної історії; причини і значення поразки досі є предметом гострих дискусій, як і точне місце битви. Через кілька тижнів турки вперше дійшли уздовж Дунаю до Вацу (див. текст османської доби).",
+    "hu": "A szócikk szerint a mohácsi csata 1526. augusztus 29-én (a Gergely-naptár szerint szeptember 8-án) zajlott Mohács környékén a II. Lajos vezette Magyar Királyság serege és I. Szulejmán Oszmán Birodalma között. Megsemmisítő oszmán győzelemmel végződött, és a magyar hadtörténelem egyik legtöbbet emlegetett eseménye lett; a vereség okai és jelentősége máig éles viták tárgya, akárcsak a csata pontos helye. Néhány héttel később a törökök a Duna mentén először jutottak el Vácig (lásd a török kor szövegét)."
+  },
+  "sources": [
+    {
+      "title": "Mohácsi csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Moh%C3%A1csi_csata",
+      "note": "Дата, сторони, дискусія про місце і значення."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/SOLIMANUS_IMPERATOR_TURCHARUM_1526.jpg",
+      "author": "an Swart van Groningen, Willem Liefrinck",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:SOLIMANUS_IMPERATOR_TURCHARUM_1526.jpg",
+      "caption": {
+        "uk": "Султан Сулейман на гравюрі 1526 року",
+        "hu": "Szulejmán szultán 1526-os metszeten"
+      }
+    }
+  ]
+}

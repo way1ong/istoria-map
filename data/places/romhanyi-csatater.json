@@ -1,0 +1,49 @@
+{
+  "id": "romhanyi-csatater",
+  "name": {
+    "uk": "Поле битви при Ромгані (Romhány), 1710",
+    "hu": "Romhányi csatatér"
+  },
+  "type": "monument",
+  "coords": [
+    19.25,
+    47.93333
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Місце однієї з останніх битв визвольної війни Ракоці 22 січня 1710 року між Romhány і Szátok у комітаті Ноґрад: після початкових успіхів куруців імперські війська переломили хід бою, і обидві сторони відступили.",
+    "hu": "A Rákóczi-szabadságharc egyik utolsó csatájának helyszíne, 1710. január 22., a Nógrád vármegyei Romhány és Szátok között: a kezdeti kuruc sikerek után a császári csapatok megfordították a harc kimenetelét, majd mindkét fél visszavonult."
+  },
+  "description": {
+    "uk": "За статтею, битва при Ромгані була однією з останніх битв визвольної війни Ракоці; її вели 22 січня 1710 року між Romhány і Szátok у комітаті Ноґрад, і після початкових успіхів куруців імперські війська переломили хід бою, після чого обидві сторони відступили. За статтею про село, куруцько-польсько-шведсько-французьке військо тут ще раз спробувало вибороти перемогу, але марно. Координати зі статті приблизні; про Ромгань у текстах XVIII століття див. розділ про околиці Göd.",
+    "hu": "A szócikk szerint a romhányi csata a Rákóczi-szabadságharc egyik utolsó csatája volt; 1710. január 22-én vívták Romhány és Szátok között, Nógrád vármegyében, és a kurucok kezdeti sikerei után a császári csapatok fordították meg az ütközet menetét, majd mindkét fél visszavonult. A községről szóló szócikk szerint a kuruc–lengyel–svéd–francia sereg itt még egyszer megpróbálta kivívni a győzelmet, de hiába. A szócikkből vett koordináták hozzávetőlegesek; Romhányról a XVIII. századi szövegekben lásd a Göd környékéről szóló fejezetet."
+  },
+  "sources": [
+    {
+      "title": "Romhányi csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Romh%C3%A1nyi_csata",
+      "note": "Дата, перебіг."
+    },
+    {
+      "title": "Romhány – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Romh%C3%A1ny",
+      "note": "Склад куруцького війська."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/R%C3%B3mai_katolikus_templom%2C_Romh%C3%A1ny_%282019%29.jpg",
+      "author": "Regasterios",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:R%C3%B3mai_katolikus_templom%2C_Romh%C3%A1ny_%282019%29.jpg",
+      "caption": {
+        "uk": "Римо-католицька церква в Ромгані",
+        "hu": "A romhányi római katolikus templom"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "zahony",
+  "name": {
+    "uk": "Загонь (Záhony) на потрійному кордоні",
+    "hu": "Záhony"
+  },
+  "type": "settlement",
+  "coords": [
+    22.17444,
+    48.40694
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Місто на угорсько-українсько-словацькому потрійному кордоні в Ретькьозі, найменше за площею місто комітату; у XIX столітті цукроварня (1831), 1873 року залізниця Nyíregyháza–Kisvárda, продовжена через Záhony до Csap; тут Тиса змінює напрям з північного на південно-західний. Точка: центр міста.",
+    "hu": "Város a magyar–ukrán–szlovák hármashatárnál, a Rétközben, a megye legkisebb területű városa; a 19. században cukorgyár (1831), 1873-ra megépült a Nyíregyháza–Kisvárda vasútvonal, amelyet Záhonyon át Csapig hosszabbítottak; itt fordul a Tisza folyása északiról délnyugatira. A térképi pont a város központja."
+  },
+  "description": {
+    "uk": "За статтею, Загонь лежить на угорсько-українсько-словацькому потрійному кордоні в комітаті Саболч-Сатмар-Береґ у Ретькьозі в північно-східному куті Угорщини як центр Загоньського округу; у його околиці напрям течії Тиси змінюється з північного на південно-західний, а 694 га території роблять його найменшим за площею містом комітату. Перші письмові дані походять з XIV–XV століть, коли надорський суд проводив тут засідання для комітатів Унґ, Береґ і Уґоча; у XIX столітті маєток шляхтича Ritter, який 1831 року заснував цукроварню, згодом з'явилися землечерпалка, вапнярня, вальцьовий млин і тартак, а до 1873 року збудували залізницю Nyíregyháza–Kisvárda, яку пізніше продовжили через Záhony до Csap, де Загонь був лише малою дерев'яною зупинкою. Координати відповідають центру міста.",
+    "hu": "A cikk szerint Záhony a magyar–ukrán–szlovák hármashatáron fekszik Szabolcs-Szatmár-Bereg vármegyében, a Rétközben, Magyarország északkeleti szegletében, a Záhonyi járás központjaként; környékén a Tisza folyásiránya északiról délnyugatira változik, 694 hektáros területe pedig a vármegye legkisebb területű városává teszi. Az első írásos adatok a XIV–XV. századból származnak, amikor a nádori bíróság itt tartott üléseket Ung, Bereg és Ugocsa vármegye számára; a XIX. században Ritter nemes birtoka volt, aki 1831-ben cukorgyárat alapított, később kotrógép, mészégető, hengermalom és fűrésztelep jelent meg, 1873-ra pedig megépült a Nyíregyháza–Kisvárda vasút, amelyet később Záhonyon át Csapig hosszabbítottak meg, ahol Záhony csak kis, fából épült megállóhely volt. A koordináták a város központjának felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Záhony – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Z%C3%A1hony",
+      "note": "Потрійний кордон, 1831, 1873, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Z%C3%A1hony%2C_vas%C3%BAti_h%C3%ADd.jpg",
+      "author": "World Cup",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Z%C3%A1hony%2C_vas%C3%BAti_h%C3%ADd.jpg",
+      "caption": {
+        "uk": "Залізничний міст у Загоні",
+        "hu": "A záhonyi vasúti híd"
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "pozsony-szent-marton-dom",
+  "name": {
+    "uk": "Собор Св. Мартина в Пожоні, коронаційний храм",
+    "hu": "Szent Márton-dóm, Pozsony"
+  },
+  "type": "church",
+  "coords": [
+    17.10497,
+    48.14203
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman",
+    "habsburg-18",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Готичний собор XV століття в старому місті Братислави, відомий як пожонський коронаційний храм: тут короновано одинадцять угорських монархів з дому Габсбургів і вісім королев. Прикордонна пам'ятка.",
+    "hu": "A 15. században épült gótikus székesegyház Pozsony történelmi városrészében, a pozsonyi koronázótemplom: összesen tizenegy Habsburg-házi magyar uralkodót és nyolc magyar királynét koronáztak meg itt. Határon túli emlék."
+  },
+  "description": {
+    "uk": "За статтею, собор Св. Мартина (словацькою Dóm svätého Martina), відомий і як пожонський коронаційний храм, є готичним собором XV століття в історичній частині Братислави, найбільшим і найзначнішим римо-католицьким храмом міста і кафедральним собором Братиславської архієпархії з 14 лютого 2008 року. Загалом тут короновано одинадцять угорських монархів з дому Габсбургів і вісім угорських королев; нині це друга за відвідуваністю пам'ятка міста після замку. Храм лежить за межами нинішньої Угорщини й доданий як прикордонний об'єкт.",
+    "hu": "A szócikk szerint a Szent Márton-dóm (szlovákul Dóm svätého Martina), amely pozsonyi koronázótemplomként is ismert, XV. századi gótikus székesegyház Pozsony történelmi városrészében, a város legnagyobb és legjelentősebb római katolikus temploma, és 2008. február 14. óta a Pozsonyi főegyházmegye székesegyháza. Összesen tizenegy Habsburg-házi magyar uralkodót és nyolc magyar királynét koronáztak itt; ma a vár után a város második leglátogatottabb műemléke. A templom a mai Magyarország határain kívül fekszik, határ menti objektumként került fel."
+  },
+  "sources": [
+    {
+      "title": "Szent Márton-dóm (Pozsony) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szent_M%C3%A1rton-d%C3%B3m_%28Pozsony%29",
+      "note": "Датування, коронації, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Bratislava_-_St._Martins_Cathedral.jpg",
+      "author": "J_Makk",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Bratislava_-_St._Martins_Cathedral.jpg",
+      "caption": {
+        "uk": "Собор Св. Мартина в Пожоні",
+        "hu": "A pozsonyi Szent Márton-dóm"
+      }
+    }
+  ]
+}

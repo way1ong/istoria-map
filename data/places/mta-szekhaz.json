@@ -1,0 +1,45 @@
+{
+  "id": "mta-szekhaz",
+  "name": {
+    "uk": "Угорська академія наук (MTA)",
+    "hu": "Magyar Tudományos Akadémia székháza"
+  },
+  "type": "monument",
+  "coords": [
+    19.04639,
+    47.50111
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Наукова публічна корпорація Угорщини, завдання якої плекати й поширювати науку; ідею висували Mátyás Bél і 1781 року György Bessenyei, а на пожонських державних зборах 3 листопада 1825 року після запальної промови Pál Felsőbüki Nagy пролунала доленосна пожертва (István Széchenyi). Точка: будинок Академії на березі Дунаю.",
+    "hu": "Magyarország tudományos köztestülete, feladata a tudomány művelése és terjesztése; az eszmét Bél Mátyás, majd 1781-ben Bessenyei György vetette fel, az 1825-ös pozsonyi országgyűlésen november 3-án Felsőbüki Nagy Pál gyújtó beszéde után hangzott el a sorsfordító felajánlás. A térképi pont az Akadémia Duna-parti székháza."
+  },
+  "description": {
+    "uk": "За статтею, Угорська академія наук (MTA) є науковою публічною корпорацією, головне завдання якої плекати науку, поширювати її результати і представляти угорську науку; до 2019 року вона мала дослідні інститути. Думка про заснування угорського наукового товариства з'явилася ще в другій половині XVIII століття в євангелічного пастора й полігістора Mátyás Bél, 1781 року її виклав на папері György Bessenyei, комісія державних зборів 1791 року внесла академію до програми, але за перші три десятиліття правління Ференца I плани не здійснилися. На пожонських державних зборах 1825 року ідею відродили: 2 листопада депутат комітату Шарош Máriássy порушив питання, а 3 листопада 1825 року Pál Felsőbüki Nagy виголосив особливо запальну промову проти магнатів, що нехтують інтересами нації та мови, після чого пролунала доленосна, пам'ятна пожертва. Координати будинку Академії зі статті.",
+    "hu": "A szócikk szerint a Magyar Tudományos Akadémia (MTA) tudományos köztestület, amelynek fő feladata a tudomány művelése, eredményeinek terjesztése és a magyar tudomány képviselete; 2019-ig kutatóintézetei is voltak. A magyar tudós társaság alapításának gondolata már a XVIII. század második felében felmerült Bél Mátyás evangélikus lelkésznél és polihisztornál, 1781-ben Bessenyei György vetette papírra, az 1791-es országgyűlés bizottsága felvette az akadémiát a programjába, de I. Ferenc uralkodásának első három évtizedében a tervek nem valósultak meg. Az 1825-ös pozsonyi országgyűlésen az eszmét felélesztették: november 2-án Máriássy Sáros vármegyei követ vetette fel a kérdést, 1825. november 3-án pedig Felsőbüki Nagy Pál különösen heves beszédet mondott a nemzet és a nyelv érdekeit elhanyagoló főurak ellen, amely után elhangzott a sorsdöntő, emlékezetes felajánlás. Az Akadémia székházának koordinátái a szócikkből származnak."
+  },
+  "sources": [
+    {
+      "title": "Magyar Tudományos Akadémia – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Magyar_Tudom%C3%A1nyos_Akad%C3%A9mia",
+      "note": "Передісторія, 1825, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Szechenyi_felajanlasa_litografia.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szechenyi_felajanlasa_litografia.jpg",
+      "caption": {
+        "uk": "Пожертва Сечені 1825 року на літографії",
+        "hu": "Széchenyi felajánlása litográfián"
+      }
+    }
+  ]
+}

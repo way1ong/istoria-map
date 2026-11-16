@@ -1,0 +1,44 @@
+{
+  "id": "ulcisia-szentendre",
+  "name": {
+    "uk": "Ульцизія (Ulcisia), римський форт у Сентендре",
+    "hu": "Ulcisia, Szentendre"
+  },
+  "type": "archaeological",
+  "coords": [
+    19.073,
+    47.665
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Римський військовий форт дунайського лімесу на південний захід від центру Сентендре, збудований на початку II століття і не раз перебудований; навпроти, за Дунаєм, лежить Dunakeszi.",
+    "hu": "A pannoniai limes római erődje Szentendre belvárosától délnyugatra, a 2. század elején épült és többször átépítették; vele szemben, a Duna túlpartján fekszik Dunakeszi."
+  },
+  "description": {
+    "uk": "За статтею, Ulcisia, яку часто звуть Ulcisia Castra (хоча castra є лише означенням), була римським військовим фортом лімесу Паннонії на території нинішнього Сентендре; табір збудовано на початку II століття і не раз перебудовано в наступні століття, що засвідчує штампована цегла. За текстом римського періоду, навпроти, біля Horány на острові Сентендре й у Dunakeszi, стояли портові форти Валентиніана.",
+    "hu": "A cikk szerint Ulcisia, amelyet gyakran Ulcisia Castrának neveznek (bár a castra csupán jelző), a pannoniai limes római katonai erődje volt a mai Szentendre területén; a tábor a II. század elején épült, és a következő századokban többször átépítették, amit a bélyeges téglák tanúsítanak. A római kori szöveg szerint szemben, a Szentendrei-szigeten Horány mellett és Dunakeszin Valentinianus kikötőerődjei álltak."
+  },
+  "sources": [
+    {
+      "title": "Ulcisia – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Ulcisia",
+      "note": "Датування, перебудови, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Szentendre_-_n%C3%B6rdliches_Gel%C3%A4nde_des_r%C3%B6mischen_Kastells.jpg",
+      "author": "Mediatus",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szentendre_-_n%C3%B6rdliches_Gel%C3%A4nde_des_r%C3%B6mischen_Kastells.jpg",
+      "caption": {
+        "uk": "Ulcisia",
+        "hu": "Ulcisia"
+      }
+    }
+  ]
+}

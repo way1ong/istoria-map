@@ -1,0 +1,44 @@
+{
+  "id": "edelenyi-kastely",
+  "name": {
+    "uk": "Палац L'Huillier–Coburg в Еделені (Edelény)",
+    "hu": "L'Huillier–Coburg-kastély, Edelény"
+  },
+  "type": "castle",
+  "coords": [
+    20.73917,
+    48.29361
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Ранньобароковий палац 1716–1730 років на острові, оточеному Бодвою, одна з найзначніших барокових пам'яток і сьомий за розміром палац Угорщини; замовник барон Jean-François L'Huillier, архітектор невідомий.",
+    "hu": "1716 és 1730 között épült kora barokk kastély a Bódva által közrefogott szigeten, Magyarország egyik legjelentősebb barokk műemléke és hetedik legnagyobb kastélya; építtetője Jean-François L'Huillier báró, tervezője ismeretlen."
+  },
+  "description": {
+    "uk": "За статтею, палац L'Huillier–Coburg в Еделені стоїть на острові, оточеному річкою Бодва, збудований у 1716–1730 роках у ранньобароковому стилі і є однією з найзначніших барокових пам'яток та за розміром сьомим палацом Угорщини. Замовником був барон Jean-François L'Huillier, архітектор невідомий; перший розквіт палацу пов'язаний з István Esterházy, що одружився в родину, після смерті його сина маєток перейшов до казни.",
+    "hu": "A szócikk szerint az edelényi L'Huillier–Coburg-kastély a Bódva által körülvett szigeten áll, 1716–1730 között épült kora barokk stílusban, az egyik legjelentősebb barokk műemlék és méretét tekintve Magyarország hetedik kastélya. Építtetője Jean-François L'Huillier báró volt, építésze ismeretlen; a kastély első virágkora a családba beházasodott Esterházy Istvánhoz kötődik, fiának halála után a birtok a kincstárra szállt."
+  },
+  "sources": [
+    {
+      "title": "L’Huillier–Coburg-kastély – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/L%E2%80%99Huillier%E2%80%93Coburg-kast%C3%A9ly",
+      "note": "Роки, замовник, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/EdelenyL-Hullier2.JPG",
+      "author": "Egresij at hu.wikipedia",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:EdelenyL-Hullier2.JPG",
+      "caption": {
+        "uk": "Палац в Еделені",
+        "hu": "Az edelényi kastély"
+      }
+    }
+  ]
+}

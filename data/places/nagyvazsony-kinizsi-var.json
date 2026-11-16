@@ -1,0 +1,31 @@
+{
+  "id": "nagyvazsony-kinizsi-var",
+  "name": {
+    "uk": "Замок Кінижі в Надьважоні (Nagyvázsony)",
+    "hu": "Kinizsi-vár, Nagyvázsony"
+  },
+  "type": "castle",
+  "coords": [
+    17.69568,
+    46.98487
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Відома твердиня угорського середньовіччя на березі потоку Séd у Ваджонській улоговині, яку в середині 1390-х почав будувати László Vezsenyi, стольник королеви Марії, обравши Vázsony своєю новою резиденцією; названа за пізнішим власником полководцем Pál Kinizsi.",
+    "hu": "A magyar középkor nevezetes erőssége a Vázsonyi-medencében; építését az 1390-es évek közepén Vezsenyi László, Mária királynő étekfogómestere kezdte. Nevét későbbi uráról, Kinizsi Pálról kapta."
+  },
+  "description": {
+    "uk": "За статтею, замок Кінижі (Vázsonykő) є однією з визначних твердинь угорського середньовіччя й стоїть у селі Nagyvázsony комітату Веспрем біля дороги Веспрем–Тапольца. Будівництво пов'язане з рішенням László Vezsenyi, стольника королеви Марії Анжуйської, у середині 1390-х років полишити будівництво Zádor-vár і зробити Vázsony своєю резиденцією.",
+    "hu": "A szócikk szerint a Kinizsi-vár (Vázsonykő) a magyar középkor egyik jelentős erőssége, és a Veszprém vármegyei Nagyvázsony községben áll a Veszprém–Tapolca út mellett. Építése Vezsenyi Lászlónak, Anjou Mária királynő asztalnokmesterének ahhoz a döntéséhez kötődik, hogy az 1390-es évek közepén felhagy a Zádor-vár építésével, és Vázsonyt teszi székhelyévé."
+  },
+  "sources": [
+    {
+      "title": "Kinizsi-vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kinizsi-v%C3%A1r",
+      "note": "Засновник і дата, координати."
+    }
+  ]
+}

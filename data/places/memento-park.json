@@ -1,0 +1,44 @@
+{
+  "id": "memento-park",
+  "name": {
+    "uk": "Парк Memento: скульптури соціалізму",
+    "hu": "Memento Park"
+  },
+  "type": "monument",
+  "coords": [
+    18.9989,
+    47.4263
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "Музей просто неба у XXII районі Будапешта, де зібрано 41 міську скульптуру часів Угорської Народної Республіки в стилі соцреалізму, зняті з вулиць столиці після зміни ладу 1989–1990 років; навпроти відтворена трибуна Сталіна.",
+    "hu": "Szabadtéri múzeum a XXII. kerületben, ahol a Magyar Népköztársaság 41, szocialista realista köztéri alkotása látható, amelyeket az 1989–90-es rendszerváltás után távolítottak el Budapest utcáiról; vele szemben a Sztálin-tribün."
+  },
+  "description": {
+    "uk": "За статтею, парк Memento (офіційно парк скульптур «Одне речення про тиранію», раніше Музей-парк скульптур) є музеєм просто неба у XXII районі Будапешта, присвяченим пам'яткам угорського соціалізму: тут стоїть 41 міський твір років Народної Республіки у стилі соціалістичного реалізму, знятий з вулиць столиці після політичної зміни ладу 1989–1990 років. Навпроти парку збудовано так звану трибуну Сталіна (див. картку про місце пам'ятника Сталіну).",
+    "hu": "A cikk szerint a Memento Park (hivatalosan Egy mondat a zsarnokságról szoborpark, korábban Szoborpark Múzeum) szabadtéri múzeum Budapest XXII. kerületében, amelyet a magyar szocializmus emlékeinek szenteltek: itt áll a Népköztársaság éveinek 41 szocialista realista stílusú köztéri alkotása, amelyeket az 1989–1990-es rendszerváltás után távolítottak el a főváros utcáiról. A parkkal szemben felépítették az úgynevezett Sztálin-tribünt (lásd a Sztálin-szobor helyéről szóló kártyát)."
+  },
+  "sources": [
+    {
+      "title": "Memento Park – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Memento_Park",
+      "note": "41 скульптура, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Budamarxeng.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Budamarxeng.jpg",
+      "caption": {
+        "uk": "Пам'ятник Марксу й Енгельсу в парку",
+        "hu": "Marx és Engels szobra a parkban"
+      }
+    }
+  ]
+}

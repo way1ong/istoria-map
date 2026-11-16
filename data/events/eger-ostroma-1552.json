@@ -1,0 +1,30 @@
+{
+  "id": "eger-ostroma-1552",
+  "title": {
+    "uk": "Оборона Еґера",
+    "hu": "Eger ostroma"
+  },
+  "date": {
+    "from": "1552",
+    "precision": "exact"
+  },
+  "period": "ottoman",
+  "places": [
+    "egri-var"
+  ],
+  "summary": {
+    "uk": "1552 року захисники Егерської фортеці під командою István Dobó відбили переважаюче османське військо; 1596 року фортецю все ж здали султану Мегмеду III.",
+    "hu": "1552-ben Dobó István kapitány védői visszaverték a túlerőben lévő oszmán sereget; 1596-ban a várat mégis feladták III. Mehmednek."
+  },
+  "description": {
+    "uk": "За статтею, найславетніша подія в історії фортеці відбулася 1552 року, коли захисники під командою капітана István Dobó відбили переважаюче військо Османської імперії. 1596 року багатонаціональний гарнізон після короткого бою передав фортецю султану Мегмеду III, і вона 91 рік лишалася під османами. З 2014 року фортеця є Національним меморіальним місцем як місце культу перемоги 1552 року; оборону зобразив Géza Gárdonyi у романі «Зірки Еґера».",
+    "hu": "A szócikk szerint a vár történetének leghíresebb eseménye 1552-ben történt, amikor a Dobó István kapitány vezette védők visszaverték az Oszmán Birodalom túlerőben lévő seregét. 1596-ban a soknemzetiségű őrség rövid harc után átadta a várat III. Mehmed szultánnak, és az 91 évig oszmán kézen maradt. 2014 óta a vár Nemzeti Emlékhely mint az 1552-es győzelem kultuszhelye; a védelmet Gárdonyi Géza örökítette meg az Egri csillagok című regényében."
+  },
+  "sources": [
+    {
+      "title": "Egri vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Egri_v%C3%A1r",
+      "note": "1552, Dobó, 1596, статус 2014."
+    }
+  ]
+}

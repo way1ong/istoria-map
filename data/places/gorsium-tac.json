@@ -1,0 +1,44 @@
+{
+  "id": "gorsium-tac",
+  "name": {
+    "uk": "Ґорсіум-Геркулія (Gorsium) біля Tác",
+    "hu": "Gorsium-Herculia, Tác"
+  },
+  "type": "archaeological",
+  "coords": [
+    18.42028,
+    47.08972
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Одна з найзначніших римських руїнних територій Угорщини за 10 км на південь від Székesfehérvár: від військового табору до одного з найбагатших міст пізньоримської Паннонії; тут бували Траян, Септимій Север і Каракалла.",
+    "hu": "Magyarország egyik legjelentősebb római romterülete Táccal, Székesfehérvártól 10 km-re délre; katonai táborból a késő római Pannonia egyik leggazdagabb városa lett."
+  },
+  "description": {
+    "uk": "За статтею, Gorsium (можливо, пізніше Herculia) виріс із військового табору у місто, мешканці якого мали римське громадянство, і став до пізньоримської доби одним із найбільших і найбагатших поселень Паннонії. Як стратегічний і транспортний вузол його вважають римським попередником заснованого князем Ґезою Székesfehérvár. Руїнами опікується музей Св. Іштвана в Székesfehérvár.",
+    "hu": "A szócikk szerint Gorsium (később talán Herculia) katonai táborból nőtt várossá, amelynek lakói római polgárjoggal rendelkeztek, és a késő római korra Pannonia egyik legnagyobb és leggazdagabb településévé vált. Stratégiai és közlekedési csomópontként a Géza fejedelem által alapított Székesfehérvár római elődjének tekintik. A romokat a székesfehérvári Szent István Múzeum gondozza."
+  },
+  "sources": [
+    {
+      "title": "Gorsium – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Gorsium",
+      "note": "Характеристика пам'ятки, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/T%C3%A1c%2C_Gorsium_-_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:T%C3%A1c%2C_Gorsium_-_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "caption": {
+        "uk": "Gorsium з повітря",
+        "hu": "Gorsium légi felvételen"
+      }
+    }
+  ]
+}

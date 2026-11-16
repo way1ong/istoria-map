@@ -2,7 +2,7 @@ import type { Lang, LText } from './types';
 
 const dict = {
   uk: {
-    appTitle: 'Історія околиць Göd',
+    appTitle: 'Історія Угорщини на мапі',
     tabMap: 'Мапа',
     tabHistory: 'Історія',
     allPeriods: 'Усі періоди',
@@ -46,7 +46,7 @@ const dict = {
     typeMill: 'млин',
   },
   hu: {
-    appTitle: 'Göd környékének története',
+    appTitle: 'Magyarország története térképen',
     tabMap: 'Térkép',
     tabHistory: 'Történelem',
     allPeriods: 'Minden korszak',

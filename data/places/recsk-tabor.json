@@ -1,0 +1,44 @@
+{
+  "id": "recsk-tabor",
+  "name": {
+    "uk": "Табір примусової праці в Речку (Recsk), «угорський ГУЛАГ»",
+    "hu": "Recski kényszermunkatábor"
+  },
+  "type": "monument",
+  "coords": [
+    20.09111,
+    47.9
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "Табір примусової праці Управління державної безпеки (ÁVH) біля каменоломні гори Csákány-kő з жовтня 1950 до осені 1953 року, найсумнозвісніший із близько 100 таборів інтернування; близько 1500 в'язнів без вироку суду працювали в каменоломні за мінімальних умов.",
+    "hu": "Az ÁVH kényszermunkatábora a Csákány-kő kőbányájánál 1950 októberétől 1953 őszéig, a kb. 100 internálótábor közül a leghírhedtebb; mintegy 1500, bírói ítélet nélkül idehurcolt foglyot dolgoztattak."
+  },
+  "description": {
+    "uk": "За статтею, табір примусової праці в Речку комітату Гевеш діяв біля каменоломні гори Csákány-kő з жовтня 1950 до осені 1953 року під управлінням ÁVH і був найсумнозвіснішим із приблизно 100 таборів інтернування і праці, «угорським ГУЛАГом». Близько 1500 ув'язнених, доправлених сюди без судового вироку, безперервно працювали в каменоломні за мінімальних умов життя, їх жорстоко карали, катували й морили голодом. Поет György Faludy та інші в'язні, що побували і в Дахау, вважали Речк тяжчим. Нині на місці табору меморіал.",
+    "hu": "A szócikk szerint a Heves vármegyei Recsken a kényszermunkatábor a Csákány-kő kőbányája mellett működött 1950 októberétől 1953 őszéig az ÁVH irányítása alatt, és a mintegy 100 internáló- és munkatábor leghírhedtebbje, a „magyar Gulag” volt. A bírósági ítélet nélkül idehurcolt mintegy 1500 fogoly minimális életkörülmények között folyamatosan a kőbányában dolgozott, kegyetlenül büntették, kínozták és éheztették őket. Faludy György költő és más rabok, akik Dachaut is megjárták, Recsket tartották súlyosabbnak. Ma a tábor helyén emlékhely áll."
+  },
+  "sources": [
+    {
+      "title": "Recski kényszermunkatábor – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Recski_k%C3%A9nyszermunkat%C3%A1bor",
+      "note": "Роки, ÁVH, кількість в'язнів, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Recski_eml%C3%A9kmu.jpg",
+      "author": "VT at hu.wikipedia",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Recski_eml%C3%A9kmu.jpg",
+      "caption": {
+        "uk": "Меморіал у Речку",
+        "hu": "A recski emlékmű"
+      }
+    }
+  ]
+}

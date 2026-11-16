@@ -1,0 +1,49 @@
+{
+  "id": "vasfuggony-emlekhely",
+  "name": {
+    "uk": "Меморіал Залізної завіси в Hegykő",
+    "hu": "Vasfüggöny Emlékhely, Hegykő"
+  },
+  "type": "monument",
+  "coords": [
+    16.787,
+    47.6426
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "Музей і меморіал біля Hegykő на австрійському кордоні, присвячений «залізній завісі»: у другому варіанті це були два дротяні паркани на бетонних стовпах з п'ятиметровою мінною смугою між ними, пізніше сигнальна огорожа під напругою 24 В.",
+    "hu": "Múzeum és emlékhely Hegykő mellett az osztrák határon a vasfüggönyről: második változata két betonoszlopos szögesdrótkerítés volt, közötte öt méter széles aknamező, később 24 voltos jelzőkerítés."
+  },
+  "description": {
+    "uk": "За статтею, «залізна завіса» є політичною метафорою поділу Європи в холодній війні і збірним поняттям для рішень і технічних засобів, якими країни радянської сфери впливу після Ялти й Паризьких мирних договорів контролювали, обмежували, а потім унеможливлювали вільний рух населення на захід. Біля Hegykő діє Музей залізної завіси; другий варіант загородження складався з двох парканів колючого дроту на бетонних стовпах з п'ятиметровою мінною смугою між ними, пізніша огорожа стояла під напругою 24 В і сигналізувала на найближчу заставу. Координати меморіалу з OpenStreetMap; поруч місце Панєвропейського пікніка (окрема картка).",
+    "hu": "A szócikk szerint a „vasfüggöny” Európa hidegháborús megosztottságának politikai metaforája, és gyűjtőfogalma azoknak a döntéseknek és műszaki eszközöknek, amelyekkel a szovjet érdekszféra országai Jalta és a párizsi békeszerződések után ellenőrizték, korlátozták, majd lehetetlenné tették a lakosság szabad mozgását nyugat felé. Hegykő mellett működik a Vasfüggöny Múzeum; a határzár második változata két, betonoszlopokra feszített szögesdrót kerítésből állt, közöttük ötméteres aknamezővel, a későbbi kerítés 24 V feszültség alatt állt, és a legközelebbi őrsön jelzett. Az emlékhely koordinátái az OpenStreetMapből származnak; mellette a Páneurópai piknik helyszíne (külön kártya)."
+  },
+  "sources": [
+    {
+      "title": "Vasfüggöny – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Vasf%C3%BCgg%C3%B6ny",
+      "note": "Опис завіси, музей."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Vasfüggöny Emlékhely, Hegykő",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Vasf%C3%BCgg%C3%B6ny%20Eml%C3%A9khely%2C%20Hegyk%C5%91",
+      "note": "Координати 47.6426, 16.787 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Hegyk%C5%91_-_Vasf%C3%BCgg%C3%B6ny_Eml%C3%A9khely%2C_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Hegyk%C5%91_-_Vasf%C3%BCgg%C3%B6ny_Eml%C3%A9khely%2C_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "caption": {
+        "uk": "Меморіал Залізної завіси в Hegykő з повітря",
+        "hu": "A hegykői Vasfüggöny Emlékhely légi felvételen"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "solva-esztergom",
+  "name": {
+    "uk": "Сольва (Solva), римський форт під Естергомом",
+    "hu": "Solva"
+  },
+  "type": "archaeological",
+  "coords": [
+    18.74167,
+    47.79556
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Римський castrum на східному схилі Замкової гори Естергома, один із сильних пунктів дунайської лінії між Аквінкумом і Карнунтом; залишки чотиривежового форту знайдено 1820 року під час будівництва базиліки.",
+    "hu": "Római castrum az esztergomi Várhegy keleti oldalán, az Aquincum és Carnuntum közötti dunai vonal egyik erős pontja; a négytornyos erőd maradványait 1820-ban, a bazilika építésekor találták meg."
+  },
+  "description": {
+    "uk": "За статтею, на початку нашої ери римляни підкорили іллірійсько-кельтське населення краю і збудували тут найгустіший на Дунаї ланцюг фортів через кожні 10–20 км. На східному боці Замкової гори як частину лімесу вони звели castrum, один із сильних центрів дунайської лінії між Аквінкумом і Карнунтом; залишки цього чотиривежового форту знайшли 1820 року під час будівництва базиліки. Поселення стало важливою дунайською переправою.",
+    "hu": "A szócikk szerint időszámításunk kezdetén a rómaiak leigázták a vidék illír–kelta lakosságát, és itt építették ki a Duna mentén a legsűrűbb erődláncot, 10–20 kilométerenként. A Várhegy keleti oldalán a limes részeként castrumot emeltek, a dunai vonal egyik erős központját Aquincum és Carnuntum között; ennek a négytornyú erődnek a maradványait 1820-ban, a bazilika építésekor találták meg. A település fontos dunai átkelőhellyé vált."
+  },
+  "sources": [
+    {
+      "title": "Solva – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Solva",
+      "note": "Форт, 1820, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Esztergom_-_fragment_of_a_Roman_milestone.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Esztergom_-_fragment_of_a_Roman_milestone.jpg",
+      "caption": {
+        "uk": "Фрагмент римського мильового каменя з Естергома",
+        "hu": "Római mérföldkő töredéke Esztergomból"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "mezohegyes",
+  "name": {
+    "uk": "Мезьогедєш (Mezőhegyes), місто кінного заводу",
+    "hu": "Mezőhegyes"
+  },
+  "type": "settlement",
+  "coords": [
+    20.81778,
+    46.315
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "habsburg-18",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Місто в комітаті Бекеш, заселене з давнини, уперше згадане 1421 року як Mezewheges; Rogerius пише, що 1241 року в укріпленому Pereg монголи вирізали людей із 70 сіл. Відоме державним кінним заводом, заснованим наприкінці XVIII століття (фото József Csekonics зі статті). Точка: центр міста.",
+    "hu": "Békés vármegyei város, ősidők óta lakott, első említése 1421-ből Mezewheges alakban; Rogerius szerint 1241-ben a peregi körülsáncolt helyen 70 falu népét gyilkolta le a tatár. A 18. század végén alapított állami ménesbirtokáról ismert. A térképi pont a város központja."
+  },
+  "description": {
+    "uk": "За статтею, поселення заселене з давнини, тут знайдено кам'яні й кістяні знаряддя та речі з могильника бронзової доби; близько 1220 року Андраш II оселив у краї німців, від яких, імовірно, походить назва замку Pereg, а перша згадка Mezewheges є в грамоті 1421 року. Варадський канонік Rogerius у «Carmen miserabile» згадує, що 1241 року в укріпленому валом місці Pereg, званому Újfalu, монголи вирізали людей, що втекли туди з 70 сіл. 1872 року Mezőhegyes дістав статус села, 1989 року міста. Державний кінний завод, який прославив місто, у вступі статті не описаний: він згаданий у списку лише за фото засновника József Csekonics зі статті. Координати відповідають центру міста.",
+    "hu": "A szócikk szerint a település ősidők óta lakott, itt kő- és csonteszközöket, valamint egy bronzkori temető tárgyait találták meg; 1220 körül II. András németeket telepített a vidékre, akiktől feltehetően a Pereg vár neve származik, Mezewheges első említése pedig egy 1421-es oklevélben található. Rogerius váradi kanonok a „Carmen miserabile”-ben említi, hogy 1241-ben az Újfalunak nevezett, sánccal erődített Pereg helyen a mongolok lemészárolták a 70 faluból odamenekült embereket. Mezőhegyes 1872-ben községi, 1989-ben városi rangot kapott. A várost híressé tevő állami ménesbirtokot a szócikk bevezetője nem írja le: a listában csak az alapító Csekonics József szócikkbeli fényképe miatt szerepel. A koordináták a város központjának felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Mezőhegyes – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Mez%C5%91hegyes",
+      "note": "1421, 1241, статуси, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/A_mez%C5%91hegyesi_m%C3%A9nesbirtok.jpg",
+      "author": "User:Somogyi Kincső",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_mez%C5%91hegyesi_m%C3%A9nesbirtok.jpg",
+      "caption": {
+        "uk": "Кінний завод Мезьогедєша",
+        "hu": "A mezőhegyesi ménesbirtok"
+      }
+    }
+  ]
+}

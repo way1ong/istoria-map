@@ -1,0 +1,45 @@
+{
+  "id": "opusztaszer-emlekpark",
+  "name": {
+    "uk": "Національний історичний меморіальний парк Опустасер (Ópusztaszer)",
+    "hu": "Nemzeti Történeti Emlékpark, Ópusztaszer"
+  },
+  "type": "monument",
+  "coords": [
+    20.0962,
+    46.48949
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Музей просто неба і скансен, створений 1982 року біля Ópusztaszer, традиційного місця першого «зібрання» мадярських вождів; головний експонат панорама Árpád Feszty «Прихід мадярів».",
+    "hu": "1982-ben létrehozott szabadtéri múzeum és skanzen Ópusztaszer határában; legismertebb műve Feszty Árpád körképe, A magyarok bejövetele."
+  },
+  "description": {
+    "uk": "За статтею, Національний історичний меморіальний парк є музеєм просто неба, скансеном і місцем відпочинку, створеним 1982 року на околиці Ópusztaszer у комітаті Чонґрад-Чанад; головний вхід лежить за неповні три кілометри на південний схід від центру села. Найвідоміший експонат панорама Árpád Feszty «Прихід мадярів».",
+    "hu": "A szócikk szerint a Nemzeti Történeti Emlékpark szabadtéri múzeum, skanzen és pihenőhely, amelyet 1982-ben hoztak létre a Csongrád-Csanád vármegyei Ópusztaszer határában; a főbejárat a falu központjától nem egészen három kilométerre délkeletre fekszik. Legismertebb kiállítási tárgya Feszty Árpád körképe, „A magyarok bejövetele”."
+  },
+  "sources": [
+    {
+      "title": "Nemzeti Történeti Emlékpark – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nemzeti_T%C3%B6rt%C3%A9neti_Eml%C3%A9kpark",
+      "note": "Рік створення, панорама Feszty, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/%C3%93pusztaszer_l%C3%A9gi_fot%C3%B3.jpg",
+      "author": "CivertanS",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:%C3%93pusztaszer_l%C3%A9gi_fot%C3%B3.jpg",
+      "caption": {
+        "uk": "Меморіальний парк Ópusztaszer з повітря",
+        "hu": "Az ópusztaszeri emlékpark légi fotón"
+      }
+    }
+  ]
+}

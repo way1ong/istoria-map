@@ -1,0 +1,36 @@
+{
+  "id": "budai-varnegyed",
+  "name": {
+    "uk": "Будайський замковий квартал (Budai Várnegyed), Світова спадщина",
+    "hu": "Budai Várnegyed"
+  },
+  "type": "castle",
+  "coords": [
+    19.0333,
+    47.5017
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman",
+    "habsburg-18",
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Давня територія міста Буда на плато Замкової гори 70 м над Дунаєм, де Бела IV після монгольської навали збудував фортецю, а Матяш Корвін столицю королівства; з 1987 року в списку Світової спадщини ЮНЕСКО.",
+    "hu": "Buda ősi területe a Várhegyen, ahol IV. Béla a tatárjárás után erődöt, Hunyadi Mátyás fővárost épített; 1987 óta a világörökség része."
+  },
+  "description": {
+    "uk": "За статтею, Будайський замковий квартал є частиною I району Будапешта і давньою територією міста Буда; з 1987 року він у списку Світової спадщини. Плато Замкової гори, 70 м над Дунаєм і 175 м над рівнем моря, було стратегічно вигідним: король Бела IV збудував тут фортецю після монгольської навали, а Матяш Гуняді столицю свого королівства. Це один з найвідвідуваніших районів столиці завдяки добре збереженій спадщині та середньовічній мережі вузьких вулиць із барвистими міщанськими будинками.",
+    "hu": "A szócikk szerint a Budai Várnegyed Budapest I. kerületének része és Buda városának ősi területe; 1987 óta a világörökség listáján szerepel. A Várhegy fennsíkja, amely 70 méterrel a Duna és 175 méterrel a tengerszint fölé emelkedik, stratégiailag előnyös volt: IV. Béla király a tatárjárás után itt építtetett várat, Hunyadi Mátyás pedig királysága fővárosát. A főváros egyik leglátogatottabb negyede jól megőrzött öröksége és a színes polgárházakkal szegélyezett szűk utcák középkori hálózata révén."
+  },
+  "sources": [
+    {
+      "title": "Budai Várnegyed – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Budai_V%C3%A1rnegyed",
+      "note": "Бела IV, Матяш, ЮНЕСКО 1987, координати."
+    }
+  ]
+}

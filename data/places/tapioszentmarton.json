@@ -1,0 +1,45 @@
+{
+  "id": "tapioszentmarton",
+  "name": {
+    "uk": "Тапіосентмартон (Tápiószentmárton): скіфський золотий олень",
+    "hu": "Tápiószentmárton"
+  },
+  "type": "archaeological",
+  "coords": [
+    19.74376,
+    47.34043
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory",
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Село в комітаті Пешт, заселене з доісторичних часів: у княжому похованні, розкопаному на його околиці 1923 року, знайдено оздобу щита, скіфського золотого оленя (оригінал у Національному музеї). Перша грамота 1459 року. Точка: центр села.",
+    "hu": "Pest vármegyei nagyközség, az őskor óta lakott: a határában 1923-ban feltárt fejedelmi sírból származik a pajzsdísz, a szkíta aranyszarvas (eredetije a Nemzeti Múzeumban). Első okleveles említése 1459-ből. A térképi pont a falu központja."
+  },
+  "description": {
+    "uk": "За статтею, поселення заселене з доісторичних часів, що засвідчує й оздоба щита з княжого поховання, розкопаного на його околиці 1923 року, скіфський золотий олень; оригінал зберігається в Угорському національному музеї, копія в музеї Blaskovich у Tápiószele. Перша відома грамота походить з середини XV століття, 1459 року; у ті часи селом володіли родина Pányi-Gáldi та István Werbőczy. Пізніше найбільшу славу здобула родина Blaskovich, у маєтку якої виростили й кобилу Kincsem (див. картку стайні в Göd). Координати відповідають центру села.",
+    "hu": "A szócikk szerint a település az őskor óta lakott, amit a határában 1923-ban feltárt fejedelmi sírból származó pajzsdísz, a szkíta aranyszarvas is tanúsít; az eredetit a Magyar Nemzeti Múzeum őrzi, másolata a tápiószelei Blaskovich Múzeumban található. Az első ismert oklevél a XV. század közepéről, 1459-ből származik; akkoriban a falut a Pányi-Gáldi család és Werbőczy István birtokolta. Később a legnagyobb hírnevet a Blaskovich család szerezte, amelynek birtokán nevelték Kincsem kancát is (lásd a gödi istálló kártyáját). A koordináták a falu központjának felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Tápiószentmárton – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/T%C3%A1pi%C3%B3szentm%C3%A1rton",
+      "note": "1923, олень, 1459, координати села."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/T%C3%A1pi%C3%B3szentm%C3%A1rton_reform%C3%A1tus_templom.jpg",
+      "author": "Zemszo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:T%C3%A1pi%C3%B3szentm%C3%A1rton_reform%C3%A1tus_templom.jpg",
+      "caption": {
+        "uk": "Реформатська церква в Тапіосентмартоні",
+        "hu": "A tápiószentmártoni református templom"
+      }
+    }
+  ]
+}

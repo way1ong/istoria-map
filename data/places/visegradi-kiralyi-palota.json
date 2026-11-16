@@ -1,0 +1,31 @@
+{
+  "id": "visegradi-kiralyi-palota",
+  "name": {
+    "uk": "Королівський палац у Вишеграді (Visegrád)",
+    "hu": "Visegrádi királyi palota"
+  },
+  "type": "castle",
+  "coords": [
+    18.9741,
+    47.7922
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Палацовий комплекс XIV–XV століть, спершу постійна резиденція, потім заміська резиденція угорських королів аж до османського спустошення; 1323 року Карл I переніс сюди свою столицю. Нині Музей короля Матяша.",
+    "hu": "14–15. századi palotaegyüttes, a magyar királyok székhelye, majd vidéki rezidenciája a török hódoltságig; 1323-ban I. Károly ide helyezte székhelyét. Ma a Mátyás Király Múzeum."
+  },
+  "description": {
+    "uk": "За статтею, королівський палац у Вишеграді зведено між XIV і XV століттями; спочатку він був постійною резиденцією правителів середньовічного Угорського королівства, згодом заміською резиденцією, аж до руйнувань османської доби. 1323 року король Карл I переніс резиденцію до Вишеграда і збудував у місті королівський дім. У будівлі діє Музей короля Матяша Національного музею.",
+    "hu": "A szócikk szerint a visegrádi királyi palota a 14. és a 15. század között épült; kezdetben a középkori Magyar Királyság uralkodóinak állandó rezidenciája volt, később vidéki rezidencia, egészen a török kori pusztításokig. 1323-ban I. Károly király Visegrádra helyezte át székhelyét, és királyi házat építtetett a városban. Az épületben a Nemzeti Múzeum Mátyás Király Múzeuma működik."
+  },
+  "sources": [
+    {
+      "title": "Királyi palota (Visegrád) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kir%C3%A1lyi_palota_%28Visegr%C3%A1d%29",
+      "note": "1323, функції, музей, координати."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "velem-szent-vid",
+  "name": {
+    "uk": "Велем (Velem): укріплене поселення бронзової доби на горі Szent Vid",
+    "hu": "Velem, Szent Vid-hegy"
+  },
+  "type": "archaeological",
+  "coords": [
+    16.49173,
+    47.34472
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory",
+    "roman-barbaricum",
+    "migration",
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Над селом Велем здіймається 582-метрова гора Szent Vid з рештками укріпленого поселення XIII–XI століть до н. е., що наглядало за торговельним шляхом; завдяки міді й сурмі тут постав визначний металургійний осередок. Розкопки з 1896 року (Kálmán Miske), золота діадема XI–IX століть до н. е. Точка: центр села.",
+    "hu": "A község fölött az 582 méteres Szent Vid-hegyen az i. e. 13–11. században kialakult őskori erődített telep maradványai, amely a hegyek alján futó kereskedelmi utat felügyelte; a közeli réz és antimon miatt jelentős fémműves telep alakult ki. Ásatások 1896-tól (Miske Kálmán), i. e. 11–9. századi arany diadém. A térképi pont a falu központja."
+  },
+  "description": {
+    "uk": "За статтею, село та його околиця були заселені вже в новокам'яну добу, а найзначнішим місцем знахідок є 582-метрова гора Szent Vid над селом: тут розкопано рештки доісторичного укріпленого поселення, що склалося у XIII–XI століттях до н. е. і наглядало за торговельним шляхом біля підніжжя гір. Завдяки знайденим поблизу міді й сурмі під укріпленням постав визначний металообробний осередок; печі й майстерні з 1896 року розкопував Kálmán Miske, а одним із найяскравіших результатів розкопок, що тривали до 1929 року, стала золота діадема XI–IX століть до н. е. З 1973 року розкопки продовжив музей Savaria, досліджено житла на терасах; знайдено римські рельєфи, монети й фібули, а також сліди аварського могильника; в добу Арпадів це теж було укріплене місце. Координати відповідають центру села, точне положення пам'ятки не фіксується.",
+    "hu": "A szócikk szerint a község és környéke már az újkőkorban lakott volt, a legjelentősebb lelőhely pedig a falu fölé magasodó, 582 méteres Szent Vid-hegy: itt tárták fel egy őskori erődített település maradványait, amely a Kr. e. XIII–XI. században alakult ki, és a hegyek lábánál futó kereskedelmi utat ellenőrizte. A közelben talált réznek és antimonnak köszönhetően az erődítmény alatt jelentős fémmegmunkáló központ jött létre; a kemencéket és műhelyeket 1896-tól Miske Kálmán tárta fel, az 1929-ig tartó ásatások egyik legfényesebb eredménye pedig egy Kr. e. XI–IX. századi aranydiadém lett. 1973-tól a Savaria Múzeum folytatta az ásatásokat, feltárták a teraszokon lévő lakóházakat; római domborművek, érmék és fibulák, valamint egy avar temető nyomai kerültek elő; az Árpád-korban is erődített hely volt. A koordináták a falu központjának felelnek meg, a lelőhely pontos helyét nem rögzítjük."
+  },
+  "sources": [
+    {
+      "title": "Velem – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Velem",
+      "note": "Гора Szent Vid, датування, розкопки."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Velem%2C_Szent_Vid_K%C3%A1polna_-_l%C3%A9gi_fot%C3%B3.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Velem%2C_Szent_Vid_K%C3%A1polna_-_l%C3%A9gi_fot%C3%B3.jpg",
+      "caption": {
+        "uk": "Каплиця Szent Vid над Велемом з повітря",
+        "hu": "A velemi Szent Vid-kápolna légi fotón"
+      }
+    }
+  ]
+}

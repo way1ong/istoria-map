@@ -1,0 +1,44 @@
+{
+  "id": "somogyvar-apatsag",
+  "name": {
+    "uk": "Абатство св. Егідія в Шомодьварі (Somogyvár), 1091",
+    "hu": "Somogyvári Szent Egyed-apátság (Kupavár)"
+  },
+  "type": "archaeological",
+  "coords": [
+    17.65009,
+    46.58562
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Бенедиктинський монастир св. Егідія, освячений 1091 року королем Ласло I і збудований у 1091–1095 роках для ченців, покликаних із французького Сен-Жиля; одна з найбільших споруд доби площею близько 2,5 га в ломбардському романському стилі. Точка: центр села.",
+    "hu": "Szent László 1091-ben felszentelt Szent Egyed bencés monostora, a Saint-Gilles-ből hívott szerzetesek számára 1091–1095 között épült, kb. 2,5 hektáros lombardiai román stílusú együttes. A térképi pont a falu központja."
+  },
+  "description": {
+    "uk": "За статтею, Somogyvár у середньовіччі був центром комітату і місцем засвідчення документів. Розкопки довели, що навколо бенедиктинського монастиря св. Егідія, освяченого 1091 року королем Ласло I, фортечний мур виріс, імовірно, лише у XII столітті. Абатство, збудоване в 1091–1095 роках для ченців, покликаних королем із Франції, було однією з найбільших і найелегантніших споруд своєї доби: близько 2,5 га в ломбардському романському стилі; його ченців надсилало абатство Сен-Жиль. Координати відповідають центру села.",
+    "hu": "A szócikk szerint Somogyvár a középkorban vármegyeközpont és hiteleshely volt. Az ásatások bebizonyították, hogy a Szent Egyed bencés monostor körül, amelyet 1091-ben I. László király szentelt fel, a várfal valószínűleg csak a XII. században épült ki. Az 1091–1095 között a király által Franciaországból hívott szerzetesek számára épített apátság kora egyik legnagyobb és legelegánsabb építménye volt: mintegy 2,5 hektár lombard román stílusban; szerzeteseit a Saint-Gilles-i apátság küldte. A koordináták a falu központjának felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Somogyvár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Somogyv%C3%A1r",
+      "note": "Освячення 1091, Сен-Жиль, розмір, координати села."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Somogyv%C3%A1r_Sz%C3%A9chenyi-kast%C3%A9ly.jpg",
+      "author": "CivertanS",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Somogyv%C3%A1r_Sz%C3%A9chenyi-kast%C3%A9ly.jpg",
+      "caption": {
+        "uk": "Somogyvár з повітря",
+        "hu": "Somogyvár légi felvételen"
+      }
+    }
+  ]
+}

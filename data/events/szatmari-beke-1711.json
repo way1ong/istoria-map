@@ -1,0 +1,44 @@
+{
+  "id": "szatmari-beke-1711",
+  "title": {
+    "uk": "Сатмарський мир і складання зброї під Надьмайтенем",
+    "hu": "A szatmári béke és a majtényi fegyverletétel"
+  },
+  "date": {
+    "from": "1711-04-29",
+    "to": "1711-05-01",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [
+    "nagymajteny"
+  ],
+  "summary": {
+    "uk": "29–30 квітня 1711 року в Nagykároly Sándor Károlyi від імені станів і János Pálffy від імені Карла III уклали мир за відсутності Ракоці; 30 квітня куруцькі війська на майтенській рівнині склали зброю, 1 травня шляхта й офіцери підписали документ. Компроміс, що до 1848 року забезпечував станову окремішність Угорщини.",
+    "hu": "1711. április 29–30-án Nagykárolyban Károlyi Sándor a rendek és Pálffy János III. Károly nevében békét kötött Rákóczi távollétében; április 30-án a kuruc hadak a majtényi síkon letették a fegyvert, május 1-jén a nemesek és főtisztek aláírták az oklevelet. Kompromisszum, amely 1848-ig biztosította Magyarország rendi különállását."
+  },
+  "description": {
+    "uk": "За статтею, Сатмарський мир, що завершив визвольну війну Ракоці, уклали 29–30 квітня 1711 року в Nagykároly Sándor Károlyi від імені союзних станів і János Pálffy, імперський головнокомандувач, уповноважений короля Карла III, за відсутності князя Ференца Ракоці II, який тоді вів переговори з царем Петром I; після цього 30 квітня Károlyi і деморалізовані, погано озброєні куруцькі війська на майтенській рівнині остаточно склали зброю перед лабанцями, а куруцька шляхта й офіцери підписали документ миру 1 травня. Результат став компромісом між становістю й освіченим абсолютизмом, що аж до революції 1848 року забезпечував станову окремішність Угорщини в імперії Габсбургів. Про участь околиць Göd у війні див. текст XVIII століття.",
+    "hu": "A szócikk szerint a Rákóczi-szabadságharcot lezáró szatmári békét 1711. április 29–30-án Nagykárolyban kötötte meg Károlyi Sándor a szövetkezett rendek nevében és Pálffy János császári főparancsnok, III. Károly király meghatalmazottja, II. Rákóczi Ferenc fejedelem távollétében, aki akkor I. Péter cárral tárgyalt; ezután április 30-án Károlyi és a demoralizált, rosszul felfegyverzett kuruc csapatok a majtényi síkon végleg letették a fegyvert a labancok előtt, a kuruc nemesség és a tisztek pedig május 1-jén írták alá a béke okmányát. Az eredmény a rendiség és a felvilágosult abszolutizmus közötti kompromisszum lett, amely egészen az 1848-as forradalomig biztosította Magyarország rendi különállását a Habsburg Birodalomban. Göd környékének a háborúban való részvételéről lásd a XVIII. századi szöveget."
+  },
+  "sources": [
+    {
+      "title": "Szatmári béke – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szatm%C3%A1ri_b%C3%A9ke",
+      "note": "Дати, учасники, значення."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Friede_von_Sathmar_1711_01.jpg",
+      "author": "Österreichisches Staatsarchiv",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Friede_von_Sathmar_1711_01.jpg",
+      "caption": {
+        "uk": "Документ Сатмарського миру, 1711",
+        "hu": "A szatmári béke okirata, 1711"
+      }
+    }
+  ]
+}

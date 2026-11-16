@@ -1,0 +1,47 @@
+{
+  "id": "nagyvaradi-var",
+  "name": {
+    "uk": "Надьварадська фортеця (Oradea)",
+    "hu": "Nagyváradi vár"
+  },
+  "type": "castle",
+  "coords": [
+    21.94285,
+    47.05158
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval",
+    "ottoman",
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Фортеця в Ораді (Румунія) на місці монастиря пропозитури, збудованого королем Ласло I у 1083–1095 роках; зруйнована монголами 1241 року, 1474 року атакована беєм Алі, 1514 року обложена Lőrinc pap, ватажком Дожі; укріплена György Martinuzzi. З 2020 року міський музей. Прикордонний об'єкт.",
+    "hu": "Erőd Nagyváradon (Románia), az I. László által 1083–1095 között építtetett váradi prépostsági monostor helyén; 1241-ben a tatárok elpusztították, 1474-ben Ali bég támadta, 1514-ben Dózsa vezére, Lőrinc pap ostromolta; Martinuzzi György erősíttette meg. 2020-tól itt működik a Nagyváradi Városi Múzeum. Határon túli emlék."
+  },
+  "description": {
+    "uk": "За статтею, Надьварадська фортеця має велике історичне минуле; після реставрації з 2020 року тут розмістили Надьварадський міський музей, а в переліку пам'яток Румунії вона значиться під номером BH-II-a-A-01052. Король Ласло I у 1083–1095 роках збудував на місці нинішньої фортеці варадський монастир пропозитури, захищений, імовірно, ровом і палісадом, пізніше кам'яним муром; під час монгольської навали 1241 року, за присутнім тут магістром Rogerius, фортеця не витримала каменеметів, і місто з нею загинуло, після чого єпископ Vince почав відбудову. 7 лютого 1474 року Варад атакував бей Алі, 1514 року його облягав Lőrinc pap, ватажок Дожі, але втік, коли капітану Gergely Pöstyén на допомогу прийшло військо Pál Tomori; György Martinuzzi укріпив фортецю новою вежею-бастіоном і західним муром. Фортеця лежить за межами нинішньої Угорщини й додана як прикордонний об'єкт.",
+    "hu": "A szócikk szerint a nagyváradi vár nagy történelmi múlttal rendelkezik; a felújítás után 2020-tól itt kapott helyet a Nagyváradi Városi Múzeum, Románia műemlékjegyzékében pedig BH-II-a-A-01052 szám alatt szerepel. I. László király 1083–1095 között a mai vár helyén építtette a váradi prépostság monostorát, amelyet valószínűleg árok és palánk, később kőfal védett; az 1241-es tatárjárás idején az itt tartózkodó Rogerius mester szerint a vár nem állta ki a kőhajító gépeket, és a város vele együtt elpusztult, ezután Vince püspök kezdte meg az újjáépítést. 1474. február 7-én Ali bég támadta meg Váradot, 1514-ben Lőrinc pap, Dózsa vezére ostromolta, de elmenekült, amikor Pöstyén Gergely kapitány segítségére Tomori Pál serege érkezett; Martinuzzi György új bástyatoronnyal és nyugati fallal erősítette meg a várat. A vár a mai Magyarország határain kívül fekszik, és határ menti objektumként került be."
+  },
+  "sources": [
+    {
+      "title": "Nagyváradi vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagyv%C3%A1radi_v%C3%A1r",
+      "note": "Історія фортеці, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/MEDIEVAL_FORTRESS_MAGNUS_VARADINUM_%28ACTUAL_CITY_ORADEA%29-_TRANSYLVANIA_-_ROMANIA_Arial.jpg",
+      "author": "Teutonicdeveloper",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:MEDIEVAL_FORTRESS_MAGNUS_VARADINUM_%28ACTUAL_CITY_ORADEA%29-_TRANSYLVANIA_-_ROMANIA_Arial.jpg",
+      "caption": {
+        "uk": "Надьварадська фортеця з повітря",
+        "hu": "A nagyváradi vár légi fotón"
+      }
+    }
+  ]
+}
