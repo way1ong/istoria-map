@@ -178,6 +178,35 @@ if (existsSync(routesDir))
     });
   }
 
+// borders
+const bordersDir = join(root, 'borders');
+let bordersCount = 0;
+if (existsSync(bordersDir)) {
+  const files = readdirSync(bordersDir).filter((f) => f.endsWith('.geojson'));
+  if (!files.includes('modern.geojson')) err('data/borders', 'відсутній modern.geojson із сучасними контурами');
+  for (const f of files) {
+    const file = `data/borders/${f}`;
+    const g = readJson(join(bordersDir, f));
+    if (!g) continue;
+    if (g.type !== 'FeatureCollection') err(file, 'очікується FeatureCollection');
+    if (!g.license || !g.attribution) err(file, 'потрібні license і attribution');
+    checkSources(file, g.source ? [g.source] : []);
+    if (f !== 'modern.geojson') {
+      bordersCount++;
+      const m = /^y(bc)?(\d+)\.geojson$/.exec(f);
+      if (!m) { err(file, 'назва має бути y<рік>.geojson або ybc<рік>.geojson'); continue; }
+      const year = m[1] ? -Number(m[2]) : Number(m[2]);
+      if (g.year !== year) err(file, `поле year (${g.year}) не збігається з назвою файлу`);
+      (g.features ?? []).forEach((ft, i) => {
+        const pr = ft.properties ?? {};
+        if (typeof pr.name !== 'string' || typeof pr.name_uk !== 'string') err(file, `features[${i}]: потрібні рядки name і name_uk (можуть бути порожні для безіменних територій)`);
+        if (![1, 2, 3].includes(pr.precision)) err(file, `features[${i}]: precision має бути 1, 2 або 3`);
+        if (!['Polygon', 'MultiPolygon'].includes(ft.geometry?.type)) err(file, `features[${i}]: geometry має бути Polygon | MultiPolygon`);
+      });
+    }
+  }
+}
+
 // texts
 const textsDir = join(root, 'texts');
 if (existsSync(textsDir))
@@ -194,4 +223,4 @@ if (errors.length) {
   for (const e of errors) console.error(' - ' + e);
   process.exit(1);
 }
-console.log(`Дані перевірено: ${periodIds.size} періодів, ${placeIds.size} місць, ${listJson("events").length} подій, ${listJson("maps").length} мап, ${existsSync(routesDir) ? readdirSync(routesDir).filter((f) => f.endsWith(".geojson")).length : 0} анімацій.`);
+console.log(`Дані перевірено: ${periodIds.size} періодів, ${placeIds.size} місць, ${listJson("events").length} подій, ${listJson("maps").length} мап, ${existsSync(routesDir) ? readdirSync(routesDir).filter((f) => f.endsWith(".geojson")).length : 0} анімацій, ${bordersCount} років кордонів.`);

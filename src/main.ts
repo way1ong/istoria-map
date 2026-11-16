@@ -3,12 +3,12 @@ import './style.css';
 import { basemaps, histMaps, placeById, places, routesForEvent } from './data';
 import { mountAnimation, type AnimHandle } from './anim';
 import { mountCompare, type CompareHandle } from './compare';
-import { getLang, lt, setLang, t } from './i18n';
+import { formatYear, getLang, lt, setLang, t } from './i18n';
 import { createMap, type MapController } from './map';
 import { eventPage, historyIndex, periodPage, placePage } from './pages/history';
 import { navigate, onRoute, type Route } from './router';
 import { placeCard } from './ui/render';
-import { renderTimeline } from './ui/timeline';
+import { currentYear, renderTimeline } from './ui/timeline';
 
 setLang(getLang());
 
@@ -27,6 +27,7 @@ app.innerHTML = `
         <select id="overlay-select"></select>
         <input id="overlay-opacity" type="range" min="0" max="1" step="0.05" value="0.7" />
       </div>
+      <div id="borders-note" class="borders-note" hidden></div>
       <div id="timeline" class="timeline"></div>
       <div id="sheet" class="sheet"><div class="handle"></div><button class="close" aria-label="close">×</button><div id="sheet-body"></div></div>
     </section>
@@ -48,6 +49,11 @@ function ensureMap(): MapController {
       navigate(id ? `#/map?${state.period ? `period=${state.period}&` : ''}place=${id}` : `#/map${state.period ? `?period=${state.period}` : ''}`);
     });
     mapCtl.setOverlayOpacity(0.7);
+    mapCtl.onBorders((info) => {
+      const el = $('borders-note');
+      el.hidden = !info;
+      if (info) el.innerHTML = `${t('bordersNote').replace('{year}', formatYear(info.year))} <span class="attr">${info.attribution}</span>`;
+    });
   }
   return mapCtl;
 }
@@ -85,7 +91,8 @@ function renderMapView() {
   const ctl = ensureMap();
   ctl.setPeriod(state.period);
   ctl.setSelected(state.place);
-  renderTimeline($('timeline'), state.period, (id) => navigate(`#/map${id ? `?period=${id}` : ''}`));
+  renderTimeline($('timeline'), state.period, (id) => navigate(`#/map${id ? `?period=${id}` : ''}`), (year) => ctl.setYear(year));
+  ctl.setYear(state.period ? currentYear() : null);
   renderBasemapCtl(ctl);
   renderOverlayCtl(ctl);
   const sheet = $('sheet');

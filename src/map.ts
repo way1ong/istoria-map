@@ -16,13 +16,18 @@ setWorkerUrl(workerUrl);
 import { basemaps, histMaps, periodById, places } from './data';
 import { basemapStyle, getPreferredBasemap, setPreferredBasemap } from './basemap';
 import { lt } from './i18n';
-import type { HistMap, Place } from './types';
+import { colorFor, loadBorders, loadModern } from './borders';
+import type { BorderCollection, HistMap, Place } from './types';
 
 // Центр: околиці Göd. Стартовий вигляд охоплює Dunakeszi — Göd — Vác.
 const CENTER: [number, number] = [19.14, 47.7];
 const SRC = 'places';
 const OVERLAY_SRC = 'overlay';
 const OVERLAY_LAYER = 'overlay-layer';
+const BORDERS_SRC = 'borders';
+const MODERN_SRC = 'modern-outline';
+/** Нижче цього зуму показуються історичні кордони; вище — лише місця. */
+const BORDERS_MAXZOOM = 9;
 
 export interface MapController {
   map: MLMap;
@@ -34,6 +39,10 @@ export interface MapController {
   refreshLabels(): void;
   setBasemap(id: string): void;
   currentBasemap(): string;
+  /** Рік повзунка (null = усі періоди): перемикає шар історичних кордонів. */
+  setYear(year: number | null): void;
+  /** Викликається, коли змінюється рік або видимість шару кордонів (для підпису). */
+  onBorders(cb: (info: { year: number; attribution: string } | null) => void): void;
 }
 
 /**
@@ -104,6 +113,27 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
 
   const addLayers = () => {
     if (map.getSource(SRC)) return;
+    // Історичні кордони: заливка за державою, контур і підпис; видимі лише при віддаленні.
+    map.addSource(BORDERS_SRC, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+    map.addLayer({
+      id: 'borders-fill', type: 'fill', source: BORDERS_SRC, maxzoom: BORDERS_MAXZOOM,
+      paint: { 'fill-color': ['get', 'color'], 'fill-opacity': ['case', ['==', ['get', 'precision'], 3], 0.22, 0.16] },
+    });
+    map.addLayer({
+      id: 'borders-line', type: 'line', source: BORDERS_SRC, maxzoom: BORDERS_MAXZOOM,
+      paint: { 'line-color': ['get', 'color'], 'line-width': 1.2, 'line-opacity': 0.9, 'line-dasharray': ['case', ['==', ['get', 'precision'], 3], ['literal', [1, 0]], ['literal', [3, 2]]] },
+    });
+    map.addLayer({
+      id: 'borders-label', type: 'symbol', source: BORDERS_SRC, maxzoom: BORDERS_MAXZOOM,
+      layout: { 'text-field': ['get', 'label'], 'text-font': ['Noto Sans Bold'], 'text-size': 13, 'text-letter-spacing': 0.08, 'text-transform': 'uppercase', 'text-max-width': 8 },
+      paint: { 'text-color': ['get', 'color'], 'text-halo-color': 'rgba(255,255,255,0.85)', 'text-halo-width': 1.5 },
+    });
+    // Сучасний контур Угорщини і медьє Пешт пунктиром для порівняння
+    map.addSource(MODERN_SRC, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+    map.addLayer({
+      id: 'modern-line', type: 'line', source: MODERN_SRC, maxzoom: BORDERS_MAXZOOM,
+      paint: { 'line-color': '#111827', 'line-width': ['case', ['==', ['get', 'id'], 'hungary'], 1.8, 1], 'line-dasharray': ['literal', [2, 2]], 'line-opacity': 0.8 },
+    });
     map.addSource(SRC, { type: 'geojson', data: featureCollection(currentPeriod, lang) });
     map.addLayer({
       id: 'places-halo',
@@ -149,7 +179,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   };
   map.on('load', addLayers);
   // Після зміни стилю підкладки шари місць і накладання треба додати знову
-  map.on('style.load', () => { addLayers(); applySelection(); if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); });
+  map.on('style.load', () => { addLayers(); applySelection(); if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); void applyBorders(); });
   map.on('click', (e: MapMouseEvent) => {
     if (!map.getLayer('places-dot')) return;
     const hits = map.queryRenderedFeatures(e.point, { layers: ['places-dot', 'places-halo'] });
@@ -192,6 +222,39 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   let overlayOpacity = 0.7;
   let currentOverlay: HistMap | null = null;
 
+  let currentYear: number | null = null;
+  let bordersCb: ((info: { year: number; attribution: string } | null) => void) | null = null;
+  let bordersSeq = 0;
+  const bordersData = (b: BorderCollection) => ({
+    type: 'FeatureCollection' as const,
+    features: b.features.map((f) => ({
+      type: 'Feature' as const,
+      geometry: f.geometry as GeoJSON.Geometry,
+      properties: {
+        label: (lang === 'hu' ? f.properties.name_hu : f.properties.name_uk) || f.properties.name,
+        color: colorFor(f.properties.subjecto || f.properties.name),
+        precision: f.properties.precision,
+      },
+    })),
+  });
+  const applyBorders = async () => {
+    const seq = ++bordersSeq;
+    const src = map.getSource(BORDERS_SRC) as GeoJSONSource | undefined;
+    const msrc = map.getSource(MODERN_SRC) as GeoJSONSource | undefined;
+    if (!src || !msrc) return;
+    if (currentYear === null) {
+      src.setData({ type: 'FeatureCollection', features: [] });
+      msrc.setData({ type: 'FeatureCollection', features: [] });
+      bordersCb?.(null);
+      return;
+    }
+    const [b, m] = await Promise.all([loadBorders(currentYear), loadModern()]);
+    if (seq !== bordersSeq) return; // рік змінився, поки вантажилось
+    src.setData(bordersData(b));
+    msrc.setData(m as unknown as GeoJSON.FeatureCollection);
+    bordersCb?.({ year: b.year, attribution: `${b.attribution}; ${m.attribution}` });
+  };
+
   return {
     map,
     setPeriod(id) {
@@ -225,7 +288,16 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     refreshLabels() {
       lang = document.documentElement.lang || 'uk';
       if (map.isStyleLoaded()) refresh();
+      if (map.getSource(BORDERS_SRC)) void applyBorders();
     },
+    setYear(year) {
+      if (year === currentYear) return;
+      currentYear = year;
+      // isStyleLoaded() буває false одразу після setData, тому перевіряємо наявність джерела.
+      if (map.getSource(BORDERS_SRC)) void applyBorders();
+      else map.once('load', () => void applyBorders());
+    },
+    onBorders(cb) { bordersCb = cb; },
     setBasemap(id) {
       const b = basemaps.find((x) => x.id === id);
       if (!b || b.id === basemap.id) return;

@@ -19,7 +19,12 @@ function yearAt(pos: number): { periodIndex: number; year: number } {
  * Повзунок за роками: ліворуч кнопка «Усі», далі назва періоду з роком і сам повзунок.
  * Переміщення в межах періоду змінює лише рік у підписі; перехід межі періоду перемикає період.
  */
-export function renderTimeline(el: HTMLElement, current: string | null, onChange: (id: string | null) => void): void {
+/** Поточний рік повзунка (для шару кордонів). */
+export function currentYear(): number {
+  return yearAt(position).year;
+}
+
+export function renderTimeline(el: HTMLElement, current: string | null, onChange: (id: string | null) => void, onYear?: (year: number) => void): void {
   const idx = current ? periods.findIndex((p) => p.id === current) : -1;
   if (idx >= 0 && Math.floor(position / STEPS) !== idx) position = idx * STEPS + STEPS / 2;
   const max = periods.length * STEPS - 1;
@@ -47,8 +52,10 @@ export function renderTimeline(el: HTMLElement, current: string | null, onChange
   range.oninput = () => {
     position = Number(range.value);
     paint(position);
-    const id = periods[yearAt(position).periodIndex].id;
+    const { periodIndex, year } = yearAt(position);
+    const id = periods[periodIndex].id;
     if (id !== current) onChange(id);
+    else onYear?.(year);
   };
   all.onclick = () => onChange(null);
 }
