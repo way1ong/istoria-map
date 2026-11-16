@@ -83,9 +83,17 @@ export function placeCard(p: Place, full: boolean): string {
   `;
 }
 
+// Дата у форматі YYYY[-MM[-DD]] або -YYYY (до н. е.); рік без провідних нулів, до н. е. словами
+function fmtDate(s: string): string {
+  const m = /^(-?)(\d{1,4})(.*)$/.exec(s);
+  if (!m) return s;
+  const year = String(Number(m[2]));
+  return m[1] ? `${year}${m[3]} ${t('bce')}` : `${year}${m[3]}`;
+}
+
 export function eventDate(e: HistEvent): string {
   const d = e.date;
-  return `${d.from}${d.to ? `–${d.to}` : ''} (${precisionLabel(d.precision)})`;
+  return `${fmtDate(d.from)}${d.to ? `–${fmtDate(d.to)}` : ''} (${precisionLabel(d.precision)})`;
 }
 
 export function eventCard(e: HistEvent): string {

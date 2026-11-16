@@ -157,6 +157,8 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       id: 'places-label',
       type: 'symbol',
       source: SRC,
+      // Підписи лише з зуму 8: на огляді всієї країни 230+ назв накладалися б
+      minzoom: 8,
       layout: {
         'text-field': ['get', 'label'],
         'text-font': ['Noto Sans Bold'],
