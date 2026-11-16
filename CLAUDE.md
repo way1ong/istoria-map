@@ -80,6 +80,12 @@ src/                   код застосунку
 - archeodatabase.hnm.hu: до картки пам'ятки прикріплені PDF звітів RKM (`/en/download/<node>/file/<uuid>?type=pdf`), цитувати як файл у картці.
 - library.hungaricana.hu: пошук віддає 403 навіть для curl.
 
+## Поточний стан сесії (2026-11-16, перед компактом)
+- Гілка `ccr-97fb19cd-cn6s0d` запушена, робоче дерево чисте. Відкритий PR #5 (https://github.com/way1ong/istoria-map/pull/5) з усім розширенням на всю Угорщину: межі валідатора, 191 нове місце і 67 подій (партії 1–3), угорські описи всіх карток, розділ «Країна в цілому» в текстах, підписи місць з зуму 8, дата події без провідних нулів. CI «validate» зелений. Чекає на злиття користувачем з телефона; після злиття гілку скинути на `main` (`git fetch origin main && git reset --hard origin/main`) перед новою роботою.
+- Дані: 232 місця, 90 подій, усі з `description.uk` і `description.hu`. Без фото: arrabona-gyor, cegled (лише GFDL), aradi-var, nagyszeksos, aggteleki-nemzeti-park.
+- Інструменти в скретчпаді (`/tmp/claude-0/-home-user-istoria-map/19e6a6df-9fdd-5e50-b6bc-b23ccb1e2d61/scratchpad/`): `nat/`, `nat2/`, `nat3/` (fetch.py, titles.txt, nat.json, files.json, кешовані HTML статей, генератори gen1/2, gen3a–d, gen4a–d), `tools/wikitext.py` (текст статті за розділами), `tools/addphotos.py` (фото з ліцензією: `python3 -I addphotos.py <natN> <repo>`, список у `<natN>/photo_todo.json`, запис `{id: [html, підпис uk, підпис hu, "events"?]}`), `tools/fixphotos3.py` (приклад ручних виправлень підписів). Скретчпад може зникнути після перезапуску; усе потрібне для даних уже в репозиторії.
+- Нагадування про скани Spezialkarte (upload.wikimedia.org 429) заплановане: trig_019qYn7vjSryyHLLVQHpaWA5.
+
 ## Відомі прогалини (станом на 2026-11-16)
 - Точність «settlement» лишилася у 3 місць (Székesdűlő, Várdomb-район, млин Sződrákos). Джерела точних координат: категорії Commons (object location) і Nominatim; Overpass через проксі не працює (обрив з'єднання).
 - Фото: 20 у 17 місць. Решту брати з Commons, перевіряючи ліцензію на сторінці файлу (API Commons віддає 429, HTML сторінки файлів і категорій працюють).
