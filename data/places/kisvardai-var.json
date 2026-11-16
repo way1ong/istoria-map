@@ -1,0 +1,46 @@
+{
+  "id": "kisvardai-var",
+  "name": {
+    "uk": "Замок Кішварди (Kisvárdai vár)",
+    "hu": "Kisvárdai vár"
+  },
+  "type": "castle",
+  "coords": [
+    22.07194,
+    48.23056
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Цегляний замок родини Várday у Кішварді: дозвіл на будівництво 1400 року від короля Сигізмунда, будувати почав 1465 року архієпископ István Várdai; нині тут діє Замковий театр.",
+    "hu": "A Várday család téglából emelt vára Kisvárdán: építésére Zsigmond király 1400-ban adott engedélyt, 1465-ben Várdai István érsek kezdte el; ma a Várszínház működik benne."
+  },
+  "description": {
+    "uk": "За статтею, за доісторичними знахідками на місці замку могло бути давнє городище; Várda і її власників, шляхетську родину Várday, уперше згадує грамота 1280 року. 1400 року король Сигізмунд дозволив родині звести замок, а будувати 1465 року почав архієпископ István Várdai; оскільки гори далеко, будівельним матеріалом стала випалена цегла, і записи про багатолітнє будівництво збереглися: крім кріпаків, працювало близько тридцяти майстрів. Внутрішній житловий блок оточував дерев'яний палісадний зовнішній замок з гарнізоном, стайнями й складами, характерна його частина стара вежа, а захищали глибокий водяний рів і болота. Нині в замку діє Kisvárdai Várszínház.",
+    "hu": "A szócikk szerint az őskori leletek alapján a vár helyén ősi földvár állhatott; Várda és birtokosai, a nemesi Várday család először egy 1280-as oklevélben fordulnak elő. 1400-ban Zsigmond király engedélyezte a családnak a várépítést, az építkezést pedig 1465-ben Várdai István érsek kezdte meg; mivel a hegyek messze vannak, építőanyagként égetett téglát használtak, és a sokéves építkezésről szóló feljegyzések fennmaradtak: a jobbágyokon kívül mintegy harminc mester dolgozott rajta. A belső lakótömböt fából készült, palánkos külsővár vette körül a helyőrséggel, az istállókkal és a raktárakkal; jellegzetes része az öregtorony, védelmét pedig mély vizesárok és mocsarak adták. Ma a várban a Kisvárdai Várszínház működik."
+  },
+  "sources": [
+    {
+      "title": "Kisvárdai vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kisv%C3%A1rdai_v%C3%A1r",
+      "note": "Вступ і розділ «A vár története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Kisv%C3%A1rdai_v%C3%A1r_2..JPG",
+      "author": "Teemeah",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kisv%C3%A1rdai_v%C3%A1r_2..JPG",
+      "caption": {
+        "uk": "Замок Кішварди",
+        "hu": "A kisvárdai vár"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "szarvasi-arboretum",
+  "name": {
+    "uk": "Дендропарк Сарваша (Pepi-kert)",
+    "hu": "Szarvasi Arborétum (Pepi-kert)"
+  },
+  "type": "nature",
+  "coords": [
+    20.533,
+    46.875
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Одна з найбільших живих колекцій дерев Угорщини на 82 га біля старика Потрійного Кереша в Сарваші, відома як «Pepi-kert»; заснована родиною Bolza, під охороною з 1943 року.",
+    "hu": "Magyarország egyik legnagyobb élő fagyűjteménye 82 hektáron a Hármas-Körös egyik holtága mentén, közismert nevén Pepi-kert; a Bolza család alapította, 1943 óta védett."
+  },
+  "description": {
+    "uk": "За статтею, Сарваський дендропарк, відомий як «Pepi-kert», постав уздовж старика Потрійного Кереша і на 82 га має п'ять колекцій деревних рослин, серед яких столітні болотні кипариси й мамонтові дерева. Його історія пов'язана з італійською за походженням родиною Bolza: генерал Péter Bolza 1798 року став сарваським землевласником, а його син József з дружиною, графинею Anna Batthyány, почав засаджувати гай Anna-liget. Молодий József Bolza, якого звали «Pepi», висадив перші дерева на вищих ділянках, недосяжних для повеней, а саджанці мамонтових дерев везли возами з цісарського маєтку у Відні; у 1880-х роках під час регулювання Потрійного Кереша їх пересадили на нинішнє місце. Під охороною з 1943 року; нині опікується Угорський аграрний університет.",
+    "hu": "A szócikk szerint a „Pepi-kert” néven ismert Szarvasi Arborétum a Hármas-Körös holtága mentén jött létre, és 82 hektáros területén öt fás szárú növénygyűjtemény található, köztük évszázados mocsárciprusok és mamutfenyők. Története az olasz eredetű Bolza családhoz kötődik: Bolza Péter tábornok 1798-ban lett szarvasi földbirtokos, fia, József pedig feleségével, Batthyány Anna grófnővel elkezdte beültetni az Anna-ligetet. Az ifjú Bolza József, akit „Pepinek” hívtak, az első fákat a magasabban fekvő, árvíz által el nem ért részeken ültette el, a mamutfenyő-csemetéket pedig szekereken hozták a bécsi császári birtokról; az 1880-as években, a Hármas-Körös szabályozásakor átültették őket mai helyükre. 1943 óta védett; ma a Magyar Agrár- és Élettudományi Egyetem gondozza."
+  },
+  "sources": [
+    {
+      "title": "Szarvasi Arborétum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szarvasi_Arbor%C3%A9tum",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Szarvas%2C_Arbor%C3%A9tum_-_panoramio.jpg",
+      "author": "Sztudva Gyöngyi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szarvas%2C_Arbor%C3%A9tum_-_panoramio.jpg",
+      "caption": {
+        "uk": "Дендропарк Сарваша",
+        "hu": "A Szarvasi Arborétum"
+      }
+    }
+  ]
+}

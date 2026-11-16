@@ -1,0 +1,45 @@
+{
+  "id": "markomann-haboruk-166",
+  "title": {
+    "uk": "Маркоманські війни",
+    "hu": "A markomann háborúk"
+  },
+  "date": {
+    "from": "0166",
+    "to": "0180",
+    "precision": "exact"
+  },
+  "period": "roman-barbaricum",
+  "places": [
+    "brigetio-szony",
+    "solva-esztergom"
+  ],
+  "summary": {
+    "uk": "У 166–180 роках германці (маркомани, квади) й сармати-язиги воювали з Римом на дунайському кордоні; наступи йшли, зокрема, з Бриґеціо, а Марк Аврелій закінчив дві книги «Роздумів» у таборі над Ґраном неподалік Solva.",
+    "hu": "166 és 180 között a germán markomannok és kvádok, valamint a szarmata jazigok háborúztak Rómával a dunai határon; a támadások egyik kiindulópontja Brigetio volt, Marcus Aurelius pedig az Elmélkedések két könyvét a Solvától nem messze lévő Garam menti táborban fejezte be."
+  },
+  "description": {
+    "uk": "За статтею, маркоманські війни, або германські й сарматські війни, тривали в 166–180 роках між Римською імперією і германськими (маркомани, квади) та сарматськими (язиги) народами на її північному кордоні; племена, яких штовхали перші хвилі переселення, хотіли оселитися на римській землі, але Рим у довгій війні цього не допустив, хоча дунайські провінції зазнали величезних руйнувань. 172 року римляни перейшли в наступ проти квадів і котинів, і вихідними пунктами, імовірно, були Бриґеціо та його контрфорт Celemantia; тоді ж, як вважають, сталося «чудо дощу». Імператор особисто керував діями, два роки провів у Карнунтумі, а дві книги «Роздумів» закінчив у землі квадів, у таборі над Ґраном (Garam) неподалік Solva (Естерґом). Війни зображено на колоні Марка Аврелія в Римі.",
+    "hu": "A szócikk szerint a markomann háborúk, más néven germán és szarmata háborúk 166 és 180 között zajlottak a Római Birodalom és az északi határán élő germán (markomannok, kvádok), illetve szarmata (jazigok) népek között; a népvándorlás első hullámai által hajtott törzsek római földön akartak letelepedni, Róma azonban a hosszú háborúban ezt nem engedte, bár a dunai provinciák óriási pusztítást szenvedtek el. 172-ben a rómaiak támadásba lendültek a kvádok és a cotinusok ellen, kiindulópontjuk valószínűleg Brigetio és ellenerődje, Celemantia volt; úgy vélik, ugyanekkor történt az „esőcsoda”. A császár személyesen irányította a hadműveleteket, két évet Carnuntumban töltött, az „Elmélkedések” két könyvét pedig a kvádok földjén, a Gran (Garam) melletti táborban fejezte be, Solva (Esztergom) közelében. A háborúkat a római Marcus Aurelius-oszlop ábrázolja."
+  },
+  "sources": [
+    {
+      "title": "Markomann háborúk – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Markomann_h%C3%A1bor%C3%BAk",
+      "note": "Дати, учасники, Бриґеціо, табір над Ґраном."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Grabstele_des_Aelius_Septimus%2C_Brigetio%2C_Pannonia_Superior%2C_RIU_02%2C_00509.jpg",
+      "author": "Hartmann Linge",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Grabstele_des_Aelius_Septimus%2C_Brigetio%2C_Pannonia_Superior%2C_RIU_02%2C_00509.jpg",
+      "caption": {
+        "uk": "Надгробна стела Aelius Septimus з Бриґеціо",
+        "hu": "Aelius Septimus sírsztéléje Brigetióból"
+      }
+    }
+  ]
+}

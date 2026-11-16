@@ -1,0 +1,46 @@
+{
+  "id": "kaposvar-rippl-ronai-villa",
+  "name": {
+    "uk": "Вілла Ріппль-Рónаї (Róma-villa) у Капошварі",
+    "hu": "Rippl-Rónai-villa (Róma-villa), Kaposvár"
+  },
+  "type": "monument",
+  "coords": [
+    17.81611,
+    46.34194
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Вілла в частині Капошвара Rómahegy, де з 1915 року жив і працював художник József Rippl-Rónai, видатна постать угорського імпресіонізму; нині його меморіальний музей.",
+    "hu": "Kaposvár Rómahegy nevű részén álló villa, ahol 1915-től Rippl-Rónai József, a magyar impresszionista festészet kiemelkedő alakja élt és alkotott; ma emlékmúzeuma."
+  },
+  "description": {
+    "uk": "За статтею, Rippl-Rónai 1908 року купив на аукціоні двоповерховий дачний будинок у садибі з парком на південній околиці Капошвара, серед виноградників, з господарськими будівлями, ріллею й пасовищем. Вигляд садиби формувався від 1868 року протягом сорока років за смаком пештського оперного співака György Gundy, який і дав їй назву Róma-villa. Повернувшись 1915 року з французького полону, 54-річний художник оселився тут, докупив ще чотири холди виноградника й ріллі й тримав корів, овець, коней, віслюка, птицю, бджіл і павичів. Після його смерті віллу успадкував названий син Róbert Martyn; нині тут меморіальний музей художника.",
+    "hu": "A szócikk szerint Rippl-Rónai 1908-ban árverésen vásárolta meg Kaposvár déli szélén, a szőlők között egy parkos birtokon álló kétszintes nyaralót gazdasági épületekkel, szántóval és legelővel. A birtok arculata 1868-tól negyven éven át Gundy György pesti operaénekes ízlése szerint alakult, aki a Róma-villa nevet is adta neki. Miután 1915-ben hazatért a francia fogságból, az 54 éves festő itt telepedett le, további négy hold szőlőt és szántót vásárolt hozzá, és teheneket, juhokat, lovakat, szamarat, baromfit, méheket és pávákat tartott. Halála után a villát fogadott fia, Martyn Róbert örökölte; ma a festő emlékmúzeuma működik itt."
+  },
+  "sources": [
+    {
+      "title": "Rippl-Rónai-villa – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Rippl-R%C3%B3nai-villa",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Kaposvar_House_of_Rippl-Ronai.jpg",
+      "author": "Takkk",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kaposvar_House_of_Rippl-Ronai.jpg",
+      "caption": {
+        "uk": "Вілла Ріппль-Рónаї в Капошварі",
+        "hu": "A Rippl-Rónai-villa Kaposváron"
+      }
+    }
+  ]
+}

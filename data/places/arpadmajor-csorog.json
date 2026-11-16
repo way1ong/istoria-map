@@ -1,0 +1,48 @@
+{
+  "id": "arpadmajor-csorog",
+  "name": {
+    "uk": "Хутір Árpádmajor і садиба Gajári–Bornemissza в Csörög",
+    "hu": "Árpádmajor és a Gajári–Bornemissza-kúria, Csörög"
+  },
+  "type": "farmstead",
+  "coords": [
+    19.192,
+    47.7249
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Хутір між Вацом і Sződ, підписаний «Árpádmajor» на аркуші 1904 року; збудована тут близько 1830 року класицистична садиба Gajári, згодом художника Géza Bornemissza, заселена й нині, але в дуже поганому стані.",
+    "hu": "Major Vác és Sződ között, az 1904-es lapon „Árpádmajor” felirattal; az itt 1830 körül épült klasszicista Gajári-, később Bornemissza-kúriát ma is lakják, de igen rossz állapotban van."
+  },
+  "description": {
+    "uk": "На аркуші Spezialkarte 1904 року на південний схід від пагорба Csörög позначено групу будівель з підписом «Árpádmajor». За статтею про Csörög, близько 1830 року в Árpádmajor збудовано одноповерхову класицистичну садибу родини Gajári прямокутного плану, до якої належало 424 холди землі; її нинішня адреса Csörögi utca 8. Gajári отримали дворянство 1888 року; син будівничого Antal Gajári, Géza Gajári, 1890 року став бургомістром Вацу, а 1896 року депутатом парламенту від округу. На початку XX століття садибу купив художник Géza Bornemissza, який згодом приєднався до надьбанської школи живопису. Після 1945 року в будинку облаштували квартири; за статтею, він заселений і досі, але в дуже поганому стані. Адреси Csörögi utca 8 у даних OpenStreetMap знайти не вдалося, тож позначку поставлено за аркушем: за зворотним геокодуванням вона припадає на ставки Ordas-tavak. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1904-es Spezialkarte lapján a csörögi hegytől délkeletre „Árpádmajor” feliratú épületcsoport látható. A Csörögről szóló szócikk szerint 1830 körül épült az Árpádmajorban a Gajári család földszintes, téglalap alaprajzú klasszicista kúriája, amelyhez 424 hold terület tartozott; mai címe Csörögi utca 8. A Gajáriak 1888-ban kaptak nemesi címet; az építtető Gajári Antal fia, Gajári Géza 1890-ben Vác polgármestere, 1896-ban pedig a kerület országgyűlési képviselője lett. Az 1900-as években a kúriát Bornemissza Géza festőművész vette meg, aki később a nagybányai festőiskolához csatlakozott. 1945 után lakásokat alakítottak ki benne; a szócikk szerint ma is lakják, de igen rossz állapotban van. A Csörögi utca 8. címet az OpenStreetMap-adatokban nem sikerült megtalálni, ezért a jel a térképlap alapján került a helyére: a fordított geokódolás szerint az Ordas-tavakra esik. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Підпис «Árpádmajor» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Csörög – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Cs%C3%B6r%C3%B6g",
+      "note": "Розділ «Története»: садиба Gajári–Bornemissza в Árpádmajor (близько 1830, Csörögi utca 8)."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): пошук «Árpádmajor»",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=8&bounded=1&viewbox=19.0,47.85,19.35,47.55&q=%C3%81rp%C3%A1dmajor",
+      "note": "Пошук у межах околиць Göd–Vác 16.11.2026 результатів не дав. Дані © учасники OpenStreetMap, ODbL."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.72487&lon=19.19198",
+      "note": "Нині на цьому місці: ставки Ordas-tavak, Csörögiszőlők (Csörög). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

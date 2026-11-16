@@ -1,0 +1,44 @@
+{
+  "id": "orsegi-nemzeti-park",
+  "name": {
+    "uk": "Національний парк Орсеґ (Őrség)",
+    "hu": "Őrségi Nemzeti Park"
+  },
+  "type": "nature",
+  "coords": [
+    16.42111,
+    46.83889
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "Десятий національний парк Угорщини, створений 1 березня 2002 року з ландшафтного заказника Орсеґ; охоплює Орсеґ, Vendvidék, долину Раби й околиці Szentgyörgyvölgy, 43 933,5 га, дирекція в Őriszentpéter. Точка: умовний центр зі статті.",
+    "hu": "Magyarország tizedik nemzeti parkja, 2002. március 1-jén jött létre az Őrségi Tájvédelmi Körzetből; magába foglalja az Őrséget, a Vendvidéket, a Rába völgyét és Szentgyörgyvölgy környékét, 43 933,5 hektáron, igazgatósága Őriszentpéteren. A térképi pont a cikk szerinti jelképes középpont."
+  },
+  "description": {
+    "uk": "За статтею, національний парк Орсеґ створено 1 березня 2002 року з однойменного ландшафтного заказника як десятий у країні. Він охоплює Орсеґ, Vendvidék, долину річки Раба й околиці Szentgyörgyvölgy, загалом 43 933,5 га в межах 44 громад біля кордонів з Австрією й Словенією; дирекція працює в Őriszentpéter. Уся територія належить до мережі Natura 2000, з неї 3104 га під особливою охороною. Парк складається з багатьох ділянок, тому позначка на мапі умовна.",
+    "hu": "A szócikk szerint az Őrségi Nemzeti Parkot 2002. március 1-jén hozták létre az azonos nevű tájvédelmi körzetből, az ország tizedik nemzeti parkjaként. Az Őrséget, a Vendvidéket, a Rába völgyét és Szentgyörgyvölgy környékét foglalja magában, összesen 43 933,5 hektáron, 44 település területén, az osztrák és a szlovén határ mentén; igazgatósága Őriszentpéteren működik. Teljes területe a Natura 2000 hálózat része, ebből 3104 hektár fokozottan védett. A park sok részterületből áll, ezért a térképi jelölés jelképes."
+  },
+  "sources": [
+    {
+      "title": "Őrségi Nemzeti Park – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/%C5%90rs%C3%A9gi_Nemzeti_Park",
+      "note": "Вступ."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/OrsegiNemzetiPark2.jpg",
+      "author": "János Korom",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:OrsegiNemzetiPark2.jpg",
+      "caption": {
+        "uk": "Орсеґ",
+        "hu": "Az Őrség"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "siroki-var",
+  "name": {
+    "uk": "Замок Шірок (Siroki vár)",
+    "hu": "Siroki vár"
+  },
+  "type": "castle",
+  "coords": [
+    20.19583,
+    47.93904
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Замок на 296-метровій вулканічній горі Várhegy у східній Матрі над селом Сірок; володіння роду Aba, перша згадка 1320 року, коли королівські війська взяли його в прибічника Máté Csák.",
+    "hu": "Vár a Mátra keleti részén, Sirok fölött, a 296 méteres vulkáni Várhegyen; az Aba nemzetség birtoka, első említése 1320-ból, amikor a királyi hadak elfoglalták Csák Máté hívétől."
+  },
+  "description": {
+    "uk": "За статтею, найдавніша історія укріплення на самотній вулканічній вершині Várhegy заввишки 296 м могла сягати аварської доби, у VIII столітті місце, можливо, захопили слов'янські племена. Після Гонфоглалашу Сірок і околиці належали гілці Birh-Bodon роду Aba, що збудувала на місці нинішнього верхнього замку нову, міцнішу фортецю. Уперше місце згадане 1320 року: тоді королівські війська за наказом Карла Анжу під проводом трансильванського воєводи Dózsa і спіського жупана Fülöp Drugeth облогою взяли замок у Demeter, прибічника Máté Csák. 1324 року каштеляном став Imre Kompolthy з іншої гілки роду Aba.",
+    "hu": "A szócikk szerint a magányos, 296 méter magas vulkanikus Várhegy csúcsán álló erődítmény legkorábbi története az avar korig nyúlhat vissza, a VIII. században a helyet talán szláv törzsek foglalták el. A honfoglalás után Sirok és környéke az Aba nemzetség Birh-Bodon ágáé volt, amely a mai felsővár helyén új, erősebb várat épített. A helyet először 1320-ban említik: ekkor a királyi hadak Anjou Károly parancsára Dózsa erdélyi vajda és Drugeth Fülöp szepesi ispán vezetésével ostrommal elfoglalták a várat Demetertől, Csák Máté hívétől. 1324-ben az Aba nemzetség egy másik ágából származó Kompolthy Imre lett a várnagy."
+  },
+  "sources": [
+    {
+      "title": "Siroki vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Siroki_v%C3%A1r",
+      "note": "Вступ і розділ «A vár története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Sirok%2C_v%C3%A1r_%C3%A9s_a_szikl%C3%A1k_-_l%C3%A9gi_fot%C3%B3.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Sirok%2C_v%C3%A1r_%C3%A9s_a_szikl%C3%A1k_-_l%C3%A9gi_fot%C3%B3.jpg",
+      "caption": {
+        "uk": "Замок Шірок і скелі з повітря",
+        "hu": "A siroki vár és a sziklák légi fotón"
+      }
+    }
+  ]
+}

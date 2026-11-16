@@ -1,0 +1,47 @@
+{
+  "id": "pendelhajto-csarda",
+  "name": {
+    "uk": "Корчма Pendelhajtó між Вацом і Sződ",
+    "hu": "Pendelhajtó vendéglő („W.H.”), Csörög"
+  },
+  "type": "inn",
+  "coords": [
+    19.1857,
+    47.7376
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Корчма (W.H.) біля дороги з Вацу до Sződ, підписана «Pendelhajtó» на аркуші 1904 року; нині місце в житловій частині громади Csörög.",
+    "hu": "Vendéglő („W.H.”) a Vácról Sződre vezető út mellett, az 1904-es lapon „Pendelhajtó” felirattal; helye ma Csörög lakott részén van."
+  },
+  "description": {
+    "uk": "На аркуші 1904 року біля дороги з Вацу до Sződ, під схилом пагорба Csörög, стоїть будівля з підписом «Pendelhajtó» і скороченням «W.H.» (Wirtshaus, корчма). Прочитання назви за копією 3840 px не зовсім певне. Назви в сучасних даних OpenStreetMap немає; за зворотним геокодуванням місце припадає на вулицю Kiscsörögi utca в частині Csörögiszőlők громади Csörög. За статтею про Csörög, частину під пагорбом по той бік шосе здавна звали Kiscsörög; самостійною громадою Csörög став 2002 року, до того належав до Sződ. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1904-es lapon a Vácról Sződre vezető út mellett, a csörögi hegy lejtője alatt „Pendelhajtó” feliratú és „W.H.” (Wirtshaus, vendéglő) jelzésű épület áll. A név olvasata a 3840 px-es másolaton nem egészen biztos. A név a mai OpenStreetMap-adatokban nem szerepel; a fordított geokódolás szerint a hely Csörög Csörögiszőlők nevű részén, a Kiscsörögi utcára esik. A Csörögről szóló szócikk szerint a hegy alatti, az országút másik oldalán fekvő részt régtől Kiscsörögnek hívták; Csörög 2002-ben vált önálló községgé, addig Sződhöz tartozott. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Підпис «Pendelhajtó W.H.» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): пошук «Pendelhajtó»",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=8&bounded=1&viewbox=19.0,47.85,19.35,47.55&q=Pendelhajt%C3%B3",
+      "note": "Пошук у межах околиць Göd–Vác 16.11.2026 результатів не дав. Дані © учасники OpenStreetMap, ODbL."
+    },
+    {
+      "title": "Csörög – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Cs%C3%B6r%C3%B6g",
+      "note": "Розділ «Története»: Nagycsörög і Kiscsörög; самостійна громада з 2002 року."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.73762&lon=19.18567",
+      "note": "Нині на цьому місці: вулиця Kiscsörögi utca, Csörögiszőlők (Csörög). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

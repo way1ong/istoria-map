@@ -1,0 +1,50 @@
+{
+  "id": "szekszardi-apatsag",
+  "name": {
+    "uk": "Сексардське бенедиктинське абатство (руїни)",
+    "hu": "Szekszárdi bencés apátság romjai"
+  },
+  "type": "church",
+  "coords": [
+    18.69992,
+    46.34964
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Бенедиктинський монастир, заснований 1061 року королем Белою I у Сексарді як усипальниця королівської родини й присвячений Спасителю; руїни на площі Béla király tér поруч із будинком комітату.",
+    "hu": "Bencés kolostor, amelyet I. Béla 1061-ben alapított Szekszárdon a királyi család sírhelyéül, a Megváltónak szentelték; romjai a Béla király téren, a megyeháza mellett."
+  },
+  "description": {
+    "uk": "За статтею, Сексардське абатство було бенедиктинським монастирем, який 1061 року заснував король Бела I в Сексарді як місце поховання королівської родини і присвятив Ісусові. 1239 року король Бела IV за службу підніс Chertu та його родичів до вільних «кріпаків» абатства. Руїни середньовічного абатства позначені в даних OpenStreetMap на площі Béla király tér; координати збігаються з координатами статті.",
+    "hu": "A szócikk szerint a szekszárdi apátság bencés kolostor volt, amelyet I. Béla király 1061-ben alapított Szekszárdon a királyi család temetkezési helyéül, és Jézusnak szentelt. 1239-ben IV. Béla király szolgálataiért Chertut és rokonait az apátság szabad „jobbágyai” közé emelte. A középkori apátság romjai az OpenStreetMap adataiban a Béla király téren vannak jelölve; a koordináták megegyeznek a szócikkben közöltekkel."
+  },
+  "sources": [
+    {
+      "title": "Szekszárdi bencés apátság – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szeksz%C3%A1rdi_benc%C3%A9s_ap%C3%A1ts%C3%A1g",
+      "note": "Вступ."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Középkori apátság romjai, Szekszárd",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=K%C3%B6z%C3%A9pkori%20ap%C3%A1ts%C3%A1g%20romjai%2C%20Szeksz%C3%A1rd",
+      "note": "Координати 46.34972, 18.69993 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Szeksz%C3%A1rd_-_Megyeh%C3%A1za-Benc%C3%A9s_Ap%C3%A1ts%C3%A1g_maradv%C3%A1nyai.jpg",
+      "author": "невідомий автор",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szeksz%C3%A1rd_-_Megyeh%C3%A1za-Benc%C3%A9s_Ap%C3%A1ts%C3%A1g_maradv%C3%A1nyai.jpg",
+      "caption": {
+        "uk": "Будинок комітату й рештки абатства в Сексарді",
+        "hu": "A szekszárdi megyeháza és a bencés apátság maradványai"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "pecsi-kozepkori-egyetem",
+  "name": {
+    "uk": "Середньовічний університет у Печі (Pécsi középkori egyetem)",
+    "hu": "Pécsi középkori egyetem"
+  },
+  "type": "monument",
+  "coords": [
+    18.22377,
+    46.07894
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Перший університет Угорщини (studium generale), заснований 1367 року королем Людовиком I з дозволу папи Урбана V; діяв лише кілька десятиліть, відомі імена чотирьох викладачів і семи студентів.",
+    "hu": "Magyarország legelső egyeteme (studium generale), amelyet I. Lajos király alapított Pécsett 1367-ben V. Orbán pápa engedélyével; csak néhány évtizedig működött, négy tanár és hét diák neve ismert."
+  },
+  "description": {
+    "uk": "За статтею, Печський середньовічний університет є першим в Угорщині; його 1367 року формально заснував король Людовик I після університетів у Празі (1348), Кракові (1364) і Відні (1365), а дозвіл дав папа Урбан V. Справжнім духовним батьком закладу був печський єпископ з Рейнської Пфальцу Wilhelm von Koppenbach (Koppenbachi Vilmos), королівський дипломат. Документів збереглося дуже мало, бо більшість загинула за османського панування (1543–1686) і під час облог 1664 і 1686 років; відомі імена чотирьох викладачів і семи студентів, із них три з документа про сутичку зі смертельним наслідком (1400). Доведено існування факультетів вільних мистецтв і канонічного права; коли 1395 року засновано другий університет в Обуді, печський, імовірно, вже не діяв. Координати з статті відповідають імовірній будівлі університету.",
+    "hu": "A szócikk szerint a pécsi középkori egyetem Magyarország első egyeteme; 1367-ben I. Lajos király alapította formálisan a prágai (1348), a krakkói (1364) és a bécsi (1365) egyetem után, az engedélyt V. Orbán pápa adta. Az intézmény valódi szellemi atyja a Rajna-vidék-Pfalz területéről származó pécsi püspök, Wilhelm von Koppenbach (Koppenbachi Vilmos), királyi diplomata volt. Nagyon kevés dokumentum maradt fenn, mert többségük az oszmán uralom (1543–1686) idején, valamint az 1664-es és az 1686-os ostromok során elpusztult; négy oktató és hét diák neve ismert, közülük hármat egy halálos kimenetelű összecsapásról szóló irat (1400) említ. Bizonyított a szabad művészeti és a kánonjogi kar létezése; amikor 1395-ben Óbudán megalapították a második egyetemet, a pécsi valószínűleg már nem működött. A szócikkből vett koordináták az egyetem feltételezett épületének felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Pécsi középkori egyetem – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/P%C3%A9csi_k%C3%B6z%C3%A9pkori_egyetem",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Pecs_kozepkori_egyetem_feltetelezett_epulete_delnyugati_nezet_2015_1.jpg",
+      "author": "Szabó Tibor",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Pecs_kozepkori_egyetem_feltetelezett_epulete_delnyugati_nezet_2015_1.jpg",
+      "caption": {
+        "uk": "Імовірна будівля середньовічного університету в Печі",
+        "hu": "A pécsi középkori egyetem feltételezett épülete"
+      }
+    }
+  ]
+}

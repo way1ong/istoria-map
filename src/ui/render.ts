@@ -55,11 +55,28 @@ export function sourcesList(sources: Source[]): string {
   return `<h2>${t('sources')}</h2><ol class="sources">${items}</ol>`;
 }
 
+// Оригінали з Commons бувають по кілька мегабайтів, а сервер оригіналів обмежує запити.
+// Показуємо стандартну мініатюру 960 px (як у статтях Вікіпедії); якщо її немає
+// (оригінал вужчий за 960 px), браузер підставляє оригінал з data-orig.
+const COMMONS_ORIG = /^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/([0-9a-f])\/([0-9a-f]{2})\/([^/?#]+)$/;
+export function thumbUrl(url: string, width = 960): string {
+  const m = COMMONS_ORIG.exec(url);
+  if (!m) return url;
+  const [, a, ab, name] = m;
+  const lower = name.toLowerCase();
+  const file = /\.tiff?$/.test(lower)
+    ? `lossy-page1-${width}px-${name}.jpg`
+    : lower.endsWith('.svg')
+      ? `${width}px-${name}.png`
+      : `${width}px-${name}`;
+  return `https://thumb.wikimedia.org/wikipedia/commons/thumb/${a}/${ab}/${name}/${file}`;
+}
+
 export function photos(list: Photo[] | undefined): string {
   if (!list?.length) return '';
   return list
     .map(
-      (p) => `<figure><img src="${esc(p.url)}" alt="${esc(lt(p.caption) || '')}" loading="lazy" />
+      (p) => `<figure><img src="${esc(thumbUrl(p.url))}" data-orig="${esc(p.url)}" onerror="this.onerror=null;this.src=this.dataset.orig" alt="${esc(lt(p.caption) || '')}" loading="lazy" />
       <figcaption>${lt(p.caption) ? esc(lt(p.caption)) + '. ' : ''}${t('photoBy')}: ${esc(p.author)}, ${t('license')}: ${
         p.licenseUrl ? `<a href="${esc(p.licenseUrl)}" target="_blank" rel="noopener">${esc(p.license)}</a>` : esc(p.license)
       } (<a href="${esc(p.source)}" target="_blank" rel="noopener">source</a>)</figcaption></figure>`,

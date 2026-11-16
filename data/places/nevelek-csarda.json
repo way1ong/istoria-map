@@ -1,0 +1,42 @@
+{
+  "id": "nevelek-csarda",
+  "name": {
+    "uk": "Корчма біля залізниці в Nevelek",
+    "hu": "Vendéglő („W.H.”) a vasút mellett, Nevelek"
+  },
+  "type": "inn",
+  "coords": [
+    19.1486,
+    47.712
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Будівля з позначкою «W.H.» (Wirtshaus, корчма) біля залізниці на схід від хутора Usztatómajor на аркуші 1904 року; нині тут житлові вулиці частини Göd, що зветься Nevelek.",
+    "hu": "„W.H.” (Wirtshaus, vendéglő) jelzésű épület a vasút mellett, az Usztatómajortól keletre, az 1904-es lapon; ma Göd Nevelek nevű részének lakóutcái vannak itt."
+  },
+  "description": {
+    "uk": "На аркуші 1904 року біля залізниці Будапешт–Вац, на схід від хутора Usztatómajor, стоїть будівля з німецьким скороченням «W.H.» (Wirtshaus, корчма). Назви корчми аркуш не подає. За статтею про Sződ, частина Nevelek до 2014 року належала до Sződ, а відтоді входить до Göd. За зворотним геокодуванням місце нині лежить на вулиці Füzike utca в Nevelek; слідів корчми в сучасних даних немає. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1904-es lapon a Budapest–Vác vasútvonal mellett, az Usztatómajortól keletre „W.H.” (Wirtshaus, vendéglő) jelzésű épület áll. A vendéglő nevét a lap nem adja meg. A Sződről szóló szócikk szerint Nevelek 2014-ig Sződhöz tartozott, azóta Göd része. A fordított geokódolás szerint a hely ma a neveleki Füzike utcára esik; a vendéglőnek a mai adatokban nincs nyoma. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Підпис «W.H.» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Sződ – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sz%C5%91d",
+      "note": "Розділ про населені частини: Csörög відокремився 2002 року, Nevelek 2014 року приєднано до Göd."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.71195&lon=19.14865",
+      "note": "Нині на цьому місці: житлова вулиця Füzike utca, Nevelek (Göd). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

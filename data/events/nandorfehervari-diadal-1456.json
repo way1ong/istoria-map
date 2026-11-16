@@ -1,0 +1,42 @@
+{
+  "id": "nandorfehervari-diadal-1456",
+  "title": {
+    "uk": "Нандорфегерварська перемога",
+    "hu": "A nándorfehérvári diadal"
+  },
+  "date": {
+    "from": "1456-07-04",
+    "to": "1456-07-22",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [],
+  "summary": {
+    "uk": "4–22 липня 1456 року угорці й серби під проводом Mihály Szilágyi обороняли Нандорфегервар (нинішній Белград) від султана Мехмеда II, а 21–22 липня разом із військом Яноша Гуняді й хрестоносцями Яна Капістрана розбили османів. Місце битви лежить за межами мапи.",
+    "hu": "1456. július 4–22. között a magyarok és szerbek Szilágyi Mihály vezetésével védték Nándorfehérvárt (a mai Belgrádot) II. Mehmed szultán ellen, majd július 21–22-én Hunyadi János seregével és Kapisztrán János kereszteseivel legyőzték a törököket. A csata helyszíne kívül esik a térképen."
+  },
+  "description": {
+    "uk": "За статтею, Мехмед II обложив фортецю 4 липня 1456 року; її обороняв семитисячний загін Mihály Szilágyi. Янош Гуняді, чиє дванадцятитисячне військо стояло відрізаним від фортеці, 14 липня прорвав османську загороду з кораблів на Дунаї й приєднався до шурина. 21 липня об'єднане угорське військо відбило штурм Мехмеда, а 22 липня разом із 30–35 тисячами хрестоносців Яна Капістрана в битві біля фортеці розбило османів. Нандорфегервар, нинішній Белград, лежить за межами цієї мапи, тож подія не має точки.",
+    "hu": "A szócikk szerint II. Mehmed 1456. július 4-én vette ostrom alá a várat; ezt Szilágyi Mihály hétezres csapata védte. Hunyadi János, akinek tizenkétezres serege a vártól elzárva állomásozott, július 14-én áttörte az oszmánok dunai hajózárát, és csatlakozott sógorához. Július 21-én az egyesült magyar sereg visszaverte Mehmed rohamát, július 22-én pedig Kapisztrán János 30–35 ezer keresztesével együtt a vár melletti csatában legyőzte az oszmánokat. Nándorfehérvár, a mai Belgrád, e térkép határain kívül fekszik, ezért az eseménynek nincs pontja."
+  },
+  "sources": [
+    {
+      "title": "Nándorfehérvári diadal – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/N%C3%A1ndorfeh%C3%A9rv%C3%A1ri_diadal",
+      "note": "Дати, учасники, перебіг."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Dugovics.jpg",
+      "author": "Alexander von Wagner",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Dugovics.jpg",
+      "caption": {
+        "uk": "Тітус Дуґович, картина Alexander von Wagner",
+        "hu": "Dugovics Titusz, Wagner Sándor festménye"
+      }
+    }
+  ]
+}

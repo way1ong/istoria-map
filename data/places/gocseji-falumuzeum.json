@@ -1,0 +1,45 @@
+{
+  "id": "gocseji-falumuzeum",
+  "name": {
+    "uk": "Ґечейський сільський музей у Залаеґерсеґі (Göcseji Falumúzeum)",
+    "hu": "Göcseji Falumúzeum, Zalaegerszeg"
+  },
+  "type": "monument",
+  "coords": [
+    16.82833,
+    46.85056
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Скансен у Залаеґерсеґі, відкритий 1968 року як перший музей просто неба в Угорщині: зразки народного будівництва Ґечея навколо водяного млина Hencz, що лишився на своєму місці.",
+    "hu": "Skanzen Zalaegerszegen, 1968-ban nyílt meg Magyarország első szabadtéri múzeumaként: a göcseji népi építkezés emlékei az eredeti helyén maradt Hencz-féle vízimalom körül."
+  },
+  "description": {
+    "uk": "За статтею, Ґечейський сільський музей є першим музеєм просто неба в Угорщині, його відкрили 1968 року недалеко від центру Залаеґерсеґа біля старика річки Zala. Зразки ґечейського народного будівництва розставлено навколо залишеного на своєму місці водяного млина Hencz так, ніби це село XIX століття: селянські хати, господарські будівлі, церква, кузня й млин. Стаття пояснює, що дрібні ґечейські села до прокладання доріг у XX столітті зберігали традиційне планування й давні будівельні прийоми, і музей урятував останні пам'ятки цього способу життя.",
+    "hu": "A szócikk szerint a Göcseji Falumúzeum Magyarország első szabadtéri múzeuma; 1968-ban nyitották meg Zalaegerszeg központjától nem messze, a Zala folyó holtága mellett. A göcseji népi építészet példáit az eredeti helyén hagyott Hencz-vízimalom köré rendezték el úgy, mintha egy XIX. századi falu volna: parasztházak, gazdasági épületek, templom, kovácsműhely és malom. A szócikk elmagyarázza, hogy a kis göcseji falvak a XX. századi útépítésekig megőrizték hagyományos településszerkezetüket és régi építési fogásaikat, és a múzeum ennek az életmódnak az utolsó emlékeit mentette meg."
+  },
+  "sources": [
+    {
+      "title": "Göcseji Falumúzeum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6cseji_Falum%C3%BAzeum",
+      "note": "Вступ."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Gocsej_village_belfry.jpg",
+      "author": "Alensha",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Gocsej_village_belfry.jpg",
+      "caption": {
+        "uk": "Дзвіниця в Ґечейському сільському музеї",
+        "hu": "Harangláb a Göcseji Falumúzeumban"
+      }
+    }
+  ]
+}

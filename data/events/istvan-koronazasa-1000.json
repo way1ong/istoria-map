@@ -1,0 +1,45 @@
+{
+  "id": "istvan-koronazasa-1000",
+  "title": {
+    "uk": "Коронація Іштвана I",
+    "hu": "I. István megkoronázása"
+  },
+  "date": {
+    "from": "1000-12-25",
+    "to": "1001-01-01",
+    "precision": "tradition"
+  },
+  "period": "arpad",
+  "places": [
+    "esztergomi-var",
+    "szekesfehervar-kiralyi-bazilika"
+  ],
+  "summary": {
+    "uk": "За переказом, Іштван був коронований у перший день нового тисячоліття, що могло бути 25 грудня 1000 року або 1 січня 1001 року; місцем стаття називає Естерґом або Секешфегервар.",
+    "hu": "A hagyomány szerint István megkoronázása az új évezred első napján történt, ami lehetett 1000. december 25-e vagy 1001. január 1-je; a cikk helyszínként Esztergomot vagy Székesfehérvárt adja meg."
+  },
+  "description": {
+    "uk": "За статтею, Іштван з 997 року, після смерті батька Ґези, був мадярським князем, а коронацією став «з Божої ласки» королем Угорщини і перебудував князівство союзу мадярських племен на єдину християнську державу. Час коронації непевний: хроніки й аннали подають то 1000, то 1001 рік, а за переказом вона відбулася в перший день нового тисячоліття, що могло бути 25 грудня 1000 року або 1 січня 1001 року. Місцем коронації стаття з посиланнями на різних дослідників називає Естерґом або Секешфегервар, тому подію прив'язано до обох карток.",
+    "hu": "A szócikk szerint István 997-től, apja, Géza halála után magyar fejedelem volt, megkoronázásával pedig „Isten kegyelméből” Magyarország királya lett, és a magyar törzsszövetség fejedelemségét egységes keresztény állammá szervezte át. A koronázás időpontja bizonytalan: a krónikák és az évkönyvek hol az 1000., hol az 1001. évet adják meg, a hagyomány szerint pedig az új évezred első napján történt, ami 1000. december 25. vagy 1001. január 1. lehetett. A koronázás helyeként a szócikk különböző kutatókra hivatkozva Esztergomot vagy Székesfehérvárt nevezi meg, ezért az eseményt mindkét kártyához kötöttük."
+  },
+  "sources": [
+    {
+      "title": "I. István magyar király – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/I._Istv%C3%A1n_magyar_kir%C3%A1ly",
+      "note": "Дата і можливі місця коронації."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Portrayal_of_Stephen_I%2C_King_of_Hungary_on_the_coronation_pall.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Portrayal_of_Stephen_I%2C_King_of_Hungary_on_the_coronation_pall.jpg",
+      "caption": {
+        "uk": "Іштван I на коронаційній мантії",
+        "hu": "I. István ábrázolása a koronázási paláston"
+      }
+    }
+  ]
+}

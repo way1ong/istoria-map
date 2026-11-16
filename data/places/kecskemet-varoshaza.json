@@ -1,0 +1,46 @@
+{
+  "id": "kecskemet-varoshaza",
+  "name": {
+    "uk": "Ратуша Кечкемета (Városháza)",
+    "hu": "Kecskeméti Városháza"
+  },
+  "type": "monument",
+  "coords": [
+    19.69178,
+    46.90676
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Ратуша на головній площі Кечкемета (Kossuth tér 1), збудована 1893–1897 років у стилі сецесії за проєктом Ödön Lechner і Gyula Pártos.",
+    "hu": "A kecskeméti Városháza a főtéren (Kossuth tér 1.), 1893 és 1897 között épült szecessziós stílusban, Lechner Ödön és Pártos Gyula tervei szerint."
+  },
+  "description": {
+    "uk": "За статтею, попередня класицистична ратуша Кечкемета до середини XIX століття занепала, і 1890 року міська рада оголосила конкурс на новий будинок. З п'яти проєктів журі віддало першу премію Ödön Lechner і Gyula Pártos, які подавалися під девізом «ні висота, ні глибина не страшна». Будинок звели 1893–1897 років у стилі сецесії; після великого землетрусу 1911 року його відновили під наглядом Lechner. З 1897 до 1996 року в ратуші містилася й міська бібліотека.",
+    "hu": "A szócikk szerint Kecskemét korábbi, klasszicista városházája a XIX. század közepére leromlott, és 1890-ben a városi tanács pályázatot írt ki egy új épületre. Az öt pályamű közül a zsűri az első díjat Lechner Ödönnek és Pártos Gyulának ítélte, akik „sem magasság, sem mélység nem rettent” jeligével pályáztak. Az épület 1893 és 1897 között épült fel szecessziós stílusban; az 1911-es nagy földrengés után Lechner felügyeletével állították helyre. 1897-től 1996-ig a városházában működött a városi könyvtár is."
+  },
+  "sources": [
+    {
+      "title": "Városháza (Kecskemét) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1rosh%C3%A1za_%28Kecskem%C3%A9t%29",
+      "note": "Вступ і розділ «Az épület története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Kecskem%C3%A9t_city_hall_2025-03-16.jpg",
+      "author": "Szilas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kecskem%C3%A9t_city_hall_2025-03-16.jpg",
+      "caption": {
+        "uk": "Ратуша Кечкемета",
+        "hu": "A kecskeméti Városháza"
+      }
+    }
+  ]
+}

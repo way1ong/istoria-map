@@ -6,9 +6,9 @@
   "license": "CC0 1.0 (скан NYPL), оригінал у суспільному надбанні",
   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
   "attribution": "Spezialkarte der österreichisch-ungarischen Monarchie, 15:XX. New York Public Library, Lionel Pincus and Princess Firyal Map Division (CC0), через Wikimedia Commons",
-  "source": { "title": "Wikimedia Commons: File:Obuda, (Budapest). NYPL1226598.tiff", "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff", "note": "Аркуш 15:XX; на полях надруковано 1904 і «Teilweise berichtigt bis 18. II. 1910». Межі за підписами сітки: 36°30′–37° сх. від Ферро, 47°30′–47°45′ пн. ш. Довготи на аркуші подані від меридіана Ферро; переведено в Гринвіч за зсувом 17°40′ (значення, прийняте для австрійських геодезичних мереж; для угорських мереж уживали 17°39′46″, різниця ~0,3 км). Скан вирівняно по чотирьох кутах внутрішньої рамки сітки з точністю ~2 px, тобто ±50–100 м." },
+  "source": { "title": "Wikimedia Commons: File:Obuda, (Budapest). NYPL1226598.tiff", "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff", "note": "Аркуш 15:XX; на полях надруковано 1904 і «Teilweise berichtigt bis 18. II. 1910». Межі за підписами сітки: 36°30′–37° сх. від Ферро, 47°30′–47°45′ пн. ш. Довготи на аркуші подані від меридіана Ферро; переведено в Гринвіч за зсувом 17°40′ (значення, прийняте для австрійських геодезичних мереж; для угорських мереж уживали 17°39′46″, різниця ~0,3 км). Скан узято з мініатюри Commons шириною 3840 px (оригінальний TIFF сервер не віддає) і вирівняно по чотирьох кутах внутрішньої рамки сітки з точністю ~1 px; вирівняне зображення 2856 × 2142 px. Додатково кути зсунуто на 0,00095° на захід і 0,00073° на південь: стільки в середньому становить зсув позначок восьми церков у семи селах (Csomád, Sződ, Dunakeszi, Fót, Kosd, Rád, Vácduka) відносно їхніх координат в OpenStreetMap, тобто різниця старої геодезичної основи; після поправки розбіжність 30–40 м." },
   "type": "image",
   "url": "maps/obuda-budapest-1904.jpg",
-  "coordinates": [[18.833333, 47.75], [19.333333, 47.75], [19.333333, 47.5], [18.833333, 47.5]],
+  "coordinates": [[18.832388, 47.749276], [19.332388, 47.749276], [19.332388, 47.499276], [18.832388, 47.499276]],
   "periods": ["long-19", "interwar-ww2"]
 }

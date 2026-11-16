@@ -1,0 +1,46 @@
+{
+  "id": "nagykanizsa-var",
+  "name": {
+    "uk": "Надьканіжа (Nagykanizsa) і Канізька фортеця",
+    "hu": "Nagykanizsa, a kanizsai vár"
+  },
+  "type": "castle",
+  "coords": [
+    16.9975,
+    46.45583
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "late-medieval",
+    "ottoman",
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Місто в Залі з прикордонною фортецею, яку 1554 року укріпив італійський інженер Pietro Ferrabosco; 22 жовтня 1600 року її здали османам, і Канижа стала центром вілаєту; 13 квітня 1690 року її звільнив Ádám Batthyány II, а 1703 року мури розібрали. Точка: центр міста.",
+    "hu": "Zalai város végvárral, amelyet 1554-ben Pietro Ferrabosco itáliai hadmérnök erősített meg; 1600. október 22-én török kézre került, és Kanizsa vilajet-központ lett; 1690. április 13-án II. Batthyány Ádám szabadította fel, 1703-ban falait lebontották. A térképi pont a városközpont."
+  },
+  "description": {
+    "uk": "За статтею про місто, 1532 року османи, що йшли на Відень, пройшли через Канижу й сильно її спустошили; після поділу країни на три частини напади стали постійними, і з 1554 року фортецю зміцнювали під керівництвом італійського військового інженера Pietro Ferrabosco. У 1567–1571 роках капітаном був знаменитий вояк György Thury, під проводом якого прикордонні загони вдало нападали на османські фортеці південного Задунав'я. 22 жовтня 1600 року фортеця перейшла до османів, Канижа стала центром вілаєту під владою Мурад-паші, фортецю перебудували, гарнізон налічував 3825 осіб. Облога, яку Miklós Zrínyi вів з 21 квітня до 30 травня 1664 року, не вдалася; 13 квітня 1690 року фортецю звільнив Ádám Batthyány II, а 1703 року мури розібрали, рови засипали, і Канижа стала відкритим містом. Точного місця фортеці стаття не подає, тому координати відповідають центру міста.",
+    "hu": "A városról szóló szócikk szerint 1532-ben a Bécs ellen vonuló oszmánok áthaladtak Kanizsán, és súlyosan feldúlták; az ország három részre szakadása után a támadások állandóvá váltak, és 1554-től a várat Pietro Ferrabosco itáliai hadmérnök irányításával erősítették. 1567 és 1571 között a híres vitéz, Thury György volt a kapitány, akinek vezetésével a végvári csapatok sikeresen támadták a dél-dunántúli oszmán várakat. 1600. október 22-én a vár az oszmánok kezére került, Kanizsa a Murat pasa uralma alatt álló vilajet központja lett, a várat átépítették, őrsége 3825 főből állt. A Zrínyi Miklós által 1664. április 21-től május 30-ig vezetett ostrom nem járt sikerrel; 1690. április 13-án a várat II. Batthyány Ádám szabadította fel, 1703-ban pedig a falakat lebontották, az árkokat betemették, és Kanizsa nyílt várossá vált. A vár pontos helyét a szócikk nem adja meg, ezért a koordináták a város központjának felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Nagykanizsa – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagykanizsa",
+      "note": "Розділи про історію: Kanizsa és a törökök, A török uralom után."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Nagykanizsa_n%C3%A1m%C4%9Bst%C3%AD_a_radnice_4.jpg",
+      "author": "VitVit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Nagykanizsa_n%C3%A1m%C4%9Bst%C3%AD_a_radnice_4.jpg",
+      "caption": {
+        "uk": "Головна площа й ратуша Надьканіжі",
+        "hu": "Nagykanizsa főtere és városháza"
+      }
+    }
+  ]
+}

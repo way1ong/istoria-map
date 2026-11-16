@@ -1,0 +1,30 @@
+{
+  "id": "petofi-szuletese-1823",
+  "title": {
+    "uk": "Народження Шандора Петефі",
+    "hu": "Petőfi Sándor születése"
+  },
+  "date": {
+    "from": "1823-01-01",
+    "precision": "exact"
+  },
+  "period": "long-19",
+  "places": [
+    "kiskoros-petofi-szulohaz"
+  ],
+  "summary": {
+    "uk": "1 січня 1823 року в Кішкереші, в будинку, який винаймав різник István Petrovics, народився поет і революціонер Шандор Петефі; 1862 року будинок позначили мармуровою дошкою.",
+    "hu": "1823. január 1-jén Kiskőrösön, Petrovics István mészárosmester bérelt házában született Petőfi Sándor költő, forradalmár; a házat 1862-ben márványtáblával jelölték meg."
+  },
+  "description": {
+    "uk": "За статтею про родинний будинок, на початку 1823 року в будинку цирульника Márton Makovinyi, який на три роки винайняв різник István Petrovics із дружиною Mária Hrúz, народився їхній перший син, поет Шандор Петефі; у жовтні 1824 року родина переїхала до Кішкуншфеледьгази. 1857 року пастор János Sárkány за метричними книгами встановив, що поет народився саме в Кішкереші, а 1862 року на будинку встановили мармурову дошку; стаття називає його першим літературним меморіальним місцем країни.",
+    "hu": "A szülőházról szóló szócikk szerint 1823 elején Makovinyi Márton borbély házában, amelyet Petrovics István mészáros feleségével, Hrúz Máriával együtt három évre bérelt ki, megszületett első fiuk, Petőfi Sándor költő; 1824 októberében a család Kiskunfélegyházára költözött. 1857-ben Sárkány János lelkész az anyakönyvek alapján megállapította, hogy a költő valóban Kiskőrösön született, 1862-ben pedig márványtáblát helyeztek el a házon; a szócikk az ország első irodalmi emlékhelyének nevezi."
+  },
+  "sources": [
+    {
+      "title": "Petőfi Szülőház és Emlékmúzeum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Pet%C5%91fi_Sz%C3%BCl%C5%91h%C3%A1z_%C3%A9s_Eml%C3%A9km%C3%BAzeum",
+      "note": "1 січня 1823, родина, дошка 1862."
+    }
+  ]
+}

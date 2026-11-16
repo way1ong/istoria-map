@@ -1,0 +1,42 @@
+{
+  "id": "vac-kohid-csarda",
+  "name": {
+    "uk": "Корчма Kőhíd (Kőhíd csárda) у Ваці",
+    "hu": "Kőhíd csárda, Vác"
+  },
+  "type": "inn",
+  "coords": [
+    19.1045,
+    47.8007
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Корчма на північній околиці Вацу між Дунаєм і дорогою вздовж річки, підписана «Kőhíd cs.» на аркуші 1885 року; назва Kőhíd лишилася за частиною міста в районі Kisvác.",
+    "hu": "Csárda Vác északi szélén, a Duna és a folyó menti út között, az 1885-ös lapon „Kőhíd cs.” felirattal; a Kőhíd név Kisvác egyik városrészének nevében él tovább."
+  },
+  "description": {
+    "uk": "На аркуші Spezialkarte 14:XX 1885 року на північ від Вацу, між Дунаєм і дорогою вздовж річки, підписано «Kőhíd cs.» (корчма «Кам'яний міст»); поруч позначено цегельню «Ziegel H.», а південніше корчму «Buki cs.» (окремі картки). За статтею про Вац, Kőhíd і Buki нині є частинами району Kisvác (Felsőváros). Корчми в сучасних даних OpenStreetMap немає; за зворотним геокодуванням місце лежить у житловому масиві Kőhíd lakópark. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1885-ös Spezialkarte 14:XX lapján Váctól északra, a Duna és a folyó menti út között „Kőhíd cs.” felirat áll; a közelében „Ziegel H.” téglaház, délebbre a „Buki cs.” csárda látható (külön kártyák). A Vácról szóló szócikk szerint Kőhíd és Buki ma Kisvác (Felsőváros) részei. A csárdának a mai OpenStreetMap-adatokban nincs nyoma; a fordított geokódolás szerint a hely a Kőhíd lakóparkban van. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 14:XX Nógrád und Waitzen, 1885, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
+      "note": "Підпис «Kőhíd cs.» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділ про частини міста: Kisvác (Felsőváros) — Krakó, Limbus, Iskolaváros, Kőhíd, Buki."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.80066&lon=19.10454",
+      "note": "Нині на цьому місці: житловий масив Kőhíd lakópark (Vác). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "pecsi-egyetem-1367",
+  "title": {
+    "uk": "Заснування університету в Печі",
+    "hu": "A pécsi egyetem alapítása"
+  },
+  "date": {
+    "from": "1367",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [
+    "pecsi-kozepkori-egyetem"
+  ],
+  "summary": {
+    "uk": "1367 року король Людовик I з дозволу папи Урбана V заснував у Печі перший угорський університет; його духовним батьком був печський єпископ Wilhelm von Koppenbach.",
+    "hu": "1367-ben I. Lajos király V. Orbán pápa engedélyével megalapította Pécsett az első magyar egyetemet; szellemi atyja Koppenbachi Vilmos pécsi püspök volt."
+  },
+  "description": {
+    "uk": "За статтею, після університетів у Празі (1348), Кракові (1364) і Відні (1365) король Людовик I 1367 року формально заснував університет у Печі, а дозвіл папською буллою дав Урбан V. Духовним батьком закладу був печський єпископ з Рейнської Пфальцу Wilhelm von Koppenbach (Koppenbachi Vilmos), що поєднував єпископство (1361–1374) з посадами королівського капелана й таємного канцлера. Університет мав навчати передусім церковного права й латини, щоб угорським студентам не треба було їхати за кордон; доведено існування факультетів вільних мистецтв і канонічного права. Діяв він лише кілька десятиліть.",
+    "hu": "A szócikk szerint a prágai (1348), a krakkói (1364) és a bécsi (1365) egyetem után I. Lajos király 1367-ben formálisan megalapította a pécsi egyetemet, az engedélyt pedig pápai bullában V. Orbán adta meg. Az intézmény szellemi atyja a Rajnai Pfalzból származó pécsi püspök, Wilhelm von Koppenbach (Koppenbachi Vilmos) volt, aki püspöki tisztségét (1361–1374) a királyi káplán és a titkos kancellár hivatalával egyesítette. Az egyetemnek elsősorban az egyházjogot és a latint kellett oktatnia, hogy a magyar diákoknak ne kelljen külföldre utazniuk; a szabad művészetek és a kánonjog karának létezése bizonyított. Csak néhány évtizedig működött."
+  },
+  "sources": [
+    {
+      "title": "Pécsi középkori egyetem – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/P%C3%A9csi_k%C3%B6z%C3%A9pkori_egyetem",
+      "note": "1367, папа Урбан V, Koppenbachi Vilmos."
+    }
+  ]
+}

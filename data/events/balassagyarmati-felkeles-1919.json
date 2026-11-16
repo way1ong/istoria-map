@@ -1,0 +1,30 @@
+{
+  "id": "balassagyarmati-felkeles-1919",
+  "title": {
+    "uk": "Повстання в Балашшадярматі проти чехословацької окупації",
+    "hu": "A balassagyarmati felkelés (csehkiverés)"
+  },
+  "date": {
+    "from": "1919-01-29",
+    "precision": "exact"
+  },
+  "period": "interwar-ww2",
+  "places": [
+    "balassagyarmat"
+  ],
+  "summary": {
+    "uk": "29 січня 1919 року мешканці Балашшадярмата за підтримки угорських вояків у вуличних боях вигнали чехословацькі війська, що 15 січня перейшли Іпель і зайняли місто.",
+    "hu": "1919. január 29-én Balassagyarmat felkelt polgárai magyar katonák támogatásával utcai harcban kiűzték a csehszlovák erőket, amelyek január 15-én átlépték az Ipolyt és megszállták a várost."
+  },
+  "description": {
+    "uk": "За статтею, після Першої світової війни загін Чеського легіону 15 січня 1919 року перейшов Іпель і зайняв Балашшадярмат, узявши під контроль стратегічні залізниці Іполішаг–Балашшадярмат і Балашшадярмат–Лученець; окупанти зайняли вокзал, пошту й казарму, замінили угорський напис на вокзалі чеським і поставили жупана Lajos Bazovszky замість головного ішпана István Rákóczi. 29 січня повсталі городяни за підтримки угорських вояків у вуличних боях вигнали чехословацькі сили. За соціалізму свято не можна було відзначати; день міста 29 січня відновили 1998 року, і відтоді місто носить назву Civitas Fortissima («найхоробріше місто»).",
+    "hu": "A szócikk szerint az első világháború után a Cseh Légió egyik különítménye 1919. január 15-én átkelt az Ipolyon, és elfoglalta Balassagyarmatot, ellenőrzése alá vonva az Ipolyság–Balassagyarmat és a Balassagyarmat–Losonc stratégiai vasútvonalakat; a megszállók elfoglalták a vasútállomást, a postát és a laktanyát, az állomás magyar feliratát csehre cserélték, és Rákóczi István főispán helyére Bazovszky Lajos zsupánt ültették. Január 29-én a felkelt városlakók magyar katonák támogatásával utcai harcokban kiűzték a csehszlovák erőket. A szocializmus idején az ünnepet nem lehetett megtartani; a január 29-i városnapot 1998-ban állították vissza, és azóta a város a Civitas Fortissima („a legbátrabb város”) nevet viseli."
+  },
+  "sources": [
+    {
+      "title": "Balassagyarmati felkelés – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Balassagyarmati_felkel%C3%A9s",
+      "note": "15 і 29 січня 1919 року, перебіг, Civitas Fortissima."
+    }
+  ]
+}

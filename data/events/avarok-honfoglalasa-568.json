@@ -1,0 +1,41 @@
+{
+  "id": "avarok-honfoglalasa-568",
+  "title": {
+    "uk": "Авари займають Карпатську улоговину",
+    "hu": "Az avarok birtokba veszik a Kárpát-medencét"
+  },
+  "date": {
+    "from": "0568",
+    "precision": "exact"
+  },
+  "period": "migration",
+  "places": [],
+  "summary": {
+    "uk": "Після того як 567 року лангобарди в союзі з аварським каганом Баяном розбили гепідів, на Великдень 568 року лангобарди пішли до Північної Італії, і вся Карпатська улоговина дісталася аварам; каган переніс сюди свій осідок.",
+    "hu": "Miután 567-ben a longobárdok Baján avar kagánnal szövetségben legyőzték a gepidákat, 568 húsvétján a longobárdok Észak-Itáliába vonultak, így az avaroké lett az egész Kárpát-medence, ahová a kagán a székhelyét is áttette."
+  },
+  "description": {
+    "uk": "За статтею про аварів, цей кочовий народ північноазійського походження в VI столітті перебрався до Центральної Європи і створив сильну державу, що понад двісті років була головною силою між Франкською та Візантійською імперіями. 567 року каган Баян, який стояв на Нижньому Дунаї, уклав союз із королем лангобардів Альбоїном, і той розбив гепідського короля Кунімунда; відчуваючи аварське сусідство надто загрозливим, лангобарди на Великдень 568 року, покинувши худобу, пішли до Північної Італії, тож уся Карпатська улоговина дісталася аварам. Розквіт Аварського каганату припав на правління Баяна (562–602). Аварські могильники в Zamárdi, Kölked, Kunbábony описані окремо.",
+    "hu": "Az avarokról szóló szócikk szerint ez az észak-ázsiai eredetű nomád nép a VI. században Közép-Európába költözött, és erős államot hozott létre, amely több mint kétszáz évig a fő hatalom volt a Frank és a Bizánci Birodalom között. 567-ben az Al-Dunánál tartózkodó Baján kagán szövetséget kötött Alboin longobárd királlyal, aki legyőzte Kunimund gepida királyt; a longobárdok, mivel az avar szomszédságot túlságosan fenyegetőnek érezték, 568 húsvétján jószágaikat hátrahagyva Észak-Itáliába vonultak, így az egész Kárpát-medence az avaroké lett. Az Avar Kaganátus virágkora Baján uralkodására (562–602) esett. Zamárdi, Kölked és Kunbábony avar temetőit külön írjuk le."
+  },
+  "sources": [
+    {
+      "title": "Avarok – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Avarok",
+      "note": "567–568, Баян, лангобарди, гепіди."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Bogenschuetzen_Reiter-2.jpg",
+      "author": "невідомий каролінзький переписувач IX ст.",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Bogenschuetzen_Reiter-2.jpg",
+      "caption": {
+        "uk": "Кінні лучники на каролінзькій мініатюрі IX століття",
+        "hu": "Íjász lovasok egy 9. századi Karoling-kori kéziratban"
+      }
+    }
+  ]
+}

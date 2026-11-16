@@ -1,0 +1,46 @@
+{
+  "id": "miskolctapolca-barlangfurdo",
+  "name": {
+    "uk": "Печерна купальня в Мішкольцтаполці (Barlangfürdő)",
+    "hu": "Barlangfürdő, Miskolctapolca"
+  },
+  "type": "other",
+  "coords": [
+    20.74556,
+    48.06083
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Купальня в печері над теплими джерелами в Мішкольцтаполці з водою 30 °C; облаштування курорту запропонував 1711 року абат Görömböly, будівництво наказано 1723 року, 1837 року купальню розширили.",
+    "hu": "Melegforrások felett elhelyezkedő barlangban kialakított fürdőhely Miskolctapolcán, 30 °C-os vízzel; a fürdőhely kiépítését 1711-ben Görömböly apátja vetette fel, az építkezést 1723-ban rendelték el, 1837-ben bővítették."
+  },
+  "description": {
+    "uk": "За статтею, печера й термальне джерело відомі з давніх часів, але курортом Таполца стала лише після османського панування: 1711 року абат Görömböly запропонував облаштувати купальню й привіз лікарів з Кошиць, щоб перевірити цілющу дію води. Будівництво наказано 1723 року; тоді постали три басейни з лазнею й заїжджим двором, але купалися ще не в самій печері, а поруч. До середини століття курорт занедбали, будівля завалилася; 1837 року новий абат Görömböly відновив і розширив купальню, збудувавши перший критий басейн, ще поза печерою. Нині це одна з найвідвідуваніших пам'яток Мішкольца; вода 30 °C, 2016 року купальня здобула звання «купальня року».",
+    "hu": "A szócikk szerint a barlang és a termálforrás ősidők óta ismert, de Tapolca csak az oszmán uralom után vált fürdőhellyé: 1711-ben Görömböly apátja javasolta egy fürdő kiépítését, és orvosokat hozatott Kassáról, hogy megvizsgálják a víz gyógyhatását. Az építkezést 1723-ban rendelték el; ekkor három medence épült fürdőházzal és vendégfogadóval, de még nem magában a barlangban fürödtek, hanem mellette. A század közepére a fürdőt elhanyagolták, az épület összedőlt; 1837-ben Görömböly új apátja helyreállította és kibővítette a fürdőt, megépítve az első fedett medencét, még a barlangon kívül. Ma Miskolc egyik leglátogatottabb nevezetessége; vize 30 °C-os, 2016-ban a fürdő elnyerte „Az év fürdője” címet."
+  },
+  "sources": [
+    {
+      "title": "Barlangfürdő – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Barlangf%C3%BCrd%C5%91",
+      "note": "Вступ і розділ «Történet»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Mtapolca_cave_bath_entrance.jpg",
+      "author": "Alensha",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Mtapolca_cave_bath_entrance.jpg",
+      "caption": {
+        "uk": "Вхід до печерної купальні",
+        "hu": "A Barlangfürdő bejárata"
+      }
+    }
+  ]
+}

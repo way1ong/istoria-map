@@ -1,0 +1,46 @@
+{
+  "id": "csorogpuszta-szodliget",
+  "name": {
+    "uk": "Пуста Csörög (Pusztacsörög) у Sződliget",
+    "hu": "Csörögpuszta (Pusztacsörög), Sződliget"
+  },
+  "type": "farmstead",
+  "coords": [
+    19.1673,
+    47.7313
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Пуста на схід від залізниці Будапешт–Вац, підписана «Pusztacsörög» на аркуші 1904 року; 1883 року Csörögpuszta належала Alfréd Floch-Reyhersberg, а назва лишилася в назві поля Csörögi dűlő у Sződliget.",
+    "hu": "Puszta a Budapest–Vác vasútvonaltól keletre, az 1904-es lapon „Pusztacsörög” felirattal; 1883-ban Csörögpuszta Floch-Reyhersberg Alfréd birtoka volt, neve a sződligeti Csörögi dűlő nevében él tovább."
+  },
+  "description": {
+    "uk": "На аркуші 1904 року на схід від залізниці Будапешт–Вац, біля дороги, позначено будівлі з підписом «Pusztacsörög». За статтею про Sződliget, 1883 року Sződrákos, Sződrákospuszta і Csörögpuszta належали Alfréd Floch-Reyhersberg. Нинішнє село Csörög лежить приблизно за 2,7 км на схід; за статтею про Csörög, 1787 року його вписано в метричні книги як хутір (major), що належав до Sződ, а самостійною громадою він став 2002 року. За зворотним геокодуванням позначка з мапи припадає на поле Csörögi dűlő в межах Sződliget. Чи збереглися будівлі пусти, з цих даних не видно, тому позначки «зник» картка не має. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1904-es lapon a Budapest–Vác vasútvonaltól keletre, egy út mellett „Pusztacsörög” feliratú épületek láthatók. A Sződligetről szóló szócikk szerint 1883-ban Sződrákos, Sződrákospuszta és Csörögpuszta dr. lovag Floch-Reyhersberg Alfréd birtoka volt. A mai Csörög falu mintegy 2,7 km-re keletre fekszik; a Csörögről szóló szócikk szerint 1787-ben Sződhöz tartozó majorként szerepel az anyakönyvekben, önálló község 2002-ben lett. A fordított geokódolás szerint a térképi jel a sződligeti Csörögi dűlőre esik. Hogy a puszta épületei megmaradtak-e, ezekből az adatokból nem látszik, ezért a kártya nem kapott „eltűnt” jelölést. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Підпис «Pusztacsörög» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Sződliget – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sz%C5%91dliget",
+      "note": "1883: Csörögpuszta у власності Alfréd Floch-Reyhersberg."
+    },
+    {
+      "title": "Csörög – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Cs%C3%B6r%C3%B6g",
+      "note": "1787: хутір у складі Sződ; самостійна громада з 2002 року."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.73126&lon=19.16733",
+      "note": "Нині на цьому місці: поле Csörögi dűlő (Sződliget). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

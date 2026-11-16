@@ -1,0 +1,47 @@
+{
+  "id": "munkacsi-var",
+  "name": {
+    "uk": "Мукачівський замок «Паланок» (Munkácsi vár), Україна",
+    "hu": "Munkácsi vár (Palanok)"
+  },
+  "type": "castle",
+  "coords": [
+    22.68778,
+    48.43167
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval",
+    "ottoman",
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Замок на горі над Мукачевом у Закарпатті: за Анонімом, сім вождів мадярів відпочили тут після Верецького перевалу; 1086 року п'ять днів його марно облягали печеніги; у 1685–1688 роках його обороняла Ilona Zrínyi (окрема подія).",
+    "hu": "Vár Munkács felett Kárpátalján: Anonymus szerint a hét vezér a Vereckei-hágó után itt pihent meg; 1086-ban a besenyők öt napig hiába ostromolták; 1685 és 1688 között Zrínyi Ilona védte (külön esemény)."
+  },
+  "description": {
+    "uk": "За статтею, обставини будівництва замку невідомі: археологія свідчить про неолітичне заселення, у бронзову й залізну добу на місці замку стояло городище, а під час приходу мадярів на вершині був палісадний форт; Іштван I укріпив мури, а Ласло I звів навколо кам'яну стіну. Анонім у «Gesta Hungarorum» пише, що сім вождів після переходу Верецького перевалу вирішили тут відпочити й назвали місце Munkács від важкої праці (munka); інша легенда виводить назву від слов'янського «мука». 1086 року печеніги п'ять днів облягали замок, але не взяли; 1190 року його марно облягали «татари», що пустошили Береґ і Унґ, а 1241 року військо Батия, що вдерлося через Верецький перевал, зруйнувало місто. Прикордонний об'єкт в Україні.",
+    "hu": "A szócikk szerint a vár építésének körülményei ismeretlenek: a régészeti kutatások újkőkori megtelepedésről tanúskodnak, a bronz- és vaskorban a vár helyén földvár állt, a magyarok érkezésekor pedig a csúcson cölöpökből emelt erőd volt; I. István megerősítette a falakat, I. László pedig kőfalat emelt köré. Anonymus a „Gesta Hungarorum” című művében azt írja, hogy a hét vezér a Vereckei-hágón való átkelés után elhatározta, hogy itt megpihen, és a helyet a nehéz munkáról (munka) Munkácsnak nevezte el; egy másik legenda a nevet a szláv „múka” szóból eredezteti. 1086-ban a besenyők öt napig ostromolták a várat, de nem foglalták el; 1190-ben a Bereget és Ungot pusztító „tatárok” hiába ostromolták, 1241-ben pedig a Vereckei-hágón át betörő Batu kán serege lerombolta a várost. Határ menti objektum Ukrajnában."
+  },
+  "sources": [
+    {
+      "title": "Munkácsi vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Munk%C3%A1csi_v%C3%A1r",
+      "note": "Розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/%D0%97%D0%B0%D0%BC%D0%BE%D0%BA_%D1%96%D0%B7_%D0%B2%D0%B8%D1%81%D0%BE%D1%82%D0%B8_%D0%BF%D1%82%D0%B0%D1%88%D0%B8%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BF%D0%BE%D0%BB%D1%8C%D0%BE%D1%82%D1%83_1.JPG",
+      "author": "Vasil stecko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%97%D0%B0%D0%BC%D0%BE%D0%BA_%D1%96%D0%B7_%D0%B2%D0%B8%D1%81%D0%BE%D1%82%D0%B8_%D0%BF%D1%82%D0%B0%D1%88%D0%B8%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BF%D0%BE%D0%BB%D1%8C%D0%BE%D1%82%D1%83_1.JPG",
+      "caption": {
+        "uk": "Мукачівський замок з висоти пташиного польоту",
+        "hu": "A munkácsi vár madártávlatból"
+      }
+    }
+  ]
+}

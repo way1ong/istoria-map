@@ -1,0 +1,47 @@
+{
+  "id": "kormendi-varkastely",
+  "name": {
+    "uk": "Замок-палац Баттяні в Керменді (Körmendi várkastély)",
+    "hu": "Körmendi várkastély (Batthyány-Strattmann-kastély)"
+  },
+  "type": "castle",
+  "coords": [
+    16.60665,
+    47.00929
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman",
+    "habsburg-18",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Замок-палац Batthyány-Strattmann у Керменді (Ваш): фортецю звів у середині XV століття барон László Szécsényi, 1604 року її отримали Баттяні, після пожежі 1652 року граф Ádám Batthyány перебудував її на резиденцію з чотирма крилами.",
+    "hu": "A körmendi Batthyány-Strattmann-kastély Vas vármegyében: erődítményét a 15. század közepén Szécsényi László báró emeltette, 1604-ben a Batthyány család kapta meg, az 1652-es tűzvész után Batthyány Ádám gróf négyszárnyú rezidenciává építtette át."
+  },
+  "description": {
+    "uk": "За статтею, перший кам'яний замок містечка стояв у його північно-західному куті, але його зруйнували в походах проти місцевих магнатів; нинішню фортецю в північно-східному куті звів у середині XV століття барон László Szécsényi. Далі нею володіли Ellerbach, а від останнього з них через борги після довгого процесу вона перейшла до естерґомського архієпископа Tamás Bakócz; опис з османської доби показує чотирикутний замок з круглими вежами на кутах і болотяним ровом. 1604 року з ласки Габсбурґів його отримали магнати Batthyány, і після втрати Канижі його військове значення зросло. Після пожежі 1652 року граф Ádám Batthyány наказав перебудувати резиденцію з житловими крилами на всіх чотирьох боках і підвищити вежі.",
+    "hu": "A szócikk szerint a mezőváros első kővára annak északnyugati sarkában állt, de a helyi főurak elleni hadjáratokban lerombolták; a mai erődítményt az északkeleti sarokban a XV. század közepén báró Szécsényi László építtette. Ezután az Ellerbach család birtokolta, utolsó tagjától pedig adósságok miatt, hosszú per után Bakócz Tamás esztergomi érsek tulajdonába került; egy török kori leírás négyszögletes, sarkain kerek tornyokkal ellátott, mocsaras árokkal övezett várat mutat. 1604-ben a Habsburgok kegyéből a Batthyány főurak kapták meg, és Kanizsa elvesztése után katonai jelentősége megnőtt. Az 1652-es tűzvész után gróf Batthyány Ádám elrendelte, hogy a rezidenciát mind a négy oldalon lakószárnyakkal építsék át, a tornyokat pedig magasítsák meg."
+  },
+  "sources": [
+    {
+      "title": "Körmendi várkastély – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/K%C3%B6rmendi_v%C3%A1rkast%C3%A9ly",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Egykori_Batthy%C3%A1ny-kast%C3%A9ly_%289005._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "author": "Balla Béla",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:Egykori_Batthy%C3%A1ny-kast%C3%A9ly_%289005._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "caption": {
+        "uk": "Колишній замок Баттяні (пам'ятка № 9005)",
+        "hu": "Egykori Batthyány-kastély (9005. számú műemlék)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ipolytarnoc",
+  "name": {
+    "uk": "Скам'янілості Іполітарноца (Ipolytarnóc)",
+    "hu": "Ipolytarnóci Ősmaradványok"
+  },
+  "type": "nature",
+  "coords": [
+    19.65,
+    48.2321
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "prehistory",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Світовідоме палеонтологічне місце на кордоні зі Словаччиною: «доісторичні Помпеї», поховані 20 мільйонів років тому вулканічною катастрофою; дослідження з 1836 року, під охороною з 1944 року.",
+    "hu": "Világhírű őslénytani lelőhely a szlovák határ mellett: egy 20 millió évvel ezelőtti vulkáni katasztrófa során betemetett „ősvilági Pompeii”; kutatása 1836-ban kezdődött, 1944 óta védett."
+  },
+  "description": {
+    "uk": "За статтею, природоохоронна територія скам'янілостей Іполітарноца є світовідомим палеонтологічним місцем, «доісторичними Помпеями», похованими 20 мільйонів років тому під час вулканічної катастрофи. Наукові дослідження почалися 1836 року, під охороною місце з 1944 року; 510-гектарна ділянка належить державі й перебуває під опікою дирекції Буккського національного парку, має Європейський диплом. Вона лежить приблизно за 120 км на північний схід від Будапешта, біля кордону, між словацьким Mučín і ноґрадським Іполітарноцом; прикордонний об'єкт.",
+    "hu": "A szócikk szerint az Ipolytarnóci Ősmaradványok Természetvédelmi Terület világhírű őslénytani lelőhely, egy 20 millió évvel ezelőtti vulkáni katasztrófa során betemetett „ősvilági Pompeii”. Tudományos kutatása 1836-ban kezdődött, 1944 óta védett; az 510 hektáros terület állami tulajdonban van, a Bükki Nemzeti Park Igazgatóság kezelésében áll, és Európa Diplomával rendelkezik. Budapesttől mintegy 120 km-re északkeletre, a határ mellett, a szlovákiai Mučín és a nógrádi Ipolytarnóc között fekszik; határ menti objektum."
+  },
+  "sources": [
+    {
+      "title": "Ipolytarnóci Ősmaradványok Természetvédelmi Terület – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Ipolytarn%C3%B3ci_%C5%90smaradv%C3%A1nyok_Term%C3%A9szetv%C3%A9delmi_Ter%C3%BClet",
+      "note": "Вступ."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Nature_Reserve_Ipolytarn%C3%B3c_Fossils_Aerial.jpg",
+      "author": "VargaA",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Nature_Reserve_Ipolytarn%C3%B3c_Fossils_Aerial.jpg",
+      "caption": {
+        "uk": "Іполітарноц з повітря",
+        "hu": "Az Ipolytarnóci Ősmaradványok légi fotón"
+      }
+    }
+  ]
+}

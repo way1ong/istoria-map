@@ -1,0 +1,46 @@
+{
+  "id": "hajduboszormeny",
+  "name": {
+    "uk": "Гайдубесермень (Hajdúböszörmény), «столиця гайдуків»",
+    "hu": "Hajdúböszörmény"
+  },
+  "type": "settlement",
+  "coords": [
+    21.51667,
+    47.66667
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "arpad",
+    "ottoman",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Найбільше місто Гайдушагу, яке звуть «столицею гайдуків»: перша згадка 1248 року як Nagyböszörmény, а 1609 року князь Gábor Báthory поселив тут гайдуків Бочкаї; до 1876 року центр Гайдуського округу. Точка: центр міста.",
+    "hu": "A Hajdúság legnagyobb települése, a „hajdúk fővárosa”: 1248-ban Nagyböszörmény néven említik először, 1609-ben Báthory Gábor itt telepítette le Bocskai hajdúit; 1876-ig a Hajdúkerület székhelye. A térképi pont a városközpont."
+  },
+  "description": {
+    "uk": "За статтею, назва Nagyböszörmény вперше трапляється 1248 року; слово böszörmény у давній угорській означало мусульман, імовірно болгаро-тюркського походження, і поселення могло бути торговельним осередком уже в добу Арпадів, але після монгольської навали занепало. Князь Трансильванії István Bocskai грамотою від 12 грудня 1605 року наділив землею й шляхетськими вольностями 9254 гайдуків, що виграли його війну 1604–1606 років; Бесермень у ній не згадано, гайдукам дали місто Kálló, де вони не змогли оселитися. 1609 року за угодою з Gábor Báthory гайдуки оселилися в Бесермені, створивши Гайдуський округ із шести гайдуцьких міст, центром якого був Гайдубесермень; округ існував до утворення комітату Гайду 1876 року. Координати відповідають центру міста.",
+    "hu": "A szócikk szerint a Nagyböszörmény név 1248-ban bukkan fel először; a böszörmény szó a régi magyar nyelvben muszlimokat, valószínűleg bolgár-török eredetűeket jelentett, és a település már az Árpád-korban kereskedelmi központ lehetett, de a tatárjárás után hanyatlásnak indult. Bocskai István erdélyi fejedelem 1605. december 12-i oklevelével földdel és nemesi szabadságjogokkal ruházta fel azt a 9254 hajdút, akik megnyerték 1604–1606-os háborúját; Böszörmény az oklevélben nem szerepel, a hajdúk Kálló városát kapták, ahol nem tudtak letelepedni. 1609-ben a Báthory Gáborral kötött megállapodás alapján a hajdúk Böszörményben telepedtek le, és létrehozták a hat hajdúvárosból álló Hajdúkerületet, amelynek központja Hajdúböszörmény volt; a kerület Hajdú vármegye 1876-os megalakulásáig állt fenn. A koordináták a városközpontnak felelnek meg."
+  },
+  "sources": [
+    {
+      "title": "Hajdúböszörmény – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Hajd%C3%BAb%C3%B6sz%C3%B6rm%C3%A9ny",
+      "note": "Розділ «Története» і розділ про герб."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Hajd%C3%BAker%C3%BClet_sz%C3%A9kh%C3%A1za.jpg",
+      "author": "tamashorvath.com",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Hajd%C3%BAker%C3%BClet_sz%C3%A9kh%C3%A1za.jpg",
+      "caption": {
+        "uk": "Будинок управи Гайдуського округу",
+        "hu": "A Hajdúkerület székháza"
+      }
+    }
+  ]
+}

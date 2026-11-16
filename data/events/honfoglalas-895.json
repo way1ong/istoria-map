@@ -1,0 +1,44 @@
+{
+  "id": "honfoglalas-895",
+  "title": {
+    "uk": "Гонфоглалаш: мадяри займають Карпатську улоговину",
+    "hu": "A honfoglalás"
+  },
+  "date": {
+    "from": "0895",
+    "to": "0902",
+    "precision": "approximate"
+  },
+  "period": "arpad",
+  "places": [
+    "opusztaszer-emlekpark"
+  ],
+  "summary": {
+    "uk": "Близько 895 року мадярські племена оселилися на рівнинах Карпатської улоговини, а до 902 року взяли під контроль усю її територію; держава синів моравського князя Святополка тоді вже розпадалася. Меморіал Гонфоглалашу в Ópusztaszer описано окремо.",
+    "hu": "A honfoglaló törzsek 895 táján telepedtek le a Kárpát-medence alföldi területein, 902-re pedig az egész medencét irányításuk alá vonták; I. Szvatopluk morva fejedelem fiainak birodalma ekkor már széthullóban volt. Az ópusztaszeri emlékparkot külön kártya írja le."
+  },
+  "description": {
+    "uk": "За статтею, Гонфоглалашем («зайняттям батьківщини») в угорській історії звуть процес, у якому мадяри заволоділи Карпатською улоговиною. Через велику часову відстань і мало писемних джерел його перебіг важко відтворити; дослідження свідчать, що мадяри зайняли улоговину одним етапом: племена близько 895 року оселилися на рівнинних землях, коли держава синів моравського князя Святополка I вже розпадалася, а до 902 року взяли під владу всю улоговину, хоча через худобу жили переважно на Алфельді, Мезефельді, Малому Алфельді й подібних рівнинах. Подія прив'язана до меморіального парку в Ópusztaszer, присвяченого Гонфоглалашу.",
+    "hu": "A szócikk szerint a magyar történelemben honfoglalásnak („a haza elfoglalásának”) nevezik azt a folyamatot, amelynek során a magyarok birtokba vették a Kárpát-medencét. A nagy időbeli távolság és a kevés írott forrás miatt lefolyását nehéz rekonstruálni; a kutatások szerint a magyarok egyetlen szakaszban foglalták el a medencét: a törzsek 895 körül telepedtek le a síkvidéki területeken, amikor I. Szvatopluk morva fejedelem fiainak állama már széthullóban volt, 902-re pedig az egész medencét uralmuk alá vonták, bár jószágaik miatt főként az Alföldön, a Mezőföldön, a Kisalföldön és hasonló síkságokon éltek. Az esemény az Ópusztaszeren lévő, a honfoglalásnak szentelt emlékparkhoz van kötve."
+  },
+  "sources": [
+    {
+      "title": "Honfoglalás – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Honfoglal%C3%A1s",
+      "note": "895, 902, перебіг."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Chronicon_Pictum_P021_A_magyarok_bej%C3%B6vetele.JPG",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Chronicon_Pictum_P021_A_magyarok_bej%C3%B6vetele.JPG",
+      "caption": {
+        "uk": "«Прихід мадярів» в Ілюстрованій хроніці (XIV ст.)",
+        "hu": "A magyarok bejövetele a Képes krónikában (14. század)"
+      }
+    }
+  ]
+}

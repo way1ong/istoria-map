@@ -1,0 +1,42 @@
+{
+  "id": "alsogod-teglaegeto",
+  "name": {
+    "uk": "Цегельна піч (Z.O.) в Alsógöd",
+    "hu": "Téglaégető („Z.O.”), Alsógöd"
+  },
+  "type": "other",
+  "coords": [
+    19.1301,
+    47.6859
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19",
+    "interwar-ww2"
+  ],
+  "summary": {
+    "uk": "Цегельна піч «Z.O.» з рядами сушарень між залізницею і Дунаєм на південний захід від станції Göd на аркуші 1904 року; стаття про Göd згадує завод цегли й цементної плитки близько 1900 року і школу Alsógöd 1921 року в будівлі колишньої цегельні.",
+    "hu": "„Z.O.” jelzésű téglaégető szárítósorokkal a vasút és a Duna között, a gödi állomástól délnyugatra, az 1904-es lapon; a Gödről szóló szócikk 1900 körüli tégla- és cementlapgyárat, valamint az egykori téglagyár épületében 1921-ben nyílt alsógödi iskolát említ."
+  },
+  "description": {
+    "uk": "На аркуші 1904 року на південний захід від станції Göd, між залізницею і Дунаєм, позначено цегельну піч «Z.O.» (Ziegelofen) з рядами сушарень. За статтею про Göd, близько 1900 року в громаді працював завод цегли й цементної плитки зі 100 робітниками; частина його будівель стоїть і сьогодні, у них на головній дорозі містяться ресторани й крамниці. Коли 1921 року Alsógöd став окремою громадою, школу відкрили в одній із будівель колишньої цегельні, а будинок Walch, нині загальноосвітня школа, був конторою цегельні, згодом віллою. Чи йдеться в статті саме про цю піч, не уточнено: на аркуші є ще одна цегельня, «Téglaház» біля Sződrákos. За зворотним геокодуванням позначка з мапи припадає на вулицю Török Ignác utca в Alsógöd. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1904-es lapon a gödi állomástól délnyugatra, a vasút és a Duna között „Z.O.” (Ziegelofen) jelzésű téglaégető látható szárítósorokkal. A Gödről szóló szócikk szerint 1900 körül tégla- és cementlapgyár üzemelt a településen 100 munkással; épületeinek egy része ma is áll, bennük a főúton vendéglők és boltok vannak. Amikor Alsógöd 1921-ben kisközséggé alakult, az egykori téglagyár egyik épületében iskolát nyitottak, a Walch-ház (ma általános iskola) pedig a téglagyár irodája, majd villa volt. Hogy a szócikk éppen erről a kemencéről szól-e, nincs pontosítva: a lapon van egy másik téglaház is Sződrákos mellett. A fordított geokódolás szerint a térképi jel az alsógödi Török Ignác utcára esik. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Підпис «Z.O.» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділи про історію й пам'ятки: завод цегли й цементної плитки близько 1900 року (100 робітників), школа 1921 року в будівлі колишньої цегельні, будинок Walch."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.68587&lon=19.13007",
+      "note": "Нині на цьому місці: вулиця Török Ignác utca, Alsógöd. Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

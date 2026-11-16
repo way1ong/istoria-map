@@ -1,0 +1,34 @@
+{
+  "id": "salgotarjani-sortuz-1956",
+  "title": {
+    "uk": "Розстріл у Шальґотар'яні",
+    "hu": "A salgótarjáni sortűz"
+  },
+  "date": {
+    "from": "1956-12-08",
+    "precision": "exact"
+  },
+  "period": "modern",
+  "places": [
+    "salgotarjan"
+  ],
+  "summary": {
+    "uk": "8 грудня 1956 року перед будинком комітатської ради в Шальґотар'яні, де близько 4000 людей вимагали звільнити лідерів робітничої ради Lajos Gál і Tamás Viczián, стріляли в натовп; це був найкривавіший розстріл після придушення революції, точне число жертв невідоме.",
+    "hu": "1956. december 8-án a salgótarjáni megyei tanács épülete előtt, ahol mintegy 4000-en Gál Lajos és Viczián Tamás munkástanácsi vezetők szabadon bocsátását követelték, sortüzet adtak le; ez volt a forradalom leverése utáni leszámolások legvéresebb sortüze, az áldozatok száma máig nem ismert."
+  },
+  "description": {
+    "uk": "За статтею, розстріл у Шальґотар'яні був найкривавішим серед розправ після придушення революції 1956 року. 8 грудня 1956 року близько 4000 людей зібралися перед будинком комітатської ради, вимагаючи звільнити двох лідерів робітничої ради, Lajos Gál і Tamás Viczián, і по них відкрили вогонь. Повне число жертв досі невідоме. Точка події відповідає координатам статті біля будинку ради.",
+    "hu": "A szócikk szerint a salgótarjáni sortűz volt a legvéresebb az 1956-os forradalom leverése utáni leszámolások közül. 1956. december 8-án mintegy 4000 ember gyűlt össze a megyei tanács épülete előtt, két munkástanácsi vezető, Gál Lajos és Viczián Tamás szabadon bocsátását követelve, és tüzet nyitottak rájuk. Az áldozatok teljes száma máig ismeretlen. Az esemény pontja a szócikk koordinátáinak felel meg, a tanácsház mellett."
+  },
+  "sources": [
+    {
+      "title": "Salgótarjáni sortűz – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Salg%C3%B3tarj%C3%A1ni_sort%C5%B1z",
+      "note": "Дата, обставини, жертви, координати."
+    }
+  ],
+  "coords": [
+    19.8075,
+    48.10417
+  ]
+}

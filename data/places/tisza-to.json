@@ -1,0 +1,49 @@
+{
+  "id": "tisza-to",
+  "name": {
+    "uk": "Озеро Тиса (Tisza-tó)",
+    "hu": "Tisza-tó"
+  },
+  "type": "nature",
+  "coords": [
+    20.63056,
+    47.56389
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "Друге за величиною озеро Угорщини і найбільше штучне, на Тисі на півночі Алфельду; до 1988 року Кішкерейське водосховище, створене для рівномірного стоку гідроелектростанції в Кішкере. Точка: умовний центр зі статті.",
+    "hu": "Magyarország második legnagyobb és legnagyobb mesterséges tava a Tiszán, az Alföld északi részén; 1988-ig Kiskörei víztározó, a kiskörei vízerőmű egyenletes vízhozama miatt hozták létre. A térképi pont a cikk szerinti jelképes középpont."
+  },
+  "description": {
+    "uk": "За статтею, озеро Тиса до 1988 року звалося Кішкерейським водосховищем і є другим за величиною озером Угорщини та найбільшим штучним. Найважливішими причинами його створення були рівномірний стік, потрібний для Кішкерейської гідроелектростанції, і високий рівень води для охолодження Тиської ТЕС, що будувалася тоді ж у Тисауйвароші. За статтею про Кішкере, гідровузол, переданий 1973 року, докорінно змінив життя Середнього Потисся й Алфельду (окрема подія).",
+    "hu": "A szócikk szerint a Tisza-tó 1988-ig a Kiskörei-víztározó nevet viselte, és Magyarország második legnagyobb tava, valamint legnagyobb mesterséges tava. Létrehozásának legfontosabb okai a Kiskörei Vízerőműhöz szükséges egyenletes vízhozam, valamint az akkoriban Tiszaújvárosban épülő Tiszai Hőerőmű hűtéséhez szükséges magas vízszint voltak. A Kisköréről szóló szócikk szerint az 1973-ban átadott vízlépcső gyökeresen megváltoztatta a Közép-Tisza-vidék és az Alföld életét (külön esemény)."
+  },
+  "sources": [
+    {
+      "title": "Tisza-tó – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tisza-t%C3%B3",
+      "note": "Вступ; стаття «Kisköre» про гідровузол."
+    },
+    {
+      "title": "Kisköre – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kisk%C3%B6re",
+      "note": "Гідровузол 1973 року."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Tisza-t%C3%B31.JPG",
+      "author": "Tambo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Tisza-t%C3%B31.JPG",
+      "caption": {
+        "uk": "Озеро Тиса",
+        "hu": "A Tisza-tó"
+      }
+    }
+  ]
+}

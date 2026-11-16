@@ -1,0 +1,51 @@
+{
+  "id": "kehida-deak-kuria",
+  "name": {
+    "uk": "Садиба Деака в Кегідакуштані (Deák-kúria)",
+    "hu": "Deák-kúria, Kehidakustány"
+  },
+  "type": "monument",
+  "coords": [
+    17.09293,
+    46.84492
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Барокова садиба 1740-х років у селі Kehidakustány в Залі, у 1808–1854 роках дім Ференца Деака, «мудреця вітчизни»; нині музей.",
+    "hu": "Az 1740-es években épült barokk kúria a zalai Kehidakustányban, 1808 és 1854 között Deák Ferenc, „a haza bölcse” otthona; ma múzeum."
+  },
+  "description": {
+    "uk": "За статтею, садибу в 1740-х роках звела родина Hertelendy з використанням частин давніших будівель; єдина донька віцеішпана Gábor Hertelendy, Anna, вийшла заміж за Gábor Deák, і 1804 року маєток фактично перейшов до кегідайських Деаків. У 1808–1854 роках це був дім Ференца Деака, «мудреця вітчизни», який 1854 року продав садибу графові Ödön Széchenyi; згодом нею володіли Baronyi, а наприкінці століття Károlyi, з 1925 року вона державна, 2003 року її відновили. На місці будинку виявлено сліди двору початку XVI століття, склепінчаста кімната північного крила походить з XVII століття; у музеї діє постійна виставка до 200-річчя Деака, у дворі стоїть його погруддя роботи György Zala (1928). Координати взято з OpenStreetMap.",
+    "hu": "A szócikk szerint a kúriát az 1740-es években a Hertelendy család építtette korábbi épületek részeinek felhasználásával; Hertelendy Gábor alispán egyetlen lánya, Anna, Deák Gáborhoz ment feleségül, és 1804-ben a birtok ténylegesen a kehidai Deákokra szállt. 1808 és 1854 között ez volt Deák Ferencnek, „a haza bölcsének” az otthona, aki 1854-ben eladta a kúriát gróf Széchenyi Ödönnek; később a Baronyi család, a század végén pedig a Károlyi család birtokolta, 1925 óta állami tulajdonban van, 2003-ban helyreállították. Az épület helyén XVI. század eleji udvarház nyomai kerültek elő, az északi szárny boltozatos szobája XVII. századi; a múzeumban Deák 200. évfordulójára készült állandó kiállítás látható, az udvaron Zala György által készített mellszobra áll (1928). A koordináták az OpenStreetMapből származnak."
+  },
+  "sources": [
+    {
+      "title": "Deák-kúria – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/De%C3%A1k-k%C3%BAria",
+      "note": "Вступ і розділ «Története»."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Deák-kúria, Kehidakustány",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=De%C3%A1k-k%C3%BAria%2C%20Kehidakust%C3%A1ny",
+      "note": "Координати 46.84492, 17.09293 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/De%C3%A1k-k%C3%BAria_%28Kehida%29.jpg",
+      "author": "Professor Oogway",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:De%C3%A1k-k%C3%BAria_%28Kehida%29.jpg",
+      "caption": {
+        "uk": "Садиба Деака в Кегідакуштані",
+        "hu": "A kehidai Deák-kúria"
+      }
+    }
+  ]
+}

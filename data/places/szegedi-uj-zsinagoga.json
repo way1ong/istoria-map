@@ -1,0 +1,46 @@
+{
+  "id": "szegedi-uj-zsinagoga",
+  "name": {
+    "uk": "Нова синагога в Сеґеді (Új zsinagóga)",
+    "hu": "Új zsinagóga, Szeged"
+  },
+  "type": "church",
+  "coords": [
+    20.14265,
+    46.2539
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Синагога, збудована 1900–1902 років за проєктом Lipót Baumhorn, друга за величиною в Угорщині й четверта в Європі; 48 м завдовжки й 48,6 м заввишки, зі сталевим каркасом, 1340 місць.",
+    "hu": "Az 1900 és 1902 között Baumhorn Lipót tervei szerint épült zsinagóga, Magyarország második és Európa negyedik legnagyobb zsinagógája; 48 m hosszú, 48,6 m magas, acél tartószerkezetű, 1340 ülőhellyel."
+  },
+  "description": {
+    "uk": "За статтею, наприкінці XIX століття єврейська громада переросла свою стару синагогу, і 1900 року отримала дозвіл на нову; її збудували 1900–1902 років за проєктом Lipót Baumhorn, для якого з 22 спроєктованих синагог ця вважається найзначнішою й найкрасивішою. Будівля завдовжки 48 м, завширшки 35 м і заввишки 48,6 м має внутрішню висоту 32 м і несучий каркас лише зі сталі; у стилі еклектики поєднано сецесію, мавританські, барокові, готичні й романські елементи. Великий вплив на задум мав головний рабин Immánuel Lőw (1854–1944). 2017 року синагогу відреставрували; завдяки акустиці й 1340 місцям тут регулярно відбуваються концерти.",
+    "hu": "A szócikk szerint a XIX. század végén a zsidó hitközség kinőtte régi zsinagógáját, és 1900-ban engedélyt kapott egy újra; 1900 és 1902 között épült fel Baumhorn Lipót tervei szerint, akinek 22 általa tervezett zsinagógája közül ezt tartják a legjelentősebbnek és a legszebbnek. A 48 m hosszú, 35 m széles és 48,6 m magas épület belső magassága 32 m, tartószerkezete kizárólag acélból készült; eklektikus stílusa a szecessziót mór, barokk, gótikus és román elemekkel ötvözi. Az elképzelésre nagy hatással volt Lőw Immánuel (1854–1944) főrabbi. 2017-ben a zsinagógát felújították; akusztikájának és 1340 férőhelyének köszönhetően rendszeresen tartanak itt koncerteket."
+  },
+  "sources": [
+    {
+      "title": "Új zsinagóga (Szeged) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/%C3%9Aj_zsinag%C3%B3ga_%28Szeged%29",
+      "note": "Вступ і розділ про історію."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Szeged_synagogue_SF.jpg",
+      "author": "Somorjai Ferenc",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szeged_synagogue_SF.jpg",
+      "caption": {
+        "uk": "Нова синагога в Сеґеді",
+        "hu": "A szegedi Új zsinagóga"
+      }
+    }
+  ]
+}

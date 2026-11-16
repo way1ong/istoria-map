@@ -6,8 +6,8 @@
   },
   "type": "church",
   "coords": [
-    19.1384,
-    47.6999
+    19.1375,
+    47.6992
   ],
   "coordsPrecision": "approximate",
   "periods": [
@@ -28,7 +28,7 @@
     {
       "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
       "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
-      "note": "Підпис «Templom h.» на аркуші."
+      "note": "Підпис «Templom h.» на аркуші. Координати 16.11.2026 зсунуто на поправку старої геодезичної основи (див. опис мапи), точність близько 50 м."
     },
     {
       "title": "Göd – Wikipédia (hu)",

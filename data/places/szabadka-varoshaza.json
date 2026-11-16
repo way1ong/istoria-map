@@ -1,0 +1,51 @@
+{
+  "id": "szabadka-varoshaza",
+  "name": {
+    "uk": "Ратуша Суботиці (Szabadka), Сербія",
+    "hu": "Szabadkai városháza (Subotica)"
+  },
+  "type": "monument",
+  "coords": [
+    19.6644,
+    46.09969
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Сецесійна ратуша Суботиці в Сербії, «гідна парламенту», збудована 1908–1910 років за проєктом будапештських архітекторів Marcell Komor і Dezső Jakab; прикордонний об'єкт за 10 км від угорського кордону.",
+    "hu": "Szabadka parlamentnek is beillő szecessziós városháza, amelyet 1908 és 1910 között Komor Marcell és Jakab Dezső budapesti építészek tervei szerint építettek; határ menti emlék."
+  },
+  "description": {
+    "uk": "За статтею про місто, найпредставницькішим будинком Суботиці є сецесійна ратуша, за розмірами гідна навіть парламенту; її за проєктом будапештських архітекторів Marcell Komor і Dezső Jakab лише за два роки, 1908–1910, звела місцева фірма підрядників Ferenc Nagy і Lukács Kladek. Ті самі архітектори спроєктували й синагогу міста, також в угорській сецесії. Координати ратуші взято з OpenStreetMap.",
+    "hu": "A városról szóló szócikk szerint Szabadka legreprezentatívabb épülete a méreteinél fogva akár parlamentnek is beillő szecessziós városháza; Komor Marcell és Jakab Dezső budapesti építészek tervei alapján mindössze két év alatt, 1908–1910-ben építette fel Nagy Ferenc és Kladek Lukács helyi építési vállalkozó cége. Ugyanezek az építészek tervezték a város zsinagógáját is, szintén magyar szecessziós stílusban. A városháza koordinátái az OpenStreetMapből származnak."
+  },
+  "sources": [
+    {
+      "title": "Szabadka – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szabadka",
+      "note": "Розділ «Nevezetességei»."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Gradska kuća, Subotica",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Gradska%20ku%C4%87a%2C%20Subotica",
+      "note": "Координати 46.09969, 19.6644 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Szabadka_montage.jpg",
+      "author": "SNRTZ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szabadka_montage.jpg",
+      "caption": {
+        "uk": "Суботиця, фотомонтаж",
+        "hu": "Szabadka, montázs"
+      }
+    }
+  ]
+}

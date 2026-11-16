@@ -1,0 +1,48 @@
+{
+  "id": "kanizsa-eleste-1600",
+  "title": {
+    "uk": "Канижа здається османам",
+    "hu": "Kanizsa eleste"
+  },
+  "date": {
+    "from": "1600-10-22",
+    "precision": "exact"
+  },
+  "period": "ottoman",
+  "places": [
+    "nagykanizsa-var"
+  ],
+  "summary": {
+    "uk": "Після восьмитижневої облоги, яку з кінця серпня 1600 року вів великий візир Ібрагім, тисячний гарнізон Канижі під командою Georg Paradeiser 22 жовтня здав фортецю за умови вільного виходу; Канижа стала центром османського вілаєту.",
+    "hu": "Az Ibrahim nagyvezír által augusztus végén megkezdett nyolchetes ostrom után a kanizsai őrség Georg Paradeiser vezetésével 1600. október 22-én szabad elvonulás fejében átadta a várat; Kanizsa török vilajet-központ lett."
+  },
+  "description": {
+    "uk": "За статтею про П'ятнадцятирічну війну, 1600 рік склався для християнських сил невдало: навесні помер полководець Miklós Pálffy, а на початку червня збунтувалися неоплачені валлонські найманці в Папі. Османські головні сили під проводом великого візира Ібрагіма наприкінці серпня почали облогу найважливішої південної прикордонної фортеці Канижі, яку обороняв лише тисячний гарнізон капітана Georg Paradeiser; 13–20-тисячне військо герцога Меркера, вислане на виручку, не наважилося на вирішальну битву. Після восьми тижнів облоги 22 жовтня гарнізон за умови вільного виходу здав фортецю, а Paradeiser через рік стратили. За статтею про місто, Канижа стала центром вілаєту, а звільнилася лише 13 квітня 1690 року.",
+    "hu": "A tizenöt éves háborúról szóló szócikk szerint az 1600-as év kedvezőtlenül alakult a keresztény erők számára: tavasszal meghalt Pálffy Miklós hadvezér, június elején pedig Pápán fellázadtak a fizetetlen vallon zsoldosok. Az oszmán fősereg Ibrahim nagyvezír vezetésével augusztus végén megkezdte a legfontosabb déli végvár, Kanizsa ostromát, amelyet Georg Paradeiser kapitány mindössze ezerfős őrsége védett; Mercœur herceg 13–20 ezres serege, amelyet a vár felmentésére küldtek, nem merte vállalni a döntő ütközetet. Nyolchetes ostrom után, október 22-én az őrség szabad elvonulás fejében feladta a várat, Paradeisert pedig egy évvel később kivégezték. A városról szóló szócikk szerint Kanizsa vilajetközpont lett, és csak 1690. április 13-án szabadult fel."
+  },
+  "sources": [
+    {
+      "title": "Tizenöt éves háború – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tizen%C3%B6t_%C3%A9ves_h%C3%A1bor%C3%BA",
+      "note": "Розділ «1600 – Kanizsa»."
+    },
+    {
+      "title": "Nagykanizsa – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagykanizsa",
+      "note": "Вілаєт, 1690."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/H._Aachen_Alleg%C3%B3ria.jpg",
+      "author": "Hans von Aachen",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:H._Aachen_Alleg%C3%B3ria.jpg",
+      "caption": {
+        "uk": "Алегорія війни з османами, Hans von Aachen",
+        "hu": "Hans von Aachen allegóriája a török háborúról"
+      }
+    }
+  ]
+}

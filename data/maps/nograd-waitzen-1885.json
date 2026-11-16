@@ -6,9 +6,9 @@
   "license": "CC0 1.0 (скан NYPL), оригінал у суспільному надбанні",
   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
   "attribution": "Spezialkarte der österreichisch-ungarischen Monarchie, 14:XX. New York Public Library, Lionel Pincus and Princess Firyal Map Division (CC0), через Wikimedia Commons",
-  "source": { "title": "Wikimedia Commons: File:Nograd und Waitzen. NYPL1226564.tiff", "url": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff", "note": "Аркуш 14:XX; на полях надруковано 1885 і «Teilweise berichtigt bis 1. IV. 1912». Межі за підписами сітки на аркуші: 36°30′–37° сх. від Ферро, 47°45′–48° пн. ш. Довготи на аркуші подані від меридіана Ферро; переведено в Гринвіч за зсувом 17°40′ (значення, прийняте для австрійських геодезичних мереж; для угорських мереж уживали 17°39′46″, різниця ~0,3 км). Скан вирівняно по чотирьох кутах внутрішньої рамки сітки з точністю ~2 px, тобто ±50–100 м." },
+  "source": { "title": "Wikimedia Commons: File:Nograd und Waitzen. NYPL1226564.tiff", "url": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff", "note": "Аркуш 14:XX; на полях надруковано 1885 і «Teilweise berichtigt bis 1. IV. 1912». Межі за підписами сітки на аркуші: 36°30′–37° сх. від Ферро, 47°45′–48° пн. ш. Довготи на аркуші подані від меридіана Ферро; переведено в Гринвіч за зсувом 17°40′ (значення, прийняте для австрійських геодезичних мереж; для угорських мереж уживали 17°39′46″, різниця ~0,3 км). Скан узято з мініатюри Commons шириною 3840 px (оригінальний TIFF сервер не віддає) і вирівняно по чотирьох кутах внутрішньої рамки сітки з точністю ~1 px; вирівняне зображення 2768 × 2072 px. Додатково кути зсунуто на 0,00098° на захід і 0,00075° на південь: стільки в середньому становить зсув позначок восьми церков у семи селах (Csomád, Sződ, Dunakeszi, Fót, Kosd, Rád, Vácduka) відносно їхніх координат в OpenStreetMap, тобто різниця старої геодезичної основи; після поправки розбіжність 30–40 м." },
   "type": "image",
   "url": "maps/nograd-waitzen-1885.jpg",
-  "coordinates": [[18.833333, 48.0], [19.333333, 48.0], [19.333333, 47.75], [18.833333, 47.75]],
+  "coordinates": [[18.832358, 47.999252], [19.332358, 47.999252], [19.332358, 47.749252], [18.832358, 47.749252]],
   "periods": ["long-19", "interwar-ww2"]
 }

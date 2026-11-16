@@ -1,0 +1,44 @@
+{
+  "id": "gemenc",
+  "name": {
+    "uk": "Заплавний ліс Ґеменц (Gemenc)",
+    "hu": "Gemenc"
+  },
+  "type": "nature",
+  "coords": [
+    18.8275,
+    46.2
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "Великий заплавний ліс уздовж Дунаю в Шаркезі, частина національного парку Дунай–Драва; під охороною з 1977 року, близько 180 км² його регулярно заливає повінь. Точка: умовний центр зі статті.",
+    "hu": "Nagy kiterjedésű ártéri erdő a Duna mentén, a Sárközben, a Duna–Dráva Nemzeti Park része; 1977 óta védett, mintegy 180 négyzetkilométerét rendszeresen elönti az árvíz. A térképi pont a cikk szerinti jelképes középpont."
+  },
+  "description": {
+    "uk": "За статтею, Ґеменц, або Ґеменцький ліс, є великим заплавним лісом під охороною природи вздовж Дунаю в південній частині центральної Угорщини; адміністративно він переважно в комітаті Толна, менше в Бач-Кішкуні, географічно належить до краю Sárköz. Він входить до національного парку Дунай–Драва, а лісовим і мисливським господарством опікується Gemenc Zrt. Під охороною з 1977 року; близько 180 км² його території регулярно заливає повінь, що стаття називає унікальним не лише для Угорщини, а й для Європи. Про його дику природу розповідає угорський фільм «Gyöngyvirágtól lombhullásig» (1953).",
+    "hu": "A szócikk szerint a Gemenc vagy Gemenci-erdő nagy, természetvédelmi oltalom alatt álló ártéri erdő a Duna mentén, Magyarország középső részének déli területén; közigazgatásilag túlnyomórészt Tolna, kisebb részben Bács-Kiskun vármegyéhez tartozik, földrajzilag a Sárköz tájhoz. A Duna–Dráva Nemzeti Park része, erdő- és vadgazdálkodását pedig a Gemenc Zrt. látja el. 1977 óta áll védelem alatt; területéből mintegy 180 km²-t rendszeresen elönt az árvíz, amit a szócikk nemcsak Magyarországon, hanem Európában is egyedülállónak nevez. Vadvilágáról szól a „Gyöngyvirágtól lombhullásig” című magyar film (1953)."
+  },
+  "sources": [
+    {
+      "title": "Gemenc – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Gemenc",
+      "note": "Вступ."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Gemenci_t%C3%A1j.jpg",
+      "author": "Pear Blossom",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Gemenci_t%C3%A1j.jpg",
+      "caption": {
+        "uk": "Краєвид Ґеменца",
+        "hu": "Gemenci táj"
+      }
+    }
+  ]
+}

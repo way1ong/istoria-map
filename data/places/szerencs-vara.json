@@ -1,0 +1,45 @@
+{
+  "id": "szerencs-vara",
+  "name": {
+    "uk": "Замок Ракоці в Серенчі (Szerencs vára)",
+    "hu": "Szerencs vára"
+  },
+  "type": "castle",
+  "coords": [
+    21.20222,
+    48.16139
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Наймолодший замок комітату Боршод-Абауй-Земплен, створений наприкінці XVI століття з укріпленого бенедиктинського абатства: 1556 року його зайняв Ferenc Németi, згодом Zsigmond Rákóczi перебудував його в ренесансному стилі.",
+    "hu": "Borsod-Abaúj-Zemplén megye legfiatalabb vára, a 16. század végén alakult ki a megerősített bencés apátságból: 1556-ban Németi Ferenc foglalta el, később Rákóczi Zsigmond reneszánsz stílusban átépíttette."
+  },
+  "description": {
+    "uk": "За статтею, у XIII столітті околиця Серенча, «воріт Гедьаї», належала роду Bogát-Radvány, який заснував бенедиктинське абатство на пагорбі серед вологих земель; наприкінці XV століття містечко належало родині Szapolyai. 1556 року токайський каштелян Ferenc Németi, прихильник Трансильванії, збройно зайняв абатство й зробив його опорою проти Габсбурґів, додавши зовнішній замок з палісадом для легкої кінноти. 1565 року, після взяття Токая, цісарський генерал Schwendi рушив на Серенч, і гарнізон утік. Рудольф Габсбурґ заклав маєток за 9160 форинтів капітанові Сендре Zsigmond Rákóczi, який перебудував замок у ренесансному стилі: зовнішній замок дістав багатокутні бастіони, внутрішній став замкненим блоком з подвір'ям.",
+    "hu": "A szócikk szerint a XIII. században Szerencs környéke, a „Hegyalja kapuja”, a Bogát-Radvány nemzetség birtoka volt, amely a vizenyős területek közötti dombon bencés apátságot alapított; a XV. század végén a mezőváros a Szapolyai család birtokában volt. 1556-ban az Erdély-párti Németi Ferenc tokaji várnagy fegyveres erővel elfoglalta az apátságot, és a Habsburgok elleni támaszponttá tette, palánkos külsővárat építve hozzá a könnyűlovasság számára. 1565-ben, Tokaj bevétele után Schwendi császári tábornok Szerencs ellen vonult, és az őrség elmenekült. Habsburg Rudolf 9160 forintért elzálogosította a birtokot Rákóczi Zsigmond szendrői kapitánynak, aki reneszánsz stílusban átépítette a várat: a külső vár sokszögű bástyákat kapott, a belső vár pedig zárt, udvaros tömbbé vált."
+  },
+  "sources": [
+    {
+      "title": "Szerencs vára – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szerencs_v%C3%A1ra",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Szerencs%2C_a_v%C3%A1r_l%C3%A9gi_fot%C3%B3n.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szerencs%2C_a_v%C3%A1r_l%C3%A9gi_fot%C3%B3n.jpg",
+      "caption": {
+        "uk": "Замок у Серенчі з повітря",
+        "hu": "Szerencs vára légi fotón"
+      }
+    }
+  ]
+}

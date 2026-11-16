@@ -1,0 +1,44 @@
+{
+  "id": "munkacs-ostroma-1685",
+  "title": {
+    "uk": "Облога Мукачева і оборона Ілони Зріні",
+    "hu": "Munkács ostroma"
+  },
+  "date": {
+    "from": "1685",
+    "to": "1688-01-17",
+    "precision": "exact"
+  },
+  "period": "ottoman",
+  "places": [
+    "munkacsi-var"
+  ],
+  "summary": {
+    "uk": "У 1685–1687 роках оборонці Мукачівського замку під проводом Ilona Zrínyi й András Radics відбили кілька штурмів цісарських військ, але 17 січня 1688 року, коли становище стало безнадійним, здали замок на вигідних умовах.",
+    "hu": "1685 és 1687 között a munkácsi vár védői Zrínyi Ilona és Radics András vezetésével több császári rohamot visszavertek, de 1688. január 17-én, reménytelen helyzetükben, kedvező feltételek mellett átadták a várat."
+  },
+  "description": {
+    "uk": "За статтею, облога Мукачівського замку тривала з 1685 року; оборонці героїчно відбили кілька штурмів цісарських військ, якими командували Aeneas Sylvius von Caprara й Antonio Caraffa. Обороною проводили Ilona Zrínyi й András Radics. Зрештою, коли становище стало безнадійним і бої втратили сенс, 17 січня 1688 року замок на вигідних умовах здали цісарським військам. Замок описано в окремій картці.",
+    "hu": "A szócikk szerint a munkácsi vár ostroma 1685-től tartott; a védők hősiesen visszaverték az Aeneas Sylvius von Caprara és Antonio Caraffa vezette császári csapatok több rohamát. A védelmet Zrínyi Ilona és Radics András irányította. Végül, amikor a helyzet reménytelenné vált, és a harcok értelmüket vesztették, 1688. január 17-én a várat kedvező feltételekkel átadták a császári csapatoknak. A várat külön kártya ismerteti."
+  },
+  "sources": [
+    {
+      "title": "Munkács ostroma – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Munk%C3%A1cs_ostroma",
+      "note": "Дати, командувачі, наслідок."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Munk%C3%A1cs_v%C3%A1ra_Das_ehmals_gedr%C3%BCckte%2C_vonm_T%C3%BCrken_ber%C3%BCckte%2C_nun_trefflich_erquickte_K%C3%B6nigreich_Hungarn._Frankfurt_u._Leipzig_1688.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Munk%C3%A1cs_v%C3%A1ra_Das_ehmals_gedr%C3%BCckte%2C_vonm_T%C3%BCrken_ber%C3%BCckte%2C_nun_trefflich_erquickte_K%C3%B6nigreich_Hungarn._Frankfurt_u._Leipzig_1688.jpg",
+      "caption": {
+        "uk": "Мукачівський замок на гравюрі 1688 року",
+        "hu": "A munkácsi vár egy 1688-as metszeten"
+      }
+    }
+  ]
+}

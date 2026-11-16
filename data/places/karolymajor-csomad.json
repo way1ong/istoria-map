@@ -1,0 +1,46 @@
+{
+  "id": "karolymajor-csomad",
+  "name": {
+    "uk": "Хутір Károlymajor біля Csomád",
+    "hu": "Károlymajor, Csomád"
+  },
+  "type": "farmstead",
+  "coords": [
+    19.2285,
+    47.6428
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Хутір на південь від Csomád, підписаний «Károlymajor» на аркуші 1904 року; у сучасних даних OpenStreetMap ця назва не трапляється, місце нині в частині Csomád під назвою Lestyina.",
+    "hu": "Major Csomádtól délre, az 1904-es lapon „Károlymajor” felirattal; a név a mai OpenStreetMap-adatokban nem szerepel, a hely ma Csomád Lestyina nevű részén van."
+  },
+  "description": {
+    "uk": "На аркуші 1904 року на південь від Csomád позначено кілька будівель з підписом «Károlymajor». За статтею про Csomád, 1808 року село разом із фотським маєтком перейшло до родини Károlyi; чи пов'язана назва хутора з цією родиною, джерела не кажуть. Пошук назви в сучасних даних OpenStreetMap результатів не дав; за зворотним геокодуванням місце лежить біля вулиці Lestyina utca в частині Csomád, що зветься Lestyina. Чи збереглися будівлі, з цих даних не видно, тому позначки «зник» картка не має. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1904-es lapon Csomádtól délre „Károlymajor” feliratú épületek láthatók. A Csomádról szóló szócikk szerint a falu 1808-ban a fóti uradalommal együtt a Károlyi családhoz került; hogy a major neve összefügg-e ezzel a családdal, a források nem mondják meg. A név a mai OpenStreetMap-adatokban nem szerepel; a fordított geokódolás szerint a hely Csomád Lestyina nevű részén, a Lestyina utca mellett van. Hogy az épületek megmaradtak-e, ezekből az adatokból nem látszik, ezért a kártya nem kapott „eltűnt” jelölést. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Підпис «Károlymajor» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Csomád – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Csom%C3%A1d",
+      "note": "Розділ про історію: 1808 року село з фотським маєтком перейшло до родини Károlyi."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): пошук «Károlymajor»",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=8&bounded=1&viewbox=19.0,47.85,19.35,47.55&q=K%C3%A1rolymajor",
+      "note": "Пошук у межах околиць Göd–Vác 16.11.2026 результатів не дав. Дані © учасники OpenStreetMap, ODbL."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.64278&lon=19.22847",
+      "note": "Нині на цьому місці: польова дорога біля Lestyina utca, Lestyina (Csomád). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

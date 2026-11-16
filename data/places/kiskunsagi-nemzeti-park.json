@@ -1,0 +1,44 @@
+{
+  "id": "kiskunsagi-nemzeti-park",
+  "name": {
+    "uk": "Національний парк Кішкуншаг (Kiskunság)",
+    "hu": "Kiskunsági Nemzeti Park"
+  },
+  "type": "nature",
+  "coords": [
+    19.4,
+    46.88333
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "Другий національний парк Угорщини, створений 1 січня 1975 року між Дунаєм і Тисою; дві третини його 1979 року ЮНЕСКО визнало біосферним заповідником. Точка: умовний центр парку зі статті.",
+    "hu": "Magyarország második nemzeti parkja, 1975. január 1-jén jött létre a Duna–Tisza közén; területének kétharmadát az UNESCO 1979-ben bioszféra-rezervátummá nyilvánította. A térképi pont a cikk szerinti jelképes középpont."
+  },
+  "description": {
+    "uk": "За статтею, національний парк Кішкуншаг створено 1 січня 1975 року як другий у країні; як і Гортобадь, він зберігає пам'ять багатовікового співжиття людини й природи. До нього належать солончакові пусти й озера долини Дунаю, піщані дюни, пусти й болота межиріччя Дунаю й Тиси, старики й заплавні ліси нижньої Тиси, піщані горби Бачки та лесові береги долини Дунаю. Дві третини території 1979 року ЮНЕСКО за програмою «Людина і біосфера» оголосило біосферним заповідником, а водно-болотні угіддя охороняє Рамсарська конвенція; дирекція парку працює в Кечкеметі. Парк складається з окремих ділянок, тому позначка на мапі умовна.",
+    "hu": "A szócikk szerint a Kiskunsági Nemzeti Parkot 1975. január 1-jén hozták létre az ország második nemzeti parkjaként; a Hortobágyhoz hasonlóan az ember és a természet évszázados együttélésének emlékét őrzi. Hozzá tartoznak a Duna-völgy szikes pusztái és tavai, a Duna–Tisza köze homokbuckái, pusztái és mocsarai, az Alsó-Tisza holtágai és ártéri erdei, a Bácska homokdombjai és a Duna-völgy löszpartjai. Területének kétharmadát 1979-ben az UNESCO az „Ember és bioszféra” program keretében bioszféra-rezervátummá nyilvánította, vizes élőhelyeit pedig a Ramsari egyezmény védi; a park igazgatósága Kecskeméten működik. A park különálló területekből áll, ezért a térképi jelölés jelképes."
+  },
+  "sources": [
+    {
+      "title": "Kiskunsági Nemzeti Park – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kiskuns%C3%A1gi_Nemzeti_Park",
+      "note": "Вступ: 1975, ЮНЕСКО 1979, Рамсар."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Tiszaalp%C3%A1r_045.jpg",
+      "author": "Lily15",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Tiszaalp%C3%A1r_045.jpg",
+      "caption": {
+        "uk": "Околиці Тисаалпара (Tiszaalpár)",
+        "hu": "Tiszaalpár környéke"
+      }
+    }
+  ]
+}

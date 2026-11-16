@@ -1,0 +1,37 @@
+{
+  "id": "vac-keleti-csarda",
+  "name": {
+    "uk": "Корчма на дорозі на схід від Вацу",
+    "hu": "Csárda a Vácról keletre vezető út mellett"
+  },
+  "type": "inn",
+  "coords": [
+    19.2067,
+    47.7677
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Корчма з цегельною піччю при дорозі, що веде з Вацу на схід, біля долини Tordárka, підписана «Csárda» на аркуші 1885 року; нині місце біля дороги 2106 у межах Вацу, неподалік хутора Kláraháza.",
+    "hu": "Csárda téglaégetővel a Vácról kelet felé vezető út mellett, a Tordárka völgyénél, az 1885-ös lapon „Csárda” felirattal; helye ma a 2106-os út mellett van Vác határában, Kláraháza közelében."
+  },
+  "description": {
+    "uk": "На аркуші 1885 року приблизно за 6 км на схід від центру Вацу, там, де дорога перетинає долину, підписану «Tordárka», стоїть будівля з підписом «Csárda», а поруч «Z.O.» (Ziegelofen, цегельна піч). Назви корчми аркуш не подає. За зворотним геокодуванням місце нині лежить біля дороги 2106 у межах Вацу; на південний захід від нього розташований хутір Kláraháza (окрема картка). Слідів корчми в сучасних даних немає. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1885-ös lapon Vác központjától mintegy 6 km-re keletre, ahol az út keresztezi a „Tordárka” feliratú völgyet, „Csárda” feliratú épület áll, mellette „Z.O.” (Ziegelofen, téglaégető kemence). A csárda nevét a lap nem adja meg. A fordított geokódolás szerint a hely ma a 2106-os út mellett van Vác határában; tőle délnyugatra fekszik Kláraháza (külön kártya). A csárdának a mai adatokban nincs nyoma. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 14:XX Nógrád und Waitzen, 1885, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
+      "note": "Підпис «Csárda» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.76767&lon=19.20673",
+      "note": "Нині на цьому місці: дорога 2106 у межах Вацу, місцевість Kláraháza. Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

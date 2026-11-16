@@ -1,0 +1,42 @@
+{
+  "id": "vac-kaptalan-teglahaz",
+  "name": {
+    "uk": "Капітульна цегельня (Káptalan téglaháza) у Ваці",
+    "hu": "Káptalan téglaháza, Vác"
+  },
+  "type": "other",
+  "coords": [
+    19.1269,
+    47.8035
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Цегельня з піччю на північній околиці Вацу, підписана «Káptalan Téglaháza cs.» на аркуші 1885 року; місце нині лежить у частині міста, що зветься Téglaház.",
+    "hu": "Téglaház égetőkemencével Vác északi szélén, az 1885-ös lapon „Káptalan Téglaháza cs.” felirattal; helye ma a Téglaház nevű városrészben van."
+  },
+  "description": {
+    "uk": "На аркуші 1885 року на північ від Вацу, біля дороги, підписано «Káptalan Téglaháza cs.»: káptalan означає соборну капітулу, téglaháza — її цегельню, а скорочення «cs.» на цьому аркуші стоїть і біля корчем (csárda). Поруч позначено «Z.O.» (Ziegelofen, цегельна піч). За статтею про Вац, Téglaház і Szentmihály нині є частинами району Deákvár; за зворотним геокодуванням місце лежить у частині Téglaház, біля вулиці Patak utca. Самої цегельні в сучасних даних немає. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1885-ös lapon Váctól északra, az út mellett „Káptalan Téglaháza cs.” felirat áll: a káptalan a székesegyházi káptalan, a téglaháza annak téglaégetője, a „cs.” rövidítés pedig ezen a lapon a csárdák mellett is szerepel. Mellette „Z.O.” (Ziegelofen, téglaégető kemence) jelzés látható. A Vácról szóló szócikk szerint Téglaház és Szentmihály ma Deákvár részei; a fordított geokódolás szerint a hely a Téglaház városrészben, a Patak utca mellett van. Magának a téglaháznak a mai adatokban nincs nyoma. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 14:XX Nógrád und Waitzen, 1885, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
+      "note": "Підпис «Káptalan Téglaháza cs.» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділ про частини міста: Deákvár — … Téglaház, Szentmihály."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.80353&lon=19.1269",
+      "note": "Нині на цьому місці: вулиця Patak utca, частина Téglaház (Vác). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

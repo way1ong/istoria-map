@@ -1,0 +1,29 @@
+{
+  "id": "avar-kaganatus-bukasa-791",
+  "title": {
+    "uk": "Франки розбивають Аварський каганат",
+    "hu": "A frankok leverik az Avar Kaganátust"
+  },
+  "date": {
+    "from": "0791",
+    "to": "0803",
+    "precision": "approximate"
+  },
+  "period": "migration",
+  "places": [],
+  "summary": {
+    "uk": "791 року Карл Великий рушив на аварів уздовж Дунаю до Дьйора; 795 року франко-лангобардський загін пограбував скарбницю кагана, 796 року аварські вожді скорилися, а після нового походу 803 року каганат розпався.",
+    "hu": "791-ben Nagy Károly a Duna völgyében Győrig nyomult az avarok ellen; 795-ben frank–longobárd csapat kifosztotta a kagán kincsesházát, 796-ban az avar főemberek meghódoltak, a 803-as újabb hadjárat után a kaganátus összeomlott."
+  },
+  "description": {
+    "uk": "За статтею, Аварський каганат існував з останньої третини VI до початку IX століття. 788 року франки приєднали Баварію й відтіснили аварів до Віденського лісу, а 791 року, наприкінці серпня, без оголошення війни рушили на них: лангобарди наступали рівнинами Драви й Сави, франкське військо долиною Дунаю дійшло до Дьйора. 795 року в каганаті спалахнула міжусобиця, у якій загинули каган і другий за рангом вождь; того ж року загін фріульського герцога Еріка пограбував скарбницю кагана, вивізши здобич на шістнадцяти возах. 796 року аварські вожді на чолі з новим правителем скорилися, частина знаті відійшла за Тису, а після походів 796 і 803 років держава розпалася; франки почали навертати аварів у християнство.",
+    "hu": "A szócikk szerint az Avar Kaganátus a VI. század utolsó harmadától a IX. század elejéig állt fenn. 788-ban a frankok bekebelezték Bajorországot, és az avarokat a Bécsi-erdőig szorították vissza, 791-ben, augusztus végén pedig hadüzenet nélkül indultak ellenük: a longobárdok a Dráva és a Száva síkságain nyomultak előre, a frank sereg a Duna völgyén át Győrig jutott. 795-ben a kaganátusban belviszály tört ki, amelyben a kagán és a rangban második vezér is életét vesztette; ugyanabban az évben Erik friuli herceg csapata kifosztotta a kagán kincstárát, és a zsákmányt tizenhat szekéren vitte el. 796-ban az avar vezetők az új uralkodóval az élükön behódoltak, az előkelők egy része a Tiszán túlra húzódott vissza, a 796. és 803. évi hadjáratok után pedig az állam széthullott; a frankok megkezdték az avarok keresztény hitre térítését."
+  },
+  "sources": [
+    {
+      "title": "Avar Kaganátus – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Avar_Kagan%C3%A1tus",
+      "note": "791, 795, 796, 803."
+    }
+  ]
+}
