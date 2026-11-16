@@ -1,0 +1,43 @@
+{
+  "id": "grassalkovich-uradalom-1736",
+  "title": {
+    "uk": "Маєток Grassalkovich: Sződ і Göd (1736), Dunakeszi й Alag (1747)",
+    "hu": "A Grassalkovich-uradalom: Sződ és Göd (1736), Dunakeszi és Alag (1747)"
+  },
+  "date": {
+    "from": "1736",
+    "precision": "exact",
+    "to": "1756"
+  },
+  "period": "habsburg-18",
+  "places": [
+    "god-puszta-nemeskeri-kuria",
+    "szod-maria-magdolna-templom",
+    "dunakeszi-szent-mihaly-templom",
+    "szodliget-szodrakosi-malom"
+  ],
+  "summary": {
+    "uk": "Граф Antal Grassalkovich I 1736 року купив Sződ із Göd-puszta, 1747 року Dunakeszi й Alag, приєднавши їх до ґеделлівського маєтку. Постали центр Göd-puszta, корчма, млин, 1744 року церква в Sződ, 1756 року церква в Dunakeszi.",
+    "hu": "Gróf Grassalkovich I. Antal 1736-ban megvette Sződöt Göd-pusztával, 1747-ben Dunakeszit és Alagot, és a gödöllői uradalomhoz csatolta őket. Kiépült Göd-puszta, nagykocsma, malom; 1744-ben a sződi, 1756-ban a dunakeszi templom."
+  },
+  "description": {
+    "uk": "За статтею про Sződ, родина Grassalkovich купила Sződ разом із Göd-puszta 1736 року у родини Madách і згодом оселила в селі римо-католицьких секеїв; за Марії Терезії населення зросло в півтора раза, урбарій укладено 1769 року. За статтею про Göd, 1736 року маєток став частиною володінь Grassalkovich: розбудовано центр Göd-puszta, пізніший Kincsem telep, ґуральню і броварню на березі Дунаю. За статтею про Dunakeszi, 1747 року граф Antal Grassalkovich I купив село і приєднав Dunakeszi та Alag до ґеделлівського маєтку, що принесло селу розквіт: постали велика корчма Beszálló, млин, різниця і кузня; новий храм освячено 29 вересня 1756 року. 1768 року село мало 600 мешканців, за переписом 1785 року 740. За Йосифа II (1780–1790) складено першу детальну військову мапу села."
+  },
+  "sources": [
+    {
+      "title": "Sződ – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sz%C5%91d",
+      "note": "1736, секеї, 1769."
+    },
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділ «Újjáépülés»."
+    },
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділ «Dunakeszi a 18. században»."
+    }
+  ]
+}

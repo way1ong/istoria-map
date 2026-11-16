@@ -1,0 +1,36 @@
+{
+  "id": "varossa-nyilvanitas",
+  "title": {
+    "uk": "Міста: Dunakeszi (1977) і Göd (1999)",
+    "hu": "Várossá nyilvánítás: Dunakeszi (1977), Göd (1999)"
+  },
+  "date": {
+    "from": "1977-04-01",
+    "precision": "exact",
+    "to": "1999-08-20"
+  },
+  "period": "modern",
+  "places": [
+    "god-termal-strand",
+    "dunakeszi-jarmujavito"
+  ],
+  "summary": {
+    "uk": "Dunakeszi став великою громадою 1 січня 1970 року і містом 1 квітня 1977 року; Göd отримав статус міста 20 серпня 1999 року.",
+    "hu": "Dunakeszi 1970. január 1-jén nagyközség, 1977. április 1-jén város lett; Göd 1999. augusztus 20-án kapott városi rangot."
+  },
+  "description": {
+    "uk": "За статтею про Dunakeszi, після 1957 року динамічна індустріалізація (механічна лабораторія, розширений консервний завод, домобудівний комбінат 1969 року, холодокомбінат) до початку 1970-х забезпечувала роботою 70 % мешканців, що зробило реальною ідею міста: 1 січня 1970 року Dunakeszi став великою громадою, 1 квітня 1977 року містом. За статтею про Göd, 1970 року Alsógöd і Felsőgöd об'єдналися під назвою Göd, 1993 року згоріла католицька церква в Alsógöd, відбудована до 1996 року, а 20 серпня 1999 року Göd отримав статус міста."
+  },
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділ «A második világháború után»."
+    },
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділ «A második világháború után»."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "vac-hegyes-torony",
+  "name": {
+    "uk": "Hegyes torony і середньовічні міські мури",
+    "hu": "Hegyes torony és a középkori városfal"
+  },
+  "type": "castle",
+  "coords": [
+    19.124003,
+    47.779487
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "roman-barbaricum",
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Кругла вежа середньовічних міських мурів Вацу на набережній Дунаю; стаття про місто згадує поруч залишки мурів римської доби.",
+    "hu": "A középkori váci városfal kerek tornya a Duna-parton; a város szócikke római kori falmaradványokat is említ itt."
+  },
+  "description": {
+    "uk": "У переліку пам'яток Вацу стаття Вікіпедії називає «Hegyes torony і залишки мурів римської доби (після лімесу та гарнізону)». Категорія Wikimedia Commons відносить вежу до середньовічної архітектури, круглих веж і міських мурів Угорщини, пам'ятка під номером 7497. Стаття про Вац також пише, що в середньовіччі на підвищенні біля води збудовано вацький замок, який монголи спалили 1241 року, а в османську добу фортецю утримував гарнізон переважно з боснійців. Зв'язок саме цієї вежі із замком і твердження про римські мури потребують перевірки за археологічною літературою."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Hegyes_torony.jpg",
+      "author": "Magyarkúti Barna",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Hegyes_torony.jpg",
+      "caption": {
+        "uk": "Hegyes torony",
+        "hu": "Hegyes torony"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділи «Középkor» і «Épületek»."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Pointed Tower (V%C3%A1c)",
+      "url": "https://commons.wikimedia.org/wiki/Category:Pointed_Tower_(V%C3%A1c)",
+      "note": "Object location 47.779487, 19.124003 (координати об'єкта, вказані в категорії Commons)."
+    }
+  ]
+}

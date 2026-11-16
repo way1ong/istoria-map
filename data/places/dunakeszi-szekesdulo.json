@@ -1,0 +1,46 @@
+{
+  "id": "dunakeszi-szekesdulo",
+  "name": {
+    "uk": "Археологічний комплекс Székesdűlő",
+    "hu": "Dunakeszi, Székesdűlő lelőhely"
+  },
+  "type": "archaeological",
+  "coords": [
+    19.106,
+    47.611
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "prehistory",
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Найбільше неолітичне поселення в межах міста, три кельтські будинки, сарматське село та поховання язигів.",
+    "hu": "A város legjelentősebb újkőkori telepe, három kelta ház, szarmata (jazig) falurészlet és sírok."
+  },
+  "description": {
+    "uk": "У квітні 1996 року Anna Endrődi провела тут охоронні розкопки на трасі автомагістралі M0, на межі з Будапештом, приблизно за 500 м на схід від Дунаю, на південному кінці довгого пагорба над колишнім рукавом Дунаю Óceán-árok. На площі 4000 м² відкрито 125 об'єктів двох епох: задунайської лінійно-стрічкової кераміки і пізньої бронзової доби. László András Horváth (2002) реконструював два довгі неолітичні будинки, орієнтовані з півночі на південь (збережені ділянки близько 20 і 30 м, ширина другого 12–12,5 м), і відніс кераміку до першого ступеня середньоєвропейської лінійно-стрічкової кераміки з аналогіями в кінці її найдавнішої фази; серед знахідок є імпорти альфельдської лінійно-стрічкової кераміки, бо пам'ятка лежить на північно-західному краю зони контакту двох культур. Кістки тварин із доісторичних поселень опрацював Péter Csippán (2007).\n\nЗа статтею Вікіпедії, це найзначніше неолітичне поселення в межах міста; тут також розкопано три кельтські будинки, частину сарматського (язигського) села і два поховання. Мідну добу представляють знахідки з Koplya-tető, Hegyrejáró dűlő і зони будівництва дороги M2; бронзову добу посуд культури Ватя та стовпові будинки й колодязі курганної культури.\n\nКоординати приблизні: район Székesdűlő за OpenStreetMap, що відповідає опису розташування у статті Horváth (траса M0 біля межі з Будапештом)."
+  },
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділи «Dunakeszi térsége az őskorban» і «Dunakeszi területe az ókorban»."
+    },
+    {
+      "title": "Horváth L. A., Neolithische Funde und Befunde in der Gemarkung von Dunakeszi. Acta Archaeologica Academiae Scientiarum Hungaricae 53 (2002) 1–40",
+      "url": "https://real.mtak.hu/65107/",
+      "note": "Розкопки 1996, розташування, 125 об'єктів, два будинки, датування."
+    },
+    {
+      "title": "Csippán P., Ökológiai módszerek a régészetben. Esettanulmány a Dunakeszi-Székes-dűlő őskori településeiről előkerült állatmaradványok kapcsán. Archaeologiai Értesítő 132 (2007) 83–110",
+      "url": "https://real.mtak.hu/45465/",
+      "note": "Анотація."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Székesdűlő, Dunakeszi",
+      "url": "https://nominatim.openstreetmap.org/search?q=Sz%C3%A9kesd%C5%B1l%C5%91%2C+Dunakeszi&format=jsonv2",
+      "note": "Район Székesdűlő 47.611, 19.107; округлено. Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

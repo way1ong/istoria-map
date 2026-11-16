@@ -1,0 +1,51 @@
+{
+  "id": "vac-piarista-templom",
+  "name": {
+    "uk": "Піаристська церква Св. Анни і гімназія",
+    "hu": "Piarista (Szent Anna) templom és rendház"
+  },
+  "type": "church",
+  "coords": [
+    19.128945,
+    47.776237
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Храм піаристів, будівництво якого завершено 1745 року; поруч монастир і піаристська гімназія.",
+    "hu": "A piaristák temploma 1745-re készült el; mellette a rendház és a Piarista Gimnázium."
+  },
+  "description": {
+    "uk": "За статтею про Вац, 1745 року завершено будівництво піаристської церкви, одного з перших великих барокових храмів відбудованого міста. Поруч стоять монастир і гімназія піаристів; автор проєкту собору, піарист Gáspár Oswald, керував і будівництвом собору 1760-х років. Координати за категорією Wikimedia Commons."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Piarist_monastery._-_V%C3%A1c.JPG",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Piarist_monastery._-_V%C3%A1c.JPG",
+      "caption": {
+        "uk": "Піаристський монастир, 2015",
+        "hu": "A piarista rendház, 2015"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділ «Újkor»: 1745."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Saint Anne (Piarist) Church in V%C3%A1c",
+      "url": "https://commons.wikimedia.org/wiki/Category:Saint_Anne_(Piarist)_Church_in_V%C3%A1c",
+      "note": "Object location 47.776237, 19.128945."
+    }
+  ]
+}

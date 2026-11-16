@@ -1,0 +1,30 @@
+{
+  "id": "mav-fomuhely-1926",
+  "title": {
+    "uk": "Відкриття головних майстерень MÁV і «Золотий потяг»",
+    "hu": "A MÁV Főműhely megnyitása és az Aranyvonat"
+  },
+  "date": {
+    "from": "1926",
+    "precision": "exact",
+    "to": "1938"
+  },
+  "period": "interwar-ww2",
+  "places": [
+    "dunakeszi-jarmujavito"
+  ],
+  "summary": {
+    "uk": "1926 року в Dunakeszi відкрито вагоноремонтні майстерні MÁV із селищем Műhelytelep. 1938 року тут побудували Aranyvonat для перевезення Святої Правиці до 900-річчя смерті св. Іштвана.",
+    "hu": "1926-ban megnyílt a MÁV Főműhely a Műhelyteleppel. 1938-ban itt épült az Aranyvonat, amely Szent István halálának 900. évfordulóján a Szent Jobbot szállította."
+  },
+  "description": {
+    "uk": "За статтею про Dunakeszi, MÁV купила землю 1911 року, у 1922–1926 роках збудовано житлове селище, і 1926 року майстерні запрацювали; виникла нова частина міста Műhelytelep зі школою, каплицею та будинком культури. 1938 року до 900-ї річниці смерті короля Іштвана I Святу Правицю возили країною у вагоні, виготовленому в майстернях Dunakeszi: вагон був покритий 24-каратними золотими пластинами, прикрашений візантійськими мотивами та образами угорських святих, з копією Святої Корони на даху; вартість 19 000 пенге. 1917 року в селі також запрацював консервний завод «Ocean»."
+  },
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділи «1910 és 1950 között» і «Dunakeszi MÁV Főműhely»."
+    }
+  ]
+}

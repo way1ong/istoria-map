@@ -1,0 +1,48 @@
+{
+  "id": "dunakeszi-romai-kikotoerod",
+  "name": {
+    "uk": "Пізньоримський портовий форт у Dunakeszi (Duna sor 28–32)",
+    "hu": "Dunakeszi, késő római kikötőerőd"
+  },
+  "type": "archaeological",
+  "coords": [
+    19.119704,
+    47.658094
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Малий форт з центральною і двома кутовими вежами, збудований за Валентиніана I близько 371–372 років для захисту переправи до Horány; стіни місцями збереглися до 140 см.",
+    "hu": "Kis erőd központi és két saroktoronnyal, I. Valentinianus idején (371–372 körül) épült a horányi rév védelmére; falai helyenként 140 cm magasan állnak."
+  },
+  "description": {
+    "uk": "За статтею про Dunakeszi, римляни в 371–372 роках збудували тут укріплений порт і переправу як частину системи фортів на лівому березі Дунаю (contra castrum), яку розбудовував Валентиніан I. Залишки знайдено на ділянках будинків Duna sor 28–30 (в іншому місці статті 28–32); розміри форту 50,5 × 43 м. Навпроти, на острові Сентендре біля Horány, стояв парний форт; пором і сьогодні курсує між цими двома точками. За тією ж статтею, через цю переправу планували постачати матеріали для великого форту в Göd-Bócsaújtelep. Гарнізон становив 25–30, щонайбільше 50 вояків із родинами. Нині за адресою Duna sor 28 діє приватний музей."
+  },
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділи «Dunakeszi területe az ókorban» і «Késő római kikötőerőd»."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Roman castrum in Dunakeszi",
+      "url": "https://commons.wikimedia.org/wiki/Category:Roman_castrum_in_Dunakeszi",
+      "note": "Object location 47.658094, 19.119704 (координати об'єкта, вказані в категорії Commons). Координати опубліковані відкрито: стаття Вікіпедії подає адресу Duna sor 28–32, у категорії Commons вказано object location."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Kik%C3%B6t%C5%91er%C5%91d.jpg",
+      "author": "KerekesDora",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kik%C3%B6t%C5%91er%C5%91d.jpg",
+      "caption": {
+        "uk": "Залишки пізньоримського портового форту, 2020",
+        "hu": "A késő római kikötőerőd maradványai, 2020"
+      }
+    }
+  ]
+}

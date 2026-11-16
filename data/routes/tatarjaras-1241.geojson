@@ -1,0 +1,238 @@
+{
+ "type": "FeatureCollection",
+ "animation": {
+  "event": "vac-tatarjaras-1241",
+  "from": "1241-03-12",
+  "to": "1241-04-11",
+  "title": {
+   "uk": "Монгольська навала: від Верецького перевалу до Мухі, березень–квітень 1241",
+   "hu": "A tatárjárás: a Vereckei-hágótól Muhiig, 1241. március–április"
+  },
+  "note": {
+   "uk": "Дати за статтею про навалу: 12 березня перехід через Верецький перевал, 17 березня спалення Вацу, близько 20 березня виступ короля з Пешта, 11 квітня битва при Мухі. Лінії прямі між названими пунктами; справжні шляхи йшли долинами річок.",
+   "hu": "Dátumok a tatárjárásról szóló szócikk szerint. A vonalak a megnevezett pontok közötti egyenesek."
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      23.1697,
+      48.8142
+     ],
+     [
+      19.053,
+      47.4942
+     ]
+    ]
+   },
+   "properties": {
+    "id": "batu-pest",
+    "period": "arpad",
+    "kind": "military",
+    "side": "mn",
+    "start": "1241-03-12",
+    "end": "1241-03-16",
+    "title": {
+     "uk": "Авангард Бату: Верецький перевал (12 березня) → під Пешт за три дні",
+     "hu": "Batu előőrsei: Vereckei-hágó (március 12.) → Pest alá három nap alatt"
+    },
+    "sources": [
+     {
+      "title": "Tatárjárás Magyarországon – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tat%C3%A1rj%C3%A1r%C3%A1s_Magyarorsz%C3%A1gon",
+      "note": "«Batu a Vereckei-hágón 1241. március 12-én haladt át»; «A mongol előörsök … három nap alatt elérték Pestet»."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Verecke-hágó",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Verecke-hágó",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Pest Belváros",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Pest+Belváros",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.053,
+     47.4942
+    ]
+   },
+   "properties": {
+    "id": "bela-pest",
+    "period": "arpad",
+    "kind": "military",
+    "side": "hu",
+    "start": "1241-03-15",
+    "title": {
+     "uk": "Збір королівського війська на полі Rákos біля Пешта (з 15 березня)",
+     "hu": "A királyi sereg gyülekezése a Rákos mezején (március 15-től)"
+    },
+    "note": {
+     "uk": "15–25 тис. вояків за новішими оцінками",
+     "hu": "újabb becslések szerint 15–25 ezer fő"
+    },
+    "sources": [
+     {
+      "title": "Tatárjárás Magyarországon – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tat%C3%A1rj%C3%A1r%C3%A1s_Magyarorsz%C3%A1gon",
+      "note": "«március 15-én elrendelte a mozgósítást Pestre, a Rákos mezejére»; чисельність 15–25 тис."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.053,
+      47.4942
+     ],
+     [
+      19.1311,
+      47.7753
+     ]
+    ]
+   },
+   "properties": {
+    "id": "vac-1241",
+    "period": "arpad",
+    "kind": "military",
+    "side": "mn",
+    "start": "1241-03-16",
+    "end": "1241-03-17",
+    "title": {
+     "uk": "17 березня: монголи захоплюють і спалюють Вац",
+     "hu": "Március 17.: a mongolok elfoglalják és felgyújtják Vácot"
+    },
+    "sources": [
+     {
+      "title": "Tatárjárás Magyarországon – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tat%C3%A1rj%C3%A1r%C3%A1s_Magyarorsz%C3%A1gon",
+      "note": "«március 17-én elfoglalták és felgyújtották Vácot»."
+     },
+     {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "17 березня 1241 року монголи увірвалися до міста й перебили більшість мешканців."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.053,
+      47.4942
+     ],
+     [
+      20.9289,
+      47.9796
+     ]
+    ]
+   },
+   "properties": {
+    "id": "bela-muhi",
+    "period": "arpad",
+    "kind": "military",
+    "side": "hu",
+    "start": "1241-03-20",
+    "end": "1241-04-10",
+    "title": {
+     "uk": "Бела IV виступає з Пешта на схід (бл. 20 березня), за 10–15 днів доходить до Мухі",
+     "hu": "IV. Béla március 20. körül kelet felé indul, 10–15 nap alatt Muhi közelébe ér"
+    },
+    "sources": [
+     {
+      "title": "Tatárjárás Magyarországon – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tat%C3%A1rj%C3%A1r%C3%A1s_Magyarorsz%C3%A1gon",
+      "note": "«IV. Béla március 20. körül indult kelet felé … Muhi közelébe 10-15 nap alatt értek»."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Muhi",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Muhi",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.053,
+      47.4942
+     ],
+     [
+      20.9289,
+      47.9796
+     ]
+    ]
+   },
+   "properties": {
+    "id": "batu-sajo",
+    "period": "arpad",
+    "kind": "military",
+    "side": "mn",
+    "start": "1241-03-20",
+    "end": "1241-04-09",
+    "title": {
+     "uk": "Монголи повільно відступають перед королем до Шайо, чекаючи на корпус Орди",
+     "hu": "A mongolok lassan hátrálnak a Sajóig, bevárva Orda hadtestét"
+    },
+    "sources": [
+     {
+      "title": "Tatárjárás Magyarországon – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tat%C3%A1rj%C3%A1r%C3%A1s_Magyarorsz%C3%A1gon",
+      "note": "«a tatárok, akik Pest alatt is voltak, folyamatosan hátráltak előlük»; «Batu szándékosan lassan haladt előre»."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9289,
+     47.9796
+    ]
+   },
+   "properties": {
+    "id": "muhi",
+    "period": "arpad",
+    "kind": "military",
+    "side": "mn",
+    "start": "1241-04-11",
+    "title": {
+     "uk": "11 квітня: битва при Мухі, розгром королівського війська",
+     "hu": "Április 11.: a muhi csata, a királyi sereg veresége"
+    },
+    "sources": [
+     {
+      "title": "Tatárjárás Magyarországon – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tat%C3%A1rj%C3%A1r%C3%A1s_Magyarorsz%C3%A1gon",
+      "note": "Розділ «A muhi csata»: 1241. április 11."
+     }
+    ]
+   }
+  }
+ ]
+}

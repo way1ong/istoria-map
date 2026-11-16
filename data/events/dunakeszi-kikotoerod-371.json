@@ -1,0 +1,41 @@
+{
+  "id": "dunakeszi-kikotoerod-371",
+  "title": {
+    "uk": "Будівництво римського портового форту в Dunakeszi",
+    "hu": "A dunakeszi római kikötőerőd építése"
+  },
+  "date": {
+    "from": "371",
+    "to": "373",
+    "precision": "approximate"
+  },
+  "period": "roman-barbaricum",
+  "places": [
+    "dunakeszi-romai-kikotoerod",
+    "god-bocsaujtelep-fort"
+  ],
+  "summary": {
+    "uk": "За Валентиніана I римляни звели на лівому березі укріплений порт і переправу, один із трьох портових фортів у землі квадів (Szob, Verőce, Dunakeszi). Цегляні штампи датують будівництво 371–373 роками; звідси постачали будівництво великого форту в Göd.",
+    "hu": "I. Valentinianus alatt a rómaiak erődített kikötőt és átkelőt építettek a bal parton, a kvádok földjén épült három kikötőerőd (Szob, Verőce, Dunakeszi) egyikét. A téglabélyegek 371–373 közé keltezik; innen indult az utánpótlás a gödi nagy erőd építéséhez."
+  },
+  "description": {
+    "uk": "За статтею про Dunakeszi, укріплений порт збудовано в 371–372 роках як частину системи фортів на лівому березі, яку започаткував Марк Аврелій після маркоманських воєн, ущільнив Діоклетіан і розбудував Валентиніан I.\n\nЗа Ottományi і Soós (2023), у Дунайському коліні відомо близько семи портових фортів доби Валентиніана з подібним планом, три з них на лівому березі, у землі квадів: Szob, Verőce і Dunakeszi; прибережна смуга лівого берега, ймовірно, була нейтральною. Будівництво форту у Verőce за сотнями цегляних штампів (Frigeridus dux, трибуни Lupicinus, Terentianus, Caris, магістри OFAR) датують 371–373 роками; штампи групи OFAR і магістрів X легіону Gemina стоять насамперед на цеглі портових фортів у Barbaricum (Verőce, Dunakeszi, Szalk-sziget, Bölcske, Zádor–Imsós, Dunafalva), і якщо будівництво йшло з півночі на південь, то форти від Dunakeszi далі зведено 373 року. Форт у Dunakeszi мав 50,5 × 43 м, вапняну підлогу на цегляній основі в головній будівлі і бокову стіну, що збереглася на 28 м до Дунаю. З портових фортів вирушало постачання на будівництва в Barbaricum, зокрема на розмітку великого форту в Göd (див. окрему подію)."
+  },
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "371–372, система contra castrum."
+    },
+    {
+      "title": "Pleiades: Göd-Bócsaújtelep",
+      "url": "https://pleiades.stoa.org/places/487248321",
+      "note": "Датування форту в Göd правлінням Валентиніана."
+    },
+    {
+      "title": "Ottományi K., Soós E., A verőcei kikötőerőd késő római kerámiája. Studia Comitatensia 41 (2023) 8–59",
+      "url": "https://real.mtak.hu/190383/",
+      "note": "Система портових фортів, датування 371–373, розміри форту Dunakeszi (за Mráv 2009, 2017)."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "_comment": "Сучасні підкладки для мапи й режиму порівняння. type: style (стиль MapLibre) або raster (тайли {z}/{x}/{y} чи {z}/{y}/{x}). Якщо в адресі є {key}, підкладка показується лише коли заповнено поле key.",
+  "basemaps": [
+    {
+      "id": "osm",
+      "title": {
+        "uk": "Мапа (OpenStreetMap)",
+        "hu": "Térkép (OpenStreetMap)"
+      },
+      "type": "style",
+      "url": "https://tiles.openfreemap.org/styles/liberty",
+      "attribution": "OpenFreeMap © OpenMapTiles, дані © OpenStreetMap",
+      "license": "ODbL",
+      "short": {
+        "uk": "Мапа",
+        "hu": "Térkép"
+      }
+    },
+    {
+      "id": "s2cloudless-2024",
+      "title": {
+        "uk": "Супутник (Sentinel-2, 2024)",
+        "hu": "Műhold (Sentinel-2, 2024)"
+      },
+      "type": "raster",
+      "tiles": [
+        "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg"
+      ],
+      "tileSize": 256,
+      "maxzoom": 17,
+      "attribution": "Sentinel-2 cloudless – <a href=\"https://s2maps.eu\">s2maps.eu</a> by <a href=\"https://eox.at\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024)",
+      "license": "CC BY-NC-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "source": {
+        "title": "OpenStreetMap wiki: Sentinel-2 (EOX tile template)",
+        "url": "https://wiki.openstreetmap.org/wiki/Sentinel-2",
+        "note": "Шаблон тайлів {z}/{y}/{x}; роки 2018–2024. Роздільність 10 м/px."
+      },
+      "short": {
+        "uk": "Sentinel-2",
+        "hu": "Sentinel-2"
+      }
+    },
+    {
+      "id": "esri-world-imagery",
+      "title": {
+        "uk": "Супутник (Esri World Imagery)",
+        "hu": "Műhold (Esri World Imagery)"
+      },
+      "type": "raster",
+      "tiles": [
+        "https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}?token={key}"
+      ],
+      "key": "AAPTahQiOOdTVoq0qIRA6khj8Tw..yUk557tiaQ8KqFKLNAuEMJP2DW6oareEuEbcUiljCe3Xj-Dv_SWz_XhXQL-h-nqIx1NgXCV6HEikyve6ara9g2i88tK1kNC-mq4lB-k6I8aI9l3z5U4I5jTSoHFekMn7Xj1YvmFlwNZGtVCKTXECl6Fi3VA0ladRAK116cHLTk2w_-YJAvNuuVlE4HMWGYLIIGUN62a9SS9YPcMPbsItzAYfWkJuxK4KvA0vcP31bbYmG4TtYI97wQoCAT1_rVlmEJGr",
+      "tileSize": 256,
+      "maxzoom": 19,
+      "attribution": "Powered by <a href=\"https://www.esri.com\">Esri</a>. Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+      "license": "Умови ArcGIS Location Platform: безкоштовно до 2 млн тайлів на місяць з API-ключем, обов'язкова атрибуція, без офлайн-кешування",
+      "licenseUrl": "https://location.arcgis.com/pricing/",
+      "source": {
+        "title": "Esri ArcGIS Blog: the new ArcGIS basemap layer service; Esri attribution docs",
+        "url": "https://developers.arcgis.com/documentation/esri-and-data-attribution/",
+        "note": "Шаблон тайлів з параметром token за блогом Esri; ліміт 2 млн тайлів/міс за сторінкою цін location.arcgis.com. Ключ створює користувач у своєму акаунті ArcGIS Location Platform з обмеженням на реферер way1ong.github.io; поле key у цьому файлі."
+      },
+      "short": {
+        "uk": "Esri",
+        "hu": "Esri"
+      }
+    }
+  ]
+}

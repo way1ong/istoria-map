@@ -1,0 +1,49 @@
+{
+  "id": "god-biciklista-nagyvendeglo",
+  "name": {
+    "uk": "Biciklista Nagyvendéglő, нині будинок культури ім. Аттіли Йожефа",
+    "hu": "Biciklista Nagyvendéglő (József Attila Művelődési Ház)"
+  },
+  "type": "monument",
+  "coords": [
+    19.134191,
+    47.68402
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Збудований 1902 року великий ресторан, названий на честь перших угорських аматорських велоперегонів Будапешт–Göd; пізніше тут працював кінотеатр.",
+    "hu": "1902-ben épült nagyvendéglő, nevét az első magyar amatőr kerékpárversenyről (Budapest–Göd) kapta; később mozi működött benne."
+  },
+  "description": {
+    "uk": "За статтею про Göd, 1902 року збудовано нинішній будинок культури, Biciklista Nagyvendéglő, у якому пізніше працював кінотеатр. Назва походить від перших угорських аматорських велосипедних перегонів між Будапештом і Göd, фінішем яких було селище."
+  },
+  "sources": [
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділи «A település kialakulása» і «Nevezetességei»."
+    },
+    {
+      "title": "Wikimedia Commons: Category:J%C3%B3zsef Attila M%C5%B1vel%C5%91d%C3%A9si H%C3%A1z (G%C3%B6d)",
+      "url": "https://commons.wikimedia.org/wiki/Category:J%C3%B3zsef_Attila_M%C5%B1vel%C5%91d%C3%A9si_H%C3%A1z_(G%C3%B6d)",
+      "note": "Object location 47.68402, 19.134191 (координати об'єкта, вказані в категорії Commons)."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/J%C3%B3zsef_Attila_M%C5%B1vel%C5%91d%C3%A9si_H%C3%A1z%2C_2020_G%C3%B6d.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:J%C3%B3zsef_Attila_M%C5%B1vel%C5%91d%C3%A9si_H%C3%A1z,_2020_G%C3%B6d.jpg",
+      "caption": {
+        "uk": "Будинок культури ім. Аттіли Йожефа, 2020",
+        "hu": "József Attila Művelődési Ház, 2020"
+      }
+    }
+  ]
+}

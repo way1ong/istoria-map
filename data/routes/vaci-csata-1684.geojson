@@ -1,0 +1,409 @@
+{
+ "type": "FeatureCollection",
+ "animation": {
+  "event": "vaci-csata-1684",
+  "from": "1684-05-15",
+  "to": "1684-07-01",
+  "title": {
+   "uk": "Похід на Пешт і битва під Вацом, травень–червень 1684",
+   "hu": "A Pest elleni hadjárat és a váci csata, 1684. május–június"
+  },
+  "note": {
+   "uk": "Пункти маршруту і дати за статтею про битву. Дата виходу з Vágsellye відома лише як «травень», взяття Пешта як «за кілька днів», тож ці моменти умовні.",
+   "hu": "Az útvonal pontjai és a dátumok a csatáról szóló szócikk szerint. A május és a Pest elfoglalásának napja közelítő."
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      17.8749,
+      48.1514
+     ],
+     [
+      18.7159,
+      47.7978
+     ],
+     [
+      18.7403,
+      47.7857
+     ],
+     [
+      18.9703,
+      47.7846
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cs-1",
+    "period": "ottoman",
+    "kind": "military",
+    "side": "hu",
+    "start": "1684-05-15",
+    "end": "1684-06-18",
+    "title": {
+     "uk": "Імперська армія: Vágsellye → Párkány → Esztergom → Visegrád (18 червня)",
+     "hu": "Császári sereg: Vágsellye → Párkány → Esztergom → Visegrád (június 18.)"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1684) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1684)",
+      "note": "Розділ «Előzmények»."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Šaľa",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Šaľa",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Štúrovo",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Štúrovo",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Esztergom",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Esztergom",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Visegrád",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Visegrád",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.0398,
+      47.496
+     ],
+     [
+      18.7403,
+      47.7857
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cs-raid",
+    "period": "ottoman",
+    "kind": "military",
+    "side": "at",
+    "start": "1684-06-16",
+    "end": "1684-06-17",
+    "title": {
+     "uk": "Рейд Кара Мехмеда на базу постачання в Esztergom (17 червня)",
+     "hu": "Kara Mehmed rajtaütése az esztergomi utánpótlási bázis ellen (június 17.)"
+    },
+    "note": {
+     "uk": "1500 вершників і 400 яничарів",
+     "hu": "1500 lovas és 400 janicsár"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1684) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1684)",
+      "note": "Розділ «Előzmények»."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Budavári Palota",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Budavári+Palota",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      18.9703,
+      47.7846
+     ],
+     [
+      18.7403,
+      47.7857
+     ],
+     [
+      18.7159,
+      47.7978
+     ],
+     [
+      18.9587,
+      47.7891
+     ],
+     [
+      19.0129,
+      47.8266
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cs-2",
+    "period": "ottoman",
+    "kind": "military",
+    "side": "hu",
+    "start": "1684-06-18",
+    "end": "1684-06-26",
+    "title": {
+     "uk": "Імперська армія: назад до Esztergom, переправа біля Párkány (21 червня), Nagymaros → Kismaros",
+     "hu": "Császári sereg: vissza Esztergomba, átkelés Párkánynál (június 21.), Nagymaros → Kismaros"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1684) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1684)",
+      "note": "Розділи «Előzmények» і «A csata lefolyása»."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Nagymaros",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Nagymaros",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Kismaros",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Kismaros",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.034,
+      47.8231
+     ],
+     [
+      19.0488,
+      47.9068
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cs-feint",
+    "period": "ottoman",
+    "kind": "military",
+    "side": "hu",
+    "start": "1684-06-23",
+    "end": "1684-06-26",
+    "title": {
+     "uk": "Відволікальний маневр частини війська на Nógrád",
+     "hu": "Megtévesztő manőver Nógrád felé"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1684) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1684)",
+      "note": "«Nagymarostól és Verőcétől a csapat egy része látványos megtévesztő manővert hajtott végre keleti irányban, Nógrád felé»."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.0398,
+      47.496
+     ],
+     [
+      19.1311,
+      47.7753
+     ],
+     [
+      19.087523,
+      47.818396
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cs-ott",
+    "period": "ottoman",
+    "kind": "military",
+    "side": "at",
+    "start": "1684-06-23",
+    "end": "1684-06-26",
+    "title": {
+     "uk": "Кара Мехмед-паша: з Буди на позицію Cigányhegy (15 000 кінноти, 3 000 яничарів)",
+     "hu": "Kara Mehmed pasa: Budáról a Cigányhegy állásba (15 000 lovas, 3000 janicsár)"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1684) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1684)",
+      "note": "Чисельність і позиція на Cigányhegy біля виходу з ущелин Verőce."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.0129,
+      47.8266
+     ],
+     [
+      19.087523,
+      47.818396
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cs-battle",
+    "period": "ottoman",
+    "kind": "military",
+    "side": "hu",
+    "start": "1684-06-27",
+    "end": "1684-06-27T12:00",
+    "title": {
+     "uk": "27 червня: атака з Kismaros на Cigányhegy",
+     "hu": "Június 27.: támadás Kismarosról a Cigányhegy ellen"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1684) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1684)",
+      "note": "Розділ «A csata lefolyása»."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.087523,
+      47.818396
+     ],
+     [
+      19.1311,
+      47.7753
+     ],
+     [
+      19.17,
+      47.75
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cs-rout",
+    "period": "ottoman",
+    "kind": "military",
+    "side": "at",
+    "start": "1684-06-27T12:00",
+    "end": "1684-06-27T18:00",
+    "title": {
+     "uk": "Втеча османського війська на південний схід від Вацу",
+     "hu": "A török sereg menekülése Váctól délkeletre"
+    },
+    "note": {
+     "uk": "напрям за джерелом, кінцева точка умовна",
+     "hu": "irány a forrás szerint, a végpont jelképes"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1684) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1684)",
+      "note": "«üldözőbe vette a megvert ellenséget, a Váctól délkeletre fekvő síkságon is»."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.087523,
+      47.818396
+     ],
+     [
+      19.1311,
+      47.7753
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cs-vac",
+    "period": "ottoman",
+    "kind": "military",
+    "side": "hu",
+    "start": "1684-06-27T12:00",
+    "end": "1684-06-27T18:00",
+    "title": {
+     "uk": "Піхота й артилерія беруть Вац",
+     "hu": "A gyalogság és a tüzérség beveszi Vácot"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1684) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1684)",
+      "note": "«a rövid ágyúzás után a város helyőrsége megadta magát»."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.1311,
+      47.7753
+     ],
+     [
+      19.053,
+      47.4942
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cs-pest",
+    "period": "ottoman",
+    "kind": "military",
+    "side": "hu",
+    "start": "1684-06-28",
+    "end": "1684-07-01",
+    "title": {
+     "uk": "Далі на Пешт (узято «за кілька днів»)",
+     "hu": "Tovább Pestre (néhány nappal később elfoglalva)"
+    },
+    "sources": [
+     {
+      "title": "Váci csata (1684) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_csata_(1684)",
+      "note": "Вступ статті."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Pest Belváros",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Pest+Belváros",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "vac-koszentes-hid",
+  "name": {
+    "uk": "Кам'яний міст зі святими через потік Gombás (Kőszentes híd)",
+    "hu": "Kőszentes híd a Gombás-patakon"
+  },
+  "type": "monument",
+  "coords": [
+    19.139584,
+    47.769229
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Бароковий міст 1753–1757 років на південному в'їзді до Вацу з шістьма статуями святих.",
+    "hu": "Barokk híd 1753–1757-ből Vác déli bejáratánál, hat szent szobrával."
+  },
+  "description": {
+    "uk": "За статтею про Вац, бароковий міст через потік Gombás збудовано в 1753–1757 роках; на ньому стоять статуї шести святих, звідки назва Kőszentes híd. Категорія Wikimedia Commons пов'язує міст з єпископом Mihály Frigyes Althann і каменярем Ignác Oracsek та відносить його до мостів 1750-х років на трасі дороги 2."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/V%C3%A1c%2C_K%C5%91szentes_h%C3%ADd_2021_01.jpg",
+      "author": "Pasztilla (Attila Terbócs)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A1c,_K%C5%91szentes_h%C3%ADd_2021_01.jpg",
+      "caption": {
+        "uk": "Kőszentes híd, 2021",
+        "hu": "Kőszentes híd, 2021"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділ «Épületek»: 1753–1757, шість святих."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Stone Bridge over Gomb%C3%A1s-brook (V%C3%A1c)",
+      "url": "https://commons.wikimedia.org/wiki/Category:Stone_Bridge_over_Gomb%C3%A1s-brook_(V%C3%A1c)",
+      "note": "Object location 47.769229, 19.139584 (координати об'єкта, вказані в категорії Commons)."
+    }
+  ]
+}

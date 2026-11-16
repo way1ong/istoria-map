@@ -1,0 +1,63 @@
+{
+  "id": "vac-hetkapolna",
+  "name": {
+    "uk": "Hétkápolna, національне місце прощі",
+    "hu": "Hétkápolna, országos búcsújáró hely"
+  },
+  "type": "church",
+  "coords": [
+    19.13931,
+    47.76413
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "prehistory",
+    "migration",
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Паломницький комплекс на південній околиці Вацу. Поруч знайдено сліди угорців X століття та пізньобронзової доби, а також стоїть пам'ятник битвам 1849 року.",
+    "hu": "Búcsújáró hely Vác déli szélén. Közelében 10. századi magyar és késő bronzkori leletek kerültek elő, itt áll az 1849-es csaták emlékműve is."
+  },
+  "description": {
+    "uk": "Стаття про Вац називає Hétkápolna національним місцем прощі і перелічує його серед храмів міста. Та сама стаття повідомляє, що знахідки біля Hétkápolna і на вулиці Hattyú utca свідчать про поселення угорців уже в X столітті, а гирло струмка Kis-ér біля Hétkápolna є пам'яткою культури полів поховальних урн пізньої бронзової доби. Пам'ятник двом битвам 1849 року поставлено біля південних воріт міста поблизу Hétkápolna. Дата заснування комплексу в опрацьованих джерелах не вказана і буде додана після перевірки."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/V%C3%A1c%2C_H%C3%A9tk%C3%A1polna_2023_01.jpg",
+      "author": "Pasztilla (Attila Terbócs)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A1c,_H%C3%A9tk%C3%A1polna_2023_01.jpg",
+      "caption": {
+        "uk": "Hétkápolna, 2023",
+        "hu": "Hétkápolna, 2023"
+      }
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/H%C3%A9tk%C3%A1polna-Orsz%C3%A1gos_b%C3%BAcs%C3%BAj%C3%A1r%C3%B3_hely_l%C3%A9gi_fot%C3%B3n.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:H%C3%A9tk%C3%A1polna-Orsz%C3%A1gos_b%C3%BAcs%C3%BAj%C3%A1r%C3%B3_hely_l%C3%A9gi_fot%C3%B3n.jpg",
+      "caption": {
+        "uk": "Hétkápolna з повітря, 2014",
+        "hu": "Hétkápolna légi fotón, 2014"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділи «Римська доба…», «Bronzkor», «19–20. század», «Épületek»."
+    },
+    {
+      "title": "OpenStreetMap (Nominatim): Hétkápolna templom Vác",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Hétkápolna+templom+Vác",
+      "note": "Координати 47.76413, 19.13931 за даними OpenStreetMap (ODbL)."
+    }
+  ]
+}

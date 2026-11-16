@@ -1,0 +1,49 @@
+{
+  "id": "dunakeszi-jarmujavito",
+  "name": {
+    "uk": "Головні майстерні MÁV, нині Dunakeszi Járműjavító",
+    "hu": "Dunakeszi MÁV Főműhely / Járműjavító"
+  },
+  "type": "other",
+  "coords": [
+    19.133839,
+    47.646608
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Залізниця купила землю 1911 року, у 1922–1926 роках збудовано робітниче селище, 1926 року відкрито майстерні. 1938 року тут виготовили «Золотий потяг» для перевезення Святої Правиці.",
+    "hu": "A MÁV 1911-ben vásárolt földet, 1922–1926 között felépült a lakótelep, 1926-ban megnyílt a főműhely. 1938-ban itt készült a Szent Jobbot szállító Aranyvonat."
+  },
+  "description": {
+    "uk": "Угорські королівські державні залізниці 1911 року купили землю вздовж лінії Будапешт–Вац, щоб розвантажити будапештські майстерні. Зведені до 1914 року будівлі під час Першої світової війни частково використовували як військовий шпиталь, після війни тут стояло вагонне містечко біженців. У 1922–1926 роках збудовано житлове селище MÁV (Műhelytelep), 1926 року завод відкрився. Найвідоміший виріб міжвоєнного часу: Aranyvonat 1938 року, оздоблений 24-каратними золотими пластинами вагон для перевезення Святої Правиці країною до 900-річчя смерті св. Іштвана; вартість вагона 19 000 пенге. Каплиця селища, церква Серця Ісуса, збудована 1944 року."
+  },
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділи «1910 és 1950 között» і «Dunakeszi MÁV Főműhely»."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Dunakeszi J%C3%A1rm%C5%B1jav%C3%ADt%C3%B3",
+      "url": "https://commons.wikimedia.org/wiki/Category:Dunakeszi_J%C3%A1rm%C5%B1jav%C3%ADt%C3%B3",
+      "note": "Object location 47.646608, 19.133839 (координати об'єкта, вказані в категорії Commons)."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Entrance_building%2C_Rail_Vehicle_factory%2C_Korond%2C_2016_Dunakeszi.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Entrance_building,_Rail_Vehicle_factory,_Korond,_2016_Dunakeszi.jpg",
+      "caption": {
+        "uk": "Прохідна заводу на площі Köröd, 2016",
+        "hu": "A járműjavító főbejárati épülete, Körönd, 2016"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "vac-ferences-templom-var",
+  "name": {
+    "uk": "Францисканська церква Святого Хреста на місці вацького замку",
+    "hu": "Ferences (Szent Kereszt) templom a váci vár helyén"
+  },
+  "type": "church",
+  "coords": [
+    19.130652,
+    47.772279
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval",
+    "ottoman",
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Бароковий храм на площі Géza király tér, завершений 1766 року на місці середньовічного замку, спаленого монголами 1241 року. За статтею про Вац, тут похований король Ґеза I.",
+    "hu": "Barokk templom a Géza király téren, 1766-ra készült el a középkori vár helyén, amelyet 1241-ben a tatárok felégettek. A Vác-szócikk szerint itt nyugszik I. Géza király."
+  },
+  "description": {
+    "uk": "За статтею про Вац, у середньовіччі на підвищенні біля води збудовано вацький замок; під час монгольської навали 1241 року загарбники спалили замкову церкву та будівлі єпископського двору разом із людьми, що шукали там порятунку. В османську добу фортецю утримував гарнізон переважно з боснійців. Францисканська церква, «скарбниця Вацу», збудована до 1766 року, і в ній, за статтею, похований король Ґеза I. Стаття про єпархію натомість пише, що Ґеза I був похований у соборі, який сам збудував; суперечність джерел залишаю як є. Категорія Wikimedia Commons датує церкву 1761 роком і містить знімки залишків замку поруч із монастирем."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Holy_Cross_church._Fasade%2C_2015_V%C3%A1c.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Holy_Cross_church._Fasade,_2015_V%C3%A1c.jpg",
+      "caption": {
+        "uk": "Фасад францисканської церкви, 2015",
+        "hu": "A ferences templom homlokzata, 2015"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділи «Középkor», «Újkor», «Épületek»."
+    },
+    {
+      "title": "Váci egyházmegye – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_egyh%C3%A1zmegye",
+      "note": "Собор Ґези I і його поховання."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Holy Cross church in V%C3%A1c",
+      "url": "https://commons.wikimedia.org/wiki/Category:Holy_Cross_church_in_V%C3%A1c",
+      "note": "Object location 47.772279, 19.130652. Категорія «Churches in Hungary built in 1761», файли «Castle of Vác»."
+    }
+  ]
+}

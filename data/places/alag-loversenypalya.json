@@ -1,0 +1,61 @@
+{
+  "id": "alag-loversenypalya",
+  "name": {
+    "uk": "Іподром і тренувальний центр Alag",
+    "hu": "Alagi lóversenypálya és tréningközpont"
+  },
+  "type": "other",
+  "coords": [
+    19.14454,
+    47.61833
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Угорське товариство кінних перегонів купило землі Alag 1890 року; перші перегони відбулися 12 квітня 1891 року, нову трасу відкрито 1896 року. У розквіті тут тримали понад 600 коней.",
+    "hu": "A Magyar Lovaregylet 1890-ben vásárolt területet Alagon; az első versenynapot 1891. április 12-én tartották, az új pályát 1896-ban avatták. Fénykorában 600-nál több ló állt itt."
+  },
+  "description": {
+    "uk": "За статтею про Dunakeszi, 1890 року Magyar Lovaregylet на чолі з графом Elemér Batthyány придбало ділянку в Alag (в іншому розділі тієї ж статті початок датовано 1889 роком) для створення тренувальної бази; будівництво вели із залученням англійських інженерів. Перший день перегонів відбувся 12 квітня 1891 року у шести заїздах; з 1893 року засновано Alagi Díj. До 1896 року, ювілейного року тисячоліття, збудовано нову трасу (відкрита 5 квітня 1896), водогін з трьома водонапірними вежами, завдяки якому Alag стало першим селом країни з повним водопостачанням, 1898 року Павільйон. Після 1919 року, коли пештський іподром розорали, центр угорського кінного спорту перемістився сюди: 1921 року тут провели перше Угорське дербі. У розквіті в Alag було понад 600 коней. 1951 року товариство націоналізовано; з 1994 року перегони знову проводять. Старі садиби на території перебувають під охороною як пам'ятки."
+  },
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділи «Alag», «Lósport», «Alagi lóversenypálya és tréningközpont»."
+    },
+    {
+      "title": "OpenStreetMap (Nominatim): Alagi Lósport és Tréningközpont",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Alagi+Lósport+és+Tréningközpont",
+      "note": "Координати 47.61833, 19.14454 за даними OpenStreetMap (ODbL). Точка позначає центр тренувального комплексу, а не трибуну."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Tr%C3%A9ningtelep._Fortepan_19902.jpg",
+      "author": "FOTO:FORTEPAN / Kölcsey Ferenc Dunakeszi Városi Könyvtár / Petanovics fényképek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Tr%C3%A9ningtelep._Fortepan_19902.jpg",
+      "caption": {
+        "uk": "Тренувальна база в Alag, 1938",
+        "hu": "Az alagi tréningtelep, 1938"
+      }
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Az_els%C5%91_Magyar_Derby.jpg",
+      "author": "невідомий автор, Vasárnapi Újság, 19 червня 1921",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Az_els%C5%91_Magyar_Derby.jpg",
+      "caption": {
+        "uk": "Перше Угорське дербі в Alag, 1921",
+        "hu": "Az első Magyar Derby Alagon, 1921"
+      }
+    }
+  ]
+}

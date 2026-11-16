@@ -1,0 +1,51 @@
+{
+  "id": "dunakeszi-szent-mihaly-templom",
+  "name": {
+    "uk": "Церква Св. Михайла в Dunakeszi",
+    "hu": "Dunakeszi, Szent Mihály-templom"
+  },
+  "type": "church",
+  "coords": [
+    19.131058,
+    47.631997
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Храм, збудований графом Антало Ґрашшалковичем I і освячений 29 вересня 1756 року; у 1936–1937 роках розширений у необароковому стилі, стара церква стала лівою бічною навою.",
+    "hu": "Gróf Grassalkovich I. Antal építtette, 1756. szeptember 29-én szentelték fel; 1936–1937-ben neobarokk stílusban bővítették, az Öregtemplom a bal mellékhajó lett."
+  },
+  "description": {
+    "uk": "1725 року вацький єпископ Mihály Frigyes Althann надав Dunakeszi статус парафії з філіями Fót і Rákospalota; село тоді мало «тісну цегляну церкву». Після того як 1747 року село купив граф Antal Grassalkovich I, він розпочав будівництво нового храму, освяченого 29 вересня 1756 року, в день Св. Михайла, який став покровителем села. На зламі XIX–XX століть церква стала замалою, тому парох János Faludi (Fieszl) замовив архітектору Gyula Oszvaldik проєкт нової; стару церкву не розібрали, а добудували так, що вона стала лівою бічною навою. Новий храм у стилі необароко зведено 1936–1937 років і освячено 10 жовтня 1937 року єпископом Árpád István Hanauer."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Szt._Mih%C3%A1ly_templom.jpg",
+      "author": "Telekeszi (Gulyás Péter)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szt._Mih%C3%A1ly_templom.jpg",
+      "caption": {
+        "uk": "Церква Св. Михайла в Dunakeszi, 2007",
+        "hu": "Szent Mihály-templom, Dunakeszi, 2007"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділи «Dunakeszi a 18. században» і «Szent Mihály-templom»."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Saint Michael church in Dunakeszi",
+      "url": "https://commons.wikimedia.org/wiki/Category:Saint_Michael_church_in_Dunakeszi",
+      "note": "Object location 47.631997, 19.131058 (координати об'єкта, вказані в категорії Commons)."
+    }
+  ]
+}

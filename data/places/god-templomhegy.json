@@ -1,0 +1,38 @@
+{
+  "id": "god-templomhegy",
+  "name": {
+    "uk": "Templomhegy: місце середньовічної круглої церкви Göd",
+    "hu": "Templomhegy, a gödi középkori körtemplom helye"
+  },
+  "type": "church",
+  "coords": [
+    19.1384,
+    47.6999
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "arpad",
+    "late-medieval",
+    "ottoman"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Пагорб «Templom h.» на мапі 1904 року біля Várdomb у Felsőgöd. За статтею про Göd, тут стояла церква з круглим планом, знищена разом із селом в османську добу.",
+    "hu": "A „Templom h.” az 1904-es térképen a felsőgödi Várdomb mellett. A Göd-szócikk szerint itt állt a kör alaprajzú templom, amely a faluval együtt a török korban pusztult el."
+  },
+  "description": {
+    "uk": "На аркуші Spezialkarte 1904 року між залізницею і нинішнім Felsőgöd підписано «Templom h.» (Templomhegy, «церковний пагорб») без будівлі, тобто церкви вже не було. За статтею про Göd, у Felsőgöd біля городища аварської доби виникли церква з круглим планом і село Gud/Göde; в османську добу «церква, цвинтар і село загинули», а Göd уже в середньовіччі був «templomos hely» з круглою церквою біля нинішнього Várdomb. Координати зняті з мапи 1904 року з точністю близько 100 м і узгоджуються з положенням Várdomb."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Підпис «Templom h.» на аркуші."
+    },
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділи «Mohácsig», «Török kor», «Templomok»."
+    }
+  ]
+}

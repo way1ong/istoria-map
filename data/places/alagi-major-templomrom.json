@@ -1,0 +1,49 @@
+{
+  "id": "alagi-major-templomrom",
+  "name": {
+    "uk": "Руїни середньовічної церкви в Alagi-major",
+    "hu": "Alagi-majori templomrom"
+  },
+  "type": "archaeological",
+  "coords": [
+    19.149574,
+    47.604082
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Романська ротонда кінця XII – першої половини XIII століття з готичними ризницею і вівтарем XV століття; пам'ятка з інформаційною таблицею.",
+    "hu": "A 12. század végén–13. század első felében épült román körtemplom, 15. századi gótikus sekrestyével és szentéllyel; műemlék."
+  },
+  "description": {
+    "uk": "За статтею про Dunakeszi, в частині міста Alagi-major стоять руїни романської круглої церкви, збудованої наприкінці XII – у першій половині XIII століття, до якої в XV столітті прибудували готичні ризницю та вівтарну частину. Перша збережена писемна згадка про село Alag датується 1328 роком; це було типове для комітату Пешт село дрібної шляхти."
+  },
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділи «Dunakeszi és Alag a középkorban» і «Alagi-majori templomrom»."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Ruins of medieval churches in Alag",
+      "url": "https://commons.wikimedia.org/wiki/Category:Ruins_of_medieval_churches_in_Alag",
+      "note": "Object location 47.604082, 19.149574 (координати об'єкта, вказані в категорії Commons). Координати опубліковані відкрито: пам'ятка з інформаційною таблицею, у категорії Commons вказано object location."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Alagi_templomrom.jpg",
+      "author": "Livvyfan",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Alagi_templomrom.jpg",
+      "caption": {
+        "uk": "Руїни церкви в Alagi-major, 2017",
+        "hu": "Alagi templomrom, 2017"
+      }
+    }
+  ]
+}

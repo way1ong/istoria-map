@@ -1,0 +1,29 @@
+{
+  "id": "alag-elso-versenynap-1891",
+  "title": {
+    "uk": "Перший день перегонів в Alag",
+    "hu": "Az első alagi versenynap"
+  },
+  "date": {
+    "from": "1891-04-12",
+    "precision": "exact"
+  },
+  "period": "long-19",
+  "places": [
+    "alag-loversenypalya"
+  ],
+  "summary": {
+    "uk": "12 квітня 1891 року на новому іподромі Magyar Lovaregylet відбулися перші шість заїздів; переможцем першого став Viktor Chernel на коні Darázs. 1896 року відкрито нову трасу.",
+    "hu": "1891. április 12-én a Magyar Lovaregylet új pályáján hat futamot rendeztek; az elsőt Chernel Viktor nyerte Darázs nevű lován. 1896-ban új pályát avattak."
+  },
+  "description": {
+    "uk": "За статтею про Dunakeszi, 1890 року Magyar Lovaregylet купило в будапештського фабриканта Fülöp Holitscher ділянку площею 1200 квадратних сажнів, щоб створити тренувальну базу. Перший день перегонів відбувся 12 квітня 1891 року у шести заїздах; у першому, на приз Magyar Lovaregyleti-díj, стартували четверо, переміг Viktor Chernel на коні Darázs. Газета Vadász- és Versenylap у січні 1891 року ще пояснювала читачам, що «Alag puszta межує з Káposztásmegyer, залізнична станція Dunakesz». До весни 1892 року з'явилася трибуна і два буфети, головними проблемами були вітер і пісок; до 1896 року Lovaregylet і Úrlovasok Szövetkezete перетворили пусту на повноцінний іподром, нова траса відкрита 5 квітня 1896 року."
+  },
+  "sources": [
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділи «Alag» і «Lósport»."
+    }
+  ]
+}

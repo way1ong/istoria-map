@@ -1,0 +1,95 @@
+{
+  "_comment": "Редакційна періодизація для околиць Göd. Межі років — див. sources кожного періоду. Усі роки: від'ємні = до н. е., to: null = дотепер.",
+  "periods": [
+    {
+      "id": "prehistory",
+      "name": { "uk": "Доісторія", "hu": "Őskor" },
+      "from": -6000,
+      "to": -10,
+      "color": "#8d6e63",
+      "summary": { "uk": "Кам'яний, бронзовий і залізний вік на лівому березі Дунаю.", "hu": "Kő-, bronz- és vaskor a Duna bal partján." },
+      "sources": [{ "title": "Редакційна рамка проєкту; роки уточнити за джерелами", "note": "Межі умовні, доки не підтверджені археологічною літературою регіону." }]
+    },
+    {
+      "id": "roman-barbaricum",
+      "name": { "uk": "Римська доба і Barbaricum", "hu": "Római kor és Barbaricum" },
+      "from": -10,
+      "to": 375,
+      "color": "#c62828",
+      "summary": { "uk": "Лівий берег Дунаю лежав за межами Паннонії, у сарматському Barbaricum, навпроти римського лімесу.", "hu": "A Duna bal partja Pannonián kívül, a szarmata Barbaricumban feküdt, a római limesszel szemben." },
+      "sources": [{ "title": "Pleiades: Göd-Bócsaújtelep", "url": "https://pleiades.stoa.org/places/487248321", "note": "Недобудований пізньоримський форт часів Валентиніана на Limes Sarmatiae." }]
+    },
+    {
+      "id": "migration",
+      "name": { "uk": "Доба переселення народів", "hu": "Népvándorlás kora" },
+      "from": 375,
+      "to": 895,
+      "color": "#6a1b9a",
+      "summary": { "uk": "Гуни, германські народи, авари.", "hu": "Hunok, germán népek, avarok." },
+      "sources": [{ "title": "Редакційна рамка проєкту; роки уточнити за джерелами" }]
+    },
+    {
+      "id": "arpad",
+      "name": { "uk": "Прихід мадярів і доба Арпадів", "hu": "Honfoglalás és az Árpád-kor" },
+      "from": 895,
+      "to": 1301,
+      "color": "#2e7d32",
+      "summary": { "uk": "Заселення, заснування Вацької єпархії, перші писемні згадки сіл.", "hu": "Megtelepedés, a váci egyházmegye alapítása, a falvak első írásos említései." },
+      "sources": [{ "title": "Редакційна рамка проєкту; роки уточнити за джерелами" }]
+    },
+    {
+      "id": "late-medieval",
+      "name": { "uk": "Пізнє середньовіччя", "hu": "Késő középkor" },
+      "from": 1301,
+      "to": 1526,
+      "color": "#1565c0",
+      "summary": { "uk": "Від Анжу до битви під Могачем.", "hu": "Az Anjouktól a mohácsi csatáig." },
+      "sources": [{ "title": "Редакційна рамка проєкту; роки уточнити за джерелами" }]
+    },
+    {
+      "id": "ottoman",
+      "name": { "uk": "Османська доба", "hu": "Török kor" },
+      "from": 1526,
+      "to": 1699,
+      "color": "#ef6c00",
+      "summary": { "uk": "Розділена Угорщина, прикордоння, спустошення й виживання сіл.", "hu": "A három részre szakadt ország, végvidék, a falvak pusztulása és túlélése." },
+      "sources": [{ "title": "Редакційна рамка проєкту; роки уточнити за джерелами" }]
+    },
+    {
+      "id": "habsburg-18",
+      "name": { "uk": "Габсбурзьке XVIII століття", "hu": "18. század" },
+      "from": 1699,
+      "to": 1790,
+      "color": "#f9a825",
+      "summary": { "uk": "Переселення, бароко, перша військова зйомка.", "hu": "Betelepítés, barokk, az első katonai felmérés." },
+      "sources": [{ "title": "Редакційна рамка проєкту; роки уточнити за джерелами" }]
+    },
+    {
+      "id": "long-19",
+      "name": { "uk": "Реформи, 1848 і дуалізм", "hu": "Reformkor, 1848 és a dualizmus" },
+      "from": 1790,
+      "to": 1918,
+      "color": "#00838f",
+      "summary": { "uk": "Залізниця, дачні селища, початок сучасних Göd і Dunakeszi.", "hu": "Vasút, nyaralótelepek, a mai Göd és Dunakeszi kezdetei." },
+      "sources": [{ "title": "Редакційна рамка проєкту; роки уточнити за джерелами" }]
+    },
+    {
+      "id": "interwar-ww2",
+      "name": { "uk": "Тріанон, міжвоєнний час, Друга світова", "hu": "Trianon, a két háború között, II. világháború" },
+      "from": 1918,
+      "to": 1945,
+      "color": "#455a64",
+      "summary": { "uk": "Нові кордони, зростання передмість, війна й Голокост.", "hu": "Új határok, az elővárosok növekedése, háború és holokauszt." },
+      "sources": [{ "title": "Редакційна рамка проєкту; роки уточнити за джерелами" }]
+    },
+    {
+      "id": "modern",
+      "name": { "uk": "Соціалістична доба і сучасність", "hu": "Szocializmus és napjaink" },
+      "from": 1945,
+      "to": null,
+      "color": "#37474f",
+      "summary": { "uk": "Від 1945 року дотепер.", "hu": "1945-től napjainkig." },
+      "sources": [{ "title": "Редакційна рамка проєкту" }]
+    }
+  ]
+}

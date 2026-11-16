@@ -1,0 +1,42 @@
+{
+  "id": "ilka-major",
+  "name": {
+    "uk": "Хутір Ilka major",
+    "hu": "Ilka major"
+  },
+  "type": "farmstead",
+  "coords": [
+    19.1682,
+    47.6859
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19",
+    "interwar-ww2"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Господарський хутір на схід від Göd, підписаний «Ilka mjr.» на мапі 1904 року. Між війнами сюди переселилися вихідці з Bócsa, звідси назва Bócsaújtelep; сьогодні це промислова зона біля заводу Samsung.",
+    "hu": "Gazdasági major Gödtől keletre, az 1904-es térképen „Ilka mjr.”. A két világháború között bócsaiak települtek ide (Bócsaújtelep); ma a Samsung-gyár ipari területe."
+  },
+  "description": {
+    "uk": "На аркуші Spezialkarte 1904 року на схід від залізниці підписано хутір «Ilka mjr.» (major). За статтею про Göd, «в Ilka major поселилися вихідці з Bócsa», звідси назва Bócsaújtelep. База Угорського національного музею подає Ilkamajor як варіант назви археологічної пам'ятки Göd-Bócsaújtelep, на території якої нині промислова зона. Координати зняті з мапи 1904 року з точністю близько 100 м; поруч тече Ilka-patak."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Підпис «Ilka mjr.» на аркуші; координати зчитано з вирівняного скану."
+    },
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділ «A település kialakulása»: Ilka majorba betelepültek a bócsaiak."
+    },
+    {
+      "title": "Archeodatabase HNM: Göd, Bócsaújtelep (Ilkamajor), site 10356",
+      "url": "https://archeodatabase.hnm.hu/en/node/3785",
+      "note": "Варіант назви пам'ятки: Bócsaújtelep (Ilkamajor)."
+    }
+  ]
+}

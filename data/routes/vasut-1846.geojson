@@ -1,0 +1,160 @@
+{
+ "type": "FeatureCollection",
+ "animation": {
+  "event": "vasut-megnyitasa-1846",
+  "from": "1846-07-15T10:00",
+  "to": "1846-07-15T11:00",
+  "title": {
+   "uk": "Перший потяг Пешт–Вац, 15 липня 1846",
+   "hu": "Az első vonat Pest–Vác között, 1846. július 15."
+  },
+  "note": {
+   "uk": "Лінія проведена схематично через станції. Потяг подолав 33,6 км за 59 хвилин із 10-хвилинною зупинкою в Dunakeszi; година відправлення в джерелі не вказана, тож відлік умовний.",
+   "hu": "A vonal vázlatosan, az állomásokon át. 59 perc 10 perces dunakeszi tartózkodással; az indulás órája a forrásban nem szerepel."
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.0572,
+      47.5105
+     ],
+     [
+      19.1365,
+      47.5634
+     ],
+     [
+      19.1369,
+      47.6258
+     ]
+    ]
+   },
+   "properties": {
+    "id": "vonat-pest-dunakeszi",
+    "period": "long-19",
+    "kind": "transport",
+    "start": "1846-07-15T10:00",
+    "end": "1846-07-15T10:30",
+    "title": {
+     "uk": "Потяг: Пешт → Palota → Dunakeszi",
+     "hu": "Vonat: Pest → Palota → Dunakeszi"
+    },
+    "sources": [
+     {
+      "title": "Budapest–Szob-vasútvonal – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Budapest%E2%80%93Szob-vas%C3%BAtvonal",
+      "note": "15 липня 1846 відкрито лінію Пешт–Вац; 33,6 км за 59 хвилин із 10-хвилинною зупинкою в Dunakeszi; вокзал на місці нинішнього Nyugati."
+     },
+     {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Станції: Palota, Dunakeszi, далі Göd третьою."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Nyugati pályaudvar",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Nyugati+pályaudvar",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Rákospalota",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Rákospalota",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Dunakeszi vasútállomás",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Dunakeszi+vasútállomás",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.1369,
+     47.6258
+    ]
+   },
+   "properties": {
+    "id": "megallo-dunakeszi",
+    "period": "long-19",
+    "kind": "transport",
+    "start": "1846-07-15T10:30",
+    "title": {
+     "uk": "Зупинка 10 хвилин у Dunakeszi",
+     "hu": "10 perces tartózkodás Dunakeszin"
+    },
+    "sources": [
+     {
+      "title": "Budapest–Szob-vasútvonal – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Budapest%E2%80%93Szob-vas%C3%BAtvonal",
+      "note": "10-хвилинна зупинка в Dunakeszi."
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      19.1369,
+      47.6258
+     ],
+     [
+      19.1374,
+      47.6878
+     ],
+     [
+      19.15,
+      47.7333
+     ],
+     [
+      19.133,
+      47.7827
+     ]
+    ]
+   },
+   "properties": {
+    "id": "vonat-dunakeszi-vac",
+    "period": "long-19",
+    "kind": "transport",
+    "start": "1846-07-15T10:40",
+    "end": "1846-07-15T10:59",
+    "title": {
+     "uk": "Потяг: Dunakeszi → Göd → Вац",
+     "hu": "Vonat: Dunakeszi → Göd → Vác"
+    },
+    "sources": [
+     {
+      "title": "Budapest–Szob-vasútvonal – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Budapest%E2%80%93Szob-vas%C3%BAtvonal",
+      "note": "Прибуття до Вацу через 59 хвилин після відправлення."
+     },
+     {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Göd як третя станція."
+     },
+     {
+      "title": "Wikimedia Commons: Station building of Göd railway station",
+      "url": "https://commons.wikimedia.org/wiki/Category:Station_building_of_G%C3%B6d_railway_station",
+      "note": "Координати станції Göd."
+     },
+     {
+      "title": "OpenStreetMap (Nominatim): Vác vasútállomás",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Vác+vasútállomás",
+      "note": "Координати центру населеного пункту/об'єкта, ODbL."
+     }
+    ]
+   }
+  }
+ ]
+}

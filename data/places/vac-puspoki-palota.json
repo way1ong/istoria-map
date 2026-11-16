@@ -1,0 +1,51 @@
+{
+  "id": "vac-puspoki-palota",
+  "name": {
+    "uk": "Єпископський палац у Ваці",
+    "hu": "Váci püspöki palota"
+  },
+  "type": "monument",
+  "coords": [
+    19.129729,
+    47.774586
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Бароковий палац на Migazzi Kristóf tér 1, завершений 1772 року за єпископа Мігацці; нині також музей римських і середньовічних знахідок.",
+    "hu": "Barokk palota a Migazzi Kristóf tér 1. alatt, 1772-re készült el Migazzi püspök idején; ma múzeum is működik benne."
+  },
+  "description": {
+    "uk": "За статтею про Вац, будівництво нинішнього єпископського палацу завершено 1772 року в добу єпископів Migazzi та Althann; у палаці діє музей римських і середньовічних знахідок. За категорією Wikimedia Commons, адреса палацу Migazzi Kristóf tér 1, стиль бароко, архітектор Frigyes Meissl, власник Вацька єпархія; ці дані походять з інфобоксу Wikidata і потребують підтвердження."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/V%C3%A1c%2C_p%C3%BCsp%C3%B6ki_palota_2021_01.jpg",
+      "author": "Pasztilla (Attila Terbócs)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A1c,_p%C3%BCsp%C3%B6ki_palota_2021_01.jpg",
+      "caption": {
+        "uk": "Єпископський палац, 2021",
+        "hu": "A püspöki palota, 2021"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Вступ і розділ «Újkor»: 1772, музей."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Episcopal Palace (V%C3%A1c)",
+      "url": "https://commons.wikimedia.org/wiki/Category:Episcopal_Palace_(V%C3%A1c)",
+      "note": "Object location 47.774586, 19.129729 (координати об'єкта, вказані в категорії Commons)."
+    }
+  ]
+}

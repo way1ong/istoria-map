@@ -1,0 +1,31 @@
+{
+  "id": "meixner-puszta",
+  "name": {
+    "uk": "Пуста Meixner на південь від Вацу",
+    "hu": "Meixner-puszta Váctól délre"
+  },
+  "type": "farmstead",
+  "coords": [
+    19.1488,
+    47.7688
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Хутір, підписаний «Meixner psz.» на мапі 1885 року між Hétkápolna і Kláraháza; у сучасних джерелах не згадується, на місцевості не простежується.",
+    "hu": "Az 1885-ös térképen „Meixner psz.” felirattal jelölt puszta Hétkápolna és Kláraháza között; mai forrásokban nem szerepel."
+  },
+  "description": {
+    "uk": "Єдине джерело про цей хутір наразі аркуш Spezialkarte 1885 року, де на південний схід від Вацу підписано «Meixner psz.». У статтях Вікіпедії про Вац він не згадується. Назва, час існування й власники потребують перевірки за місцевою літературою; координати зняті з мапи з точністю близько 100 м."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 14:XX Nógrád und Waitzen, 1885, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
+      "note": "Підпис «Meixner psz.» на аркуші; інших джерел поки немає."
+    }
+  ]
+}

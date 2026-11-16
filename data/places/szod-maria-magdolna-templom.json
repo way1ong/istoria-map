@@ -1,0 +1,51 @@
+{
+  "id": "szod-maria-magdolna-templom",
+  "name": {
+    "uk": "Церква Св. Марії Магдалини в Sződ",
+    "hu": "Sződ, Mária Magdolna-templom"
+  },
+  "type": "church",
+  "coords": [
+    19.18891,
+    47.71558
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Храм, освячений 1744 року за часів Grassalkovich; на сходах входу 1953 року знайдено різьблений камінь XI століття з пальметами, імовірно привезений з Вацу після монгольської навали.",
+    "hu": "1744-ben felszentelt templom a Grassalkovich-korból; lépcsőjén 1953-ban 11. századi palmettás faragott követ találtak, amely valószínűleg Vácról került ide a tatárjárás után."
+  },
+  "description": {
+    "uk": "За статтею про Sződ, римо-католицька церква Марії Магдалини на площі II. János Pál pápa tér 1 освячена 1744 року; разом із плебанією це дві пам'ятки села, що походять з доби землеволодіння родини Grassalkovich, яка 1736 року купила Sződ разом із Göd-puszta у родини Madách. 1953 року на сходинці входу до церкви виявлено камінь XI століття з пальметовим орнаментом, який, найімовірніше, потрапив до Sződ з Вацу після монгольської навали. Перша писемна згадка про село (під назвою «Szenden») датується 1255 роком, грамоту 18 квітня 1288 року підтвердив Ласло IV."
+  },
+  "sources": [
+    {
+      "title": "Sződ – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sz%C5%91d",
+      "note": "Розділи «Története» і «Nevezetességei»."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Mary Magdalene church in Sz%C5%91d",
+      "url": "https://commons.wikimedia.org/wiki/Category:Mary_Magdalene_church_in_Sz%C5%91d",
+      "note": "Object location 47.71558, 19.18891 (координати об'єкта, вказані в категорії Commons)."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Sz%C5%91d%2C_r%C3%B3mai_katolikus_templom_2021_05.jpg",
+      "author": "Pasztilla (Attila Terbócs)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Sz%C5%91d,_r%C3%B3mai_katolikus_templom_2021_05.jpg",
+      "caption": {
+        "uk": "Церква Марії Магдалини в Sződ, 2021",
+        "hu": "A sződi római katolikus templom, 2021"
+      }
+    }
+  ]
+}

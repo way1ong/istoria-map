@@ -1,0 +1,41 @@
+{
+  "id": "elso-okleveles-emlites-1255",
+  "title": {
+    "uk": "Перша грамота про Göd, Keszi (Dunakeszi) і Sződ",
+    "hu": "Göd, Keszi és Sződ első okleveles említése"
+  },
+  "date": {
+    "from": "1255",
+    "precision": "exact"
+  },
+  "period": "arpad",
+  "places": [
+    "god-puszta-nemeskeri-kuria",
+    "dunakeszi-szent-mihaly-templom",
+    "szod-maria-magdolna-templom"
+  ],
+  "summary": {
+    "uk": "Грамота короля Бели IV 1255 року вперше згадує Göd, Keszi (нині Dunakeszi) і Sződ (як «Szenden») у зв'язку з надбанням земель ішпаном комітату Фейєр з роду Gyula-Zsombor.",
+    "hu": "IV. Béla 1255. évi oklevele említi először Gödöt, Keszit (Dunakeszi) és Sződöt („Szenden”), a Gyula-Zsombor nembeli Fejér megyei ispán birtokszerzése kapcsán."
+  },
+  "description": {
+    "uk": "Три статті описують ту саму грамоту 1255 року з різними формами імені землевласника. За статтею про Göd, після монгольської навали село перейшло до Sebret з роду Gyula-Zsombor, ішпана комітату Фейєр, і саме 1255 року вперше згадане в грамоті; ця дата є в гербі міста. За статтею про Dunakeszi, Бела IV 1255 року відібрав Keszi у Петера і Яноша, синів Яноша, і надав Seywerdus, вихідцеві з Мелька на ім'я Siegfrid, ішпану комітату Фейєр, чий син Erdő володів селом до смерті 1317 року. За статтею про Sződ, грамоту пов'язують із надбанням земель sződi Sigfrid, і Ласло IV підтвердив її 18 квітня 1288 року. 1317 року, за статтею про Göd, Карл Роберт надав Göd Dénes Szécsi; за статтею про Sződ, після вигасання роду Sigfrid Sződ разом із Göd і Keszi перейшов до роду Széchy, який володів ними до 1579 року."
+  },
+  "sources": [
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділ «Mohácsig»."
+    },
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділ «Dunakeszi és Alag a középkorban»."
+    },
+    {
+      "title": "Sződ – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sz%C5%91d",
+      "note": "Розділ «Története»."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "god-vasutallomas",
+  "name": {
+    "uk": "Залізнична станція Göd",
+    "hu": "Göd vasútállomás"
+  },
+  "type": "other",
+  "coords": [
+    19.137398,
+    47.687836
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Третя станція першої угорської залізниці Пешт–Вац 1846 року після Palota і Dunakeszi. Дата нинішньої дерев'яної будівлі вокзалу в джерелах не вказана.",
+    "hu": "A Pest–Vác vasút (1846) harmadik állomása Palota és Dunakeszi után. A mai faszerkezetű állomásépület kora a forrásokban nincs megadva."
+  },
+  "description": {
+    "uk": "За статтею про Göd, після станцій Palota і Dunakeszi третьою станцією відкритої 1846 року лінії став Göd; пізніше з'явилася й зупинка у Felsőgöd. Категорія Wikimedia Commons містить фото нинішньої будівлі станції з дерев'яною архітектурою та меморіальної дошки Ferenc Pesti; рік спорудження будівлі в опрацьованих джерелах не наведено."
+  },
+  "sources": [
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділ «Fejlődés megindulása, reformkor»."
+    },
+    {
+      "title": "Wikimedia Commons: Category:Station building of G%C3%B6d railway station",
+      "url": "https://commons.wikimedia.org/wiki/Category:Station_building_of_G%C3%B6d_railway_station",
+      "note": "Object location 47.687836, 19.137398 (координати об'єкта, вказані в категорії Commons)."
+    }
+  ]
+}

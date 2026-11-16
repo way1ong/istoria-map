@@ -1,0 +1,48 @@
+{
+  "id": "god-termal-strand",
+  "name": {
+    "uk": "Термальний пляж Göd",
+    "hu": "Gödi Termálstrand"
+  },
+  "type": "other",
+  "coords": [
+    19.150461,
+    47.691925
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "1950 року тут знайшли джерело гарячої води, на якому постав нинішній термальний пляж.",
+    "hu": "1950-ben melegvízforrást találtak, erre épült a mai termálstrand."
+  },
+  "description": {
+    "uk": "За статтею про Göd, 1950 року в селищі знайдено джерело гарячої води, на базі якого збудовано нинішній термальний пляж. У тих самих роках зведено амбулаторію і народну бібліотеку. 1970 року Alsógöd і Felsőgöd об'єдналися під назвою Göd, а 20 серпня 1999 року Göd отримав статус міста."
+  },
+  "sources": [
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділ «A második világháború után»."
+    },
+    {
+      "title": "Wikimedia Commons: Category:G%C3%B6di Term%C3%A1lstrandf%C3%BCrd%C5%91",
+      "url": "https://commons.wikimedia.org/wiki/Category:G%C3%B6di_Term%C3%A1lstrandf%C3%BCrd%C5%91",
+      "note": "Object location 47.691925, 19.150461 (координати об'єкта, вказані в категорії Commons)."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Term%C3%A1lstrandf%C3%BCrd%C5%91%2C_f%C5%91%C3%A9p%C3%BClet%2C_k%C3%B6z%C3%A9p%2C_2020_G%C3%B6d.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Term%C3%A1lstrandf%C3%BCrd%C5%91,_f%C5%91%C3%A9p%C3%BClet,_k%C3%B6z%C3%A9p,_2020_G%C3%B6d.jpg",
+      "caption": {
+        "uk": "Головна будівля термального пляжу, 2020",
+        "hu": "A termálstrandfürdő főépülete, 2020"
+      }
+    }
+  ]
+}

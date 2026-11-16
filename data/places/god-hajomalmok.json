@@ -1,0 +1,31 @@
+{
+  "id": "god-hajomalmok",
+  "name": {
+    "uk": "Корабельні млини на Дунаї біля Göd",
+    "hu": "Hajómalmok a Dunán Gödnél"
+  },
+  "type": "mill",
+  "coords": [
+    19.127,
+    47.69
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "long-19"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Близько 1800 року на Дунаї біля Göd з'явилися плавучі корабельні млини; жодного не збереглося. Місце показано умовно на річці навпроти Göd.",
+    "hu": "1800 körül hajómalmok jelentek meg a Dunán Gödnél; egy sem maradt fenn. A hely jelképes, a folyón Göddel szemben."
+  },
+  "description": {
+    "uk": "За статтею про Göd, «близько 1800 року на Дунаї з'явилися корабельні млини» (hajómalmok). Такі млини стояли на якорях у течії й не лишали слідів на березі, тому точне місце невідоме; мітка поставлена на річці навпроти Göd умовно."
+  },
+  "sources": [
+    {
+      "title": "Göd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%B6d",
+      "note": "Розділ «Újjáépülés»: 1800 környékén megjelentek a hajómalmok a Dunán."
+    }
+  ]
+}
