@@ -1,0 +1,45 @@
+{
+  "id": "csokakoi-var",
+  "name": {
+    "uk": "Замок Чокаке (Csókakő)",
+    "hu": "Csókakő vára"
+  },
+  "type": "castle",
+  "coords": [
+    18.27667,
+    47.36028
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Єдиний уцілілий у комітаті Фейєр замок середньовічного походження, вживаний і в османську добу; перша згадка 1299 року, 1326 року його вимінив король Карл Роберт, у XV столітті каштелян István Rozgonyi.",
+    "hu": "Fejér vármegye egyetlen fennmaradt középkori eredetű, a török időkben is használt vára; első említése 1299-ből, 1326-ban Károly Róbert elcserélte, a 15. században várnagya Rozgonyi István volt."
+  },
+  "description": {
+    "uk": "За статтею, ця місцевість після Гонфоглалашу належала роду Csák. Перша згадка про укріплення Чокаке датується 1299 року, коли в ньому жив віце-суддя країни István, син Márk, з родиною й челяддю; вони підтримали Карла Анжу, але переможець 1326 року, щоб не дати скластися небезпечному маєтку, вимінив замок на домени Dombó і Nyék. Каштеляном Чокаке був королівський ішпан комітату Фейєр; у XV столітті ним став István Rozgonyi, який 1428 року врятував життя короля в програній битві з османами під Ґаламбоцем. Пізніше замком володіли, зокрема, János Corvin і Tamás Bakócz; у XVI столітті він втратив військове значення."
+  },
+  "sources": [
+    {
+      "title": "Csókakő vára – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Cs%C3%B3kak%C5%91_v%C3%A1ra",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Cs%C3%B3kak%C5%91_01.jpg",
+      "author": "невідомий автор",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Cs%C3%B3kak%C5%91_01.jpg",
+      "caption": {
+        "uk": "Замок Чокаке",
+        "hu": "Csókakő vára"
+      }
+    }
+  ]
+}

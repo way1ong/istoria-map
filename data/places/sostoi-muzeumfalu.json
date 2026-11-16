@@ -1,0 +1,49 @@
+{
+  "id": "sostoi-muzeumfalu",
+  "name": {
+    "uk": "Музейне село Шошто в Ніредьгазі (Sóstói Múzeumfalu)",
+    "hu": "Sóstói Múzeumfalu, Nyíregyháza"
+  },
+  "type": "monument",
+  "coords": [
+    21.71865,
+    48.00872
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Етнографічний музей просто неба в частині Ніредьгази Sóstó, відкритий 1979 року з п'ятьма садибами; показує народну архітектуру комітату Саболч-Сатмар-Береґ.",
+    "hu": "Nyíregyháza Sóstó városrészében 1979-ben öt portával megnyitott szabadtéri néprajzi múzeum, Szabolcs-Szatmár-Bereg vármegye népi építészetét mutatja be."
+  },
+  "description": {
+    "uk": "За статтею, ідея музейного села з'явилася в 1960-х роках, а 1979 року музей просто неба відкрили з показом п'яти садиб. Він представляє народну архітектуру комітату Саболч-Сатмар-Береґ; збірка склалася з власних збірок першого директора Sándor Erdész і з етнографічних фондів комітатського музею. Координати взято з OpenStreetMap, бо стаття їх не подає."
+  },
+  "sources": [
+    {
+      "title": "Sóstói Múzeumfalu – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/S%C3%B3st%C3%B3i_M%C3%BAzeumfalu",
+      "note": "Вступ і розділ «Története»."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Sóstói Múzeumfalu",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=S%C3%B3st%C3%B3i%20M%C3%BAzeumfalu",
+      "note": "Координати 48.00872, 21.71865 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Templom_-_panoramio_-_Szemes_Elek_%282%29.jpg",
+      "author": "Szemes Elek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Templom_-_panoramio_-_Szemes_Elek_%282%29.jpg",
+      "caption": {
+        "uk": "Церква в музейному селі Шошто",
+        "hu": "Templom a Sóstói Múzeumfaluban"
+      }
+    }
+  ]
+}

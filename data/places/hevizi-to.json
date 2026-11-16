@@ -1,0 +1,46 @@
+{
+  "id": "hevizi-to",
+  "name": {
+    "uk": "Озеро Гевіз (Hévízi-tó)",
+    "hu": "Hévízi-tó"
+  },
+  "type": "nature",
+  "coords": [
+    17.19306,
+    46.78722
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Найбільше в Європі цілюще тепле озеро площею 4,44 га з торф'яним дном, яке живить вода 38 °C з 38-метрової джерельної печери; перша купальня на плотах 1772 року від György Festetics, назва Hévíz відома з 1328 року.",
+    "hu": "Európa legnagyobb gyógyhatású melegvizes tava, 4,44 hektáros tőzegmedrű forrástó, amelyet a 38 méter mély forrásbarlangból feltörő 38 °C-os víz táplál; az első tutajokra épített fürdőházat 1772-ben Festetics György építtette, a Hévíz név 1328 óta ismert."
+  },
+  "description": {
+    "uk": "За статтею, Гевізьке цілюще озеро на межі Зальських пагорбів і Кестгейського плато площею 4,44 га разом із 50-гектарним захисним лісом є найбільшим цілющим теплим озером Європи; на відміну від інших теплих озер, воно торф'яне джерельне, його живить вода температурою 38 °C, що б'є з 38-метрової джерельної печери з дебітом 410 літрів на секунду. Село біля озера має назву Hévíz від середньовіччя, вона натякає на гаряче джерело вже в першій згадці 1328 року. Ширше озеро стало відоме у XVIII столітті, його описав Mátyás Bél 1731 року, а першу купальню на плотах 1772 року збудував György Festetics, засновник кестгейського Georgikon (окрема картка)."
+  },
+  "sources": [
+    {
+      "title": "Hévízi-tó – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/H%C3%A9v%C3%ADzi-t%C3%B3",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/H%C3%A9v%C3%ADzi-t%C3%B3_2.jpg",
+      "author": "Hévízi Turisztikai Nonprofit Kft",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:H%C3%A9v%C3%ADzi-t%C3%B3_2.jpg",
+      "caption": {
+        "uk": "Озеро Гевіз",
+        "hu": "A Hévízi-tó"
+      }
+    }
+  ]
+}

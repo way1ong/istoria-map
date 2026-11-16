@@ -1,0 +1,45 @@
+{
+  "id": "salgotarjan",
+  "name": {
+    "uk": "Шальґотар'ян (Salgótarján), вугільне місто Ноґраду",
+    "hu": "Salgótarján"
+  },
+  "type": "settlement",
+  "coords": [
+    19.78667,
+    48.08528
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Центр комітату Ноґрад, що виріс завдяки бурому вугіллю, знайденому 1850 року: наприкінці 1860-х виникло товариство Salgótarjáni Kőszénbánya, а 1881 року металургійний комбінат Rimamurány-Salgótarjáni Vasmű. Точка: центр міста.",
+    "hu": "Nógrád vármegye székhelye, amely az 1850-ben felfedezett barnakőszénnek köszönhetően nőtt naggyá: az 1860-as évek végén megalakult a Salgótarjáni Kőszénbánya Rt., 1881-ben a Rimamurány-Salgótarjáni Vasmű Rt. A térképi pont a városközpont."
+  },
+  "description": {
+    "uk": "За статтею, назва міста складена з Salgó, за сусіднім замком Шальґо (окрема картка), і Tarján, назви одного з мадярських племен давньотюркського походження. 1850 року біля тодішнього села знайшли буре вугілля; почався видобуток, а за ним промисловість, і поселення швидко зросло. Наприкінці 1860-х років постало одне з найбільших тогочасних товариств, Salgótarjáni Kőszénbánya, а 1881 року злиттям двох фірм виник великий комбінат Rimamurány-Salgótarjáni Vasmű, другий за величиною металургійний завод країни. Місто входить до глобального геопарку ЮНЕСКО Novohrad-Nógrád; розстріл 8 грудня 1956 року описано окремою подією. Координати відповідають центру міста."
+  },
+  "sources": [
+    {
+      "title": "Salgótarján – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Salg%C3%B3tarj%C3%A1n",
+      "note": "Вступ і розділи про історію та природу."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Salg%C3%B3tarj%C3%A1n_belv%C3%A1ros.jpg",
+      "author": "Angyal Dénes",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Salg%C3%B3tarj%C3%A1n_belv%C3%A1ros.jpg",
+      "caption": {
+        "uk": "Центр Шальґотар'яна",
+        "hu": "Salgótarján belvárosa"
+      }
+    }
+  ]
+}

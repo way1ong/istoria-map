@@ -1,0 +1,49 @@
+{
+  "id": "szatmarcseke-temeto",
+  "name": {
+    "uk": "Цвинтар з надгробками-човнами в Сатмарчеке і могила Кельчеї",
+    "hu": "Szatmárcseke, csónakos fejfás temető, Kölcsey-sír"
+  },
+  "type": "monument",
+  "coords": [
+    22.63271,
+    48.08825
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Реформатський цвинтар у Сатмарчеке з різьбленими надгробками у формі човнів і білим мармуровим класицистичним надгробком поета Ференца Кельчеї, який жив тут з 1815 року до смерті 24 серпня 1838 року і 22 січня 1823 року завершив тут «Гімн».",
+    "hu": "A szatmárcsekei református temető csónak alakú faragott fejfáival és Kölcsey Ferenc fehér márvány, klasszicista síremlékével; a költő 1815-től 1838. augusztus 24-i haláláig itt élt, és itt fejezte be a Himnuszt 1823. január 22-én."
+  },
+  "description": {
+    "uk": "За статтею про село, Сатмарчеке (Cseke) вперше згадане в грамотах 1181 року, а 1344 року король Людовик I дав його нову грамоту Kölcsey, одній з найдавніших родин комітату Сатмар. Поет Ференц Кельчеї жив тут з 1815 року до смерті 24 серпня 1838 року і 22 січня 1823 року завершив тут «Гімн». На реформатському цвинтарі серед безлічі різьблених надгробків у формі човна стоїть його білий мармуровий класицистичний надгробок; на місці садиби Kölcsey діє будинок культури з меморіальною кімнатою, а перед ним бронзова статуя поета. Координати могили взято з OpenStreetMap."
+  },
+  "sources": [
+    {
+      "title": "Szatmárcseke – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szatm%C3%A1rcseke",
+      "note": "Розділ «Nevezetességei»."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Kölcsey Ferenc sírja, Szatmárcseke",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=K%C3%B6lcsey%20Ferenc%20s%C3%ADrja%2C%20Szatm%C3%A1rcseke",
+      "note": "Координати 48.08825, 22.63271 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/SzatmarcsekeFotoThalerTamas1.jpg",
+      "author": "Thaler Tamas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:SzatmarcsekeFotoThalerTamas1.jpg",
+      "caption": {
+        "uk": "Реформатський цвинтар з надгробками-човнами в Сатмарчеке",
+        "hu": "A szatmárcsekei csónakos fejfás református temető"
+      }
+    }
+  ]
+}

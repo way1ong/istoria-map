@@ -1,0 +1,45 @@
+{
+  "id": "erzsebet-hid",
+  "name": {
+    "uk": "Міст Ержебет у Будапешті (Erzsébet híd)",
+    "hu": "Erzsébet híd, Budapest"
+  },
+  "type": "monument",
+  "coords": [
+    19.04917,
+    47.49083
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Дунайський міст між V і I районами Будапешта: перший ланцюговий міст 1903 року висадили 18 січня 1945 року, новий вантовий міст за проєктом Pál Sávoly на старих опорах відкрили 21 листопада 1964 року.",
+    "hu": "Közúti Duna-híd Budapest V. és I. kerülete között: az 1903-as első láncos hidat 1945. január 18-án felrobbantották, a régi pillérekre épült új, Sávoly Pál tervezte kábelhidat 1964. november 21-én adták át."
+  },
+  "description": {
+    "uk": "За статтею про нинішній міст, старий міст Ержебет, що стояв на цьому місці з 1903 року, у січні 1945 року висадили німецькі війська, що відступали; його відновлення мало бути останнім серед будапештських мостів. Після суперечок, чи відбудовувати старий міст, чи будувати новий по іншій трасі, у 1961–1964 роках звели вантовий міст за проєктом Pál Sávoly на первісних опорах, на 10 м ширший; проєктанти перед тим вивчали міст через Рейн у Кельн-Мюльгаймі. Відкриття планували на 7 листопада 1964 року, але рух відкрили 21 листопада; кілька десятків тисяч людей пройшли мостом пішки, а Угорське телебачення транслювало подію наживо. Перший міст 1903 року описано окремою подією."
+  },
+  "sources": [
+    {
+      "title": "Erzsébet híd (Budapest, 1964) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Erzs%C3%A9bet_h%C3%ADd_%28Budapest%2C_1964%29",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Budapest_Panorama_with_Elizabeth_%28Sissi%29_bridge.jpg",
+      "author": "Takkk",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Budapest_Panorama_with_Elizabeth_%28Sissi%29_bridge.jpg",
+      "caption": {
+        "uk": "Панорама Будапешта з мостом Ержебет",
+        "hu": "Budapesti panoráma az Erzsébet híddal"
+      }
+    }
+  ]
+}

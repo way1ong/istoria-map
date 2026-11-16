@@ -1,0 +1,50 @@
+{
+  "id": "csurgo-gimnazium",
+  "name": {
+    "uk": "Гімназія в Чурґо (Csurgó), де викладав Чоконаї",
+    "hu": "Csurgói Csokonai Vitéz Mihály Református Gimnázium"
+  },
+  "type": "monument",
+  "coords": [
+    17.09531,
+    46.25499
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Гімназія, заснована 1792 року графом György Festetics у містечку Чурґо в Шомоді; з 26 травня 1799 до 17 лютого 1800 року тут викладав поет Mihály Csokonai Vitéz і закінчив поему «Dorottya».",
+    "hu": "A Festetics György által 1792-ben alapított csurgói gimnázium; 1799. május 26-tól 1800. február 17-ig itt tanított Csokonai Vitéz Mihály, és itt fejezte be a Dorottya című vígeposzát."
+  },
+  "description": {
+    "uk": "За статтею про місто, Чурґо, перша згадка про яке є у фундаційній грамоті Залаварського абатства 1019 року, 1405 року отримало від короля Сигізмунда ранг містечка, а пізніше перейшло до родини Festetics, що зробила його осередком маєтку. 1792 року György Festetics заснував тут гімназію; з 26 травня 1799 до 17 лютого 1800 року в ній викладав Mihály Csokonai Vitéz, який тут завершив комічну поему «Dorottya». Будинок реформатської гімназії Csokonai кінця XVIII століття з її бібліотекою стаття називає першим місцем історичної пам'яті, оголошеним у комітаті Шомодь. Координати будівлі взято з OpenStreetMap."
+  },
+  "sources": [
+    {
+      "title": "Csurgó (Magyarország) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Csurg%C3%B3_%28Magyarorsz%C3%A1g%29",
+      "note": "Розділи «Története» і «Látnivalók»: гімназія 1792, Csokonai 1799–1800."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Csokonai Gimnázium, Csurgó",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Csokonai%20Gimn%C3%A1zium%2C%20Csurg%C3%B3",
+      "note": "Координати 46.25499, 17.09531 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Csurg%C3%B3_-_Gimn%C3%A1zium.jpg",
+      "author": "невідомий автор",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Csurg%C3%B3_-_Gimn%C3%A1zium.jpg",
+      "caption": {
+        "uk": "Гімназія в Чурґо",
+        "hu": "A csurgói gimnázium"
+      }
+    }
+  ]
+}

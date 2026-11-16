@@ -1,0 +1,44 @@
+{
+  "id": "kiskoros-petofi-szulohaz",
+  "name": {
+    "uk": "Родинний будинок Петефі в Кішкереші (Kiskőrös)",
+    "hu": "Petőfi Szülőház, Kiskőrös"
+  },
+  "type": "monument",
+  "coords": [
+    19.28549,
+    46.62043
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Будинок близько 1780 року в Кішкереші (Petőfi Sándor tér 5), де 1 січня 1823 року народився поет Шандор Петефі; перше в країні літературне меморіальне місце і перша пам'ятка, позначена 1862 року мармуровою дошкою.",
+    "hu": "Az 1780 körül épült kiskőrösi ház (Petőfi Sándor tér 5.), ahol 1823. január 1-jén Petőfi Sándor született; az ország első irodalmi emlékhelye és első műemléke, 1862-ben márványtáblával jelölték meg."
+  },
+  "description": {
+    "uk": "За статтею, будинок збудовано близько 1780 року; у 1821–1824 роках ним володів цирульник Márton Makovinyi, у якого на три роки винайняв житло різник István Petrovics із дружиною Mária Hrúz. На початку 1823 року тут народився їхній перший син, поет Шандор Петефі, а в жовтні 1824 року родина переїхала до Кішкуншфеледьгази. 1857 року лютеранський пастор János Sárkány, колишній однокашник поета, за метричними книгами встановив, що Петефі народився в Кішкереші, і 1862 року на будинку встановили мармурову дошку з написом «Itt született Petőfi 1822. december 31.». Стаття називає його першим літературним меморіальним місцем і першою пам'яткою країни; тепер тут меморіальний музей."
+  },
+  "sources": [
+    {
+      "title": "Petőfi Szülőház és Emlékmúzeum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Pet%C5%91fi_Sz%C3%BCl%C5%91h%C3%A1z_%C3%A9s_Eml%C3%A9km%C3%BAzeum",
+      "note": "Вступ і розділ про історію будинку."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Pet%C5%91fi_sz%C3%BCl%C5%91h%C3%A1z_Kisk%C5%91r%C3%B6s.JPG",
+      "author": "Csanády",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Pet%C5%91fi_sz%C3%BCl%C5%91h%C3%A1z_Kisk%C5%91r%C3%B6s.JPG",
+      "caption": {
+        "uk": "Родинний будинок Петефі в Кішкереші",
+        "hu": "Petőfi szülőháza Kiskőrösön"
+      }
+    }
+  ]
+}

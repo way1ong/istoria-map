@@ -1,0 +1,46 @@
+{
+  "id": "balassagyarmat",
+  "name": {
+    "uk": "Балашшадярмат (Balassagyarmat), «найхоробріше місто»",
+    "hu": "Balassagyarmat"
+  },
+  "type": "settlement",
+  "coords": [
+    19.29372,
+    48.07119
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "arpad",
+    "ottoman",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Місто на кордоні з Словаччиною над Іполем: перша згадка 1244 року, права містечка 1437 року, у 1552–1593 роках під османами; 29 січня 1919 року мешканці вигнали чехословацькі війська, за що місто носить назву Civitas Fortissima («найхоробріше місто»). Точка: центр міста.",
+    "hu": "Határ menti város az Ipoly partján: első említése 1244-ből, mezővárosi jog 1437-ben, 1552 és 1593 között török kézen; 1919. január 29-én lakói kiűzték a csehszlovák csapatokat, ezért viseli a Civitas Fortissima („legbátrabb város”) nevet. A térképi pont a városközpont."
+  },
+  "description": {
+    "uk": "За статтею, найдавніші знахідки тут належать до баденської культури мідної доби, у римську добу оселилися квади, а друга частина назви нагадує про мадярське плем'я Gyarmat; першу частину місто дістало від родини Balassa в XV столітті. Дярмат захищав переправу через Іпель, його замок виріс зі сторожі після монгольської навали; перша письмова згадка 1244 року, права містечка 1437 року. Османи тримали його у 1552–1593 роках, 1593 року гарнізон утік і підпалив замок, остаточно їх вигнали з околиць 1648 року; 1663 або 1665 року османи знову взяли й висадили замок. Повстання 29 січня 1919 року проти чехословацької окупації описано окремою подією. Координати відповідають центру міста; прикордонне місто."
+  },
+  "sources": [
+    {
+      "title": "Balassagyarmat – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Balassagyarmat",
+      "note": "Розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Civitas_Fortissima_eml%C3%A9km%C5%B1.JPG",
+      "author": "Bálint Sallói",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Civitas_Fortissima_eml%C3%A9km%C5%B1.JPG",
+      "caption": {
+        "uk": "Пам'ятник Civitas Fortissima",
+        "hu": "A Civitas Fortissima-emlékmű"
+      }
+    }
+  ]
+}

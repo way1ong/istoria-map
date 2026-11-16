@@ -1,0 +1,54 @@
+{
+  "id": "tarpa-szarazmalom",
+  "name": {
+    "uk": "Сухий млин у Тарпі (Tarpa)",
+    "hu": "Tarpai szárazmalom"
+  },
+  "type": "mill",
+  "coords": [
+    22.52586,
+    48.10199
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Єдиний уцілілий сухий (кінний) млин північного Затисся, збудований 1885 року; зберіг первісний механізм з кінним приводом і криту ґонтом будівлю, поділену на млинарню й манеж.",
+    "hu": "Az Észak-Tiszántúl egyetlen megmaradt szárazmalma, 1885-ben ácsolták; máig épen megőrizte eredeti járgányos szerkezetét, zsindellyel fedett épülete malomházra és járószínre oszlik."
+  },
+  "description": {
+    "uk": "За статтею про село, друга пам'ятка Тарпи, крім готичної церкви, це сухий млин, єдиний уцілілий на півночі Затисся. Він досі повністю зберіг первісну конструкцію з приводом, який обертали тварини, змайстровану 1885 року; стаття називає його цінною пам'яткою історії сільського господарства. Будівля типу «Tokaji» вкрита дерев'яним ґонтом і поділена на млинарню й манеж. Загальна стаття про сухі млини пояснює, що в середньовіччі так звали всі млини з людським або тваринним приводом, а пізніше лише ті, що їх рухали тварини. Координати взято з OpenStreetMap."
+  },
+  "sources": [
+    {
+      "title": "Tarpa – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tarpa",
+      "note": "Розділ про пам'ятки Тарпи; стаття «Szárazmalom» про сам тип млина."
+    },
+    {
+      "title": "Szárazmalom – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sz%C3%A1razmalom",
+      "note": "Визначення сухого млина."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Szárazmalom, Tarpa",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Sz%C3%A1razmalom%2C%20Tarpa",
+      "note": "Координати 48.10199, 22.52586 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Sz%C3%A1razmalom_%288454._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "author": "Bereg Kincsei",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:Sz%C3%A1razmalom_%288454._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "caption": {
+        "uk": "Сухий млин у Тарпі",
+        "hu": "A tarpai szárazmalom"
+      }
+    }
+  ]
+}

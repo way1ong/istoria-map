@@ -1,0 +1,50 @@
+{
+  "id": "hajos-pincefalu",
+  "name": {
+    "uk": "Винне «село погребів» у Гайоші (Hajós)",
+    "hu": "Hajósi Pincefalu"
+  },
+  "type": "other",
+  "coords": [
+    19.14972,
+    46.38509
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "За містом Гайош у комітаті Бач-Кішкун лежить «село погребів» з приблизно 1300 давильних будиночків над погребами, вирізаними в лесі; стаття називає його найбільшим суцільним таким селом у Європі.",
+    "hu": "A Bács-Kiskun vármegyei Hajóshoz tartozik a mintegy 1300 présházból álló Pincefalu, amelynek löszbe vájt pincéi fölött présházak állnak; a cikk szerint Európa legnagyobb összefüggő pincefaluja."
+  },
+  "description": {
+    "uk": "За статтею, гордість Гайоша становить «село погребів» (Pincefalu) з близько 1300 давильних будиночків, під якими в лесі вирізано погреби; воно складається з правильних вуличок, а стаття називає його найбільшим суцільним селищем такого роду в Європі. Його виникнення стаття вважає одноліткою міста; з 1980-х років багато погребів перебудовано під гостинність або зведено заново. Тут вирощують каберне совіньйон, кекфранкош, кадарку й інші сорти, а щороку наприкінці травня в селі погребів відбувається винне свято на день Орбана, що відновлює традиції швабських поселенців. Точка відповідає позначці Pincefalu в даних OpenStreetMap."
+  },
+  "sources": [
+    {
+      "title": "Hajós – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Haj%C3%B3s",
+      "note": "Розділ «Nevezetességei»: Pincefalu."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Pincefalu, Hajós",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Pincefalu%2C%20Haj%C3%B3s",
+      "note": "Координати 46.38509, 19.14972 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Haj%C3%B3s-Pincefalu_2021_07.jpg",
+      "author": "Pasztilla aka Attila Terbócs",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Haj%C3%B3s-Pincefalu_2021_07.jpg",
+      "caption": {
+        "uk": "«Село погребів» у Гайоші",
+        "hu": "A hajósi Pincefalu"
+      }
+    }
+  ]
+}

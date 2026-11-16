@@ -1,0 +1,29 @@
+{
+  "id": "pannonhalma-alapitasa-996",
+  "title": {
+    "uk": "Заснування Паннонгальмського абатства",
+    "hu": "A Pannonhalmi Bencés Főapátság alapítása"
+  },
+  "date": {
+    "from": "0996",
+    "precision": "exact"
+  },
+  "period": "arpad",
+  "places": [
+    "pannonhalma-foapatsag"
+  ],
+  "summary": {
+    "uk": "996 року засновано бенедиктинський монастир на горі Pannonhalma (давніше Győrszentmárton), що безперервно діє досі; з 1996 року він у Списку світової спадщини ЮНЕСКО.",
+    "hu": "996-ban alapították a Pannonhalmán (régi nevén Győrszentmárton) álló bencés monostort, amely azóta is folyamatosan működik; 1996 óta az UNESCO világörökség része."
+  },
+  "description": {
+    "uk": "За статтею, Паннонгальмське бенедиктинське головне абатство засноване 996 року і відтоді безперервно діє в місті Pannonhalma, давніше Győrszentmárton; його покровитель Мартин Турський. Це одне з визначних історичних місць Угорщини, церковний і мистецький центр, де й нині живе громада близько сорока ченців; 1996 року абатство внесено до Списку світової спадщини ЮНЕСКО."
+  },
+  "sources": [
+    {
+      "title": "Pannonhalmi Bencés Főapátság – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Pannonhalmi_Benc%C3%A9s_F%C5%91ap%C3%A1ts%C3%A1g",
+      "note": "996, світова спадщина 1996."
+    }
+  ]
+}

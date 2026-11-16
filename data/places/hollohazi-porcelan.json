@@ -1,0 +1,45 @@
+{
+  "id": "hollohazi-porcelan",
+  "name": {
+    "uk": "Порцелянова мануфактура в Голлогазі (Hollóháza)",
+    "hu": "Hollóházi Porcelánmanufaktúra"
+  },
+  "type": "other",
+  "coords": [
+    21.41939,
+    48.53376
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Мануфактура, заснована 1777 року в маєтку графів Károlyi в Голлогазі як склоробня; кам'яноглиняний завод 1831 року заснував граф István Károlyi; найбільший розквіт за орендаря-кераміста Ferenc Istványi (1860–1902), з 2017 року хунґарикум.",
+    "hu": "Az 1777-ben üveghutaként alakult manufaktúra a Károlyi grófok hollóházi birtokán; a kőedénygyárat gróf Károlyi István alapította 1831-ben; legjelentősebb korszaka Istványi Ferenc bérlő és keramikus idejére (1860–1902) esik, 2017 óta hungarikum."
+  },
+  "description": {
+    "uk": "За статтею, мануфактура в Голлогазі в колишньому комітаті Абауй постала 1777 року як склоробня на землях графів Károlyi. З понад двадцяти кам'яноглиняних заводів, заснованих в Угорщині в першій половині XIX століття, лишилося два: у Герені, заснований 1826 року Vince Stingl, і голлогазький, заснований 1831 року графом István Károlyi (1797–1881). Найзначніший період пов'язаний з Ferenc Istványi, у 1860–1902 роках орендарем і керамістом заводу, який запровадив багато нововведень і експортував вироби до Болгарії, Німеччини й Сербії. Завод славиться посудом ручного розпису з трояндами й польовими квітами; з 2017 року це хунґарикум."
+  },
+  "sources": [
+    {
+      "title": "Hollóházi Porcelánmanufaktúra – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Holl%C3%B3h%C3%A1zi_Porcel%C3%A1nmanufakt%C3%BAra",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/CivertanlegifotoHoll%C3%B3h%C3%A1za2.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:CivertanlegifotoHoll%C3%B3h%C3%A1za2.jpg",
+      "caption": {
+        "uk": "Голлогаза з повітря",
+        "hu": "Hollóháza légi fotón"
+      }
+    }
+  ]
+}

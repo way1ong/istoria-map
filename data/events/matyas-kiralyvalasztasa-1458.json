@@ -1,0 +1,42 @@
+{
+  "id": "matyas-kiralyvalasztasa-1458",
+  "title": {
+    "uk": "Обрання Матяша Корвіна королем на льоду Дунаю",
+    "hu": "Mátyás királlyá választása a Duna jegén"
+  },
+  "date": {
+    "from": "1458-01-24",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [
+    "budai-varnegyed"
+  ],
+  "summary": {
+    "uk": "24 січня 1458 року натовп, переважно вояки Szilágyi й дрібна шляхта, що з'їхалася на сейм, проголосив королем на льоду Дунаю під Будайським замком сина Яноша Гуняді Матяша, якому ще не виповнилося п'ятнадцяти.",
+    "hu": "1458. január 24-én a nagyrészt Szilágyi katonáiból és az országgyűlésen megjelent köznemességből álló tömeg a budai vár alatt, a Duna jegén királlyá kiáltotta ki Hunyadi János fiát, a még tizenöt évet sem betöltött Mátyást."
+  },
+  "description": {
+    "uk": "За статтею, 12 січня 1458 року в Сеґеді László Garai домовився з Szilágyi, що вони підтримають звільнення Матяша, який перебував під вартою Їржі з Подебрад, і його обрання королем, а Матяш одружиться з донькою Garai. Michael Szilágyi з великим військом прийшов до Буди й запевнив магнатів, що Матяш не мститиме за страту брата Ласло Гуняді. Почувши про рішення, 24 січня натовп, переважно з вояків Szilágyi і дрібної шляхти, що з'їхалася на сейм, під замком на льоду Дунаю проголосив королем сина Яноша Гуняді; новому правителю, якого в празькому полоні до виборів не залучали, не виповнилося й п'ятнадцяти, тож регентом став дядько Mihály Szilágyi."
+  },
+  "sources": [
+    {
+      "title": "I. Mátyás magyar király – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/I._M%C3%A1ty%C3%A1s_magyar_kir%C3%A1ly",
+      "note": "12 і 24 січня 1458 року, обставини обрання."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Andrea_Mantegna_-_King_Matthias_Corvinus_of_Hungary.jpg",
+      "author": "Andrea Mantegna",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Andrea_Mantegna_-_King_Matthias_Corvinus_of_Hungary.jpg",
+      "caption": {
+        "uk": "Матяш Корвін, портрет роботи Андреа Мантеньї",
+        "hu": "Mátyás király, Andrea Mantegna festménye"
+      }
+    }
+  ]
+}

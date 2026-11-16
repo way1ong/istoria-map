@@ -1,0 +1,46 @@
+{
+  "id": "ungvari-var",
+  "name": {
+    "uk": "Ужгородський замок (Ungvári vár), Україна",
+    "hu": "Ungvári vár (Drugeth-vár)"
+  },
+  "type": "castle",
+  "coords": [
+    22.30667,
+    48.62111
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval",
+    "ottoman",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Замок Другетів на вулканічному Замковому пагорбі в Ужгороді, одна з найвідоміших пам'яток Закарпаття; Анонім пов'язує з ним обрання Арпада вождем; нині Закарпатський краєзнавчий музей.",
+    "hu": "Az ungvári vár vagy Drugeth-vár a vulkanikus Várhegyen, Kárpátalja egyik leghíresebb műemléke; Anonymus Árpád fejedelemmé választását köti hozzá; ma a Kárpátaljai Honismereti Múzeum otthona."
+  },
+  "description": {
+    "uk": "За статтею, замок стоїть у центрі Ужгорода на вулканічному Замковому пагорбі й складається з внутрішнього замку, перебудованого на палац, і парку, оточеного мурами з чотирма бастіонами й одним трикутним; загальна площа 8,5 га, з них 6 га сад. Перша письмова згадка є в «Gesta Hungarorum»: за Анонімом, коли Álmos підійшов до замку Hung, слов'янський володар Laborc утік і загинув над річкою Лаборець, а на четвертий день бенкету в замку Álmos проголосив вождем свого сина Арпада. Стаття зауважує, що ця розповідь сумнівна і що щодо походження й місця першого замку є різні теорії. Нині тут Закарпатський краєзнавчий музей і картинна галерея; у парку стоїть турул, що колись був на пам'ятнику Ракоці в Тисауйлаку. Прикордонний об'єкт в Україні."
+  },
+  "sources": [
+    {
+      "title": "Ungvári vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Ungv%C3%A1ri_v%C3%A1r",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Uzhhorod_castle_1.jpg",
+      "author": "Ynesyn",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Uzhhorod_castle_1.jpg",
+      "caption": {
+        "uk": "Ужгородський замок",
+        "hu": "Az ungvári vár"
+      }
+    }
+  ]
+}

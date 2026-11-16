@@ -1,0 +1,48 @@
+{
+  "id": "kiskorei-vizlepcso-1973",
+  "title": {
+    "uk": "Кішкерейський гідровузол і озеро Тиса",
+    "hu": "A kiskörei vízlépcső és a Tisza-tó"
+  },
+  "date": {
+    "from": "1967",
+    "to": "1973",
+    "precision": "exact"
+  },
+  "period": "modern",
+  "places": [
+    "tisza-to"
+  ],
+  "summary": {
+    "uk": "1967 року почали будувати гідроелектростанцію Tisza II у Кішкере, найбільшу в Угорщині; гідровузол передали 1973 року, а станцію ввели 1974 року; водосховище за ним, до 1988 року Кішкерейське, нині озеро Тиса.",
+    "hu": "1967-ben kezdték építeni a kiskörei Tisza II. vízerőművet, Magyarország legnagyobb vízerőművét; a vízlépcsőt 1973-ban adták át, az erőművet 1974-ben helyezték üzembe; a mögötte lévő tározó 1988-ig Kiskörei víztározó, ma Tisza-tó."
+  },
+  "description": {
+    "uk": "За статтею про Кішкере, ширшу відомість селищу дала гідроелектростанція Tisza II, найбільша в Угорщині: її почали будувати 1967 року, а ввели в дію 1974 року. Гідровузол, переданий 1973 року, докорінно змінив життя не лише Кішкере, а й Середнього Потисся та Алфельду. За статтею про озеро, водосховище створили, щоб забезпечити рівний стік для станції та високий рівень води для охолодження Тиської ТЕС; до 1988 року воно звалося Кішкерейським, а тепер це друге за величиною і найбільше штучне озеро Угорщини."
+  },
+  "sources": [
+    {
+      "title": "Kisköre – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kisk%C3%B6re",
+      "note": "1967, 1973, 1974."
+    },
+    {
+      "title": "Tisza-tó – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tisza-t%C3%B3",
+      "note": "Назва до 1988 року, мета створення."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/A_kisk%C3%B6rei_v%C3%ADzer%C5%91m%C5%B1_a_hall%C3%A9pcs%C5%91vel.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_kisk%C3%B6rei_v%C3%ADzer%C5%91m%C5%B1_a_hall%C3%A9pcs%C5%91vel.jpg",
+      "caption": {
+        "uk": "Кішкерейська ГЕС з рибоходом",
+        "hu": "A kiskörei vízerőmű a hallépcsővel"
+      }
+    }
+  ]
+}

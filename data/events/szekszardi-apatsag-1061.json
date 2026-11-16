@@ -1,0 +1,29 @@
+{
+  "id": "szekszardi-apatsag-1061",
+  "title": {
+    "uk": "Бела I засновує Сексардське абатство",
+    "hu": "I. Béla megalapítja a szekszárdi apátságot"
+  },
+  "date": {
+    "from": "1061",
+    "precision": "exact"
+  },
+  "period": "arpad",
+  "places": [
+    "szekszardi-apatsag"
+  ],
+  "summary": {
+    "uk": "1061 року король Бела I заснував у Сексарді бенедиктинський монастир Спасителя як усипальницю королівської родини.",
+    "hu": "1061-ben I. Béla Szekszárdon bencés monostort alapított a királyi család sírhelyéül, a Megváltó tiszteletére."
+  },
+  "description": {
+    "uk": "За статтею, Сексардське абатство було бенедиктинським монастирем, який 1061 року заснував король Бела I як місце поховання королівської родини і присвятив Ісусові. 1239 року король Бела IV за службу підніс Chertu та його родичів до вільних «кріпаків» абатства. Руїни описано в окремій картці."
+  },
+  "sources": [
+    {
+      "title": "Szekszárdi bencés apátság – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szeksz%C3%A1rdi_benc%C3%A9s_ap%C3%A1ts%C3%A1g",
+      "note": "1061, 1239."
+    }
+  ]
+}

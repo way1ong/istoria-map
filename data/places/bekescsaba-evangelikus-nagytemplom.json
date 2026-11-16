@@ -1,0 +1,45 @@
+{
+  "id": "bekescsaba-evangelikus-nagytemplom",
+  "name": {
+    "uk": "Великий лютеранський храм у Бекешчабі",
+    "hu": "Evangélikus nagytemplom, Békéscsaba"
+  },
+  "type": "church",
+  "coords": [
+    21.09476,
+    46.68269
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Найбільший лютеранський храм Європи й другий за величиною протестантський храм Угорщини після Дебреценського; фундамент закладено 1807 року, склепіння 1819 року, вежа 1819 року.",
+    "hu": "Európa legnagyobb evangélikus temploma és Magyarország második legnagyobb protestáns temploma a debreceni Nagytemplom után; alapkövét 1807-ben tették le, boltozatai és tornya 1819-ben készültek el."
+  },
+  "description": {
+    "uk": "За статтею, у центрі Бекешчаби за 15 метрів один від одного стоять два лютеранські храми, малий і великий; великий (Luther u. 1) є найбільшим лютеранським храмом Європи й найбільшим храмом комітату Бекеш. Наприкінці XVIII століття громада переросла малий храм і вирішила звести новий навпроти; після проєктів Frantz Pumperger і Joseph Hoffer прийняли проєкт майстра з Дьюли Antal Czigler. Камінь возили з Пешта й Вацу, фундамент заклали 1807 року на палях через грузький ґрунт; інфляція 1811 року знецінила зібрані кошти й зупинила роботи, але 1813 року будівництво відновили, 1817 року зробили кроквяну конструкцію, 1819 року склепіння й вежу, а 1822 року внутрішнє оздоблення й орган пештського майстра József Herotek."
+  },
+  "sources": [
+    {
+      "title": "Evangélikus nagytemplom (Békéscsaba) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Evang%C3%A9likus_nagytemplom_%28B%C3%A9k%C3%A9scsaba%29",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/B%C3%A9k%C3%A9scsaba%2C_evang%C3%A9likus_nagytemplom_2022_01.jpg",
+      "author": "Pasztilla aka Attila Terbócs",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:B%C3%A9k%C3%A9scsaba%2C_evang%C3%A9likus_nagytemplom_2022_01.jpg",
+      "caption": {
+        "uk": "Великий лютеранський храм у Бекешчабі",
+        "hu": "A békéscsabai evangélikus nagytemplom"
+      }
+    }
+  ]
+}

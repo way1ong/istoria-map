@@ -1,0 +1,48 @@
+{
+  "id": "szent-marton-szuletese-316",
+  "title": {
+    "uk": "Народження Мартина Турського в Саварії",
+    "hu": "Tours-i Szent Márton születése Savariában"
+  },
+  "date": {
+    "from": "0316",
+    "to": "0317",
+    "precision": "approximate"
+  },
+  "period": "roman-barbaricum",
+  "places": [
+    "savaria-szombathely"
+  ],
+  "summary": {
+    "uk": "316 або 317 року в Саварії (нині Сомбатгей) у провінції Паннонія народився Мартин, згодом третій єпископ Тура і один із найвідоміших християнських святих Франції; помер 8 листопада 397 року.",
+    "hu": "316-ban vagy 317-ben Savariában (ma Szombathely), Pannonia provinciában született Márton, később Tours harmadik püspöke és Franciaország egyik legismertebb keresztény szentje; 397. november 8-án halt meg."
+  },
+  "description": {
+    "uk": "За статтею, Мартин Турський (Martinus Turonensis) народився 316 або 317 року в Саварії, нинішньому Сомбатгеї, у провінції Паннонія; став третім єпископом Тура і одним із найвідоміших християнських святих Франції. Помер 8 листопада 397 року в Турі, де його поховано; день пам'яті в католицькій та англіканській церквах 11 листопада, у православній 12 листопада. Паннонгальмське абатство (окрема картка) теж має його своїм покровителем."
+  },
+  "sources": [
+    {
+      "title": "Tours-i Szent Márton – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tours-i_Szent_M%C3%A1rton",
+      "note": "Народження в Саварії 316/317, смерть 397."
+    },
+    {
+      "title": "Pannonhalmi Bencés Főapátság – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Pannonhalmi_Benc%C3%A9s_F%C5%91ap%C3%A1ts%C3%A1g",
+      "note": "Покровитель абатства — Мартин Турський."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Kirche_12545_Buntglasfenster_in_A-2120_Obersdorf_b.jpg",
+      "author": "Robert Heilinger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kirche_12545_Buntglasfenster_in_A-2120_Obersdorf_b.jpg",
+      "caption": {
+        "uk": "Святий Мартин на вітражі парафіяльної церкви в Обердорфі (Австрія)",
+        "hu": "Szent Márton az obersdorfi (Ausztria) plébániatemplom üvegablakán"
+      }
+    }
+  ]
+}

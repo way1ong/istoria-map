@@ -1,0 +1,44 @@
+{
+  "id": "kecskemet-cifrapalota",
+  "name": {
+    "uk": "«Цифрапалота» в Кечкеметі (Cifrapalota)",
+    "hu": "Cifrapalota, Kecskemét"
+  },
+  "type": "monument",
+  "coords": [
+    19.69501,
+    46.90849
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Сецесійний будинок 1903 року, зведений як прибутковий палац міста Кечкемет, з кольоровою майоліковою облицівкою від заводу Zsolnay; з 1983 року головна експозиція музею Katona József.",
+    "hu": "Az 1903-ban „Kecskemét város bérpalotájaként” épült szecessziós ház színes majolikadíszítéssel a Zsolnay-gyárból; 1983 óta a Katona József Múzeum központi bemutatóhelye."
+  },
+  "description": {
+    "uk": "За статтею, будинок на розі Rákóczi út і площі Szabadság tér 1902 року спроєктував Géza Márkus у сецесійному стилі за національною манерою Lechner, а збудували його 1903 року як прибутковий палац міста; колись тут були крамниці, квартири й казино. Найпомітніше в ньому кольорова майолікова облицівка фасаду з народними мотивами, хвиляста лінія завершення двоповерхового фасаду й високий декорований дах; поливні оздоби й черепицю, як і для ратуші, виготовив завод Zsolnay. З 1983 року тут головна виставкова зала Кечкеметського музею Katona József."
+  },
+  "sources": [
+    {
+      "title": "Cifrapalota – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Cifrapalota",
+      "note": "Вступ і розділ «Az épület»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Cifra_Palota.jpg",
+      "author": "Bali22",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Cifra_Palota.jpg",
+      "caption": {
+        "uk": "«Цифрапалота» в Кечкеметі",
+        "hu": "A kecskeméti Cifrapalota"
+      }
+    }
+  ]
+}

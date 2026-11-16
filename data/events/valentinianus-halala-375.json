@@ -1,0 +1,42 @@
+{
+  "id": "valentinianus-halala-375",
+  "title": {
+    "uk": "Смерть імператора Валентиніана I у Бриґеціо",
+    "hu": "I. Valentinianus halála Brigetióban"
+  },
+  "date": {
+    "from": "0375-11-17",
+    "precision": "exact"
+  },
+  "period": "roman-barbaricum",
+  "places": [
+    "brigetio-szony"
+  ],
+  "summary": {
+    "uk": "17 листопада 375 року в Бриґеціо біля нинішнього Комарома помер імператор Валентиніан I, що правив з 26 лютого 364 року; народився він 321 року в Cibalae в Паннонії.",
+    "hu": "375. november 17-én Brigetióban, a mai Komárom közelében meghalt I. Valentinianus császár, aki 364. február 26-tól uralkodott; 321-ben született a pannoniai Cibalae-ban."
+  },
+  "description": {
+    "uk": "За статтею, Флавій Валентиніан народився 3 липня 321 року в Cibalae (нині Винковці) в Паннонії і був августом Римської імперії з 26 лютого 364 до 17 листопада 375 року; помер у Бриґеціо поблизу нинішнього Комарома, а поховали його в церкві Святих Апостолів у Константинополі. Наступником став його син Граціан. Саме за Валентиніана I зведено ланцюг укріплень на лівому березі Дунаю, зокрема форти в Dunakeszi і Göd (окремі картки)."
+  },
+  "sources": [
+    {
+      "title": "I. Valentinianus római császár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/I._Valentinianus_r%C3%B3mai_cs%C3%A1sz%C3%A1r",
+      "note": "Дати народження, правління і смерті, місце смерті."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/ValentinianI.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:ValentinianI.jpg",
+      "caption": {
+        "uk": "Монета Валентиніана I",
+        "hu": "I. Valentinianus érméje"
+      }
+    }
+  ]
+}

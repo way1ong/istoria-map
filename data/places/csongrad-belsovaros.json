@@ -1,0 +1,45 @@
+{
+  "id": "csongrad-belsovaros",
+  "name": {
+    "uk": "Старе місто Чонґрада (Belsőváros)",
+    "hu": "Belsőváros, Csongrád"
+  },
+  "type": "settlement",
+  "coords": [
+    20.17208,
+    46.71275
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Давнє ядро Чонґрада біля злиття Потрійного Кереша з Тисою: єдиний на Алфельді ансамбль пам'яток розміром із поселення, 37 охоронюваних народних будинків XVIII–XIX століть, під охороною з 1982 року.",
+    "hu": "Csongrád ősi magja a Hármas-Körös és a Tisza összefolyásánál: az Alföld egyetlen település méretű műemléki együttese, 37 műemléki védettségű 18–19. századi népi lakóház, 1982 óta országos védelem alatt."
+  },
+  "description": {
+    "uk": "За статтею, Belsőváros є давнім ядром і першим центром Чонґрада з заплутаною мережею вулиць, яка контрастує з новішими геометрично спланованими частинами міста. Це єдиний на Алфельді пам'ятковий ансамбль розміром із поселення і місце, де на півдні Алфельду збереглося найбільше цілих народних житлових будинків; назви вулиць Öregvár utca і Vár köz, імовірно, нагадують про давно зруйнований Чонґрадський замок, навколо якого могло скластися поселення. Будинки походять з XVIII–XIX століть; через часті сутички вони спершу не мали вікон на вулицю. Тут жили річкові човнярі, теслі-суднобудівники, рибалки, дрібні селяни й землекопи; 37 будинків охороняються як пам'ятки, з 1982 року на загальнодержавному рівні."
+  },
+  "sources": [
+    {
+      "title": "Belsőváros (Csongrád) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Bels%C5%91v%C3%A1ros_%28Csongr%C3%A1d%29",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Hal%C3%A1szh%C3%A1z_%2817255._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_2.jpg",
+      "author": "Balla Béla",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:Hal%C3%A1szh%C3%A1z_%2817255._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_2.jpg",
+      "caption": {
+        "uk": "Рибальський будинок (пам'ятка № 17255) у Belsőváros",
+        "hu": "Halászház (17255. számú műemlék) a Belsővárosban"
+      }
+    }
+  ]
+}

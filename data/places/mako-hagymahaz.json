@@ -1,0 +1,44 @@
+{
+  "id": "mako-hagymahaz",
+  "name": {
+    "uk": "«Цибулевий дім» у Мако (Hagymaház)",
+    "hu": "Hagymaház, Makó"
+  },
+  "type": "monument",
+  "coords": [
+    20.47485,
+    46.21414
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Культурний центр Мако з театральною залою: перший будинок 1936 року звела спілка виробників цибулі, а 1998 року на його місці постав органічний чотирибаштовий будинок за проєктом Imre Makovecz.",
+    "hu": "Makó színháztermet is magába foglaló kulturális központja: az első épületet 1936-ban a hagymatermelők egyesülete emelte, 1998-ban helyén Makovecz Imre tervei szerint épült fel az organikus, négytornyú új Hagymaház."
+  },
+  "description": {
+    "uk": "За статтею, на місці нинішнього Hagymaház стояв попередник, збудований 1936 року в модерністському стилі; назву він дістав від міської спілки виробників цибулі, яка звела його як свій осідок і центр закупівлі й продажу з торговою залою. 1930 року міська рада подарувала спілці ділянку на вулиці D'Orsay (нині Posta utca), але через економічну кризу будівництво затяглося. З 1949 року будинок має лише культурне призначення. 1998 року на місці старого постав новий Hagymaház за проєктом Imre Makovecz, органічний, з чотирма вежами; стаття називає його найвідомішою пам'яткою міста й регіону з міжнародним визнанням."
+  },
+  "sources": [
+    {
+      "title": "Hagymaház – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Hagymah%C3%A1z",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Hagymah%C3%A1z.JPG",
+      "author": "Burrows",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Hagymah%C3%A1z.JPG",
+      "caption": {
+        "uk": "«Цибулевий дім» у Мако",
+        "hu": "A makói Hagymaház"
+      }
+    }
+  ]
+}

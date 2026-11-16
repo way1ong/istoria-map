@@ -1,0 +1,44 @@
+{
+  "id": "tatabanya-turul",
+  "name": {
+    "uk": "Пам'ятник Турулу в Татабаньї (Turul-emlékmű)",
+    "hu": "Turul-emlékmű, Tatabánya"
+  },
+  "type": "monument",
+  "coords": [
+    18.40781,
+    47.58811
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Скульптура міфічного птаха Турула на горі Kő-hegy над Бангідою, встановлена 1907 року на тисячоліття битви під Бангідою 907 року; захищає крилами Бангіду і видна з усього міста.",
+    "hu": "A turulmadarat ábrázoló szobor a Bánhida feletti Kő-hegyen, 1907-ben, a 907-es bánhidai csata ezredik évfordulóján állították fel; szárnyával Bánhidát védi, az egész városból látszik."
+  },
+  "description": {
+    "uk": "За статтею, пам'ятник Турулу стоїть у частині Татабаньї Újváros на горі Kő-hegy, приблизно на висоті 300 м над рівнем моря, на згадку про битву під Бангідою 907 року. Його встановили 1907 року, на тисячоліття битви, на вершині Kő-hegy над Бангідою, обличчям до міста; птах захищає Бангіду крилами і через розміри видний з усього міста. Скульптура з заліза й алюмінію стоїть на бетонно-кам'яному постаменті; під горою нині проходить автомагістраль M1, а між Бангідою й горою у XX столітті виріс район Újváros."
+  },
+  "sources": [
+    {
+      "title": "Turul-emlékmű (Tatabánya) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Turul-eml%C3%A9km%C5%B1_%28Tatab%C3%A1nya%29",
+      "note": "Вступ."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Turul_eml%C3%A9km%C5%B1_%286477._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "author": "Chaberrr",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:Turul_eml%C3%A9km%C5%B1_%286477._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "caption": {
+        "uk": "Пам'ятник Турулу (пам'ятка № 6477)",
+        "hu": "Turul-emlékmű (6477. számú műemlék)"
+      }
+    }
+  ]
+}

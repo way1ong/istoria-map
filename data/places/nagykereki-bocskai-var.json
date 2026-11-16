@@ -1,0 +1,49 @@
+{
+  "id": "nagykereki-bocskai-var",
+  "name": {
+    "uk": "Замок Бочкаї в Надькереки (Nagykereki)",
+    "hu": "Bocskai-vár, Nagykereki"
+  },
+  "type": "castle",
+  "coords": [
+    21.80027,
+    47.18752
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Замок-садиба родини Ártándy 1440-х років, який через дружину отримав István Bocskai і зробив сильною фортецею; 3 жовтня 1604 року його гарнізон з гайдуками відбив облогу цісарських військ.",
+    "hu": "Az Ártándy család 1440-es évekre kiépült várkastélya, amelyet felesége révén Bocskai István kapott meg és korszerű erősséggé tett; 1604. október 3-án őrsége hajdúkkal visszaverte a császári csapatok ostromát."
+  },
+  "description": {
+    "uk": "За статтею про село, родина Ártándy до 1440-х років перетворила свою укріплену палісадом садибу на замок-садибу, що на початку XVI століття стала центром маєтку з одинадцяти сіл. Через дружину Katalin Hagymássy замок отримав István Bocskai, з 1592 року головний капітан Варада, і зробив його сучасною фортецею на кілька сотень вояків, де й сам довго жив. 3 жовтня 1604 року цісарські війська, що напали на Бочкаї, обложили замок, але капітан Pál Örvendi з трьомастами гайдуками з Kölesér і місцевими мешканцями його оборонив; за це Бочкаї надав селу права містечка й вивів мешканців з кріпацтва. Після його смерті замок за заповітом перейшов до небожа Gábor Báthory. Координати будівлі взято з OpenStreetMap."
+  },
+  "sources": [
+    {
+      "title": "Nagykereki – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagykereki",
+      "note": "Розділ «Története»."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Bocskai-vár, Nagykereki",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Bocskai-v%C3%A1r%2C%20Nagykereki",
+      "note": "Координати 47.18752, 21.80027 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Bocskai-v%C3%A1r_%285364._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "author": "szabadoszoltan",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:Bocskai-v%C3%A1r_%285364._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "caption": {
+        "uk": "Замок Бочкаї (пам'ятка № 5364)",
+        "hu": "Bocskai-vár (5364. számú műemlék)"
+      }
+    }
+  ]
+}

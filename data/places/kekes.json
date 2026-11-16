@@ -1,0 +1,43 @@
+{
+  "id": "kekes",
+  "name": {
+    "uk": "Гора Кекеш (Kékes)",
+    "hu": "Kékes"
+  },
+  "type": "nature",
+  "coords": [
+    20.01278,
+    47.87222
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "Найвища гора Угорщини в Матрі заввишки 1014 м над рівнем Балтійського моря (1015 м над Адріатикою); кліматичний курорт і лижний центр з телевежею-оглядовою.",
+    "hu": "Magyarország legmagasabb hegye a Mátrában, a Balti-tenger szintjéhez mérve 1014, az Adriai-tengerhez mérve 1015 méter; klimatikus gyógyhely és síközpont, tévétornya kilátó."
+  },
+  "description": {
+    "uk": "За статтею, Кекеш є найвищою горою Угорщини і лежить у Матрі в Північному середньогір'ї; над рівнем Балтійського моря він має 1014 м, над рівнем Адріатичного 1015 м. Вершину звуть і Kékes tető, а разом написане Kékestető є назвою поселення на вершині, що адміністративно належить до Дєндєша; сама гора лежить на землях Парада й Дєндєша. Це один із найважливіших кліматичних курортів країни й лижний центр, телевежа на вершині слугує оглядовою."
+  },
+  "sources": [
+    {
+      "title": "Kékes – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/K%C3%A9kes",
+      "note": "Вступ."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Grand_Hotel_Galya%2C_view_towards_the_K%C3%A9kestet%C5%91.jpg",
+      "author": "Szilas",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Grand_Hotel_Galya%2C_view_towards_the_K%C3%A9kestet%C5%91.jpg",
+      "caption": {
+        "uk": "Вигляд на Кекештеть від готелю Galya",
+        "hu": "Kilátás a Kékestetőre a Galya Szálló felől"
+      }
+    }
+  ]
+}

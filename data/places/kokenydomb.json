@@ -1,0 +1,48 @@
+{
+  "id": "kokenydomb",
+  "name": {
+    "uk": "Кекенідомб (Kökénydomb) біля Годмезевашаргея: неолітична «Венера»",
+    "hu": "Kopáncs-Kökénydomb, Hódmezővásárhely"
+  },
+  "type": "archaeological",
+  "coords": [
+    20.258,
+    46.382
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory"
+  ],
+  "summary": {
+    "uk": "Місце знахідки «кекенідомбської Венери», глиняної посудини заввишки 23 см у вигляді жінки на ослінчику, з культури Тиси першої половини V тисячоліття до н. е.; зберігається в музеї Tornyai János. Точка: хутір Kopáncs, точне місце пам'ятки не фіксується.",
+    "hu": "A kökénydombi vénusz lelőhelye: 23 cm magas, zsámolyon ülő nőalakot ábrázoló agyagedény a tiszai kultúrából, az i. e. 5. évezred első feléből; a hódmezővásárhelyi Tornyai János Múzeum őrzi. A térképi pont Kopáncs tanyaközpontja, a lelőhely pontos helye nincs megadva."
+  },
+  "description": {
+    "uk": "За статтею, так звана кекенідомбська Венера є глиняною посудиною заввишки 23 см у вигляді жінки, що сидить на ослінчику; тіло вкривають геометричні візерунки, можливо, одяг, а від голови лишився фрагмент. Її знайшли на Kopáncs-Kökénydomb біля Годмезевашаргея разом зі схожою, але фрагментарнішою посудиною; обидві могли зображати богиню-матір. Обидві знахідки походять з культури Тиси, що процвітала в першій половині V тисячоліття до н. е., і є визначними пам'ятками новокам'яної скульптури в Угорщині; їх зберігає музей Tornyai János у Годмезевашаргеї. Стаття координат не подає, тож точку поставлено на хутір Kopáncs за OpenStreetMap з округленням."
+  },
+  "sources": [
+    {
+      "title": "Kökénydombi vénusz – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/K%C3%B6k%C3%A9nydombi_v%C3%A9nusz",
+      "note": "Вступ."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Kopáncs, Hódmezővásárhely",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Kop%C3%A1ncs%2C%20H%C3%B3dmez%C5%91v%C3%A1s%C3%A1rhely",
+      "note": "Координати 46.382, 20.258 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/K%C3%B6k%C3%A9nydombi_V%C3%A9nus%2C_fot%C3%B3_Thaler_Tam%C3%A1s.jpg",
+      "author": "Thaler Tamas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:K%C3%B6k%C3%A9nydombi_V%C3%A9nus%2C_fot%C3%B3_Thaler_Tam%C3%A1s.jpg",
+      "caption": {
+        "uk": "Кекенідомбська «Венера»",
+        "hu": "A kökénydombi vénusz"
+      }
+    }
+  ]
+}

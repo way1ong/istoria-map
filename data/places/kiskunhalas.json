@@ -1,0 +1,46 @@
+{
+  "id": "kiskunhalas",
+  "name": {
+    "uk": "Кішкунгалаш (Kiskunhalas), місто мережива",
+    "hu": "Kiskunhalas"
+  },
+  "type": "settlement",
+  "coords": [
+    19.48833,
+    46.43194
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "arpad",
+    "late-medieval",
+    "ottoman",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Місто в Кішкуншагу, відоме халашським мереживом; з 1290-х років центр куманського роду Csertán і Халаського престолу, 1436 року дістало міські вольності, в османську добу двічі (1566, 1596) спустошене кримськими татарами. Точка: центр міста.",
+    "hu": "Kiskunság-i város, a világhírű halasi csipke otthona; a kun Csertán nemzetség és Halas-szék központja, 1436-ban városi szabadságot kapott, a török korban a krími tatárok kétszer (1566, 1596) feldúlták. A térképi pont a városközpont."
+  },
+  "description": {
+    "uk": "За статтею, Кішкунгалаш є одним із центрів Кішкуншагу і відомий передусім своїми рукоділлями, насамперед світовославленим халашським мереживом. Археологи знайшли тут неолітичні, кельтські, сарматські й аварські сліди, а біля озера Sóstó цвинтар мадярів доби Гонфоглалашу; у середньовіччі в околиці було щонайменше 26 церков. Після монгольської навали між Дунаєм і Тисою оселилися кумани, і Галаш став центром роду Csertán та одного з семи куманських престолів; назва вперше в грамоті 1366 року, 1436 року місто дістало вольності, а за переказом 1492 року Pál Kinizsi розбив тут рештки «Чорного війська». В османську добу кримські татари двічі, 1566 і 1596 року, спустошили Галаш. Координати відповідають центру міста."
+  },
+  "sources": [
+    {
+      "title": "Kiskunhalas – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kiskunhalas",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Kiskunhalas-varoshaza.jpg",
+      "author": "Bencesarkozi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kiskunhalas-varoshaza.jpg",
+      "caption": {
+        "uk": "Ратуша Кішкунгалаша",
+        "hu": "A kiskunhalasi városháza"
+      }
+    }
+  ]
+}

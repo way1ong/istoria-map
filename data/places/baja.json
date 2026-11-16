@@ -1,0 +1,46 @@
+{
+  "id": "baja",
+  "name": {
+    "uk": "Бая (Baja), місто на Дунаї",
+    "hu": "Baja"
+  },
+  "type": "settlement",
+  "coords": [
+    18.95361,
+    46.18333
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "late-medieval",
+    "ottoman",
+    "habsburg-18",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Друге за величиною місто комітату Бач-Кішкун на лівому березі Дунаю; перша письмова згадка 1323 року, в османську добу центр нахії з фортецею й пристанню, після 1686 року заселене буневцями, шокцями, сербами, німцями й угорцями. Точка: центр міста.",
+    "hu": "Bács-Kiskun vármegye második legnagyobb városa a Duna bal partján; első írásos említése 1323-ból, a török korban a Bajai nahije központja erődítménnyel és kikötővel, 1686 után bosnyákok, bunyevácok, sokácok, szerbek, németek és magyarok települtek be. A térképi pont a városközpont."
+  },
+  "description": {
+    "uk": "За статтею, територія Баї була заселена з доісторичних часів, з VI століття тут жили авари, а після приходу мадярів місце стало важливою переправою через річку. Перша письмова згадка датується 1323 роком; назва, ймовірно, тюркського походження від першого власника, а 1474 року король Матяш подарував місто родині Czobor. В османську добу Бая була центром нахії, значною фортецею й пристанню з сотнями будинків, мечеттю й лазнею, але до кінця панування спорожніла; у 1686–1690 роках тут оселилися втікачі-боснійці, а в XVII–XVIII століттях кількість мешканців відновили хорвати (буневці, шокці), серби, німці-шваби й угорці. Координати відповідають центру міста."
+  },
+  "sources": [
+    {
+      "title": "Baja – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Baja",
+      "note": "Розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Baja%2C_v%C3%A1rosh%C3%A1za_2021_01.jpg",
+      "author": "Pasztilla aka Attila Terbócs",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Baja%2C_v%C3%A1rosh%C3%A1za_2021_01.jpg",
+      "caption": {
+        "uk": "Ратуша Баї",
+        "hu": "A bajai városháza"
+      }
+    }
+  ]
+}

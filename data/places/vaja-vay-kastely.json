@@ -1,0 +1,45 @@
+{
+  "id": "vaja-vay-kastely",
+  "name": {
+    "uk": "Замок-садиба Ваї у Ваї (Vay Ádám Múzeum)",
+    "hu": "Vay-várkastély, Vaja (Vay Ádám Múzeum)"
+  },
+  "type": "castle",
+  "coords": [
+    22.16722,
+    47.9975
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "ottoman",
+    "habsburg-18",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Замок-садиба родини Vay XVII століття у Ваї, де з 1964 року діє музей Ádám Vay, присвячений добі Ракоці, визвольній війні й куруцьким традиціям.",
+    "hu": "A vajai Vay család 17. századi várkastélya, amelyben 1964 óta a Rákóczi-kor kutatásának és a kuruc hagyományoknak szentelt Vay Ádám Múzeum működik."
+  },
+  "description": {
+    "uk": "За статтею, замок-садиба будувався в три етапи: на початку XVII століття постав ренесансний головний будинок, 1659 року його розширили північною вежею, а остаточний вигляд з південною вежею він отримав на початку XVIII століття. Перебудова 1860-х років стерла ренесансний характер, а реставрації 1960–1962 і 1996–2004 років повернули будівлю ближче до вигляду XVII століття. Музей, заснований 1964 року, досліджує добу Ракоці й плекає пам'ять визвольної війни та куруцькі традиції; з 2012 року він працює у складі Угорського національного музею."
+  },
+  "sources": [
+    {
+      "title": "Vay Ádám Múzeum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Vay_%C3%81d%C3%A1m_M%C3%BAzeum",
+      "note": "Вступ і розділ «Története»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Vay-kast%C3%A9ly_%C3%A9s_parkja5.JPG",
+      "author": "Thaler",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Vay-kast%C3%A9ly_%C3%A9s_parkja5.JPG",
+      "caption": {
+        "uk": "Замок-садиба Ваї і парк",
+        "hu": "A vajai Vay-kastély és parkja"
+      }
+    }
+  ]
+}
