@@ -1,0 +1,30 @@
+{
+  "id": "mezokeresztesi-csata-1596",
+  "title": {
+    "uk": "Битва при Мезекерестеші",
+    "hu": "A mezőkeresztesi csata"
+  },
+  "date": {
+    "from": "1596-10-22",
+    "to": "1596-10-26",
+    "precision": "exact"
+  },
+  "period": "ottoman",
+  "places": [
+    "mezokeresztes-csatater"
+  ],
+  "summary": {
+    "uk": "Найбільша битва П'ятнадцятирічної війни: 50–60 тисяч християн ерцгерцога Максиміліана і Zsigmond Báthory проти 130–150 тисяч Мегмеда III; після початкових успіхів перемогли османи.",
+    "hu": "A tizenöt éves háború legnagyobb összecsapása: Miksa főherceg és Báthory Zsigmond 50–60 ezer fős hada III. Mehmed 130–150 ezres serege ellen; a kezdeti sikerek után az oszmánok győztek."
+  },
+  "description": {
+    "uk": "За статтею, битву вели 22–26 жовтня 1596 року; на християнському боці стояли імперські, угорські, чеські, саксонські, іспанські й трансільванські війська (50–60 тисяч), проти них армія султана Мегмеда III (130–150 тисяч). Після початкових успіхів християн перемогли османи; того ж року Еґер здався султану (див. картку фортеці)."
+  },
+  "sources": [
+    {
+      "title": "Mezőkeresztesi csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Mez%C5%91keresztesi_csata",
+      "note": "Дати, сили, результат."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "balaca-villa",
+  "name": {
+    "uk": "Римська вілла в Балаці (Baláca), Nemesvámos",
+    "hu": "Balácai római villagazdaság"
+  },
+  "type": "archaeological",
+  "coords": [
+    17.88868,
+    47.04492
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Велике римське вілльне господарство на околиці Nemesvámos біля Веспрема, частково реконструйоване; руїнний сад і музей є філією Національного музею.",
+    "hu": "Nagy kiterjedésű római villagazdaság Nemesvámos határában, részben rekonstruálva; a romkert és múzeum a Magyar Nemzeti Múzeum kiállítóhelye."
+  },
+  "description": {
+    "uk": "За статтею, Balácapuszta є частиною території Nemesvámos у комітаті Веспрем; її головне значення надає розкопане тут велике римське вілльне господарство і створений для його показу музей. Частково реконструйований комплекс будівель і руїнний сад працюють як виставкове місце Національного музею."
+  },
+  "sources": [
+    {
+      "title": "Balácapuszta – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Bal%C3%A1capuszta",
+      "note": "Вілла, музей, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/R%C3%B3mai_villagazdas%C3%A1g_romjai_%2815525._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "author": "monyesz1",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:R%C3%B3mai_villagazdas%C3%A1g_romjai_%2815525._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "caption": {
+        "uk": "Римська вілла в Балаці",
+        "hu": "A balácai római villa"
+      }
+    }
+  ]
+}

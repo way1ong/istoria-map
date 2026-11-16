@@ -1,0 +1,43 @@
+{
+  "id": "operahaz",
+  "name": {
+    "uk": "Угорська державна опера",
+    "hu": "Magyar Állami Operaház"
+  },
+  "type": "monument",
+  "coords": [
+    19.05863,
+    47.5025
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Єдиний оперно-балетний театр Угорщини з великою трупою, одна з найзначніших пам'яток XIX століття в Будапешті; неоренесансна будівля Miklós Ybl відкрита 1884 року як Королівська опера; інтер'єри Mór Than, Károly Lotz, Bertalan Székely.",
+    "hu": "Magyarország egyetlen nagy társulatú, operára és balettre szakosodott színháza, Budapest egyik legjelentősebb 19. századi műemléke; Ybl Miklós neoreneszánsz épülete 1884-ben nyílt meg Királyi Operaházként; belső tereit Than Mór, Lotz Károly és Székely Bertalan díszítette."
+  },
+  "description": {
+    "uk": "За статтею, Угорська державна опера, від відкриття 1884 року до 1945 року Угорська королівська опера, є єдиним у країні театром з великою трупою, що спеціалізується на операх і балетах, і однією з найзначніших будапештських пам'яток XIX століття. Неоренесансну будівлю зведено за проєктом Miklós Ybl; у багатому оздобленні інтер'єрів брали участь відомі угорські митці Mór Than, Károly Lotz і Bertalan Székely."
+  },
+  "sources": [
+    {
+      "title": "Magyar Állami Operaház – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Magyar_%C3%81llami_Operah%C3%A1z",
+      "note": "1884, Ybl, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Operahaz_megnyito.jpeg",
+      "author": "Istvánka",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Operahaz_megnyito.jpeg",
+      "caption": {
+        "uk": "Відкриття Опери",
+        "hu": "Az Operaház megnyitója"
+      }
+    }
+  ]
+}

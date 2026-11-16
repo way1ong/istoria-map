@@ -1,0 +1,43 @@
+{
+  "id": "toszeg-laposhalom",
+  "name": {
+    "uk": "Тосеґ (Tószeg): курган Laposhalom бронзової доби",
+    "hu": "Tószeg-Laposhalom"
+  },
+  "type": "archaeological",
+  "coords": [
+    20.15,
+    47.1
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory"
+  ],
+  "summary": {
+    "uk": "Село біля Сольнока, під яким лежить насипаний людською рукою пагорб Laposhalom; у його околиці розкопано пам'ятки бронзової доби. Точка: центр села.",
+    "hu": "Szolnok melletti község, alatta a kézzel hányt Laposhalom; határában bronzkori leleteket tártak fel. A térképi pont a falu központja."
+  },
+  "description": {
+    "uk": "За статтею про село, під ним лежить пагорб Laposhalom, «колись насипаний рукою», з обвалів якого, за давнім описом, сипалися кістки тварин і виднівся чорний як сажа шар; у його околиці розкопано пам'ятки бронзової доби. Координати відповідають центру села."
+  },
+  "sources": [
+    {
+      "title": "Tószeg – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/T%C3%B3szeg",
+      "note": "Laposhalom, бронзова доба, координати села."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/T%C3%B3szeg_l%C3%A9gifot%C3%B32.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:T%C3%B3szeg_l%C3%A9gifot%C3%B32.jpg",
+      "caption": {
+        "uk": "Tószeg з повітря",
+        "hu": "Tószeg légi fotón"
+      }
+    }
+  ]
+}

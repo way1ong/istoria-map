@@ -1,0 +1,46 @@
+{
+  "id": "debreceni-reformatus-kollegium",
+  "name": {
+    "uk": "Дебреценський реформатський колегіум",
+    "hu": "Debreceni Református Kollégium"
+  },
+  "type": "other",
+  "coords": [
+    21.62361,
+    47.53361
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "ottoman",
+    "habsburg-18",
+    "long-19",
+    "interwar-ww2"
+  ],
+  "summary": {
+    "uk": "Головний навчальний заклад Дебрецена, заснований 1538 року; під час революції 1848–1849 років тут засідали революційні державні збори уряду, що втік до Дебрецена, а 21 грудня 1944 року Тимчасові національні збори.",
+    "hu": "Debrecen egyik fő oktatási intézménye, 1538-ban alapították; 1848–49-ben a Debrecenbe menekült kormány forradalmi országgyűléseinek, 1944. december 21-én az Ideiglenes Nemzetgyűlésnek adott helyet."
+  },
+  "description": {
+    "uk": "За статтею, Дебреценський реформатський колегіум є одним із головних навчальних закладів міста й місцем засідань революційних державних зборів уряду, що втік до Дебрецена під час революції 1848–1849 років, а також Тимчасових національних зборів 21 грудня 1944 року. Від заснування 1538 року тут навчали від початкової школи до академічного рівня; крім теології, колегіум мав вищі філософський, гуманітарний, природничий і юридичний факультети, які стали основою пізнішого університету."
+  },
+  "sources": [
+    {
+      "title": "Debreceni Református Kollégium – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Debreceni_Reform%C3%A1tus_Koll%C3%A9gium",
+      "note": "1538, 1849, 1944, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/A_Reform%C3%A1tus_Koll%C3%A9gium_l%C3%A9gi_felv%C3%A9telen%2C_Debrecen.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_Reform%C3%A1tus_Koll%C3%A9gium_l%C3%A9gi_felv%C3%A9telen%2C_Debrecen.jpg",
+      "caption": {
+        "uk": "Реформатський колегіум з повітря",
+        "hu": "A Református Kollégium légi felvételen"
+      }
+    }
+  ]
+}

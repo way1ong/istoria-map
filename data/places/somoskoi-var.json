@@ -1,0 +1,44 @@
+{
+  "id": "somoskoi-var",
+  "name": {
+    "uk": "Замок Шомошкьо (Somoskő) на кордоні",
+    "hu": "Somoskői vár"
+  },
+  "type": "castle",
+  "coords": [
+    19.85692,
+    48.17141
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Замок на вулканічній вершині над селом Somoskő (частина Salgótarján), що лежить уже по словацький бік кордону в заказнику Cerová vrchovina; 1576 року після короткої облоги його взяли османи й утримували до осені 1593 року. Під замком славетний базальтовий водоспад. Прикордонна пам'ятка.",
+    "hu": "Vár a Salgótarjánhoz tartozó Somoskő fölötti vulkáni csúcson, már szlovák területen, a Cseres-hegység Tájvédelmi Körzetben; 1576-ban rövid ostrom után az oszmánok foglalták el, és 1593 őszéig tartották. Alatta a híres bazaltzuhatag. Határ menti emlék."
+  },
+  "description": {
+    "uk": "За статтею, замок Шомошкьо стоїть на вулканічній вершині над Somoskő, колишнім окремим селом, що нині належить до Salgótarján, але вже на словацькій території в ландшафтному заказнику Cseres-hegység і належить до Šiatorská Bukovinka Лученецького округу. 1576 року османи після короткої облоги взяли його, і до осені 1593 року над вежами майорів турецький бунчук, поки гарнізон не втік перед королівським військом. Усесвітньо відомий базальтовий водоспад на північному боці замку вільно доступний з угорського боку."
+  },
+  "sources": [
+    {
+      "title": "Somoskői vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Somosk%C5%91i_v%C3%A1r",
+      "note": "1576–1593, кордон, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Somosk%C5%91_-_castle.jpg",
+      "author": "Civertan Grafikai Stúdió",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Somosk%C5%91_-_castle.jpg",
+      "caption": {
+        "uk": "Замок Шомошкьо",
+        "hu": "Somoskő vára"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "veszpremi-var",
+  "name": {
+    "uk": "Веспремський замок (Veszprém vára), місто королев",
+    "hu": "Veszprém vára"
+  },
+  "type": "castle",
+  "coords": [
+    17.90306,
+    47.09694
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval",
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Розібране в пізніші часи укріплення в центрі Веспрема, багате на пам'ятки; з доби Арпадів місто було церковним центром (єпископство) і центром князівських, потім королівських маєтків.",
+    "hu": "Visszabontott erődítmény Veszprém központjában; a város az Árpád-kortól egyházszervezeti központ (püspökség) és fejedelmi, majd királyi birtokközpont volt."
+  },
+  "description": {
+    "uk": "За статтею, Веспремський замок є розібраним укріпленням у центрі міста з багатими культурними й пам'яткоохоронними цінностями. Стаття описує Веспрем як церковно-організаційний центр (єпископство), господарський центр (князівський, потім королівський маєтковий центр, ринок) і згодом культурний центр з монастирем черниць у Веспремській долині; у XX столітті міське життя змістилося з Замкової гори до нинішніх площ Gizella tér і Kossuth Lajos utca."
+  },
+  "sources": [
+    {
+      "title": "Veszprém vára – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Veszpr%C3%A9m_v%C3%A1ra",
+      "note": "Функції міста, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Veszpr%C3%A9m%2C_V%C3%A1r_-_l%C3%A9gi_fot%C3%B3.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Veszpr%C3%A9m%2C_V%C3%A1r_-_l%C3%A9gi_fot%C3%B3.jpg",
+      "caption": {
+        "uk": "Веспремський замок з повітря",
+        "hu": "Veszprém vára légi fotón"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "pilisi-ciszterci-apatsag",
+  "name": {
+    "uk": "Пілішське цистерціанське абатство (Pilisszentkereszt)",
+    "hu": "Pilisi ciszterci apátság"
+  },
+  "type": "church",
+  "coords": [
+    18.89114,
+    47.69308
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Абатство, засноване 17 травня 1184 року королем Белою III, великим покровителем цистерціанців; ченців і будівничих покликано з французького Acey, і церква повторювала тамтешню.",
+    "hu": "III. Béla király alapította 1184. május 17-én; a szerzetesek és építőmesterek a franciaországi Acey-ból érkeztek, és az ottanival megegyező templomot építettek."
+  },
+  "description": {
+    "uk": "За статтею, заснування Пілішського цистерціанського абатства пов'язане з королем Белою III, серйозним покровителем ордену не лише в Угорщині, а й у Європі: до нинішнього Pilisszentkereszt він покликав ченців і будівничих із французького Acey, які збудували церкву, цілком тотожну тамтешній, що й досі стоїть у середньовічному стані. Абатство засноване 17 травня 1184 року і швидко здобуло значний авторитет. Координати зі статті округлено."
+  },
+  "sources": [
+    {
+      "title": "Pilisi ciszterci apátság – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Pilisi_ciszterci_ap%C3%A1ts%C3%A1g",
+      "note": "Дата заснування, Acey, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Pilisszentkereszt_l%C3%A9gifot%C3%B3.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Pilisszentkereszt_l%C3%A9gifot%C3%B3.jpg",
+      "caption": {
+        "uk": "Pilisszentkereszt з повітря",
+        "hu": "Pilisszentkereszt légi fotón"
+      }
+    }
+  ]
+}

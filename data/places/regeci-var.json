@@ -1,0 +1,44 @@
+{
+  "id": "regeci-var",
+  "name": {
+    "uk": "Реґецький замок (Regéc) у Земпленських горах",
+    "hu": "Regéci vár"
+  },
+  "type": "castle",
+  "coords": [
+    21.34437,
+    48.37865
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Замок близько 1300 року в центральній частині Земпленських гір; 1686 року за наказом Леопольда I його зруйнував генерал Caprara, і століттями стояли лише руїни; відновлення почалося наприкінці 1990-х.",
+    "hu": "1300 körül épült vár a Zempléni-hegység közepén; I. Lipót rendeletére Caprara generális 1686-ban leromboltatta, azóta rom volt; helyreállítása az 1990-es évek végén kezdődött."
+  },
+  "description": {
+    "uk": "За статтею, Реґецький замок збудовано близько 1300 року в центральній частині Земпленських гір. За указом імператора Леопольда I генерал Caprara 1686 року зруйнував його, і після того століттями стояли лише руїни; відновлення почалося наприкінці 1990-х, і нині замок видно в напіввідновленому стані."
+  },
+  "sources": [
+    {
+      "title": "Regéci vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Reg%C3%A9ci_v%C3%A1r",
+      "note": "Датування, 1686, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Reg%C3%A9c_-_Castle.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Reg%C3%A9c_-_Castle.jpg",
+      "caption": {
+        "uk": "Реґецький замок",
+        "hu": "A regéci vár"
+      }
+    }
+  ]
+}

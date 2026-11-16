@@ -1,0 +1,34 @@
+{
+  "id": "kassa-bombazasa-1941",
+  "title": {
+    "uk": "Бомбардування Кошиць і вступ у війну",
+    "hu": "Kassa bombázása"
+  },
+  "date": {
+    "from": "1941-06-26",
+    "precision": "exact"
+  },
+  "period": "interwar-ww2",
+  "places": [
+    "kassa"
+  ],
+  "summary": {
+    "uk": "26 червня 1941 року досі не з'ясований авіаналіт на Кошице, що тоді належали Угорщині, завдав значних жертв; того ж дня Горті без ґрунтовного розслідування оголосив стан війни з СРСР.",
+    "hu": "1941. június 26-án a máig tisztázatlan légitámadás az akkor Magyarországhoz tartozó Kassát érte; Horthy még aznap, alaposabb vizsgálat nélkül bejelentette a hadiállapotot a Szovjetunióval."
+  },
+  "description": {
+    "uk": "За статтею, авіаналіт на Кошице 26 червня 1941 року досі не з'ясований; він завдав значних втрат у людях і будівлях і став приводом для вступу Угорщини у війну проти Радянського Союзу: дізнавшись про інцидент, регент Міклош Горті під впливом прем'єра László Bárdossy і прогерманських політиків того ж дня оголосив про стан війни. За оглядовою статтею, саме війна 1941 року стала наслідком ревізіоністської стратегії міжвоєнної Угорщини."
+  },
+  "sources": [
+    {
+      "title": "Kassa bombázása – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kassa_bomb%C3%A1z%C3%A1sa",
+      "note": "Дата, наслідки."
+    },
+    {
+      "title": "Magyar történelem – Wikipédia (hu), розділ «1920-1945: A Horthy-korszak»",
+      "url": "https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_t%C3%B6rt%C3%A9nete",
+      "note": "Контекст 1941 року."
+    }
+  ]
+}

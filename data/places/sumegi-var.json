@@ -1,0 +1,45 @@
+{
+  "id": "sumegi-var",
+  "name": {
+    "uk": "Шюмезький замок (Sümeg)",
+    "hu": "Sümegi vár"
+  },
+  "type": "castle",
+  "coords": [
+    17.28222,
+    46.98222
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Тричастинна фортеця на самотній вершині над західним Балатонським нагір'ям: ядром є нижній рівень донжона 1260-х років, стіни верхнього замку постали століттям пізніше, у XV столітті плато перед замком обвели високим муром.",
+    "hu": "Háromosztatú erődítmény a Balaton-felvidék nyugati részének magányos hegycsúcsán; magja az 1260-as években épült öregtorony, a fellegvár falai egy évszázaddal később, a 15. században a vár előtti fennsíkot is védőfallal vették körül."
+  },
+  "description": {
+    "uk": "За статтею, замок Шюмеґ стоїть на вершині самотньої гори, що височіє над околицею в західній частині Балатонського нагір'я. Ядром тричастинного укріплення є нижній рівень донжона, збудованого в 1260-х роках; стіни верхнього замку завершено століттям пізніше, а протягом XV століття плато перед замком обвели міцним високим муром. Замок є державною пам'яткою."
+  },
+  "sources": [
+    {
+      "title": "Sümegi vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/S%C3%BCmegi_v%C3%A1r",
+      "note": "Датування частин, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/S%C3%BCmeg%2C_a_v%C3%A1r_l%C3%A9gi_fot%C3%B3n.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:S%C3%BCmeg%2C_a_v%C3%A1r_l%C3%A9gi_fot%C3%B3n.jpg",
+      "caption": {
+        "uk": "Замок Шюмеґ з повітря",
+        "hu": "Sümeg vára légi fotón"
+      }
+    }
+  ]
+}

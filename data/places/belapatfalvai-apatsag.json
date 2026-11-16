@@ -1,0 +1,43 @@
+{
+  "id": "belapatfalvai-apatsag",
+  "name": {
+    "uk": "Цистерціанська церква в Белапатфалві (Bélapátfalva)",
+    "hu": "Bélapátfalvai ciszterci apátsági templom"
+  },
+  "type": "church",
+  "coords": [
+    20.36444,
+    48.04917
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Єдина в Угорщині цілком збережена романська цистерціанська абатська церква, будована з 1232 року біля джерела Háromkút під горою Bél-kő; у XIV–XV століттях перебудована в готичному стилі, тринавна, без вежі.",
+    "hu": "Magyarország egyetlen épségben megmaradt romanikus ciszterci apátsági temploma, 1232-től épült a Bél-kő lábánál, a Háromkút forrásnál; a 14–15. században gótikus stílusban átépítették."
+  },
+  "description": {
+    "uk": "За статтею, цистерціанський монастир у Белапатфалві лежить під 815-метровою горою Bél-kő біля джерела Háromkút на лісистому узвишші. Це єдина в Угорщині цілком збережена романська цистерціанська абатська церква, яку будували з 1232 року; монастир поруч постав раніше. Пізньороманську церкву в XIV–XV століттях перебудували в готичному стилі; тринавна церква з трансептом і двосхилим дахом не має вежі."
+  },
+  "sources": [
+    {
+      "title": "Bélapátfalvai ciszterci kolostor – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/B%C3%A9lap%C3%A1tfalvai_ciszterci_kolostor",
+      "note": "1232, стиль, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Ciszterci_ap%C3%A1ts%C3%A1gi_templom_%28Nagyboldogasszony%29_%285433._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_7.jpg",
+      "author": "DSKriszti",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:Ciszterci_ap%C3%A1ts%C3%A1gi_templom_%28Nagyboldogasszony%29_%285433._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_7.jpg",
+      "caption": {
+        "uk": "Цистерціанська церква в Белапатфалві",
+        "hu": "A bélapátfalvai apátsági templom"
+      }
+    }
+  ]
+}

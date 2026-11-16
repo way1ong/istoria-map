@@ -1,0 +1,44 @@
+{
+  "id": "cipok-a-duna-parton",
+  "name": {
+    "uk": "Меморіал «Черевики на березі Дунаю»",
+    "hu": "Cipők a Duna-parton"
+  },
+  "type": "monument",
+  "coords": [
+    19.04478,
+    47.5039
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Будапештський меморіал Голокосту на набережній біля площі Kossuth tér, присвячений людям, яких нілашисти розстрілювали в річку; ідея режисера Can Togay, співавтор скульптор Gyula Pauer; відкритий 16 квітня 2005 року, 2016 року визнаний другою найкращою міською скульптурою світу.",
+    "hu": "Budapesti holokauszt-emlékmű a Kossuth tér előtti Duna-parton, a nyilasterror idején a folyóba lőtt embereknek; szellemi alkotója Can Togay filmrendező, társalkotója Pauer Gyula szobrász; 2005. április 16-án avatták fel, 2016-ban a világ második legjobb köztéri szobrának választották."
+  },
+  "description": {
+    "uk": "За статтею, «Черевики на березі Дунаю» є будапештським меморіалом Голокосту; його ідейний автор кінорежисер Can Togay, співавтор скульптор Gyula Pauer, лауреат премії Кошута; 2016 року композицію обрали другою найкращою міською скульптурою світу. Меморіал відкрито 16 квітня 2005 року о 21:30 у день пам'яті Голокосту, учасники Маршу живих зі смолоскипами пройшли набережною перед площею Kossuth tér; композиція нагадує про людей, яких під час нілашистського терору розстрілювали в річку. Наступного дня її освятили представники історичних церков."
+  },
+  "sources": [
+    {
+      "title": "Cipők a Duna-parton – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Cip%C5%91k_a_Duna-parton",
+      "note": "Автори, 2005, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Memory-Text-shoes.jpg",
+      "author": "Tamas Szabo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Memory-Text-shoes.jpg",
+      "caption": {
+        "uk": "Меморіал «Черевики на березі Дунаю»",
+        "hu": "A Cipők a Duna-parton emlékmű"
+      }
+    }
+  ]
+}

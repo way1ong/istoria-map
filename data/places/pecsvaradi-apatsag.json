@@ -1,0 +1,43 @@
+{
+  "id": "pecsvaradi-apatsag",
+  "name": {
+    "uk": "Печварадське бенедиктинське абатство",
+    "hu": "Pécsváradi bencés apátság"
+  },
+  "type": "church",
+  "coords": [
+    18.41243,
+    46.15951
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Абатство св. Бенедикта на виступі гори Vas-hegy (Mons Ferrus) у східних Мечеках, засноване 998 року королем Іштваном; тут жив абат Астрік, якого Іштван послав до Рима по корону. Горіло за Ґези II, спустошене монголами.",
+    "hu": "Szent István alapította 998-ban a Mecsek keleti lankáin, a Vas-hegy kiugró nyúlványán; itt élt Asztrik apát, akit István Rómába küldött koronáért. II. Géza alatt leégett, a tatárjárás elpusztította."
+  },
+  "description": {
+    "uk": "За статтею, з-поміж східних схилів Мечека височіє гора, яку середньовічні грамоти звуть Mons Ferrus (Vas-hegy), на виступі якої король Іштван 998 року заснував абатство св. Бенедикта. У цьому комплексі прожив життя абат Астрік, якого Іштван послав до Рима просити в папи корону. За Ґези II комплекс згорів, але завдяки великим прибуткам його швидко відбудували; великих руйнувань завдала монгольська навала."
+  },
+  "sources": [
+    {
+      "title": "Pécsváradi bencés kolostor – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/P%C3%A9csv%C3%A1radi_benc%C3%A9s_kolostor",
+      "note": "998, Астрік, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/P%C3%A9csv%C3%A1rad_-_Benc%C3%A9s_ap%C3%A1ts%C3%A1g4.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:P%C3%A9csv%C3%A1rad_-_Benc%C3%A9s_ap%C3%A1ts%C3%A1g4.jpg",
+      "caption": {
+        "uk": "Бенедиктинське абатство Печварада",
+        "hu": "A pécsváradi bencés apátság"
+      }
+    }
+  ]
+}

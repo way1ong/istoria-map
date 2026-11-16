@@ -1,0 +1,44 @@
+{
+  "id": "kiraly-furdo",
+  "name": {
+    "uk": "Купальня Кірай (Király), лазня паші Арслана",
+    "hu": "Király gyógyfürdő"
+  },
+  "type": "other",
+  "coords": [
+    19.0381,
+    47.5107
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "ottoman",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Одна з найхарактерніших купалень Будапешта, первісно хамам: будівництво 1565 року в межах мурів Буди почав паша Арслан, завершено за паші Соколлу Мустафи; з 2020 року зачинена на реставрацію.",
+    "hu": "Budapest egyik legjellegzetesebb fürdője, eredetileg hamam: 1565-ben Buda városfalain belül Arszlán pasa kezdte építeni, Szokoli Musztafa pasa idején fejezték be; 2020 óta felújításra vár."
+  },
+  "description": {
+    "uk": "За статтею, купальня Кірай, або лазня паші Арслана, є однією з найхарактерніших лікувальних купалень Будапешта; первісно це був хамам, будівництво якого 1565 року в межах міських мурів Буди почав будайський паша Арслан, а завершили за його наступника паші Соколлу Мустафи. Її звели далеко від відомих тоді джерел; з 2020 року купальня зачинена і чекає на реставрацію."
+  },
+  "sources": [
+    {
+      "title": "Király gyógyfürdő – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kir%C3%A1ly_gy%C3%B3gyf%C3%BCrd%C5%91",
+      "note": "1565, паші, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Torok_furdo_Budapest_Ganz_utca_PB010341-lev-1000.jpg",
+      "author": "Misibacsi",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Torok_furdo_Budapest_Ganz_utca_PB010341-lev-1000.jpg",
+      "caption": {
+        "uk": "Турецька лазня на вулиці Ganz",
+        "hu": "Török fürdő a Ganz utcában"
+      }
+    }
+  ]
+}

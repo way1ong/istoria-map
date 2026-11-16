@@ -1,0 +1,44 @@
+{
+  "id": "fuzeri-var",
+  "name": {
+    "uk": "Фюзерський замок (Füzér)",
+    "hu": "Füzéri vár"
+  },
+  "type": "castle",
+  "coords": [
+    21.45972,
+    48.54194
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Замок на вулканічній горі над селом Füzér, уперше згаданий 1264 року, але, ймовірно, старший за монгольську навалу; збудований родом Aba, він може бути одним із перших приватних кам'яних замків Угорщини; Андраш II купив його для корони.",
+    "hu": "Vulkanikus hegyen álló vár Füzér fölött, első említése 1264-ből; az Aba nemzetség építtette, és az első magyarországi magánbirtokú kővárak egyike lehet; II. András megvette a koronának."
+  },
+  "description": {
+    "uk": "За статтею, Фюзерський замок стоїть на горі вулканічного походження біля села Füzér; перша письмова згадка датована 1264 роком, хоча він, імовірно, стояв уже до монгольської навали. Вважають, що його збудував рід Aba за Арпадів, і він може бути одним із перших приватних кам'яних замків країни; у XIII столітті Андраш II купив замок, який до монгольської навали входив до королівських володінь, а потім даруванням повернувся до Aba."
+  },
+  "sources": [
+    {
+      "title": "Füzéri vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/F%C3%BCz%C3%A9ri_v%C3%A1r",
+      "note": "1264, рід Aba, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/F%C3%BCz%C3%A9r_%C3%A9s_temploma.jpg",
+      "author": "Füzéri Várgondnokság",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:F%C3%BCz%C3%A9r_%C3%A9s_temploma.jpg",
+      "caption": {
+        "uk": "Фюзерський замок",
+        "hu": "A füzéri vár"
+      }
+    }
+  ]
+}

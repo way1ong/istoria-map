@@ -1,0 +1,43 @@
+{
+  "id": "ozorai-pipo-vara",
+  "name": {
+    "uk": "Замок Піпо Озорського (Ozora)",
+    "hu": "Ozorai Pipó vára"
+  },
+  "type": "castle",
+  "coords": [
+    18.40112,
+    46.75268
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Замок-палац в Озорі, на півдорозі між Балатоном і Дунаєм; 1416 року флорентієць Філіппо Сколарі, він же Піпо Озорський, дістав дозвіл звести тут «з каменю або дерева замок, твердиню чи палац»; помер 1426 року, не заснувавши династії.",
+    "hu": "Várkastély Ozorán, félúton a Balaton és a Duna között; 1416-ban a firenzei Filippo Scolari, Ozorai Pipó engedélyt kapott, hogy itt „kőből, avagy fából várat, erősséget vagy kastélyt” emeljen; 1426-ban halt meg, dinasztiát nem alapított."
+  },
+  "description": {
+    "uk": "За статтею, Озора лежить на півдорозі між Балатоном і Дунаєм серед пагорбів Толни, а її найзначнішою середньовічною пам'яткою є замок-палац. Філіппо Сколарі прибрав ім'я Піпо Озорський; 1416 року він дістав дозвіл звести в Озорі, центрі маєтку з дванадцяти кріпацьких сіл, «з каменю або дерева замок, твердиню чи палац». Його діти померли молодими, тож династії в Угорщині він не заснував; Піпо помер 1426 року, вдова пережила його на дванадцять років."
+  },
+  "sources": [
+    {
+      "title": "Ozorai Pipó vára – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Ozorai_Pip%C3%B3_v%C3%A1ra",
+      "note": "1416, 1426, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Ozorai_Pip%C3%B3_v%C3%A1ra_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Ozorai_Pip%C3%B3_v%C3%A1ra_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "caption": {
+        "uk": "Замок Піпо Озорського з повітря",
+        "hu": "Ozorai Pipó vára légi felvételen"
+      }
+    }
+  ]
+}

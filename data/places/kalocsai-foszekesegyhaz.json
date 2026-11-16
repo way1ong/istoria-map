@@ -1,0 +1,44 @@
+{
+  "id": "kalocsai-foszekesegyhaz",
+  "name": {
+    "uk": "Калочський архікафедральний собор",
+    "hu": "Kalocsai Nagyboldogasszony-főszékesegyház"
+  },
+  "type": "church",
+  "coords": [
+    18.97367,
+    46.52999
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Кафедральний собор Калочсько-Кечкеметської архієпархії на давньому храмовому місці: перший собор Калочі за наявними даними підтримував ще король Іштван I; нинішній бароковий собор завершено 1774 року.",
+    "hu": "A Kalocsa-Kecskeméti főegyházmegye székesegyháza ősi templomos helyen: az első kalocsai székesegyház építését még I. István támogatta; a mai barokk katedrális 1774-re készült el."
+  },
+  "description": {
+    "uk": "За статтею, архікафедральний собор Успіння в Калочі є головним храмом Калочсько-Кечкеметської архієпархії. Його територія є давнім храмовим місцем: будівництво першого калочського собору за наявними даними підтримував ще король Іштван I. Нинішній бароковий собор завершено 1774 року; співкафедральним є кечкеметський храм Вознесіння."
+  },
+  "sources": [
+    {
+      "title": "Nagyboldogasszony-főszékesegyház (Kalocsa) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagyboldogasszony-f%C5%91sz%C3%A9kesegyh%C3%A1z_%28Kalocsa%29",
+      "note": "Іштван I, 1774, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Kalocsa%2C_%C3%A9rseki_sz%C3%A9kesegyh%C3%A1z_2022_02.jpg",
+      "author": "Pasztilla aka Attila Terbócs",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kalocsa%2C_%C3%A9rseki_sz%C3%A9kesegyh%C3%A1z_2022_02.jpg",
+      "caption": {
+        "uk": "Калочський собор",
+        "hu": "A kalocsai főszékesegyház"
+      }
+    }
+  ]
+}

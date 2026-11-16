@@ -1,0 +1,44 @@
+{
+  "id": "sarvari-var",
+  "name": {
+    "uk": "Шарварський замок Надашді (Sárvár)",
+    "hu": "Sárvári vár"
+  },
+  "type": "castle",
+  "coords": [
+    16.93762,
+    47.25161
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Цілком збережений середньовічний замок-палац біля західного берега Раби; маєток Kanizsai перейшов через шлюб з Orsolya Kanizsai до Tamás Nádasdy, за якого Шарвар став центром роду; наприкінці XV століття Kanizsai розбудували його в укріплений замок із палацовими крилами.",
+    "hu": "Teljes épségben fennmaradt középkori várkastély a Rába nyugati partja közelében; a Kanizsai-birtokot Kanizsai Orsolya férje, Nádasdy Tamás kapta meg, a Kanizsaiak a 15. század végére zárt udvarú, palotaszárnyas, védművekkel erődített várrá építették ki."
+  },
+  "description": {
+    "uk": "За статтею, Шарварський замок є цілком збереженим середньовічним замком-палацом поблизу західного берега Раби. Маєток Kanizsai дістав чоловік Orsolya Kanizsai, Tamás Nádasdy; до кінця XV століття Kanizsai розбудували його в замок із закритим двором, палацовими крилами й оборонними спорудами, а в наступні десятиліття Шарвар став центром володінь роду."
+  },
+  "sources": [
+    {
+      "title": "Sárvári vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/S%C3%A1rv%C3%A1ri_v%C3%A1r",
+      "note": "Kanizsai, Nádasdy, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/S%C3%A1rv%C3%A1r%2C_a_v%C3%A1r_l%C3%A9gi_fot%C3%B3n.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:S%C3%A1rv%C3%A1r%2C_a_v%C3%A1r_l%C3%A9gi_fot%C3%B3n.jpg",
+      "caption": {
+        "uk": "Шарварський замок з повітря",
+        "hu": "Sárvár vára légi fotón"
+      }
+    }
+  ]
+}

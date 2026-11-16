@@ -1,0 +1,43 @@
+{
+  "id": "jakovali-hasszan-dzsamija",
+  "name": {
+    "uk": "Мечеть Яковалі Гасана в Печі",
+    "hu": "Jakováli Hasszán dzsámija, Pécs"
+  },
+  "type": "church",
+  "coords": [
+    18.22083,
+    46.07389
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Одна з найкраще збережених турецьких пам'яток Угорщини і єдина, де мечеть і стрункий мінарет майже незмінно зберегли первісний ансамбль; за Евлією Челебі її збудував паша Яковалі Гасан, імовірно, у другій половині XVI століття.",
+    "hu": "Magyarország egyik legjobb állapotban fennmaradt török emléke Pécsett, az egyetlen, ahol a dzsámi és a minaret szinte változatlanul őrzi eredeti tömegét; Evlija Cselebi szerint Jakováli Hasszán pasa építtette, feltehetően a 16. század második felében."
+  },
+  "description": {
+    "uk": "За статтею, мечеть Яковалі Гасана в Печі є однією з найкраще збережених пам'яток турецької архітектури Угорщини і єдиною, де мечеть і прилеглий стрункий мінарет майже незмінно зберегли первісний об'ємний ансамбль. З опису Евлії Челебі відомо, що її збудував паша Яковалі Гасан, імовірно, в другій половині XVI століття, тоді ж, коли й інші значні турецькі будівлі Печа, зокрема мечеть паші Ґазі Касима (окрема картка)."
+  },
+  "sources": [
+    {
+      "title": "Jakováli Hasszán dzsámija – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Jakov%C3%A1li_Hassz%C3%A1n_dzs%C3%A1mija",
+      "note": "Датування, Евлія Челебі, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/P%C3%A9csJakov%C3%A1liHassz%C3%A1nPasaDzs%C3%A1mi.jpg",
+      "author": "Timmie1983",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:P%C3%A9csJakov%C3%A1liHassz%C3%A1nPasaDzs%C3%A1mi.jpg",
+      "caption": {
+        "uk": "Мечеть Яковалі Гасана",
+        "hu": "Jakováli Hasszán dzsámija"
+      }
+    }
+  ]
+}

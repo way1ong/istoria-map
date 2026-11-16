@@ -1,0 +1,46 @@
+{
+  "id": "szentendre",
+  "name": {
+    "uk": "Сентендре (Szentendre), місто сербів і художників",
+    "hu": "Szentendre"
+  },
+  "type": "settlement",
+  "coords": [
+    19.0725,
+    47.67333
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "ottoman",
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Місто біля входу в Дунайське коліно навпроти острова Сентендре, відоме мистецтвом і культурою; між 1420 і 1690 роками сюди було чотири переселення з півдня, з яких докладно відоме лише останнє, сербське 1690 року. Точка: центр міста.",
+    "hu": "Város a Dunakanyar kapujában a Szentendrei-szigettel szemben, művészetéről és kultúrájáról ismert; 1420 és 1690 között négy délvidéki betelepülés volt, részletesen csak az utolsó, az 1690-es szerb ismert. A térképi pont a város központja."
+  },
+  "description": {
+    "uk": "За статтею, Сентендре в агломерації Будапешта є центром Сентендрейського округу й приваблює насамперед мистецтвом і культурою; місто лежить біля входу в Дунайське коліно, де Вишеградські гори зустрічаються з Сентендрейським Дунаєм, навпроти острова Сентендре. Між 1420 і 1690 роками сюди було чотири переселення з південних країв, з яких докладно відоме лише останнє, сербське; у XV столітті прибули македонські болгари й далматинці, що значно посилилися за турецького панування. На протилежному березі лежить Dunakeszi."
+  },
+  "sources": [
+    {
+      "title": "Szentendre – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szentendre",
+      "note": "Переселення 1420–1690, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Szentendre-montage_2024.jpg",
+      "author": "SNRTZ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szentendre-montage_2024.jpg",
+      "caption": {
+        "uk": "Сентендре",
+        "hu": "Szentendre"
+      }
+    }
+  ]
+}

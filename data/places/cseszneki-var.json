@@ -1,0 +1,44 @@
+{
+  "id": "cseszneki-var",
+  "name": {
+    "uk": "Чеснецький замок (Csesznek) у Баконі",
+    "hu": "Cseszneki vár"
+  },
+  "type": "castle",
+  "coords": [
+    17.88139,
+    47.35111
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Середньовічний замок у Баконі над селом Csesznek біля дороги 82 між Дьйором і Зірцем, породження великої хвилі замкобудування після монгольської навали: перший замок близько 1263 року звів королівський мечоносець Jakab Cseszneki з роду Bána; перша згадка 1281 року.",
+    "hu": "Középkori vár a Bakonyban Csesznek fölött, a 82-es út mellett; a tatárjárás utáni várépítési korszak szülötte, az első várat 1263 körül Bána nembeli Cseszneki Jakab királyi kardhordozó emelte, első említése 1281-ből való."
+  },
+  "description": {
+    "uk": "За статтею, Чеснецький замок стоїть у горах Баконь біля головної дороги 82 між Дьйором і Зірцем над селом Csesznek і відкритий для відвідин. Укріплення народилося у велику добу замкобудування після монгольської навали 1241–1242 років: перший замок близько 1263 року звів на зручній для оборони скелі королівський мечоносець (ensifer regis) Jakab Cseszneki з роду Bána; перша згадка про замок збереглася в грамоті 1281 року."
+  },
+  "sources": [
+    {
+      "title": "Cseszneki vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Cseszneki_v%C3%A1r",
+      "note": "1263, 1281, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Csesznek_v%C3%A1ra_-_r%C3%A9szlet.jpg",
+      "author": "невідомий автор",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Csesznek_v%C3%A1ra_-_r%C3%A9szlet.jpg",
+      "caption": {
+        "uk": "Фрагмент Чеснецького замку",
+        "hu": "Csesznek vára, részlet"
+      }
+    }
+  ]
+}

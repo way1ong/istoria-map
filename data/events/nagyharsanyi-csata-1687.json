@@ -1,0 +1,47 @@
+{
+  "id": "nagyharsanyi-csata-1687",
+  "title": {
+    "uk": "Битва при Надьгаршані",
+    "hu": "A nagyharsányi csata"
+  },
+  "date": {
+    "from": "1687-08-12",
+    "precision": "exact"
+  },
+  "period": "ottoman",
+  "places": [
+    "nagyharsany-csatater"
+  ],
+  "summary": {
+    "uk": "12 серпня 1687 року на схилах Szársomlyó біля Вілланя 50-тисячне союзне військо Карла Лотаринзького, Максиміліана Баварського, Людвіга Баденського і Євгена Савойського розбило армію великого візира Сари Сулеймана.",
+    "hu": "1687. augusztus 12-én a Szársomlyó lejtőin Lotaringiai Károly, Miksa bajor fejedelem, Badeni Lajos és Savoyai Jenő 50 000 fős serege legyőzte Szári Szulejmán nagyvezír hadát."
+  },
+  "description": {
+    "uk": "За статтею, битва при Надьгаршані (друга могацька битва) відбулася 12 серпня 1687 року на схилах Szársomlyó біля Вілланя між 50-тисячним об'єднаним австро-угорсько-баварсько-хорватським військом і армією великого візира Сари Сулеймана. За оглядовою статтею про історію Угорщини, після Буди 1686 року і Надьгаршаня 1687 року наступ Священної ліги видихнувся до перемоги під Зентою 1697 року."
+  },
+  "sources": [
+    {
+      "title": "Nagyharsányi csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagyhars%C3%A1nyi_csata",
+      "note": "Дата, командувачі."
+    },
+    {
+      "title": "Magyar történelem – Wikipédia (hu), розділ «A török kiűzése és Habsburg abszolutizmus»",
+      "url": "https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_t%C3%B6rt%C3%A9nete",
+      "note": "Місце битви в ході війни."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Battle_of_Moh%C3%A1cs_1687.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Battle_of_Moh%C3%A1cs_1687.jpg",
+      "caption": {
+        "uk": "Битва 1687 року",
+        "hu": "Az 1687-es csata"
+      }
+    }
+  ]
+}

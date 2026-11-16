@@ -1,0 +1,44 @@
+{
+  "id": "dregely-vara",
+  "name": {
+    "uk": "Замок Дреґей (Drégely) і оборона 1552 року",
+    "hu": "Drégely vára"
+  },
+  "type": "castle",
+  "coords": [
+    19.03609,
+    48.01662
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Руїни замку на вулканічній скелі 444 м у північному Бьоржьоні між Drégelypalánk і Nagyoroszi; у липні 1552 року будайський паша Алі з 12 000 вояків обложив застарілу фортецю, яку капітан György Szondi обороняв зі 146 людьми.",
+    "hu": "Várrom a Börzsöny északi részén, 444 m magas vulkanikus sziklacsúcson Drégelypalánk és Nagyoroszi között; 1552 júliusában Ali budai pasa 12 000 fős serege ostromolta a korszerűtlen végvárat, amelyet Szondi György kapitány 146 katonával védett."
+  },
+  "description": {
+    "uk": "За статтею, замок Дреґей здіймається на 444-метровій вулканічній скельній вершині в північній частині Бьоржьоня на однаковій відстані від сіл Drégelypalánk і Nagyoroszi. Естергомський архієпископ Pál призначив капітаном György Szondi, який намагався зміцнити вже застарілу з військового погляду прикордонну фортецю; у липні 1552 року будайський паша Алі підійшов до замку з 12-тисячним військом, тоді як гарнізон налічував лише 146 вояків. Розстріляний у руїну замок зображено на гравюрі Hoefnagel 1617 року."
+  },
+  "sources": [
+    {
+      "title": "Drégely vára – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dr%C3%A9gely_v%C3%A1ra",
+      "note": "1552, Szondi, чисельність, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Dr%C3%A9gely_-_Castle.jpg",
+      "author": "невідомий автор",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Dr%C3%A9gely_-_Castle.jpg",
+      "caption": {
+        "uk": "Замок Дреґей",
+        "hu": "Drégely vára"
+      }
+    }
+  ]
+}

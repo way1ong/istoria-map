@@ -1,0 +1,44 @@
+{
+  "id": "gyulai-var",
+  "name": {
+    "uk": "Дюлайський замок (Gyula), цегляна фортеця Альфельду",
+    "hu": "Gyulai vár"
+  },
+  "type": "castle",
+  "coords": [
+    21.28583,
+    46.64583
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Єдиний цілком збережений рівнинний готичний цегляний замок Альфельду; 1403 року Сигізмунд подарував маєток мачванському бану János Maróti, який звів замок; з XVI століття ключова прикордонна фортеця.",
+    "hu": "Az egykori Magyar Királyság alföldi vidékeinek egyetlen épen maradt síkvidéki gótikus téglavára; az uradalmat Zsigmond 1403-ban Maróti János macsói bánnak adományozta, aki felépíttette a várat; a 16. századtól meghatározó végvár."
+  },
+  "description": {
+    "uk": "За статтею, Дюлайський замок у центрі міста Gyula комітату Бекеш є єдиним цілком збереженим рівнинним готичним цегляним замком альфельдських земель колишнього королівства і з XVI століття був визначальною прикордонною фортецею країни. 1403 року король Сигізмунд подарував маєток мачванському бану János Maróti, після чого Maróti збудував замок; у судовій справі 1405 року вже згадано двох дюлайських каштелянів. Гравюра Matthias Zündt показує місто 1566 року."
+  },
+  "sources": [
+    {
+      "title": "Gyulai vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Gyulai_v%C3%A1r",
+      "note": "1403, Maróti, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/V%C3%A1r_%282485._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_4.jpg",
+      "author": "enpe",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A1r_%282485._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_4.jpg",
+      "caption": {
+        "uk": "Дюлайський замок",
+        "hu": "A gyulai vár"
+      }
+    }
+  ]
+}

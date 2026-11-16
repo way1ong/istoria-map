@@ -1,0 +1,44 @@
+{
+  "id": "zirci-apatsag",
+  "name": {
+    "uk": "Зірцьке цистерціанське абатство (Zirc)",
+    "hu": "Zirci apátság"
+  },
+  "type": "church",
+  "coords": [
+    17.875,
+    47.26222
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Центр цистерціанського ордену в Угорщині, заснований 1182 року королем Белою III як філія Клерво, звідки прибули перші ченці; церкву за правилами ордену освячено на честь Діви Марії.",
+    "hu": "A ciszterci rend magyarországi központja, III. Béla alapította 1182-ben a clairvaux-i apátság filiájaként, az első szerzetesek is onnan jöttek."
+  },
+  "description": {
+    "uk": "За статтею, Зірцьке абатство є центром цистерціанського ордену в Угорщині і належить до Зірцької конгрегації разом з абатствами в Далласі та Kismaros. Монастир заснував великий покровитель ордену король Бела III 1182 року як філію найбільшого й найславетнішого французького цистерціанського абатства Клерво в Шампані, звідки прибули й перші ченці; церкву за приписами ордену освятили на честь Діви Марії. З травня 2023 року абатством керує папський комісар після фінансових зловживань."
+  },
+  "sources": [
+    {
+      "title": "Zirci apátság – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Zirci_ap%C3%A1ts%C3%A1g",
+      "note": "1182, Клерво, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/ZircFotoThalerTamas1.jpg",
+      "author": "Thaler Tamas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:ZircFotoThalerTamas1.jpg",
+      "caption": {
+        "uk": "Зірцьке абатство",
+        "hu": "A zirci apátság"
+      }
+    }
+  ]
+}

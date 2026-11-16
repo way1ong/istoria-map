@@ -1,0 +1,43 @@
+{
+  "id": "tapiobicske-csatater",
+  "name": {
+    "uk": "Поле битви при Тапіобічке (Tápióbicske), 1849",
+    "hu": "Tápióbicskei csatatér"
+  },
+  "type": "monument",
+  "coords": [
+    19.69,
+    47.37103
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Місце значної битви на початку весняного походу 4 квітня 1849 року, у якій György Klapka і János Damjanich завдали поразки силам Josip Jelačić; через два дні армія перемогла при Ішасеґу.",
+    "hu": "A tavaszi hadjárat kezdetén, 1849. április 4-én vívott jelentős csata helyszíne, ahol Klapka György és Damjanich János vereséget mért Josip Jelačić erőire; két nappal később Isaszegnél győzött a sereg."
+  },
+  "description": {
+    "uk": "За статтею, битва при Тапіобічке вважається значним зіткненням на початку весняного походу визвольної війни 1848–1849 років: 4 квітня 1849 року György Klapka і János Damjanich завдали поразки силам Josip Jelačić біля Tápióbicske. Через два дні відбулася битва при Ішасеґу, а 10 квітня битва під Вацом (окремі події). Координати зі статті приблизні."
+  },
+  "sources": [
+    {
+      "title": "Tápióbicskei csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/T%C3%A1pi%C3%B3bicskei_csata",
+      "note": "Дата, командувачі."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Than_tapiobicskei_utk%C3%B6zet2_1849_aprilis_4.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Than_tapiobicskei_utk%C3%B6zet2_1849_aprilis_4.jpg",
+      "caption": {
+        "uk": "Битва на картині Mór Than",
+        "hu": "Az ütközet Than Mór festményén"
+      }
+    }
+  ]
+}

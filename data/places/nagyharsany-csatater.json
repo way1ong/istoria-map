@@ -1,0 +1,43 @@
+{
+  "id": "nagyharsany-csatater",
+  "name": {
+    "uk": "Поле битви при Надьгаршані (Nagyharsány), 1687",
+    "hu": "Nagyharsányi csatatér, Szársomlyó"
+  },
+  "type": "monument",
+  "coords": [
+    18.40944,
+    45.85125
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Схили гори Szársomlyó біля Вілланя, де 12 серпня 1687 року об'єднане 50-тисячне австро-угорсько-баварсько-хорватське військо Карла Лотаринзького, Максиміліана Баварського, Людвіга Баденського і Євгена Савойського розбило армію великого візира Сари Сулеймана; «друга могацька битва».",
+    "hu": "A Szársomlyó lejtői Villány határában, ahol 1687. augusztus 12-én Lotaringiai Károly, Miksa bajor fejedelem, Badeni Lajos és Savoyai Jenő 50 000 fős egyesült serege legyőzte Szári Szulejmán nagyvezír hadát; a „második mohácsi csata”."
+  },
+  "description": {
+    "uk": "За статтею, битва при Надьгаршані, вона ж битва на горі Szársomlyó, друга могацька або вілланська битва, відбулася 12 серпня 1687 року на схилах Szársomlyó біля Вілланя між об'єднаним 50-тисячним австро-угорсько-баварсько-хорватським військом герцога Карла Лотаринзького, курфюрста Максиміліана Баварського, маркграфа Людвіга Баденського і принца Євгена Савойського та армією османського великого візира Сари Сулеймана. Назва «надьгаршанська» закріпилася в XIX столітті, ймовірно, помилково. Координати зі статті приблизні."
+  },
+  "sources": [
+    {
+      "title": "Nagyharsányi csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagyhars%C3%A1nyi_csata",
+      "note": "Дата, командувачі, назва."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Battle_of_Moh%C3%A1cs_1687.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Battle_of_Moh%C3%A1cs_1687.jpg",
+      "caption": {
+        "uk": "Битва 1687 року на тогочасному зображенні",
+        "hu": "Az 1687-es csata korabeli ábrázoláson"
+      }
+    }
+  ]
+}

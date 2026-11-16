@@ -1,0 +1,43 @@
+{
+  "id": "halaszbastya",
+  "name": {
+    "uk": "Рибальський бастіон (Halászbástya)",
+    "hu": "Halászbástya"
+  },
+  "type": "monument",
+  "coords": [
+    19.03444,
+    47.50278
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Неороманська оглядова тераса в Будайському замку, збудована в 1895–1902 роках за проєктом Frigyes Schulek; названа за цехом рибалок, який у середньовіччі боронив цю ділянку муру; головний фасад уздовж Дунаю майже 140 м.",
+    "hu": "Neoromán kilátóterasz a budai Várban, 1895 és 1902 között épült Schulek Frigyes tervei alapján; nevét a középkorban ezt a falszakaszt védő halászcéhről kapta; dunai főhomlokzata közel 140 m hosszú."
+  },
+  "description": {
+    "uk": "За статтею, Рибальський бастіон є однією з найвідоміших пам'яток Будапешта в Будайському замку; з його неороманських оглядових терас відкривається незрівнянна панорама. Паралельний Дунаю головний фасад має майже 140 м, конічні кам'яні вежі нагадують сім вождів приходу мадярів. Бастіон збудовано в 1895–1902 роках за проєктом Frigyes Schulek, якому доручили й перебудову церкви Матяша; назва вказує на те, що в середньовіччі цю частину муру обороняв цех рибалок. У 1947–1948 роках відновленням керував його син János Schulek."
+  },
+  "sources": [
+    {
+      "title": "Halászbástya – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Hal%C3%A1szb%C3%A1stya",
+      "note": "Роки, Schulek, назва, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Hal%C3%A1szb%C3%A1stya_2017.jpg",
+      "author": "Brian Adamson",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Hal%C3%A1szb%C3%A1stya_2017.jpg",
+      "caption": {
+        "uk": "Рибальський бастіон",
+        "hu": "A Halászbástya"
+      }
+    }
+  ]
+}

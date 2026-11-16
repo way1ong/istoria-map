@@ -1,0 +1,44 @@
+{
+  "id": "pecsi-szekesegyhaz",
+  "name": {
+    "uk": "Печський собор св. Петра і Павла",
+    "hu": "Pécsi székesegyház"
+  },
+  "type": "church",
+  "coords": [
+    18.22333,
+    46.07861
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Кафедральний собор Печської єпархії з фундаментами XI століття, нинішньої форми набув наприкінці XIX століття за проєктом Friedrich von Schmidt; орган Йожефа Анґстера, з 1991 року мала базиліка.",
+    "hu": "A Pécsi egyházmegye katedrálisa 11. századi alapokkal, mai formáját a 19. század végén Friedrich von Schmidt tervei alapján nyerte el; 1991 óta basilica minor."
+  },
+  "description": {
+    "uk": "За статтею, собор св. Петра і Павла (до кінця XX століття собор св. Петра) є катедрою Печської єпархії й характерною будівлею міста; собор із фундаментами XI століття набув нинішнього вигляду наприкінці XIX століття за проєктом Friedrich von Schmidt. Орган є сотою роботою József Angster; ранг малої базиліки храм дістав 1991 року перед візитом Івана Павла II. Поруч лежить ранньохристиянський некрополь (окрема картка)."
+  },
+  "sources": [
+    {
+      "title": "Pécsi székesegyház – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/P%C3%A9csi_sz%C3%A9kesegyh%C3%A1z",
+      "note": "Датування, архітектор, 1991, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/P%C3%A9cs_Cathedral_-_Hungary.jpg",
+      "author": "Takkk",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:P%C3%A9cs_Cathedral_-_Hungary.jpg",
+      "caption": {
+        "uk": "Печський собор",
+        "hu": "A pécsi székesegyház"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "vizsolyi-biblia-1590",
+  "title": {
+    "uk": "Друк Вижойської Біблії",
+    "hu": "A vizsolyi Biblia kinyomtatása"
+  },
+  "date": {
+    "from": "1590",
+    "precision": "exact"
+  },
+  "period": "ottoman",
+  "places": [
+    "vizsoly"
+  ],
+  "summary": {
+    "uk": "1590 року у Вижої надруковано перший повний переклад Біблії угорською мовою Gáspár Károli та його співпрацівників за участі друкаря Bálint Mantskovits; з 2015 року гунгарикум.",
+    "hu": "1590-ben Vizsolyban kinyomtatták Károli Gáspár és lelkésztársai teljes magyar bibliafordítását Mantskovits Bálint nyomdász közreműködésével; 2015 óta hungarikum."
+  },
+  "description": {
+    "uk": "За статтею, Біблія Каролі є найдавнішою збереженою повною Біблією угорською мовою; перше видання 1590 року за місцем друку відоме як Вижойська Біблія. Переклад виконали Gáspár Károlyi та його колеги-пастори, у друкуванні допомагав Bálint Mantskovits; у січні 2015 року переклад внесено до гунгарикумів."
+  },
+  "sources": [
+    {
+      "title": "Károli-biblia – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/K%C3%A1roli-biblia",
+      "note": "1590, перекладачі, гунгарикум."
+    }
+  ]
+}

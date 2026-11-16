@@ -1,0 +1,42 @@
+{
+  "id": "tiszai-cianszennyezes-2000",
+  "title": {
+    "uk": "Ціанідне забруднення Тиси",
+    "hu": "A tiszai cianidszennyezés"
+  },
+  "date": {
+    "from": "2000-01-30",
+    "precision": "exact"
+  },
+  "period": "modern",
+  "places": [
+    "szolnoki-var"
+  ],
+  "summary": {
+    "uk": "30 січня 2000 року з об'єкта компанії Aurul у Байя-Маре в річку Лапош, а далі в Самош і Тису вилилося 100 тисяч м³ стічних вод з ціанідом і важкими металами; концентрація отрути у 180 разів перевищила норму і спустошила живу природу кількох країн. Подія прив'язана до Сольнока на Тисі.",
+    "hu": "2000. január 30-án a nagybányai Aurul létesítményéből 100 ezer m³ cianid- és nehézfémtartalmú szennyvíz zúdult a Láposba, majd a Szamosba és a Tiszába; a méreg koncentrációja 180-szorosan haladta meg a határértéket, és több ország élővilágát pusztította. Az esemény a Tisza-parti Szolnokhoz van kötve."
+  },
+  "description": {
+    "uk": "За статтею, ціанідне забруднення Тиси було екологічною катастрофою на території кількох країн: 30 січня 2000 року о 22 годині з об'єкта гірничої компанії Aurul у Байя-Маре 100 тисяч м³ стічних вод із ціанідом і важкими металами ринули в річку Лапош, а через неї в Самош і Тису. Концентрація смертельно отруйної речовини у 180 разів перевищила допустиму межу і спричинила величезні втрати живої природи. Джерело забруднення лежить у Румунії за межами застосунку, тому подію прив'язано до Сольнока, через який тече Тиса."
+  },
+  "sources": [
+    {
+      "title": "Tiszai cianidszennyezés – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tiszai_cianidszennyez%C3%A9s",
+      "note": "Дата, обсяг, концентрація."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Tisza_cyanide_spill_1.jpg",
+      "author": "Photo: Délmagyarország/Karnok Csaba",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Tisza_cyanide_spill_1.jpg",
+      "caption": {
+        "uk": "Загибла риба на Тисі, 2000",
+        "hu": "Elpusztult halak a Tiszán, 2000"
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "gyori-csata-1809",
+  "title": {
+    "uk": "Битва під Дьйором (Kismegyer), 1809",
+    "hu": "A győri csata"
+  },
+  "date": {
+    "from": "1809-06-14",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [
+    "arrabona-gyor"
+  ],
+  "summary": {
+    "uk": "14 червня 1809 року біля Kismegyer відбулася єдина битва наполеонівських воєн на території Угорського королівства і остання, в якій билося шляхетське ополчення; французи мали явну перевагу, яку австрійське командування недооцінило через хибну розвідку.",
+    "hu": "1809. június 14-én Kismegyernél zajlott a napóleoni háborúk egyetlen magyarországi ütközete, az utolsó, amelyben a nemesi felkelés hadai harcoltak; a franciák fölényét az osztrák vezetés téves felderítés miatt alábecsülte."
+  },
+  "description": {
+    "uk": "За статтею, битва під Дьйором, або при Kismegyer, 14 червня 1809 року була єдиною битвою наполеонівських воєн на території Угорського королівства і водночас останнім зіткненням, у якому брали участь війська угорського шляхетського ополчення. Хоча через різницю в якості, чисельності й командуванні перевага французів була очевидна від початку, через хибні дані розвідки генерал-майора Laval Nugent чисельність французького війська значно недооцінили. Подія прив'язана до картки Дьйора (Arrabona); Kismegyer лежить на південно-східній околиці міста."
+  },
+  "sources": [
+    {
+      "title": "Győri csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Gy%C5%91ri_csata",
+      "note": "Дата, значення, Nugent."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Kismegyer, Győr",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Kismegyer%2C%20Gy%C5%91r",
+      "note": "Координати 47.6494, 17.6658 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Gy%C5%91ri_csata_Kaiser.JPG",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Gy%C5%91ri_csata_Kaiser.JPG",
+      "caption": {
+        "uk": "Битва під Дьйором на тогочасному зображенні",
+        "hu": "A győri csata korabeli ábrázoláson"
+      }
+    }
+  ]
+}

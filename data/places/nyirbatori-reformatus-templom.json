@@ -1,0 +1,44 @@
+{
+  "id": "nyirbatori-reformatus-templom",
+  "name": {
+    "uk": "Реформатська церква Ньїрбатора (Nyírbátor), 1488",
+    "hu": "Nyírbátori református templom"
+  },
+  "type": "church",
+  "coords": [
+    22.13469,
+    47.83786
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Висока готична церква родини Báthori на пагорбі з сітчастим склепінням і написом 1488 року над південним порталом; поруч дерев'яна дзвіниця близько 1640 року. Пам'ятка з 1963 року.",
+    "hu": "A Báthoriak magas, gótikus temploma dombtetőn, hálóboltozattal, a déli kapu fölött 1488-as évszámmal; mellette 1640 körüli fából ácsolt harangláb. 1963 óta műemlék."
+  },
+  "description": {
+    "uk": "За статтею, імпозантна висока готична церква середньовічного походження здіймається на вершині пагорба в Ньїрбаторі; на південний схід від неї стоїть масивна дерев'яна дзвіниця під ґонтом, збудована близько 1640 року. Над південним подвійним порталом вирізьблено напис з 1488 роком і герб Báthory; всередині парить сітчасте склепіння, у вівтарі ренесансна дарохранильниця, збереглися два надгробки Báthori. Церква під пам'яткоохоронним захистом з 1963 року."
+  },
+  "sources": [
+    {
+      "title": "Nyírbátori református templom – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Ny%C3%ADrb%C3%A1tori_reform%C3%A1tus_templom",
+      "note": "1488, Báthori, дзвіниця 1640, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Ny%C3%ADrb%C3%A1tor-hungary-reformad_church_3.jpg",
+      "author": "Uzo19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Ny%C3%ADrb%C3%A1tor-hungary-reformad_church_3.jpg",
+      "caption": {
+        "uk": "Реформатська церква Ньїрбатора",
+        "hu": "A nyírbátori református templom"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "arrabona-gyor",
+  "name": {
+    "uk": "Аррабона (Arrabona), римське місто й табір у Дьйорі",
+    "hu": "Arrabona"
+  },
+  "type": "archaeological",
+  "coords": [
+    17.635,
+    47.68389
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Римське місто й військовий табір на території нинішнього Дьйора; назва походить від кельтської назви Раби «Arabo» і слова «bona» (місто).",
+    "hu": "Római város és katonai tábor a mai Győr területén; neve a Rába kelta nevéből (Arabo) és a „bona” (város) szóból ered."
+  },
+  "description": {
+    "uk": "За статтею, Arrabona була римським містом і військовим табором на території нинішнього Дьйора; її назва складена з кельтського «Arabo» (лагідний, спокійний), давньої кельтської назви річки Раба, і слова «bona» (місто). Стаття про Карпатський басейн називає Arrabona серед важливих міст Паннонії на торговельних шляхах."
+  },
+  "sources": [
+    {
+      "title": "Arrabona – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Arrabona",
+      "note": "Назва, розташування, координати."
+    }
+  ]
+}
