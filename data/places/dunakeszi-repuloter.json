@@ -1,20 +1,42 @@
 {
   "id": "dunakeszi-repuloter",
-  "name": { "uk": "Аеродром Dunakeszi (колишні доріжки іподрому Alag)", "hu": "Dunakeszi repülőtér" },
+  "name": {
+    "uk": "Аеродром Dunakeszi (колишні доріжки іподрому Alag)",
+    "hu": "Dunakeszi repülőtér"
+  },
   "type": "other",
-  "coords": [19.143, 47.613],
+  "coords": [
+    19.143,
+    47.613
+  ],
   "coordsPrecision": "approximate",
-  "periods": ["interwar-ww2", "modern"],
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
   "summary": {
     "uk": "Трав'яний аеродром, що виник наприкінці 1944 року на доріжках іподрому Alag для літаків Червоної армії; з 1951 року центр угорського планеризму, де будували планери Ifjúság. З 2003 року власність міста і частина Національної екологічної мережі.",
     "hu": "Füves repülőtér, amely 1944 végén az alagi versenypályákon jött létre a Vörös Hadsereg gépei számára; 1951-től a magyar vitorlázórepülés központja, itt épültek az Ifjúság vitorlázógépek. 2003 óta városi tulajdon és a Nemzeti Ökológiai Hálózat része."
   },
   "description": {
-    "uk": "За статтями «Dunakeszi Helytörténeti Szemle», 28 грудня 1944 року частину іподрому Alag вилучили під аеродром для постачання Червоної армії, 9 січня 1945 року тут сіли перші бойові літаки; на тереблення зганяли місцевих мешканців. Після війни аеродром передали угорському спортивному літанню: у жовтні 1951 року відкрито Центральну ремонтну майстерню літаків Угорської федерації авіації, де збудували планери Bene (1952) і Z-03 Ifjúság (перший політ 5 лютого 1953 року; модифікація Z-03B у 33 примірниках, 1957–1959). З 1957 року тут працював Alagi Központi Kísérleti Üzem (планери Ifjúság, Béke, Gébics), згодом друга база Механічної лабораторії і служба авіаційного захисту рослин. Межу між тренувальною базою й аеродромом остаточно провели в середині 1950-х. У травні 1983 року аеродром відвідали космонавти Bertalan Farkas і Béla Magyari. З 2003 року аеродром належить місту й входить до Національної екологічної мережі через одну з найбільших у країні популяцій ховрахів; тут базуються кілька аероклубів.\n\nКоординати приблизні, за OpenStreetMap."
+    "uk": "За статтями «Dunakeszi Helytörténeti Szemle», 28 грудня 1944 року частину іподрому Alag вилучили під аеродром для постачання Червоної армії, 9 січня 1945 року тут сіли перші бойові літаки; на тереблення зганяли місцевих мешканців. Після війни аеродром передали угорському спортивному літанню: у жовтні 1951 року відкрито Центральну ремонтну майстерню літаків Угорської федерації авіації, де збудували планери Bene (1952) і Z-03 Ifjúság (перший політ 5 лютого 1953 року; модифікація Z-03B у 33 примірниках, 1957–1959). З 1957 року тут працював Alagi Központi Kísérleti Üzem (планери Ifjúság, Béke, Gébics), згодом друга база Механічної лабораторії і служба авіаційного захисту рослин. Межу між тренувальною базою й аеродромом остаточно провели в середині 1950-х. У травні 1983 року аеродром відвідали космонавти Bertalan Farkas і Béla Magyari. З 2003 року аеродром належить місту й входить до Національної екологічної мережі через одну з найбільших у країні популяцій ховрахів; тут базуються кілька аероклубів.\n\nКоординати приблизні, за OpenStreetMap.",
+    "hu": "A „Dunakeszi Helytörténeti Szemle” cikkei szerint 1944. december 28-án az alagi lóversenypálya egy részét a Vörös Hadsereg utánpótlását szolgáló repülőtér céljára vették igénybe, 1945. január 9-én itt szálltak le az első harci repülőgépek; az irtási munkákra a helyi lakosokat hajtották ki. A háború után a repülőteret a magyar sportrepülésnek adták át: 1951 októberében megnyílt a Magyar Repülő Szövetség Központi Repülőgépjavító Műhelye, ahol a Bene (1952) és a Z-03 Ifjúság vitorlázó repülőgépeket építették (első felszállás 1953. február 5-én; a Z-03B változat 33 példányban, 1957–1959). 1957-től itt működött az Alagi Központi Kísérleti Üzem (Ifjúság, Béke, Gébics vitorlázógépek), később a Mechanikai Laboratórium második telephelye és a repülőgépes növényvédelmi szolgálat. A tréningtelep és a repülőtér közötti határt az 1950-es évek közepén húzták meg véglegesen. 1983 májusában a repülőteret Farkas Bertalan és Magyari Béla űrhajósok látogatták meg. 2003 óta a repülőtér a város tulajdona, és az ország egyik legnagyobb ürgepopulációja révén a Nemzeti Ökológiai Hálózat része; több repülőklub állomásozik itt.\n\nA koordináták hozzávetőlegesek, az OpenStreetMap alapján."
   },
   "sources": [
-    { "title": "Csoma A., A repülőgépgyártás története Dunakeszin. Dunakeszi Helytörténeti Szemle I/2 (2008)", "url": "https://epa.oszk.hu/03000/03093/00002/pdf/EPA03093_dunakeszi_2008_2.pdf", "note": "Сторінки 4–5: 1944–1945, майстерня 1951, планери Bene і Ifjúság." },
-    { "title": "Legindi T., A dunakeszi repülőtér története. Dunakeszi Helytörténeti Szemle IV/1 (2011)", "url": "https://epa.oszk.hu/03000/03093/00010/pdf/EPA03093_dunakeszi_2011_1.pdf", "note": "Сторінки 8–9: повоєнна історія, клуби, екологічна мережа з 2003 року." },
-    { "title": "Nominatim (OpenStreetMap): Dunakeszi Repülőtér", "url": "https://nominatim.openstreetmap.org/search?q=Dunakeszi+rep%C3%BCl%C5%91t%C3%A9r&format=jsonv2", "note": "47.6131, 19.1431; округлено. Дані © учасники OpenStreetMap, ODbL." }
+    {
+      "title": "Csoma A., A repülőgépgyártás története Dunakeszin. Dunakeszi Helytörténeti Szemle I/2 (2008)",
+      "url": "https://epa.oszk.hu/03000/03093/00002/pdf/EPA03093_dunakeszi_2008_2.pdf",
+      "note": "Сторінки 4–5: 1944–1945, майстерня 1951, планери Bene і Ifjúság."
+    },
+    {
+      "title": "Legindi T., A dunakeszi repülőtér története. Dunakeszi Helytörténeti Szemle IV/1 (2011)",
+      "url": "https://epa.oszk.hu/03000/03093/00010/pdf/EPA03093_dunakeszi_2011_1.pdf",
+      "note": "Сторінки 8–9: повоєнна історія, клуби, екологічна мережа з 2003 року."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Dunakeszi Repülőtér",
+      "url": "https://nominatim.openstreetmap.org/search?q=Dunakeszi+rep%C3%BCl%C5%91t%C3%A9r&format=jsonv2",
+      "note": "47.6131, 19.1431; округлено. Дані © учасники OpenStreetMap, ODbL."
+    }
   ]
 }

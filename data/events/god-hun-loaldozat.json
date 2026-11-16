@@ -4,19 +4,38 @@
     "uk": "Гунська кінська жертва в Göd",
     "hu": "Hun kori lóáldozat Gödön"
   },
-  "date": { "from": "400", "to": "450", "precision": "approximate" },
+  "date": {
+    "from": "400",
+    "to": "450",
+    "precision": "approximate"
+  },
   "period": "migration",
-  "places": ["god-bocsaujtelep-fort"],
+  "places": [
+    "god-bocsaujtelep-fort"
+  ],
   "summary": {
     "uk": "У римському водовідвідному рові біля розміченої вежі форту знайдено череп і кістки ніг коня разом з уламками позолочених срібних оковок сідла, накриті римською цеглою. Археологи тлумачать це як гунський похоронний обряд «кінської шкури» приблизно через півстоліття після розмітки форту.",
     "hu": "Az erőd kitűzött tornya melletti római vízelvezető árokban lókoponya és lábcsontok kerültek elő aranyozott ezüst nyeregveret-töredékekkel, római téglákkal lefedve. A régészek hun kori „lóbőrös” halotti áldozatként értelmezik, mintegy fél évszázaddal az erőd kitűzése után."
   },
   "description": {
-    "uk": "За звітом розкопок 2001 року, на дні римського рову, що спускався до Дунаю на північний схід від першої вежі, знайдено дрібні уламки позолочених срібних пластин із пунсонним лускатим орнаментом, накриті спершу цілими й битими римськими цеглинами, а потім камінням. Zsolt Mráv датував пластини приблизно на півстоліття пізніше від форту і за великим розміром орнаменту й кістками коня поруч визнав їх не окуттям піхов, а оббивкою луки чи дощок сідла; найімовірніше, це пограбоване поховання коня. 2002 року в продовженні рову знайшли ще уламки пластин і кістки коня, серед них череп: у рів, викопаний римлянами, поклали багато спорядженого гунського або аланського коня, а поховання невдовзі майже повністю розграбували.\n\nУ публікації 2021 року Mráv, Mozgai і Bárány описують комплекс як гунське ритуальне депонування в закритому контексті. Оскільки знайдено лише череп, зуби й кістки ніг, а частина з них походить із верхніх шарів, вони реконструюють обряд «кінської шкури»: шкуру з черепом і ногами якийсь час виставляли на місці. Це типовий степовий обряд, який можна розуміти як жертву при похованні з унікальними рисами.\n\nДати в цій картці умовні: джерела датують комплекс гунською добою, «приблизно на півстоліття пізніше» від розмітки форту 373–375 років."
+    "uk": "За звітом розкопок 2001 року, на дні римського рову, що спускався до Дунаю на північний схід від першої вежі, знайдено дрібні уламки позолочених срібних пластин із пунсонним лускатим орнаментом, накриті спершу цілими й битими римськими цеглинами, а потім камінням. Zsolt Mráv датував пластини приблизно на півстоліття пізніше від форту і за великим розміром орнаменту й кістками коня поруч визнав їх не окуттям піхов, а оббивкою луки чи дощок сідла; найімовірніше, це пограбоване поховання коня. 2002 року в продовженні рову знайшли ще уламки пластин і кістки коня, серед них череп: у рів, викопаний римлянами, поклали багато спорядженого гунського або аланського коня, а поховання невдовзі майже повністю розграбували.\n\nУ публікації 2021 року Mráv, Mozgai і Bárány описують комплекс як гунське ритуальне депонування в закритому контексті. Оскільки знайдено лише череп, зуби й кістки ніг, а частина з них походить із верхніх шарів, вони реконструюють обряд «кінської шкури»: шкуру з черепом і ногами якийсь час виставляли на місці. Це типовий степовий обряд, який можна розуміти як жертву при похованні з унікальними рисами.\n\nДати в цій картці умовні: джерела датують комплекс гунською добою, «приблизно на півстоліття пізніше» від розмітки форту 373–375 років.",
+    "hu": "A 2001-es ásatási jelentés szerint az első toronytól északkeletre a Dunához lefutó római árok alján poncolt pikkelymintás, aranyozott ezüstlemezek apró töredékeit találták, amelyeket előbb ép és tört római téglák, majd kövek fedtek. Mráv Zsolt a lemezeket az erődnél mintegy fél évszázaddal későbbre keltezte, és a minta nagy mérete, valamint a mellettük lévő lócsontok alapján nem hüvelyveretnek, hanem nyeregkápa vagy nyeregdeszkák borításának ismerte fel; legvalószínűbb, hogy kirabolt lótemetkezésről van szó. 2002-ben az árok folytatásában további lemeztöredékeket és lócsontokat találtak, köztük egy koponyát: a rómaiak által ásott árokba egy gazdagon felszerszámozott hun vagy alán lovat fektettek, a temetkezést pedig hamarosan szinte teljesen kirabolták.\n\nEgy 2021-es publikációban Mráv, Mozgai és Bárány az együttest zárt kontextusú hun rituális deponálásként írja le. Mivel csak koponya, fogak és lábcsontok kerültek elő, és ezek egy része a felső rétegekből származik, a „lóbőr” szertartást rekonstruálják: a koponyával és a lábakkal együtt lenyúzott bőrt egy ideig a helyszínen kiállították. Ez tipikus sztyeppei rítus, amely egyedi vonásokkal bíró temetkezési áldozatként értelmezhető.\n\nA kártya dátumai feltételesek: a források az együttest a hun korra keltezik, „mintegy fél évszázaddal későbbre” az erőd 373–375-ös kitűzésénél."
   },
   "sources": [
-    { "title": "Mráv Zs., Göd, Bócsaújtelep. Régészeti Kutatások Magyarországon 2001, № 102", "url": "https://archeodatabase.hnm.hu/en/node/3785", "note": "Файл 10356_God_2001_RKM.pdf. Знахідка пластин у рові, датування на півстоліття пізніше від форту." },
-    { "title": "Mráv Zs., Göd, Bócsaújtelep, késő római erőd. Régészeti Kutatások Magyarországon 2002, № 101", "url": "https://archeodatabase.hnm.hu/en/node/3785", "note": "Файл 10356_God_2002_RKM.pdf. Кістки коня, череп, пограбоване поховання." },
-    { "title": "Mráv Zs., Mozgai V., Bárány A., Fragments of Silver-Gilt Saddle Plates and Horse Bones Buried in a Late Roman Ditch at Göd (Pest County, Hungary). In: Attila's Europe? Hungarian National Museum, 2021", "url": "https://real.mtak.hu/139274/", "note": "Анотація: обряд «кінської шкури», жертва при похованні." }
+    {
+      "title": "Mráv Zs., Göd, Bócsaújtelep. Régészeti Kutatások Magyarországon 2001, № 102",
+      "url": "https://archeodatabase.hnm.hu/en/node/3785",
+      "note": "Файл 10356_God_2001_RKM.pdf. Знахідка пластин у рові, датування на півстоліття пізніше від форту."
+    },
+    {
+      "title": "Mráv Zs., Göd, Bócsaújtelep, késő római erőd. Régészeti Kutatások Magyarországon 2002, № 101",
+      "url": "https://archeodatabase.hnm.hu/en/node/3785",
+      "note": "Файл 10356_God_2002_RKM.pdf. Кістки коня, череп, пограбоване поховання."
+    },
+    {
+      "title": "Mráv Zs., Mozgai V., Bárány A., Fragments of Silver-Gilt Saddle Plates and Horse Bones Buried in a Late Roman Ditch at Göd (Pest County, Hungary). In: Attila's Europe? Hungarian National Museum, 2021",
+      "url": "https://real.mtak.hu/139274/",
+      "note": "Анотація: обряд «кінської шкури», жертва при похованні."
+    }
   ]
 }
