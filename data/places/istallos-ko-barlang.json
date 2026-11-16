@@ -1,0 +1,30 @@
+{
+  "id": "istallos-ko-barlang",
+  "name": {
+    "uk": "Печера Ішталлош-кьо (Istállós-kői-barlang), Бюкк",
+    "hu": "Istállós-kői-barlang"
+  },
+  "type": "archaeological",
+  "coords": [
+    20.41889,
+    48.07167
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "prehistory"
+  ],
+  "summary": {
+    "uk": "Найвідвідуваніша печера первісної людини в Угорщині, пам'ятка оріньякської культури кроманьйонців: кістяні наконечники списів, амулети, кістяна флейта.",
+    "hu": "Az ország leglátogatottabb ősemberbarlangja, az aurignaci kultúra lelőhelye: csontlándzsahegyek, amulettek, csontfurulya."
+  },
+  "description": {
+    "uk": "За статтею, це одна з чотирьох печер країни з надійним і основоположним археологічним комплексом (разом із Szeleta, Pes-kő і Diósgyőrtapolca). Пам'ятки оріньякської культури кроманьйонської людини в Угорщині відомі лише із західного боку центральної частини Бюкка; серед знахідок кістяні наконечники, амулети і кістяна флейта, кістка становить 40 % інвентарю. Знахідки виставлені у Szilvásvárad."
+  },
+  "sources": [
+    {
+      "title": "Istállós-kői-barlang – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Ist%C3%A1ll%C3%B3s-k%C5%91i-barlang",
+      "note": "Культура, склад знахідок, координати."
+    }
+  ]
+}

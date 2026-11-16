@@ -1,0 +1,29 @@
+{
+  "id": "lanchid-megnyitasa-1849",
+  "title": {
+    "uk": "Відкриття Ланцюгового мосту",
+    "hu": "A Lánchíd átadása"
+  },
+  "date": {
+    "from": "1849-11-20",
+    "precision": "exact"
+  },
+  "period": "long-19",
+  "places": [
+    "szechenyi-lanchid"
+  ],
+  "summary": {
+    "uk": "20 листопада 1849 року Франц Йосиф відкрив перший постійний міст через Дунай між Будою і Пештом, будований з 1839 року за проєктом William Tierney Clark під керівництвом Adam Clark; фінансував барон György Sina, власник Dunakeszi.",
+    "hu": "1849. november 20-án Ferenc József átadta az első állandó Duna-hidat Buda és Pest között; 1839-től épült W. T. Clark terve szerint, Adam Clark vezetésével, Sina György finanszírozásával."
+  },
+  "description": {
+    "uk": "За статтею, роботи почалися 1839 року, а готовий міст 20 листопада 1849 року відкрив Франц Йосиф. Проєктував англієць William Tierney Clark, керував будівництвом шотландець Adam Clark; будівництво ініціював István Széchenyi, а фінансування організував György Sina, який дістав право мостового мита на 87 років, викуплене державою після 1867 року. Банкір Sina 1850 року купив і Dunakeszi (див. текст XIX століття)."
+  },
+  "sources": [
+    {
+      "title": "Széchenyi lánchíd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sz%C3%A9chenyi_l%C3%A1nch%C3%ADd",
+      "note": "Дати, інженери, фінансування."
+    }
+  ]
+}

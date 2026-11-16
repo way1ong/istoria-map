@@ -1,0 +1,38 @@
+{
+  "id": "tokaj-hegyalja",
+  "name": {
+    "uk": "Токай-Гедьалья (Tokaj-Hegyalja), історичний виноробний культурний ландшафт",
+    "hu": "Tokaj-hegyaljai történelmi borvidék kultúrtáj"
+  },
+  "type": "nature",
+  "coords": [
+    21.4114,
+    48.1236
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "ottoman",
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Виноробний регіон, 2002 року внесений до списку Світової спадщини ЮНЕСКО як культурний ландшафт. Точка: місто Tokaj.",
+    "hu": "2002-ben a világörökségi listára felvett kultúrtáj. A térképi pont Tokaj városa."
+  },
+  "description": {
+    "uk": "За статтею, історичний виноробний культурний ландшафт Токай-Гедьалья є угорською територією Світової спадщини, внесеною до списку 2002 року; конвенцію про Світову спадщину ЮНЕСКО ухвалила 1972 року. Координати міста Tokaj з OpenStreetMap."
+  },
+  "sources": [
+    {
+      "title": "Tokaj-hegyaljai történelmi borvidék kultúrtáj – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tokaj-hegyaljai_t%C3%B6rt%C3%A9nelmi_borvid%C3%A9k_kult%C3%BArt%C3%A1j",
+      "note": "Статус ЮНЕСКО 2002."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Tokaj",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Tokaj",
+      "note": "Координати 48.1236, 21.4114 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

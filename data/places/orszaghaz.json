@@ -1,0 +1,32 @@
+{
+  "id": "orszaghaz",
+  "name": {
+    "uk": "Будинок парламенту (Országház)",
+    "hu": "Országház"
+  },
+  "type": "monument",
+  "coords": [
+    19.04556,
+    47.50694
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Одна з найвідоміших громадських будівель Угорщини на площі Kossuth Lajos tér на лівому березі Дунаю, резиденція Державних зборів; неоготичний проєкт Imre Steindl переміг у конкурсі, будівництво тривало з 1885 до 1904 року.",
+    "hu": "Magyarország egyik legismertebb középülete a Kossuth téren, az Országgyűlés székhelye; Steindl Imre neogótikus terve alapján 1885 és 1904 között épült."
+  },
+  "description": {
+    "uk": "За статтею, Országház є однією з найвідоміших громадських будівель Будапешта і всієї Угорщини, резиденцією Державних зборів та їхніх установ, зокрема парламентської бібліотеки, на лівому березі Дунаю на площі Kossuth Lajos tér. У конкурсі переміг неоготичний проєкт Imre Steindl; будівництво тривало з 1885 до 1904 року, перший удар лопати зроблено 12 жовтня 1885 року, і архітектор не дожив до повного завершення."
+  },
+  "sources": [
+    {
+      "title": "Országház – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Orsz%C3%A1gh%C3%A1z",
+      "note": "Архітектор, роки будівництва, координати."
+    }
+  ]
+}

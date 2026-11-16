@@ -1,0 +1,31 @@
+{
+  "id": "rudas-furdo",
+  "name": {
+    "uk": "Купальня Рудаш (Rudas gyógyfürdő), турецька лазня",
+    "hu": "Rudas gyógyfürdő"
+  },
+  "type": "other",
+  "coords": [
+    19.04787,
+    47.48909
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "ottoman",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Одна з будапештських турецьких лазень, що переважно збереглися з доби османського панування; перебудована будайським пашею Соколлу Мустафою, який назвав її «Лазнею зелених колон». Описана мандрівником Евлією Челебі.",
+    "hu": "Budapest egyik, nagyrészt a hódoltság idejéből megmaradt török fürdője; Szokollu Musztafa pasa építtette át és nevezte Zöldoszlopos fürdőnek."
+  },
+  "description": {
+    "uk": "За статтею, купальня Рудаш є однією з турецьких лазень Будапешта (ilidzsa або kaplidzsa), що переважно збереглися з доби османського панування. Будівлю перебудував паша Соколлу Мустафа і назвав «Лазнею зелених колон»; докладний опис залишив османський мандрівник Евлія Челебі."
+  },
+  "sources": [
+    {
+      "title": "Rudas gyógyfürdő – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Rudas_gy%C3%B3gyf%C3%BCrd%C5%91",
+      "note": "Османське походження, Соколлу Мустафа, координати."
+    }
+  ]
+}

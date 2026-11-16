@@ -1,0 +1,32 @@
+{
+  "id": "komaromi-erodrendszer",
+  "name": {
+    "uk": "Комаромська система фортець (Komárom, Komárno)",
+    "hu": "Komáromi erődrendszer"
+  },
+  "type": "castle",
+  "coords": [
+    18.1375,
+    47.75333
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "roman-barbaricum",
+    "ottoman",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Система укріплень по обидва береги Дунаю: дві фортеці історичного Комарома в Словаччині та форти на правому березі в угорському Komárom; 1849 року фортеця витримала облогу й була звільнена весняним походом, її комендантом став György Klapka. Пам'ятка на кордоні.",
+    "hu": "A Duna két partján fekvő erődrendszer: a történelmi Komárom két vára Szlovákiában és a jobb parti erődök Magyarországon; 1849-ben a honvédsereg tavaszi hadjárata mentette fel, parancsnoka Klapka György lett."
+  },
+  "description": {
+    "uk": "За статтею, до комаромської системи фортець належать дві фортеці історичного Комарома в Словаччині та пов'язані з ними форти на правому березі Дунаю в нинішньому угорському Komárom; за реставрацію лівобережних укріплень 1994 року присуджено премію Europa Nostra. На місці історичного Комарома вже в римську добу стояла стратегічна фортеця міста Brigetio; на вузькому півострові між Дунаєм і Вагом постав середньовічний замок, потім Старий замок проти турків. Понад місячну облогу в березні–квітні 1849 року зняв успішний квітневий похід гонведів, загін Richárd Guyon відігнав австрійців на Дьйор, а комендантом став генерал György Klapka. Координати зі статті лежать на словацькому березі; це прикордонна пам'ятка, додана свідомо."
+  },
+  "sources": [
+    {
+      "title": "Komáromi erődrendszer – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kom%C3%A1romi_er%C5%91drendszer",
+      "note": "Дві частини системи, 1849, Klapka, координати."
+    }
+  ]
+}

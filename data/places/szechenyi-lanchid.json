@@ -1,0 +1,32 @@
+{
+  "id": "szechenyi-lanchid",
+  "name": {
+    "uk": "Ланцюговий міст Сечені (Széchenyi lánchíd)",
+    "hu": "Széchenyi lánchíd"
+  },
+  "type": "monument",
+  "coords": [
+    19.04361,
+    47.49889
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Найстаріший постійний міст між Будою і Пештом і перший на всьому угорському Дунаї, символ столиці; ініціатива István Széchenyi, фінансування György Sina, проєкт William Tierney Clark, будівництво Adam Clark у 1839–1849 роках, відкритий 20 листопада 1849 року.",
+    "hu": "A legrégibb állandó híd Buda és Pest között, az első a magyar Duna-szakaszon; Széchenyi István kezdeményezte, Sina György finanszírozta, W. T. Clark tervezte, Adam Clark építette 1839–1849 között."
+  },
+  "description": {
+    "uk": "За статтею, Ланцюговий міст є найстарішим і найвідомішим мостом між Будою і Пештом, символом столиці і першим постійним мостом на всьому угорському Дунаї. Будівництво ініціював граф István Széchenyi, фінансування організував барон György Sina, який дав і найбільший внесок і дістав право збирати мостове мито на 87 років; після 1867 року держава викупила міст у його сина Simon Sina. Роботи почалися 1839 року, готовий міст відкрив 20 листопада 1849 року Франц Йосиф; проєктував англієць William Tierney Clark, керував будівництвом шотландець Adam Clark, іменем якого названо площу між Тунелем і мостом. Родина Sina володіла і Dunakeszi (див. текст XIX століття)."
+  },
+  "sources": [
+    {
+      "title": "Széchenyi lánchíd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sz%C3%A9chenyi_l%C3%A1nch%C3%ADd",
+      "note": "Ініціатор, фінансування, інженери, дати, координати."
+    }
+  ]
+}

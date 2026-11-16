@@ -1,0 +1,29 @@
+{
+  "id": "koszeg-ostroma-1532",
+  "title": {
+    "uk": "Облога Кьосеґа",
+    "hu": "Kőszeg ostroma"
+  },
+  "date": {
+    "from": "1532",
+    "precision": "exact"
+  },
+  "period": "ottoman",
+  "places": [
+    "koszegi-var"
+  ],
+  "summary": {
+    "uk": "1532 року капітан Miklós Jurisics з близько тисячею захисників, здебільшого селян, витримав облогу величезного війська Сулеймана, що йшло на Відень.",
+    "hu": "1532-ben Jurisics Miklós kapitány mintegy ezer, zömmel paraszt védővel kiállta a Bécs felé vonuló Szulejmán seregének ostromát."
+  },
+  "description": {
+    "uk": "За статтею про замок, його найвідомішу облогу 1532 року вчинило величезне військо султана Сулеймана, що рухалося на Відень; капітан Miklós Jurisics обороняв замок із приблизно тисячею осіб, меншою мірою вояками, переважно селянами, що сховалися в замку."
+  },
+  "sources": [
+    {
+      "title": "Kőszegi vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/K%C5%91szegi_v%C3%A1r",
+      "note": "Облога 1532, Jurisics, чисельність."
+    }
+  ]
+}

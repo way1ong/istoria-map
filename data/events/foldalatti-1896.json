@@ -1,0 +1,29 @@
+{
+  "id": "foldalatti-1896",
+  "title": {
+    "uk": "Перша підземна залізниця континенту",
+    "hu": "A Millenniumi Földalatti megnyitása"
+  },
+  "date": {
+    "from": "1896",
+    "precision": "exact"
+  },
+  "period": "long-19",
+  "places": [
+    "hosok-tere"
+  ],
+  "summary": {
+    "uk": "1896 року, до тисячоліття приходу мадярів, під проспектом Andrássy út відкрито Millenniumi Földalatti Vasút, першу підземну залізницю континентальної Європи.",
+    "hu": "1896-ban, a millennium évében megnyílt az Andrássy út alatt a Millenniumi Földalatti Vasút, a kontinentális Európa első földalatti vasútvonala."
+  },
+  "description": {
+    "uk": "За статтею, лінія M1 (Millenniumi Földalatti Vasút, у народі Kisföldalatti) є першою лінією метро Будапешта між Vörösmarty tér і Mexikói út, що проходить переважно під проспектом Andrássy út; з відкриттям 1896 року вона стала першою підземною залізницею континентальної Європи. Останні десятиліття XIX століття були визначальним періодом розвитку Будапешта, а вісь Andrássy út одним із головних творів містобудування; Рада громадських робіт, створена влітку 1870 року, визначила трасу проспекту того ж року."
+  },
+  "sources": [
+    {
+      "title": "M1-es metróvonal (Budapest) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/M1-es_metr%C3%B3vonal_%28Budapest%29",
+      "note": "1896, перша на континенті, траса."
+    }
+  ]
+}

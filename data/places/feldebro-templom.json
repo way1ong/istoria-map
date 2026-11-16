@@ -1,0 +1,30 @@
+{
+  "id": "feldebro-templom",
+  "name": {
+    "uk": "Церква св. Мартина у Фелдебрьо (Feldebrő) з криптою XI століття",
+    "hu": "Feldebrői Szent Márton-templom"
+  },
+  "type": "church",
+  "coords": [
+    20.23611,
+    47.81389
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Село в комітаті Гевеш, чия церква зберегла романську крипту XI століття: родовий монастирський храм, збудований, судячи з крипти, і як усипальниця; перші власники з роду Aba. Точка: центр села.",
+    "hu": "Heves vármegyei község, templomának 11. századi román kori altemploma maradt fenn; nemzetségi kolostortemplomnak és temetkezőhelynek épült. A térképi pont a falu központja."
+  },
+  "description": {
+    "uk": "За статтею про село, його храм збудували як родову монастирську церкву і, зважаючи на наявність крипти, ймовірно, як місце поховання; у перші століття село належало до маєтків родини Debrői з роду Aba. Крипта романської доби (XI століття) є головною пам'яткою села. Координати відповідають центру села."
+  },
+  "sources": [
+    {
+      "title": "Feldebrő – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Feldebr%C5%91",
+      "note": "Крипта, рід Aba, координати села."
+    }
+  ]
+}

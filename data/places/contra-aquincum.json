@@ -1,0 +1,30 @@
+{
+  "id": "contra-aquincum",
+  "name": {
+    "uk": "Контра-Аквінкум (Contra-Aquincum) на площі Március 15. tér",
+    "hu": "Contra-Aquincum"
+  },
+  "type": "archaeological",
+  "coords": [
+    19.0514,
+    47.4927
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Римський форт і передмостове укріплення лімесу на лівому березі Дунаю в центрі Пешта, збудований на початку II століття і перебудований наприкінці III; залишки видно на площі Március 15. tér біля мосту Ержебет.",
+    "hu": "Római erőd és hídfőállás a pannoniai limesen a pesti oldalon; a 2. század elején épült, a 3. század végén alapjaitól átépítették. Maradványai a Március 15. téren láthatók."
+  },
+  "description": {
+    "uk": "За статтею, Contra-Aquincum був фортом і передмостовим укріпленням лімесу, збудованим на початку II століття і наново від фундаментів наприкінці III. Його значення надавали незвично товсті стіни, контроль над «столицею» еравісків і нагляд за давньою торговельною переправою; античною назвою, ймовірно, було Pession. Розкопки стали можливі лише в 1930-х: 1932 року знесли старий будинок піаристів і столиця замовила розкопки під керівництвом Lajos Nagy. Це найближчий до Dunakeszi і Göd елемент системи фортів на лівому березі."
+  },
+  "sources": [
+    {
+      "title": "Contra-Aquincum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Contra-Aquincum",
+      "note": "Датування, функція, розкопки 1932 року, координати."
+    }
+  ]
+}

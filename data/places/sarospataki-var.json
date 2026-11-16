@@ -1,0 +1,32 @@
+{
+  "id": "sarospataki-var",
+  "name": {
+    "uk": "Шарошпатакський замок Ракоці (Sárospatak)",
+    "hu": "Sárospataki Rákóczi-vár"
+  },
+  "type": "castle",
+  "coords": [
+    21.56861,
+    48.31528
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman",
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Найцінніший твір пізньоренесансної архітектури Угорщини: замок і міські укріплення звів у 1534–1542 роках Péter Perényi; згодом центр величезних володінь Ракоці, зображений на банкноті 500 форинтів. Музей Ракоці Національного музею.",
+    "hu": "A magyarországi késő reneszánsz építészet legértékesebb alkotása; erődítéseit 1534–1542 között Perényi Péter építtette, később a Rákóczi-birtok központja. Az 500 forintos hátoldalán látható."
+  },
+  "description": {
+    "uk": "За статтею, замок Ракоці у Шарошпатаку є найціннішим твором пізньоренесансної архітектури Угорщини й частиною національної спадщини; у ньому діє Музей Ракоці Національного музею, а сам замок зображено на звороті банкноти 500 форинтів. Укріплення замку й міста в первісному вигляді звів у 1534–1542 роках Péter Perényi, якому після битви під Могачем дісталися місто і замок-палац Pálóczi XV століття."
+  },
+  "sources": [
+    {
+      "title": "Sárospataki vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/S%C3%A1rospataki_v%C3%A1r",
+      "note": "Perényi 1534–1542, Ракоці, координати."
+    }
+  ]
+}

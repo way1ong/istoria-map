@@ -1,0 +1,43 @@
+{
+  "id": "majk-remeteseg",
+  "name": {
+    "uk": "Камальдульський скит у Майку (Majk), Oroszlány",
+    "hu": "Majki kamalduli remeteség"
+  },
+  "type": "church",
+  "coords": [
+    18.33785,
+    47.49709
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Комплекс пам'яток у Majkpuszta на околиці Oroszlány, де камальдульські ченці жили в окремих будиночках-келіях; після скасування ордену Йосифом II родина Esterházy влаштувала в головній будівлі мисливський замок; від церкви лишилася дзвіниця.",
+    "hu": "Oroszlány külterületén, Majkpusztán álló együttes, ahol kamalduli szerzetesek éltek különálló cellaházakban; a rend II. József általi feloszlatása után az Esterházyak vadászkastélya lett, a templomból a harangtorony maradt."
+  },
+  "description": {
+    "uk": "За статтею, комплекс у Majkpuszta на околиці Oroszlány колись населяли камальдульські ченці, що жили в окремих маленьких келійних будинках. Крім чернечих хатин, до комплексу належать дзвіниця, що лишилася від церкви і стоїть нині обрубаною, та головна будівля, в якій після скасування ордену указом Йосифа II рід Esterházy влаштував мисливський замок."
+  },
+  "sources": [
+    {
+      "title": "Majki műemlékegyüttes – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Majki_m%C5%B1eml%C3%A9kegy%C3%BCttes",
+      "note": "Камальдули, Йосиф II, Esterházy, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/D%C3%ADszk%C3%BAt_Majkon.jpg",
+      "author": "Wg1017",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:D%C3%ADszk%C3%BAt_Majkon.jpg",
+      "caption": {
+        "uk": "Декоративний колодязь у Majk",
+        "hu": "Díszkút Majkon"
+      }
+    }
+  ]
+}

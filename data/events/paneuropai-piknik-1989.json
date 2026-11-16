@@ -1,0 +1,30 @@
+{
+  "id": "paneuropai-piknik-1989",
+  "title": {
+    "uk": "Панєвропейський пікнік",
+    "hu": "A páneurópai piknik"
+  },
+  "date": {
+    "from": "1989-08-19",
+    "precision": "exact"
+  },
+  "period": "modern",
+  "places": [
+    "paneuropai-piknik-emlekhely",
+    "sopron"
+  ],
+  "summary": {
+    "uk": "19 серпня 1989 року на кордоні з Австрією біля Шопрона під патронатом Отто Габсбурга й Імре Пожґаї відбулася мирна демонстрація, під час якої громадяни НДР, що сподівалися потрапити на Захід, перейшли кордон.",
+    "hu": "1989. augusztus 19-én az osztrák–magyar határon, Sopron közelében Habsburg Ottó és Pozsgay Imre fővédnökségével békedemonstrációt tartottak, amelynek során NDK-s állampolgárok jutottak át a határon."
+  },
+  "description": {
+    "uk": "За статтею, Панєвропейський пікнік був мирною демонстрацією 19 серпня 1989 року на угорському боці австрійсько-угорського кордону, насправді в Piuszpuszta (Fertőrákos), під патронатом Отто Габсбурга та Імре Пожґаї. Під впливом змін в Угорщині сюди приїхало багато громадян НДР, які сподівалися звідси дістатися до Західної Німеччини."
+  },
+  "sources": [
+    {
+      "title": "Páneurópai piknik – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/P%C3%A1neur%C3%B3pai_piknik",
+      "note": "Дата, місце, патрони, контекст."
+    }
+  ]
+}

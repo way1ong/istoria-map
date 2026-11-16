@@ -1,0 +1,30 @@
+{
+  "id": "pecs-okereszteny-sirkamrak",
+  "name": {
+    "uk": "Ранньохристиянський некрополь Сопіан (Pécs), Світова спадщина",
+    "hu": "Pécsi ókeresztény sírkamrák"
+  },
+  "type": "archaeological",
+  "coords": [
+    18.38333,
+    46.11667
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Некрополь IV століття біля собору в Печі, де ховали християн римського міста Sopianae; підземні гробниці з розписами внесені до списку Світової спадщини ЮНЕСКО 30 листопада 2000 року.",
+    "hu": "A Sopianae ókeresztény lakóinak 4. századi nekropolisza a pécsi székesegyház környékén; 2000. november 30-án az UNESCO világörökség része lett."
+  },
+  "description": {
+    "uk": "За статтею, археологічна експозиція лежить у північно-західній частині центру Печа навколо собору: це некрополь IV століття, куди ховали ранньохристиянських мешканців римського міста Sopianae. Систематичне дослідження і часткова реставрація підземних поховальних камер (hypogaeum) і будівель припали на першу половину XX століття (Ottó Szőnyi, Gyula Gosztonyi, István Möller), з 1960-х років Ferenc Fülep. 30 листопада 2000 року комплекс внесено до списку Світової спадщини."
+  },
+  "sources": [
+    {
+      "title": "Pécsi ókeresztény sírkamrák – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/P%C3%A9csi_%C3%B3kereszt%C3%A9ny_s%C3%ADrkamr%C3%A1k",
+      "note": "Датування, дослідники, статус ЮНЕСКО, координати."
+    }
+  ]
+}

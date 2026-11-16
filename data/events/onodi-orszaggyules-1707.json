@@ -1,0 +1,30 @@
+{
+  "id": "onodi-orszaggyules-1707",
+  "title": {
+    "uk": "Онодські державні збори",
+    "hu": "Az ónodi országgyűlés"
+  },
+  "date": {
+    "from": "1707-05-31",
+    "to": "1707-06-22",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [
+    "onod-korom-mezo"
+  ],
+  "summary": {
+    "uk": "З 31 травня по 22 червня 1707 року на вершині визвольної війни Ракоці на полі біля Köröm поблизу Ónod засідали куруцькі державні збори.",
+    "hu": "1707. május 31. és június 22. között a Rákóczi-szabadságharc tetőpontján Ónod közelében, a körömi mezőn ülésezett a kuruc országgyűlés."
+  },
+  "description": {
+    "uk": "За статтею, Онодські державні збори (31 травня – 22 червня 1707 року) були куруцькими державними зборами на вершині визвольної війни Ракоці, скликаними на полі біля Köröm поблизу містечка Ónod. Участь околиць Dunakeszi у цій війні описано в тексті XVIII століття."
+  },
+  "sources": [
+    {
+      "title": "Ónodi országgyűlés – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/%C3%93nodi_orsz%C3%A1ggy%C5%B1l%C3%A9s",
+      "note": "Дати і місце."
+    }
+  ]
+}

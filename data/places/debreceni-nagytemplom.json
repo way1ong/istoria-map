@@ -1,0 +1,31 @@
+{
+  "id": "debreceni-nagytemplom",
+  "name": {
+    "uk": "Великий реформатський храм у Дебрецені (Debreceni Nagytemplom)",
+    "hu": "Debreceni Református Nagytemplom"
+  },
+  "type": "church",
+  "coords": [
+    21.62395,
+    47.53189
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2"
+  ],
+  "summary": {
+    "uk": "Найхарактерніша будівля Дебрецена і найбільша реформатська (і протестантська взагалі) церква Угорщини площею 1500 м², збудована в 1805–1824 роках у стилі класицизму; символ Реформатської церкви, через який Дебрецен звуть «кальвіністським Римом».",
+    "hu": "Debrecen legjellegzetesebb épülete, az ország legnagyobb református és protestáns temploma (1500 m²), 1805–1824 között épült klasszicista stílusban; miatta hívják Debrecent „kálvinista Rómának”."
+  },
+  "description": {
+    "uk": "За статтею, Великий храм є найхарактернішою будівлею Дебрецена і з площею 1500 м² найбільшою реформатською, а також найбільшою протестантською церквою країни; це символ Реформатської церкви Угорщини, через який Дебрецен часто називають «кальвіністським Римом». Збудований у 1805–1824 роках у стилі класицизму між площами Kossuth tér і Kálvin tér у центрі міста; разом із вулицею Piac utca це головна пам'ятка міста."
+  },
+  "sources": [
+    {
+      "title": "Református nagytemplom (Debrecen) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Reform%C3%A1tus_nagytemplom_%28Debrecen%29",
+      "note": "Роки будівництва, розмір, координати."
+    }
+  ]
+}

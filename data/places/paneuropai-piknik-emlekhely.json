@@ -1,0 +1,30 @@
+{
+  "id": "paneuropai-piknik-emlekhely",
+  "name": {
+    "uk": "Місце Панєвропейського пікніка (Fertőrákos, Piuszpuszta), 1989",
+    "hu": "Páneurópai piknik emlékhelye"
+  },
+  "type": "monument",
+  "coords": [
+    16.62234,
+    47.7571
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "Місце мирної демонстрації 19 серпня 1989 року на угорському боці австрійсько-угорського кордону під патронатом Отто Габсбурга й Імре Пожґаї, під час якої сотні громадян НДР перейшли на Захід; за багатьма джерелами Sopronpuszta, насправді Piuszpuszta в межах Fertőrákos.",
+    "hu": "Az 1989. augusztus 19-i békedemonstráció helyszíne az osztrák–magyar határon, Habsburg Ottó és Pozsgay Imre fővédnökségével; valójában a Fertőrákoshoz tartozó Piuszpusztán."
+  },
+  "description": {
+    "uk": "За статтею, Панєвропейський пікнік був історичною подією, мирною демонстрацією 19 серпня 1989 року на угорському боці австрійсько-угорського державного кордону під патронатом Отто Габсбурга та Імре Пожґаї; за багатьма джерелами в Sopronpuszta, насправді в Piuszpuszta, що адміністративно належить до Fertőrákos. Під впливом угорських змін до Угорщини приїхало багато громадян НДР, які сподівалися звідси дістатися до Західної Німеччини."
+  },
+  "sources": [
+    {
+      "title": "Páneurópai piknik – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/P%C3%A1neur%C3%B3pai_piknik",
+      "note": "Дата, патрони, місце, координати."
+    }
+  ]
+}

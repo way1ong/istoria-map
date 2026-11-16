@@ -1,0 +1,32 @@
+{
+  "id": "pecs-gazi-kaszim-dzsami",
+  "name": {
+    "uk": "Мечеть паші Ґазі Касима в Печі (Pécs)",
+    "hu": "Gázi Kászim pasa dzsámija, Pécs"
+  },
+  "type": "church",
+  "coords": [
+    18.22778,
+    46.07694
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "ottoman",
+    "habsburg-18",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Найбільша пам'ятка турецько-ісламської архітектури Угорщини і найпівнічніша цілком збережена мечеть Європи; перебудована з християнської церкви будайським пашею Ґазі Касимом у 1560-х роках, нині католицький храм Стрітення на головній площі Печа.",
+    "hu": "A magyarországi török-iszlám építészet legmonumentálisabb alkotása, Európa legészakibb épen maradt dzsámija; Gázi Kászim pasa az 1560-as években építtette át keresztény templomból, ma katolikus templom."
+  },
+  "description": {
+    "uk": "За статтею, мечеть паші Ґазі Касима, офіційно церква Стрітення (Gyertyaszentelő Boldogasszony), є найбільшим твором турецько-ісламської архітектури Угорщини, символом Печа і найпівнічнішою цілком збереженою мечеттю Європи; нині діє як римо-католицький храм. На її місці стояла християнська церква, яку будайський паша Ґазі Касим перебудував на мечеть у 1560-х роках; після вступу турків 1543 року храм якийсь час використовували розділеним навпіл, і сліди стіни видно досі."
+  },
+  "sources": [
+    {
+      "title": "Gázi Kászim pasa dzsámija – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/G%C3%A1zi_K%C3%A1szim_pasa_dzs%C3%A1mija",
+      "note": "Датування, паша Касим, статус, координати."
+    }
+  ]
+}

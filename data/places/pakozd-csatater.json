@@ -1,0 +1,35 @@
+{
+  "id": "pakozd-csatater",
+  "name": {
+    "uk": "Поле битви при Пакозді (Pákozd), 1848",
+    "hu": "Pákozdi csatatér"
+  },
+  "type": "monument",
+  "coords": [
+    18.5437,
+    47.2171
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Трикутник Pákozd–Sukoró–Pátka на північ від озера Веленце, де 29 вересня 1848 року військо генерал-лейтенанта János Móga змусило відступити армію хорватського бана Jellasics: перша значна битва революції 1848–1849 років. Точка: центр Pákozd.",
+    "hu": "A Velencei-tótól északra, a Pákozd–Sukoró–Pátka háromszögben 1848. szeptember 29-én Móga János serege megfutamította Jellasics horvát bán hadát; a szabadságharc első jelentős összecsapása. A térképi pont Pákozd központja."
+  },
+  "description": {
+    "uk": "За статтею, битва при Пакозді й Шукоро була першим значним зіткненням революції та визвольної війни 1848–1849 років. 29 вересня 1848 року в трикутнику Pákozd–Sukoró–Pátka у Веленцьких горах на північ від озера Веленце війська генерал-лейтенанта János Móga завдали поразки армії хорватського бана József Jellasics. Хоча втрати обох сторін були невеликі, битва вважається однією з найважливіших подій визвольної війни, бо змусила Єлачича з його значним військом відступити. Координати центру Pákozd з OpenStreetMap."
+  },
+  "sources": [
+    {
+      "title": "Pákozdi csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/P%C3%A1kozdi_csata",
+      "note": "Дата, командувачі, значення."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Pákozd",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=P%C3%A1kozd",
+      "note": "Координати 47.2171, 18.5437 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "onod-korom-mezo",
+  "name": {
+    "uk": "Онод (Ónod): місце куруцьких державних зборів 1707 року",
+    "hu": "Ónod, a kuruc országgyűlés helyszíne"
+  },
+  "type": "settlement",
+  "coords": [
+    20.9144,
+    48.0011
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "habsburg-18"
+  ],
+  "summary": {
+    "uk": "Містечко в комітаті Боршод, поблизу якого на полі біля Köröm з 31 травня по 22 червня 1707 року на вершині повстання Ракоці засідали куруцькі державні збори. Точка: центр Ónod.",
+    "hu": "Borsodi mezőváros, amelynek közelében, a körömi mezőn 1707. május 31. és június 22. között ülésezett a Rákóczi-szabadságharc tetőpontján a kuruc országgyűlés. A térképi pont Ónod központja."
+  },
+  "description": {
+    "uk": "За статтею, Онодські державні збори (31 травня – 22 червня 1707 року) були куруцькими державними зборами на вершині визвольної війни Ракоці, скликаними поблизу містечка Ónod на полі біля Köröm. Серед мешканців Dunakeszi в куруцькій армії служило шість вояків, а власник села János Wattay був першим куруцьким віце-ішпаном комітату Пешт (див. текст XVIII століття). Координати центру Ónod з OpenStreetMap."
+  },
+  "sources": [
+    {
+      "title": "Ónodi országgyűlés – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/%C3%93nodi_orsz%C3%A1ggy%C5%B1l%C3%A9s",
+      "note": "Дати і місце зборів."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Ónod",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=%C3%93nod",
+      "note": "Координати 48.0011, 20.9144 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

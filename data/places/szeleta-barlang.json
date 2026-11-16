@@ -1,0 +1,30 @@
+{
+  "id": "szeleta-barlang",
+  "name": {
+    "uk": "Печера Селета (Szeleta-barlang), Бюкк",
+    "hu": "Szeleta-barlang"
+  },
+  "type": "archaeological",
+  "coords": [
+    20.63162,
+    48.1082
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "prehistory"
+  ],
+  "summary": {
+    "uk": "Одна з чотирьох печер Угорщини з надійним археологічним комплексом, епонім селетської культури; заселена понад 100 тисяч років від початку останнього міжльодовиків'я. Розкопки з 1906 року.",
+    "hu": "A négy biztos régészeti leletegyüttest adó magyarországi barlang egyike, a szeleta-kultúra névadója; az utolsó interglaciális elejétől több mint 100 000 évig lakott. Ásatásai 1906-ban kezdődtek."
+  },
+  "description": {
+    "uk": "За статтею, печера була місцем одних із перших печерних розкопок в Угорщині, що почалися 1906 року й завершилися лише після Першої світової війни; знахідки зберігаються в Національному музеї, музеї Мішкольца і Геологічному інституті. Печера дала назву селетській культурі й належить до особливо охоронюваних печер країни."
+  },
+  "sources": [
+    {
+      "title": "Szeleta-barlang – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szeleta-barlang",
+      "note": "Розкопки, датування, статус, координати."
+    }
+  ]
+}

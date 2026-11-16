@@ -1,0 +1,32 @@
+{
+  "id": "godollo-grassalkovich-kastely",
+  "name": {
+    "uk": "Палац Ґрашшалковичів у Ґеделле (Gödöllő)",
+    "hu": "Gödöllői Grassalkovich-kastély"
+  },
+  "type": "castle",
+  "coords": [
+    19.34778,
+    47.59611
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Бароковий палац, який граф Antal Grassalkovich I почав будувати після 1735 року за проєктом András Mayerhoffer; з 1867 року королівська резиденція відпочинку Франца Йосифа та Єлизавети (Сісі). Після 1945 року занепав, з 1985 року реставрується.",
+    "hu": "Barokk kastély, amelyet I. Grassalkovich Antal 1735 után kezdett építtetni Mayerhoffer András tervei alapján; 1867-től Ferenc József és Erzsébet királyné pihenő rezidenciája. 1985 óta szakaszosan restaurálják."
+  },
+  "description": {
+    "uk": "За статтею, палац Ґрашшалковичів у Ґеделле за 25 км на північний схід від Будапешта збудували у XVIII столітті для графа Antal Grassalkovich I: роботи почалися після 1735 року за проєктом András Mayerhoffer, перший етап тривав до 1745 року, подвійна U-подібна споруда має вісім крил. 1867 року палац став королівською резиденцією відпочинку: королева Єлизавета, подалі від віденського етикету, відпочивала тут навесні й восени, Франц Йосиф часто приїздив. Після Другої світової війни палац занепав, з 1985 року його поетапно реставрують. Той самий рід Grassalkovich володів і околицями Göd, Dunakeszi та Sződ."
+  },
+  "sources": [
+    {
+      "title": "Grassalkovich-kastély (Gödöllő) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Grassalkovich-kast%C3%A9ly_%28G%C3%B6d%C3%B6ll%C5%91%29",
+      "note": "Дати будівництва, архітектор, 1867, координати."
+    }
+  ]
+}

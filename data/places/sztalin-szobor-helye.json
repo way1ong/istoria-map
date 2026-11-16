@@ -1,0 +1,30 @@
+{
+  "id": "sztalin-szobor-helye",
+  "name": {
+    "uk": "Місце пам'ятника Сталіну (Будапешт, Ötvenhatosok tere)",
+    "hu": "A budapesti Sztálin-szobor helye"
+  },
+  "type": "monument",
+  "coords": [
+    19.0814,
+    47.5114
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "Місце на нинішній площі Ötvenhatosok tere, де 1951 року поставили пам'ятник Сталіну, повалений і розбитий у перший день революції 1956 року; постамент потім служив трибуною на парадах і був знесений у 1990-х.",
+    "hu": "A mai Ötvenhatosok terén 1951-ben felállított Sztálin-szobor helye, amelyet 1956-ban, a forradalom első napján ledöntöttek; talapzata dísztribünként szolgált, az 1990-es években lebontották."
+  },
+  "description": {
+    "uk": "За статтею, будапештський пам'ятник Сталіну стояв на нинішній площі Ötvenhatosok tere навпроти Városligeti fasor; його встановили 1951 року, а 1956 року в перший день революції повалили й розбили на шматки. Постамент без статуї після перебудови служив урядовою трибуною на парадах 4 квітня і 1 травня, а в 1990-х його знесли. Всупереч поширеній думці, пам'ятник стояв не на місці церкви Regnum Marianum, а приблизно за 200 м від неї."
+  },
+  "sources": [
+    {
+      "title": "Sztálin-szobor (Budapest) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szt%C3%A1lin-szobor_%28Budapest%29",
+      "note": "Роки, доля постаменту, координати."
+    }
+  ]
+}

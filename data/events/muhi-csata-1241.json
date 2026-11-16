@@ -1,0 +1,36 @@
+{
+  "id": "muhi-csata-1241",
+  "title": {
+    "uk": "Битва при Мухі: розгром війська Бели IV",
+    "hu": "A muhi csata"
+  },
+  "date": {
+    "from": "1241-04-11",
+    "to": "1241-04-12",
+    "precision": "exact"
+  },
+  "period": "arpad",
+  "places": [
+    "muhi-csatater",
+    "vac-szarvas-hegy-menedek"
+  ],
+  "summary": {
+    "uk": "11–12 квітня 1241 року біля мосту через Шайо монголи Батия і Субедея знищили армію Бели IV; поразка відкрила шлях спустошенню всієї країни, але короля не схопили. Вац монголи спалили ще до битви.",
+    "hu": "1241. április 11–12-én a Sajó hídjánál Batu és Szubotáj mongoljai megsemmisítették IV. Béla seregét; a vereség megnyitotta az utat a tatárdúlás előtt, a király azonban elmenekült."
+  },
+  "description": {
+    "uk": "За статтею, битва на Шайо була головним зіткненням монголів і угорського короля після вторгнення в Карпатський басейн і найбільшою битвою татарської навали. 11–12 квітня 1241 року біля мосту через Шайо поблизу тодішнього Мохі монголи під проводом Батия і Субедея завдали нищівної поразки війську Бели IV; наслідком стало спустошення, що прокотилося всією Угорщиною, хоча короля захопити не вдалося. За публікацією про сховище на Szarvas-hegy, Вац монголи спалили ще до битви при Мухі (див. подію про Вац 1241)."
+  },
+  "sources": [
+    {
+      "title": "Muhi csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Muhi_csata",
+      "note": "Дата, місце, командувачі, наслідки."
+    },
+    {
+      "title": "Mag H., Rácz T. Á., Tatárjárás kori menedékhely a váci Szarvas-hegyen (2021)",
+      "url": "https://real.mtak.hu/89623/1/KKT_regeszeti_kiadvany_20210805.pdf",
+      "note": "Вац спалено до битви при Мухі."
+    }
+  ]
+}

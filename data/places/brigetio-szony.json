@@ -1,0 +1,30 @@
+{
+  "id": "brigetio-szony",
+  "name": {
+    "uk": "Бригеціо (Brigetio), легіонний табір у Szőny",
+    "hu": "Brigetio"
+  },
+  "type": "archaeological",
+  "coords": [
+    18.1941,
+    47.7338
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "summary": {
+    "uk": "Значний військовий табір і цивільне місто Паннонії на правому березі Дунаю в районі Szőny міста Komárom, на лімесній дорозі між Віндобоною й Аквінкумом; табір 540 × 430 м.",
+    "hu": "Jelentős pannoniai katonai tábor és polgárváros Komárom-Szőny területén, a Vindobonát Aquincummal összekötő limesút mentén; a castrum 540 × 430 m-es volt."
+  },
+  "description": {
+    "uk": "За статтею, Brigetio лежав на правому березі Дунаю на території Szőny (Komárom), на дорозі лімесу між Віндобоною та Аквінкумом; західним сусідом був форт Ad Mures біля Ács. Спочатку тут ненадовго стояли XI Клавдіїв і XXX Ульпіїв легіони; біля табору 540 × 430 м виросли canabae для родин вояків, купців і ремісників. Цеглу з Brigetio зі штампом дукса Frigeridus знайдено й у фортах лівого берега біля Göd і Dunakeszi (див. текст римського періоду)."
+  },
+  "sources": [
+    {
+      "title": "Brigetio – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Brigetio",
+      "note": "Розташування, розмір табору, легіони, координати."
+    }
+  ]
+}

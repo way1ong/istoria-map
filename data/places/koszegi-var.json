@@ -1,0 +1,31 @@
+{
+  "id": "koszegi-var",
+  "name": {
+    "uk": "Кьосезький замок (Kőszeg), замок Юришича",
+    "hu": "Kőszegi (Jurisics-) vár"
+  },
+  "type": "castle",
+  "coords": [
+    16.53887,
+    47.38958
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "late-medieval",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Замок у старому місті Кьосеґа, названий за найвідомішим капітаном Miklós Jurisics, який 1532 року з близько тисячею захисників, переважно селян, витримав облогу величезного війська султана Сулеймана, що йшло на Відень.",
+    "hu": "Kőszeg óvárosának vára, Jurisics Miklós kapitányról ismert: 1532-ben mintegy ezer védővel feltartóztatta a Bécs felé vonuló Szulejmán seregét."
+  },
+  "description": {
+    "uk": "За статтею, замок у Кьосеґу комітату Ваш відомий як замок Юришича за своїм найславетнішим капітаном. Найвідомішу облогу він пережив 1532 року від величезного війська султана Сулеймана, що йшло на Відень: капітан Miklós Jurisics обороняв його з приблизно тисячею людей, меншою мірою вояків, а переважно селян, що сховалися в замку. Перша згадка про замок Кьосеґа датована 802 роком."
+  },
+  "sources": [
+    {
+      "title": "Kőszegi vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/K%C5%91szegi_v%C3%A1r",
+      "note": "Облога 1532, Jurisics, координати."
+    }
+  ]
+}
