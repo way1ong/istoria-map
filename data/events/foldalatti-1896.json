@@ -25,5 +25,18 @@
       "url": "https://hu.wikipedia.org/wiki/M1-es_metr%C3%B3vonal_%28Budapest%29",
       "note": "1896, перша на континенті, траса."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Budapest_subway_1896.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Budapest_subway_1896.jpg",
+      "caption": {
+        "uk": "Підземна залізниця 1896 року",
+        "hu": "A földalatti 1896-ban"
+      }
+    }
   ]
 }

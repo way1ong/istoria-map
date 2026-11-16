@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/G%C3%BCl_Baba_t%C3%BCrb%C3%A9je",
       "note": "Датування, реставрація, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/G%C3%BCl_Baba_t%C3%BCrb%C3%A9je_a_leveg%C5%91b%C5%91l%2C_Budapest.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:G%C3%BCl_Baba_t%C3%BCrb%C3%A9je_a_leveg%C5%91b%C5%91l%2C_Budapest.jpg",
+      "caption": {
+        "uk": "Тюрбе Ґюль Баби з повітря",
+        "hu": "Gül Baba türbéje a levegőből"
+      }
+    }
   ]
 }

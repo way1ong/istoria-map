@@ -25,5 +25,18 @@
       "url": "https://hu.wikipedia.org/wiki/Moh%C3%A1csi_csata",
       "note": "Дата, сторони, дискусія про місце і значення."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/SOLIMANUS_IMPERATOR_TURCHARUM_1526.jpg",
+      "author": "an Swart van Groningen, Willem Liefrinck",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:SOLIMANUS_IMPERATOR_TURCHARUM_1526.jpg",
+      "caption": {
+        "uk": "Султан Сулейман на гравюрі 1526 року",
+        "hu": "Szulejmán szultán 1526-os metszeten"
+      }
+    }
   ]
 }

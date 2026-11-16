@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Sikl%C3%B3si_v%C3%A1r",
       "note": "Garai, Perényi, 1543, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/A_sikl%C3%B3si_v%C3%A1r_mad%C3%A1rt%C3%A1vlatb%C3%B3l.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_sikl%C3%B3si_v%C3%A1r_mad%C3%A1rt%C3%A1vlatb%C3%B3l.jpg",
+      "caption": {
+        "uk": "Шиклошський замок з пташиного польоту",
+        "hu": "A siklósi vár madártávlatból"
+      }
+    }
   ]
 }

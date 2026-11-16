@@ -26,5 +26,18 @@
       "url": "https://hu.wikipedia.org/wiki/Muhi_csata",
       "note": "Дата, учасники, наслідки, координати меморіалу."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/A_muhi_csata_helysz%C3%ADn%C3%A9n_%C3%A9p%C3%BClt_eml%C3%A9kpark_l%C3%A9gifot%C3%B3n_2018-ban.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_muhi_csata_helysz%C3%ADn%C3%A9n_%C3%A9p%C3%BClt_eml%C3%A9kpark_l%C3%A9gifot%C3%B3n_2018-ban.jpg",
+      "caption": {
+        "uk": "Меморіальний парк на полі битви при Мухі з повітря",
+        "hu": "A muhi csata emlékparkja légi fotón"
+      }
+    }
   ]
 }

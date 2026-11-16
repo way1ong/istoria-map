@@ -26,5 +26,18 @@
       "url": "https://hu.wikipedia.org/wiki/Gorsium",
       "note": "Характеристика пам'ятки, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/T%C3%A1c%2C_Gorsium_-_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:T%C3%A1c%2C_Gorsium_-_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "caption": {
+        "uk": "Gorsium з повітря",
+        "hu": "Gorsium légi felvételen"
+      }
+    }
   ]
 }

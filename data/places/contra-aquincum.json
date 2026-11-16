@@ -26,5 +26,18 @@
       "url": "https://hu.wikipedia.org/wiki/Contra-Aquincum",
       "note": "Датування, функція, розкопки 1932 року, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Az_egykori_Contra-Aquincum_l%C3%A9gi_felv%C3%A9telen_a_mai_M%C3%A1rcius_15-e_t%C3%A9ren.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Az_egykori_Contra-Aquincum_l%C3%A9gi_felv%C3%A9telen_a_mai_M%C3%A1rcius_15-e_t%C3%A9ren.jpg",
+      "caption": {
+        "uk": "Залишки Contra-Aquincum на площі Március 15. tér, 2014",
+        "hu": "Contra-Aquincum maradványai a Március 15. téren, 2014"
+      }
+    }
   ]
 }

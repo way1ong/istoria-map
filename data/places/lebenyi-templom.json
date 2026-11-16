@@ -26,5 +26,18 @@
       "url": "https://hu.wikipedia.org/wiki/L%C3%A9b%C3%A9nyi_templom",
       "note": "Заснування, грамота 1208, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/L%C3%89B%C3%89NYRAJZ002_KT100125.jpg",
+      "author": "Work by Tamás Kiss architect ( Kit36a",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:L%C3%89B%C3%89NYRAJZ002_KT100125.jpg",
+      "caption": {
+        "uk": "Креслення лебенської церкви",
+        "hu": "A lébényi templom rajza"
+      }
+    }
   ]
 }

@@ -28,5 +28,18 @@
       "url": "https://hu.wikipedia.org/wiki/Doh%C3%A1ny_utcai_zsinag%C3%B3ga",
       "note": "Архітектор, освячення 1859, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ajt%C3%B3k_nyitva.png",
+      "author": "M3peti",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Ajt%C3%B3k_nyitva.png",
+      "caption": {
+        "uk": "Відчинені двері Великої синагоги",
+        "hu": "A Dohány utcai zsinagóga nyitott ajtói"
+      }
+    }
   ]
 }

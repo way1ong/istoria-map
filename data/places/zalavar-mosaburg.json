@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Zalav%C3%A1r",
       "note": "Прибина, 840-ві роки, назви, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Zalav%C3%A1r_-_Convent.jpg",
+      "author": "невідомий автор",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Zalav%C3%A1r_-_Convent.jpg",
+      "caption": {
+        "uk": "Руїни монастиря в Zalavár",
+        "hu": "A zalavári kolostor romjai"
+      }
+    }
   ]
 }

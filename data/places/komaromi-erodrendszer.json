@@ -28,5 +28,18 @@
       "url": "https://hu.wikipedia.org/wiki/Kom%C3%A1romi_er%C5%91drendszer",
       "note": "Дві частини системи, 1849, Klapka, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Komarno_bastion6.jpg",
+      "author": "Pstruh",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Komarno_bastion6.jpg",
+      "caption": {
+        "uk": "Бастіон фортеці в Комарно",
+        "hu": "A komáromi erőd bástyája"
+      }
+    }
   ]
 }

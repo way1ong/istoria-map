@@ -26,5 +26,18 @@
       "url": "https://hu.wikipedia.org/wiki/Szeleta-barlang",
       "note": "Розкопки, датування, статус, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Szeleta-barlang.jpg",
+      "author": "Czina Tivadar.Szenti Tamás at hu.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szeleta-barlang.jpg",
+      "caption": {
+        "uk": "Вхід до печери Селета",
+        "hu": "A Szeleta-barlang bejárata"
+      }
+    }
   ]
 }

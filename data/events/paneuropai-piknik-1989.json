@@ -26,5 +26,18 @@
       "url": "https://hu.wikipedia.org/wiki/P%C3%A1neur%C3%B3pai_piknik",
       "note": "Дата, місце, патрони, контекст."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/00_P%C3%A1neur%C3%B3pai_Piknik_eml%C3%A9khely.jpg",
+      "author": "Kiss Tamás ( Kit36a",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:00_P%C3%A1neur%C3%B3pai_Piknik_eml%C3%A9khely.jpg",
+      "caption": {
+        "uk": "Меморіал пікніка",
+        "hu": "A piknik emlékhelye"
+      }
+    }
   ]
 }

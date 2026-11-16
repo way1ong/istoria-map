@@ -26,5 +26,18 @@
       "url": "https://hu.wikipedia.org/wiki/J%C3%A1ki_templom",
       "note": "Датування, реставрація Schulek, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Jaki_templomcivertanlegi1.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Jaki_templomcivertanlegi1.jpg",
+      "caption": {
+        "uk": "Якська церква з повітря",
+        "hu": "A jáki templom légi felvételen"
+      }
+    }
   ]
 }

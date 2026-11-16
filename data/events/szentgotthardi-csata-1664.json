@@ -25,5 +25,18 @@
       "url": "https://hu.wikipedia.org/wiki/Szentgotth%C3%A1rdi_csata_%281664%29",
       "note": "Дата, командувачі, значення."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Dorfmeister-_Az_1664-es_szentgotth%C3%A1rdi_csata.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Dorfmeister-_Az_1664-es_szentgotth%C3%A1rdi_csata.jpg",
+      "caption": {
+        "uk": "Битва на картині István Dorfmeister",
+        "hu": "A csata Dorfmeister István festményén"
+      }
+    }
   ]
 }

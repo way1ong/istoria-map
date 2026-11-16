@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Szigetv%C3%A1ri_v%C3%A1r",
       "note": "1420, Zrínyi, 1566, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Szigetv%C3%A1r_-_Castle.jpg",
+      "author": "невідомий автор",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szigetv%C3%A1r_-_Castle.jpg",
+      "caption": {
+        "uk": "Сіґетварська фортеця",
+        "hu": "A szigetvári vár"
+      }
+    }
   ]
 }

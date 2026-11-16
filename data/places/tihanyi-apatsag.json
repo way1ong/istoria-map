@@ -28,5 +28,18 @@
       "url": "https://hu.wikipedia.org/wiki/Tihanyi_ap%C3%A1ts%C3%A1g",
       "note": "Рік і засновник, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Tihanycivertanlegi1.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Tihanycivertanlegi1.jpg",
+      "caption": {
+        "uk": "Тиганське абатство з повітря",
+        "hu": "A Tihanyi apátság légi felvételen"
+      }
+    }
   ]
 }

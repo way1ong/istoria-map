@@ -26,5 +26,18 @@
       "url": "https://hu.wikipedia.org/wiki/Somogyv%C3%A1r",
       "note": "Освячення 1091, Сен-Жиль, розмір, координати села."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Somogyv%C3%A1r_Sz%C3%A9chenyi-kast%C3%A9ly.jpg",
+      "author": "CivertanS",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Somogyv%C3%A1r_Sz%C3%A9chenyi-kast%C3%A9ly.jpg",
+      "caption": {
+        "uk": "Somogyvár з повітря",
+        "hu": "Somogyvár légi felvételen"
+      }
+    }
   ]
 }

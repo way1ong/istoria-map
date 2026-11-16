@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Szolnoki_v%C3%A1r",
       "note": "Розбудова 1551–1552, функція, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/SzolnokCstaAV%C3%A1rAlatt.jpg",
+      "author": "Anton Ernst Burkhard von Birckenstein",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:SzolnokCstaAV%C3%A1rAlatt.jpg",
+      "caption": {
+        "uk": "Сольнокська фортеця на гравюрі 1552 року",
+        "hu": "A szolnoki vár 1552-es metszeten"
+      }
+    }
   ]
 }

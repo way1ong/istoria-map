@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Rudas_gy%C3%B3gyf%C3%BCrd%C5%91",
       "note": "Османське походження, Соколлу Мустафа, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Rudas_gyogyfurdo_P7290076.jpg",
+      "author": "Misibacsi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Rudas_gyogyfurdo_P7290076.jpg",
+      "caption": {
+        "uk": "Купальня Рудаш",
+        "hu": "A Rudas fürdő"
+      }
+    }
   ]
 }

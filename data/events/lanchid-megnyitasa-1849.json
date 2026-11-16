@@ -25,5 +25,18 @@
       "url": "https://hu.wikipedia.org/wiki/Sz%C3%A9chenyi_l%C3%A1nch%C3%ADd",
       "note": "Дати, інженери, фінансування."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Sina_Gy%C3%B6rgy_Simon.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Sina_Gy%C3%B6rgy_Simon.jpg",
+      "caption": {
+        "uk": "Портрет György Sina, фінансиста мосту",
+        "hu": "Sina György, a híd finanszírozója"
+      }
+    }
   ]
 }

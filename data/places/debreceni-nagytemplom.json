@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Reform%C3%A1tus_nagytemplom_%28Debrecen%29",
       "note": "Роки будівництва, розмір, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Megyesz%C3%A9khely_-_Hajd%C3%BA-Bihar_megye_-_Debrecen.jpg",
+      "author": "невідомий автор",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Megyesz%C3%A9khely_-_Hajd%C3%BA-Bihar_megye_-_Debrecen.jpg",
+      "caption": {
+        "uk": "Великий храм Дебрецена",
+        "hu": "A debreceni Nagytemplom"
+      }
+    }
   ]
 }

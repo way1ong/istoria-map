@@ -26,5 +26,18 @@
       "url": "https://hu.wikipedia.org/wiki/Recski_k%C3%A9nyszermunkat%C3%A1bor",
       "note": "Роки, ÁVH, кількість в'язнів, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Recski_eml%C3%A9kmu.jpg",
+      "author": "VT at hu.wikipedia",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Recski_eml%C3%A9kmu.jpg",
+      "caption": {
+        "uk": "Меморіал у Речку",
+        "hu": "A recski emlékmű"
+      }
+    }
   ]
 }

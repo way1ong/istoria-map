@@ -28,5 +28,18 @@
       "url": "https://hu.wikipedia.org/wiki/S%C3%A1rospataki_v%C3%A1r",
       "note": "Perényi 1534–1542, Ракоці, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/A_s%C3%A1rospataki_R%C3%A1k%C3%B3czi-v%C3%A1r_l%C3%A9g_fot%C3%B3n.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_s%C3%A1rospataki_R%C3%A1k%C3%B3czi-v%C3%A1r_l%C3%A9g_fot%C3%B3n.jpg",
+      "caption": {
+        "uk": "Замок Ракоці в Шарошпатаку з повітря",
+        "hu": "A sárospataki Rákóczi-vár légi fotón"
+      }
+    }
   ]
 }

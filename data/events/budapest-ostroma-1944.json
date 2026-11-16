@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Budapest_ostroma",
       "note": "Дати, перебіг, прорив."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Margit_h%C3%ADd_1944._november_4.jpg",
+      "author": "The original uploader was Tambo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Margit_h%C3%ADd_1944._november_4.jpg",
+      "caption": {
+        "uk": "Міст Маргіт 4 листопада 1944 року",
+        "hu": "A Margit híd 1944. november 4-én"
+      }
+    }
   ]
 }

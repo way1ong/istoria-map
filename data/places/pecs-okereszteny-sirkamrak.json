@@ -26,5 +26,18 @@
       "url": "https://hu.wikipedia.org/wiki/P%C3%A9csi_%C3%B3kereszt%C3%A9ny_s%C3%ADrkamr%C3%A1k",
       "note": "Датування, дослідники, статус ЮНЕСКО, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/P%C3%A9csi_%C3%B3kereszt%C3%A9ny_s%C3%ADrkamr%C3%A1k_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:P%C3%A9csi_%C3%B3kereszt%C3%A9ny_s%C3%ADrkamr%C3%A1k_l%C3%A9gi_felv%C3%A9telen.jpg",
+      "caption": {
+        "uk": "Ранньохристиянські гробниці Печа з повітря",
+        "hu": "A pécsi ókeresztény sírkamrák légi felvételen"
+      }
+    }
   ]
 }

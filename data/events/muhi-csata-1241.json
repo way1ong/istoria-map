@@ -32,5 +32,18 @@
       "url": "https://real.mtak.hu/89623/1/KKT_regeszeti_kiadvany_20210805.pdf",
       "note": "Вац спалено до битви при Мухі."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/A_muhi_csata_helysz%C3%ADn%C3%A9n_%C3%A9p%C3%BClt_eml%C3%A9kpark_l%C3%A9gifot%C3%B3n_2018-ban.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_muhi_csata_helysz%C3%ADn%C3%A9n_%C3%A9p%C3%BClt_eml%C3%A9kpark_l%C3%A9gifot%C3%B3n_2018-ban.jpg",
+      "caption": {
+        "uk": "Меморіальний парк на місці битви",
+        "hu": "Az emlékpark a csata helyszínén"
+      }
+    }
   ]
 }

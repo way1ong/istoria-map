@@ -29,5 +29,18 @@
       "url": "https://hu.wikipedia.org/wiki/Di%C3%B3sgy%C5%91ri_v%C3%A1r",
       "note": "Датування, Людовик Великий, 1340, відбудова, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Di%C3%B3sgy%C5%91ri_v%C3%A1r_2016.jpg",
+      "author": "CivertanS",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Di%C3%B3sgy%C5%91ri_v%C3%A1r_2016.jpg",
+      "caption": {
+        "uk": "Діошдьйорський замок, 2016",
+        "hu": "A diósgyőri vár 2016-ban"
+      }
+    }
   ]
 }

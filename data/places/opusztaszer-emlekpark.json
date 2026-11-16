@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Nemzeti_T%C3%B6rt%C3%A9neti_Eml%C3%A9kpark",
       "note": "Рік створення, панорама Feszty, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/%C3%93pusztaszer_l%C3%A9gi_fot%C3%B3.jpg",
+      "author": "CivertanS",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:%C3%93pusztaszer_l%C3%A9gi_fot%C3%B3.jpg",
+      "caption": {
+        "uk": "Меморіальний парк Ópusztaszer з повітря",
+        "hu": "Az ópusztaszeri emlékpark légi fotón"
+      }
+    }
   ]
 }

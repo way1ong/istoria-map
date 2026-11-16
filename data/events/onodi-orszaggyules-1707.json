@@ -26,5 +26,18 @@
       "url": "https://hu.wikipedia.org/wiki/%C3%93nodi_orsz%C3%A1ggy%C5%B1l%C3%A9s",
       "note": "Дати і місце."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Than_M%C3%B3r_Az_%C3%B3nodi_orsz%C3%A1ggy%C5%B1l%C3%A9s.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Than_M%C3%B3r_Az_%C3%B3nodi_orsz%C3%A1ggy%C5%B1l%C3%A9s.jpg",
+      "caption": {
+        "uk": "Онодські збори на картині Mór Than",
+        "hu": "Az ónodi országgyűlés Than Mór festményén"
+      }
+    }
   ]
 }

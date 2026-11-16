@@ -26,5 +26,18 @@
       "url": "https://hu.wikipedia.org/wiki/Savaria",
       "note": "Статус, провінція, св. Мартин, координати міста."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/%C3%8Dzisz_Szent%C3%A9ly_rekonstrukci%C3%B3_Szombathely.JPG",
+      "author": "Pan Peter12",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:%C3%8Dzisz_Szent%C3%A9ly_rekonstrukci%C3%B3_Szombathely.JPG",
+      "caption": {
+        "uk": "Реконструйоване святилище Ізіди у Szombathely",
+        "hu": "Az Iseum rekonstrukciója Szombathelyen"
+      }
+    }
   ]
 }
