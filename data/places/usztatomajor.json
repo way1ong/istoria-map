@@ -1,0 +1,42 @@
+{
+  "id": "usztatomajor",
+  "name": {
+    "uk": "Хутір Usztatómajor у Felsőgöd",
+    "hu": "Usztatómajor, Felsőgöd"
+  },
+  "type": "farmstead",
+  "coords": [
+    19.1441,
+    47.7117
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Хутір (major) на північ від Göd, підписаний «Usztatómajor» на аркуші 1904 року; нині місце лежить у житловій забудові Felsőgöd.",
+    "hu": "Major Gödtől északra, az 1904-es lapon „Usztatómajor” felirattal; helye ma a felsőgödi lakóterületen van."
+  },
+  "description": {
+    "uk": "На аркуші 1904 року між прибережною дорогою і залізницею Будапешт–Вац позначено групу будівель з підписом «Usztatómajor». Поруч на тому ж аркуші стоять «Halászház» і корчма «W.H.» біля залізниці (окремі картки). Назви «Usztatómajor» у сучасних даних OpenStreetMap немає; за зворотним геокодуванням місце нині припадає на вулицю Patak utca у Felsőgöd. Хто володів хутором і коли він зник, з наявних джерел не видно. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1904-es lapon a parti út és a Budapest–Vác vasútvonal között „Usztatómajor” feliratú épületcsoport látható. Ugyanezen a lapon a közelében áll a „Halászház” és a vasút melletti „W.H.” vendéglő (külön kártyák). Az „Usztatómajor” név a mai OpenStreetMap-adatokban nem szerepel; a fordított geokódolás szerint a hely ma a felsőgödi Patak utcára esik. Hogy kié volt a major és mikor szűnt meg, a rendelkezésre álló forrásokból nem derül ki. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Підпис «Usztatómajor» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): пошук «Usztató»",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=8&bounded=1&viewbox=19.0,47.85,19.35,47.55&q=Usztat%C3%B3",
+      "note": "Пошук у межах околиць Göd–Vác 16.11.2026 результатів не дав. Дані © учасники OpenStreetMap, ODbL."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.71173&lon=19.14409",
+      "note": "Нині на цьому місці: житлова забудова Felsőgöd, Patak utca. Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

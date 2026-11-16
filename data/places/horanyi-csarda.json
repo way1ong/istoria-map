@@ -1,0 +1,52 @@
+{
+  "id": "horanyi-csarda",
+  "name": {
+    "uk": "Корчма в Horány (Horányi csárda)",
+    "hu": "Horányi csárda"
+  },
+  "type": "inn",
+  "coords": [
+    19.1117,
+    47.6614
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Корчма на острові Сентендре навпроти Dunakeszi, біля переправи, підписана «Horányi cs.» на аркуші 1904 року; нині на цьому місці спортивний центр «Horányi hajógyár».",
+    "hu": "Csárda a Szentendrei-szigeten, Dunakeszivel szemben, a révnél, az 1904-es lapon „Horányi cs.” felirattal; helyén ma a „Horányi hajógyár” sportközpont van."
+  },
+  "description": {
+    "uk": "На аркуші 1904 року на східному березі острова Сентендре біля Horány позначено будівлю з підписом «Horányi cs.» (csárda), а від неї через Дунай пунктиром показано переправу до будинку з підписом «Révház» (поромний будинок) на березі Dunakeszi, на місці пізньоримського форту (окрема картка). За статтею про Dunakeszi, пором і сьогодні курсує між Dunakeszi і Horány, що належить до Szigetmonostor; за статтею про Szigetmonostor, у римську добу біля переправи в Horány стояла сторожова вежа. Корчми з такою назвою в сучасних даних OpenStreetMap немає; за зворотним геокодуванням місце нині займає спортивний центр «Horányi hajógyár» на Szentendrei út. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1904-es lapon a Szentendrei-sziget keleti partján, Horány mellett „Horányi cs.” (csárda) feliratú épület látható, ahonnan pontozott vonal jelzi a Dunán át a dunakeszi parton, a késő római erőd helyén álló „Révház” felé vezető átkelőt (külön kártya). A Dunakesziről szóló szócikk szerint a komp ma is Dunakeszi és a Szigetmonostorhoz tartozó Horány között jár; a Szigetmonostorról szóló szócikk szerint a római korban a horányi révnél őrtorony is volt. Ilyen nevű csárda a mai OpenStreetMap-adatokban nincs; a fordított geokódolás szerint helyén ma a Szentendrei úti „Horányi hajógyár” sportközpont áll. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Підпис «Horányi cs.» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Пором між Dunakeszi і Horány курсує й нині."
+    },
+    {
+      "title": "Szigetmonostor – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szigetmonostor",
+      "note": "Римська вежа біля переправи в Horány."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): пошук «Horányi csárda»",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=8&bounded=1&viewbox=19.0,47.85,19.35,47.55&q=Hor%C3%A1nyi%20cs%C3%A1rda",
+      "note": "Пошук у межах околиць Göd–Vác 16.11.2026 результатів не дав. Дані © учасники OpenStreetMap, ODbL."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.66142&lon=19.1117",
+      "note": "Нині на цьому місці: спортивний центр «Horányi hajógyár», Szentendrei út (Szigetmonostor). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

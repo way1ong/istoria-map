@@ -1,0 +1,42 @@
+{
+  "id": "szodrakos-teglahaz",
+  "name": {
+    "uk": "Цегельня Téglaház біля Sződrákos",
+    "hu": "Téglaház Sződrákos mellett"
+  },
+  "type": "other",
+  "coords": [
+    19.1437,
+    47.7192
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Цегельня з піччю (Z.O., Ziegelofen) між Дунаєм і залізницею на південь від пусти Sződrákos, підписана «Téglaház» на аркуші 1904 року; нині тут житловий масив Dunaliget на межі Göd і Sződliget.",
+    "hu": "Téglaház égetőkemencével („Z.O.”, Ziegelofen) a Duna és a vasút között, Sződrákos-pusztától délre, az 1904-es lapon; ma a Dunaliget lakópark van itt Göd és Sződliget határán."
+  },
+  "description": {
+    "uk": "На аркуші 1904 року на південь від пусти Sződrákos, між берегом Дунаю і залізницею, позначено будівлю з підписом «Téglaház» (угорською «цегельня»), а поруч скорочення «Z.O.» (Ziegelofen, цегельна піч). За статтею про Sződliget, 1883 року навколишні землі Sződrákos, Sződrákospuszta і Csörögpuszta належали Alfréd Floch-Reyhersberg, який 1910 року розпарцелював їх під нове селище; чи належала цегельня до цього маєтку, стаття не каже. За зворотним геокодуванням місце нині лежить на вулиці Szeszgyár utca в житловому масиві Dunaliget у Sződliget, біля межі з Göd. Слідів цегельні в сучасних даних немає. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1904-es lapon Sződrákos-pusztától délre, a Duna partja és a vasút között „Téglaház” feliratú épület látható, mellette „Z.O.” (Ziegelofen, téglaégető kemence) rövidítés. A Sződligetről szóló szócikk szerint 1883-ban a környező Sződrákos, Sződrákospuszta és Csörögpuszta dr. lovag Floch-Reyhersberg Alfréd birtoka volt, aki 1910-ben parcellázásra bocsátotta; hogy a téglaház ehhez a birtokhoz tartozott-e, a szócikk nem mondja meg. A fordított geokódolás szerint a hely ma a sződligeti Dunaliget lakópark Szeszgyár utcájára esik, Göd határa közelében. A téglaháznak a mai adatokban nincs nyoma. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Підпис «Téglaház» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Sződliget – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sz%C5%91dliget",
+      "note": "1883: Sződrákos, Sződrákospuszta і Csörögpuszta у власності Alfréd Floch-Reyhersberg; парцеляція 1910 року."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.7192&lon=19.14366",
+      "note": "Нині на цьому місці: вулиця Szeszgyár utca, житловий масив Dunaliget (Sződliget). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

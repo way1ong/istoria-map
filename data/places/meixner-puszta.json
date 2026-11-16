@@ -6,8 +6,8 @@
   },
   "type": "farmstead",
   "coords": [
-    19.1488,
-    47.7688
+    19.1618,
+    47.7685
   ],
   "coordsPrecision": "approximate",
   "periods": [
@@ -19,14 +19,24 @@
     "hu": "Az 1885-ös térképen „Meixner psz.” felirattal jelölt puszta Hétkápolna és Kláraháza között; mai forrásokban nem szerepel."
   },
   "description": {
-    "uk": "Єдине джерело про цей хутір наразі аркуш Spezialkarte 1885 року, де на південний схід від Вацу підписано «Meixner psz.». У статтях Вікіпедії про Вац він не згадується. Назва, час існування й власники потребують перевірки за місцевою літературою; координати зняті з мапи з точністю близько 100 м.",
-    "hu": "Erről a tanyáról egyelőre az egyetlen forrás az 1885-ös Spezialkarte lapja, amelyen Váctól délkeletre a „Meixner psz.” felirat szerepel. A Vácról szóló Wikipédia-szócikkekben nem említik. Neve, fennállásának ideje és tulajdonosai a helytörténeti irodalom alapján ellenőrzésre szorulnak; a koordinátákat a térképről vettük mintegy 100 m pontossággal."
+    "uk": "Єдине джерело про цей хутір наразі аркуш Spezialkarte 1885 року, де на південний схід від Вацу підписано «Meixner psz.». У статтях Вікіпедії про Вац він не згадується. Назва, час існування й власники потребують перевірки за місцевою літературою; координати зняті з мапи з точністю близько 50 м. Пошук назви «Meixner» у сучасних даних OpenStreetMap результатів не дав; за зворотним геокодуванням місце нині лежить на житловій вулиці Borsó utca в частині Вацу Máriaudvar.",
+    "hu": "Erről a tanyáról egyelőre az egyetlen forrás az 1885-ös Spezialkarte lapja, amelyen Váctól délkeletre a „Meixner psz.” felirat szerepel. A Vácról szóló Wikipédia-szócikkekben nem említik. Neve, fennállásának ideje és tulajdonosai a helytörténeti irodalom alapján ellenőrzésre szorulnak; a koordinátákat a térképről vettük mintegy 50 m pontossággal. A „Meixner” név a mai OpenStreetMap-adatokban nem szerepel; a fordított geokódolás szerint a hely ma a váci Máriaudvar Borsó utcájára, lakóterületre esik."
   },
   "sources": [
     {
       "title": "Spezialkarte 14:XX Nógrád und Waitzen, 1885, NYPL/Commons",
       "url": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
-      "note": "Підпис «Meixner psz.» на аркуші; інших джерел поки немає."
+      "note": "Підпис «Meixner psz.» на аркуші; інших джерел поки немає. Координати 16.11.2026 перезняті з копії 3840 px по значку будівель (раніше точка стояла за кількасот метрів від нього) з поправкою на зсув старої геодезичної основи; точність близько 50 м."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): пошук «Meixner»",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=8&bounded=1&viewbox=19.0,47.85,19.35,47.55&q=Meixner",
+      "note": "Пошук у межах околиць Göd–Vác 16.11.2026 результатів не дав. Дані © учасники OpenStreetMap, ODbL."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.7685&lon=19.1618",
+      "note": "Нині на цьому місці: житлова вулиця Borsó utca, Máriaudvar (Vác). Дані © учасники OpenStreetMap, ODbL."
     }
   ]
 }

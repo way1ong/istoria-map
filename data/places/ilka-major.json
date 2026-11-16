@@ -6,8 +6,8 @@
   },
   "type": "farmstead",
   "coords": [
-    19.1682,
-    47.6859
+    19.1673,
+    47.6852
   ],
   "coordsPrecision": "approximate",
   "periods": [
@@ -27,7 +27,7 @@
     {
       "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
       "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
-      "note": "Підпис «Ilka mjr.» на аркуші; координати зчитано з вирівняного скану."
+      "note": "Підпис «Ilka mjr.» на аркуші; координати зчитано з вирівняного скану. Координати 16.11.2026 зсунуто на поправку старої геодезичної основи (див. опис мапи), точність близько 50 м."
     },
     {
       "title": "Göd – Wikipédia (hu)",

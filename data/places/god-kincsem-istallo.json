@@ -18,8 +18,8 @@
     "hu": "Göd egyik legrégibb épülete. 1875–1880 között itt állt és készült a versenyekre Kincsem, Blaskovich Ernő veretlen kancája."
   },
   "description": {
-    "uk": "За статтею про Göd, у 1875–1880 роках мешканкою ґедської стайні була Kincsem, «диво-кінь», яку вважають найуспішнішим скаковим конем усіх часів; її заводчик Ernő Blaskovich створив тут тренувальну базу. Стайня Kincsem, що стоїть донині, належить до найстаріших будівель міста. 1876 року збудовано корчму Fácán як притулок для журналістів, що приїздили через Kincsem. Стаття про саму Kincsem подає власником Ernő Blaskovich, засновника кінного заводу в Tápiószentmárton.",
-    "hu": "A Gödről szóló szócikk szerint 1875–1880 között a gödi istálló lakója volt Kincsem, a „csodakanca”, akit minden idők legsikeresebb versenylovának tartanak; tenyésztője, Blaskovich Ernő itt alakított ki tréningtelepet. A ma is álló Kincsem-istálló a város legrégebbi épületei közé tartozik. 1876-ban épült a Fácán fogadó a Kincsem miatt érkező újságírók szálláshelyéül. A magáról Kincsemről szóló szócikk tulajdonosként Blaskovich Ernőt, a tápiószentmártoni ménes alapítóját adja meg."
+    "uk": "За статтею про Göd, у 1875–1880 роках мешканкою ґедської стайні була Kincsem, «диво-кінь», яку вважають найуспішнішим скаковим конем усіх часів; її заводчик Ernő Blaskovich створив тут тренувальну базу. Стайня Kincsem, що стоїть донині, належить до найстаріших будівель міста. 1876 року збудовано корчму Fácán як притулок для журналістів, що приїздили через Kincsem. Стаття про саму Kincsem подає власником Ernő Blaskovich, засновника кінного заводу в Tápiószentmárton. На аркуші Spezialkarte 1904 року приблизно за 80 м від стайні підписано «Gödi csárda»; стаття про Göd серед пам'яток міста називає «стайню Kincsem і чарду».",
+    "hu": "A Gödről szóló szócikk szerint 1875–1880 között a gödi istálló lakója volt Kincsem, a „csodakanca”, akit minden idők legsikeresebb versenylovának tartanak; tenyésztője, Blaskovich Ernő itt alakított ki tréningtelepet. A ma is álló Kincsem-istálló a város legrégebbi épületei közé tartozik. 1876-ban épült a Fácán fogadó a Kincsem miatt érkező újságírók szálláshelyéül. A magáról Kincsemről szóló szócikk tulajdonosként Blaskovich Ernőt, a tápiószentmártoni ménes alapítóját adja meg. Az 1904-es Spezialkarte lapján az istállótól mintegy 80 m-re „Gödi csárda” felirat áll; a Gödről szóló szócikk a város nevezetességei között „Kincsem istálló és csárda” néven említi."
   },
   "sources": [
     {
@@ -36,6 +36,11 @@
       "title": "Wikimedia Commons: Category:Kincsem ist%C3%A1ll%C3%B3 %C3%A9s udvarh%C3%A1z (G%C3%B6d)",
       "url": "https://commons.wikimedia.org/wiki/Category:Kincsem_ist%C3%A1ll%C3%B3_%C3%A9s_udvarh%C3%A1z_(G%C3%B6d)",
       "note": "Object location 47.690451, 19.133575 (координати об'єкта, вказані в категорії Commons)."
+    },
+    {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Підпис «Gödi csárda» поруч зі стайнею; координати підпису зчитано з копії 3840 px з точністю близько 50 м."
     }
   ],
   "photos": [

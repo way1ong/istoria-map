@@ -1,0 +1,42 @@
+{
+  "id": "halaszhaz-felsogod",
+  "name": {
+    "uk": "Рибальська хата (Halászház) у Felsőgöd",
+    "hu": "Halászház, Felsőgöd"
+  },
+  "type": "other",
+  "coords": [
+    19.1308,
+    47.7152
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Окремий будинок на березі Дунаю на північ від Göd, підписаний «Halászház» (рибальська хата) на аркуші 1904 року; нині на цьому місці вулиці Felsőgöd.",
+    "hu": "Különálló ház a Duna partján Gödtől északra, az 1904-es lapon „Halászház” felirattal; helyén ma felsőgödi utcák vannak."
+  },
+  "description": {
+    "uk": "На аркуші Spezialkarte 15:XX 1904 року на лівому березі Дунаю, поруч із цегельнею «Téglaház» і хутором Usztatómajor, позначено окремий будинок з підписом «Halászház» (угорською «рибальська хата»). Пошук цієї назви в сучасних даних OpenStreetMap результатів не дав; за зворотним геокодуванням місце нині лежить у забудові Felsőgöd біля вулиці Kék Duna utca. Хто там жив і коли будинок зник, з наявних джерел не видно. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1904-es Spezialkarte 15:XX lapján a Duna bal partján, a „Téglaház” és az Usztatómajor szomszédságában különálló ház látható „Halászház” felirattal. Ez a név a mai OpenStreetMap-adatokban nem szerepel; a fordított geokódolás szerint a hely ma a felsőgödi beépítésben, a Kék Duna utca közelében van. Hogy kik laktak benne és mikor tűnt el, a rendelkezésre álló forrásokból nem derül ki. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Підпис «Halászház» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): пошук «Halászház»",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=8&bounded=1&viewbox=19.0,47.85,19.35,47.55&q=Hal%C3%A1szh%C3%A1z",
+      "note": "Пошук у межах околиць Göd–Vác 16.11.2026 результатів не дав. Дані © учасники OpenStreetMap, ODbL."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.71516&lon=19.1308",
+      "note": "Нині на цьому місці: житлова забудова Felsőgöd, Kék Duna utca. Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

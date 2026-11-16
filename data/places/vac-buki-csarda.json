@@ -1,0 +1,42 @@
+{
+  "id": "vac-buki-csarda",
+  "name": {
+    "uk": "Корчма Buki (Buki csárda) у Ваці",
+    "hu": "Buki csárda, Vác"
+  },
+  "type": "inn",
+  "coords": [
+    19.1104,
+    47.7957
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Корчма на північній околиці Вацу, підписана «Buki cs.» на аркуші 1885 року; назва Buki лишилася за частиною району Kisvác.",
+    "hu": "Csárda Vác északi szélén, az 1885-ös lapon „Buki cs.” felirattal; a Buki név Kisvác egyik részének nevében él tovább."
+  },
+  "description": {
+    "uk": "На аркуші 1885 року між Дунаєм і дорогою на північ від Вацу, південніше корчми «Kőhíd cs.» і цегельні «Ziegel H.», підписано «Buki cs.». За статтею про Вац, Buki нині є частиною району Kisvác (Felsőváros); у даних OpenStreetMap квартал Buki позначено трохи північніше. Корчми в сучасних даних немає; за зворотним геокодуванням місце нині припадає на спортивний майданчик біля вулиці Pázmány Péter utca. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1885-ös lapon a Duna és a Vácról észak felé vezető út között, a „Kőhíd cs.” csárdától és a „Ziegel H.” téglaháztól délre „Buki cs.” felirat áll. A Vácról szóló szócikk szerint Buki ma Kisvác (Felsőváros) része; az OpenStreetMap-adatokban a Buki városrész kissé északabbra van jelölve. A csárdának a mai adatokban nincs nyoma; a fordított geokódolás szerint helye ma a Pázmány Péter utca melletti sportpályára esik. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 14:XX Nógrád und Waitzen, 1885, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
+      "note": "Підпис «Buki cs.» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділ про частини міста: Kisvác (Felsőváros) — Kőhíd, Buki."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.79574&lon=19.11038",
+      "note": "Нині на цьому місці: спортивний майданчик біля Pázmány Péter utca (Vác). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

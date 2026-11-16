@@ -1,0 +1,37 @@
+{
+  "id": "vac-teufelsmuhle",
+  "name": {
+    "uk": "Млин «Teufels M.» (Чортів млин) у Ваці",
+    "hu": "„Teufels M.” malom, Vác"
+  },
+  "type": "mill",
+  "coords": [
+    19.1437,
+    47.769
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Млин на потоці Gombás на південній околиці Вацу, підписаний «Teufels M.» (Teufelsmühle, «чортів млин») на аркуші 1885 року; нині на цьому місці житловий масив Földváry Károly.",
+    "hu": "Malom a Gombás-patakon Vác déli szélén, az 1885-ös lapon „Teufels M.” (Teufelsmühle, „ördögmalom”) felirattal; helyén ma a Földváry Károly-lakótelep van."
+  },
+  "description": {
+    "uk": "На аркуші 1885 року за південною околицею Вацу, приблизно за 250 м на схід від кам'яного мосту Kőszentes через потік Gombás (окрема картка), на тому самому потоці позначено млин з німецьким підписом «Teufels M.» (Teufelsmühle, тобто «чортів млин»). Угорської назви аркуш не подає, а пошук у сучасних даних OpenStreetMap млина не знаходить. За зворотним геокодуванням місце нині лежить у житловому масиві Földváry Károly-lakótelep у частині Alsóváros. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1885-ös lapon Vác déli szélén, mintegy 250 m-re keletre a Gombás-patak feletti Kőszentes hídtól (külön kártya), ugyanazon a patakon „Teufels M.” (Teufelsmühle, azaz „ördögmalom”) német feliratú malom látható. Magyar nevét a lap nem adja meg, és a mai OpenStreetMap-adatokban sem található malom. A fordított geokódolás szerint a hely ma az alsóvárosi Földváry Károly-lakótelepen van. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 14:XX Nógrád und Waitzen, 1885, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
+      "note": "Підпис «Teufels M.» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.76898&lon=19.14371",
+      "note": "Нині на цьому місці: житловий масив Földváry Károly-lakótelep, Alsóváros (Vác). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

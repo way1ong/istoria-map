@@ -1,0 +1,42 @@
+{
+  "id": "vaci-rev-csarda",
+  "name": {
+    "uk": "Корчма вацької переправи (Váci rév csárda)",
+    "hu": "Váci rév csárda („Donau W.H.”)"
+  },
+  "type": "inn",
+  "coords": [
+    19.1189,
+    47.7732
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19"
+  ],
+  "vanished": true,
+  "summary": {
+    "uk": "Корчма на острові Сентендре навпроти Вацу, біля переправи, з подвійним підписом «Donau W.H. (Váci rév cs.)» на аркуші 1885 року; нині місце на дорозі 1114 у межах Tahitótfalu.",
+    "hu": "Csárda a Szentendrei-szigeten, Váccal szemben, a révnél, az 1885-ös lapon „Donau W.H. (Váci rév cs.)” kettős felirattal; helye ma az 1114-es úton van Tahitótfalu területén."
+  },
+  "description": {
+    "uk": "На аркуші 1885 року на східному березі острова Сентендре, навпроти вацької пристані з позначкою «D.St.», стоїть будівля з подвійним підписом: німецьким «Donau W.H.» (дунайська корчма) і угорським «Váci rév cs.» (корчма вацької переправи). За статтею про Tahitótfalu, через громаду й нині пролягає дорога 1114 від шосе 11 до вацької переправи. Корчми в сучасних даних OpenStreetMap немає; за зворотним геокодуванням місце лежить на дорозі 1114. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1885-ös lapon a Szentendrei-sziget keleti partján, a váci „D.St.” jelzésű kikötővel szemben kettős feliratú épület áll: német „Donau W.H.” (dunai vendéglő) és magyar „Váci rév cs.” (váci rév csárda). A Tahitótfaluról szóló szócikk szerint a községen ma is áthalad a 11-es főúttól a váci révig vezető 1114-es út. A csárdának a mai OpenStreetMap-adatokban nincs nyoma; a fordított geokódolás szerint a hely az 1114-es útra esik. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 14:XX Nógrád und Waitzen, 1885, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
+      "note": "Підпис «Donau W.H. (Váci rév cs.)» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Tahitótfalu – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tahit%C3%B3tfalu",
+      "note": "Дорога 1114 від шосе 11 до вацької переправи."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): зворотне геокодування",
+      "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.77322&lon=19.11893",
+      "note": "Нині на цьому місці: дорога 1114, Tahitótfalu. Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

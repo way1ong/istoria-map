@@ -1,0 +1,37 @@
+{
+  "id": "klarahaza",
+  "name": {
+    "uk": "Хутір Kláraháza біля Вацу",
+    "hu": "Kláraháza, Vác"
+  },
+  "type": "farmstead",
+  "coords": [
+    19.19245,
+    47.76083
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Хутір на схід від Вацу, підписаний «Klaraháza» на аркуші 1885 року; у даних OpenStreetMap Kláraháza й нині позначена як хутір у межах Вацу.",
+    "hu": "Major Váctól keletre, az 1885-ös lapon „Klaraháza” felirattal; az OpenStreetMap-adatokban Kláraháza ma is tanyaként (hamlet) szerepel Vác határában."
+  },
+  "description": {
+    "uk": "На аркуші Spezialkarte 14:XX 1885 року на схід від Вацу, біля потоку з підписом «Csörög víz», позначено групу будівель з підписом «Klaraháza». У сучасних даних OpenStreetMap у межах Вацу є хутір (place=hamlet) Kláraháza приблизно за 30 м від місця, зчитаного з мапи, тож поселення й назва збереглися; координати картки взято з OpenStreetMap. Поруч на аркуші підписано пусту «Meixner psz.» (окрема картка) і корчму біля дороги на схід (окрема картка). Інших джерел про історію хутора поки немає.",
+    "hu": "Az 1885-ös Spezialkarte 14:XX lapján Váctól keletre, a „Csörög víz” feliratú patak mellett „Klaraháza” feliratú épületcsoport látható. A mai OpenStreetMap-adatokban Vác határában szerepel Kláraháza tanya (place=hamlet), mintegy 30 m-re a térképről leolvasott helytől, vagyis a település és a név megmaradt; a kártya koordinátái az OpenStreetMap-ből származnak. A lapon a közelben a „Meixner psz.” puszta (külön kártya) és a keletre vezető út melletti csárda (külön kártya) látható. A major történetéről egyelőre nincs más forrás."
+  },
+  "sources": [
+    {
+      "title": "Spezialkarte 14:XX Nógrád und Waitzen, 1885, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
+      "note": "Підпис «Klaraháza» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): пошук «Kláraháza»",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=8&bounded=1&viewbox=19.0,47.85,19.35,47.55&q=Kl%C3%A1rah%C3%A1za",
+      "note": "place=hamlet Kláraháza, Vác: 47.760833, 19.192449. Дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}
