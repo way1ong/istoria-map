@@ -153,3 +153,27 @@ export interface Basemap {
   licenseUrl?: string;
   source?: Source;
 }
+
+/** Історичні кордони одного року (data/borders/y<рік>.geojson). */
+export interface BorderCollection {
+  type: 'FeatureCollection';
+  year: number;
+  license: string;
+  licenseUrl?: string;
+  attribution: string;
+  source: Source;
+  features: {
+    type: 'Feature';
+    geometry: { type: 'Polygon' | 'MultiPolygon'; coordinates: unknown };
+    properties: { name: string; name_uk: string; name_hu: string; subjecto: string; precision: 1 | 2 | 3 };
+  }[];
+}
+
+/** Сучасні контури для порівняння (data/borders/modern.geojson). */
+export interface ModernOutlines {
+  type: 'FeatureCollection';
+  license: string;
+  attribution: string;
+  source: Source;
+  features: { type: 'Feature'; geometry: { type: 'Polygon' | 'MultiPolygon'; coordinates: unknown }; properties: { id: string; name_uk: string; name_hu: string } }[];
+}
