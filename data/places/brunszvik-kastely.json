@@ -1,0 +1,44 @@
+{
+  "id": "brunszvik-kastely",
+  "name": {
+    "uk": "Палац Брунсвіків у Мартонвашарі (Martonvásár)",
+    "hu": "Brunszvik-kastély, Martonvásár"
+  },
+  "type": "castle",
+  "coords": [
+    18.78539,
+    47.31604
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Одна з найвідоміших аристократичних резиденцій Угорщини; старший Antal Brunszvik дістав від Марії Терезії графський титул і маєток, палац збудовано в 1783–1785 роках, у 1820-х Ferenc Brunszvik надбудував поверх у класицистичному стилі, а його син Géza перебудував у неоготичному.",
+    "hu": "Magyarország egyik legismertebb főúri rezidenciája; idősebb Brunszvik Antal Mária Teréziától kapta a grófi címet és a birtokot, a kastély 1783–1785 között épült, az 1820-as években Brunszvik Ferenc klasszicista emeletet építtetett rá, fia, Géza pedig neogótikus stílusban alakította át."
+  },
+  "description": {
+    "uk": "За статтею, палац Брунсвіків у Мартонвашарі комітату Фейєр є однією з найвідоміших аристократичних резиденцій Угорщини; історія міста й родини нерозривні. Старший Antal Brunszvik з Korompa дістав від Марії Терезії графський титул і мартонвашарський маєток, після його смерті 1783 року маєтки поділили між дітьми, і Мартонвашар дістався Antal Brunswick, де згодом його син Ferenc збудував палац; будівля постала в 1783–1785 роках, у 1820-х роках Ferenc Brunszvik надбудував поверх у стилі класицизму, а його син Géza перебудував палац у неоготичному стилі."
+  },
+  "sources": [
+    {
+      "title": "Brunszvik-kastély – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Brunszvik-kast%C3%A9ly",
+      "note": "Родина, датування, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Brunszvik-kast%C3%A9ly%2C_Martonv%C3%A1s%C3%A1r.JPG",
+      "author": "Adam Harangozó",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Brunszvik-kast%C3%A9ly%2C_Martonv%C3%A1s%C3%A1r.JPG",
+      "caption": {
+        "uk": "Палац Брунсвіків",
+        "hu": "A Brunszvik-kastély"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "mta-alapitasa-1825",
+  "title": {
+    "uk": "Заснування Угорської академії наук",
+    "hu": "A Magyar Tudományos Akadémia alapítása"
+  },
+  "date": {
+    "from": "1825-11-03",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [
+    "pozsonyi-var",
+    "mta-szekhaz"
+  ],
+  "summary": {
+    "uk": "На пожонських державних зборах 1825 року 2 листопада депутат Máriássy порушив питання угорського наукового закладу, а 3 листопада після запальної промови Pál Felsőbüki Nagy проти байдужих магнатів пролунала доленосна пожертва, з якої постала Академія.",
+    "hu": "Az 1825-ös pozsonyi országgyűlésen november 2-án Máriássy követ vetette fel egy magyar tudományos intézet szükségességét, november 3-án Felsőbüki Nagy Pál gyújtó beszéde után hangzott el a sorsfordító felajánlás, amelyből az Akadémia született."
+  },
+  "description": {
+    "uk": "За статтею, ідею заснування угорського наукового товариства відродили на пожонських державних зборах 1825 року на окружних засіданнях депутатів 2 і 3 листопада: уже на першому засіданні 2 листопада депутат комітату Шарош Máriássy порушив питання необхідності угорського наукового закладу, а наступного дня, 3 листопада 1825 року, Pál Felsőbüki Nagy виголосив особливо запальну промову, у якій гостро виступив проти магнатів, що нехтують інтересами нації та її мови, після чого пролунала доленосна, пам'ятна пожертва. Подію прив'язано до Пожонського замку, де збиралися збори, і до будинку Академії в Пешті."
+  },
+  "sources": [
+    {
+      "title": "Magyar Tudományos Akadémia – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Magyar_Tudom%C3%A1nyos_Akad%C3%A9mia",
+      "note": "Передісторія, 2–3 листопада 1825."
+    }
+  ]
+}

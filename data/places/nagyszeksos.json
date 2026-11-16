@@ -1,0 +1,35 @@
+{
+  "id": "nagyszeksos",
+  "name": {
+    "uk": "Надьсексош (Nagyszéksós): гунський золотий скарб",
+    "hu": "Nagyszéksósi hun lelet"
+  },
+  "type": "archaeological",
+  "coords": [
+    20.05,
+    46.18333
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "migration"
+  ],
+  "summary": {
+    "uk": "Гунський золотий скарб, що частинами виходив на світ від років перед Першою світовою війною на пустці Nagyszéksós, яка раніше належала Сеґеду, а нині лежить на околиці Röszke; найбільший золотий скарб гунської доби Подунав'я з суцільною золотою гривнею вагою 407 г. Точка: центр Röszke.",
+    "hu": "A korábban Szegedhez tartozó, ma Röszke határában lévő Nagyszéksós-pusztán az első világháború előtti évektől részletekben előkerült hun aranylelet, a hun kori Duna-vidék legnagyobb aranylelete; kiemelkedő darabja egy 407 grammos tömör arany nyakperec. A térképi pont Röszke központja."
+  },
+  "description": {
+    "uk": "За статтею, надьсексошська знахідка є гунським золотим скарбом, що частинами виходив на світ від років перед Першою світовою війною на пустці Nagyszéksós, яка раніше належала до Сеґеда, а у XXI столітті лежить на околиці Röszke. Це найбільший золотий скарб гунської доби Подунав'я; його визначною річчю є суцільна золота гривня вагою 407 г. Координати відповідають центру Röszke з OpenStreetMap; про гунське кінське жертвоприношення в Göd див. окрему картку."
+  },
+  "sources": [
+    {
+      "title": "Nagyszéksósi lelet – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagysz%C3%A9ks%C3%B3si_lelet",
+      "note": "Гунський скарб, гривня 407 г."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Röszke",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=R%C3%B6szke",
+      "note": "Координати 46.18333, 20.05 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

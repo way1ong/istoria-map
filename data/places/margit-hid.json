@@ -1,0 +1,45 @@
+{
+  "id": "margit-hid",
+  "name": {
+    "uk": "Міст Маргіт (Margit híd), 1876",
+    "hu": "Margit híd"
+  },
+  "type": "monument",
+  "coords": [
+    19.04333,
+    47.51472
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Другий постійний міст столиці, збудований у 1872–1876 роках і відкритий 30 квітня 1876 року; на конкурсі 1871 року перемогу здобув французький інженер Ernest Goüin; 607,6 м завдовжки, шість прольотів, вісь ламається біля острова Маргіт, до якого 19 серпня 1900 року відкрили крило. Фото зі статті показує міст 4 листопада 1944 року після вибуху.",
+    "hu": "A főváros második állandó hídja, 1872 és 1876 között épült, 1876. április 30-án avatták fel; az 1871-es tervpályázaton Ernest Goüin francia mérnök nyert; 607,6 m hosszú, hat nyílással, tengelye a Margit-szigetnél megtörik, ahová 1900. augusztus 19-én nyitották meg a szárnyhidat. A szócikk fotója a hidat 1944. november 4-én, a robbanás után mutatja."
+  },
+  "description": {
+    "uk": "За статтею, будапештський міст Маргіт з'єднує Szent István körút і Margit körút, торкаючись острова Маргіт; як другий постійний міст столиці його збудували в 1872–1876 роках і відкрили 30 квітня 1876 року. Конкурс оголосили 1871 року, першу премію присудили французькому інженерові Ernest Goüin, а контракт на будівництво дістало Societé de Construction de Batignoles; міст перекриває два рукави Дунаю трьома прольотами кожен з розмірами 73,5 + 82,67 + 87,88 + 87,88 + 82,67 + 73,5 м, загальна довжина 607,6 м, біля острова вісь ламається, щоб опори в обох рукавах були паралельні течії. Біля середньої опори 19 серпня 1900 року відкрили крило на острів Маргіт, до якого острів був доступний лише водою; 1879 року по мосту пішла конка, 1894 року трамвай. Будівництво наказав закон X 1870 року, а приклад Ланцюгового мосту (окрема картка) довів економічну доцільність."
+  },
+  "sources": [
+    {
+      "title": "Margit híd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Margit_h%C3%ADd",
+      "note": "Роки, Goüin, розміри, 1900, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Margit_h%C3%ADd_h%C3%ADdny%C3%ADl%C3%A1sa_a_pesti_oldalon_d%C3%A9l_fel%C5%91l.jpg",
+      "author": "kirandulo",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Margit_h%C3%ADd_h%C3%ADdny%C3%ADl%C3%A1sa_a_pesti_oldalon_d%C3%A9l_fel%C5%91l.jpg",
+      "caption": {
+        "uk": "Проліт мосту Маргіт з пештського боку",
+        "hu": "A Margit híd hídnyílása a pesti oldalon"
+      }
+    }
+  ]
+}

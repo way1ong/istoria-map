@@ -1,0 +1,48 @@
+{
+  "id": "mosonmagyarovar-laktanya",
+  "name": {
+    "uk": "Мошонмадяровар (Mosonmagyaróvár): місце розстрілу 26 жовтня 1956 року",
+    "hu": "Mosonmagyaróvár, a sortűz helye"
+  },
+  "type": "monument",
+  "coords": [
+    17.27223,
+    47.87318
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "26 жовтня 1956 року біля казарми прикордонників у Мошонмадяроварі натовп революціонерів, що хотів зайняти казарму, зустріли смертельним залпом; кількість жертв досі невідома, фото звідси облетіли світ. Точка: центр міста з OpenStreetMap.",
+    "hu": "1956. október 26-án Mosonmagyaróváron a határőrlaktanyánál gyilkos sortűz fogadta a laktanyát elfoglalni kívánó forradalmi tömeget; az áldozatok száma máig ismeretlen, az itt készült fotók bejárták a világot. A térképi pont a város központja az OpenStreetMapből."
+  },
+  "description": {
+    "uk": "За статтею, у Мошонмадяроварі 26 жовтня 1956 року біля казарми прикордонників натовп революціонерів, що хотів зайняти казарму, зустрів смертоносний залп; досі невідомо, скільки жертв мав цей град куль. Звістка про розстріл і зроблені тут фото облетіли світ; з країн Європи до Угорщини надійшла матеріальна підтримка, але військової і політичної допомоги, якої тут чекали найбільше, не було. Координати центру міста з OpenStreetMap, місце казарми не фіксується."
+  },
+  "sources": [
+    {
+      "title": "Mosonmagyaróvári sortűz – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Mosonmagyar%C3%B3v%C3%A1ri_sort%C5%B1z",
+      "note": "Дата, обставини."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Mosonmagyaróvár",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Mosonmagyar%C3%B3v%C3%A1r",
+      "note": "Координати 47.87318, 17.27223 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Jack_Metzger_%E2%80%93_Ungarischer_Freiheitskampf%2C_1956_%28Com_M05-0448-0039%29.jpg",
+      "author": "невідомий автор",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Jack_Metzger_%E2%80%93_Ungarischer_Freiheitskampf%2C_1956_%28Com_M05-0448-0039%29.jpg",
+      "caption": {
+        "uk": "Угорська визвольна боротьба 1956 року, фото Jack Metzger",
+        "hu": "Ungarischer Freiheitskampf 1956, Jack Metzger fotója"
+      }
+    }
+  ]
+}

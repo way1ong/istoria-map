@@ -1,0 +1,49 @@
+{
+  "id": "vasvar",
+  "name": {
+    "uk": "Вашвар (Vasvár): місце Вашварського миру 1664 року",
+    "hu": "Vasvár"
+  },
+  "type": "settlement",
+  "coords": [
+    16.79988,
+    47.04906
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "arpad",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Містечко в комітаті Ваш, де 10 серпня 1664 року на 20 років уклали мир, що завершив турецьку війну 1663–1664 років і зберіг status quo після битви під Сентґоттгардом; значна частина угорської громадськості вважала його ганебним. Точка: центр міста.",
+    "hu": "Vas vármegyei város, ahol 1664. augusztus 10-én 20 évre szóló békét kötöttek, amely lezárta az 1663–64-es török háborút, és a szentgotthárdi csata utáni status quót tartotta fenn; a magyar közélet jelentős része szégyenletesnek tartotta. A térképi pont a város központja."
+  },
+  "description": {
+    "uk": "За статтею, Вашварський мир був укладений у Вашварі комітату Ваш 10 серпня 1664 року на 20 років і завершив війну проти турків 1663–1664 років; він передбачав збереження на 20 років status quo, що склався після битви під Сентґоттгардом (окрема картка), бо обидві сторони вважали важливішим перекинути сили на інші фронти. Значна частина тогочасної угорської громадськості, насамперед станова опозиція, пов'язана з французами, і більшість угорських істориків називали мир ганебним і принизливим, бо попри виграну битву турки зберегли завоювання. Координати центру міста з OpenStreetMap."
+  },
+  "sources": [
+    {
+      "title": "Vasvári béke – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Vasv%C3%A1ri_b%C3%A9ke",
+      "note": "Дата, умови, оцінка."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Vasvár",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Vasv%C3%A1r",
+      "note": "Координати 47.04906, 16.79988 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Vasv%C3%A1ri_b%C3%A9ke_irata_%28t%C3%B6r%C3%B6k_nyelv%C5%B1%29.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Vasv%C3%A1ri_b%C3%A9ke_irata_%28t%C3%B6r%C3%B6k_nyelv%C5%B1%29.jpg",
+      "caption": {
+        "uk": "Турецький текст Вашварського миру",
+        "hu": "A vasvári béke török irata"
+      }
+    }
+  ]
+}

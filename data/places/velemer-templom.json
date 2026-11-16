@@ -1,0 +1,44 @@
+{
+  "id": "velemer-templom",
+  "name": {
+    "uk": "Церква Святої Трійці у Велемері (Velemér)",
+    "hu": "Veleméri Szentháromság-templom"
+  },
+  "type": "church",
+  "coords": [
+    16.3778,
+    46.73773
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "arpad",
+    "late-medieval"
+  ],
+  "summary": {
+    "uk": "Село в Ерсеґу, давня і середньовічна історія якого сплетена з прикордонними засіками й церквою Святої Трійці; у джерелах з кінця XIII століття (1268 Velemer, Sancta Trinitas; 1273 Velemyr). Точка: центр села.",
+    "hu": "Őrségi község, ókori és középkori története a gyepűk és a Szentháromság-templom történetével fonódik össze; írott forrásokban a 13. század végétől (1268 Velemer, Sancta Trinitas; 1273 Velemyr). A térképi pont a falu központja."
+  },
+  "description": {
+    "uk": "За статтею, давня й середньовічна історія Велемера переплетена з історією прикордонних засік і церкви Святої Трійці; у писемних джерелах село з'являється з кінця XIII століття під змінними назвами, іноді за церквою як Szenttrinitás: 1268 року Velemer і Sancta Trinitas, 1273 року Velemyr, 1601 року Zent Trinitas, 1734 року Velemér. Назва слов'янського походження від імені Velimir; у 1732–1783 роках реформати через катилізацію ходили до церкви в Kustánszeg, а свободу віри повернули 2 листопада 1783 року. Відомі фрески János Aquila у статті про село не описані, тому картка спирається лише на наведені дати. Координати відповідають центру села."
+  },
+  "sources": [
+    {
+      "title": "Velemér – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Velem%C3%A9r",
+      "note": "Назви 1268–1734, координати села."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Civertanvelem%C3%A9rlegi1.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Civertanvelem%C3%A9rlegi1.jpg",
+      "caption": {
+        "uk": "Велемер з повітря",
+        "hu": "Velemér légi fotón"
+      }
+    }
+  ]
+}

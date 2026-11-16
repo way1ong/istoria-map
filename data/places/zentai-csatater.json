@@ -1,0 +1,43 @@
+{
+  "id": "zentai-csatater",
+  "name": {
+    "uk": "Поле битви під Зентою (Senta), 1697",
+    "hu": "Zentai csatatér"
+  },
+  "type": "monument",
+  "coords": [
+    20.09806,
+    45.92611
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Місце однієї з найзначніших і найкривавіших битв відвоювання турецьких земель: 11 вересня 1697 року союзне християнське військо принца Євгена Савойського перемогло армію великого візира Елмаса Мегмеда при присутньому султані Мустафі II. Нині Сента в Сербії; прикордонний об'єкт.",
+    "hu": "A hódoltsági területek visszafoglalásának egyik legjelentősebb és legvéresebb csatája: 1697. szeptember 11-én Savoyai Jenő herceg szövetséges keresztény serege győzött Elmas Mehmed nagyvezír hadain, II. Musztafa szultán jelenlétében. Ma Zenta Szerbiában; határon túli hely."
+  },
+  "description": {
+    "uk": "За статтею, битва під Зентою 11 вересня 1697 року була однією з найзначніших і найкривавіших битв відвоювання угорських земель, що перебували під турецьким пануванням: союзне християнське військо під проводом принца Євгена Савойського здобуло перемогу над турецькими військами, якими керував великий візир Елмас Мегмед, над армією присутнього султана Мустафи II. Зента лежить за межами нинішньої Угорщини; координати зі статті приблизні."
+  },
+  "sources": [
+    {
+      "title": "Zentai csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Zentai_csata",
+      "note": "Дата, командувачі."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Battle_of_Zenta.png",
+      "author": "Jacques-Ignace Parrocel",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Battle_of_Zenta.png",
+      "caption": {
+        "uk": "Битва під Зентою на тогочасному зображенні",
+        "hu": "A zentai csata korabeli ábrázoláson"
+      }
+    }
+  ]
+}

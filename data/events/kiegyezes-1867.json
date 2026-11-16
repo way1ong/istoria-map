@@ -1,0 +1,44 @@
+{
+  "id": "kiegyezes-1867",
+  "title": {
+    "uk": "Австро-угорський компроміс",
+    "hu": "A kiegyezés"
+  },
+  "date": {
+    "from": "1867-02-20",
+    "to": "1867-03-30",
+    "precision": "exact"
+  },
+  "period": "long-19",
+  "places": [
+    "orszaghaz",
+    "matyas-templom"
+  ],
+  "summary": {
+    "uk": "Домовленості початку 1867 року між Францом Йосифом і делегацією Ференца Деака й Дюли Андраші, що впорядкували відносини Австрійської імперії та Угорського королівства; 20 лютого постав перший відповідальний уряд з 1849 року, 20 березня збори почали обговорення, 30 березня палата представників ухвалила 69 пунктів. Коронацію Франца Йосифа проведено в церкві Матяша.",
+    "hu": "Az 1867 elején I. Ferenc József és a Deák Ferenc és Andrássy Gyula vezette magyar delegáció között született megállapodások, amelyek az Osztrák Birodalom és a Magyar Királyság viszonyát rendezték; február 20-án megalakult az 1849 óta első felelős kormány, március 20-án kezdte tárgyalni az országgyűlés, március 30-án fogadta el a képviselőház a 69 pontot. Ferenc Józsefet a Mátyás-templomban koronázták meg."
+  },
+  "description": {
+    "uk": "За статтею, компроміс, або австро-угорський компроміс, є збірною назвою домовленостей, укладених на початку 1867 року між главою дому Габсбургів Францом Йосифом I та угорською делегацією під проводом Ференца Деака і графа Дюли Андраші, які впорядкували політичні, правові й господарські відносини між Австрійською імперією та Угорським королівством; за словами Франца Йосифа, Монархія постала з переговорів лише трьох людей: «Деак, Андраші і я сам». З угорського боку це були чотири закони (XII, XIV, XV і XVI 1867 року), наріжні пункти яких угорські державні збори почали обговорювати 20 березня 1867 року за поданням уряду Андраші, сформованого рівно місяцем раніше, 20 лютого, як перший відповідальний угорський уряд від 1848–1849 років; постанову з 69 пунктів палата представників ухвалила 30 березня 1867 року. За карткою церкви Матяша, там короновано Франца Йосифа з Єлизаветою."
+  },
+  "sources": [
+    {
+      "title": "Kiegyezés – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kiegyez%C3%A9s",
+      "note": "Дати, учасники, закони."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/De%C3%A1k_Ferenc_Ellinger.jpg",
+      "author": "Ede Ellinger",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:De%C3%A1k_Ferenc_Ellinger.jpg",
+      "caption": {
+        "uk": "Ференц Деак на фото Ellinger",
+        "hu": "Deák Ferenc Ellinger felvételén"
+      }
+    }
+  ]
+}

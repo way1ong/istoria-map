@@ -1,0 +1,43 @@
+{
+  "id": "obudai-hajogyar-1835",
+  "title": {
+    "uk": "Заснування Обудайської корабельні та перший гімн, 1844",
+    "hu": "Az Óbudai Hajógyár alapítása és a himnusz első nyilvános elhangzása"
+  },
+  "date": {
+    "from": "1835",
+    "to": "1844-08-10",
+    "precision": "exact"
+  },
+  "period": "long-19",
+  "places": [
+    "obudai-hajogyar"
+  ],
+  "summary": {
+    "uk": "1835 року з ініціативи István Széchenyi на Обудайському острові постала корабельня DDSG; 1836 року спущено на воду перший пароплав «Árpád», а 10 серпня 1844 року на освяченні пароплава «Széchenyi» тут на публічному святі вперше прозвучав угорський гімн.",
+    "hu": "1835-ben Széchenyi István kezdeményezésére az Óbudai-szigeten létrejött a DDSG hajógyára; 1836-ban vízre bocsátották az első gőzhajót, az Árpádot, 1844. augusztus 10-én pedig a Széchenyi gőzös avatásán itt hangzott el nyilvános közünnepen a magyar himnusz."
+  },
+  "description": {
+    "uk": "За статтею, корабельня постала 1835 року з ініціативи графа István Széchenyi, коли Перше дунайське пароплавне товариство придбало Обудайський острів; перший збудований тут корабель, колісний дерев'яний пароплав «Árpád», спустили на воду 1836 року, а 10 серпня 1844 року на освяченні пароплава з іменем Széchenyi тут на публічному святі прозвучав угорський гімн."
+  },
+  "sources": [
+    {
+      "title": "Óbudai Hajógyár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/%C3%93budai_Haj%C3%B3gy%C3%A1r",
+      "note": "1835, 1836, 1844."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/%C3%93budai_Haj%C3%B3gy%C3%A1r_-_Vas%C3%A1rnapi_%C3%9Ajs%C3%A1g_1857-3.jpg",
+      "author": "unknown/ismeretlen",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:%C3%93budai_Haj%C3%B3gy%C3%A1r_-_Vas%C3%A1rnapi_%C3%9Ajs%C3%A1g_1857-3.jpg",
+      "caption": {
+        "uk": "Обудайська корабельня у Vasárnapi Újság",
+        "hu": "Az Óbudai Hajógyár a Vasárnapi Újságban"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "pozsonyi-csata-907",
+  "title": {
+    "uk": "Битва під Пожонню",
+    "hu": "A pozsonyi csata"
+  },
+  "date": {
+    "from": "0907-07-04",
+    "to": "0907-07-07",
+    "precision": "approximate"
+  },
+  "period": "arpad",
+  "places": [
+    "pozsonyi-var"
+  ],
+  "summary": {
+    "uk": "У 4–7 липня 907 року біля нинішньої Братислави головно баварське військо Східнофранкського королівства зазнало нищівної поразки від мадярів; загинули герцог Луїтпольд і зальцбурзький архієпископ Теотмар; кордон до 955 року відсунувся до Еннса, і прихід мадярів по суті завершився.",
+    "hu": "907. július 4. és 7. között a mai Pozsony közelében a főként bajor keleti frank sereg megsemmisítő vereséget szenvedett a magyaroktól; elesett Luitpold herceg és Theotmár salzburgi érsek; a határ 955-ig az Ennsig tolódott, és a honfoglalás lényegében lezárult."
+  },
+  "description": {
+    "uk": "За статтею, битва під Пожонню відбулася між 4 і 7 липня 907 року між християнським Східнофранкським королівством, що мобілізувало головно баварське військо, і язичницьким Угорським князівством поблизу нинішньої Братислави (у тогочасних джерелах Braslavespurch або Brezalauspurc). Після вторгнення мадярів 895–900 років межа угорського панування до 907 року на заході наблизилася до Еннса, тож франки, передусім баварці, хотіли завдати вирішального удару; битву вело насамперед баварське військо, яке зазнало нищівної поразки, загинули герцог Луїтпольд і зальцбурзький архієпископ Теотмар, майже вся баварська знать і численні священники. Мадяри здобули нові землі до Еннса, який до 955 року став кордоном, і прихід мадярів цією битвою по суті завершився. За описом Aventinus, баварське військо йшло двома колонами по обидва береги Дунаю з флотом між ними, і першого дня мадяри підпалили кораблі запальними стрілами. Місце битви точно не відоме; подія прив'язана до Пожонського замку."
+  },
+  "sources": [
+    {
+      "title": "Pozsonyi csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Pozsonyi_csata",
+      "note": "Дати, сторони, наслідки, перебіг."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Schlacht_bei_Pressburg.jpg",
+      "author": "Peter Johann Nepomuk Geiger",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Schlacht_bei_Pressburg.jpg",
+      "caption": {
+        "uk": "Битва під Пожонню на зображенні",
+        "hu": "A pozsonyi csata ábrázolása"
+      }
+    }
+  ]
+}

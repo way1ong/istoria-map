@@ -1,0 +1,45 @@
+{
+  "id": "weiss-manfred-muvek",
+  "name": {
+    "uk": "Завод Weiss Manfréd у Чепелі",
+    "hu": "Weiss Manfréd Acél- és Fémművek, Csepel"
+  },
+  "type": "other",
+  "coords": [
+    19.0575,
+    47.42417
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Визначне велике підприємство першої половини XX століття в Чепелі, у Першу світову війну друге за розміром військове підприємство Австро-Угорщини; засновник-власник пештський фабрикант єврейського походження Manfréd Weiss.",
+    "hu": "A 20. század első felének kiemelkedő nagyüzeme Csepelen, az első világháború idején az Osztrák–Magyar Monarchia második legnagyobb hadiüzeme; alapító tulajdonosa a pesti születésű, zsidó származású Weiss Manfréd gyáros."
+  },
+  "description": {
+    "uk": "За статтею, сталеливарний і металообробний завод Weiss Manfréd був визначним угорським великим підприємством першої половини XX століття в Чепелі, а в роки Першої світової війни другим за розміром військовим підприємством Австро-Угорської монархії; його засновником і власником був народжений у Пешті фабрикант єврейського походження Manfréd Weiss."
+  },
+  "sources": [
+    {
+      "title": "Weiss Manfréd Acél- és Fémművek – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Weiss_Manfr%C3%A9d_Ac%C3%A9l-_%C3%A9s_F%C3%A9mm%C5%B1vek",
+      "note": "Статус, засновник, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Budapest_brama_Csepel_3.jpg",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Budapest_brama_Csepel_3.jpg",
+      "caption": {
+        "uk": "Брама заводу в Чепелі",
+        "hu": "A csepeli gyár kapuja"
+      }
+    }
+  ]
+}

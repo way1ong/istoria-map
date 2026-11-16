@@ -1,0 +1,43 @@
+{
+  "id": "suba-lyuk",
+  "name": {
+    "uk": "Печера Suba-lyuk: перший неандерталець Угорщини",
+    "hu": "Suba-lyuk"
+  },
+  "type": "archaeological",
+  "coords": [
+    20.5305,
+    47.9611
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "prehistory"
+  ],
+  "summary": {
+    "uk": "Археологічно значуща печера в національному парку Бюкк, відома тим, що в її відкладах знайдено кістки неандертальця, перші в Угорщині.",
+    "hu": "Régészeti szempontból jelentős barlang a Bükki Nemzeti Parkban: kitöltéséből neandervölgyi ember csontmaradványai kerültek elő, Magyarországon először."
+  },
+  "description": {
+    "uk": "За статтею, Suba-lyuk є археологічно значущою печерою; вона славна тим, що з її відкладів походять кісткові рештки неандертальця, і саме тут в Угорщині вперше знайшли кістки, що походять від неандертальської людини. Печера лежить на території національного парку Бюкк, належить до особливо охоронюваних печер країни і є улюбленим місцем прогулянок. Координати зі статті округлено."
+  },
+  "sources": [
+    {
+      "title": "Suba-lyuk – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Suba-lyuk",
+      "note": "Неандерталець, парк Бюкк, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Suba-lyuk.jpg",
+      "author": "Czina Tivadar.Szenti Tamás at hu.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Suba-lyuk.jpg",
+      "caption": {
+        "uk": "Печера Suba-lyuk",
+        "hu": "A Suba-lyuk"
+      }
+    }
+  ]
+}

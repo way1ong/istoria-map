@@ -1,0 +1,44 @@
+{
+  "id": "polgar",
+  "name": {
+    "uk": "Полґар (Polgár), поселення з доісторичних часів",
+    "hu": "Polgár"
+  },
+  "type": "settlement",
+  "coords": [
+    21.1242,
+    47.8663
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory",
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Місто в комітаті Гайду-Бігар, за багатими археологічними знахідками в музеях безперервно заселене від доісторичних часів; уперше згадане 1229 року у Варадському реєстрі. Точка: центр міста.",
+    "hu": "Hajdú-Bihar vármegyei város, a múzeumokban látható gazdag régészeti leletek szerint az őskortól folyamatosan lakott hely; neve először 1229-ben, a Váradi regestrumban fordul elő. A térképi pont a város központja."
+  },
+  "description": {
+    "uk": "За статтею, Полґар за свідченням досі розкопаних і виставлених у музеях багатих археологічних знахідок є дуже давнім поселенням, безперервно заселеним від доісторичних часів. Назва вперше трапляється письмово 1229 року у Варадському реєстрі, тоді тут жили служебні люди; під час монгольської навали територія цілком спустошилася, і в 1440–1450-х роках її знову заселили Гуняді. 1501 року архієпископ Tamás Bakócz подарував Полґар і Szentmargita разом з Ároktő егерському капітулу. Координати відповідають центру міста."
+  },
+  "sources": [
+    {
+      "title": "Polgár (település) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Polg%C3%A1r_%28telep%C3%BCl%C3%A9s%29",
+      "note": "Доісторичне заселення, 1229, координати міста."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/R.k._templom_%285380._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "author": "tilet",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:R.k._templom_%285380._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "caption": {
+        "uk": "Римо-католицька церква в Полґарі",
+        "hu": "A polgári római katolikus templom"
+      }
+    }
+  ]
+}

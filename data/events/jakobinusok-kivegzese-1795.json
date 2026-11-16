@@ -1,0 +1,48 @@
+{
+  "id": "jakobinusok-kivegzese-1795",
+  "title": {
+    "uk": "Страта угорських якобінців",
+    "hu": "A magyar jakobinusok kivégzése"
+  },
+  "date": {
+    "from": "1795-05-20",
+    "to": "1795-06-02",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [
+    "vermezo"
+  ],
+  "summary": {
+    "uk": "20 травня і 2 червня 1795 року на Generális-kaszáló в Буді стратили сімох провідників таємного якобінського руху Ignác Martinovics, організованого 1794 року під впливом Французької революції; близько півсотні членів заарештували, а луг відтоді зветься Vérmező.",
+    "hu": "1795. május 20-án és június 2-án Budán, a Generális-kaszálón kivégezték a Martinovics Ignác vezette, 1794-ben a francia forradalom hatására szerveződött titkos jakobinus mozgalom hét vezetőjét; közel félszáz tagot letartóztattak, a kaszálót azóta Vérmezőnek nevezik."
+  },
+  "description": {
+    "uk": "За статтею, угорський якобінський рух, або рух Мартиновича, постав 1794 року в Угорському королівстві як таємний рух під впливом політичних ідей Французької революції, польського реформаторського й незалежницького руху та абсолютистських прагнень Ференца I; організація без реальної суспільної підтримки під проводом Ignác Martinovics виявилася короткочасною, за кілька місяців близько півсотні членів заарештували, а сімох провідників стратили 20 травня і 2 червня 1795 року в Буді на Generális-kaszáló, який через це пізніше назвали Vérmező. Назву «якобінці» вони не обирали самі, її глузливо вживали сучасники."
+  },
+  "sources": [
+    {
+      "title": "Magyar jakobinus mozgalom – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Magyar_jakobinus_mozgalom",
+      "note": "Рух, арешти, дати страти."
+    },
+    {
+      "title": "Vérmező – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A9rmez%C5%91",
+      "note": "Місце страти."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/V%C3%A9rmez%C5%91_park.JPG",
+      "author": "Antissimo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A9rmez%C5%91_park.JPG",
+      "caption": {
+        "uk": "Vérmező на старому фото",
+        "hu": "A Vérmező régi fotón"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "gellert-szallo",
+  "name": {
+    "uk": "Готель Gellért і Тансреспубліка 1919 року",
+    "hu": "Gellért Szálló"
+  },
+  "type": "monument",
+  "coords": [
+    19.05221,
+    47.48387
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Сецесійний готель на площі Szent Gellért tér біля гори Ґеллерт, будований з 1911 року за проєктом Ármin Hegedűs, Artúr Sebestyén та Izidor Sterk і відкритий у вересні 1918 року; 1919 року після падіння Тансреспубліки став штаб-квартирою національного уряду. З грудня 2021 року зачинений на реставрацію.",
+    "hu": "Szecessziós szálloda a Szent Gellért téren, a Gellért-hegy mellett; 1911-től épült Hegedűs Ármin, Sebestyén Artúr és Sterk Izidor tervei alapján, 1918 szeptemberében nyílt meg; 1919-ben a Tanácsköztársaság bukása után a nemzeti kormány főhadiszállása lett. 2021 decembere óta felújítás miatt zárva."
+  },
+  "description": {
+    "uk": "За статтею, готель Gellért (раніше Szent Gellért Szálloda, Hotel Gellért, Danubius Hotel Gellért) стоїть на правому березі Дунаю; сецесійна пам'ятка з 1918 року стоїть на площі Szent Gellért tér біля гори Ґеллерт і з грудня 2021 року зачинена на реставрацію. Будівництво почалося 1911 року; названий за св. Ґеллертом, першим угорським єпископом-мучеником XI століття, якого під час повстання Вати скинули з сусідньої гори, 176-кімнатний готель проєктували Ármin Hegedűs, Artúr Sebestyén та Izidor Sterk; через Першу світову війну будівництво сповільнилося, і готель відкрився лише у вересні 1918 року. 1919 року після падіння Угорської Радянської Республіки готель став штаб-квартирою національного уряду; 1927 року його розширили на 60 кімнат і хвильовий басейн, Károly Gundel перебрав ресторан, під час облоги Будапешта будівля була тяжко пошкоджена, а комуністична влада прибрала з назви слово «Szent»."
+  },
+  "sources": [
+    {
+      "title": "Gellért Szálló – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Gell%C3%A9rt_Sz%C3%A1ll%C3%B3",
+      "note": "Датування, архітектори, 1919, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/HotelGellert.JPG",
+      "author": "WikiTamasB",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:HotelGellert.JPG",
+      "caption": {
+        "uk": "Готель Gellért",
+        "hu": "A Gellért Szálló"
+      }
+    }
+  ]
+}

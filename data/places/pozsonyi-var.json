@@ -1,0 +1,47 @@
+{
+  "id": "pozsonyi-var",
+  "name": {
+    "uk": "Пожонський замок (Pozsony, Братислава)",
+    "hu": "Pozsonyi vár"
+  },
+  "type": "castle",
+  "coords": [
+    17.1,
+    48.14222
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "arpad",
+    "late-medieval",
+    "ottoman",
+    "habsburg-18",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Замковий комплекс на відокремленій горі Малих Карпат над лівим берегом Дунаю у старому місті Братислави; замкова гора з 902 року безперервно під угорською владою, 907 року вперше згадана у Фульдських анналах; 1402 року тут Сигізмунд провів перші пожонські державні збори. Прикордонна пам'ятка.",
+    "hu": "Várkomplexum a Kis-Kárpátok elszigetelt hegyén, a Duna bal partján, Pozsony történelmi városrészében; a várhegy 902-től folyamatosan magyar uralom alatt volt, 907-ben a Fuldai évkönyv említi először; 1402-ben Zsigmond itt tartotta az első pozsonyi országgyűlést. Határon túli emlék."
+  },
+  "description": {
+    "uk": "За статтею, Пожонський замок (словацькою Bratislavský hrad) є замковим комплексом з великим історичним минулим на відокремленій горі Малих Карпат на лівому березі Дунаю в історичній частині Братислави. Замок стояв у Пожоні ще до приходу мадярів як твердиня Браслава, каролінзького васального князя Паннонії; з 902 року замкова гора безперервно перебувала під угорською владою і рано здобула прикордонно-оборонну роль, а 907 року місце нинішнього замку вперше згадують Фульдські аннали. 1042 року чеський князь Бржетислав I ненадовго взяв замок, звідки походить нинішня назва міста; 1052 року його облягало військо Генріха III, і воїн Zotmund продірявив під водою ворожі кораблі; монголи 1241 року не змогли взяти замок; 1402 року король Сигізмунд провів тут перші пожонські державні збори, а 1420 року через гуситську загрозу почалося велике будівництво. Місто лежить за межами нинішньої Угорщини й додане як прикордонний об'єкт."
+  },
+  "sources": [
+    {
+      "title": "Pozsonyi vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Pozsonyi_v%C3%A1r",
+      "note": "Історія замку, 902, 907, 1402, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Bratislava%2C_Hrad%2C_Slovensko.jpg",
+      "author": "LMih",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Bratislava%2C_Hrad%2C_Slovensko.jpg",
+      "caption": {
+        "uk": "Пожонський замок",
+        "hu": "A pozsonyi vár"
+      }
+    }
+  ]
+}

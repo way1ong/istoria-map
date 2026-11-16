@@ -1,0 +1,42 @@
+{
+  "id": "elso-becsi-dontes-1938",
+  "title": {
+    "uk": "Переговори в Комаромі та Перший віденський арбітраж",
+    "hu": "A komáromi tárgyalások és az első bécsi döntés"
+  },
+  "date": {
+    "from": "1938-10-09",
+    "precision": "exact"
+  },
+  "period": "interwar-ww2",
+  "places": [
+    "komaromi-erodrendszer"
+  ],
+  "summary": {
+    "uk": "Увечері 9 жовтня 1938 року в Комаромі почалися двосторонні переговори: чехословацьку делегацію, що складалася лише зі словаків, очолював Jozef Tiso, угорську міністр закордонних справ Kálmán Kánya; місцеві угорці зустріли делегацію квітами, на вежах церков вивісили угорські прапори, переговори велися у будинку комітату під охороною чехословацької армії.",
+    "hu": "1938. október 9-én este Komáromban megkezdődtek a kétoldalú tárgyalások: a kizárólag szlovákokból álló csehszlovák delegációt Jozef Tiso, a magyart Kánya Kálmán külügyminiszter vezette; a helyi magyarok virágesővel fogadták a küldöttséget, a templomtornyokra magyar zászlókat tűztek, a tárgyalások a csehszlovák hadsereg által őrzött megyeházán folytak."
+  },
+  "description": {
+    "uk": "За статтею, угорська дипломатія з дотриманням правил почала готувати переговори на виконання протоколу Мюнхенської угоди; двосторонні переговори почалися 9 жовтня 1938 року о сьомій вечора в Комаромі. Чехословацьку делегацію, що складалася виключно зі словаків, очолював Jozef Tiso, за два дні до того призначений прем'єром автономної Словаччини, угорську міністр закордонних справ Kálmán Kánya; угорська делегація прибула кораблем «Zsófia», який був і її житлом. Комаром виявився для словацької делегації дуже невигідним: місцеве угорське населення було за повернення, угорську делегацію зустрічали квітами, на вежах церков вивісили угорські прапори, а до переговорів долинав забороненого співу угорського гімну на вулиці; переговори велися у будинку комітату під охороною чехословацької армії французькою мовою. Фортечна система Комарома описана в окремій картці."
+  },
+  "sources": [
+    {
+      "title": "Első bécsi döntés – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Els%C5%91_b%C3%A9csi_d%C3%B6nt%C3%A9s",
+      "note": "Переговори в Комаромі 9 жовтня 1938."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/First_Vienna_Award_Negotiations.jpg",
+      "author": "anonymous (ed. Zdeněk Tobolka)",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:First_Vienna_Award_Negotiations.jpg",
+      "caption": {
+        "uk": "Переговори перед Першим віденським арбітражем",
+        "hu": "Az első bécsi döntés tárgyalásai"
+      }
+    }
+  ]
+}

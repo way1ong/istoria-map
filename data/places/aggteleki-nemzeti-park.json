@@ -1,0 +1,31 @@
+{
+  "id": "aggteleki-nemzeti-park",
+  "name": {
+    "uk": "Національний парк Аґґтелек",
+    "hu": "Aggteleki Nemzeti Park"
+  },
+  "type": "other",
+  "coords": [
+    20.48333,
+    48.46667
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "prehistory",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Четвертий національний парк Угорщини, створений 1985 року з Аґґтелецького ландшафтного заказника; перший у країні парк, заснований саме для захисту геологічних цінностей, поверхневого карсту й славетних сталактитових печер.",
+    "hu": "Magyarország negyedikként alapított nemzeti parkja, 1985-ben az Aggteleki Tájvédelmi Körzetből hozták létre; az első olyan nemzeti park az országban, amely kimondottan a geológiai értékek, a felszíni karsztjelenségek és a híres cseppkőbarlangok védelmére alakult."
+  },
+  "description": {
+    "uk": "За статтею, Національний парк Аґґтелек (ANP) є четвертим заснованим національним парком Угорщини, створеним 1985 року з Аґґтелецького ландшафтного заказника; це був перший у країні національний парк, заснований саме для захисту геологічних цінностей, поверхневих карстових явищ краю і славетних сталактитових печер, хоча на його території живе й багато охоронюваних видів рослин і тварин. Печера Baradla описана в окремій картці; координати зі статті приблизні."
+  },
+  "sources": [
+    {
+      "title": "Aggteleki Nemzeti Park – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Aggteleki_Nemzeti_Park",
+      "note": "1985, мета, координати."
+    }
+  ]
+}

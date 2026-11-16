@@ -1,0 +1,29 @@
+{
+  "id": "rozgonyi-csata-1312",
+  "title": {
+    "uk": "Битва при Розгоні",
+    "hu": "A rozgonyi csata"
+  },
+  "date": {
+    "from": "1312-06-15",
+    "precision": "exact"
+  },
+  "period": "arpad",
+  "places": [
+    "rozgony-csatater"
+  ],
+  "summary": {
+    "uk": "15 червня 1312 року біля Розгоня поблизу Кошиць Карл Роберт розбив військо синів Amadé Aba; найзначніша битва його війни за об'єднання країни.",
+    "hu": "1312. június 15-én a Kassához közeli Rozgony mellett Károly Róbert legyőzte Aba Amadé fiainak seregét; országegyesítő háborújának legjelentősebb csatája."
+  },
+  "description": {
+    "uk": "За статтею, битва при Розгоні була найзначнішою битвою війни Карла Роберта за об'єднання країни, у якій король 15 червня 1312 року біля Розгоня поблизу Кошиць розбив військо синів Amadé Aba."
+  },
+  "sources": [
+    {
+      "title": "Rozgonyi csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Rozgonyi_csata",
+      "note": "Дата, сторони."
+    }
+  ]
+}

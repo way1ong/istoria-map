@@ -1,0 +1,42 @@
+{
+  "id": "vilagosi-fegyverletetel-1849",
+  "title": {
+    "uk": "Складання зброї під Вілаґошем",
+    "hu": "A világosi fegyverletétel"
+  },
+  "date": {
+    "from": "1849-08-13",
+    "precision": "exact"
+  },
+  "period": "long-19",
+  "places": [
+    "vilagos"
+  ],
+  "summary": {
+    "uk": "13 серпня 1849 року на полі біля Szőlős під Вілаґошем гонведська армія Artúr Görgei склала зброю перед інвазійним військом царя Миколи I, що означало кінець визвольної війни; далі настала кривава відплата під терором Haynau.",
+    "hu": "1849. augusztus 13-án a világosi szőlősi mezőn Görgei Artúr honvédserege letette a fegyvert I. Miklós cár inváziós hadserege előtt, ami a szabadságharc végét jelentette; ezután Haynau rémuralma alatt véres megtorlás következett."
+  },
+  "description": {
+    "uk": "За статтею, складання зброї під Вілаґошем означало кінець революції та визвольної війни 1848–1849 років, після чого з австрійського боку настала кривава відплата під терором генерала Haynau; на полі біля Szőlős під руїнами Вілаґошського замку 13 серпня 1849 року угорська гонведська армія Artúr Görgei склала зброю перед інвазійним військом російського царя Миколи I."
+  },
+  "sources": [
+    {
+      "title": "Világosi fegyverletétel – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Vil%C3%A1gosi_fegyverlet%C3%A9tel",
+      "note": "Дата, місце, наслідки."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Vil%C3%A1gosi_fegyverlet%C3%A9tel.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Vil%C3%A1gosi_fegyverlet%C3%A9tel.jpg",
+      "caption": {
+        "uk": "Складання зброї під Вілаґошем",
+        "hu": "A világosi fegyverletétel"
+      }
+    }
+  ]
+}

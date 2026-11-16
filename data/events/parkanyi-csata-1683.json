@@ -1,0 +1,36 @@
+{
+  "id": "parkanyi-csata-1683",
+  "title": {
+    "uk": "Битва під Парканем",
+    "hu": "A párkányi csata"
+  },
+  "date": {
+    "from": "1683-10-07",
+    "to": "1683-10-09",
+    "precision": "exact"
+  },
+  "period": "ottoman",
+  "places": [
+    "parkanyi-csatater",
+    "esztergomi-var"
+  ],
+  "summary": {
+    "uk": "Битва 7–9 жовтня 1683 року під Парканем навпроти Естергома, через місяць після зняття облоги Відня.",
+    "hu": "Az 1683. október 7–9. között Párkánynál, Esztergommal szemben vívott csata, egy hónappal Bécs felmentése után."
+  },
+  "description": {
+    "uk": "За статтею, битвою під Парканем зветься зіткнення, що відбулося 7–9 жовтня 1683 року біля Парканя. Місто лежить навпроти Естергома за Дунаєм; за оглядовою статтею про історію Угорщини, 1683 рік став переломом війни за вигнання турків після невдалої облоги Відня."
+  },
+  "sources": [
+    {
+      "title": "Párkányi csata – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/P%C3%A1rk%C3%A1nyi_csata",
+      "note": "Дати."
+    },
+    {
+      "title": "Magyar történelem – Wikipédia (hu), розділ «A török kiűzése és Habsburg abszolutizmus»",
+      "url": "https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_t%C3%B6rt%C3%A9nete",
+      "note": "Контекст 1683 року."
+    }
+  ]
+}

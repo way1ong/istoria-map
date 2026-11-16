@@ -1,0 +1,44 @@
+{
+  "id": "veszto-magor",
+  "name": {
+    "uk": "Вестьо-Маґор (Vésztő-Mágor): неолітичний курган і монастир Csolt",
+    "hu": "Vésztő-Mágor, Csolt-monostor"
+  },
+  "type": "archaeological",
+  "coords": [
+    21.20897,
+    46.93954
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "prehistory",
+    "arpad"
+  ],
+  "summary": {
+    "uk": "Охоронна територія національного парку Кьорьош-Марош за 6 км на захід від Vésztő в обіймах старого русла Sebes-Körös; розкритий і перетворений на музей новокам'яний курган з рідкісними знахідками; під подвійним захистом з 1978 року.",
+    "hu": "A Körös–Maros Nemzeti Park védett területe Vésztőtől hat kilométerre nyugatra, a Sebes-Körös holtága által közrefogva; a felnyitott és múzeummá alakított, ritka leleteket rejtő újkőkori kunhalom 1978 óta kettős védelem alatt áll."
+  },
+  "description": {
+    "uk": "За статтею, Mágor-puszta, відоміша як Vésztő-Mágor, є охоронною територією національного парку Кьорьош-Марош за шість кілометрів на захід від Vésztő в напрямку Szeghalom на західному краю Kis-Sárrét, в обіймах старого русла Sebes-Körös; площа 947 га, відвідувати можна без супроводу. Окрім живої природи, принадою є розкритий і перетворений на музей новокам'яний курган з рідкісними в міжнародному масштабі знахідками; пагорб Mágor з 13 га довкілля 1978 року взято під подвійний, археологічний і природоохоронний, захист. Фото на статті показує руїни монастиря Csolt на кургані."
+  },
+  "sources": [
+    {
+      "title": "Mágor-puszta – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/M%C3%A1gor-puszta",
+      "note": "Курган, 1978, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/V%C3%A9szt%C5%91_-_Csolt-monostor.jpg",
+      "author": "невідомий автор",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A9szt%C5%91_-_Csolt-monostor.jpg",
+      "caption": {
+        "uk": "Руїни монастиря Csolt на кургані Mágor",
+        "hu": "A Csolt-monostor romjai a Mágor-dombon"
+      }
+    }
+  ]
+}

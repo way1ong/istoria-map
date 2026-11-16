@@ -1,0 +1,42 @@
+{
+  "id": "tihanyi-alapitolevel-1055",
+  "title": {
+    "uk": "Тиганська фундаційна грамота",
+    "hu": "A tihanyi alapítólevél"
+  },
+  "date": {
+    "from": "1055",
+    "precision": "exact"
+  },
+  "period": "arpad",
+  "places": [
+    "tihanyi-apatsag"
+  ],
+  "summary": {
+    "uk": "1055 року король Андраш I наказав описати маєтки Тиганського монастиря; грамота є однією з найважливіших пам'яток угорської мови, записані угорські слова вкраплені в латинський текст.",
+    "hu": "I. András király 1055-ben összeíratta a tihanyi monostor birtokát; az alapítólevél az egyik legfontosabb magyar nyelvű szórványemlék, a magyar szavak latin szövegbe ágyazódnak."
+  },
+  "description": {
+    "uk": "За статтею, Тиганська фундаційна грамота, у якій король Андраш I 1055 року наказав описати маєток монастиря, є однією з найважливіших угорськомовних розсіяних мовних пам'яток: записані угорські слова вкраплені в латинський текст. Абатство описане в окремій картці."
+  },
+  "sources": [
+    {
+      "title": "Tihanyi alapítólevél – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tihanyi_alap%C3%ADt%C3%B3lev%C3%A9l",
+      "note": "1055, значення."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Tihanyi_ap%C3%A1ts%C3%A1gi_templom.jpg",
+      "author": "User:Mesüge",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Tihanyi_ap%C3%A1ts%C3%A1gi_templom.jpg",
+      "caption": {
+        "uk": "Тиганська абатська церква",
+        "hu": "A tihanyi apátsági templom"
+      }
+    }
+  ]
+}

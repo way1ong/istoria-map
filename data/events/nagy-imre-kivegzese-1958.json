@@ -1,0 +1,47 @@
+{
+  "id": "nagy-imre-kivegzese-1958",
+  "title": {
+    "uk": "Страта Імре Надя і таємне поховання в парцелі 301",
+    "hu": "Nagy Imre kivégzése és titkos eltemetése"
+  },
+  "date": {
+    "from": "1958-06-16",
+    "precision": "exact"
+  },
+  "period": "modern",
+  "places": [
+    "uj-koztemeto-301"
+  ],
+  "summary": {
+    "uk": "Страчених у справі Імре Надя в перші роки доби Кадара таємно поховали в парцелах 300 і 301 Нового цвинтаря; 16 червня 1988 року, у 30-ту річницю страти, у Парижі відкрили символічну могилу, а в Будапешті поліція силою розігнала поминання; 29 березня 1989 року почалася ексгумація Надя, Gimes, Losonczy, Maléter і Szilágyi, яких у цвинтарній книзі записали під фальшивим іменем «Piroska Borbíró».",
+    "hu": "A Nagy Imre-per kivégzettjeit a Kádár-korszak első éveiben titokban temették el az Új köztemető 300-as és 301-es parcellájában; 1988. június 16-án, a kivégzés 30. évfordulóján Párizsban jelképes síremléket avattak, Budapesten a rendőrség feloszlatta a megemlékezést; 1989. március 29-én megkezdődött Nagy Imre, Gimes, Losonczy, Maléter és Szilágyi exhumálása, akiket a temetői anyakönyvben „Borbíró Piroska” hamis néven jegyeztek be."
+  },
+  "description": {
+    "uk": "За статтею про цвинтар, жертв розправ після революції 1956 року в перші роки доби Кадара таємно й з наругою над гідністю ховали в парцелах 300 і 301 у найдальшому куті найбільшого цвинтаря Будапешта. За статтею про Імре Надя, 5 червня 1988 року Комітет історичної справедливості, заснований колишніми засудженими 1956 року, оприлюднив заклик з вимогою гідного поховання й реабілітації страчених у справі Надя; 16 червня 1988 року, у 30-ту річницю страти, у Парижі на цвинтарі Пер-Лашез у парцелі 44 відкрили символічну могилу Надя, Géza Losonczy, Pál Maléter, József Szilágyi, Miklós Gimes і всіх страчених революції, а в Будапешті поминання в парцелі 301 і в Белвароші поліція силою розігнала. 29 березня 1989 року почалася ексгумація безіменно похованих тіл, і дослідники могил виявили, що влада Кадара записала в цвинтарну книгу фальшиві дані про поховання жінки «Piroska Borbíró». Дата події відповідає річниці страти 1958 року; перепоховання 16 червня 1989 року описано окремо."
+  },
+  "sources": [
+    {
+      "title": "Nagy Imre (miniszterelnök) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagy_Imre_%28minisztereln%C3%B6k%29",
+      "note": "Заклик 1988, ексгумація 1989."
+    },
+    {
+      "title": "Új köztemető – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/%C3%9Aj_k%C3%B6ztemet%C5%91",
+      "note": "Парцели 300 і 301."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Imre_Nagy_portrait.jpg",
+      "author": "ismeretlen szerző(Nagy Imre Emlékház tulajdona)",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Imre_Nagy_portrait.jpg",
+      "caption": {
+        "uk": "Імре Надь",
+        "hu": "Nagy Imre"
+      }
+    }
+  ]
+}

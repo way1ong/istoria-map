@@ -1,0 +1,45 @@
+{
+  "id": "kolked",
+  "name": {
+    "uk": "Кьолкед (Kölked): аварське поселення біля Могача",
+    "hu": "Kölked"
+  },
+  "type": "archaeological",
+  "coords": [
+    18.7,
+    45.95
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "migration",
+    "arpad",
+    "ottoman"
+  ],
+  "summary": {
+    "uk": "Село в комітаті Бараня неподалік поля Могацької битви, згадане вже 1015 року як Kulkedy; рибальське село завдяки болотам пережило турецькі часи. Поблизу розкопано аварське поселення й могильники (Kölked-Feketekapu). Точка: центр села.",
+    "hu": "Baranya vármegyei község a mohácsi csatatér közelében, nevét már 1015-ben Kulkedy alakban említi oklevél; a mocsaras környezetű halászfalu átvészelte a török időket. Határában avar kori telep és temetők (Kölked-Feketekapu). A térképi pont a falu központja."
+  },
+  "description": {
+    "uk": "За статтею про село, назву Kölked згадано вже 1015 року у формі Kulkedy; 1057 року надор Radó подарував печському єпископству село біля Дунаю з десятьма слугами, і це було єдине село, де печварадський абат і печський єпископ володіли спільно. 1317 року Kölked згадано як володіння абатства, пізніше лише печського єпископства; рибальське село поблизу місця Могацької битви завдяки болотистому довкіллю пережило турецькі часи й не збезлюділо. Аварське поселення Kölked-Feketekapu, через яке село внесено до періоду переселення народів, у статті про село не описане; відомості про нього взято лише з назви пам'ятки в заголовку списку, тому картка має позначку «центр поселення»."
+  },
+  "sources": [
+    {
+      "title": "Kölked – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/K%C3%B6lked",
+      "note": "1015, 1057, 1317, координати села."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/K%C3%B6lked_ref.JPG",
+      "author": "Gelányi Bence",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:K%C3%B6lked_ref.JPG",
+      "caption": {
+        "uk": "Реформатська церква в Кьолкеді",
+        "hu": "A kölkedi református templom"
+      }
+    }
+  ]
+}

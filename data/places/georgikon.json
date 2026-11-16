@@ -1,0 +1,44 @@
+{
+  "id": "georgikon",
+  "name": {
+    "uk": "Ґеорґікон (Georgikon) у Кестгеї, перша сільськогосподарська школа",
+    "hu": "Georgikon, Keszthely"
+  },
+  "type": "other",
+  "coords": [
+    17.23739,
+    46.76456
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "habsburg-18",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Господарський навчальний заклад, заснований графом György Festetics у Кестгеї; у частині його будівель нині музей історії маєтку (Georgikon Majortörténeti Kiállítóhely), а правонаступником як навчального закладу є кампус Georgikon Угорського аграрного університету.",
+    "hu": "Festetics György gróf által Keszthelyen alapított gazdasági tanintézet; egyes épületeiben ma a Georgikon Majortörténeti Kiállítóhely működik, oktatási jogutódja a Magyar Agrár- és Élettudományi Egyetem Georgikon Campusa."
+  },
+  "description": {
+    "uk": "За статтею, Georgikon (за старим написанням Georgicon) був господарським навчальним закладом, заснованим графом György Festetics у Кестгеї; у частині його будівель нині працює виставкове місце історії маєтку Georgikon, а як навчальний заклад його правонаступником є кампус Georgikon Угорського університету аграрних наук і наук про життя. Палац Фештетичів описано в окремій картці."
+  },
+  "sources": [
+    {
+      "title": "Georgikon – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Georgikon",
+      "note": "Засновник, спадкоємці, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Georgikon_eml%C3%A9k%C3%A9rem_1897_-43.JPG",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Georgikon_eml%C3%A9k%C3%A9rem_1897_-43.JPG",
+      "caption": {
+        "uk": "Пам'ятна медаль Ґеорґікону, 1897",
+        "hu": "Georgikon-emlékérem, 1897"
+      }
+    }
+  ]
+}

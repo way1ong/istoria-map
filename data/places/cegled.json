@@ -1,0 +1,32 @@
+{
+  "id": "cegled",
+  "name": {
+    "uk": "Цеґлед (Cegléd), «ворота Альфельду»",
+    "hu": "Cegléd"
+  },
+  "type": "settlement",
+  "coords": [
+    19.79775,
+    47.17164
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "late-medieval",
+    "ottoman",
+    "long-19"
+  ],
+  "summary": {
+    "uk": "Четверте за людністю місто комітату Пешт за 74 км на південний схід від столиці, у середньовіччі зупинка на важливому торговельному шляху з Буди до Трансільванії; «ворота Альфельду». Точка: центр міста.",
+    "hu": "Pest vármegye negyedik legnépesebb települése, a fővárostól 74 kilométerre délkeletre; a középkorban a Budát Erdéllyel összekötő kereskedelmi út egyik megállóhelye; az „Alföld kapuja”. A térképi pont a város központja."
+  },
+  "description": {
+    "uk": "За статтею, Цеґлед є четвертим за людністю поселенням комітату Пешт після Érd, Dunakeszi і Szigetszentmiklós і центром Цеґледського округу, «воротами Альфельду»; місто лежить у межиріччі Дунаю й Тиси за 74 км на південний схід від столиці і в середньовіччі було однією з зупинок важливого торговельного шляху, що з'єднував Буду з Трансільванією. Координати відповідають центру міста."
+  },
+  "sources": [
+    {
+      "title": "Cegléd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Cegl%C3%A9d",
+      "note": "Розташування, середньовічний шлях, координати."
+    }
+  ]
+}

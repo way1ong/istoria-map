@@ -1,0 +1,43 @@
+{
+  "id": "vasvari-beke-1664",
+  "title": {
+    "uk": "Вашварський мир",
+    "hu": "A vasvári béke"
+  },
+  "date": {
+    "from": "1664-08-10",
+    "precision": "exact"
+  },
+  "period": "ottoman",
+  "places": [
+    "vasvar",
+    "szentgotthard-csatater"
+  ],
+  "summary": {
+    "uk": "10 серпня 1664 року у Вашварі на 20 років уклали мир, що завершив турецьку війну 1663–1664 років і зберіг status quo після перемоги під Сентґоттгардом; станова опозиція й більшість угорських істориків назвали його ганебним, бо попри виграну битву турки зберегли завоювання.",
+    "hu": "1664. augusztus 10-én Vasváron 20 évre békét kötöttek, amely lezárta az 1663–64-es török háborút, és a szentgotthárdi győzelem utáni status quót tartotta fenn; a rendi ellenzék és a magyar történetírók zöme szégyenletesnek nevezte, mert a nyert csata ellenére a török megtarthatta hódításait."
+  },
+  "description": {
+    "uk": "За статтею, Вашварський мир уклали у Вашварі комітату Ваш 10 серпня 1664 року на 20 років; він завершив війну проти турків 1663–1664 років і передбачав збереження на 20 років status quo, що склався після битви під Сентґоттгардом, бо обидві сторони вважали важливішим перекинути сили на інші фронти. Значна частина тогочасної угорської громадськості, насамперед пов'язана з французами станова опозиція, і більшість угорських істориків називали мир ганебним і принизливим, бо попри виграну битву турки зберегли завоювання."
+  },
+  "sources": [
+    {
+      "title": "Vasvári béke – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Vasv%C3%A1ri_b%C3%A9ke",
+      "note": "Дата, умови, оцінка."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Vasv%C3%A1ri_b%C3%A9ke_irata_%28t%C3%B6r%C3%B6k_nyelv%C5%B1%29.jpg",
+      "author": "невідомий автор",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Vasv%C3%A1ri_b%C3%A9ke_irata_%28t%C3%B6r%C3%B6k_nyelv%C5%B1%29.jpg",
+      "caption": {
+        "uk": "Турецький текст Вашварського миру",
+        "hu": "A vasvári béke török irata"
+      }
+    }
+  ]
+}

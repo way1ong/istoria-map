@@ -1,0 +1,29 @@
+{
+  "id": "mosonmagyarovari-sortuz-1956",
+  "title": {
+    "uk": "Розстріл у Мошонмадяроварі",
+    "hu": "A mosonmagyaróvári sortűz"
+  },
+  "date": {
+    "from": "1956-10-26",
+    "precision": "exact"
+  },
+  "period": "modern",
+  "places": [
+    "mosonmagyarovar-laktanya"
+  ],
+  "summary": {
+    "uk": "26 жовтня 1956 року біля казарми прикордонників у Мошонмадяроварі натовп, що хотів зайняти казарму, зустріли смертельним залпом; кількість жертв невідома, фото звідси облетіли світ, з Європи надійшла матеріальна допомога, але військової і політичної не було.",
+    "hu": "1956. október 26-án Mosonmagyaróváron a határőrlaktanyánál gyilkos sortűz fogadta a laktanyát elfoglalni kívánó tömeget; az áldozatok száma ismeretlen, az itt készült fotók bejárták a világot, Európából anyagi támogatás érkezett, de a katonai és politikai segítség elmaradt."
+  },
+  "description": {
+    "uk": "За статтею, у Мошонмадяроварі 26 жовтня 1956 року біля казарми прикордонників натовп революціонерів, що хотів зайняти казарму, зустрів смертоносний залп; досі невідомо, скільки жертв мав цей град куль. Звістка про розстріл і зроблені тут фото облетіли світ; з країн Європи до Угорщини надійшла матеріальна підтримка, але військової і політичної допомоги, якої тут чекали найбільше, не було."
+  },
+  "sources": [
+    {
+      "title": "Mosonmagyaróvári sortűz – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Mosonmagyar%C3%B3v%C3%A1ri_sort%C5%B1z",
+      "note": "Дата, обставини."
+    }
+  ]
+}

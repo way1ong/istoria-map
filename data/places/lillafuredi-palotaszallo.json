@@ -1,0 +1,43 @@
+{
+  "id": "lillafuredi-palotaszallo",
+  "name": {
+    "uk": "Палац-готель у Ліллафюреді (Lillafüred)",
+    "hu": "Lillafüredi Palotaszálló"
+  },
+  "type": "monument",
+  "coords": [
+    20.62321,
+    48.10425
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2"
+  ],
+  "summary": {
+    "uk": "Готель у стилі доби Матяша над Hámor у Бюкку, спроєктований архітектором Kálmán Lux до 1925 року; плани показано прем'єру István Bethlen у квітні 1926 року; U-подібна будівля з фронтом близько 180 м на найвищій точці Hámor.",
+    "hu": "Mátyás-korabeli stílusú szálloda a bükki Hámor fölött, terveit Lux Kálmán építész 1925-re készítette el; a terveket 1926 áprilisában mutatták be Bethlen István miniszterelnöknek; U alakú épület mintegy 180 méteres fronttal Hámor legmagasabb pontján."
+  },
+  "description": {
+    "uk": "За статтею, навколо задуму палацу-готелю досі багато непевності: з нотаток лісового інженера Ferenc Révay відомо, що 1923 року його перевели до Diósgyőr для впорядкування території в Hámor, і тоді дедалі частіше заходила мова про розвиток Ліллафюреда та ідею готелю; певно, що плани до 1925 року вже виконав архітектор і професор політехніки Kálmán Lux, тож проєктування почалося 1924 року без конкурсу. У квітні 1926 року Lux показав плани прем'єр-міністру István Bethlen у готелі Lilla в Ліллафюреді, а у вересні 1926 року повну документацію побачили міністерство і преса: U-подібний готель у стилі доби Матяша мав постати на найвищій точці Hámor з фронтом близько 180 м."
+  },
+  "sources": [
+    {
+      "title": "Lillafüredi Palotaszálló – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Lillaf%C3%BCredi_Palotasz%C3%A1ll%C3%B3",
+      "note": "Lux, 1925–1926, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Palotasz%C3%A1ll%C3%B3_%2812378._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_8.jpg",
+      "author": "apóci",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:Palotasz%C3%A1ll%C3%B3_%2812378._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_8.jpg",
+      "caption": {
+        "uk": "Палац-готель у Ліллафюреді",
+        "hu": "A lillafüredi Palotaszálló"
+      }
+    }
+  ]
+}

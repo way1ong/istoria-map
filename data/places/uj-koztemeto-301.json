@@ -1,0 +1,43 @@
+{
+  "id": "uj-koztemeto-301",
+  "name": {
+    "uk": "Новий цвинтар, парцели 300 і 301",
+    "hu": "Új köztemető, 300-as és 301-es parcella"
+  },
+  "type": "monument",
+  "coords": [
+    19.18917,
+    47.47194
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "modern"
+  ],
+  "summary": {
+    "uk": "Найбільший цвинтар Будапешта (207 га); у найдальшому його куті в парцелах 300 і 301 у перші роки доби Кадара таємно поховали жертв розправ після 1956 року, серед них Імре Надя з товаришами; під час зміни ладу парцели впорядкували, останки ексгумували, нині тут Національний парк скорботи з пам'ятником György Jovánovics заввишки рівно 1956 мм.",
+    "hu": "Budapest legnagyobb temetője (207 hektár); legtávolabbi pontján, a 300-as és 301-es parcellában temették el titokban a Kádár-korszak első éveiben az 1956 utáni megtorlás áldozatait, köztük Nagy Imrét és mártírtársait; a rendszerváltáskor a parcellákat rendezték, a maradványokat exhumálták, ma Nemzeti Gyászpark Jovánovics György pontosan 1956 mm magas emlékművével."
+  },
+  "description": {
+    "uk": "За статтею, Новий цвинтар (Rákoskeresztúri új köztemető) є найбільшим цвинтарем Будапешта площею 207 га з 301 парцелою. Частина, про яку йдеться, постала 1892 року; жертв розправ після революції 1956 року в перші роки доби Кадара таємно й з наругою над гідністю ховали в парцелах 300 і 301, останніх за номером, у найдальшому куті цвинтаря на перетині північного і східного мурів. Під час зміни ладу ці парцели впорядкували, останки ексгумували, і створений тут Національний парк скорботи є одним із найважливіших історичних меморіалів Угорщини: у парцелі 301 над могилами страчених стоять однакові надгробні стовпи, у парцелі 300 встановлено мартирологічний пам'ятник György Jovánovics, довкола якого могили прем'єр-міністра Імре Надя та його товаришів-мучеників (Miklós Gimes, Géza Losonczy, Pál Maléter, József Szilágyi); чорна гранітна призма має висоту рівно 1956 мм."
+  },
+  "sources": [
+    {
+      "title": "Új köztemető – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/%C3%9Aj_k%C3%B6ztemet%C5%91",
+      "note": "Парцели, Національний парк скорботи, координати."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/%C3%9Aj_k%C3%B6ztemet%C5%91_bej%C3%A1rat.JPG",
+      "author": "VinceB",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:%C3%9Aj_k%C3%B6ztemet%C5%91_bej%C3%A1rat.JPG",
+      "caption": {
+        "uk": "Вхід до Нового цвинтаря",
+        "hu": "Az Új köztemető bejárata"
+      }
+    }
+  ]
+}
