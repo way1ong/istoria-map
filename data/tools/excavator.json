@@ -1,29 +1,46 @@
 {
   "id": "excavator",
   "category": "dig",
-  "order": 6,
+  "order": 5,
   "name": {
-    "uk": "Екскаватор на розкопках",
-    "hu": "Kotrógép az ásatáson"
+    "uk": "Екскаватор і зняття гумусу",
+    "hu": "Kotrógép és gépi humuszolás"
   },
   "users": [
+    "detectorist",
     "archaeologist"
   ],
   "summary": {
-    "uk": "На рятувальних розкопках техніка швидко знімає сучасний верхній шар перед ручною роботою; у Британії екскаватори жартома звуть «великими жовтими кельмами».",
-    "hu": "A mentőásatásokon a gépek gyorsan eltávolítják a modern fedőréteget a kézi munka előtt; Nagy-Britanniában a kotrógépeket tréfásan „nagy sárga kanálnak” hívják."
+    "uk": "На розкопках машина знімає верхній шар до рівня, де проступають плями археологічних об'єктів; метал із цього шару, якщо його заздалегідь не перевірити металошукачем, просто відгортають.",
+    "hu": "Az ásatásokon gép távolítja el a humuszt addig a szintig, ahol a régészeti objektumok foltjai kirajzolódnak; az ebben a rétegben lévő fémtárgyakat, ha előtte nem nézik át fémkeresővel, egyszerűen eltolják."
   },
   "description": {
-    "uk": "За статтею про розкопки, машини від малих екскаваторів до важкої землерийної техніки використовують переважно на рятувальних розкопках перед будівництвом, коли тиснуть гроші й час. Це найшвидший спосіб прибрати ґрунт і сміття й підготувати поверхню до ручної роботи, але треба не пошкодити археологічні шари і не загубити точне місце знахідок.\n\nМашини знімають насамперед сучасний насип і переміщують відвали; це буденна практика, але й предмет суперечок, бо знижує ретельність фіксації. Одне з перших застосувань землерийної техніки, за статтею, сталося 1967 року в Даррінгтон-Воллз (Англія); у британській археології екскаватори звуть «big yellow trowels»."
+    "uk": "За угорським посібником з археології (2011), основу розкопок становлять плями археологічних об'єктів, що проступають на поверхні після зняття гумусу. Поки ручна робота наздожене машину, погода може стерти ці сліди, навіть якщо край плями одразу позначили лопатою. Тому плями швидко наносять на мапу геоінформаційним GPS, а разом з ними межу зачищеної ділянки, місця знахідок, що трапилися під час зняття гумусу, і контрольні точки поза плямами, щоб було видно, що й порожні ділянки переглянуто.\n\nRácz Tibor Ákos (2024) нагадує, що металеві предмети з верхнього шару вже лежать у порушеному положенні, поза археологічним контекстом, і на розкопках, що починаються з механічного зняття гумусу, їх за нинішньою практикою просто відгортають бульдозером. Тому пошук металошукачем перед цим він вважає запобіжним заходом; заперечення проти нього були б слушні лише тоді, якби машинні земляні роботи на кожних розкопках вели шарами по 10 см з безперервним пошуком металошукачем. Крім того, сучасне землеробство, тобто добрива й різні способи оранки, постійно руйнує ці знахідки."
   },
   "sources": [
     {
-      "title": "Archaeological excavation – Wikipedia (en)",
-      "url": "https://en.wikipedia.org/wiki/Archaeological_excavation",
-      "note": "Розділ «Mechanical excavation»."
+      "title": "Holl Balázs – Pusztai Tamás: Térinformatika alkalmazása a régészeti feltárásokon. In: Régészeti Kézikönyv. Magyar Régész Szövetség, 2011, 321–375",
+      "url": "https://real.mtak.hu/3000/1/RK_terinformatika.pdf",
+      "note": "Розділ 4.2.3 «Folttérkép»."
+    },
+    {
+      "title": "Rácz Tibor Ákos: Helyzetkép a fémkeresőzésről. Javaslatok a felelősségteljes fémkeresőzés működési kereteire. Magyar Régészet 13 (2024) 2, 89–94",
+      "url": "https://real.mtak.hu/234111/1/Racz_H24NY.pdf",
+      "note": "Розділ «Az illegális fémkeresőzés visszaszorítása»."
     }
   ],
   "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/R%C3%A9g%C3%A9szeti_felt%C3%A1r%C3%A1s_Keszthely_k%C3%B6zpontj%C3%A1ban.jpg",
+      "author": "Kiss Tamás",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:R%C3%A9g%C3%A9szeti_felt%C3%A1r%C3%A1s_Keszthely_k%C3%B6zpontj%C3%A1ban.jpg",
+      "caption": {
+        "uk": "Розкопки в центрі Keszthely, позаду екскаватор",
+        "hu": "Régészeti feltárás Keszthely központjában, háttérben kotrógép"
+      }
+    },
     {
       "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Vikansvingen%2C_Hitra%2C_S%C3%B8r-Tr%C3%B8ndelag_%E2%80%93_Avdekking_i_regnv%C3%A6r_%283838763545%29.jpg",
       "author": "NTNU Vitenskapsmuseet",

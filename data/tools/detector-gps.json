@@ -3,29 +3,34 @@
   "category": "detector",
   "order": 5,
   "name": {
-    "uk": "Навушники, GPS і застосунки",
-    "hu": "Fejhallgató, GPS és alkalmazások"
+    "uk": "GPS, пакет і записи пошуковця",
+    "hu": "GPS, zacskó és jegyzetek"
   },
   "users": [
     "detectorist"
   ],
   "summary": {
-    "uk": "Сучасні металошукачі мають бездротові навушники, Wi‑Fi й Bluetooth, вбудований GPS для запису маршруту й знахідок і зв'язок зі смартфоном.",
-    "hu": "A mai fémkeresők vezeték nélküli fejhallgatóval, Wi-Fi- és Bluetooth-kapcsolattal, a keresés útvonalát és a leletek helyét rögzítő GPS-szel és okostelefonos kapcsolattal is rendelkeznek."
+    "uk": "Місце кожної знахідки записують ручним GPS ще до того, як покласти її в пакет; на пакеті пишуть номер точки, номер приладу й назву ділянки.",
+    "hu": "Minden lelet helyét kézi GPS-szel rögzítik, mielőtt a tasakba kerülne; a tasakra a pont számát, a GPS számát és a terület nevét írják."
   },
   "description": {
-    "uk": "За англійською статтею про металошукач, найсучасніші прилади мають бездротові навушники, під'єднуються до мереж Wi‑Fi й пристроїв Bluetooth, деякі мають вбудований GPS, щоб відстежувати місце пошуку й місця знахідок, а деякі з'єднуються зі смартфонними застосунками.\n\nСтаття про археологічну геофізику додає, що звичайні ручні металошукачі здебільшого не ведуть журналу даних і тому не дають карти, але до них іноді під'єднують зовнішні реєстратори, які записують дані про виявлені предмети разом із координатами GPS. Саме такий запис, де і на якій глибині знайдено предмет, найбільше цінують археологи (див. підрозділ «Правила й етика»)."
+    "uk": "За Bakos (2020), у громадській програмі Herman Ottó Múzeum у Мішкольці місце знахідки записують ручним GPS ще до того, як покласти її в пакет із застібкою. На пакеті пишуть номер записаної точки, номер GPS-приладу, за потреби ім'я того, хто знайшов, і назву пам'ятки чи ділянки. Супровідні бланки заповнюють уже в приміщенні, коли знахідки розкладено й висушено. Записують і вологість ґрунту, бо в сухому, розсипчастому чи щойно розпушеному ґрунті металошукачі працюють гірше.\n\nНа полі битви під Мухі GPS-треки кожного пошуковця показали, що налаштування приладу, швидкість ходи й досвід сильно впливають на рівномірність обстеження: місце невеликої сутички легко проминути навіть за найпильнішої уваги (Laszlovszky і Rácz, 2020).\n\nЗастереження з Ясшагу (2025): супровідні бланки часто були неповні чи нерозбірливі, а різні польові застосунки зберігали GPS-точки в різних системах координат, через що частина даних губилася. Тому Jász Múzeum разом з програмістом зробив власний мобільний застосунок і серверну систему.\n\nНавіщо все це, див. картку «Чому важливе місце знахідки»."
   },
   "sources": [
     {
-      "title": "Metal detector – Wikipedia (en)",
-      "url": "https://en.wikipedia.org/wiki/Metal_detector",
-      "note": "Розділ про вдосконалення приладів."
+      "title": "Bakos Gábor: A fémkereső műszeres terepbejárásoktól a közösségi régészetig Borsod-Abaúj-Zemplén megyében. Magyar Régészet 9 (2020) 2, 65–70",
+      "url": "https://real.mtak.hu/116585/1/Bakos_H20NY.pdf",
+      "note": "Порядок роботи на місці."
     },
     {
-      "title": "Geophysical survey (archaeology) – Wikipedia (en)",
-      "url": "https://en.wikipedia.org/wiki/Geophysical_survey_(archaeology)",
-      "note": "Розділ «Methods»: металошукачі й реєстратори даних."
+      "title": "Laszlovszky József – Rácz Tibor Ákos: Fémkeresős kutatások a muhi csatatéren. Magyar Régészet 9 (2020) 4, 70–80",
+      "url": "https://real.mtak.hu/119236/1/Laszlovszky_Ra%cc%81cz_H20T.pdf",
+      "note": "GPS-треки пошуковців."
+    },
+    {
+      "title": "Gulyás András Zoltán: Közösségi régészet a Jászságban. Jászsági Évkönyv 2025, 128–142",
+      "url": "https://epa.oszk.hu/02200/02295/00033/pdf/EPA02295_jaszsagi_evkonyv_2025_128-142.pdf",
+      "note": "Труднощі з документацією і власний застосунок музею."
     }
   ],
   "photos": [

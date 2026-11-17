@@ -1,44 +1,59 @@
 {
   "id": "why-context",
   "category": "rules",
-  "order": 2,
+  "order": 3,
   "name": {
-    "uk": "Чому археологи наголошують на контексті",
-    "hu": "Miért hangsúlyozzák a régészek a kontextust"
+    "uk": "Чому важливе місце знахідки",
+    "hu": "Miért fontos a lelet helye"
   },
   "users": [
     "detectorist",
     "archaeologist"
   ],
   "summary": {
-    "uk": "Знахідка, вийнята без запису місця й оточення, втрачає більшу частину наукової цінності; у різних країнах пошуковців заохочують або зобов'язують повідомляти про знахідки.",
-    "hu": "A helye és környezete rögzítése nélkül kiemelt lelet elveszíti tudományos értékének nagy részét; több országban ösztönzik vagy kötelezik a fémkeresősöket a leletek bejelentésére."
+    "uk": "Знахідка з точними координатами й записаним оточенням розповідає історію, а вийнята без запису чи потай назавжди зникає для науки й охорони спадщини.",
+    "hu": "A pontos koordinátákkal és rögzített környezettel előkerült lelet történetet mesél, a feljegyzés nélkül vagy titokban kiemelt viszont örökre eltűnik a tudomány és az örökségvédelem számára."
   },
   "description": {
-    "uk": "За англійською статтею про металошукач, металошукачі широко вживають в археології; перше відоме застосування датоване 1958 роком, коли військовий історик Don Rickey шукав лінії стрільців на полі битви під Літл-Біґгорном. Водночас археологи виступають проти «шукачів артефактів», що руйнують пам'ятки: втрачається контекст знахідки і не робиться докладна зйомка довкола, а поза відомими пам'ятками аматор може й не помітити значення предмета.\n\nСтаття наводить різні моделі:\n\n- в Англії й Уельсі пошук законний з дозволу власника землі поза охоронюваними пам'ятками; «скарб» за законом 1996 року треба повідомити коронеру, а інші цікаві знахідки можна добровільно зареєструвати в Portable Antiquities Scheme;\n- у Шотландії повідомляти про будь-які історичні знахідки обов'язково, і неповідомлення є злочином;\n- в Ірландії пошук археологічних предметів детектором без письмової згоди міністра заборонений;\n- у США співпраця археологів з аматорами в пошуках поселень колоніальної доби виявилася плідною.\n\nСеред найцінніших британських знахідок пошуковців стаття називає англосаксонський Стаффордширський скарб, проданий за 3 285 000 фунтів. Стаття про археологічну геофізику теж зазначає, що поряд зі шкодою від шукачів скарбів виникає співпраця досвідчених аматорів з науковими командами."
+    "uk": "Розкопки знищують пам'ятку, тому кожен об'єкт фіксують у просторі відносно репера та один одного і за глибиною (українська стаття «Археологія»). Те саме стосується одиночних знахідок. На полі битви під Мухі, за Laszlovszky і Rácz (2020), середньовічний збройний конфлікт не лишає звичних археологічних об'єктів, тому головними стають самі предмети. Дуже важливо записати координати кожної знахідки й супутні відомості та тлумачити їх на мапі, бо саме взаємне розташування й щільність знахідок дають картину, з якої можна робити висновки про перебіг події. На горі Szarvas-hegy біля Вацу розкид знахідок разом з розповідями тих, хто їх знайшов, показав щонайменше чотири окремі схованки.\n\nRácz Tibor Ákos (2024) наголошує: знахідки «дружніх до музею» пошуковців потрапляють до музею з координатами, а знайдене нелегальними шукачами назавжди зникає для охорони спадщини. Він визнає і довід противників: пошуковці можуть «вичистити» пам'ятки, і для наступних поколінь металу там не лишиться. На це він відповідає, що такі предмети вже лежать у порушеному положенні, поза археологічним контекстом, а сучасне землеробство (добрива, оранка) постійно їх руйнує.\n\nУкраїнська стаття «Грабіж археології» пояснює, що незаконні розкопки — головне джерело предметів для чорного ринку старожитностей і підпільних колекцій; грабунок не лише незаконний, а й фактично знищує спадщину, бо закриває до неї доступ суспільству."
   },
   "sources": [
     {
-      "title": "Metal detector – Wikipedia (en)",
-      "url": "https://en.wikipedia.org/wiki/Metal_detector",
-      "note": "Розділи «Archaeology» і «As a hobby»."
+      "title": "Археологія – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%8F",
+      "note": "Розділ «Методи»."
     },
     {
-      "title": "Geophysical survey (archaeology) – Wikipedia (en)",
-      "url": "https://en.wikipedia.org/wiki/Geophysical_survey_(archaeology)",
-      "note": "Розділ «Methods»: металошукачі."
+      "title": "Laszlovszky József – Rácz Tibor Ákos: Fémkeresős kutatások a muhi csatatéren. Magyar Régészet 9 (2020) 4, 70–80",
+      "url": "https://real.mtak.hu/119236/1/Laszlovszky_Ra%cc%81cz_H20T.pdf",
+      "note": "Чому важливі координати знахідок на полі битви."
+    },
+    {
+      "title": "Mag Hella – Rácz Tibor Ákos: Tatárjárás kori menedékhely a váci Szarvas-hegyen. In: Rácz T. Á. (szerk.): Kincskeresés, kaland, tudomány. Szentendre, Ferenczy Múzeumi Centrum, 2021",
+      "url": "https://real.mtak.hu/89623/1/KKT_regeszeti_kiadvany_20210805.pdf",
+      "note": "Розділ «Tervásatás a Szarvas-hegyen»."
+    },
+    {
+      "title": "Rácz Tibor Ákos: Helyzetkép a fémkeresőzésről. Javaslatok a felelősségteljes fémkeresőzés működési kereteire. Magyar Régészet 13 (2024) 2, 89–94",
+      "url": "https://real.mtak.hu/234111/1/Racz_H24NY.pdf",
+      "note": "Розділ «Az illegális fémkeresőzés visszaszorítása»."
+    },
+    {
+      "title": "Грабіж археології – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%B1%D1%96%D0%B6_%D0%B0%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%97",
+      "note": "Вступ."
     }
   ],
   "photos": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Staffordshire_Hoard_%284138880259%29.jpg",
-      "author": "Jon Callas from San Jose, USA",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:Staffordshire_Hoard_%284138880259%29.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/A_muhi_csata_helysz%C3%ADn%C3%A9n_%C3%A9p%C3%BClt_eml%C3%A9kpark_l%C3%A9gifot%C3%B3n_2018-ban.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_muhi_csata_helysz%C3%ADn%C3%A9n_%C3%A9p%C3%BClt_eml%C3%A9kpark_l%C3%A9gifot%C3%B3n_2018-ban.jpg",
       "caption": {
-        "uk": "Золотий предмет зі Стаффордширського скарбу",
-        "hu": "Aranytárgy a staffordshire-i kincsleletből"
+        "uk": "Меморіальний парк на полі битви під Мухі з повітря",
+        "hu": "A muhi csata emlékparkja légi fotón"
       }
     }
   ]
