@@ -1,0 +1,45 @@
+{
+  "id": "gps-gis",
+  "category": "record",
+  "order": 3,
+  "name": {
+    "uk": "GPS і польова ГІС",
+    "hu": "GPS és terepi térinformatika"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Координати кожної знахідки й скупчення беруть GPS із потрібною точністю, а в мобільній ГІС на місці під рукою відомі пам'ятки, ґрунти й рослинність.",
+    "hu": "Minden lelet és leletcsoport koordinátáit GPS-szel veszik fel a szükséges pontossággal, a mobil térinformatikai rendszerben pedig a terepen kéznél vannak az ismert lelőhelyek, talajok és növényzet."
+  },
+  "description": {
+    "uk": "За статтею про археологічну розвідку, GPS дуже спростив запис: положення знахідок або їх скупчень беруть у межах потрібної точності, а переносні комп'ютери й мобільні ГІС прискорили опис об'єктів. У мобільну ГІС можна завантажити регіональні археологічні дані й шари ґрунтів, рослинності, сучасних об'єктів і планів забудови, щоб звіряти їх і оновлювати просто в полі.\n\nСтаття про розкопки серед цифрових інструментів археолога називає GPS, планшети, бази даних, цифрові камери, 3D-лазерні сканери й дрони. Деякі металошукачі мають власний GPS для запису місць знахідок (картка «Навушники, GPS і застосунки»)."
+  },
+  "sources": [
+    {
+      "title": "Survey (archaeology) – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Survey_(archaeology)",
+      "note": "Розділ «Fieldwalking (transects)»: GPS і мобільна ГІС."
+    },
+    {
+      "title": "Archaeological excavation – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Archaeological_excavation",
+      "note": "Розділ «Digital recording»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Archaeologist_using_GPS_to_survey_a_trench_at_Northern_Sustainable_Placement_Area_Phase_1%2C_Hillingdon%2C_2019_%28HS2_Phase_One%29.jpg",
+      "author": "Susan Stratton, Archaeology Wales",
+      "license": "OGL v1.0",
+      "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/1/",
+      "source": "https://commons.wikimedia.org/wiki/File:Archaeologist_using_GPS_to_survey_a_trench_at_Northern_Sustainable_Placement_Area_Phase_1%2C_Hillingdon%2C_2019_%28HS2_Phase_One%29.jpg",
+      "caption": {
+        "uk": "Археолог знімає траншею приймачем GPS, Hillingdon (Англія), 2019",
+        "hu": "Régész GPS-szel méri fel az árkot, Hillingdon (Anglia), 2019"
+      }
+    }
+  ]
+}

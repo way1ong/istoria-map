@@ -1,0 +1,39 @@
+{
+  "id": "magnetometer",
+  "category": "geophysics",
+  "order": 1,
+  "name": {
+    "uk": "Магнітометр і градіометр",
+    "hu": "Magnetométer és gradiométer"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Вимірює місцеві збурення магнітного поля Землі; дуже чутливий до заліза, цегли й перепаленої землі, а часом бачить навіть перекопаний ґрунт і зотлілу органіку.",
+    "hu": "A Föld mágneses terének helyi zavarait méri; nagyon érzékeny a vasra, a téglára és az égett földre, néha még a megbolygatott talajt és az elbomlott szerves anyagot is kimutatja."
+  },
+  "description": {
+    "uk": "За статтею про археологічну геофізику, магнітометр може мати один датчик, що вимірює повну напруженість поля, або два рознесені датчики, що вимірюють різницю між ними (градієнт); в археології зазвичай віддають перевагу градіометрам, бо вони краще розрізняють дрібні об'єкти біля поверхні. Протонні магнітометри здебільшого витіснили швидші й чутливіші ферозондові та цезієві.\n\nРізні матеріали в землі спричиняють місцеві збурення магнітного поля Землі. Найсильніше реагують залізо й сталь, цегла, перепалена земля та багато порід, тож об'єкти з них виявляються дуже добре, а де їх немає, часто видно й слабкі аномалії від перекопаного ґрунту чи зотлілої органіки. Головне обмеження: дрібні цікаві об'єкти можуть затулити сильно магнітні породи або сучасне сміття. Загалом геофізика не руйнує пам'ятку, тому її часто обирають там, де мета зберегти, а не розкопати."
+  },
+  "sources": [
+    {
+      "title": "Geophysical survey (archaeology) – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Geophysical_survey_(archaeology)",
+      "note": "Розділи «Overview» і «Methods»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Fluxgate_Magnetometry_Survey_at_Friarstown_Co._Kildare_-_geograph.org.uk_-_4241115.jpg",
+      "author": "Enda O Flaherty",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Fluxgate_Magnetometry_Survey_at_Friarstown_Co._Kildare_-_geograph.org.uk_-_4241115.jpg",
+      "caption": {
+        "uk": "Ферозондова магнітометрична зйомка у Friarstown (Ірландія)",
+        "hu": "Fluxgate magnetométeres felmérés Friarstownban (Írország)"
+      }
+    }
+  ]
+}

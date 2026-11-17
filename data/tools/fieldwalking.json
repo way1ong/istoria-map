@@ -1,0 +1,40 @@
+{
+  "id": "fieldwalking",
+  "category": "prepare",
+  "order": 4,
+  "name": {
+    "uk": "Польова розвідка пішки",
+    "hu": "Terepbejárás"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Повільний обхід поля смугами в пошуках знахідок на поверхні; найкраще працює на зораній землі, а місця знахідок записують GPS.",
+    "hu": "A terület lassú, sávos bejárása a felszíni leletek után kutatva; szántott földön működik a legjobban, a leletek helyét GPS-szel rögzítik."
+  },
+  "description": {
+    "uk": "За статтею про археологічну розвідку, обхід поля сіткою або вздовж ліній (трансект) здавна є основою польової розвідки там, де добра видимість: дослідник або група повільно йде ділянкою, шукаючи на поверхні знахідки чи інші ознаки, і записує стан місцевості. Метод найкраще працює на зораній землі або на поверхні з мізерною рослинністю, бо оранка постійно виносить знахідки нагору.\n\nРезультат залежить від землекористування, рельєфу, погоди й досвіду; навіть на добрій поверхні люди помічають не все, тож стаття застерігає не чекати стовідсоткового виявлення. GPS дуже спростив запис: координати знахідок або їх скупчень беруть з потрібною точністю, а мобільна ГІС дає змогу мати просто в полі дані про ґрунти, рослинність і вже відомі пам'ятки."
+  },
+  "sources": [
+    {
+      "title": "Survey (archaeology) – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Survey_(archaeology)",
+      "note": "Розділ «Fieldwalking (transects)»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Fieldwalking_at_Washingborough_-_geograph.org.uk_-_116352.jpg",
+      "author": "Terry Butcher",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Fieldwalking_at_Washingborough_-_geograph.org.uk_-_116352.jpg",
+      "caption": {
+        "uk": "Польова розвідка у Washingborough (Англія)",
+        "hu": "Terepbejárás Washingboroughban (Anglia)"
+      }
+    }
+  ]
+}

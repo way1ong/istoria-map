@@ -1,0 +1,45 @@
+{
+  "id": "old-maps",
+  "category": "prepare",
+  "order": 1,
+  "name": {
+    "uk": "Старі мапи й порівняння мап різних років",
+    "hu": "Régi térképek és a különböző korú térképek összevetése"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Порівняння мап різних років тієї самої місцевості показує споруди, яких на поверхні вже не видно; у застосунку для цього є режим «Порівняти».",
+    "hu": "Ugyanannak a területnek a különböző korú térképeit összevetve kiderülnek a felszínen már nem látható építmények; erre szolgál az alkalmazás Összevetés nézete."
+  },
+  "description": {
+    "uk": "За статтею про археологічну розвідку, картографічна регресія, тобто порівняння мап різних періодів тієї самої місцевості, може виявити колишні споруди, нанесені на мапу, але вже не видні на поверхні. Перенесення давніх мап на сучасну основу допомагає знайти ці місця сучасними засобами зйомки.\n\nУ цьому застосунку так зроблено з аркушами австро-угорської Spezialkarte 1885 і 1904 років: їх вирівняно по сітці й накладено на сучасну мапу, а за підписами на них знайдено зниклі хутори, корчми й млини навколо Göd, Vác і Dunakeszi. Відкрийте [режим «Порівняти»](#/compare), щоб побачити стару й сучасну мапу одну над одною."
+  },
+  "sources": [
+    {
+      "title": "Survey (archaeology) – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Survey_(archaeology)",
+      "note": "Розділ «Map regression»."
+    },
+    {
+      "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Приклад аркуша, вирівняного в застосунку."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Obuda%2C_%28Budapest%29._NYPL1226598.tiff",
+      "author": "K. u. k. Militärgeographisches Institut, Відень (скан NYPL)",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Obuda%2C_%28Budapest%29._NYPL1226598.tiff",
+      "caption": {
+        "uk": "Аркуш Spezialkarte 15:XX «Óbuda (Budapest)», 1904",
+        "hu": "A Spezialkarte 15:XX „Óbuda (Budapest)” lapja, 1904"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "test-pits",
+  "category": "dig",
+  "order": 1,
+  "name": {
+    "uk": "Пробні шурфи й бур",
+    "hu": "Próbagödrök és fúrás"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Там, де поверхню закриває ліс, дерн чи намул, ставлять ряд невеликих шурфів або свердловин бура, щоб перевірити, що під ними.",
+    "hu": "Ahol erdő, gyep vagy hordalék takarja a felszínt, kis próbagödrök vagy fúrások sorával ellenőrzik, mi van alattuk."
+  },
+  "description": {
+    "uk": "За статтею про археологічну розвідку, у лісах, на алювіальних наносах чи під дерном знахідки біля поверхні можуть бути невидимі навіть зблизька. Тоді розвідують підповерхневим тестуванням: рядом пробних шурфів лопатою крізь гумус або дерн, а де пам'ятку перекривають товсті пізніші відклади, рядом свердловин бура чи кернів. Такі перевірки набагато дорожчі за обхід поля і мають малий шанс натрапити на рештки, якщо їх не робити дуже густо.\n\nЗа статтею про розкопки, у США для оцінки ділянки є метод shovel test pit: ряд невеликих пробних ям, викопаних вручну."
+  },
+  "sources": [
+    {
+      "title": "Survey (archaeology) – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Survey_(archaeology)",
+      "note": "Розділ «Visible above-ground structures and Subsurface Testing»."
+    },
+    {
+      "title": "Archaeological excavation – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Archaeological_excavation",
+      "note": "Вступ: shovel test pit."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Digging_the_first_shovel_test_pit%2C_Civil_War_Archeology_in_Lafayette_Square_%285917137446%29.jpg",
+      "author": "Baltimore Heritage",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Digging_the_first_shovel_test_pit%2C_Civil_War_Archeology_in_Lafayette_Square_%285917137446%29.jpg",
+      "caption": {
+        "uk": "Перший пробний шурф на площі Lafayette у Вашингтоні",
+        "hu": "Az első próbagödör ásása a washingtoni Lafayette téren"
+      }
+    }
+  ]
+}

@@ -23,6 +23,15 @@
 ## events/<id>.json
 Подія. Поля: `id`, `title`, `date: { "from": "1241", "to": "1242", "precision": "exact | approximate | tradition" }`, `period`, `places` (id місць), `coords` (необов'язково), `summary`, `description`, `photos`, `sources`.
 
+## tools.json і tools/<id>.json
+Розділ «Інструменти» (вкладка в шапці, адреса `#/tools`).
+- `tools.json`: `intro` (вступний абзац) і `categories`: масив підрозділів `{ "id", "name", "summary" }` у порядку показу.
+- `tools/<id>.json`: один інструмент або прийом. Поля:
+  - `id` (латиницею, як назва файлу), `category` (id підрозділу з `tools.json`), `order` (порядок у підрозділі, менше = вище)
+  - `name`, `summary` (1–2 речення для картки в списку), `description` (Markdown, необов'язково)
+  - `users`: кому корисніше, масив зі значень `detectorist` (пошуковцям з металошукачем) і `archaeologist` (археологам); за ним працюють фільтри «Пошуковцям» / «Археологам»
+  - `photos` (перше фото показується прев'ю в списку), `sources`
+
 ## maps/<id>.json
 Стара мапа для накладання. Поля: `id`, `title`, `year`, `author`, `license`, `licenseUrl`, `attribution`, `source`, `type`: `image` або `xyz`, `url`, `coordinates` (для `image`: 4 кути NW, NE, SE, SW), `periods`.
 

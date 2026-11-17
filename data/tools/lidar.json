@@ -1,0 +1,44 @@
+{
+  "id": "lidar",
+  "category": "prepare",
+  "order": 3,
+  "name": {
+    "uk": "Лідар (повітряне лазерне сканування)",
+    "hu": "LiDAR (légi lézerszkennelés)"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Лазерні імпульси з літака проходять крізь листя й дають точну модель рельєфу, на якій видно приховані лісом вали, рови й кургани.",
+    "hu": "A repülőről kibocsátott lézerimpulzusok átjutnak a lombon, és pontos domborzatmodellt adnak, amelyen látszanak az erdő takarta sáncok, árkok és halmok."
+  },
+  "description": {
+    "uk": "За статтею про аерофотоархеологію, лідар (повітряне лазерне сканування, ALS) вимірює відстань до землі й предметів лазерними імпульсами: тисячі імпульсів на секунду і час їх повернення дають дуже точну 3D-модель поверхні. В археології він проникає крізь густу рослинність і показує ледь помітні перепади рельєфу, що можуть означати поховані мури, рови чи кургани, а цифрові моделі рельєфу виявляють те, чого не видно на місцевості.\n\nПриклад зі статті: у місті майя Каракол (Беліз) археологи Arlen і Diane Chase за 25 років роботи в тропічному лісі нанесли на мапу 23 км² поселення, а чотири дні лідарної зйомки наприкінці сухого сезону 2009 року і три тижні аналізу показали понад 177 км² міста."
+  },
+  "sources": [
+    {
+      "title": "Aerial archaeology – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Aerial_archaeology",
+      "note": "Розділи «LiDAR» і «Caracol, Mayan City»."
+    },
+    {
+      "title": "Lidar – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Lidar",
+      "note": "Археологія серед застосувань лідара."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/LiDAR_Hillshade_of_the_Carson_site.jpg",
+      "author": "Jmmehta",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:LiDAR_Hillshade_of_the_Carson_site.jpg",
+      "caption": {
+        "uk": "Лідарна тіньова модель рельєфу пам'ятки Carson",
+        "hu": "A Carson lelőhely LiDAR-alapú domborzatárnyékolása"
+      }
+    }
+  ]
+}

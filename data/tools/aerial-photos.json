@@ -1,0 +1,45 @@
+{
+  "id": "aerial-photos",
+  "category": "prepare",
+  "order": 2,
+  "name": {
+    "uk": "Аерофото, супутникові знімки й дрони",
+    "hu": "Légifotó, műholdkép és drón"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "З повітря видно вали, засипані рови й мури під землею: за тінню при низькому сонці, за кольором ґрунту після оранки і за ростом посівів улітку.",
+    "hu": "A levegőből látszanak a sáncok, a betöltött árkok és a föld alatti falak: alacsony napállásnál az árnyékuk, szántás után a talaj színe, nyáron a vetés növekedése alapján."
+  },
+  "description": {
+    "uk": "За статтею про аерофотоархеологію, знімки з повітря допомагають виявляти, фіксувати й тлумачити археологічні об'єкти, від доісторичних поселень і давніх доріг до середньовічних замків і полів битв Другої світової. Поняття «аерознімки» охоплює звичайні аерофото, супутникові знімки й багатоспектральні дані, і частина цього величезного масиву доступна онлайн безкоштовно. Останніми роками дрони дали гнучкість і нижчу ціну порівняно з пілотованими літаками.\n\nУгорська стаття «Légirégészet» розрізняє три види слідів:\n\n- **Тіньові.** Вали й кургани видно при ковзному світлі, коли тіні найдовші: найкраще одразу після сходу або перед заходом сонця, знімаючи проти сонця. Пам'ятки в листяних лісах варто шукати взимку, а сніг вирівнює поверхню й робить тіні чіткими.\n- **Ґрунтові.** Засипаний рів чи яма краще тримає вологу і виглядає темнішим, а над похованими мурами ґрунт пересихає і світлішає; такі сліди видно переважно навесні й восени після оранки, а іній чи легкий сніг на кілька ранкових годин видає їх ще краще.\n- **Посівні.** Улітку над засипаними ровами й ямами рослини мають більше води: вони вищі, довше зелені й темніші, а над мурами, навпаки, нижчі й раніше жовтіють. Ці сліди видно з повітря, а часто й із землі."
+  },
+  "sources": [
+    {
+      "title": "Aerial archaeology – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Aerial_archaeology",
+      "note": "Вступ і розділи «Drones and UAVs», «Identifying and recording archaeological features»."
+    },
+    {
+      "title": "Légirégészet – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/L%C3%A9gir%C3%A9g%C3%A9szet",
+      "note": "Розділи про тіньові, ґрунтові й посівні сліди."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Cropmark_near_Parsonage_Farm%2C_Binbrook%2C_aerial_2019_-_geograph.org.uk_-_6133552.jpg",
+      "author": "Simon Tomson",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Cropmark_near_Parsonage_Farm%2C_Binbrook%2C_aerial_2019_-_geograph.org.uk_-_6133552.jpg",
+      "caption": {
+        "uk": "Слід у посівах біля Parsonage Farm, Binbrook (Англія), аерофото 2019 року",
+        "hu": "Növényjel a Parsonage Farm mellett, Binbrook (Anglia), légifotó, 2019"
+      }
+    }
+  ]
+}

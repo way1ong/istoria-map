@@ -1,0 +1,49 @@
+{
+  "id": "gpr",
+  "category": "geophysics",
+  "order": 3,
+  "name": {
+    "uk": "Георадар",
+    "hu": "Talajradar (georadar)"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Посилає в землю радіоімпульси й ловить відбиття; показує глибину об'єктів, найкраще працює в однорідному піщаному ґрунті, гірше в глині.",
+    "hu": "Rádióimpulzusokat küld a talajba, és a visszaverődéseket érzékeli; megmutatja az objektumok mélységét, homogén homokos talajban működik a legjobban, agyagban rosszabbul."
+  },
+  "description": {
+    "uk": "За англійською статтею, георадар (GPR) зображує надра радіоімпульсами, зазвичай від 10 МГц до 2,6 ГГц: передавальна антена посилає енергію в землю, межі між матеріалами з різними електричними властивостями її відбивають, а приймальна антена записує відбиття. Глибину обмежують електропровідність ґрунту, частота й потужність: вищі частоти проникають мілкіше, але дають кращу роздільність.\n\nСтаття про археологічну геофізику пише, що георадар найвідоміший, хоч і не найпоширеніший метод в археології: час повернення сигналу показує глибину, а дані подають профілями або планами на певній глибині. Він унікальний тим, що бачить деякі дрібні об'єкти на відносно великій глибині й розрізняє глибину джерел, але дуже вибагливий до умов: ідеальні однорідні піщані ґрунти, а глина й мул гасять сигнал, кам'янисті відклади його розсіюють. Українська стаття вказує, що прилад «просвічує» ґрунт на глибину до 20–30 м і широко використовується в археології."
+  },
+  "sources": [
+    {
+      "title": "Ground-penetrating radar – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Ground-penetrating_radar",
+      "note": "Вступ: частоти, принцип, глибина."
+    },
+    {
+      "title": "Geophysical survey (archaeology) – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Geophysical_survey_(archaeology)",
+      "note": "Розділ «Methods»: георадар."
+    },
+    {
+      "title": "Георадар – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%93%D0%B5%D0%BE%D1%80%D0%B0%D0%B4%D0%B0%D1%80",
+      "note": "Вступ: глибина, застосування в археології."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Ground_Penetrating_Radar_in_use.jpg",
+      "author": "The Charles Machine Works",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Ground_Penetrating_Radar_in_use.jpg",
+      "caption": {
+        "uk": "Георадар на візку",
+        "hu": "Kocsira szerelt talajradar"
+      }
+    }
+  ]
+}

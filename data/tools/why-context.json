@@ -1,0 +1,45 @@
+{
+  "id": "why-context",
+  "category": "rules",
+  "order": 2,
+  "name": {
+    "uk": "Чому археологи наголошують на контексті",
+    "hu": "Miért hangsúlyozzák a régészek a kontextust"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Знахідка, вийнята без запису місця й оточення, втрачає більшу частину наукової цінності; у різних країнах пошуковців заохочують або зобов'язують повідомляти про знахідки.",
+    "hu": "A helye és környezete rögzítése nélkül kiemelt lelet elveszíti tudományos értékének nagy részét; több országban ösztönzik vagy kötelezik a fémkeresősöket a leletek bejelentésére."
+  },
+  "description": {
+    "uk": "За англійською статтею про металошукач, металошукачі широко вживають в археології; перше відоме застосування датоване 1958 роком, коли військовий історик Don Rickey шукав лінії стрільців на полі битви під Літл-Біґгорном. Водночас археологи виступають проти «шукачів артефактів», що руйнують пам'ятки: втрачається контекст знахідки і не робиться докладна зйомка довкола, а поза відомими пам'ятками аматор може й не помітити значення предмета.\n\nСтаття наводить різні моделі:\n\n- в Англії й Уельсі пошук законний з дозволу власника землі поза охоронюваними пам'ятками; «скарб» за законом 1996 року треба повідомити коронеру, а інші цікаві знахідки можна добровільно зареєструвати в Portable Antiquities Scheme;\n- у Шотландії повідомляти про будь-які історичні знахідки обов'язково, і неповідомлення є злочином;\n- в Ірландії пошук археологічних предметів детектором без письмової згоди міністра заборонений;\n- у США співпраця археологів з аматорами в пошуках поселень колоніальної доби виявилася плідною.\n\nСеред найцінніших британських знахідок пошуковців стаття називає англосаксонський Стаффордширський скарб, проданий за 3 285 000 фунтів. Стаття про археологічну геофізику теж зазначає, що поряд зі шкодою від шукачів скарбів виникає співпраця досвідчених аматорів з науковими командами."
+  },
+  "sources": [
+    {
+      "title": "Metal detector – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Metal_detector",
+      "note": "Розділи «Archaeology» і «As a hobby»."
+    },
+    {
+      "title": "Geophysical survey (archaeology) – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Geophysical_survey_(archaeology)",
+      "note": "Розділ «Methods»: металошукачі."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Staffordshire_Hoard_%284138880259%29.jpg",
+      "author": "Jon Callas from San Jose, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Staffordshire_Hoard_%284138880259%29.jpg",
+      "caption": {
+        "uk": "Золотий предмет зі Стаффордширського скарбу",
+        "hu": "Aranytárgy a staffordshire-i kincsleletből"
+      }
+    }
+  ]
+}

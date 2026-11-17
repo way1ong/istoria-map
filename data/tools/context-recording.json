@@ -1,0 +1,45 @@
+{
+  "id": "context-recording",
+  "category": "record",
+  "order": 1,
+  "name": {
+    "uk": "Контекст, номер шару й підписані пакети",
+    "hu": "Kontextus, rétegszám és feliratozott zacskók"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Кожен шар чи об'єкт дістає власний номер, а знахідки з нього кладуть у пакети з цим номером і кодом пам'ятки; так знахідка не втрачає зв'язку з місцем.",
+    "hu": "Minden réteg vagy objektum saját számot kap, a belőle származó leleteket ezzel a számmal és a lelőhely kódjával ellátott zacskókba teszik; így a lelet nem veszíti el kapcsolatát a helyével."
+  },
+  "description": {
+    "uk": "Глосарій археології визначає контекст як відомості про те, де знайдено предмет і разом із чим.\n\nЗа статтею про метод одиничного контексту, кожному розкопаному контексту дають унікальний номер і записують його на бланку контексту, часто ще й креслять у плані чи розрізі та фотографують; знахідки з кожного контексту кладуть у пакети й підписують номером контексту та кодом пам'ятки для подальшої роботи. Метод розробили Ed Harris і Patrick Ottaway 1976 року; він поширений у багатьох країнах Європи й особливо підходить для глибоких міських розкопок. Висоти важливих точок записують нівеліром або тахеометром (картка «Тахеометр і нівелір»)."
+  },
+  "sources": [
+    {
+      "title": "Glossary of archaeology – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Glossary_of_archaeology",
+      "note": "Стаття «context»."
+    },
+    {
+      "title": "Single context recording – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Single_context_recording",
+      "note": "Вступ."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Context_sheets.jpg",
+      "author": "Mididoctors (Wikimedia Commons)",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Context_sheets.jpg",
+      "caption": {
+        "uk": "Бланки опису контексту",
+        "hu": "Kontextuslapok"
+      }
+    }
+  ]
+}

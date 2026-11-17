@@ -1,0 +1,44 @@
+{
+  "id": "detector-gps",
+  "category": "detector",
+  "order": 5,
+  "name": {
+    "uk": "Навушники, GPS і застосунки",
+    "hu": "Fejhallgató, GPS és alkalmazások"
+  },
+  "users": [
+    "detectorist"
+  ],
+  "summary": {
+    "uk": "Сучасні металошукачі мають бездротові навушники, Wi‑Fi й Bluetooth, вбудований GPS для запису маршруту й знахідок і зв'язок зі смартфоном.",
+    "hu": "A mai fémkeresők vezeték nélküli fejhallgatóval, Wi-Fi- és Bluetooth-kapcsolattal, a keresés útvonalát és a leletek helyét rögzítő GPS-szel és okostelefonos kapcsolattal is rendelkeznek."
+  },
+  "description": {
+    "uk": "За англійською статтею про металошукач, найсучасніші прилади мають бездротові навушники, під'єднуються до мереж Wi‑Fi й пристроїв Bluetooth, деякі мають вбудований GPS, щоб відстежувати місце пошуку й місця знахідок, а деякі з'єднуються зі смартфонними застосунками.\n\nСтаття про археологічну геофізику додає, що звичайні ручні металошукачі здебільшого не ведуть журналу даних і тому не дають карти, але до них іноді під'єднують зовнішні реєстратори, які записують дані про виявлені предмети разом із координатами GPS. Саме такий запис, де і на якій глибині знайдено предмет, найбільше цінують археологи (див. підрозділ «Правила й етика»)."
+  },
+  "sources": [
+    {
+      "title": "Metal detector – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Metal_detector",
+      "note": "Розділ про вдосконалення приладів."
+    },
+    {
+      "title": "Geophysical survey (archaeology) – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Geophysical_survey_(archaeology)",
+      "note": "Розділ «Methods»: металошукачі й реєстратори даних."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Metal_detecting_-_geograph.org.uk_-_923731.jpg",
+      "author": "Evelyn Simak",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Metal_detecting_-_geograph.org.uk_-_923731.jpg",
+      "caption": {
+        "uk": "Пошуковці з металошукачами на стерні вздовж давньої римської дороги, Bawdeswell (Англія)",
+        "hu": "Fémkeresősök tarlón egy régi római út mentén, Bawdeswell (Anglia)"
+      }
+    }
+  ]
+}

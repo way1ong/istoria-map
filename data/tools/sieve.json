@@ -1,0 +1,44 @@
+{
+  "id": "sieve",
+  "category": "dig",
+  "order": 4,
+  "name": {
+    "uk": "Сито",
+    "hu": "Szita"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Вийнятий ґрунт просіюють сухим або мокрим способом, щоб не пропустити дрібних знахідок; на дослідницьких розкопках це звичний етап.",
+    "hu": "A kitermelt földet száraz vagy nedves módszerrel átszitálják, hogy az apró leletek se vesszenek el; kutatóásatásokon ez szokásos lépés."
+  },
+  "description": {
+    "uk": "За глосарієм археології, просіювання це використання сит, екранів і сіток, щоб підвищити частку знахідок, вилучених з викопаного ґрунту; буває сухе й мокре.\n\nЗа статтею про розкопки, сито частіше вживають на дослідницьких розкопках, де більше часу. Деякого успіху досягли з бетонозмішувачами: ґрунт, знятий лопатою й мотикою, змішують з водою в рідку масу і зливають крізь велику сітку. Це швидко й дає високий вихід знахідок, але шкодить крихким предметам."
+  },
+  "sources": [
+    {
+      "title": "Glossary of archaeology – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Glossary_of_archaeology",
+      "note": "Статті «sieving» і «context»."
+    },
+    {
+      "title": "Archaeological excavation – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Archaeological_excavation",
+      "note": "Розділ «Sieving»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Washing-sieving%2C_samples_from_Calvero_de_la_Higuera%2C_Pinilla_del_Valle%2C_Madrid%2C_Spain_02.JPG",
+      "author": "PePeEfe",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Washing-sieving%2C_samples_from_Calvero_de_la_Higuera%2C_Pinilla_del_Valle%2C_Madrid%2C_Spain_02.JPG",
+      "caption": {
+        "uk": "Мокре просіювання зразків, Pinilla del Valle (Іспанія)",
+        "hu": "Nedves szitálás, Pinilla del Valle (Spanyolország)"
+      }
+    }
+  ]
+}

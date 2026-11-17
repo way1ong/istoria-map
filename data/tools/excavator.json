@@ -1,0 +1,39 @@
+{
+  "id": "excavator",
+  "category": "dig",
+  "order": 6,
+  "name": {
+    "uk": "Екскаватор на розкопках",
+    "hu": "Kotrógép az ásatáson"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "На рятувальних розкопках техніка швидко знімає сучасний верхній шар перед ручною роботою; у Британії екскаватори жартома звуть «великими жовтими кельмами».",
+    "hu": "A mentőásatásokon a gépek gyorsan eltávolítják a modern fedőréteget a kézi munka előtt; Nagy-Britanniában a kotrógépeket tréfásan „nagy sárga kanálnak” hívják."
+  },
+  "description": {
+    "uk": "За статтею про розкопки, машини від малих екскаваторів до важкої землерийної техніки використовують переважно на рятувальних розкопках перед будівництвом, коли тиснуть гроші й час. Це найшвидший спосіб прибрати ґрунт і сміття й підготувати поверхню до ручної роботи, але треба не пошкодити археологічні шари і не загубити точне місце знахідок.\n\nМашини знімають насамперед сучасний насип і переміщують відвали; це буденна практика, але й предмет суперечок, бо знижує ретельність фіксації. Одне з перших застосувань землерийної техніки, за статтею, сталося 1967 року в Даррінгтон-Воллз (Англія); у британській археології екскаватори звуть «big yellow trowels»."
+  },
+  "sources": [
+    {
+      "title": "Archaeological excavation – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Archaeological_excavation",
+      "note": "Розділ «Mechanical excavation»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Vikansvingen%2C_Hitra%2C_S%C3%B8r-Tr%C3%B8ndelag_%E2%80%93_Avdekking_i_regnv%C3%A6r_%283838763545%29.jpg",
+      "author": "NTNU Vitenskapsmuseet",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Vikansvingen%2C_Hitra%2C_S%C3%B8r-Tr%C3%B8ndelag_%E2%80%93_Avdekking_i_regnv%C3%A6r_%283838763545%29.jpg",
+      "caption": {
+        "uk": "Зняття верхнього шару екскаватором на розкопках у Vikansvingen, Hitra (Норвегія)",
+        "hu": "A fedőréteg eltávolítása kotrógéppel a vikansvingeni ásatáson, Hitra (Norvégia)"
+      }
+    }
+  ]
+}

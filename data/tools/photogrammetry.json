@@ -1,0 +1,49 @@
+{
+  "id": "photogrammetry",
+  "category": "record",
+  "order": 4,
+  "name": {
+    "uk": "Фото, фотограмметрія й 3D",
+    "hu": "Fotó, fotogrammetria és 3D"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "З серії знімків будують точні 3D-моделі розкопу чи пам'ятки; старі аерофото допомагали відтворити зниклі будівлі й спрямувати розкопки.",
+    "hu": "Fényképsorozatokból pontos 3D-modellt készítenek az ásatásról vagy a lelőhelyről; régi légifotók segítettek eltűnt épületek rekonstruálásában és az ásatás irányításában."
+  },
+  "description": {
+    "uk": "За статтею про аерофотоархеологію, фотограмметрія дає змогу створювати точні 3D-моделі археологічних пам'яток і фіксувати їх швидше й точніше. Стаття про фотограмметрію наводить приклад: історичні аерофото використали для реконструкції місії Вентура, і ця реконструкція спрямувала розкопки її стін; польове фотокартування розкопу можна робити з переносного комп'ютера.\n\nСтаття про метод одиничного контексту зазначає, що контексти фотографують залежно від часу й важливості, а мета таких знімків показати групу контекстів та їхні зв'язки."
+  },
+  "sources": [
+    {
+      "title": "Aerial archaeology – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Aerial_archaeology",
+      "note": "Розділ «LiDAR and photogrammetry»."
+    },
+    {
+      "title": "Photogrammetry – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Photogrammetry",
+      "note": "Розділ «Archaeology»."
+    },
+    {
+      "title": "Single context recording – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Single_context_recording",
+      "note": "Вступ."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Photogrammetric_recording_of_cup_and_ring_marked_boulder_-_geograph.org.uk_-_5637666.jpg",
+      "author": "Andrew Curtis",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Photogrammetric_recording_of_cup_and_ring_marked_boulder_-_geograph.org.uk_-_5637666.jpg",
+      "caption": {
+        "uk": "Фотограмметрична фіксація валуна з чашоподібними знаками, Нортумберленд (Англія)",
+        "hu": "Csészés jelekkel díszített kőtömb fotogrammetriai rögzítése, Northumberland (Anglia)"
+      }
+    }
+  ]
+}

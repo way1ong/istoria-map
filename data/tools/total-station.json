@@ -1,0 +1,54 @@
+{
+  "id": "total-station",
+  "category": "record",
+  "order": 2,
+  "name": {
+    "uk": "Тахеометр і нівелір",
+    "hu": "Mérőállomás és szintezőműszer"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Тахеометр вимірює кути й відстані та одразу рахує координати точок; на розкопах ним і нівеліром записують висоти відносно репера.",
+    "hu": "A mérőállomás szögeket és távolságokat mér, és azonnal kiszámítja a pontok koordinátáit; az ásatáson ezzel és szintezőműszerrel rögzítik a magasságokat egy alapponthoz képest."
+  },
+  "description": {
+    "uk": "За українською статтею, тахеометр це електронно-оптичний інструмент для вимірювання горизонтальних і вертикальних кутів, відстаней і перевищень, тобто для планово-висотної зйомки місцевості полярним способом. Англійська стаття пояснює, що це електронний теодоліт з вбудованим далекоміром і комп'ютером, який збирає дані й обчислює положення; роботизовані моделі дозволяють керувати приладом дистанційно, тримаючи відбивач у потрібній точці. Угорська стаття додає, що новіші прилади працюють разом із GPS і цифровими нівелірами, а найсучасніші вміють сканувати.\n\nНа розкопках, за статтею про розкопки, висоти точок контексту, як-от верх і низ стіни, записують нівеліром або тахеометром відносно тимчасового репера пам'ятки (TBM)."
+  },
+  "sources": [
+    {
+      "title": "Тахеометр – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%A2%D0%B0%D1%85%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80",
+      "note": "Вступ."
+    },
+    {
+      "title": "Total station – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Total_station",
+      "note": "Вступ."
+    },
+    {
+      "title": "Mérőállomás – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/M%C3%A9r%C5%91%C3%A1llom%C3%A1s",
+      "note": "Вступ."
+    },
+    {
+      "title": "Archaeological excavation – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Archaeological_excavation",
+      "note": "Розділ «Single context recording system»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Station_totalle.jpg",
+      "author": "Clicgauche",
+      "license": "CC BY-SA 1.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Station_totalle.jpg",
+      "caption": {
+        "uk": "Тахеометр на штативі",
+        "hu": "Mérőállomás állványon"
+      }
+    }
+  ]
+}

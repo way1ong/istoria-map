@@ -1,0 +1,39 @@
+{
+  "id": "hungary-rules",
+  "category": "rules",
+  "order": 1,
+  "name": {
+    "uk": "Металошукач в Угорщині: де шукати заборонено",
+    "hu": "Fémkereső Magyarországon: hol tilos keresni"
+  },
+  "users": [
+    "detectorist"
+  ],
+  "summary": {
+    "uk": "Мати й використовувати металошукач в Угорщині не заборонено, але не можна шукати там, де можуть бути знахідки до 1711 року, на замках, городищах і курганах, у нацпарках, на пам'ятках і без згоди власника землі.",
+    "hu": "Magyarországon a fémkereső birtoklása és használata nem tilos, de nem szabad keresni ott, ahol 1711 előtti leletek kerülhetnek elő, várak, földvárak és halmok területén, nemzeti parkokban, védett lelőhelyeken és a tulajdonos hozzájárulása nélkül."
+  },
+  "description": {
+    "uk": "За угорською статтею про металошукач (розділ «Magyarországi helyzetkép»), в Угорщині мати й використовувати металошукач не заборонено, але шукати заборонено:\n\n- там, де можуть трапитися знахідки, старші за 1711 рік;\n- на території середньовічних замків, городищ, руїн і курганів;\n- у національних парках і на всіх інших охоронюваних територіях;\n- там, де почалися археологічні розкопки, і на зареєстрованій пам'ятці археології;\n- у місці, де пошук загалом дозволений, якщо власник землі не дав згоди.\n\nСтаття відсилає до закону 2001. évi LXIV. törvény і постанови 18/2001 (X. 18) NKÖM. Вікіпедія може відставати від чинних редакцій, тож перед виходом у поле варто звіритися з актуальним текстом закону."
+  },
+  "sources": [
+    {
+      "title": "Fémkereső – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/F%C3%A9mkeres%C5%91",
+      "note": "Розділ «Hobby»: «Magyarországi helyzetkép»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/No_Metal_Detecting_-_geograph.org.uk_-_7464821.jpg",
+      "author": "Anne Burgess",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:No_Metal_Detecting_-_geograph.org.uk_-_7464821.jpg",
+      "caption": {
+        "uk": "Табличка «No Metal Detecting» у Fordyce (Шотландія)",
+        "hu": "„No Metal Detecting” tábla Fordyce-ban (Skócia)"
+      }
+    }
+  ]
+}

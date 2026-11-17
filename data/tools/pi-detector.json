@@ -1,0 +1,45 @@
+{
+  "id": "pi-detector",
+  "category": "detector",
+  "order": 3,
+  "name": {
+    "uk": "Імпульсний металошукач (PI)",
+    "hu": "Impulzusüzemű fémkereső (PI)"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Посилає в ґрунт потужні імпульси й вимірює їх загасання: майже не зважає на мінералізований ґрунт і бере глибше, але не розрізняє метали.",
+    "hu": "Erős impulzusokat bocsát a talajba, és a lecsengésüket méri: szinte nem zavarja az ásványos talaj, mélyebbre lát, de nem tesz különbséget a fémek között."
+  },
+  "description": {
+    "uk": "За угорською статтею, PI-детектор (Pulse Induction) розряджає заряджений конденсатор великої ємності через котушку; без металу наведена напруга загасає рівномірно, а метал сповільнює загасання, і цю різницю вимірюють. Завдяки потужним імпульсам і правильній затримці вплив ґрунту стає знехтуваним, а глибина виявлення значна; вона залежить від потужності імпульсів і розміру котушки, імпульси повторюються з частотою від 60 до 600 Гц.\n\nВада в тому, що PI-детектор показує будь-який метал і не має дискримінації, тож окремі метали відсіяти не можна; його застосовують для пошуку уламків і мін. За англійською статтею, імпульсні прилади майже нечутливі до мінералізації: персні й прикраси можна знайти навіть у сильно мінералізованому чорному піску, а великий вміст мінералів у ґрунті, на відміну від VLF, іноді навіть допомагає."
+  },
+  "sources": [
+    {
+      "title": "Fémkereső – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/F%C3%A9mkeres%C5%91",
+      "note": "Розділ «Impulzusüzemű»."
+    },
+    {
+      "title": "Metal detector – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Metal_detector",
+      "note": "Розділ «Pulse induction»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Weymouth-_metal_detecting_on_the_beach_%28geograph_3398472%29.jpg",
+      "author": "Chris Downer",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Weymouth-_metal_detecting_on_the_beach_%28geograph_3398472%29.jpg",
+      "caption": {
+        "uk": "Пошук з металошукачем на пляжі у Веймуті (Англія)",
+        "hu": "Fémkeresés a weymouthi tengerparton (Anglia)"
+      }
+    }
+  ]
+}

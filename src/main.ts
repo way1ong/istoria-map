@@ -6,6 +6,7 @@ import { mountCompare, type CompareHandle } from './compare';
 import { formatYear, getLang, lt, setLang, t } from './i18n';
 import { createMap, type MapController } from './map';
 import { eventPage, historyIndex, periodPage, placePage } from './pages/history';
+import { toolPage, toolsIndex } from './pages/tools';
 import { navigate, onRoute, type Route } from './router';
 import { placeCard } from './ui/render';
 import { currentYear, renderTimeline } from './ui/timeline';
@@ -16,7 +17,7 @@ const app = document.getElementById('app')!;
 app.innerHTML = `
   <header class="topbar">
     <h1 id="title"></h1>
-    <nav class="tabs"><button id="tab-map"></button><button id="tab-history"></button><button id="tab-compare"></button></nav>
+    <nav class="tabs"><button id="tab-map"></button><button id="tab-history"></button><button id="tab-compare"></button><button id="tab-tools"></button></nav>
     <div class="lang"><button data-lang="uk">UK</button><button data-lang="hu">HU</button></div>
   </header>
   <main>
@@ -63,10 +64,13 @@ function renderChrome() {
   $('tab-map').textContent = t('tabMap');
   $('tab-history').textContent = t('tabHistory');
   $('tab-compare').textContent = t('tabCompare');
+  $('tab-tools').textContent = t('tabTools');
   document.querySelectorAll<HTMLButtonElement>('.lang button').forEach((b) => b.classList.toggle('active', b.dataset.lang === getLang()));
   $('tab-map').classList.toggle('active', route.page === 'map');
-  $('tab-history').classList.toggle('active', route.page !== 'map' && route.page !== 'compare');
+  const isTools = route.page === 'tools' || route.page === 'tool';
+  $('tab-history').classList.toggle('active', route.page !== 'map' && route.page !== 'compare' && !isTools);
   $('tab-compare').classList.toggle('active', route.page === 'compare');
+  $('tab-tools').classList.toggle('active', isTools);
 }
 
 function renderBasemapCtl(ctl: MapController) {
@@ -142,6 +146,8 @@ function render() {
     case 'history': page.innerHTML = historyIndex(); break;
     case 'period': page.innerHTML = periodPage(route.id); break;
     case 'place': page.innerHTML = placePage(route.id); break;
+    case 'tools': page.innerHTML = toolsIndex(route.audience); break;
+    case 'tool': page.innerHTML = toolPage(route.id); break;
     case 'event': {
       page.innerHTML = eventPage(route.id);
       const rs = routesForEvent(route.id);
@@ -156,6 +162,7 @@ function render() {
 $('tab-map').onclick = () => navigate(`#/map${state.period ? `?period=${state.period}` : ''}`);
 $('tab-history').onclick = () => navigate('#/history');
 $('tab-compare').onclick = () => navigate(`#/compare${state.period ? `?period=${state.period}` : ''}`);
+$('tab-tools').onclick = () => navigate('#/tools');
 document.querySelectorAll<HTMLButtonElement>('.lang button').forEach((b) => {
   b.onclick = () => {
     setLang(b.dataset.lang as 'uk' | 'hu');

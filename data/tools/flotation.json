@@ -1,0 +1,44 @@
+{
+  "id": "flotation",
+  "category": "dig",
+  "order": 5,
+  "name": {
+    "uk": "Флотація",
+    "hu": "Flotálás"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Ґрунт пропускають через воду: легкі рештки спливають, а земля тоне; так добувають насіння й дрібні кістки, що розповідають про рослини й тварин минулого.",
+    "hu": "A földet vízen engedik át: a könnyű maradványok felúsznak, a föld lesüllyed; így nyerik ki a magvakat és apró csontokat, amelyek a múlt növény- és állatvilágáról árulkodnak."
+  },
+  "description": {
+    "uk": "За статтею про розкопки, флотація відбирає знахідки так: ґрунт подають на поверхню води, легкі рештки спливають, а земля тоне. Метод особливо підходить для органіки, як-от насіння й дрібні кістки, що несуть дані про довкілля; флотацію часто роблять уже після розкопок зі зразків, узятих у полі.\n\nГлосарій археології визначає її як відокремлення дуже дрібних предметів від викопаних відкладів за допомогою води, особливо важливе для рослинних решток і кісток тварин."
+  },
+  "sources": [
+    {
+      "title": "Archaeological excavation – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Archaeological_excavation",
+      "note": "Розділ «Flotation»."
+    },
+    {
+      "title": "Glossary of archaeology – Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Glossary_of_archaeology",
+      "note": "Стаття «flotation»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Froth_flotation_device_used_in_archaeological_excavations_at_a_prehistoric_American_Indian_site_in_north-Central_Oregon_%28USA%29_near_the_Hancock_Field_Station%2C_1977_%282301765127%29.jpg",
+      "author": "John Atherton",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Froth_flotation_device_used_in_archaeological_excavations_at_a_prehistoric_American_Indian_site_in_north-Central_Oregon_%28USA%29_near_the_Hancock_Field_Station%2C_1977_%282301765127%29.jpg",
+      "caption": {
+        "uk": "Флотаційна установка на розкопках доісторичної пам'ятки в Орегоні (США), 1977",
+        "hu": "Flotáló berendezés egy oregoni őskori lelőhely ásatásán (USA), 1977"
+      }
+    }
+  ]
+}

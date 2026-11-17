@@ -1,0 +1,39 @@
+{
+  "id": "pinpointer",
+  "category": "detector",
+  "order": 4,
+  "name": {
+    "uk": "Пінпоінтер",
+    "hu": "Pinpointer"
+  },
+  "users": [
+    "detectorist"
+  ],
+  "summary": {
+    "uk": "Окремий малий прилад пошуковця; за угорською статтею, більшість пінпоінтерів працює за абсорбційним принципом. Так само зветься кнопка нерухомого режиму у VLF-металошукачах.",
+    "hu": "A kincskeresők külön kis eszköze; a magyar szócikk szerint a pinpointerek nagy része abszorpciós elven működik. Ugyanígy hívják a VLF-fémkeresők mozgatás nélküli üzemmódjának gombját."
+  },
+  "description": {
+    "uk": "Назва походить від англійського pinpoint, «точно вказати». За угорською статтею, більшість пінпоінтерів шукачів скарбів працює за абсорбційним принципом: котушку живить малопотужний високочастотний генератор, метал забирає енергію через вихрові струми, амплітуда коливань падає, і схема-компаратор подає сигнал. На тому самому принципі працює більшість переносних металошукачів охорони.\n\nУ VLF-металошукачах із функцією pin-pointer натиснення цієї кнопки перемикає прилад з режиму «motion» у нерухомий: сигнал звучить весь час, доки предмет у полі котушки, незалежно від руху (картка «Низькочастотний металошукач»)."
+  },
+  "sources": [
+    {
+      "title": "Fémkereső – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/F%C3%A9mkeres%C5%91",
+      "note": "Розділи «Abszorpciós fémkereső» і «Alacsonyfrekvenciás»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Pre-deployment_site_survey_to_Vietnam_25-3VN_%289141656%29.jpg",
+      "author": "U.S. Air Force photo by Senior Airman Kathy Duran",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Pre-deployment_site_survey_to_Vietnam_25-3VN_%289141656%29.jpg",
+      "caption": {
+        "uk": "Пінпоінтер під час польового обстеження у В'єтнамі, 2025",
+        "hu": "Pinpointer egy vietnámi terepi felmérésen, 2025"
+      }
+    }
+  ]
+}
