@@ -73,15 +73,12 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
     const sheets = members.filter((s) => s.type === 'image' && s.coordinates);
     const ov = series.overview;
     const ovMax = ov?.maxzoom ?? 0;
-    let ovAdded = false;
+    // Мозаїка — на всіх масштабах (вона покриває всю серію), окремі аркуші з public/maps — поверх неї
+    // при наближенні, лише ті, що в полі зору.
+    if (ov) addImage(`${opts.prefix}-ov`, ov.url, ov.coordinates);
     const added = new Set<string>();
     update = () => {
       const z = map.getZoom();
-      // оглядову мозаїку вантажимо лише тоді, коли вона може знадобитися
-      if (ov && !ovAdded && z < ovMax + 0.5) {
-        addImage(`${opts.prefix}-ov`, ov.url, ov.coordinates, { maxzoom: ovMax });
-        ovAdded = true;
-      }
       // аркуші — трохи раніше, ніж їх стане видно, щоб не було порожнечі при наближенні
       if (ov && z < ovMax - 0.5) return;
       const b = map.getBounds();
@@ -103,8 +100,11 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
     // Бібліотеку вантажимо лише тоді, коли справді показуємо стару мапу.
     void import('@allmaps/maplibre').then(({ WarpedMapLayer }) => {
       if (removed) return;
-      const layer = new WarpedMapLayer({ layerId: `${opts.prefix}-warped` }) as unknown as WarpedLayer;
+      const layerId = `${opts.prefix}-warped`;
+      const layer = new WarpedMapLayer({ layerId, ...(series?.grayscale ? { saturation: 0 } : {}) }) as unknown as WarpedLayer;
       map.addLayer(layer, before());
+      // дрібніше за allmapsMinzoom шар прихований: MapLibre не викликає render, тож Allmaps нічого не вантажить
+      if (series?.allmapsMinzoom) map.setLayerZoomRange(layerId, series.allmapsMinzoom, 24);
       warped = layer;
       layer.setOpacity(opacity);
       return layer.addGeoreferenceAnnotationByUrl(new URL(georef, document.baseURI).href);

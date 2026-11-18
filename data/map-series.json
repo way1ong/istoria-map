@@ -1,40 +1,42 @@
 {
-  "_comment": "Серії старих мап: аркуші з однаковим полем series у data/maps показуються разом. overview — зведена мозаїка всіх аркушів серії (WebP з прозорістю), яку видно на дрібних масштабах до зуму maxzoom; ближче вантажаться лише аркуші, що потрапляють у видиму частину мапи. georef — Georeference Annotation усіх аркушів серії (шлях у public/): тоді оригінали показуються з серверів IIIF через Allmaps, а мозаїка лишається під ними.",
+  "_comment": "Серії старих мап: аркуші з однаковим полем series у data/maps показуються разом. overview — зведена мозаїка всіх аркушів серії (WebP з прозорістю), яку видно на дрібних масштабах до зуму maxzoom; ближче вантажаться лише аркуші, що потрапляють у видиму частину мапи. georef — Georeference Annotation усіх аркушів серії (шлях у public/): тоді оригінали показуються з серверів IIIF через Allmaps, а мозаїка лишається під ними. grayscale — оригінали IIIF у відтінках сірого; allmapsMinzoom — від якого зуму показувати оригінали IIIF (дрібніше лише мозаїка).",
   "series": [
     {
       "id": "spezialkarte-75000",
       "title": {
-        "uk": "Spezialkarte 1:75 000: 10 аркушів довкола Göd (1884–1912)",
-        "hu": "Spezialkarte 1:75 000: 10 szelvény Göd környékén (1884–1912)"
+        "uk": "Spezialkarte 1:75 000: уся Угорщина (1880-ті – 1910-ті)",
+        "hu": "Spezialkarte 1:75 000: egész Magyarország (1880–1910-es évek)"
       },
       "note": {
-        "uk": "Аркуші 13:XX–16:XXI спеціальної мапи Австро-Угорщини (видання 1884–1904, частково виправлені до 1910–1912). Аркушів 13:XIX і 15:XIX на Commons не знайшлося, тому там прогалина. Аркуші показуються з оригіналів на серверах IIIF бібліотек NYPL (iiif.nypl.org, близько 4300 px) і IOS Реґенсбурґ (iiif.ios-regensburg.de, 8238–14 406 px) через бібліотеку Allmaps; мозаїка лишається під ними запасним шаром.",
-        "hu": "A Monarchia speciális térképének 13:XX–16:XXI szelvényei (1884–1904-es kiadás, részben 1910–1912-ig javítva). A 13:XIX és a 15:XIX szelvény nem található a Commonsban, ezért ott hézag van. A szelvények a NYPL (iiif.nypl.org, kb. 4300 px) és az IOS Regensburg (iiif.ios-regensburg.de, 8238–14 406 px) IIIF-szerveréről, eredeti felbontásban jelennek meg az Allmaps könyvtár segítségével; alattuk tartalékként a mozaik marad."
+        "uk": "122 аркуші спеціальної мапи Австро-Угорщини 1:75 000 (зони 11–23, колони XIV–XXVIII) на всю сучасну Угорщину й прикордоння. Мапу 1:75 000 виведено з третьої військової зйомки, яку в Угорщині провели 1872–1884 роках (hu.wikipedia: https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_harmadik_katonai_felm%C3%A9r%C3%A9se). Аркуші різних видань: рік видання й виправлень надруковано на полях кожного аркуша (10 аркушів довкола Göd — видання 1884–1904, частково виправлені до 1910–1912). Від зуму 9 аркуші показуються з оригіналів на серверах IIIF бібліотек IOS Реґенсбурґ (71 аркуш, iiif.ios-regensburg.de, суспільне надбання) і NYPL (51 аркуш, iiif.nypl.org, CC0) через бібліотеку Allmaps у відтінках сірого; дрібніше видно зведену мозаїку. Кути рамки й середини сторін знайдено автоматично за смугою поділок хвилин і перевірено за вирізками; поправку зсуву старої геодезичної основи (−0,000965°, −0,00074°) виміряно за церквами довкола Göd і застосовано до всіх аркушів. Аркушів 13:XIX і 15:XIX бракує.",
+        "hu": "A Monarchia 1:75 000-es speciális térképének 122 szelvénye (11–23. zóna, XIV–XXVIII. oszlop) a mai Magyarország egészére és a határvidékre. Az 1:75 000-es térkép a harmadik katonai felmérésből készült, amelyet Magyarországon 1872–1884 között végeztek (hu.wikipedia: https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_harmadik_katonai_felm%C3%A9r%C3%A9se). A szelvények különböző kiadásúak: a kiadás és a javítások éve minden szelvény szélén olvasható (a Göd környéki 10 szelvény 1884–1904-es kiadású, részben 1910–1912-ig javítva). A 9-es nagyítástól a szelvények az IOS Regensburg (71 szelvény, iiif.ios-regensburg.de, közkincs) és a NYPL (51 szelvény, iiif.nypl.org, CC0) IIIF-szerveréről, eredeti felbontásban, szürkeárnyalatosan jelennek meg az Allmaps könyvtárral; kisebb nagyításon az összesítő mozaik látszik. A keretsarkokat és az oldalfelezőket a percbeosztásos sáv alapján automatikusan határoztuk meg és kivágatokon ellenőriztük; a régi geodéziai alap eltolásának Göd környéki templomok alapján mért javítását (−0,000965°, −0,00074°) minden szelvényre alkalmaztuk. A 13:XIX és a 15:XIX szelvény hiányzik."
       },
       "overview": {
-        "url": "maps/spezialkarte-overview.webp",
+        "url": "maps/spezialkarte-hu-overview.webp",
         "coordinates": [
           [
-            18.3,
-            48.26
+            15.832368,
+            48.74926
           ],
           [
-            19.85,
-            48.26
+            23.332368,
+            48.74926
           ],
           [
-            19.85,
-            47.24
+            23.332368,
+            45.49926
           ],
           [
-            18.3,
-            47.24
+            15.832368,
+            45.49926
           ]
         ],
         "maxzoom": 10.5
       },
       "georef": "georef/spezialkarte-75000.json",
-      "attribution": "Spezialkarte 1:75 000, K. u. k. Militärgeographisches Institut; скани NYPL (CC0) та IOS Regensburg (суспільне надбання)"
+      "attribution": "Spezialkarte 1:75 000, K. u. k. Militärgeographisches Institut; скани IOS Regensburg (суспільне надбання) та NYPL (CC0)",
+      "grayscale": true,
+      "allmapsMinzoom": 9
     }
   ]
 }

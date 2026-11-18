@@ -140,6 +140,20 @@ if (existsSync(seriesPath)) {
       if (typeof o.maxzoom !== 'number' || o.maxzoom < 0 || o.maxzoom > 22) err(f, 'overview.maxzoom: число 0–22');
     }
     if (s.georef !== undefined && (typeof s.georef !== 'string' || !existsSync(join(root, '..', 'public', s.georef)))) err(f, `georef: немає файлу public/${s.georef}`);
+    if (s.grayscale !== undefined && typeof s.grayscale !== 'boolean') err(f, 'grayscale: true або false');
+    if (s.allmapsMinzoom !== undefined && (typeof s.allmapsMinzoom !== 'number' || s.allmapsMinzoom < 0 || s.allmapsMinzoom > 22)) err(f, 'allmapsMinzoom: число 0–22');
+    if (s.georef && typeof s.georef === 'string' && existsSync(join(root, '..', 'public', s.georef))) {
+      // Georeference Annotation: кожен аркуш — зображення IIIF і щонайменше 3 опорні точки
+      const page = readJson(join(root, '..', 'public', s.georef));
+      const items = page?.type === 'AnnotationPage' ? page.items : [page];
+      (items ?? []).forEach((it, k) => {
+        const src = it?.target?.source;
+        const feats = it?.body?.features;
+        if (!src || typeof src.id !== 'string' || !/^https:\/\//.test(src.id) || !(src.width > 0) || !(src.height > 0)) err(f, `georef item ${k}: target.source (id, width, height)`);
+        if (!Array.isArray(feats) || feats.length < 3) err(f, `georef item ${k}: потрібно щонайменше 3 опорні точки`);
+        else feats.forEach((p) => checkCoords(f, p?.geometry?.coordinates, `georef item ${k}`));
+      });
+    }
   });
 }
 const sheetsSeen = new Map();
