@@ -102,6 +102,7 @@ function goSection(s: Section) {
 
 function renderChrome() {
   $('title').textContent = t('appTitle');
+  document.title = t('appTitle');
   const cur = currentSection();
   for (const s of SECTIONS) {
     const b = $(`tab-${s}`);
