@@ -1,0 +1,47 @@
+{
+  "id": "lipszky-1806",
+  "title": {
+    "uk": "Мапа Ліпскі «Mappa Generalis Regni Hungariae», 1806",
+    "hu": "Lipszky-térkép (Mappa Generalis Regni Hungariae), 1806"
+  },
+  "year": "1806",
+  "author": "Lipszky János; гравери Prixner Gottfried і Karacs Ferenc",
+  "license": "Суспільне надбання",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "attribution": "Lipszky János: Mappa Generalis Regni Hungariae, Pest, 1806. Скан: David Rumsey Map Collection, через Wikimedia Commons",
+  "source": {
+    "title": "Wikimedia Commons: Category:Mappa Generalis Regni Hungariae (David Rumsey Historical Map Collection)",
+    "url": "https://commons.wikimedia.org/wiki/Category:Mappa_Generalis_Regni_Hungariae_(David_Rumsey_Historical_Map_Collection)",
+    "note": "Рік за заголовком мапи: «Pesthini Anno MDCCCVI (1806)»; покажчик до неї видано 1808 року. Сім аркушів (I, II, IV–VIII) з мініатюр 3840 px вирівняно за підписаними на рамках градусами й мінутами; довготи на мапі від меридіана Ферро, переведено в Гринвіч за зсувом 17°40′. Модель — одна конічна проєкція для всіх аркушів: 54 відліки рамок на аркушах II, IV і V лягли з середньою похибкою 3 px (близько 300 м), на крайніх аркушах I, VI, VII і VIII похибка до 2–3 км. Перевірено на містах: Győr, Komárom, Sopron, Miskolc, Pécs, Tokaj і Mohács лягають на свої позначки. Мозаїку зібрано в проєкції Web Mercator для 16°–23° сх. д. і 45,7°–48,65° пн. ш."
+  },
+  "type": "image",
+  "url": "maps/lipszky-1806.jpg",
+  "coordinates": [
+    [
+      16.0,
+      48.65
+    ],
+    [
+      23.0,
+      48.65
+    ],
+    [
+      23.0,
+      45.7
+    ],
+    [
+      16.0,
+      45.7
+    ]
+  ],
+  "periods": [
+    "prehistory",
+    "roman-barbaricum",
+    "migration",
+    "arpad",
+    "late-medieval",
+    "ottoman",
+    "habsburg-18",
+    "long-19"
+  ]
+}

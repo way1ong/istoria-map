@@ -1,5 +1,5 @@
 {
-  "_comment": "Сучасні підкладки для мапи й режиму порівняння. type: style (стиль MapLibre) або raster (тайли {z}/{x}/{y} чи {z}/{y}/{x}). Якщо в адресі є {key}, підкладка показується лише коли заповнено поле key.",
+  "_comment": "Сучасні підкладки для мапи й режиму порівняння. type: style (стиль MapLibre), raster (тайли {z}/{x}/{y} чи {z}/{y}/{x}) або relief (тіньовий рельєф з тайлів висот у tiles, з кодуванням encoding, і сучасна вода й назви міст з векторних тайлів у vector). Якщо в адресі є {key}, підкладка показується лише коли заповнено поле key.",
   "basemaps": [
     {
       "id": "osm",
@@ -14,6 +14,33 @@
       "short": {
         "uk": "Мапа",
         "hu": "Térkép"
+      }
+    },
+    {
+      "id": "relief",
+      "title": {
+        "uk": "Рельєф і сучасна вода",
+        "hu": "Domborzat és mai vizek"
+      },
+      "short": {
+        "uk": "Рельєф",
+        "hu": "Domborzat"
+      },
+      "type": "relief",
+      "tiles": [
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
+      ],
+      "encoding": "terrarium",
+      "tileSize": 256,
+      "maxzoom": 15,
+      "vector": "https://tiles.openfreemap.org/planet",
+      "attribution": "Рельєф: Terrain Tiles (AWS) — EU-DEM (Copernicus, ЄС), SRTM і GMTED2010 (USGS)",
+      "license": "Відкриті дані з обов'язковим зазначенням джерел: EU-DEM виготовлено з даних Copernicus за кошти ЄС; SRTM і GMTED2010 надано Геологічною службою США; вода й назви — ODbL",
+      "licenseUrl": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+      "source": {
+        "title": "Terrain Tiles: attribution.md (tilezen/joerd)",
+        "url": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+        "note": "Обов'язкові підписи джерел висот; для Європи EU-DEM (Copernicus), глобально SRTM і GMTED2010 (USGS). Тайли у форматі Terrarium до 15-го рівня наближення."
       }
     },
     {

@@ -38,20 +38,20 @@ header.topbar h1 { font-size: 16px; margin: 0; flex: 1 1 0; min-width: 0; white-
 .tabs button.active { background: var(--line); color: var(--fg); font-weight: 600; }
 .lang { display: flex; gap: 2px; flex: none; }
 .lang button { padding: 6px 6px; border-radius: 8px; color: var(--muted); font-weight: 600; white-space: nowrap; }
-/* Вузькі екрани: заголовок ховається, вкладки меншим шрифтом, перемикач мови лишається в рядку */
-@media (max-width: 480px) {
-  header.topbar { gap: 4px; padding: 0 8px; padding-top: env(safe-area-inset-top); }
-  header.topbar h1 { display: none; }
-  .tabs { flex: 1 1 auto; min-width: 0; overflow-x: auto; scrollbar-width: none; }
-  .tabs::-webkit-scrollbar { display: none; }
-  .tabs button { padding: 6px 8px; font-size: 14px; }
-  .lang button { padding: 6px 5px; font-size: 13px; }
+/* Поле вибору розділу: на телефонах замість рядка вкладок */
+.nav-select { display: none; font: inherit; font-weight: 600; font-size: 15px; color: var(--fg); background: var(--line); border: none; border-radius: 8px; padding: 7px 8px; min-width: 0; max-width: 100%; }
+/* Вузькі екрани: заголовок ховається, вкладки замінює поле вибору, перемикач мови лишається в рядку */
+@media (max-width: 600px) {
+  header.topbar { gap: 6px; padding: 0 8px; padding-top: env(safe-area-inset-top); }
+  header.topbar h1 { font-size: 15px; }
+  .tabs { display: none; }
+  .nav-select { display: block; flex: none; max-width: 56vw; }
+  .lang button { padding: 6px 5px; font-size: 14px; }
 }
-/* Дуже вузькі екрани: чотири вкладки й перемикач мови мають уміститися без прокручування */
-@media (max-width: 420px) {
-  .tabs { gap: 2px; }
-  .tabs button { padding: 6px 5px; font-size: 13px; }
-  .lang button { padding: 6px 4px; }
+/* Найвужчі екрани: лише поле вибору й мова */
+@media (max-width: 359px) {
+  header.topbar h1 { display: none; }
+  .nav-select { flex: 1 1 auto; max-width: none; }
 }
 .lang button.active { color: var(--fg); text-decoration: underline; }
 
@@ -145,9 +145,7 @@ figcaption { font-size: 12px; color: var(--muted); }
 .compare { position: absolute; inset: 0; display: flex; flex-direction: column; }
 .cmp-bar { display: flex; gap: 6px; align-items: center; padding: 6px 8px; border-bottom: 1px solid var(--line); background: var(--bg); flex: none; }
 .cmp-bar select { flex: 1; min-width: 0; font: inherit; font-size: 13px; background: var(--card); color: inherit; border: 1px solid var(--line); border-radius: 8px; padding: 6px; }
-.cmp-base { display: flex; gap: 4px; }
-.cmp-base button { padding: 6px 8px; border-radius: 8px; font-size: 13px; border: 1px solid var(--line); color: var(--muted); }
-.cmp-base button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.cmp-bar select.cmp-base { flex: 0 1 40%; }
 .cmp-pane { position: relative; flex: 1; min-height: 0; }
 .cmp-top { border-bottom: 2px solid var(--accent); }
 .cmp-map-el { width: 100%; height: 100%; }  /* MapLibre сам ставить position: relative */
@@ -186,3 +184,14 @@ figcaption { font-size: 12px; color: var(--muted); }
 .page .lead { font-size: 17px; }
 .tool-nav { display: flex; justify-content: space-between; gap: 12px; margin: 24px 0 8px; font-size: 14px; }
 .tool-nav a { text-decoration: none; }
+
+/* Розділ «Ландшафт» */
+.page .jump { position: sticky; top: 0; z-index: 2; display: flex; gap: 8px; align-items: center; padding: 8px 0; margin: 0 0 8px; background: var(--bg); border-bottom: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+.page .jump select { flex: 1 1 auto; min-width: 0; font: inherit; color: var(--fg); background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 6px; }
+.page .landscape h2 { scroll-margin-top: 56px; }
+
+/* Підпис джерел мапи на телефоні дрібніший, щоб менше закривав мапу */
+@media (max-width: 600px) {
+  .maplibregl-ctrl-attrib { font-size: 10px; line-height: 1.3; }
+  .maplibregl-ctrl-attrib-inner { padding: 1px 0; }
+}
