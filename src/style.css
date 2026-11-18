@@ -127,7 +127,10 @@ figcaption { font-size: 12px; color: var(--muted); }
 /* Атрибуцію і масштаб піднімаємо над шкалою періодів */
 #view-map .maplibregl-ctrl-bottom-left, #view-map .maplibregl-ctrl-bottom-right { bottom: calc(56px + env(safe-area-inset-bottom)); }
 .footnotes { word-break: break-word; }
-.prose sup + sup::before { content: ", "; color: var(--muted); }
+.footnotes li { scroll-margin-top: 64px; transition: background-color .3s; border-radius: 4px; }
+.footnotes .fn-back { text-decoration: none; padding: 0 6px; }
+.fnref a { text-decoration: none; padding: 0 1px; }
+.fn-hl { background: color-mix(in srgb, var(--accent, #c2410c) 18%, transparent); }
 
 /* Анімовані мапи на сторінці події */
 .anim { margin-top: 20px; }
@@ -186,9 +189,10 @@ figcaption { font-size: 12px; color: var(--muted); }
 .tool-nav a { text-decoration: none; }
 
 /* Розділ «Ландшафт» */
-.page .jump { position: sticky; top: 0; z-index: 2; display: flex; gap: 8px; align-items: center; padding: 8px 0; margin: 0 0 8px; background: var(--bg); border-bottom: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+.page .jump { position: sticky; top: -16px; z-index: 2; display: flex; gap: 8px; align-items: center; padding: 24px 0 8px; margin: -16px 0 8px; background: var(--bg); border-bottom: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 .page .jump select { flex: 1 1 auto; min-width: 0; font: inherit; color: var(--fg); background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 6px; }
-.page .landscape h2 { scroll-margin-top: 56px; }
+.page .jump > span { flex: none; white-space: nowrap; }
+.page .landscape h2 { scroll-margin-top: 64px; }
 
 /* Підпис джерел мапи на телефоні дрібніший, щоб менше закривав мапу */
 @media (max-width: 600px) {

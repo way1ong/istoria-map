@@ -23,4 +23,18 @@ export function mountLandscape(page: HTMLElement): void {
   heads.forEach((h, i) => { h.id = `sec-${i}`; });
   sel.innerHTML = heads.map((h, i) => `<option value="${i}">${h.textContent ?? ''}</option>`).join('');
   sel.onchange = () => heads[Number(sel.value)]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Під час гортання поле показує розділ, у якому читач зараз.
+  let queued = false;
+  page.onscroll = () => {
+    if (!sel.isConnected) { page.onscroll = null; return; }
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(() => {
+      queued = false;
+      const top = page.getBoundingClientRect().top + box.offsetHeight + 24;
+      let cur = 0;
+      heads.forEach((h, i) => { if (h.getBoundingClientRect().top <= top) cur = i; });
+      if (sel.value !== String(cur)) sel.value = String(cur);
+    });
+  };
 }

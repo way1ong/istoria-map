@@ -191,7 +191,26 @@ $('sheet').querySelector<HTMLButtonElement>('.close')!.onclick = () => navigate(
 $<HTMLSelectElement>('overlay-select').onchange = (e) => mapCtl?.setOverlay((e.target as HTMLSelectElement).value || null);
 $<HTMLInputElement>('overlay-opacity').oninput = (e) => mapCtl?.setOverlayOpacity(Number((e.target as HTMLInputElement).value));
 
+// Виноски в текстах: посилання #fn-… не змінюють маршрут, а прокручують до джерела і назад.
+let lastFnRef: HTMLElement | null = null;
+document.addEventListener('click', (e) => {
+  const a = (e.target as HTMLElement).closest<HTMLAnchorElement>('a[href^="#fn-"]');
+  if (!a) return;
+  e.preventDefault();
+  const back = a.getAttribute('href') === '#fn-back';
+  const li = a.closest('li');
+  const target = back
+    ? (lastFnRef?.getAttribute('href') === `#${li?.id}` ? lastFnRef : document.querySelector<HTMLElement>(`.fnref a[href="#${li?.id}"]`))
+    : document.getElementById(a.getAttribute('href')!.slice(1));
+  if (a.closest('.fnref')) lastFnRef = a;
+  if (!target) return;
+  target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  target.classList.add('fn-hl');
+  setTimeout(() => target.classList.remove('fn-hl'), 1600);
+});
+
 onRoute((r) => {
   route = r;
+  lastFnRef = null;
   render();
 });

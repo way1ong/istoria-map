@@ -5,25 +5,51 @@ import type { CoordsPrecision, DatePrecision, HistEvent, Photo, Place, Source } 
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
 
+/** Адреси у виносках: відкривати в новій вкладці, показувати без %-кодування. */
+function footnoteHtml(text: string): string {
+  return (marked.parseInline(text, { async: false }) as string).replace(
+    /<a href="(https?:\/\/[^"]+)">([^<]*)<\/a>/g,
+    (_, href: string, label: string) => {
+      let shown = label;
+      if (label === href) { try { shown = esc(decodeURI(href.replace(/&amp;/g, '&'))); } catch { /* лишити як є */ } }
+      return `<a href="${href}" target="_blank" rel="noopener">${shown}</a>`;
+    },
+  );
+}
+
 /**
- * Markdown → HTML. Підтримує прості виноски: посилання `[^1]` у тексті
+ * Markdown → HTML. Підтримує прості виноски: посилання `[^1]` чи `[^rk]` у тексті
  * та визначення `[^1]: ...` на окремих рядках (виносяться в список унизу).
+ * Виноски нумеруються за першою появою в тексті, як на GitHub; кліки обробляє main.ts.
  * Перший заголовок `# ...` відкидається, бо сторінка вже має заголовок.
  */
 export function md(text: string | undefined): string {
   if (!text) return '';
-  const notes: string[] = [];
+  const defs = new Map<string, string>();
+  const order: string[] = [];
+  const num = (id: string) => {
+    if (!order.includes(id)) order.push(id);
+    return order.indexOf(id) + 1;
+  };
   const body = text
     .replace(/^# .*\n?/, '')
     .split('\n')
     .filter((line) => {
       const m = line.match(/^\[\^(\w+)\]:\s*(.*)$/);
-      if (m) { notes.push(`<li id="fn-${m[1]}">${m[2]}</li>`); return false; }
+      if (m) { defs.set(m[1], m[2]); return false; }
       return true;
     })
     .join('\n')
-    .replace(/\[\^(\w+)\]/g, '<sup><a href="#fn-$1">$1</a></sup>');
+    // Кілька виносок поспіль ([^a][^b]) стають одним верхнім індексом «1, 2».
+    .replace(/(?:\[\^\w+\])+/g, (group: string) => {
+      const links = [...group.matchAll(/\[\^(\w+)\]/g)].map(([, id]) => `<a href="#fn-${id}">${num(id)}</a>`);
+      return `<sup class="fnref">${links.join(', ')}</sup>`;
+    });
   const html = marked.parse(body, { async: false }) as string;
+  for (const id of defs.keys()) num(id);
+  const notes = order
+    .filter((id) => defs.has(id))
+    .map((id) => `<li id="fn-${id}" value="${order.indexOf(id) + 1}">${footnoteHtml(defs.get(id) ?? '')} <a class="fn-back" href="#fn-back" title="${t('back')}">↑</a></li>`);
   return notes.length ? `${html}<hr /><ol class="sources footnotes">${notes.join('')}</ol>` : html;
 }
 
@@ -79,7 +105,7 @@ export function photos(list: Photo[] | undefined): string {
       (p) => `<figure><img src="${esc(thumbUrl(p.url))}" data-orig="${esc(p.url)}" onerror="this.onerror=null;this.src=this.dataset.orig" alt="${esc(lt(p.caption) || '')}" loading="lazy" />
       <figcaption>${lt(p.caption) ? esc(lt(p.caption)) + '. ' : ''}${t('photoBy')}: ${esc(p.author)}, ${t('license')}: ${
         p.licenseUrl ? `<a href="${esc(p.licenseUrl)}" target="_blank" rel="noopener">${esc(p.license)}</a>` : esc(p.license)
-      } (<a href="${esc(p.source)}" target="_blank" rel="noopener">source</a>)</figcaption></figure>`,
+      } (<a href="${esc(p.source)}" target="_blank" rel="noopener">${t('photoSource')}</a>)</figcaption></figure>`,
     )
     .join('');
 }
