@@ -2,7 +2,8 @@ import { Map as MLMap, Marker, type LngLatLike, type StyleSpecification } from '
 import { basemapStyle, getPreferredBasemap, setPreferredBasemap } from './basemap';
 import { basemaps, histMaps, periodById, places } from './data';
 import { lt, t } from './i18n';
-import type { HistMap, Place } from './types';
+import { addOldMap, mapChoices, mapCovers } from './oldmap';
+import type { Place } from './types';
 
 export interface CompareHandle { destroy(): void }
 
@@ -27,15 +28,6 @@ function addPlacesLayers(map: MLMap, periodId: string | null) {
   map.addLayer({ id: 'cmp-label', type: 'symbol', source: 'cmp-places', layout: { 'text-field': ['get', 'label'], 'text-font': ['Noto Sans Bold'], 'text-size': 11, 'text-offset': [0, 1.1], 'text-anchor': 'top', 'text-max-width': 9 }, paint: { 'text-color': '#111827', 'text-halo-color': '#ffffff', 'text-halo-width': 1.5 } });
 }
 
-function addOverlay(map: MLMap, m: HistMap) {
-  if (m.type === 'image' && m.coordinates) {
-    map.addSource('cmp-old', { type: 'image', url: m.url, coordinates: m.coordinates as [[number, number], [number, number], [number, number], [number, number]] });
-  } else {
-    map.addSource('cmp-old', { type: 'raster', tiles: [m.url], tileSize: 256, attribution: m.attribution });
-  }
-  map.addLayer({ id: 'cmp-old', type: 'raster', source: 'cmp-old', paint: { 'raster-opacity': 1 } }, 'cmp-dot');
-}
-
 /** Дві синхронні мапи: стара зверху, сучасна знизу; хрестик і дзеркальний курсор. */
 export function mountCompare(container: HTMLElement, opts: { mapId?: string; periodId?: string | null; baseId?: string; onChange: (q: { map: string; base: string }) => void; onPlace: (id: string) => void }): CompareHandle {
   const hm = histMaps.find((m) => m.id === opts.mapId) ?? histMaps[0];
@@ -43,17 +35,16 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   setPreferredBasemap(base.id);
   container.innerHTML = `
     <div class="cmp-bar">
-      <select class="cmp-map">${histMaps.map((m) => `<option value="${m.id}" ${m.id === hm?.id ? 'selected' : ''}>${lt(m.title)} (${m.year})</option>`).join('')}</select>
+      <select class="cmp-map">${mapChoices(histMaps, hm?.id).map((c) => `<option value="${c.value}" ${c.value === hm?.id ? 'selected' : ''}>${c.label}</option>`).join('')}</select>
       <select class="cmp-base" aria-label="${t('modernMap')}">${basemaps.map((b) => `<option value="${b.id}" ${b.id === base.id ? 'selected' : ''}>${lt(b.short) || lt(b.title)}</option>`).join('')}</select>
     </div>
     <div class="cmp-pane cmp-top"><div class="cmp-map-el"></div><div class="cmp-cross"></div><span class="cmp-tag">${t('oldMap')}</span></div>
     <div class="cmp-pane cmp-bottom"><div class="cmp-map-el"></div><div class="cmp-cross"></div><span class="cmp-tag">${t('modernMap')}</span></div>
     <p class="cmp-hint">${t('compareHint')}</p>`;
   const [topEl, botEl] = [...container.querySelectorAll<HTMLElement>('.cmp-map-el')];
-  // Стартуємо від Göd; якщо аркуш його не покриває, беремо центр аркуша.
-  const inside = (c: [number, number]) => !!hm?.coordinates && c[0] > hm.coordinates[0][0] && c[0] < hm.coordinates[1][0] && c[1] < hm.coordinates[0][1] && c[1] > hm.coordinates[2][1];
+  // Стартуємо від Göd; якщо мапа (чи її серія аркушів) його не покриває, беремо центр мапи.
   const god: [number, number] = [19.14, 47.7];
-  const center: LngLatLike = inside(god) || !hm?.coordinates ? god : [(hm.coordinates[0][0] + hm.coordinates[2][0]) / 2, (hm.coordinates[0][1] + hm.coordinates[2][1]) / 2];
+  const center: LngLatLike = !hm?.coordinates || mapCovers(hm, god) ? god : [(hm.coordinates[0][0] + hm.coordinates[2][0]) / 2, (hm.coordinates[0][1] + hm.coordinates[2][1]) / 2];
   // Для мап на всю країну стартуємо з оглядового масштабу, для аркушів околиць — з детального
   const span = hm?.coordinates ? hm.coordinates[1][0] - hm.coordinates[0][0] : 0;
   const common = { center, zoom: span > 2 ? 9 : 12, attributionControl: { compact: true } as const, pitchWithRotate: false, dragRotate: false };
@@ -62,7 +53,7 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   const period = opts.periodId ?? null;
 
   // style.load спрацьовує і при першому завантаженні, і після зміни стилю
-  top.on('style.load', () => { if (!top.getSource('cmp-places')) { addPlacesLayers(top, period); if (hm) addOverlay(top, hm); } });
+  top.on('style.load', () => { if (!top.getSource('cmp-places')) { addPlacesLayers(top, period); if (hm) addOldMap(top, hm, { prefix: 'cmp-old', beforeId: 'cmp-dot', opacity: 1 }); } });
   bot.on('style.load', () => { if (!bot.getSource('cmp-places')) addPlacesLayers(bot, period); });
 
   // синхронізація положення

@@ -37,6 +37,7 @@
 
 ## maps/<id>.json
 Стара мапа для накладання. Поля: `id`, `title`, `year`, `author`, `license`, `licenseUrl`, `attribution`, `source`, `type`: `image` або `xyz`, `url`, `coordinates` (для `image`: 4 кути NW, NE, SE, SW), `periods`.
+Необов'язкові `series` і `sheet`: аркуші однієї серії (наприклад, `"series": "spezialkarte-75000"`, `"sheet": "14:XX"`) показуються разом одним пунктом у списку мап. Серію описано в `map-series.json`: назва, примітка і `overview` — зведена мозаїка всіх аркушів (`url`, 4 кути `coordinates`, `maxzoom`). Мозаїку видно до зуму `maxzoom`, ближче вантажаться лише аркуші, що потрапили в поле зору. Новий аркуш серії: файл зображення в `public/maps/`, запис у `maps/` з тими самими `series` і новим `sheet`; мозаїку `overview` треба перебудувати скриптом (див. CLAUDE.md, пункт 16 плану).
 
 ## routes/<id>.geojson
 Анімовані мапи. Файл FeatureCollection з додатковим полем `animation`:

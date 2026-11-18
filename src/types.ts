@@ -96,6 +96,19 @@ export interface HistMap {
   /** Для image: 4 кути [NW, NE, SE, SW] як [lon, lat]. */
   coordinates?: [number, number][];
   periods?: string[];
+  /** Серія з data/map-series.json: аркуші однієї серії показуються разом. */
+  series?: string;
+  /** Номер аркуша в серії, напр. "14:XX". */
+  sheet?: string;
+}
+
+/** Серія старих мап (data/map-series.json). */
+export interface MapSeries {
+  id: string;
+  title: LText;
+  note?: LText;
+  /** Зведена мозаїка аркушів для дрібних масштабів: видно до зуму maxzoom, далі — окремі аркуші. */
+  overview?: { url: string; coordinates: [number, number][]; maxzoom: number };
 }
 
 /** Властивості об'єкта в data/routes/*.geojson */

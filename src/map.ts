@@ -17,13 +17,12 @@ import { basemaps, histMaps, periodById, places } from './data';
 import { basemapStyle, getPreferredBasemap, setPreferredBasemap } from './basemap';
 import { lt } from './i18n';
 import { colorFor, loadBorders, loadModern } from './borders';
+import { addOldMap, type OldMapHandle } from './oldmap';
 import type { BorderCollection, HistMap, Place } from './types';
 
 // Стартовий вигляд: уся Угорщина (центр країни, зум під екран телефона).
 const CENTER: [number, number] = [19.4, 47.15];
 const SRC = 'places';
-const OVERLAY_SRC = 'overlay';
-const OVERLAY_LAYER = 'overlay-layer';
 const BORDERS_SRC = 'borders';
 const MODERN_SRC = 'modern-outline';
 /** Нижче цього зуму показуються історичні кордони; вище — лише місця. */
@@ -200,25 +199,15 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     map.setPaintProperty('places-label', 'text-opacity', opacityExpr(selected));
   };
 
+  // Стара мапа поверх сучасної; аркуші серії — разом (див. src/oldmap.ts).
+  let overlay: OldMapHandle | null = null;
   const removeOverlay = () => {
-    if (map.getLayer(OVERLAY_LAYER)) map.removeLayer(OVERLAY_LAYER);
-    if (map.getSource(OVERLAY_SRC)) map.removeSource(OVERLAY_SRC);
+    overlay?.remove();
+    overlay = null;
   };
   const addOverlay = (m: HistMap, opacity: number) => {
     removeOverlay();
-    if (m.type === 'image' && m.coordinates) {
-      map.addSource(OVERLAY_SRC, {
-        type: 'image',
-        url: m.url,
-        coordinates: m.coordinates as [[number, number], [number, number], [number, number], [number, number]],
-      });
-    } else {
-      map.addSource(OVERLAY_SRC, { type: 'raster', tiles: [m.url], tileSize: 256, attribution: m.attribution });
-    }
-    map.addLayer(
-      { id: OVERLAY_LAYER, type: 'raster', source: OVERLAY_SRC, paint: { 'raster-opacity': opacity } },
-      'places-halo',
-    );
+    overlay = addOldMap(map, m, { prefix: 'overlay', beforeId: 'places-halo', opacity });
   };
 
   let overlayOpacity = 0.7;
@@ -285,7 +274,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     },
     setOverlayOpacity(v) {
       overlayOpacity = v;
-      if (map.getLayer(OVERLAY_LAYER)) map.setPaintProperty(OVERLAY_LAYER, 'raster-opacity', v);
+      overlay?.setOpacity(v);
     },
     refreshLabels() {
       lang = document.documentElement.lang || 'uk';

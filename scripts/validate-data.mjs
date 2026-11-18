@@ -121,10 +121,44 @@ for (const { file, path, name } of listJson('events')) {
   checkSources(file, e.sources);
 }
 
+// map-series.json: серії старих мап (аркуші однієї серії показуються разом)
+const seriesPath = join(root, 'map-series.json');
+const seriesIds = new Set();
+if (existsSync(seriesPath)) {
+  const ms = readJson(seriesPath);
+  (ms?.series ?? []).forEach((s, i) => {
+    const f = `data/map-series.json[${i}]`;
+    if (typeof s.id !== 'string' || !s.id) err(f, 'id відсутній');
+    else if (seriesIds.has(s.id)) err(f, `повторний id "${s.id}"`);
+    else seriesIds.add(s.id);
+    if (!isLText(s.title)) err(f, 'title.uk відсутній');
+    if (s.overview) {
+      const o = s.overview;
+      if (typeof o.url !== 'string' || !existsSync(join(root, '..', 'public', o.url))) err(f, `overview.url: немає файлу public/${o.url}`);
+      if (!Array.isArray(o.coordinates) || o.coordinates.length !== 4) err(f, 'overview.coordinates: потрібно 4 кути [NW, NE, SE, SW]');
+      else o.coordinates.forEach((c, k) => checkCoords(f, c, `overview.coordinates[${k}]`));
+      if (typeof o.maxzoom !== 'number' || o.maxzoom < 0 || o.maxzoom > 22) err(f, 'overview.maxzoom: число 0–22');
+    }
+  });
+}
+const sheetsSeen = new Map();
+
 // maps
 for (const { file, path, name } of listJson('maps')) {
   const m = readJson(path);
   if (!m) continue;
+  if (m.series !== undefined) {
+    if (!seriesIds.has(m.series)) err(file, `невідома серія "${m.series}" (див. data/map-series.json)`);
+    if (m.type !== 'image') err(file, 'аркуш серії має бути type: image');
+    if (typeof m.sheet !== 'string' || !m.sheet.trim()) err(file, 'sheet: номер аркуша відсутній');
+    else {
+      const k = `${m.series}/${m.sheet}`;
+      if (sheetsSeen.has(k)) err(file, `аркуш ${m.sheet} уже є у ${sheetsSeen.get(k)}`);
+      sheetsSeen.set(k, file);
+    }
+  }
+  if (m.type === 'image' && typeof m.url === 'string' && !/^https?:/.test(m.url) && !existsSync(join(root, '..', 'public', m.url)))
+    err(file, `url: немає файлу public/${m.url}`);
   if (m.id !== name) err(file, `id має збігатися з назвою файлу "${name}"`);
   if (!isLText(m.title)) err(file, 'title.uk відсутній');
   for (const k of ['license', 'attribution', 'url'])

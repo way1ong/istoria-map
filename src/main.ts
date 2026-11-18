@@ -5,6 +5,7 @@ import { mountAnimation, type AnimHandle } from './anim';
 import { mountCompare, type CompareHandle } from './compare';
 import { formatYear, getLang, lt, setLang, t } from './i18n';
 import { createMap, type MapController } from './map';
+import { mapChoices } from './oldmap';
 import { eventPage, historyIndex, periodPage, placePage } from './pages/history';
 import { landscapePage, mountLandscape } from './pages/landscape';
 import { toolPage, toolsIndex } from './pages/tools';
@@ -104,8 +105,9 @@ function renderOverlayCtl(ctl: MapController) {
   const visible = histMaps.filter((m) => !state.period || !m.periods || m.periods.includes(state.period));
   box.hidden = visible.length === 0;
   const prev = sel.value;
-  sel.innerHTML = `<option value="">${t('noOverlay')}</option>` + visible.map((m) => `<option value="${m.id}">${lt(m.title)} (${m.year})</option>`).join('');
-  sel.value = visible.some((m) => m.id === prev) ? prev : '';
+  const choices = mapChoices(visible, prev);
+  sel.innerHTML = `<option value="">${t('noOverlay')}</option>` + choices.map((c) => `<option value="${c.value}">${c.label}</option>`).join('');
+  sel.value = choices.some((c) => c.value === prev) ? prev : '';
   ctl.setOverlay(sel.value || null);
 }
 
