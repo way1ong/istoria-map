@@ -90,8 +90,8 @@ export interface HistMap {
   licenseUrl?: string;
   attribution: string;
   source: Source;
-  /** image: один скан з 4 кутами; xyz: тайли {z}/{x}/{y}. */
-  type: 'image' | 'xyz';
+  /** image: один скан з 4 кутами; xyz: тайли {z}/{x}/{y}; geojson: векторний шар (url — шлях у data/, напр. water/…geojson). */
+  type: 'image' | 'xyz' | 'geojson';
   url: string;
   /** Для image: 4 кути [NW, NE, SE, SW] як [lon, lat]. */
   coordinates?: [number, number][];

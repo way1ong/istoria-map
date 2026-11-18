@@ -1,5 +1,5 @@
-import type { CustomLayerInterface, Map as MLMap } from 'maplibre-gl';
-import { seriesById, seriesSheets } from './data';
+import type { CustomLayerInterface, GeoJSONSource, Map as MLMap } from 'maplibre-gl';
+import { loadVectorOverlay, seriesById, seriesSheets } from './data';
 import { lt } from './i18n';
 import type { HistMap } from './types';
 
@@ -58,7 +58,20 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
   ids.push(attrId);
 
   let update: (() => void) | null = null;
-  if (!series) {
+  const vectorIds: { id: string; prop: 'fill-opacity' | 'line-opacity'; k: number }[] = [];
+  if (!series && m.type === 'geojson') {
+    // Векторна накладка: заливка й контур; дані вантажаться ліниво.
+    const id = `${opts.prefix}-v`;
+    map.addSource(id, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+    map.addLayer({ id: `${id}-fill`, type: 'fill', source: id, paint: { 'fill-color': '#2f7fd8', 'fill-opacity': 0.45 * opacity } }, before());
+    map.addLayer({ id: `${id}-line`, type: 'line', source: id, paint: { 'line-color': '#1b4f8f', 'line-width': ['interpolate', ['linear'], ['zoom'], 6, 0.6, 12, 1.6], 'line-opacity': opacity } }, before());
+    ids.push(`${id}-fill`, `${id}-line`, id);
+    vectorIds.push({ id: `${id}-fill`, prop: 'fill-opacity', k: 0.45 }, { id: `${id}-line`, prop: 'line-opacity', k: 1 });
+    void loadVectorOverlay(m.url).then((data) => {
+      if (removed) return;
+      (map.getSource(id) as GeoJSONSource | undefined)?.setData(data);
+    }).catch((e) => console.warn('Векторна накладка:', e));
+  } else if (!series) {
     const id = `${opts.prefix}-0`;
     if (m.type === 'image' && m.coordinates) addImage(id, m.url, m.coordinates);
     else {
@@ -115,6 +128,7 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
     setOpacity(v) {
       opacity = v;
       for (const id of ids) if (map.getLayer(id) && map.getLayer(id)!.type === 'raster') map.setPaintProperty(id, 'raster-opacity', v);
+      for (const x of vectorIds) if (map.getLayer(x.id)) map.setPaintProperty(x.id, x.prop, x.k * v);
       warped?.setOpacity(v);
     },
     remove() {

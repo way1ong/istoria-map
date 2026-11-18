@@ -31,12 +31,14 @@ function addPlacesLayers(map: MLMap, periodId: string | null) {
 
 /** Дві синхронні мапи: стара зверху, сучасна знизу; хрестик і дзеркальний курсор. */
 export function mountCompare(container: HTMLElement, opts: { mapId?: string; periodId?: string | null; baseId?: string; onChange: (q: { map: string; base: string }) => void; onPlace: (id: string) => void }): CompareHandle {
-  const hm = histMaps.find((m) => m.id === opts.mapId) ?? histMaps[0];
+  // Векторні накладки (болота 1806) порівнювати нема з чим: зверху порожнє тло, тож лише растрові мапи.
+  const rasterMaps = histMaps.filter((m) => m.type !== 'geojson');
+  const hm = rasterMaps.find((m) => m.id === opts.mapId) ?? rasterMaps[0];
   const base = basemaps.find((b) => b.id === opts.baseId) ?? getPreferredBasemap();
   setPreferredBasemap(base.id);
   container.innerHTML = `
     <div class="cmp-bar">
-      <select class="cmp-map">${mapChoices(histMaps, hm?.id).map((c) => `<option value="${c.value}" ${c.value === hm?.id ? 'selected' : ''}>${c.label}</option>`).join('')}</select>
+      <select class="cmp-map">${mapChoices(rasterMaps, hm?.id).map((c) => `<option value="${c.value}" ${c.value === hm?.id ? 'selected' : ''}>${c.label}</option>`).join('')}</select>
       <select class="cmp-base" aria-label="${t('modernMap')}">${basemaps.map((b) => `<option value="${b.id}" ${b.id === base.id ? 'selected' : ''}>${lt(b.short) || lt(b.title)}</option>`).join('')}</select>
     </div>
     <div class="cmp-pane cmp-top"><div class="cmp-map-el"></div><div class="cmp-cross"></div><span class="cmp-tag">${t('oldMap')}</span></div>

@@ -180,7 +180,23 @@ for (const { file, path, name } of listJson('maps')) {
   if (!isLText(m.title)) err(file, 'title.uk відсутній');
   for (const k of ['license', 'attribution', 'url'])
     if (typeof m[k] !== 'string' || !m[k].trim()) err(file, `${k} відсутній`);
-  if (!['image', 'xyz'].includes(m.type)) err(file, 'type має бути image | xyz');
+  if (!['image', 'xyz', 'geojson'].includes(m.type)) err(file, 'type має бути image | xyz | geojson');
+  if (m.type === 'geojson') {
+    // векторна накладка: url — шлях у data/ (напр. water/lipszky-1806.geojson)
+    const gp = typeof m.url === 'string' ? join(root, m.url) : '';
+    if (!gp || !/^water\/[\w.-]+\.geojson$/.test(m.url) || !existsSync(gp)) err(file, `url: для geojson потрібен файл data/water/*.geojson, а не "${m.url}"`);
+    else {
+      const g = readJson(gp);
+      if (g?.type !== 'FeatureCollection' || !Array.isArray(g.features)) err(`data/${m.url}`, 'потрібна FeatureCollection');
+      else g.features.forEach((f, k) => {
+        const t = f?.geometry?.type;
+        if (!['Polygon', 'MultiPolygon', 'LineString', 'MultiLineString'].includes(t)) err(`data/${m.url}`, `features[${k}]: тип геометрії ${t}`);
+        const first = t === 'Polygon' ? f.geometry.coordinates?.[0]?.[0] : t === 'MultiPolygon' ? f.geometry.coordinates?.[0]?.[0]?.[0] : t === 'LineString' ? f.geometry.coordinates?.[0] : f.geometry.coordinates?.[0]?.[0];
+        checkCoords(`data/${m.url}`, first, `features[${k}]`);
+      });
+      for (const k of ['license', 'attribution']) if (typeof g?.[k] !== 'string' || !g[k].trim()) err(`data/${m.url}`, `${k} відсутній`);
+    }
+  }
   if (m.type === 'image') {
     if (!Array.isArray(m.coordinates) || m.coordinates.length !== 4) err(file, 'coordinates: потрібно 4 кути [NW, NE, SE, SW]');
     else m.coordinates.forEach((c, i) => checkCoords(file, c, `coordinates[${i}]`));
