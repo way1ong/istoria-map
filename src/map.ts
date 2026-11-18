@@ -19,7 +19,7 @@ import { lt } from './i18n';
 import { colorFor, loadBorders, loadModern } from './borders';
 import { addOldMap, type OldMapHandle } from './oldmap';
 import { DOT_RADIUS, DOT_STROKE, HALO_RADIUS } from './markers';
-import type { BorderCollection, HistMap, Place } from './types';
+import type { BorderCollection, HistMap, Place, PlaceType } from './types';
 
 // Стартовий вигляд: уся Угорщина (центр країни, зум під екран телефона).
 const CENTER: [number, number] = [19.4, 47.15];
@@ -43,6 +43,21 @@ export interface MapController {
   setYear(year: number | null): void;
   /** Викликається, коли змінюється рік або видимість шару кордонів (для підпису). */
   onBorders(cb: (info: { year: number; attribution: string } | null) => void): void;
+  /** Фільтр місць за типом (порожній набір = усі типи) і «лише зниклі». */
+  setPlaceFilter(f: PlaceFilter): void;
+}
+
+export interface PlaceFilter {
+  types: PlaceType[];
+  vanishedOnly: boolean;
+}
+
+/** Чи проходить місце фільтр періоду й типу. */
+export function placeVisible(p: Place, periodId: string | null, f: PlaceFilter): boolean {
+  if (periodId && !p.periods.includes(periodId)) return false;
+  if (f.types.length && !f.types.includes(p.type)) return false;
+  if (f.vanishedOnly && !p.vanished) return false;
+  return true;
 }
 
 /**
@@ -68,8 +83,9 @@ function spread(list: Place[]): Map<string, [number, number]> {
   return out;
 }
 
-function featureCollection(periodId: string | null, lang: string) {
-  const visible = places.filter((p) => !periodId || p.periods.includes(periodId));
+function featureCollection(periodId: string | null, lang: string, filter: PlaceFilter, forceId: string | null) {
+  // вибране місце (з пошуку чи «Що поруч») показуємо навіть тоді, коли фільтр типу його ховає
+  const visible = places.filter((p) => p.id === forceId || placeVisible(p, periodId, filter));
   const pos = spread(visible);
   return {
     type: 'FeatureCollection' as const,
@@ -105,6 +121,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   map.addControl(new GeolocateControl({ trackUserLocation: false }), 'top-right');
 
   let currentPeriod: string | null = null;
+  let placeFilter: PlaceFilter = { types: [], vanishedOnly: false };
   let selected: string | null = null;
   let lang = document.documentElement.lang || 'uk';
 
@@ -134,7 +151,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       id: 'modern-line', type: 'line', source: MODERN_SRC, maxzoom: BORDERS_MAXZOOM,
       paint: { 'line-color': '#111827', 'line-width': ['case', ['==', ['get', 'id'], 'hungary'], 1.8, 1], 'line-dasharray': ['literal', [2, 2]], 'line-opacity': 0.8 },
     });
-    map.addSource(SRC, { type: 'geojson', data: featureCollection(currentPeriod, lang) });
+    map.addSource(SRC, { type: 'geojson', data: featureCollection(currentPeriod, lang, placeFilter, selected) });
     map.addLayer({
       id: 'places-halo',
       type: 'circle',
@@ -190,7 +207,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
 
   const refresh = () => {
     const src = map.getSource(SRC) as GeoJSONSource | undefined;
-    src?.setData(featureCollection(currentPeriod, lang));
+    src?.setData(featureCollection(currentPeriod, lang, placeFilter, selected));
   };
   const applySelection = () => {
     if (!map.getLayer('places-dot')) return;
@@ -255,9 +272,16 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       else map.once('load', refresh);
     },
     setSelected(id) {
+      const changed = id !== selected;
       selected = id;
-      if (map.isStyleLoaded()) applySelection();
-      else map.once('load', applySelection);
+      // дані оновлюємо, бо вибране місце показується навіть поза фільтром типу
+      const run = () => { if (changed && placeFilter.types.length + Number(placeFilter.vanishedOnly) > 0) refresh(); applySelection(); };
+      if (map.isStyleLoaded()) run();
+      else map.once('load', run);
+    },
+    setPlaceFilter(f) {
+      placeFilter = f;
+      if (map.getSource(SRC)) refresh();
     },
     flyTo(place) {
       // Зсув угору, щоб мітку не закривала нижня картка.
