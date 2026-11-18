@@ -9,7 +9,8 @@ export type Route =
   | { page: 'compare'; map?: string; period?: string; base?: string }
   | { page: 'tools'; audience?: ToolUser }
   | { page: 'tool'; id: string }
-  | { page: 'landscape' };
+  | { page: 'landscape' }
+  | { page: 'chronology'; period?: string };
 
 export function parseRoute(hash: string): Route {
   const clean = hash.replace(/^#\/?/, '');
@@ -35,6 +36,8 @@ export function parseRoute(hash: string): Route {
       return parts[1] ? { page: 'tool', id: parts[1] } : { page: 'tools' };
     case 'landscape':
       return { page: 'landscape' };
+    case 'chronology':
+      return { page: 'chronology', period: params.get('period') ?? undefined };
     default:
       return {
         page: 'map',

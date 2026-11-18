@@ -6,6 +6,7 @@ import { mountCompare, type CompareHandle } from './compare';
 import { formatYear, getLang, lt, setLang, t } from './i18n';
 import { createMap, type MapController } from './map';
 import { mapChoices } from './oldmap';
+import { chronologyPage } from './pages/chronology';
 import { eventPage, historyIndex, periodPage, placePage } from './pages/history';
 import { landscapePage, mountLandscape } from './pages/landscape';
 import { toolPage, toolsIndex } from './pages/tools';
@@ -189,6 +190,7 @@ function render() {
   switch (route.page) {
     case 'history': page.innerHTML = historyIndex(); break;
     case 'period': page.innerHTML = periodPage(route.id); break;
+    case 'chronology': page.innerHTML = chronologyPage(route.period); break;
     case 'place': page.innerHTML = placePage(route.id); break;
     case 'tools': page.innerHTML = toolsIndex(route.audience); break;
     case 'tool': page.innerHTML = toolPage(route.id); break;
