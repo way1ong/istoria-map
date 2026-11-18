@@ -14,7 +14,7 @@ import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 
 setWorkerUrl(workerUrl);
 import { basemaps, histMaps, periodById, places } from './data';
-import { basemapStyle, getPreferredBasemap, setPreferredBasemap } from './basemap';
+import { basemapStyle, getPreferredBasemap, localizeBasemapLabels, setPreferredBasemap } from './basemap';
 import { lt } from './i18n';
 import { colorFor, loadBorders, loadModern } from './borders';
 import { addOldMap, type OldMapHandle } from './oldmap';
@@ -200,7 +200,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   };
   map.on('load', addLayers);
   // Після зміни стилю підкладки шари місць і накладання треба додати знову
-  map.on('style.load', () => { addLayers(); applySelection(); if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); void applyBorders(); });
+  map.on('style.load', () => { localizeBasemapLabels(map, lang); addLayers(); applySelection(); if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); void applyBorders(); });
   map.on('click', (e: MapMouseEvent) => {
     if (!map.getLayer('places-dot')) return;
     const hits = map.queryRenderedFeatures(e.point, { layers: ['places-dot', 'places-halo'] });
@@ -305,7 +305,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     },
     refreshLabels() {
       lang = document.documentElement.lang || 'uk';
-      if (map.isStyleLoaded()) refresh();
+      if (map.isStyleLoaded()) { localizeBasemapLabels(map, lang); refresh(); }
       if (map.getSource(BORDERS_SRC)) void applyBorders();
     },
     setYear(year) {

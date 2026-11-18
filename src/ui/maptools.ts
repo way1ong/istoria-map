@@ -24,7 +24,8 @@ export const filterActive = (f: PlaceFilter) => f.types.length > 0 || f.vanished
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
 /** Для пошуку без діакритики й апострофів: «Sződ» = «szod», «Ґедельо» = «гедельо». */
-const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ґ/g, 'г').replace(/[’'ʼ`«»"]/g, '');
+/** Нормалізація для пошуку: без діакритики й апострофів; ґ, г і х рівнозначні (угорське h передають то «г», то «х»: Могач/Мохач, Гатван/Хатван). */
+const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[ґх]/g, 'г').replace(/[’'ʼ`«»"]/g, '');
 const typeLabel = (x: PlaceType) => t(`tp_${x}` as Key);
 
 const ICON = {

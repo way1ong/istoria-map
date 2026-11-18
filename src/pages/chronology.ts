@@ -21,7 +21,8 @@ function yearLabel(e: HistEvent): string {
     const m = /^(-?)(\d{1,4})/.exec(s);
     if (!m) return s;
     const n = String(Number(m[2]));
-    return m[1] ? `${n} ${t('bce')}` : n;
+    if (!m[1]) return n;
+    return getLang() === 'hu' ? `${t('bce')} ${n}` : `${n} ${t('bce')}`;
   };
   const from = y(e.date.from);
   const to = e.date.to ? y(e.date.to) : '';

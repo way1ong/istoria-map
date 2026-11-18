@@ -51,6 +51,7 @@ const dict = {
     vanished: 'Нині не існує',
     compareHint: 'Рухайте будь-яку з мап: друга йде за нею. Хрестик посередині показує ту саму точку на обох.',
     bordersNote: 'Кордони бл. {year} р. (приблизно; пунктир = сучасні межі).',
+    bordersNoteBce: 'Кордони бл. {year} р. до н. е. (приблизно; пунктир = сучасні межі).',
     typeFarmstead: 'хутір, майор',
     typeInn: 'корчма',
     typeMill: 'млин',
@@ -140,6 +141,7 @@ const dict = {
     vanished: 'Ma már nem létezik',
     compareHint: 'Mozgassa bármelyik térképet: a másik követi. A középső kereszt ugyanazt a pontot mutatja mindkettőn.',
     bordersNote: 'Határok kb. {year} körül (hozzávetőleges; szaggatott = mai határok).',
+    bordersNoteBce: 'Határok kb. i. e. {year} körül (hozzávetőleges; szaggatott = mai határok).',
     typeFarmstead: 'major, tanya',
     typeInn: 'csárda',
     typeMill: 'malom',
@@ -217,6 +219,6 @@ export function lt(text: LText | undefined): string {
 
 export function formatYear(year: number | null): string {
   if (year === null) return t('toPresent');
-  if (year < 0) return `${-year} ${t('bce')}`;
+  if (year < 0) return getLang() === 'hu' ? `${t('bce')} ${-year}` : `${-year} ${t('bce')}`;
   return String(year);
 }

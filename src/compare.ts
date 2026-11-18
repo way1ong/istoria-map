@@ -1,5 +1,5 @@
 import { Map as MLMap, Marker, type LngLatLike, type StyleSpecification } from 'maplibre-gl';
-import { basemapStyle, getPreferredBasemap, setPreferredBasemap } from './basemap';
+import { basemapStyle, getPreferredBasemap, localizeBasemapLabels, setPreferredBasemap } from './basemap';
 import { basemaps, histMaps, periodById, places } from './data';
 import { lt, t } from './i18n';
 import { addOldMap, mapChoices, mapCovers } from './oldmap';
@@ -57,7 +57,7 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
 
   // style.load спрацьовує і при першому завантаженні, і після зміни стилю
   top.on('style.load', () => { if (!top.getSource('cmp-places')) { addPlacesLayers(top, period); if (hm) addOldMap(top, hm, { prefix: 'cmp-old', beforeId: 'cmp-dot', opacity: 1 }); } });
-  bot.on('style.load', () => { if (!bot.getSource('cmp-places')) addPlacesLayers(bot, period); });
+  bot.on('style.load', () => { localizeBasemapLabels(bot, document.documentElement.lang || 'uk'); if (!bot.getSource('cmp-places')) addPlacesLayers(bot, period); });
 
   // синхронізація положення
   let lock = false;

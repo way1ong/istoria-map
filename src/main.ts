@@ -79,7 +79,7 @@ function ensureMap(): MapController {
     mapCtl.onBorders((info) => {
       const el = $('borders-note');
       el.hidden = !info;
-      if (info) el.innerHTML = `${t('bordersNote').replace('{year}', formatYear(info.year))} <span class="attr">${info.attribution}</span>`;
+      if (info) el.innerHTML = `${(info.year < 0 ? t('bordersNoteBce') : t('bordersNote')).replace('{year}', String(Math.abs(info.year)))} <span class="attr">${info.attribution}</span>`;
     });
   }
   return mapCtl;
