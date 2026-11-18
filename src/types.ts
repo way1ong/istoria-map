@@ -141,9 +141,14 @@ export interface Basemap {
   title: LText;
   /** Коротка назва для кнопок. */
   short?: LText;
-  type: 'style' | 'raster';
+  /** style: готовий стиль MapLibre; raster: тайли зображень; relief: тіньовий рельєф з тайлів висот (tiles) і сучасна вода з векторних тайлів (vector). */
+  type: 'style' | 'raster' | 'relief';
   url?: string;
   tiles?: string[];
+  /** Для relief: кодування тайлів висот. */
+  encoding?: 'terrarium' | 'mapbox';
+  /** Для relief: адреса векторних тайлів OpenMapTiles (вода й назви міст). */
+  vector?: string;
   /** Ключ API для сервісів, що його вимагають; підставляється замість {key}. */
   key?: string;
   tileSize?: number;

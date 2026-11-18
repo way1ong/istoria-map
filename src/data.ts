@@ -23,6 +23,11 @@ const toolModules = import.meta.glob<Tool>('../data/tools/*.json', {
   eager: true,
   import: 'default',
 });
+const landscapeModules = import.meta.glob<string>('../data/landscape/*.md', {
+  eager: true,
+  query: '?raw',
+  import: 'default',
+});
 const textModules = import.meta.glob<string>('../data/texts/*/*.md', {
   eager: true,
   query: '?raw',
@@ -66,4 +71,9 @@ export function periodText(periodId: string, lang: string): string | undefined {
   const key = `../data/texts/${lang}/${periodId}.md`;
   const fallback = `../data/texts/uk/${periodId}.md`;
   return textModules[key] ?? textModules[fallback];
+}
+
+/** Текст розділу «Ландшафт»: data/landscape/<lang>.md, інакше uk. */
+export function landscapeText(lang: string): string | undefined {
+  return landscapeModules[`../data/landscape/${lang}.md`] ?? landscapeModules['../data/landscape/uk.md'];
 }

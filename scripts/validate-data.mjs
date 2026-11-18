@@ -144,9 +144,11 @@ if (bm) (bm.basemaps ?? []).forEach((b, i) => {
   const f = `data/basemaps.json[${i}]`;
   if (typeof b.id !== 'string') err(f, 'id відсутній');
   if (!isLText(b.title)) err(f, 'title.uk відсутній');
-  if (!['style', 'raster'].includes(b.type)) err(f, 'type має бути style | raster');
+  if (!['style', 'raster', 'relief'].includes(b.type)) err(f, 'type має бути style | raster | relief');
   if (b.type === 'style' && typeof b.url !== 'string') err(f, 'url відсутній');
-  if (b.type === 'raster' && !Array.isArray(b.tiles)) err(f, 'tiles має бути масивом');
+  if ((b.type === 'raster' || b.type === 'relief') && !Array.isArray(b.tiles)) err(f, 'tiles має бути масивом');
+  if (b.type === 'relief' && b.encoding !== undefined && !['terrarium', 'mapbox'].includes(b.encoding)) err(f, 'encoding має бути terrarium | mapbox');
+  if (b.type === 'relief' && b.vector !== undefined && typeof b.vector !== 'string') err(f, 'vector має бути адресою');
   if (b.key !== undefined && typeof b.key !== 'string') err(f, 'key має бути рядком');
   for (const k of ['attribution', 'license']) if (typeof b[k] !== 'string') err(f, `${k} відсутній`);
 });
@@ -207,6 +209,20 @@ if (existsSync(bordersDir)) {
       });
     }
   }
+}
+
+// landscape: data/landscape/uk.md (обов'язково) і hu.md, перший рядок «# Заголовок»
+const landDir = join(root, 'landscape');
+if (existsSync(landDir)) {
+  const files = readdirSync(landDir);
+  for (const f of files) {
+    if (f.endsWith('.md') && !['uk.md', 'hu.md'].includes(f)) err(`data/landscape/${f}`, 'дозволені лише uk.md і hu.md');
+  }
+  for (const f of files.filter((f) => f === 'uk.md' || f === 'hu.md')) {
+    const txt = readFileSync(join(landDir, f), 'utf8');
+    if (!/^# \S/.test(txt)) err(`data/landscape/${f}`, 'перший рядок має бути заголовком «# …»');
+  }
+  if (!files.includes('uk.md')) err('data/landscape', 'бракує uk.md');
 }
 
 // texts

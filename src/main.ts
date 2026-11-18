@@ -6,6 +6,7 @@ import { mountCompare, type CompareHandle } from './compare';
 import { formatYear, getLang, lt, setLang, t } from './i18n';
 import { createMap, type MapController } from './map';
 import { eventPage, historyIndex, periodPage, placePage } from './pages/history';
+import { landscapePage, mountLandscape } from './pages/landscape';
 import { toolPage, toolsIndex } from './pages/tools';
 import { navigate, onRoute, type Route } from './router';
 import { placeCard } from './ui/render';
@@ -17,7 +18,8 @@ const app = document.getElementById('app')!;
 app.innerHTML = `
   <header class="topbar">
     <h1 id="title"></h1>
-    <nav class="tabs"><button id="tab-map"></button><button id="tab-history"></button><button id="tab-compare"></button><button id="tab-tools"></button></nav>
+    <nav class="tabs"><button id="tab-map"></button><button id="tab-history"></button><button id="tab-compare"></button><button id="tab-landscape"></button><button id="tab-tools"></button></nav>
+    <select id="nav-select" class="nav-select"></select>
     <div class="lang"><button data-lang="uk">UK</button><button data-lang="hu">HU</button></div>
   </header>
   <main>
@@ -59,18 +61,34 @@ function ensureMap(): MapController {
   return mapCtl;
 }
 
+type Section = 'map' | 'history' | 'compare' | 'landscape' | 'tools';
+const SECTIONS: Section[] = ['map', 'history', 'compare', 'landscape', 'tools'];
+const sectionLabel: Record<Section, () => string> = {
+  map: () => t('tabMap'), history: () => t('tabHistory'), compare: () => t('tabCompare'), landscape: () => t('tabLandscape'), tools: () => t('tabTools'),
+};
+function currentSection(): Section {
+  if (route.page === 'map' || route.page === 'compare' || route.page === 'landscape') return route.page;
+  if (route.page === 'tools' || route.page === 'tool') return 'tools';
+  return 'history';
+}
+function goSection(s: Section) {
+  const q = state.period ? `?period=${state.period}` : '';
+  navigate({ map: `#/map${q}`, history: '#/history', compare: `#/compare${q}`, landscape: '#/landscape', tools: '#/tools' }[s]);
+}
+
 function renderChrome() {
   $('title').textContent = t('appTitle');
-  $('tab-map').textContent = t('tabMap');
-  $('tab-history').textContent = t('tabHistory');
-  $('tab-compare').textContent = t('tabCompare');
-  $('tab-tools').textContent = t('tabTools');
+  const cur = currentSection();
+  for (const s of SECTIONS) {
+    const b = $(`tab-${s}`);
+    b.textContent = sectionLabel[s]();
+    b.classList.toggle('active', s === cur);
+  }
+  const sel = $<HTMLSelectElement>('nav-select');
+  sel.setAttribute('aria-label', t('navLabel'));
+  sel.innerHTML = SECTIONS.map((s) => `<option value="${s}">${sectionLabel[s]()}</option>`).join('');
+  sel.value = cur;
   document.querySelectorAll<HTMLButtonElement>('.lang button').forEach((b) => b.classList.toggle('active', b.dataset.lang === getLang()));
-  $('tab-map').classList.toggle('active', route.page === 'map');
-  const isTools = route.page === 'tools' || route.page === 'tool';
-  $('tab-history').classList.toggle('active', route.page !== 'map' && route.page !== 'compare' && !isTools);
-  $('tab-compare').classList.toggle('active', route.page === 'compare');
-  $('tab-tools').classList.toggle('active', isTools);
 }
 
 function renderBasemapCtl(ctl: MapController) {
@@ -148,6 +166,7 @@ function render() {
     case 'place': page.innerHTML = placePage(route.id); break;
     case 'tools': page.innerHTML = toolsIndex(route.audience); break;
     case 'tool': page.innerHTML = toolPage(route.id); break;
+    case 'landscape': page.innerHTML = landscapePage(); mountLandscape(page); break;
     case 'event': {
       page.innerHTML = eventPage(route.id);
       const rs = routesForEvent(route.id);
@@ -159,10 +178,8 @@ function render() {
   }
 }
 
-$('tab-map').onclick = () => navigate(`#/map${state.period ? `?period=${state.period}` : ''}`);
-$('tab-history').onclick = () => navigate('#/history');
-$('tab-compare').onclick = () => navigate(`#/compare${state.period ? `?period=${state.period}` : ''}`);
-$('tab-tools').onclick = () => navigate('#/tools');
+for (const s of SECTIONS) $(`tab-${s}`).onclick = () => goSection(s);
+$<HTMLSelectElement>('nav-select').onchange = (e) => goSection((e.target as HTMLSelectElement).value as Section);
 document.querySelectorAll<HTMLButtonElement>('.lang button').forEach((b) => {
   b.onclick = () => {
     setLang(b.dataset.lang as 'uk' | 'hu');
@@ -174,7 +191,26 @@ $('sheet').querySelector<HTMLButtonElement>('.close')!.onclick = () => navigate(
 $<HTMLSelectElement>('overlay-select').onchange = (e) => mapCtl?.setOverlay((e.target as HTMLSelectElement).value || null);
 $<HTMLInputElement>('overlay-opacity').oninput = (e) => mapCtl?.setOverlayOpacity(Number((e.target as HTMLInputElement).value));
 
+// Виноски в текстах: посилання #fn-… не змінюють маршрут, а прокручують до джерела і назад.
+let lastFnRef: HTMLElement | null = null;
+document.addEventListener('click', (e) => {
+  const a = (e.target as HTMLElement).closest<HTMLAnchorElement>('a[href^="#fn-"]');
+  if (!a) return;
+  e.preventDefault();
+  const back = a.getAttribute('href') === '#fn-back';
+  const li = a.closest('li');
+  const target = back
+    ? (lastFnRef?.getAttribute('href') === `#${li?.id}` ? lastFnRef : document.querySelector<HTMLElement>(`.fnref a[href="#${li?.id}"]`))
+    : document.getElementById(a.getAttribute('href')!.slice(1));
+  if (a.closest('.fnref')) lastFnRef = a;
+  if (!target) return;
+  target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  target.classList.add('fn-hl');
+  setTimeout(() => target.classList.remove('fn-hl'), 1600);
+});
+
 onRoute((r) => {
   route = r;
+  lastFnRef = null;
   render();
 });

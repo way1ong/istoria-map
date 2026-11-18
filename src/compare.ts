@@ -44,7 +44,7 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   container.innerHTML = `
     <div class="cmp-bar">
       <select class="cmp-map">${histMaps.map((m) => `<option value="${m.id}" ${m.id === hm?.id ? 'selected' : ''}>${lt(m.title)} (${m.year})</option>`).join('')}</select>
-      <div class="cmp-base">${basemaps.map((b) => `<button data-base="${b.id}" class="${b.id === base.id ? 'active' : ''}">${lt(b.short) || lt(b.title)}</button>`).join('')}</div>
+      <select class="cmp-base" aria-label="${t('modernMap')}">${basemaps.map((b) => `<option value="${b.id}" ${b.id === base.id ? 'selected' : ''}>${lt(b.short) || lt(b.title)}</option>`).join('')}</select>
     </div>
     <div class="cmp-pane cmp-top"><div class="cmp-map-el"></div><div class="cmp-cross"></div><span class="cmp-tag">${t('oldMap')}</span></div>
     <div class="cmp-pane cmp-bottom"><div class="cmp-map-el"></div><div class="cmp-cross"></div><span class="cmp-tag">${t('modernMap')}</span></div>
@@ -54,7 +54,9 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   const inside = (c: [number, number]) => !!hm?.coordinates && c[0] > hm.coordinates[0][0] && c[0] < hm.coordinates[1][0] && c[1] < hm.coordinates[0][1] && c[1] > hm.coordinates[2][1];
   const god: [number, number] = [19.14, 47.7];
   const center: LngLatLike = inside(god) || !hm?.coordinates ? god : [(hm.coordinates[0][0] + hm.coordinates[2][0]) / 2, (hm.coordinates[0][1] + hm.coordinates[2][1]) / 2];
-  const common = { center, zoom: 12, attributionControl: { compact: true } as const, pitchWithRotate: false, dragRotate: false };
+  // Для мап на всю країну стартуємо з оглядового масштабу, для аркушів околиць — з детального
+  const span = hm?.coordinates ? hm.coordinates[1][0] - hm.coordinates[0][0] : 0;
+  const common = { center, zoom: span > 2 ? 9 : 12, attributionControl: { compact: true } as const, pitchWithRotate: false, dragRotate: false };
   const top = new MLMap({ container: topEl, style: EMPTY_STYLE, ...common });
   const bot = new MLMap({ container: botEl, style: basemapStyle(base), ...common });
   const period = opts.periodId ?? null;
@@ -93,7 +95,7 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   }
 
   container.querySelector<HTMLSelectElement>('.cmp-map')!.onchange = (e) => opts.onChange({ map: (e.target as HTMLSelectElement).value, base: base.id });
-  container.querySelectorAll<HTMLButtonElement>('.cmp-base button').forEach((b) => (b.onclick = () => opts.onChange({ map: hm?.id ?? '', base: b.dataset.base! })));
+  container.querySelector<HTMLSelectElement>('.cmp-base')!.onchange = (e) => opts.onChange({ map: hm?.id ?? '', base: (e.target as HTMLSelectElement).value });
 
   const ro = new ResizeObserver(() => { top.resize(); bot.resize(); });
   ro.observe(container);
