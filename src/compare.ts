@@ -48,7 +48,7 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   const center: LngLatLike = !hm?.coordinates || mapCovers(hm, god) ? god : [(hm.coordinates[0][0] + hm.coordinates[2][0]) / 2, (hm.coordinates[0][1] + hm.coordinates[2][1]) / 2];
   // Для мап на всю країну стартуємо з оглядового масштабу, для аркушів околиць — з детального
   const span = hm?.coordinates ? hm.coordinates[1][0] - hm.coordinates[0][0] : 0;
-  const common = { center, zoom: span > 2 ? 9 : 12, attributionControl: { compact: true } as const, pitchWithRotate: false, dragRotate: false };
+  const common = { center, zoom: span > 2 ? 9 : 12, attributionControl: { compact: true } as const, pitchWithRotate: false, dragRotate: false, maxPitch: 0 };
   const top = new MLMap({ container: topEl, style: EMPTY_STYLE, ...common });
   const bot = new MLMap({ container: botEl, style: basemapStyle(base), ...common });
   const period = opts.periodId ?? null;

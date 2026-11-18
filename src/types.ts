@@ -100,6 +100,8 @@ export interface HistMap {
   series?: string;
   /** Номер аркуша в серії, напр. "14:XX". */
   sheet?: string;
+  /** Georeference Annotation (шлях у public/): оригінал у повній якості з сервера IIIF бібліотеки через Allmaps. */
+  georef?: string;
 }
 
 /** Серія старих мап (data/map-series.json). */
@@ -109,6 +111,10 @@ export interface MapSeries {
   note?: LText;
   /** Зведена мозаїка аркушів для дрібних масштабів: видно до зуму maxzoom, далі — окремі аркуші. */
   overview?: { url: string; coordinates: [number, number][]; maxzoom: number };
+  /** Georeference Annotation усіх аркушів серії (шлях у public/) для показу оригіналів через Allmaps. */
+  georef?: string;
+  /** Короткий підпис джерел для кнопки «i» мапи (замість підписів кожного аркуша). */
+  attribution?: string;
 }
 
 /** Властивості об'єкта в data/routes/*.geojson */

@@ -139,6 +139,7 @@ if (existsSync(seriesPath)) {
       else o.coordinates.forEach((c, k) => checkCoords(f, c, `overview.coordinates[${k}]`));
       if (typeof o.maxzoom !== 'number' || o.maxzoom < 0 || o.maxzoom > 22) err(f, 'overview.maxzoom: число 0–22');
     }
+    if (s.georef !== undefined && (typeof s.georef !== 'string' || !existsSync(join(root, '..', 'public', s.georef)))) err(f, `georef: немає файлу public/${s.georef}`);
   });
 }
 const sheetsSeen = new Map();
@@ -159,6 +160,8 @@ for (const { file, path, name } of listJson('maps')) {
   }
   if (m.type === 'image' && typeof m.url === 'string' && !/^https?:/.test(m.url) && !existsSync(join(root, '..', 'public', m.url)))
     err(file, `url: немає файлу public/${m.url}`);
+  if (m.georef !== undefined && (typeof m.georef !== 'string' || !existsSync(join(root, '..', 'public', m.georef))))
+    err(file, `georef: немає файлу public/${m.georef}`);
   if (m.id !== name) err(file, `id має збігатися з назвою файлу "${name}"`);
   if (!isLText(m.title)) err(file, 'title.uk відсутній');
   for (const k of ['license', 'attribution', 'url'])

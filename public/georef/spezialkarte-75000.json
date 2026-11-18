@@ -1,0 +1,946 @@
+{
+ "type": "AnnotationPage",
+ "@context": "http://www.w3.org/ns/anno.jsonld",
+ "items": [
+  {
+   "type": "Annotation",
+   "@context": [
+    "http://iiif.io/api/extension/georef/1/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+   ],
+   "id": "https://way1ong.github.io/istoria-map/georef/spezialkarte-75000.json#13-XX",
+   "motivation": "georeferencing",
+   "target": {
+    "type": "SpecificResource",
+    "source": {
+     "id": "https://iiif.nypl.org/iiif/2/1226537",
+     "type": "ImageService2",
+     "height": 3452,
+     "width": 4265
+    },
+    "selector": {
+     "type": "SvgSelector",
+     "value": "<svg width=\"4265\" height=\"3452\"><polygon points=\"228,243 4042,251 4041,3120 208,3108\" /></svg>"
+    }
+   },
+   "body": {
+    "type": "FeatureCollection",
+    "transformation": {
+     "type": "projective"
+    },
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        227.8,
+        243.08
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.832368,
+        48.24926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4041.74,
+        251.25
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332368,
+        48.24926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4040.68,
+        3120.2
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332368,
+        47.99926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        207.86,
+        3107.69
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.832368,
+        47.99926
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "Annotation",
+   "@context": [
+    "http://iiif.io/api/extension/georef/1/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+   ],
+   "id": "https://way1ong.github.io/istoria-map/georef/spezialkarte-75000.json#13-XXI",
+   "motivation": "georeferencing",
+   "target": {
+    "type": "SpecificResource",
+    "source": {
+     "id": "https://iiif.nypl.org/iiif/2/1226538",
+     "type": "ImageService2",
+     "height": 3474,
+     "width": 4306
+    },
+    "selector": {
+     "type": "SvgSelector",
+     "value": "<svg width=\"4306\" height=\"3474\"><polygon points=\"251,244 4075,248 4075,3118 242,3121\" /></svg>"
+    }
+   },
+   "body": {
+    "type": "FeatureCollection",
+    "transformation": {
+     "type": "projective"
+    },
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        250.54,
+        243.62
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332368,
+        48.24926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4074.84,
+        247.95
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.832368,
+        48.24926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4074.58,
+        3118.47
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.832368,
+        47.99926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        242.11,
+        3120.6
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332368,
+        47.99926
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "Annotation",
+   "@context": [
+    "http://iiif.io/api/extension/georef/1/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+   ],
+   "id": "https://way1ong.github.io/istoria-map/georef/spezialkarte-75000.json#14-XIX",
+   "motivation": "georeferencing",
+   "target": {
+    "type": "SpecificResource",
+    "source": {
+     "id": "https://iiif.ios-regensburg.de/iiif/2/BV035904793.tif",
+     "type": "ImageService2",
+     "height": 6989,
+     "width": 8238
+    },
+    "selector": {
+     "type": "SvgSelector",
+     "value": "<svg width=\"8238\" height=\"6989\"><polygon points=\"228,577 7958,564 7992,6403 217,6389\" /></svg>"
+    }
+   },
+   "body": {
+    "type": "FeatureCollection",
+    "transformation": {
+     "type": "projective"
+    },
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        228.13,
+        576.67
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.332368,
+        47.99926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        7958.38,
+        563.8
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.832368,
+        47.99926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        7992.45,
+        6402.92
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.832368,
+        47.74926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        216.83,
+        6388.52
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.332368,
+        47.74926
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "Annotation",
+   "@context": [
+    "http://iiif.io/api/extension/georef/1/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+   ],
+   "id": "https://way1ong.github.io/istoria-map/georef/spezialkarte-75000.json#14-XX",
+   "motivation": "georeferencing",
+   "target": {
+    "type": "SpecificResource",
+    "source": {
+     "id": "https://iiif.nypl.org/iiif/2/1226564",
+     "type": "ImageService2",
+     "height": 3506,
+     "width": 4297
+    },
+    "selector": {
+     "type": "SvgSelector",
+     "value": "<svg width=\"4297\" height=\"3506\"><polygon points=\"236,252 4082,259 4078,3145 227,3141\" /></svg>"
+    }
+   },
+   "body": {
+    "type": "FeatureCollection",
+    "transformation": {
+     "type": "projective"
+    },
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        235.95,
+        252.12
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.832358,
+        47.999252
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4081.99,
+        259.07
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332358,
+        47.999252
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4078.38,
+        3144.64
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332358,
+        47.749252
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        226.66,
+        3140.77
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.832358,
+        47.749252
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "Annotation",
+   "@context": [
+    "http://iiif.io/api/extension/georef/1/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+   ],
+   "id": "https://way1ong.github.io/istoria-map/georef/spezialkarte-75000.json#14-XXI",
+   "motivation": "georeferencing",
+   "target": {
+    "type": "SpecificResource",
+    "source": {
+     "id": "https://iiif.ios-regensburg.de/iiif/2/BV035904820.tif",
+     "type": "ImageService2",
+     "height": 7156,
+     "width": 8826
+    },
+    "selector": {
+     "type": "SvgSelector",
+     "value": "<svg width=\"8826\" height=\"7156\"><polygon points=\"453,514 8313,483 8362,6356 462,6388\" /></svg>"
+    }
+   },
+   "body": {
+    "type": "FeatureCollection",
+    "transformation": {
+     "type": "projective"
+    },
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        452.79,
+        514.0
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332368,
+        47.99926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        8313.45,
+        483.2
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.832368,
+        47.99926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        8361.72,
+        6356.5
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.832368,
+        47.74926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        462.22,
+        6388.22
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332368,
+        47.74926
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "Annotation",
+   "@context": [
+    "http://iiif.io/api/extension/georef/1/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+   ],
+   "id": "https://way1ong.github.io/istoria-map/georef/spezialkarte-75000.json#15-XX",
+   "motivation": "georeferencing",
+   "target": {
+    "type": "SpecificResource",
+    "source": {
+     "id": "https://iiif.nypl.org/iiif/2/1226598",
+     "type": "ImageService2",
+     "height": 3547,
+     "width": 4380
+    },
+    "selector": {
+     "type": "SvgSelector",
+     "value": "<svg width=\"4380\" height=\"3547\"><polygon points=\"251,260 4135,253 4159,3170 260,3180\" /></svg>"
+    }
+   },
+   "body": {
+    "type": "FeatureCollection",
+    "transformation": {
+     "type": "projective"
+    },
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        250.94,
+        259.62
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.832388,
+        47.749276
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4134.54,
+        253.12
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332388,
+        47.749276
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4159.41,
+        3169.97
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332388,
+        47.499276
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        260.4,
+        3179.83
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.832388,
+        47.499276
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "Annotation",
+   "@context": [
+    "http://iiif.io/api/extension/georef/1/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+   ],
+   "id": "https://way1ong.github.io/istoria-map/georef/spezialkarte-75000.json#15-XXI",
+   "motivation": "georeferencing",
+   "target": {
+    "type": "SpecificResource",
+    "source": {
+     "id": "https://iiif.nypl.org/iiif/2/1226599",
+     "type": "ImageService2",
+     "height": 3499,
+     "width": 4345
+    },
+    "selector": {
+     "type": "SvgSelector",
+     "value": "<svg width=\"4345\" height=\"3499\"><polygon points=\"245,257 4113,266 4109,3144 234,3140\" /></svg>"
+    }
+   },
+   "body": {
+    "type": "FeatureCollection",
+    "transformation": {
+     "type": "projective"
+    },
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        245.44,
+        257.22
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332368,
+        47.74926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4112.75,
+        266.5
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.832368,
+        47.74926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4109.32,
+        3144.23
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.832368,
+        47.49926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        233.61,
+        3139.61
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332368,
+        47.49926
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "Annotation",
+   "@context": [
+    "http://iiif.io/api/extension/georef/1/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+   ],
+   "id": "https://way1ong.github.io/istoria-map/georef/spezialkarte-75000.json#16-XIX",
+   "motivation": "georeferencing",
+   "target": {
+    "type": "SpecificResource",
+    "source": {
+     "id": "https://iiif.nypl.org/iiif/2/1226632",
+     "type": "ImageService2",
+     "height": 3507,
+     "width": 4321
+    },
+    "selector": {
+     "type": "SvgSelector",
+     "value": "<svg width=\"4321\" height=\"3507\"><polygon points=\"217,276 4091,271 4105,3144 211,3159\" /></svg>"
+    }
+   },
+   "body": {
+    "type": "FeatureCollection",
+    "transformation": {
+     "type": "projective"
+    },
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        217.34,
+        275.58
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.332368,
+        47.49926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4091.12,
+        271.0
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.832368,
+        47.49926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4104.89,
+        3144.06
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.832368,
+        47.24926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        211.13,
+        3158.74
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.332368,
+        47.24926
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "Annotation",
+   "@context": [
+    "http://iiif.io/api/extension/georef/1/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+   ],
+   "id": "https://way1ong.github.io/istoria-map/georef/spezialkarte-75000.json#16-XX",
+   "motivation": "georeferencing",
+   "target": {
+    "type": "SpecificResource",
+    "source": {
+     "id": "https://iiif.nypl.org/iiif/2/1226633",
+     "type": "ImageService2",
+     "height": 3531,
+     "width": 4409
+    },
+    "selector": {
+     "type": "SvgSelector",
+     "value": "<svg width=\"4409\" height=\"3531\"><polygon points=\"272,293 4142,302 4138,3186 253,3175\" /></svg>"
+    }
+   },
+   "body": {
+    "type": "FeatureCollection",
+    "transformation": {
+     "type": "projective"
+    },
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        272.1,
+        292.63
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.832368,
+        47.49926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4142.04,
+        302.0
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332368,
+        47.49926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        4137.55,
+        3185.84
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332368,
+        47.24926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        253.11,
+        3175.35
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        18.832368,
+        47.24926
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "Annotation",
+   "@context": [
+    "http://iiif.io/api/extension/georef/1/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+   ],
+   "id": "https://way1ong.github.io/istoria-map/georef/spezialkarte-75000.json#16-XXI",
+   "motivation": "georeferencing",
+   "target": {
+    "type": "SpecificResource",
+    "source": {
+     "id": "https://iiif.ios-regensburg.de/iiif/2/BV043869627.tif",
+     "type": "ImageService2",
+     "height": 11102,
+     "width": 14406
+    },
+    "selector": {
+     "type": "SvgSelector",
+     "value": "<svg width=\"14406\" height=\"11102\"><polygon points=\"1361,653 13342,612 13387,9546 1369,9596\" /></svg>"
+    }
+   },
+   "body": {
+    "type": "FeatureCollection",
+    "transformation": {
+     "type": "projective"
+    },
+    "features": [
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        1361.07,
+        653.21
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332368,
+        47.49926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        13342.43,
+        612.32
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.832368,
+        47.49926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        13386.7,
+        9546.07
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.832368,
+        47.24926
+       ]
+      }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+       "resourceCoords": [
+        1368.57,
+        9595.97
+       ]
+      },
+      "geometry": {
+       "type": "Point",
+       "coordinates": [
+        19.332368,
+        47.24926
+       ]
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

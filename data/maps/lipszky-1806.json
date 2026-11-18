@@ -6,13 +6,13 @@
   },
   "year": "1806",
   "author": "Lipszky János; гравери Prixner Gottfried і Karacs Ferenc",
-  "license": "Суспільне надбання",
-  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-  "attribution": "Lipszky János: Mappa Generalis Regni Hungariae, Pest, 1806. Скан: David Rumsey Map Collection, через Wikimedia Commons",
+  "license": "Оригінал 1806 р. у суспільному надбанні; скани David Rumsey Map Collection — CC BY-NC-SA 3.0 (умови колекції)",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+  "attribution": "Lipszky János: Mappa Generalis Regni Hungariae, Pest, 1806. David Rumsey Map Collection, David Rumsey Map Center, Stanford Libraries (CC BY-NC-SA 3.0)",
   "source": {
     "title": "Wikimedia Commons: Category:Mappa Generalis Regni Hungariae (David Rumsey Historical Map Collection)",
     "url": "https://commons.wikimedia.org/wiki/Category:Mappa_Generalis_Regni_Hungariae_(David_Rumsey_Historical_Map_Collection)",
-    "note": "Рік за заголовком мапи: «Pesthini Anno MDCCCVI (1806)»; покажчик до неї видано 1808 року. Сім аркушів (I, II, IV–VIII) з мініатюр 3840 px вирівняно за підписаними на рамках градусами й мінутами; довготи на мапі від меридіана Ферро, переведено в Гринвіч за зсувом 17°40′. Модель — одна конічна проєкція для всіх аркушів: 54 відліки рамок на аркушах II, IV і V лягли з середньою похибкою 3 px (близько 300 м), на крайніх аркушах I, VI, VII і VIII похибка до 2–3 км. Перевірено на містах: Győr, Komárom, Sopron, Miskolc, Pécs, Tokaj і Mohács лягають на свої позначки. Мозаїку зібрано в проєкції Web Mercator для 16°–23° сх. д. і 45,7°–48,65° пн. ш."
+    "note": "Рік за заголовком мапи: «Pesthini Anno MDCCCVI (1806)»; покажчик до неї видано 1808 року. Сім аркушів (I, II, IV–VIII) з мініатюр 3840 px вирівняно за підписаними на рамках градусами й мінутами; довготи на мапі від меридіана Ферро, переведено в Гринвіч за зсувом 17°40′. Модель — одна конічна проєкція для всіх аркушів: 54 відліки рамок на аркушах II, IV і V лягли з середньою похибкою 3 px (близько 300 м), на крайніх аркушах I, VI, VII і VIII похибка до 2–3 км. Перевірено на містах: Győr, Komárom, Sopron, Miskolc, Pécs, Tokaj і Mohács лягають на свої позначки. Мозаїку зібрано в проєкції Web Mercator для 16°–23° сх. д. і 45,7°–48,65° пн. ш. З 2026-11-18 мапа показується з оригіналів на сервері IIIF David Rumsey (сім аркушів, близько 17 000 × 11 700 px кожен, у 4,5 раза детальніші за мініатюри Commons; ті самі скани) через бібліотеку Allmaps: прив'язку перенесено з тієї ж конічної моделі (по 35 опорних точок на аркуш, маска — рамка карти, перетворення thinPlateSpline), файл public/georef/lipszky-1806.json; контроль: точка Пешта (19,0503; 47,4925) лягає на Дунай між Будою й Пештом. Умови колекції David Rumsey (архів Internet Archive, поле rights): CC BY-NC-SA 3.0 з підписом «David Rumsey Map Collection, David Rumsey Map Center, Stanford Libraries». Зображення 3600 px лишається запасним шаром."
   },
   "type": "image",
   "url": "maps/lipszky-1806.jpg",
@@ -43,5 +43,6 @@
     "ottoman",
     "habsburg-18",
     "long-19"
-  ]
+  ],
+  "georef": "georef/lipszky-1806.json"
 }

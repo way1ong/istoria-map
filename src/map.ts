@@ -116,6 +116,8 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     center: CENTER,
     zoom: 6,
     attributionControl: { compact: true },
+    // старі мапи в повній якості (Allmaps) не підтримують нахил мапи
+    maxPitch: 0,
   });
   map.addControl(new NavigationControl({ showCompass: false }), 'top-right');
   map.addControl(new GeolocateControl({ trackUserLocation: false }), 'top-right');

@@ -1,4 +1,4 @@
-import type { Map as MLMap } from 'maplibre-gl';
+import type { CustomLayerInterface, Map as MLMap } from 'maplibre-gl';
 import { seriesById, seriesSheets } from './data';
 import { lt } from './i18n';
 import type { HistMap } from './types';
@@ -10,15 +10,35 @@ export interface OldMapHandle {
 
 type Corners = [[number, number], [number, number], [number, number], [number, number]];
 
+/** Allmaps малює через WebGL2; без нього лишаються звичайні зображення. */
+let webgl2: boolean | null = null;
+function hasWebGL2(): boolean {
+  if (webgl2 === null) {
+    try { webgl2 = !!document.createElement('canvas').getContext('webgl2'); } catch { webgl2 = false; }
+  }
+  return webgl2;
+}
+
+/** Мінімальний інтерфейс шару Allmaps, яким ми користуємося. */
+interface WarpedLayer extends CustomLayerInterface {
+  setOpacity(v: number): void;
+  addGeoreferenceAnnotationByUrl(url: string): Promise<unknown>;
+}
+
 /**
  * Додає стару мапу на мапу MapLibre.
- * Окрема мапа — одним шаром. Аркуш серії (поле series) — разом з іншими аркушами серії:
- * на дрібних масштабах показується зведена мозаїка серії, ближче вантажаються лише аркуші,
- * що потрапляють у видиму частину (на телефоні не треба тягнути всі аркуші одразу).
+ * - Окрема мапа — одним шаром-зображенням.
+ * - Аркуш серії (поле series) — разом з іншими аркушами серії: на дрібних масштабах зведена мозаїка,
+ *   ближче — лише аркуші в полі зору (на телефоні не треба тягнути всі аркуші одразу).
+ * - Якщо мапа чи серія має georef, поверх показуються оригінали в повній якості з серверів IIIF
+ *   бібліотек (бібліотека Allmaps вантажить лише видимі шматки потрібної роздільності); звичайні
+ *   зображення під ними лишаються запасним шаром.
  */
 export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; beforeId?: string; opacity: number }): OldMapHandle {
   const ids: string[] = [];
   let opacity = opts.opacity;
+  let removed = false;
+  let warped: WarpedLayer | null = null;
   const before = () => (opts.beforeId && map.getLayer(opts.beforeId) ? opts.beforeId : undefined);
   const addImage = (id: string, url: string, coordinates: [number, number][], zoom: { minzoom?: number; maxzoom?: number } = {}) => {
     map.addSource(id, { type: 'image', url, coordinates: coordinates as Corners });
@@ -27,6 +47,16 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
   };
 
   const series = seriesById(m.series);
+  const georef = hasWebGL2() ? (series ? series.georef : m.georef) : undefined;
+  const members = series ? seriesSheets(m) : [m];
+
+  // Підпис джерел у кнопці «i» мапи: невидимий шар з атрибуцією, поки стара мапа показана.
+  const credits = series?.attribution ?? [...new Set(members.map((x) => x.attribution))].join('; ');
+  const attrId = `${opts.prefix}-attr`;
+  map.addSource(attrId, { type: 'geojson', data: { type: 'FeatureCollection', features: [] }, attribution: credits });
+  map.addLayer({ id: attrId, type: 'circle', source: attrId, paint: { 'circle-radius': 0 } });
+  ids.push(attrId);
+
   let update: (() => void) | null = null;
   if (!series) {
     const id = `${opts.prefix}-0`;
@@ -36,8 +66,11 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
       map.addLayer({ id, type: 'raster', source: id, paint: { 'raster-opacity': opacity } }, before());
       ids.push(id);
     }
+  } else if (georef && series.overview) {
+    // Оригінали серії йдуть з IIIF; мозаїка лишається під ними на всіх масштабах як запасний шар.
+    addImage(`${opts.prefix}-ov`, series.overview.url, series.overview.coordinates);
   } else {
-    const sheets = seriesSheets(m).filter((s) => s.type === 'image' && s.coordinates);
+    const sheets = members.filter((s) => s.type === 'image' && s.coordinates);
     const ov = series.overview;
     const ovMax = ov?.maxzoom ?? 0;
     let ovAdded = false;
@@ -65,13 +98,30 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
     map.on('moveend', update);
     update();
   }
+
+  if (georef) {
+    // Бібліотеку вантажимо лише тоді, коли справді показуємо стару мапу.
+    void import('@allmaps/maplibre').then(({ WarpedMapLayer }) => {
+      if (removed) return;
+      const layer = new WarpedMapLayer({ layerId: `${opts.prefix}-warped` }) as unknown as WarpedLayer;
+      map.addLayer(layer, before());
+      warped = layer;
+      layer.setOpacity(opacity);
+      return layer.addGeoreferenceAnnotationByUrl(new URL(georef, document.baseURI).href);
+    }).catch((e) => console.warn('Allmaps:', e));
+  }
+
   return {
     setOpacity(v) {
       opacity = v;
-      for (const id of ids) if (map.getLayer(id)) map.setPaintProperty(id, 'raster-opacity', v);
+      for (const id of ids) if (map.getLayer(id) && map.getLayer(id)!.type === 'raster') map.setPaintProperty(id, 'raster-opacity', v);
+      warped?.setOpacity(v);
     },
     remove() {
+      removed = true;
       if (update) map.off('moveend', update);
+      if (warped && map.getLayer(warped.id)) map.removeLayer(warped.id);
+      warped = null;
       for (const id of ids) {
         if (map.getLayer(id)) map.removeLayer(id);
         if (map.getSource(id)) map.removeSource(id);
