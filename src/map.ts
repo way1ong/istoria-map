@@ -236,6 +236,10 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   let currentYear: number | null = null;
   let bordersCb: ((info: { year: number; attribution: string } | null) => void) | null = null;
   let bordersSeq = 0;
+  // Підпис кордонів показуємо лише там, де видно самі кордони (зум < BORDERS_MAXZOOM).
+  let bordersInfo: { year: number; attribution: string } | null = null;
+  const emitBorders = () => bordersCb?.(bordersInfo && map.getZoom() < BORDERS_MAXZOOM ? bordersInfo : null);
+  map.on('zoomend', emitBorders);
   const bordersData = (b: BorderCollection) => ({
     type: 'FeatureCollection' as const,
     features: b.features.map((f) => ({
@@ -256,14 +260,16 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     if (currentYear === null) {
       src.setData({ type: 'FeatureCollection', features: [] });
       msrc.setData({ type: 'FeatureCollection', features: [] });
-      bordersCb?.(null);
+      bordersInfo = null;
+      emitBorders();
       return;
     }
     const [b, m] = await Promise.all([loadBorders(currentYear), loadModern()]);
     if (seq !== bordersSeq) return; // рік змінився, поки вантажилось
     src.setData(bordersData(b));
     msrc.setData(m as unknown as GeoJSON.FeatureCollection);
-    bordersCb?.({ year: b.year, attribution: `${b.attribution}; ${m.attribution}` });
+    bordersInfo = { year: b.year, attribution: `${b.attribution}; ${m.attribution}` };
+    emitBorders();
   };
 
   return {
