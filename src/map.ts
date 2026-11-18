@@ -18,6 +18,7 @@ import { basemapStyle, getPreferredBasemap, setPreferredBasemap } from './basema
 import { lt } from './i18n';
 import { colorFor, loadBorders, loadModern } from './borders';
 import { addOldMap, type OldMapHandle } from './oldmap';
+import { DOT_RADIUS, DOT_STROKE, HALO_RADIUS } from './markers';
 import type { BorderCollection, HistMap, Place } from './types';
 
 // Стартовий вигляд: уся Угорщина (центр країни, зум під екран телефона).
@@ -138,18 +139,18 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       id: 'places-halo',
       type: 'circle',
       source: SRC,
-      paint: { 'circle-radius': 14, 'circle-color': ['get', 'color'], 'circle-opacity': 0.25 },
+      paint: { 'circle-radius': HALO_RADIUS, 'circle-color': ['get', 'color'], 'circle-opacity': 0.25 },
     });
     map.addLayer({
       id: 'places-dot',
       type: 'circle',
       source: SRC,
       paint: {
-        'circle-radius': 7,
+        'circle-radius': DOT_RADIUS,
         // Зниклі об'єкти (хутори, корчми, млини) малюються порожнім кружком
         'circle-color': ['case', ['==', ['get', 'vanished'], 1], '#ffffff', ['get', 'color']],
         'circle-stroke-color': ['case', ['==', ['get', 'vanished'], 1], ['get', 'color'], '#ffffff'],
-        'circle-stroke-width': 2.5,
+        'circle-stroke-width': DOT_STROKE,
       },
     });
     map.addLayer({

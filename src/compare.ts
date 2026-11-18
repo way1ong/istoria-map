@@ -3,6 +3,7 @@ import { basemapStyle, getPreferredBasemap, setPreferredBasemap } from './basema
 import { basemaps, histMaps, periodById, places } from './data';
 import { lt, t } from './i18n';
 import { addOldMap, mapChoices, mapCovers } from './oldmap';
+import { CMP_DOT_RADIUS, DOT_STROKE } from './markers';
 import type { Place } from './types';
 
 export interface CompareHandle { destroy(): void }
@@ -24,7 +25,7 @@ function placesGeo(periodId: string | null, lang: string) {
 
 function addPlacesLayers(map: MLMap, periodId: string | null) {
   map.addSource('cmp-places', { type: 'geojson', data: placesGeo(periodId, document.documentElement.lang) });
-  map.addLayer({ id: 'cmp-dot', type: 'circle', source: 'cmp-places', paint: { 'circle-radius': 6, 'circle-color': ['case', ['==', ['get', 'vanished'], 1], '#ffffff', ['get', 'color']], 'circle-stroke-color': ['get', 'color'], 'circle-stroke-width': 2.5 } });
+  map.addLayer({ id: 'cmp-dot', type: 'circle', source: 'cmp-places', paint: { 'circle-radius': CMP_DOT_RADIUS, 'circle-color': ['case', ['==', ['get', 'vanished'], 1], '#ffffff', ['get', 'color']], 'circle-stroke-color': ['get', 'color'], 'circle-stroke-width': DOT_STROKE } });
   map.addLayer({ id: 'cmp-label', type: 'symbol', source: 'cmp-places', layout: { 'text-field': ['get', 'label'], 'text-font': ['Noto Sans Bold'], 'text-size': 11, 'text-offset': [0, 1.1], 'text-anchor': 'top', 'text-max-width': 9 }, paint: { 'text-color': '#111827', 'text-halo-color': '#ffffff', 'text-halo-width': 1.5 } });
 }
 
