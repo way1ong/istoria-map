@@ -1,0 +1,56 @@
+{
+  "id": "aerial-photos",
+  "category": "prepare",
+  "order": 2,
+  "name": {
+    "uk": "Аерофото, супутникові знімки й дрони",
+    "hu": "Légifotó, műholdkép és drón"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "З повітря видно вали, засипані рови й мури під землею: за тінню при низькому сонці, за кольором ґрунту після оранки і за ростом посівів.",
+    "hu": "A levegőből látszanak a sáncok, a betöltött árkok és a föld alatti falak: alacsony napállásnál az árnyékuk, szántás után a talaj színe, a vetésben pedig a növények eltérő fejlődése alapján."
+  },
+  "description": {
+    "uk": "За українською статтею про археологічну розвідку, аналіз аерофотознімків і супутникових знімків — типовий спосіб дистанційного обстеження великих ділянок, які звичайна польова розвідка охопити не може.\n\nУгорська стаття «Légirégészet» розрізняє три види слідів:\n\n- **Тіньові.** Вали й кургани видно при ковзному світлі, коли тіні найдовші: найкраще одразу після сходу або перед заходом сонця, знімаючи проти сонця. Пам'ятки в листяних лісах варто шукати взимку, а сніг вирівнює поверхню й робить тіні чіткими.\n- **Ґрунтові.** Засипаний рів чи яма краще тримає вологу і виглядає темнішим, а над похованими мурами ґрунт пересихає і світлішає; такі сліди видно переважно навесні й восени після оранки, а іній чи легкий сніг на кілька ранкових годин видає їх ще краще.\n- **Посівні.** Улітку над засипаними ровами й ямами рослини мають більше води: вони вищі, довше зелені й темніші, а над мурами, навпаки, нижчі й раніше жовтіють. Ці сліди видно з повітря, а часто й із землі.\n\nУгорський посібник з археології (2011) радить планувати політ за станом рослин і ґрунту, погодою й технічними даними, записувати точку GPS саме тоді, коли літак пролітає над слідом, і вести трек усього маршруту, щоб знати й ті ділянки, де нічого не знайдено. Архівні знімки, зроблені не для археології, теж корисні: якщо та сама фігура видна на знімках різних років, це не помилка сівби й не хвороба рослин. Що давніший слід, то повільніше він змінюється, а сучасне порушення ґрунту на серії знімків з року в рік зникає.\n\nПриклад з Ясшагу (2025): учасник громадської групи Jász Múzeum, літаючи навесні на дельтаплані, помітив у збіжжі понад 80 пам'яток, серед них досі невідомі римські цвинтарі з кільцевими ровами й поселення, аварські цвинтарі й невідоме село доби Арпадів із церквою. Найкращий час — березень–квітень, до масового внесення добрив. Для ортофото потрібні вертикальні знімки з рівного польоту, і тут добре підходять дрони, які записують ще й GPS-координати.",
+    "hu": "Az ukrán Wikipédia Régészeti felderítés (Археологічна розвідка) szócikke szerint a légifotók és a műholdképek elemzése a távérzékeléses felderítés jellemző módja olyan nagy területeken, amelyeket a hagyományos terepbejárás nem képes lefedni.\n\nA magyar Wikipédia Légirégészet szócikke háromféle nyomot különböztet meg:\n\n- **Árnyéknyomok.** A sáncok és a halmok súrlófényben látszanak, amikor a leghosszabbak az árnyékok: legjobb közvetlenül napkelte után vagy napnyugta előtt, a nappal szemben fényképezni. A lombhullató erdőkben lévő lelőhelyeket télen érdemes keresni, a hó pedig kiegyenlíti a felszínt, és élessé teszi az árnyékokat.\n- **Talajnyomok.** A betöltött árok vagy gödör jobban megtartja a nedvességet, és sötétebbnek látszik, az eltemetett falak fölött viszont a talaj kiszárad és kivilágosodik; az ilyen nyomok többnyire tavasszal és ősszel, szántás után láthatók, a dér vagy az enyhe hótakaró pedig néhány reggeli órán át még jobban elárulja őket.\n- **Növényjelek.** Nyáron a betöltött árkok és gödrök fölött a növények több vízhez jutnak: magasabbak, tovább maradnak zöldek és sötétebbek, a falak fölött viszont alacsonyabbak, és hamarabb sárgulnak. Ezek a nyomok a levegőből, sokszor a földről is láthatók.\n\nA Régészeti Kézikönyv (2011) azt tanácsolja, hogy a repülést a növényzet és a talaj állapota, az időjárás és a műszaki adatok alapján tervezzék meg, a GPS-pontot pontosan akkor vegyék fel, amikor a repülőgép a nyom fölött halad el, és rögzítsék a teljes útvonalat is, hogy azokról a területekről is tudjanak, ahol semmit sem találtak. A nem régészeti céllal készült archív felvételek is hasznosak: ha ugyanaz az alakzat különböző években készült képeken is látszik, az nem vetési hiba és nem növénybetegség. Minél régebbi egy nyom, annál lassabban változik, a modern bolygatás viszont a képsorozatokon évről évre elenyészik.\n\nPélda a Jászságból (2025): a Jász Múzeum közösségi régészeti csoportjának egyik tagja tavasszal sárkányrepülővel repülve több mint 80 lelőhelyet vett észre a gabonában, köztük korábban ismeretlen római kori körárkos temetőket és településeket, avar kori temetőket és egy ismeretlen Árpád-kori templomos falut. A legjobb időszak a március–április, a nagyüzemi trágyázás előtt. Az ortofotóhoz egyenletes repülés közben készült függőleges felvételek kellenek, erre pedig jól megfelelnek a drónok, amelyek GPS-koordinátákat is rögzítenek."
+  },
+  "sources": [
+    {
+      "title": "Археологічна розвідка – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0_%D1%80%D0%BE%D0%B7%D0%B2%D1%96%D0%B4%D0%BA%D0%B0",
+      "note": "Розділ «Дистанційне обстеження»."
+    },
+    {
+      "title": "Légirégészet – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/L%C3%A9gir%C3%A9g%C3%A9szet",
+      "note": "Розділи про тіньові, ґрунтові й посівні сліди."
+    },
+    {
+      "title": "Holl Balázs – Pusztai Tamás: Térinformatika alkalmazása a régészeti feltárásokon. In: Régészeti Kézikönyv. Magyar Régész Szövetség, 2011, 321–375",
+      "url": "https://real.mtak.hu/3000/1/RK_terinformatika.pdf",
+      "note": "Розділи 2.3 «Légi felderítés» і 2.4 про космічні та архівні аерознімки."
+    },
+    {
+      "title": "Gulyás András Zoltán: Közösségi régészet a Jászságban. Jászsági Évkönyv 2025, 128–142",
+      "url": "https://epa.oszk.hu/02200/02295/00033/pdf/EPA02295_jaszsagi_evkonyv_2025_128-142.pdf",
+      "note": "Розділ «Régészeti kutatás a levegőből»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Cropmark_near_Parsonage_Farm%2C_Binbrook%2C_aerial_2019_-_geograph.org.uk_-_6133552.jpg",
+      "author": "Simon Tomson",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Cropmark_near_Parsonage_Farm%2C_Binbrook%2C_aerial_2019_-_geograph.org.uk_-_6133552.jpg",
+      "caption": {
+        "uk": "Слід у посівах біля Parsonage Farm, Binbrook (Англія), аерофото 2019 року",
+        "hu": "Növényjel a Parsonage Farm mellett, Binbrook (Anglia), légifotó, 2019"
+      }
+    }
+  ]
+}

@@ -1,10 +1,14 @@
+import type { ToolUser } from './types';
+
 export type Route =
   | { page: 'map'; period?: string; place?: string }
   | { page: 'history' }
   | { page: 'period'; id: string }
   | { page: 'place'; id: string }
   | { page: 'event'; id: string }
-  | { page: 'compare'; map?: string; period?: string; base?: string };
+  | { page: 'compare'; map?: string; period?: string; base?: string }
+  | { page: 'tools'; audience?: ToolUser }
+  | { page: 'tool'; id: string };
 
 export function parseRoute(hash: string): Route {
   const clean = hash.replace(/^#\/?/, '');
@@ -22,6 +26,12 @@ export function parseRoute(hash: string): Route {
       return parts[1] ? { page: 'place', id: parts[1] } : { page: 'map' };
     case 'event':
       return parts[1] ? { page: 'event', id: parts[1] } : { page: 'map' };
+    case 'tools': {
+      const a = params.get('for');
+      return { page: 'tools', audience: a === 'detectorist' || a === 'archaeologist' ? a : undefined };
+    }
+    case 'tool':
+      return parts[1] ? { page: 'tool', id: parts[1] } : { page: 'tools' };
     default:
       return {
         page: 'map',

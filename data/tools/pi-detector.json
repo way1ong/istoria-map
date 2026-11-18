@@ -1,0 +1,41 @@
+{
+  "id": "pi-detector",
+  "category": "detector",
+  "order": 3,
+  "name": {
+    "uk": "Імпульсний металошукач (PI)",
+    "hu": "Impulzusüzemű fémkereső (PI)"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Посилає в ґрунт потужні імпульси й вимірює їх загасання: вплив ґрунту стає знехтуваним, глибина велика, але метали він не розрізняє.",
+    "hu": "Erős impulzusokat bocsát a talajba, és a lecsengésüket méri: a talaj hatása elhanyagolhatóvá válik, a mélység nagy, de a fémeket nem különbözteti meg."
+  },
+  "description": {
+    "uk": "За угорською статтею, імпульсний металошукач розряджає заряджений конденсатор великої ємності через котушку. Без металу наведена напруга загасає рівномірно, а метал сповільнює загасання, і цю різницю вимірюють. Завдяки потужним імпульсам і правильній затримці вплив ґрунту стає знехтуваним, а глибина виявлення значна; вона залежить від потужності імпульсів і розміру котушки, а імпульси повторюються з частотою від 60 до 600 Гц.\n\nВада в тому, що імпульсний прилад показує будь-який метал і не має дискримінації, тож окремі метали відсіяти не можна; його застосовують для пошуку уламків і мін.",
+    "hu": "A magyar Wikipédia Fémkereső szócikke szerint az impulzusüzemű fémkereső egy feltöltött, nagy kapacitású kondenzátort süt ki a tekercsen keresztül. Fém nélkül az indukált feszültség egyenletesen cseng le, a fém viszont lelassítja a lecsengést, és ezt a különbséget mérik. A nagy teljesítményű impulzusoknak és a megfelelő időzítésnek köszönhetően a talaj hatása elhanyagolhatóvá válik, az érzékelési mélység pedig jelentős; ez az impulzusok teljesítményétől és a tekercs méretétől függ, az impulzusok pedig 60 és 600 Hz közötti frekvenciával ismétlődnek.\n\nHátránya, hogy az impulzusüzemű készülék minden fémet jelez, és nincs diszkriminációja, így az egyes fémek nem szűrhetők ki; roncskutatásra és aknakeresésre használják."
+  },
+  "sources": [
+    {
+      "title": "Fémkereső – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/F%C3%A9mkeres%C5%91",
+      "note": "Розділ «Impulzusüzemű»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Weymouth-_metal_detecting_on_the_beach_%28geograph_3398472%29.jpg",
+      "author": "Chris Downer",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Weymouth-_metal_detecting_on_the_beach_%28geograph_3398472%29.jpg",
+      "caption": {
+        "uk": "Пошук з металошукачем на пляжі у Веймуті (Англія)",
+        "hu": "Fémkeresés a weymouthi tengerparton (Anglia)"
+      }
+    }
+  ]
+}

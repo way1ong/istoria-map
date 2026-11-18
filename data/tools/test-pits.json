@@ -1,0 +1,60 @@
+{
+  "id": "test-pits",
+  "category": "dig",
+  "order": 1,
+  "name": {
+    "uk": "Пробні шурфи й бур",
+    "hu": "Próbagödrök és talajfúrás"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Невеликими шурфами й буром з'ясовують, які шари лежать під землею і де ставити розкоп, майже не порушуючи пам'ятки.",
+    "hu": "Kis próbagödrökkel és fúrással derítik ki, milyen rétegek vannak a föld alatt és hová kerüljön az ásatás, a lelőhely számottevő megbolygatása nélkül."
+  },
+  "description": {
+    "uk": "За українською статтею про шурф, в археології шурфування роблять, щоб з'ясувати стратиграфію ґрунтів і розвідати місця майбутніх розкопок; площа перерізу шурфу від 0,8 до 4 м², а неглибокі круглі шурфи звуть дудками. Стаття про археологічну розвідку додає, що в пробних шурфах зазвичай дуже мало знахідок: вони лише встановлюють, що пам'ятка є, а для докладніших відомостей потрібні розкопки. Там, де є масові відклади (купи мушель, звалища), замість шурфів беруть керн трубкою діаметром 25–75 мм.\n\nЗа угорським посібником з археології (2011), буріння дає відомості про шари ґрунту і лише незначно порушує пам'ятку. Точку буріння нівелюють або беруть її висоту з докладної мапи рельєфу. Місця свердловин або вимірюють поодинці, або бурять за заздалегідь розміченою мережею, яку теж прив'язують до державної системи координат; у взятих зразках головне — межі шарів та їхня глибина. Свердловину радять засипати матеріалом, що відрізняється від ґрунту, але не забруднює його (наприклад, цегляним чи кам'яним порошком): тоді її місце стане відомою точкою під час майбутніх розкопок.\n\nУгорський посібник з археоботаніки (2018) показує ручний ложковий бур, яким під час попередньої археологічної документації визначають ґрунтові умови й можливі культурні шари. Керн можна одразу на місці просіяти крізь невеликі сита, щоб перевірити, чи є в ньому вугілля, насіння, обмазка чи кістки.\n\nОбмеження: за угорськими авторами 2019 року, у забудованій, вимощеній чи перерізаній комунікаціями місцевості пробні розкопки або неможливі, або нерепрезентативні, а в замерзлому чи зовсім розмоклому ґрунті розчистку не вдається провести на належному фаховому рівні.",
+    "hu": "Az ukrán Wikipédia Kutatógödör (Шурф) szócikke szerint a régészetben kutatógödröket azért ásnak, hogy megismerjék a talaj rétegtani viszonyait, és felderítsék a leendő ásatások helyét; a gödör keresztmetszete 0,8–4 m², a sekély, kerek kutatógödrök ukrán neve pedig dudka. Az ukrán Wikipédia Régészeti felderítés (Археологічна розвідка) szócikke hozzáteszi, hogy a próbagödrökben általában nagyon kevés a lelet: csak azt igazolják, hogy van lelőhely, a részletesebb adatokhoz ásatás kell. Ahol tömeges lerakódások vannak (kagylóhalmok, szemétdombok), ott gödrök helyett 25–75 mm átmérőjű csővel vesznek fúrómagot.\n\nA Régészeti Kézikönyv (2011) szerint a talajfúrás információt ad a talajrétegekről, és csak jelentéktelen mértékben bolygatja meg a lelőhelyet. A fúrási pontot beszintezik, vagy a magasságát részletes domborzati térképről veszik. A fúrások helyét vagy egyenként mérik be, vagy előre kijelölt hálózat mentén fúrnak, amelyet szintén bemérnek az országos koordináta-rendszerbe; a kiemelt talajmintáknál a legfontosabb a réteghatárok és mélységük megállapítása. A furatot ajánlott a talajtól elütő, de azt nem szennyező anyaggal (például tégla- vagy kőporral) feltölteni: így a helye a későbbi ásatás során ismert pont lesz.\n\nAz Archaeobotanikai kézikönyv (2018) kézi kanálfúrót mutat be, amellyel az előzetes régészeti dokumentáció során a talajviszonyokat és a lehetséges kultúrrétegeket határozzák meg. A fúrómag a helyszínen azonnal kiszitálható kisméretű szitákon, hogy kiderüljön, van-e benne faszén, mag, patics vagy csont.\n\nKorlátok: magyar szerzők 2019-es cikke szerint beépített, burkolt vagy közművekkel szabdalt területen a próbafeltárás vagy lehetetlen, vagy nem reprezentatív, fagyott vagy teljesen átázott talajban pedig a bontómunka nem végezhető el az elvárt szakmai színvonalon."
+  },
+  "sources": [
+    {
+      "title": "Шурф – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%A8%D1%83%D1%80%D1%84",
+      "note": "Застосування в археології."
+    },
+    {
+      "title": "Археологічна розвідка – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0_%D1%80%D0%BE%D0%B7%D0%B2%D1%96%D0%B4%D0%BA%D0%B0",
+      "note": "Розділ «Глибинна розвідка»."
+    },
+    {
+      "title": "Holl Balázs – Pusztai Tamás: Térinformatika alkalmazása a régészeti feltárásokon. In: Régészeti Kézikönyv. Magyar Régész Szövetség, 2011, 321–375",
+      "url": "https://real.mtak.hu/3000/1/RK_terinformatika.pdf",
+      "note": "Розділ 3.5 «Talajfúrás»."
+    },
+    {
+      "title": "Pető Ákos – Kenéz Árpád: Régészeti növénytan: leletek, módszerek és értelmezés. Archaeobotanikai kézikönyv. Budapest, 2018",
+      "url": "https://real.mtak.hu/99731/1/Peto_Kenez_2018_ARCHAEOBOTANIKAI_KEZIKONYV_.pdf",
+      "note": "Рис. 15 (ручний бур) і розділ про сухе просіювання."
+    },
+    {
+      "title": "Reményi László – Kiss Katalin: Előzetes régészeti dokumentáció. Második rész. Magyar Régészet 8 (2019) 4, 12–17",
+      "url": "https://real.mtak.hu/116583/1/Reme%CC%81nyi-Kiss_H19T.pdf",
+      "note": "Обмеження пробних розкопок."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Digging_the_first_shovel_test_pit%2C_Civil_War_Archeology_in_Lafayette_Square_%285917137446%29.jpg",
+      "author": "Baltimore Heritage",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Digging_the_first_shovel_test_pit%2C_Civil_War_Archeology_in_Lafayette_Square_%285917137446%29.jpg",
+      "caption": {
+        "uk": "Перший пробний шурф на площі Lafayette у Вашингтоні",
+        "hu": "Az első próbagödör ásása a washingtoni Lafayette téren"
+      }
+    }
+  ]
+}

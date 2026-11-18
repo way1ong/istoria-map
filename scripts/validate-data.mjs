@@ -220,9 +220,43 @@ if (existsSync(textsDir))
     }
   }
 
+// tools: data/tools.json (вступ і підрозділи) і data/tools/<id>.json (інструменти)
+const toolCatIds = new Set();
+const toolsDocPath = join(root, 'tools.json');
+const toolsDoc = existsSync(toolsDocPath) ? readJson(toolsDocPath) : null;
+if (toolsDoc) {
+  if (!isLText(toolsDoc.intro)) err('data/tools.json', 'intro.uk відсутній');
+  if (!Array.isArray(toolsDoc.categories) || toolsDoc.categories.length === 0) err('data/tools.json', 'categories має бути непорожнім масивом');
+  else
+    toolsDoc.categories.forEach((c, i) => {
+      if (!c?.id) err('data/tools.json', `categories[${i}].id відсутній`);
+      else if (toolCatIds.has(c.id)) err('data/tools.json', `categories[${i}].id "${c.id}" повторюється`);
+      else toolCatIds.add(c.id);
+      if (!isLText(c?.name)) err('data/tools.json', `categories[${i}].name.uk відсутній`);
+      if (!isLText(c?.summary)) err('data/tools.json', `categories[${i}].summary.uk відсутній`);
+    });
+}
+const toolUsers = ['detectorist', 'archaeologist'];
+const toolFiles = listJson('tools');
+if (toolFiles.length && !toolsDoc) err('data/tools.json', 'файл потрібен, коли є data/tools/*.json');
+for (const { file, path, name } of toolFiles) {
+  const x = readJson(path);
+  if (!x) continue;
+  if (x.id !== name) err(file, `id "${x.id}" має збігатися з назвою файлу "${name}"`);
+  if (!toolCatIds.has(x.category)) err(file, `невідомий підрозділ "${x.category}" (див. data/tools.json)`);
+  if (typeof x.order !== 'number') err(file, 'order має бути числом');
+  if (!isLText(x.name)) err(file, 'name.uk відсутній');
+  if (!Array.isArray(x.users) || x.users.length === 0 || x.users.some((u) => !toolUsers.includes(u)))
+    err(file, `users має бути непорожнім масивом зі значень ${toolUsers.join(', ')}`);
+  if (!isLText(x.summary)) err(file, 'summary.uk відсутній');
+  if (x.description !== undefined && !isLText(x.description)) err(file, 'description.uk відсутній');
+  checkPhotos(file, x.photos);
+  checkSources(file, x.sources);
+}
+
 if (errors.length) {
   console.error(`\nЗнайдено помилок у даних: ${errors.length}\n`);
   for (const e of errors) console.error(' - ' + e);
   process.exit(1);
 }
-console.log(`Дані перевірено: ${periodIds.size} періодів, ${placeIds.size} місць, ${listJson("events").length} подій, ${listJson("maps").length} мап, ${existsSync(routesDir) ? readdirSync(routesDir).filter((f) => f.endsWith(".geojson")).length : 0} анімацій, ${bordersCount} років кордонів.`);
+console.log(`Дані перевірено: ${periodIds.size} періодів, ${placeIds.size} місць, ${listJson("events").length} подій, ${listJson("maps").length} мап, ${existsSync(routesDir) ? readdirSync(routesDir).filter((f) => f.endsWith(".geojson")).length : 0} анімацій, ${bordersCount} років кордонів, ${toolFiles.length} інструментів.`);

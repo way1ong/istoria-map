@@ -1,0 +1,56 @@
+{
+  "id": "fieldwalking",
+  "category": "prepare",
+  "order": 4,
+  "name": {
+    "uk": "Польова розвідка пішки",
+    "hu": "Terepbejárás"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Найпоширеніший і найпростіший спосіб знайти пам'ятку: обійти поле, зібрати знахідки з поверхні й записати місце кожної GPS.",
+    "hu": "A lelőhely-felderítés legelterjedtebb és legegyszerűbb módja: a terület bejárása, a felszíni leletek összegyűjtése és helyük rögzítése GPS-szel."
+  },
+  "description": {
+    "uk": "За угорським посібником з археології (2011), польова розвідка — найпоширеніший і найпростіший спосіб виявлення пам'яток. GPS дає змогу брати в поле цифрову мапу й наносити дані не на око, а вимірюванням: навігаційний приймач менш точний, геоінформаційний точніший і одразу пов'язаний з базою даних. Приймач може сам записувати весь маршрут обходу (трек) і окремо важливі точки, тож на мапі розвідки видно обійдені ділянки, знайдені пам'ятки й ділянки, непридатні для пошуку. Систематичний збір знахідок у межах пам'ятки показує, як вони розподілені на поверхні, і з нього будують мапи щільності; але сам вихід знахідок на поверхню вже трохи спотворює картину.\n\nЗа українською статтею про археологічну розвідку, під час візуальної розвідки шукають артефакти, що опинилися на поверхні через ерозію ґрунту, діяльність тварин, зсуви та інші природні явища, а досвідчені археологи за нерівностями мікрорельєфу визначають місця зниклих каналів і оборонних валів.\n\nОбмеження: за угорськими авторами 2019 року, у забудованій місцевості або в невідповідну пору вегетації польова розвідка й аерофоторозвідка результату не дають.\n\nПриклад з Ясшагу (2025): учасники громадської групи разом з фахівцями Jász Múzeum кілька разів систематично обходили поля, записуючи ручним GPS точне місце кожної знахідки. Мапи з цих точок показують, наскільки насичена пам'ятка, а черепки допомагають визначити добу. GPS-координати зданих до музею знахідок підказали, що середньовічне село Négyszállás було значно більшим, ніж думали, тож 2021–2022 років група систематично обійшла це місце і зібрала черепки з заборонованої ріллі, записуючи місце кожного.",
+    "hu": "A Régészeti Kézikönyv (2011) szerint a terepbejárás a legelterjedtebb és legegyszerűbb lelőhely-felderítési módszer. A GPS-nek köszönhetően digitális térképet lehet vinni a terepre, és az adatok nem becsléssel, hanem méréssel kerülnek rá: a navigációs GPS kevésbé pontos, a térinformatikai GPS pontosabb, és közvetlenül kapcsolódik az adatbázishoz. A készülékkel automatikusan rögzíthető a teljes bejárási útvonal (nyomvonal), külön pedig a fontosabb pontok, így a terepbejárási térképen látszanak a bejárt területek, a felderített lelőhelyek és a felderítésre alkalmatlan területek. A lelőhelyen belüli szisztematikus leletgyűjtés megmutatja, hogyan oszlanak el a leletek a felszínen, és ebből fedettségi térképek készülnek; de már maga az, hogy a leletek a felszínre kerülnek, némileg torzítja a képet.\n\nAz ukrán Wikipédia Régészeti felderítés (Археологічна розвідка) szócikke szerint a szemrevételezéses felderítés során olyan leleteket keresnek, amelyek talajerózió, állatok tevékenysége, földcsuszamlás vagy más természeti jelenség következtében kerültek a felszínre, a tapasztalt régészek pedig a mikrodomborzat egyenetlenségeiből határozzák meg az eltűnt csatornák és védősáncok helyét.\n\nKorlátok: magyar szerzők 2019-es cikke szerint beépített területen vagy nem megfelelő vegetációs időszakban a terepbejárás és a légifelderítés nem vezet eredményre.\n\nPélda a Jászságból (2025): a közösségi régészeti csoport tagjai a Jász Múzeum szakembereivel együtt több alkalommal végeztek szisztematikus terepbejárást, és kézi GPS-szel rögzítették minden lelet pontos helyét. Az ezekből a pontokból készült térképek megmutatják, mennyire intenzív a lelőhely, a kerámiatöredékek pedig a korszak meghatározásában segítenek. A múzeumba beszolgáltatott leletek GPS-koordinátái arra utaltak, hogy a középkori Négyszállás falu jóval nagyobb volt, mint korábban gondolták, ezért 2021–2022-ben a csoport szisztematikusan bejárta a helyet, és a boronált szántóról gyűjtött kerámiatöredékeket, mindegyiknek rögzítve a helyét."
+  },
+  "sources": [
+    {
+      "title": "Holl Balázs – Pusztai Tamás: Térinformatika alkalmazása a régészeti feltárásokon. In: Régészeti Kézikönyv. Magyar Régész Szövetség, 2011, 321–375",
+      "url": "https://real.mtak.hu/3000/1/RK_terinformatika.pdf",
+      "note": "Розділи 2.2 «Terepbejárás» і 3.2 «Szisztematikus leletgyűjtés»."
+    },
+    {
+      "title": "Археологічна розвідка – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B0_%D1%80%D0%BE%D0%B7%D0%B2%D1%96%D0%B4%D0%BA%D0%B0",
+      "note": "Розділ «Візуальна розвідка»."
+    },
+    {
+      "title": "Reményi László – Kiss Katalin: Előzetes régészeti dokumentáció. Második rész. Magyar Régészet 8 (2019) 4, 12–17",
+      "url": "https://real.mtak.hu/116583/1/Reme%CC%81nyi-Kiss_H19T.pdf",
+      "note": "Обмеження розвідки."
+    },
+    {
+      "title": "Gulyás András Zoltán: Közösségi régészet a Jászságban. Jászsági Évkönyv 2025, 128–142",
+      "url": "https://epa.oszk.hu/02200/02295/00033/pdf/EPA02295_jaszsagi_evkonyv_2025_128-142.pdf",
+      "note": "Розділи «Régészeti kutatások a földön» і про Jászberény–Négyszállás."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Fieldwalking_at_Washingborough_-_geograph.org.uk_-_116352.jpg",
+      "author": "Terry Butcher",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Fieldwalking_at_Washingborough_-_geograph.org.uk_-_116352.jpg",
+      "caption": {
+        "uk": "Польова розвідка у Washingborough (Англія)",
+        "hu": "Terepbejárás Washingboroughban (Anglia)"
+      }
+    }
+  ]
+}

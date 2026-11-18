@@ -44,11 +44,15 @@ const dict = {
     typeFarmstead: 'хутір, майор',
     typeInn: 'корчма',
     typeMill: 'млин',
+    tabTools: 'Інструменти',
+    toolsAll: 'Усі',
+    forDetectorist: 'Пошуковцям',
+    forArchaeologist: 'Археологам',
   },
   hu: {
     appTitle: 'Magyarország története térképen',
     tabMap: 'Térkép',
-    tabHistory: 'Történelem',
+    tabHistory: 'Történet',
     allPeriods: 'Minden korszak',
     places: 'Helyek',
     events: 'Események',
@@ -88,6 +92,10 @@ const dict = {
     typeFarmstead: 'major, tanya',
     typeInn: 'csárda',
     typeMill: 'malom',
+    tabTools: 'Eszközök',
+    toolsAll: 'Mind',
+    forDetectorist: 'Fémkeresősöknek',
+    forArchaeologist: 'Régészeknek',
   },
 } satisfies Record<Lang, Record<string, string>>;
 

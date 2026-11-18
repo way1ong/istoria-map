@@ -1,0 +1,56 @@
+{
+  "id": "metal-detector",
+  "category": "detector",
+  "order": 1,
+  "name": {
+    "uk": "Металошукач: як працює і які бувають",
+    "hu": "Fémkereső: működése és típusai"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Котушка створює змінне магнітне поле, а метал у землі його збурює; ґрунтові моделі шукають монети й прикраси на глибині від 20 см до 1 м.",
+    "hu": "A tekercs váltakozó mágneses teret kelt, amelyet a földben lévő fém megzavar; a talajkereső típusok 20 cm és 1 m közötti mélységben keresnek érméket és ékszereket."
+  },
+  "description": {
+    "uk": "За українською статтею, основний елемент металошукача — котушка, яка створює змінне магнітне поле й уловлює збурення від вихрових струмів у металевих предметах; пошукові прилади використовують рятувальні служби й археологи. За призначенням стаття розрізняє:\n\n- **ґрунтові** металошукачі для пошуку скарбів, монет і прикрас, з дискримінатором металів, що показує ймовірний метал предмета, і глибиною виявлення від 20 см до 1 м;\n- **глибинні** з двома рознесеними котушками або великою рамкою для великих цілей на глибині від 50 см до 3 м; вони реагують і на зміни ґрунту, як-от старі фундаменти;\n- **військові** міношукачі, оглядові й конвеєрні прилади.\n\nЗа угорською статтею, найпростіший і найстаріший тип (BFO) працює на частоті близько 100 кГц і через поглинання в ґрунті придатний лише для пошуку біля поверхні, приблизно на 5–10 см, наприклад у пляжному піску. Найпоширеніші сучасні типи, низькочастотні (VLF) та імпульсні (PI), описано в окремих картках.\n\nСпостереження з угорських громадських програм:\n\n- за Bakos (2020), у сухому, розсипчастому чи щойно розпушеному ґрунті металошукачі працюють гірше, тому вологість ґрунту записують;\n- прилади в учасників різні й по-різному «бачать» метал, а багато залежить від того, наскільки власник знає свій прилад, тож кілька людей з різним досвідом і приладами на одній ділянці доповнюють одне одного;\n- на полі битви під Мухі GPS-треки окремих пошуковців показали, що налаштування приладу, швидкість ходи й досвід сильно впливають на те, наскільки рівномірно обстежено ділянку (Laszlovszky і Rácz, 2020).",
+    "hu": "Az ukrán Wikipédia Fémdetektor (Металодетектор) szócikke szerint a fémkereső fő eleme a tekercs, amely váltakozó mágneses teret kelt, és érzékeli a fémtárgyakban keletkező örvényáramok okozta zavarokat; a keresőkészülékeket mentőszolgálatok és régészek használják. Rendeltetés szerint a szócikk a következő típusokat különbözteti meg:\n\n- **talajkereső** készülékek kincsek, érmék és ékszerek felkutatására, fémdiszkriminátorral, amely jelzi, valószínűleg milyen fémből van a tárgy; 20 cm-től 1 m mélységig érzékelnek;\n- **mélységi** készülékek két, egymástól távolabb elhelyezett tekerccsel vagy nagy kerettel, nagy céltárgyak keresésére 50 cm és 3 m közötti mélységben; ezek a talaj változásaira, például régi alapozásokra is reagálnak;\n- **katonai** aknakeresők, továbbá átvizsgáló és futószalagos készülékek.\n\nA magyar Wikipédia Fémkereső szócikke szerint a legegyszerűbb és legrégebbi típus (BFO) 100 kHz körüli frekvencián működik, és a talajban való elnyelődés miatt csak felszín közeli keresésre alkalmas, körülbelül 5–10 cm mélységig, például strandok homokjában. A legelterjedtebb mai típusokat, az alacsonyfrekvenciás (VLF) és az impulzusüzemű (PI) fémkeresőt külön kártyák ismertetik.\n\nMegfigyelések magyarországi közösségi régészeti programokból:\n\n- Bakos (2020) szerint száraz, porhanyós vagy frissen lazított talajban a fémkeresők kevésbé teljesítenek jól, ezért feljegyzik a talaj nedvességtartalmát;\n- a résztvevők műszerei különbözőek, és eltérő hatásfokkal „látják” a fémet, sokat számít az is, mennyire ismeri a tulajdonos a saját műszerét, így ha egy területen többen kutatnak eltérő tapasztalattal és műszerrel, kiegészítik egymás munkáját;\n- a muhi csatatéren az egyes fémkeresősök GPS-szel rögzített útvonalai megmutatták, hogy a műszer beállítása, a haladási sebesség és a tapasztalat erősen befolyásolja, mennyire egyenletesen vizsgálják át a területet (Laszlovszky és Rácz, 2020)."
+  },
+  "sources": [
+    {
+      "title": "Металодетектор – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%B0%D0%BB%D0%BE%D0%B4%D0%B5%D1%82%D0%B5%D0%BA%D1%82%D0%BE%D1%80",
+      "note": "Вступ і розділ «Види металошукачів»."
+    },
+    {
+      "title": "Fémkereső – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/F%C3%A9mkeres%C5%91",
+      "note": "Розділ «BFO-fémkereső»."
+    },
+    {
+      "title": "Bakos Gábor: A fémkereső műszeres terepbejárásoktól a közösségi régészetig Borsod-Abaúj-Zemplén megyében. Magyar Régészet 9 (2020) 2, 65–70",
+      "url": "https://real.mtak.hu/116585/1/Bakos_H20NY.pdf",
+      "note": "Організація роботи пошуковців."
+    },
+    {
+      "title": "Laszlovszky József – Rácz Tibor Ákos: Fémkeresős kutatások a muhi csatatéren. Magyar Régészet 9 (2020) 4, 70–80",
+      "url": "https://real.mtak.hu/119236/1/Laszlovszky_Ra%cc%81cz_H20T.pdf",
+      "note": "Методичні питання пошуку."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Metal_detector_for_coins.jpg",
+      "author": "Zalfija",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Metal_detector_for_coins.jpg",
+      "caption": {
+        "uk": "Металошукач на археологічній пам'ятці в Північній Македонії",
+        "hu": "Fémkereső egy észak-macedóniai régészeti lelőhelyen"
+      }
+    }
+  ]
+}

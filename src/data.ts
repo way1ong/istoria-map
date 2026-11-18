@@ -1,6 +1,7 @@
-import type { Basemap, HistEvent, HistMap, Period, Place, RouteCollection } from './types';
+import type { Basemap, HistEvent, HistMap, Period, Place, RouteCollection, Tool, ToolsDoc } from './types';
 import periodsJson from '../data/periods.json';
 import basemapsJson from '../data/basemaps.json';
+import toolsJson from '../data/tools.json';
 
 const placeModules = import.meta.glob<Place>('../data/places/*.json', {
   eager: true,
@@ -15,6 +16,10 @@ const mapModules = import.meta.glob<HistMap>('../data/maps/*.json', {
   import: 'default',
 });
 const routeModules = import.meta.glob<RouteCollection>('../data/routes/*.geojson', {
+  eager: true,
+  import: 'default',
+});
+const toolModules = import.meta.glob<Tool>('../data/tools/*.json', {
   eager: true,
   import: 'default',
 });
@@ -33,6 +38,13 @@ export const basemaps: Basemap[] = (basemapsJson as { basemaps: Basemap[] }).bas
 export const events: HistEvent[] = Object.values(eventModules);
 export const histMaps: HistMap[] = Object.values(mapModules);
 export const routes: RouteCollection[] = Object.values(routeModules);
+export const toolsDoc: ToolsDoc = toolsJson as ToolsDoc;
+const catIndex = (id: string) => toolsDoc.categories.findIndex((c) => c.id === id);
+/** Інструменти в порядку підрозділів з data/tools.json, далі за полем order. */
+export const tools: Tool[] = Object.values(toolModules).sort((a, b) => catIndex(a.category) - catIndex(b.category) || a.order - b.order);
+export function toolById(id: string): Tool | undefined {
+  return tools.find((x) => x.id === id);
+}
 
 /** Анімації, прив'язані до події. */
 export function routesForEvent(eventId: string): RouteCollection[] {

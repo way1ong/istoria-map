@@ -177,3 +177,33 @@ export interface ModernOutlines {
   source: Source;
   features: { type: 'Feature'; geometry: { type: 'Polygon' | 'MultiPolygon'; coordinates: unknown }; properties: { id: string; name_uk: string; name_hu: string } }[];
 }
+
+/** Кому інструмент корисніший: пошуковцям з металошукачем чи археологам. */
+export type ToolUser = 'detectorist' | 'archaeologist';
+
+export interface ToolCategory {
+  id: string;
+  name: LText;
+  summary: LText;
+}
+
+/** data/tools.json: вступ до розділу і порядок підрозділів. */
+export interface ToolsDoc {
+  intro: LText;
+  categories: ToolCategory[];
+}
+
+/** data/tools/<id>.json: один інструмент або прийом. */
+export interface Tool {
+  id: string;
+  category: string;
+  /** Порядок у межах підрозділу (менше = вище). */
+  order: number;
+  name: LText;
+  users: ToolUser[];
+  summary: LText;
+  /** Markdown */
+  description?: LText;
+  photos?: Photo[];
+  sources: Source[];
+}

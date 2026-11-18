@@ -1,0 +1,51 @@
+{
+  "id": "context-recording",
+  "category": "record",
+  "order": 1,
+  "name": {
+    "uk": "Номери шарів, бланки й підписані пакети",
+    "hu": "Rétegszámok, adatlapok és feliratozott zacskók"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Кожен шар і об'єкт одразу дістає власний номер; знахідки, бланки, фото й креслення посилаються на цей номер, тож знахідка не губить зв'язку з місцем.",
+    "hu": "Minden réteg és objektum azonnal saját számot kap; a leletek, adatlapok, fotók és rajzok erre a számra hivatkoznak, így a lelet nem veszíti el kapcsolatát a helyével."
+  },
+  "description": {
+    "uk": "За українською статтею «Археологія», польові дослідження — це спостереження за станом ґрунту й решток і докладна фіксація всіх об'єктів на плані відносно умовного репера та один одного, а також за глибиною залягання; розкопки дуже відповідальні, бо в процесі пам'ятка знищується. Стаття «Культурний шар» додає, що саме наявність культурного шару визначає цінність території як археологічної пам'ятки, тому землі з культурними шарами охороняються законом.\n\nЗа угорським посібником з археології (2011), сучасна документація відокремлює спостереження від тлумачення: явище не називають, бо назва часто змінюється, а щойно воно з'являється, дають йому порядковий номер. Порядкова нумерація найкраще запобігає подвійним номерам і допомагає помітити пропуски. Зв'язки на кшталт «під — над», «перерізає», «врізається» дають часову послідовність, а разом зі знахідками — хронологію пам'ятки; щоб її розплутати, придумали матрицю Гарріса. На місці ведуть:\n\n- щоденник розкопок, з якого видно, чому щось розкопано саме так;\n- стратиграфічні бланки й бланки об'єктів;\n- реєстр фото й журнал креслень;\n- реєстр знахідок і відібраних проб.\n\nЕтикетки знахідок теж обліковують: відірваний аркуш копіювального блокнота кладуть у пакет зі знахідкою, а корінець лишається як запис. Пакують, сортуючи: найважливіше (як-от монети) поодинці, а кістки тварин, кістки людини, кераміку й метал окремо, невеликими партіями.",
+    "hu": "Az ukrán Wikipédia Régészet (Археологія) szócikke szerint a terepi kutatás a talaj és a maradványok állapotának megfigyelése, valamint minden objektum részletes rögzítése az alaprajzon egy választott alapponthoz és egymáshoz viszonyítva, továbbá a fekvés mélysége szerint; az ásatás nagy felelősséggel jár, mert közben a lelőhely elpusztul. Az ukrán Wikipédia Kultúrréteg (Культурний шар) szócikke hozzáteszi, hogy éppen a kultúrréteg megléte határozza meg egy terület értékét régészeti lelőhelyként, ezért a kultúrrétegeket rejtő területeket törvény védi.\n\nA Régészeti Kézikönyv (2011) szerint a korszerű dokumentáció elválasztja a megfigyeléseket az értékeléstől: a jelenséget nem nevezi meg, mert az elnevezés gyakran módosul, hanem már megjelenésekor sorszámot ad neki. A sorszámozás a legjobb módja annak, hogy elkerüljék a duplán kiadott számokat, és segít észrevenni a hiányokat. Az „alatta – felette”, „átvágja”, „belevág” jellegű kapcsolatok időbeli sorrendet adnak, a leletekkel együtt pedig a lelőhely kronológiáját; ennek kibogozására találták fel a Harris-mátrixot. A helyszínen a következőket vezetik:\n\n- az ásatási naplót, amelyből kiderül, mit miért éppen úgy tártak fel;\n- a stratigráfiai adatlapokat és az objektum adatlapokat;\n- a fotónyilvántartást és a rajznaplót;\n- a leletanyag- és mintavételezés-nyilvántartó adatlapot.\n\nA leletkísérő lapokat is nyilvántartásba veszik: az átírótömb kitépett lapját a leletes zacskóba teszik, a tömbben maradó rész pedig feljegyzésként megmarad. Csomagoláskor szétválogatják a leleteket: a fontosabbakat (például az érméket) egyenként, az állatcsontot, az embercsontot, a kerámiát és a fémet külön, kisebb egységekben csomagolják."
+  },
+  "sources": [
+    {
+      "title": "Археологія – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%8F",
+      "note": "Розділ «Методи»."
+    },
+    {
+      "title": "Культурний шар – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%BD%D0%B8%D0%B9_%D1%88%D0%B0%D1%80",
+      "note": "Вступ."
+    },
+    {
+      "title": "Holl Balázs – Pusztai Tamás: Térinformatika alkalmazása a régészeti feltárásokon. In: Régészeti Kézikönyv. Magyar Régész Szövetség, 2011, 321–375",
+      "url": "https://real.mtak.hu/3000/1/RK_terinformatika.pdf",
+      "note": "Розділ 4.3.4 «Leíró adatok»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Context_sheets.jpg",
+      "author": "Mididoctors",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Context_sheets.jpg",
+      "caption": {
+        "uk": "Бланки опису шарів і об'єктів",
+        "hu": "Rétegek és objektumok leíró adatlapjai"
+      }
+    }
+  ]
+}

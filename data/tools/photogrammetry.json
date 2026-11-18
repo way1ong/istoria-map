@@ -1,0 +1,50 @@
+{
+  "id": "photogrammetry",
+  "category": "record",
+  "order": 4,
+  "name": {
+    "uk": "Фото, ортофото й 3D-моделі",
+    "hu": "Fotó, ortofotó és 3D-modell"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Із серії знімків вимірюють справжні розміри предметів і будують модель рельєфу та ортофото; на моделі з дрона видно навіть найменші сліди колишніх курганів.",
+    "hu": "Fényképsorozatokból mérik a tárgyak valós méreteit, domborzatmodellt és ortofotót készítenek; a drónos modellen az egykori halmok legkisebb nyoma is kimutatható."
+  },
+  "description": {
+    "uk": "За угорською статтею «Fotogrammetria», фотограмметрія — галузь дистанційного зондування, що за вимірами й розрахунками на знімках визначає справжні розміри видимих предметів; аерофотограмметрія бере знімки з літака, гелікоптера, дрона чи супутника. Основа — стереоскопія: той самий предмет на знімках з різних точок відображається по-різному, і з виміряних відмінностей (паралаксів) рахують просторові координати.\n\nУгорський посібник з археології (2011) радить на розкопі позначати на плані стрілкою напрям кожного знімка з його номером, щоб тисячі фото легко було впорядкувати, і розрізняти фотощоденник (що на знімку) й фотореєстр (чи зняли взагалі певне явище чи етап розчистки). Масштабна лінійка й стрілка півночі на знімку годяться лише для орієнтації; для вимірів потрібні точки прив'язки. Щоб використати знімок як мапу, фотографують згори з майже вертикальною віссю камери; для справжнього ортофото потрібна ще й докладна модель рельєфу, а точні просторові дані дають фотограмметрія з пар знімків або лазерний сканер.\n\nДослідники сарматських курганних могильників (2019) знімали дроном з середньої висоти: порівнюючи положення тих самих деталей на знімках, будували щільну хмару точок, а з неї докладну модель рельєфу, прив'язану до розкладених і виміряних позначок. На такій моделі видно навіть найменші сліди колишніх курганів, а ортофото з тих самих знімків може показати плями на поверхні.",
+    "hu": "A magyar Wikipédia Fotogrammetria szócikke szerint a fotogrammetria a távérzékelés tudományága, amely a képeken végzett mérések és számítások segítségével meghatározza a képeken látható tárgyak valós méreteit; a légi fotogrammetria a felvételeket repülőgépről, helikopterről, drónról vagy műholdról készíti. Alapja a sztereoszkópia: ugyanaz a tárgy a különböző pontokból készült képeken másképp képeződik le, és a mért eltérésekből (parallaxisokból) térbeli koordinátákat számítanak.\n\nA Régészeti Kézikönyv (2011) azt tanácsolja, hogy az ásatáson minden felvétel irányát nyíllal és a kép sorszámával jelöljék az alaprajzon, hogy a több ezer fényképet könnyű legyen rendszerezni, és tegyenek különbséget a fotónapló (mi látható a képen) és a fotónyilvántartás (készült-e egyáltalán felvétel egy adott jelenségről vagy bontási fázisról) között. A felvételen elhelyezett méretarány és északjel csak tájékozódásra jó; a méréshez illesztőpontok kellenek. Ha a felvételt térképként akarják használni, magasból, legalább megközelítően függőleges kameratengellyel fényképeznek; a valódi ortofotóhoz ezen felül a terület részletes domborzatmodellje is kell, pontos térbeli adatokat pedig a mérőkép-párokból végzett fotogrammetriai kiértékelés vagy a lézerszkenner ad.\n\nA szarmata halomsíros temetők kutatói (2019) drónnal, közepes magasságból fényképeztek: az ugyanazon részletek képeken elfoglalt helyzetét összevetve sűrű pontfelhőt hoztak létre, abból pedig részletes domborzatmodellt, amelyet a lehelyezett és bemért jelölőpontokhoz illesztettek. Egy ilyen modellen az egykori halmok legkisebb nyoma is látható, az ugyanazokból a felvételekből készült ortofotó pedig felszíni elszíneződéseket is megmutathat."
+  },
+  "sources": [
+    {
+      "title": "Fotogrammetria – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Fotogrammetria",
+      "note": "Вступ."
+    },
+    {
+      "title": "Holl Balázs – Pusztai Tamás: Térinformatika alkalmazása a régészeti feltárásokon. In: Régészeti Kézikönyv. Magyar Régész Szövetség, 2011, 321–375",
+      "url": "https://real.mtak.hu/3000/1/RK_terinformatika.pdf",
+      "note": "Розділи 4.3.1 «Fotók» і 4.3.2 «Fotótérkép»."
+    },
+    {
+      "title": "Masek Zsófia – Serlegi Gábor – Vágvölgyi Bence: Halmok, körárkok, és ami mögöttük van. Magyar Régészet 8 (2019) 4, 18–26",
+      "url": "https://real.mtak.hu/105516/1/Masek_H19T_veglegesitett.pdf",
+      "note": "Розділ про 3D-фотограмметрію з дрона."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Photogrammetric_recording_of_cup_and_ring_marked_boulder_-_geograph.org.uk_-_5637666.jpg",
+      "author": "Andrew Curtis",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Photogrammetric_recording_of_cup_and_ring_marked_boulder_-_geograph.org.uk_-_5637666.jpg",
+      "caption": {
+        "uk": "Фотограмметрична фіксація валуна з чашоподібними знаками, Нортумберленд (Англія)",
+        "hu": "Csészés jelekkel díszített kőtömb fotogrammetriai rögzítése, Northumberland (Anglia)"
+      }
+    }
+  ]
+}

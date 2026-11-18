@@ -1,0 +1,55 @@
+{
+  "id": "hungary-rules",
+  "category": "rules",
+  "order": 1,
+  "name": {
+    "uk": "Металошукач в Угорщині: потрібен дозвіл",
+    "hu": "Fémkereső Magyarországon: engedélyhez kötött"
+  },
+  "users": [
+    "detectorist"
+  ],
+  "summary": {
+    "uk": "Пошук пам'яток з металошукачем в Угорщині потребує дозволу, а на археологічній пам'ятці вже вважається розкопками, які може вести лише археолог; легальний шлях — угода з музеєм.",
+    "hu": "Magyarországon a fémkeresős lelőhely-felderítés engedélyköteles, régészeti lelőhelyen pedig már feltárásnak minősül, amelyet csak régész vezethet; a legális út a múzeummal kötött megállapodás."
+  },
+  "description": {
+    "uk": "За статтею Gulyás András Zoltán (2025), яка посилається на текст закону станом на 5 жовтня 2025 року, за законом 2001. évi LXIV. törvény (§ 20/A, частина 1) пошук пам'яток з приладом, тобто з металошукачем, потребує дозволу, а якщо зачеплено археологічну пам'ятку, він уже вважається розкопками (§ 20/A, частина 4), які може вести лише археолог.\n\nЯк до цього дійшло, за Bakos Gábor (2020):\n\n- у грудні 2014 року парламент уперше суттєво змінив закон 2001 року щодо металошукачів: якщо прилад потрібен не для фахової роботи, на його використання треба мати дозвіл влади;\n- умови дозволу уточнили 2016 і 2018 років: музеї з правом розкопок у межах своєї збиральної території не лише давали висновок на плани пошуку, а угода з таким музеєм стала умовою отримання дозволу.\n\nRácz Tibor Ákos (2024) пише, що правила пошуку з металошукачем тлумачать і застосовують по-різному, тож у кожному медьє склався свій порядок, а 2024 року готувався новий закон про охорону спадщини. Тому перед виходом у поле звіртеся з чинними правилами в музеї, до збиральної території якого належить місце.\n\nСтаття угорської Вікіпедії «Fémkereső» досі пише, що мати й використовувати металошукач не заборонено, і спирається на закон 2001 року та постанову 18/2001 NKÖM; змін 2014 року вона не враховує.\n\nЯк шукати легально разом з музеєм, див. картку «Громадська археологія».",
+    "hu": "Gulyás András Zoltán (2025) cikke szerint, amely a törvény 2025. október 5-i állapotára hivatkozik, a 2001. évi LXIV. törvény 20/A. § (1) bekezdése értelmében a műszeres lelőhely-felderítés, vagyis a fémkeresőzés engedélyköteles, régészeti lelőhely érintettsége esetén pedig már feltárásnak minősül (20/A. § (4) bekezdés), amelyet csak régész vezethet.\n\nAz előzmények Bakos Gábor (2020) szerint:\n\n- 2014 decemberében a parlament először módosította jelentősen a 2001. évi LXIV. törvényt a fémkeresők tekintetében: ha az eszköz használata nem hivatás gyakorlásához szükséges, ahhoz hatósági engedély kell;\n- az engedély feltételeit 2016-ban és 2018-ban pontosították: a feltárási joggal rendelkező múzeumok gyűjtőterületükön belül nemcsak véleményezték a kutatási terveket, hanem a velük kötött megállapodás az engedély megszerzésének feltételévé vált.\n\nRácz Tibor Ákos (2024) azt írja, hogy a jogszabályokat eltérően értelmezik és alkalmazzák, így vármegyénként eltérő eljárásrend honosodott meg, 2024-ben pedig új örökségvédelmi törvény készült. Ezért terepre indulás előtt tájékozódjunk a hatályos szabályokról annál a múzeumnál, amelynek gyűjtőterületéhez a hely tartozik.\n\nA magyar Wikipédia Fémkereső szócikke még mindig azt írja, hogy a fémkereső birtoklása és használata nem tiltott, és a 2001. évi LXIV. törvényre, valamint a 18/2001. (X. 18.) NKÖM rendeletre hivatkozik; a 2014-es változásokat nem veszi figyelembe.\n\nArról, hogyan lehet legálisan, a múzeummal együtt keresni, lásd a „Közösségi régészet: keresés a múzeummal együtt” kártyát."
+  },
+  "sources": [
+    {
+      "title": "Gulyás András Zoltán: Közösségi régészet a Jászságban. Jászsági Évkönyv 2025, 128–142",
+      "url": "https://epa.oszk.hu/02200/02295/00033/pdf/EPA02295_jaszsagi_evkonyv_2025_128-142.pdf",
+      "note": "Вступ і примітки 1–2 з посиланнями на § 20/A закону."
+    },
+    {
+      "title": "Bakos Gábor: A fémkereső műszeres terepbejárásoktól a közösségi régészetig Borsod-Abaúj-Zemplén megyében. Magyar Régészet 9 (2020) 2, 65–70",
+      "url": "https://real.mtak.hu/116585/1/Bakos_H20NY.pdf",
+      "note": "Зміни закону 2014–2018 років."
+    },
+    {
+      "title": "Rácz Tibor Ákos: Helyzetkép a fémkeresőzésről. Javaslatok a felelősségteljes fémkeresőzés működési kereteire. Magyar Régészet 13 (2024) 2, 89–94",
+      "url": "https://real.mtak.hu/234111/1/Racz_H24NY.pdf",
+      "note": "Розділи про роль музеїв і пропозиції."
+    },
+    {
+      "title": "Fémkereső – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/F%C3%A9mkeres%C5%91",
+      "note": "Розділ «Magyarországi helyzetkép»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/No_Metal_Detecting_-_geograph.org.uk_-_7464821.jpg",
+      "author": "Anne Burgess",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:No_Metal_Detecting_-_geograph.org.uk_-_7464821.jpg",
+      "caption": {
+        "uk": "Табличка із забороною пошуку з металошукачем, Fordyce (Шотландія)",
+        "hu": "Fémkeresést tiltó tábla, Fordyce (Skócia)"
+      }
+    }
+  ]
+}

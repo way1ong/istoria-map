@@ -1,0 +1,66 @@
+{
+  "id": "hand-tools",
+  "category": "dig",
+  "order": 2,
+  "name": {
+    "uk": "Ручні інструменти розкопок",
+    "hu": "Az ásatás kéziszerszámai"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Лопата для копання й розчистки, ножі, шпателі й щітки для тонкої роботи; знахідки фіксують на місці, перш ніж вийняти.",
+    "hu": "Lapát az ásáshoz és tisztításhoz, kés, spatula és ecset a finom munkához; a leleteket kiemelés előtt a helyükön dokumentálják."
+  },
+  "description": {
+    "uk": "За українською статтею, лопату вживають для розкопування ям, перенесення сипких матеріалів і розчищення.\n\nУгорський посібник з археоботаніки (2018) перелічує польовий набір для відбору проб: міцна металева скриня, круглий скребок, кишенькові ножі, шпателі й лабораторні лопатки, щітка, пакети із застібкою різних розмірів, ящик для інструментів, флакони з кришкою, паперові пакети, невелика лопатка для вугілля, складані метри, рулетка, ручки й маркери. Ґрунт для проб найзручніше набирати невеликою лопаткою, дрібні проби — лабораторними шпателями, а скребком знімають тонкий шар сучасного забруднення зі стінки розрізу чи поверхні.\n\nНа розкопках неолітичного поселення в Sé (2020) археологи йшли тонкими інструментами, дуже повільно, документуючи знахідки на місці; гумусний шар знімали квадратами 1×1 м, а замість ручних креслень усе міряли тахеометром.\n\nЗа досвідом громадської програми музею в Szentendre, розчистка археологічних об'єктів — найлегша для засвоєння робота і найпопулярніша серед волонтерів (картка «Громадська археологія»).",
+    "hu": "Az ukrán Wikipédia Lapát (Лопата) szócikke szerint a lapátot gödrök ásására, ömlesztett anyagok mozgatására és tisztításra használják.\n\nAz Archaeobotanikai kézikönyv (2018) a terepi mintavételhez a következő felszerelést sorolja fel: erős fémkoffer, körhoroló, zsebkések, spaklik és laboratóriumi spatulák, ecset, különböző méretű simítózáras tasakok, szerszámos láda, csavaros tetejű flakonok, papírtasakok, kis szeneslapát, colostok, mérőszalag, tollak és filctollak. A mintavételhez a talajt legkényelmesebb kis lapáttal, a kisebb mintákat laboratóriumi spatulával gyűjteni, a horolóval pedig vékony rétegben leszedik a metszetfalról vagy a felszínről a recens szennyeződést.\n\nA séi neolitikus település ásatásán (2020) a régészek finom bontóeszközökkel, nagyon lassan haladtak, a leleteket helyben dokumentálva; a humuszréteget 1×1 m-es négyzethálóban bontották, kézi rajzok helyett pedig mindent mérőállomással mértek fel.\n\nA szentendrei múzeum közösségi régészeti programjának tapasztalata szerint a régészeti objektumok bontása a legkönnyebben elsajátítható és az önkéntesek körében a legnépszerűbb feladat (lásd a „Közösségi régészet: keresés a múzeummal együtt” kártyát)."
+  },
+  "sources": [
+    {
+      "title": "Лопата – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BF%D0%B0%D1%82%D0%B0",
+      "note": "Вступ."
+    },
+    {
+      "title": "Pető Ákos – Kenéz Árpád: Régészeti növénytan: leletek, módszerek és értelmezés. Archaeobotanikai kézikönyv. Budapest, 2018",
+      "url": "https://real.mtak.hu/99731/1/Peto_Kenez_2018_ARCHAEOBOTANIKAI_KEZIKONYV_.pdf",
+      "note": "Розділ «A mintavételhez szükséges tárgyi eszközök» і рис. 22."
+    },
+    {
+      "title": "Kolonits László: Egy ősi civilizáció forrásvidékén. A séi neolitikus lelőhely. Magyar Régészet 11 (2022) 2, 47–57",
+      "url": "https://real.mtak.hu/149312/1/Kolonits_H22NY.pdf",
+      "note": "Хід розкопок."
+    },
+    {
+      "title": "Rácz Tibor Ákos: Társadalmi szerepvállalás a régészeti kutatásban. In: Rácz T. Á. (szerk.): Kincskeresés, kaland, tudomány. Közösségi régészeti projektek Pest megyében. Szentendre, Ferenczy Múzeumi Centrum, 2021",
+      "url": "https://real.mtak.hu/89623/1/KKT_regeszeti_kiadvany_20210805.pdf",
+      "note": "Розділ про те, до яких робіт залучати волонтерів."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Tel_Akko_Chopper_the_WHS_Trowel_%289510759398%29.jpg",
+      "author": "Michael Homan",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Tel_Akko_Chopper_the_WHS_Trowel_%289510759398%29.jpg",
+      "caption": {
+        "uk": "Кельма на розкопках у Тель-Акко (Ізраїль)",
+        "hu": "Kőműveskanál a tel-akkói ásatáson (Izrael)"
+      }
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Archaeologist_using_a_mattock_at_Ryder_Point%2C_Hopton%2C_Wirksworth%2C_Derbyshire%2C_2018-2019.jpg",
+      "author": "Daniel Wood",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Archaeologist_using_a_mattock_at_Ryder_Point%2C_Hopton%2C_Wirksworth%2C_Derbyshire%2C_2018-2019.jpg",
+      "caption": {
+        "uk": "Археолог з мотикою на розкопках у Дербіширі (Англія)",
+        "hu": "Régész irtókapával egy derbyshire-i ásatáson (Anglia)"
+      }
+    }
+  ]
+}

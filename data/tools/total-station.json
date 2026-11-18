@@ -1,0 +1,60 @@
+{
+  "id": "total-station",
+  "category": "record",
+  "order": 2,
+  "name": {
+    "uk": "Тахеометр і нівелір",
+    "hu": "Mérőállomás és szintezőműszer"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Тахеометр міряє кути й відстані та одразу рахує координати точок; нівелір має весь час бути на розкопі, щоб записувати висоти, поки явища ще не зникли.",
+    "hu": "A mérőállomás szögeket és távolságokat mér, és rögtön koordinátákat számol; a szintezőműszernek folyamatosan az ásatáson kell lennie, hogy a magasságokat rögzítsék, amíg a jelenségek még megvannak."
+  },
+  "description": {
+    "uk": "За українською статтею, тахеометр — електронно-оптичний інструмент для вимірювання горизонтальних і вертикальних кутів, відстаней і перевищень; ним визначають планові координати й висоти точок місцевості. Угорська стаття «Mérőállomás» додає, що такий прилад поєднує теодоліт, віддалемір і реєстратор даних, нові моделі працюють разом з GPS і цифровими нівелірами, а найсучасніші вміють знімати зображення й сканувати. Нівелір, за українською статтею, — геодезичний прилад для визначення перепадів висот між точками; до нього додають нівелірні рейки.\n\nУгорський посібник з археології (2011) радить:\n\n- нівелір має весь час бути на розкопі, і міряти треба в кожному потрібному випадку: краще зайві дані, ніж пропущені важливі точки; без нівелювання не обійтися, коли розкопки в ході роботи знищують явища або коли до приїзду геодезиста не вдасться вберегти залишені явища й знахідки;\n- археолог керує вимірами геодезиста: показує всі важливі точки й дає їм назви для журналу, а зазвичай сам ставить позначки, які геодезист вимірює. Геодезист, що працює сам, міряє те, що здається важливим йому, і виходить мапа, яку археологічно не прочитаєш;\n- щоб сітку квадратів можна було час від часу розширювати чи відновлювати, потрібно щонайменше дві закріплені місцеві опорні точки (або одна точка й добре видна точка напрямку); заради стійкості їх ставлять поза робочою ділянкою й вимірюють з міліметровою точністю.\n\nНа розкопках у Sé (2020) ручних креслень не робили: усе міряли тахеометром.",
+    "hu": "Az ukrán Wikipédia Mérőállomás (Тахеометр) szócikke szerint a mérőállomás elektrooptikai műszer vízszintes és magassági szögek, távolságok és magasságkülönbségek mérésére; vele a terep pontjainak vízszintes koordinátáit és magasságát határozzák meg. A magyar Wikipédia Mérőállomás szócikke hozzáteszi, hogy a műszer teodolit, távmérő és adatrögzítő egyben, az újabb típusok GPS-szel és digitális szintezőműszerekkel is együttműködnek, a legmodernebbek pedig már képalkotásra és szkennelésre is alkalmasak. Az ukrán Wikipédia Szintezőműszer (Нівелір) szócikke szerint a szintezőműszer geodéziai műszer a pontok közötti magasságkülönbségek meghatározására; szintezőlécek tartoznak hozzá.\n\nA Régészeti Kézikönyv (2011) a következőket tanácsolja:\n\n- az ásatáson folyamatosan jelen kell lennie szintezőműszernek, és minden felmerülő esetben mérni kell: inkább legyenek fölösleges adatok, mint hogy lényeges pontok maradjanak ki; a szintezés elengedhetetlen, ha a feltárás a munka során elpusztítja a jelenségeket, vagy ha a geodéta megérkezéséig nem lehet megóvni a meghagyott jelenségeket és leleteket;\n- a régész irányítja a geodéta mérését: rámutat minden fontos pontra, és megadja a nevüket a jegyzőkönyv számára, rendszerint pedig maga helyezi ki a jelölőpontokat, amelyeket a geodéta bemér. Az egyedül dolgozó geodéta azt méri be, amit ő tart fontosnak, és az eredmény régészetileg nem értelmezhető térkép lesz;\n- a négyzetháló időnkénti bővítéséhez vagy helyreállításához legalább két helyi rögzített alappont (vagy egy alappont és egy jól látható iránypont) kell; a stabilitás érdekében ezek a munkaterületen kívül legyenek, milliméteres pontossággal bemérve.\n\nA séi ásatáson (2020) nem készültek kézi rajzok: mindent mérőállomással mértek fel."
+  },
+  "sources": [
+    {
+      "title": "Тахеометр – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%A2%D0%B0%D1%85%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80",
+      "note": "Вступ."
+    },
+    {
+      "title": "Mérőállomás – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/M%C3%A9r%C5%91%C3%A1llom%C3%A1s",
+      "note": "Вступ."
+    },
+    {
+      "title": "Нівелір – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%9D%D1%96%D0%B2%D0%B5%D0%BB%D1%96%D1%80",
+      "note": "Вступ."
+    },
+    {
+      "title": "Holl Balázs – Pusztai Tamás: Térinformatika alkalmazása a régészeti feltárásokon. In: Régészeti Kézikönyv. Magyar Régész Szövetség, 2011, 321–375",
+      "url": "https://real.mtak.hu/3000/1/RK_terinformatika.pdf",
+      "note": "Розділи 4.2 «Ásatási geodézia» і 4.2.2.3 «Négyzetháló»."
+    },
+    {
+      "title": "Kolonits László: Egy ősi civilizáció forrásvidékén. A séi neolitikus lelőhely. Magyar Régészet 11 (2022) 2, 47–57",
+      "url": "https://real.mtak.hu/149312/1/Kolonits_H22NY.pdf",
+      "note": "Хід розкопок."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Station_totalle.jpg",
+      "author": "Clicgauche",
+      "license": "CC BY-SA 1.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Station_totalle.jpg",
+      "caption": {
+        "uk": "Тахеометр на штативі",
+        "hu": "Mérőállomás állványon"
+      }
+    }
+  ]
+}

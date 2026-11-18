@@ -1,0 +1,65 @@
+{
+  "id": "magnetometer",
+  "category": "geophysics",
+  "order": 1,
+  "name": {
+    "uk": "Магнітометр і градієнтометр",
+    "hu": "Magnetométer és gradiométer"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Пасивний прилад: міряє звичайне для місцевості магнітне поле й відхилення від нього, а відхилення видають ділянки, довго чи сильно порушені людиною, і чужі для місця матеріали, як-от палену цеглу чи камінь.",
+    "hu": "Passzív műszer: a környezetre jellemző mágneses értékeket és az ezektől való eltéréseket méri; az anomáliák az ember által hosszabb ideig vagy intenzíven bolygatott részeket és a tájidegen anyagokat, például égetett téglát vagy követ jelzik."
+  },
+  "description": {
+    "uk": "За статтею угорських археологів 2019 року про курганні могильники сарматської доби, магнітна зйомка — пасивний геофізичний метод: прилад (магнітометр) міряє магнітні значення, звичайні для місцевості, і відхилення від них, а з відхилень роблять висновок про підземні археологічні об'єкти й інші сліди втручання людини. Аномалії показують ділянки, довго чи інтенсивно порушені людиною, а також великі скупчення чужого для місця матеріалу, як-от паленої цегли чи каменю. За українською статтею про магнітометр, археологія — одна з галузей, де його застосовують.\n\nПриклади з Угорщини:\n\n- **Sé, 2020.** Магнітну зйомку зробили на 24 188 м²; на обстеженій частині неолітичного поселення видно близько двадцяти подібно орієнтованих жител, а між ними ями-сховища, смітникові ями й печі.\n- **Csökmő–Káposztás-domb, 2019.** Дві команди з двома ферозондовими градієнтометрами та багатосенсорним магнітометром, який тягне квадроцикл, за сезон обстежили 387 678 м²; аномалії показали на телі багато будівель і два концентричні рови, що частково його оточують.\n\nОбмеження: за угорськими авторами 2019 року, на нерівному ґрунті (наприклад, після глибокої оранки) або там, де багато металевого брухту, результати стають такими шумними, що їх неможливо витлумачити. Щоб результати лягли на мапу точно, мережу вимірювань ретельно розбивають на місцевості або прив'язують до GPS-координат (угорський посібник з археології, 2011).",
+    "hu": "Magyar régészek 2019-es, a szarmata kori halomsíros temetőkről szóló cikke szerint a geomágneses felmérés passzív geofizikai módszer: a műszer (magnetométer) a környezetre általánosan jellemző mágneses értékeket és az ezektől való eltéréseket méri, az eltérésekből pedig föld alatti régészeti jelenségekre és az emberi beavatkozás egyéb nyomaira lehet következtetni. Az anomáliák az emberi tevékenység által hosszabb ideig vagy intenzíven bolygatott részeket jelzik, valamint a tájidegen anyag, például égetett tégla vagy kő nagyobb tömegű előfordulását. Az ukrán Wikipédia Magnetométer (Магнітометр) szócikke szerint a régészet a műszer egyik alkalmazási területe.\n\nMagyarországi példák:\n\n- **Sé, 2020.** A magnetométeres felmérés 24 188 m²-en készült; az újkőkori település felmért részén mintegy húsz hasonló tájolású házhely látszik, közöttük tárolóvermekkel, szemétgödrökkel és kemencékkel.\n- **Csökmő–Káposztás-domb, 2019.** Két csapat két fluxgate gradiométerrel és egy négykerekű motorral vontatott, többszenzoros magnetométerrel egy szezon alatt 387 678 m²-t mért fel; az anomáliák a tellen számos épületet, valamint két, a tellt részben körülvevő koncentrikus árkot mutattak ki.\n\nKorlátok: magyar szerzők 2019-es cikke szerint egyenetlen talajon (például mélyszántás után) vagy ott, ahol sok a fémhulladék, a mérési eredmények értelmezhetetlenül zajosak lesznek. Ahhoz, hogy az eredmények pontosan a térképre illeszkedjenek, a mérési hálót gondosan kitűzik a terepen, vagy GPS-koordinátákhoz kötik (Régészeti Kézikönyv, 2011)."
+  },
+  "sources": [
+    {
+      "title": "Masek Zsófia – Serlegi Gábor – Vágvölgyi Bence: Halmok, körárkok, és ami mögöttük van. Magyar Régészet 8 (2019) 4, 18–26",
+      "url": "https://real.mtak.hu/105516/1/Masek_H19T_veglegesitett.pdf",
+      "note": "Розділ про методи: геомагнітна зйомка."
+    },
+    {
+      "title": "Магнітометр – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B3%D0%BD%D1%96%D1%82%D0%BE%D0%BC%D0%B5%D1%82%D1%80",
+      "note": "Розділ «Застосування»."
+    },
+    {
+      "title": "Kolonits László: Egy ősi civilizáció forrásvidékén. A séi neolitikus lelőhely. Magyar Régészet 11 (2022) 2, 47–57",
+      "url": "https://real.mtak.hu/149312/1/Kolonits_H22NY.pdf",
+      "note": "Розділ «A geofizikai kutatás»."
+    },
+    {
+      "title": "Riebe, Danielle J. et al.: Csökmő–Káposztás-domb késő újkőkori (herpályi) településkomplexumának kutatása. Magyar Régészet 12 (2023) 3, 1–13",
+      "url": "https://real.mtak.hu/182459/1/Riebe_H23O_pdfa.pdf",
+      "note": "Розділ «Magnetométeres felmérés»."
+    },
+    {
+      "title": "Reményi László – Kiss Katalin: Előzetes régészeti dokumentáció. Második rész. Magyar Régészet 8 (2019) 4, 12–17",
+      "url": "https://real.mtak.hu/116583/1/Reme%CC%81nyi-Kiss_H19T.pdf",
+      "note": "Обмеження геофізичних методів."
+    },
+    {
+      "title": "Holl Balázs – Pusztai Tamás: Térinformatika alkalmazása a régészeti feltárásokon. In: Régészeti Kézikönyv. Magyar Régész Szövetség, 2011, 321–375",
+      "url": "https://real.mtak.hu/3000/1/RK_terinformatika.pdf",
+      "note": "Розділ 3.4 «Geofizikai mérések»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Fluxgate_Magnetometry_Survey_at_Friarstown_Co._Kildare_-_geograph.org.uk_-_4241115.jpg",
+      "author": "Enda O Flaherty",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Fluxgate_Magnetometry_Survey_at_Friarstown_Co._Kildare_-_geograph.org.uk_-_4241115.jpg",
+      "caption": {
+        "uk": "Ферозондова магнітометрична зйомка у Friarstown (Ірландія)",
+        "hu": "Fluxgate magnetométeres felmérés Friarstownban (Írország)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "sieve",
+  "category": "dig",
+  "order": 3,
+  "name": {
+    "uk": "Сито: сухе й мокре просіювання",
+    "hu": "Szitálás: száraz és nedves"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Ґрунт просіюють крізь набір сит з різним розміром вічок: сухе просіювання швидке й годиться як польова перевірка, мокре точніше, але органічні й мінеральні рештки лишаються разом.",
+    "hu": "A talajt különböző lyukbőségű szitasoron szitálják: a száraz szitálás gyors, terepi ellenőrzésre jó, a nedves pontosabb, de a szerves és szervetlen maradványok együtt maradnak."
+  },
+  "description": {
+    "uk": "За угорським посібником з археоботаніки (2018), під час просіювання проби ґрунту кладуть на набір сит з різним розміром вічок і легкими рухами сортують, прибираючи дрібну фракцію, бо в дуже мулистій, пилуватій чи піщаній пробі важко помітити дрібне насіння.\n\n- **Сухе просіювання** роблять руками без води, бажано в протипиловій масці. Його беруть, коли вода могла б зруйнувати рослинні рештки (наприклад, сухі, зсохлі), а також щоб на місці перевірити керн з бура: так одразу видно, чи є вугілля, насіння, обмазка чи кістки. Воно швидке, але дає багато пилу і вважається радше польовою перевіркою, ніж точним відбором.\n- **Мокре просіювання** роблять проточною водою на більших рамах, у мийні або на місці, якщо є вода: пробу на верхньому ситі поливають несильним струменем з розпилювача, доки матеріал на ситі видимо не перестане зменшуватися. Воно ощадливіше на воду, ніж флотація, але легка й важка фракції не розділяються, тож шукати насінину серед решти — як голку в копиці сіна.\n- **Комбінований спосіб**: відра на третину чи наполовину заповнюють ґрунтом, заливають водою й лишають на кілька днів, потім перемішують, дають важкій фракції осісти, а те, що спливло, зливають на сита; доливають воду й повторюють, доки вода у відрі не стане чистою. Це допомагає і з глинистими пробами.",
+    "hu": "Az Archaeobotanikai kézikönyv (2018) szerint szitáláskor a talajmintákat különböző lyukbőségű szitákból álló szitasorra helyezik, és finom mozdulatokkal osztályozzák, közben eltávolítják a finom frakciót, mert a nagyon iszapos, poros vagy homokos mintában nehéz észrevenni az apró magokat.\n\n- **A száraz szitálást** kézi erővel, víz nélkül végzik, lehetőleg porvédő maszkban. Akkor alkalmazzák, ha a víz roncsolhatná a növényi maradványokat (például a száraz, szikkadt megtartásúakat), valamint arra, hogy a fúrómagot a helyszínen ellenőrizzék: így azonnal kiderül, van-e benne faszén, mag, patics vagy csont. Gyors, de nagy porral jár, és inkább terepi ellenőrzésnek számít, mint pontos mintavételnek.\n- **A nedves szitálást** folyóvízzel, nagyobb szitakereteken végzik, mosóhelyiségben, vagy ha van víz, a terepen: a felső szitára öntött mintát szórófejjel, nem túl erős vízsugárral permetezik, amíg a szitán lévő anyag szemmel láthatóan már nem fogy. Víztakarékosabb, mint a flotálás, de a könnyű és a nehéz frakció nem válik el egymástól, így egy magot megtalálni a többi anyag között olyan, mint tűt keresni a szénakazalban.\n- **Kombinált feltárás**: a vödröket harmadig vagy félig töltik talajjal, felöntik vízzel, és néhány napig ázni hagyják, majd megkeverik, hagyják leülepedni a nehéz frakciót, a felúszó anyagot pedig a szitasorra öntik; vizet pótolnak, és addig ismétlik, amíg a vödörben lévő víz ki nem tisztul. Ez az agyagos mintáknál is segít."
+  },
+  "sources": [
+    {
+      "title": "Pető Ákos – Kenéz Árpád: Régészeti növénytan: leletek, módszerek és értelmezés. Archaeobotanikai kézikönyv. Budapest, 2018",
+      "url": "https://real.mtak.hu/99731/1/Peto_Kenez_2018_ARCHAEOBOTANIKAI_KEZIKONYV_.pdf",
+      "note": "Розділ «Szitálás»: száraz, nedves szitálás, kombinált feltárás."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Washing-sieving%2C_samples_from_Calvero_de_la_Higuera%2C_Pinilla_del_Valle%2C_Madrid%2C_Spain_02.JPG",
+      "author": "PePeEfe",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Washing-sieving%2C_samples_from_Calvero_de_la_Higuera%2C_Pinilla_del_Valle%2C_Madrid%2C_Spain_02.JPG",
+      "caption": {
+        "uk": "Мокре просіювання зразків, Pinilla del Valle (Іспанія)",
+        "hu": "Nedves szitálás, Pinilla del Valle (Spanyolország)"
+      }
+    }
+  ]
+}

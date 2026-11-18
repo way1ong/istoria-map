@@ -1,0 +1,61 @@
+{
+  "id": "old-maps",
+  "category": "prepare",
+  "order": 1,
+  "name": {
+    "uk": "Старі мапи й архівні відомості",
+    "hu": "Régi térképek és archív adatok"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "На старих мапах часто позначено замки, руїни, кургани й рови; порівняння мап різних років допомагає знайти зниклі місця, а в застосунку для цього є режим «Порівняти».",
+    "hu": "A régi térképeken gyakran szerepel vár, rom, halom vagy árok; a különböző korú térképek összevetése segít megtalálni az eltűnt helyeket, erre szolgál az alkalmazás Összevetés nézete."
+  },
+  "description": {
+    "uk": "Угорський посібник з археології (розділ про геоінформаційні системи, 2011) називає пошук у старих відомостях окремим способом виявлення пам'яток: колись їх уже хтось знав, але місце забули. Навіть в археологічних звітах трапляється прив'язка на кшталт «120 кроків на північ від старого дерева», тому для пошуку місця беруть усе, що є: старі фото, мапи й аерознімки. На архівних мапах бувають позначки, які прямо вказують на пам'ятку: замок, руїна, курган чи рів. Назва на мапі не завжди збігається з археологічним визначенням, але дає добру підказку. Найкращий приклад — кургани: на мапах добре видно і значок пагорба, і геодезичний пункт на ньому, і назву.\n\nПриклади з угорських досліджень:\n\n- кургани довкола Makó видно на рукописних аркушах першої (1784) і другої (1864) військових зйомок; автор дослідження 2022 року вважає, що переліки курганів XX століття не використали можливостей рукописних мап, тому кількість курганів у різних переліках часом різниться в кілька разів;\n- для «Римської дороги» між Érd і Százhalombatta перша військова зйомка 1783 року показує лише поштовий шлях без решток римської дороги, а друга зйомка 1858 року малює дорогу вже по лінії нинішньої;\n- у громадській групі Jász Múzeum один з учасників за старими мапами шукає зниклі села, а інший за мапами й літературою наніс на мапу всі кургани Ясшагу (Jászság).\n\nУ цьому застосунку так зроблено з аркушами австро-угорської Spezialkarte 1885 і 1904 років: їх вирівняно по сітці й накладено на сучасну мапу, а за підписами на них знайдено зниклі хутори, корчми й млини навколо Göd, Vác і Dunakeszi. Відкрийте [режим «Порівняти»](#/compare), щоб побачити стару й сучасну мапу одну над одною.",
+    "hu": "A Régészeti Kézikönyv (térinformatikai fejezet, 2011) a régi adatok közötti kutatást a lelőhely-felderítés külön módjának nevezi: ezeket a lelőhelyeket valaki egykor már ismerte, csak a helyük merült feledésbe. Még a régészeti dokumentációkban is előfordul „az öreg fától északra 120 lépésnyire” típusú helymeghatározás, ezért a hely azonosításához mindent felhasználnak, ami rendelkezésre áll: régi fényképeket, térképeket és légifotókat. Az archív térképeken néha olyan jelek is szerepelnek, amelyek közvetlenül lelőhelyre utalnak: vár, rom, halom vagy árok. A térképi elnevezés nem mindig egyezik a régészeti meghatározással, de jó támpontot ad. A legjobb példa a halomsírok: a térképeken jól azonosítható a halom jele, a rajta lévő geodéziai pont és a név is.\n\nPéldák magyar kutatásokból:\n\n- a Makó környéki halmok látszanak az első (1784) és a második (1864) katonai felmérés kéziratos lapjain; a 2022-es tanulmány szerzője úgy véli, hogy a 20. századi halomkataszterek nem aknázták ki a kéziratos térképek nyújtotta lehetőségeket, ezért a különböző kataszterek halomszámai között esetenként többszörös az eltérés;\n- az Érd és Százhalombatta közötti „Római út” esetében az 1783-as első katonai felmérés csak a postautat ábrázolja, a római kori út maradványát nem, az 1858-as második felmérés viszont már a maival megegyező vonalon rajzolja meg az utat;\n- a Jász Múzeum közösségi régészeti csoportjában az egyik tag régi térképek segítségével eltűnt falvakat keres, egy másik pedig térképek és szakirodalom alapján feltérképezte a Jászság összes halomsírját.\n\nEbben az alkalmazásban így jártak el az osztrák–magyar Spezialkarte 1885-ös és 1904-es lapjaival: a fokhálózat alapján a mai térképre illesztették őket, feliratuk alapján pedig megtalálták a Göd, Vác és Dunakeszi környéki eltűnt majorokat, csárdákat és malmokat. Nyissa meg az [Összevetés nézetet](#/compare), hogy egymás fölött lássa a régi és a mai térképet."
+  },
+  "sources": [
+    {
+      "title": "Holl Balázs – Pusztai Tamás: Térinformatika alkalmazása a régészeti feltárásokon. In: Régészeti Kézikönyv. Magyar Régész Szövetség, 2011, 321–375",
+      "url": "https://real.mtak.hu/3000/1/RK_terinformatika.pdf",
+      "note": "Розділ 2.1 «Adatrekonstrukció»."
+    },
+    {
+      "title": "Bede Ádám: Makó és környéke halmainak kataszterezése, állapotfelmérése és tájrégészeti vizsgálata. Archeometriai Műhely 19 (2022) 3",
+      "url": "https://real.mtak.hu/176186/1/AM-2022-3-BA.pdf",
+      "note": "Вступ і рис. 2: кургани на аркушах першої і другої військових зйомок."
+    },
+    {
+      "title": "Varga Gábor: Római út Érd határában. Archaeologiai Értesítő 141 (2016) 123–144",
+      "url": "https://real.mtak.hu/43024/1/0208.2016.141.6.pdf",
+      "note": "Дорога на аркушах першої (1783) і другої (1858) військових зйомок."
+    },
+    {
+      "title": "Gulyás András Zoltán: Közösségi régészet a Jászságban. Jászsági Évkönyv 2025, 128–142",
+      "url": "https://epa.oszk.hu/02200/02295/00033/pdf/EPA02295_jaszsagi_evkonyv_2025_128-142.pdf",
+      "note": "Склад громадської групи."
+    },
+    {
+      "title": "Аркуш Spezialkarte 15:XX «Óbuda (Budapest)», 1904 – Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "note": "Приклад аркуша, вирівняного в застосунку."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Obuda%2C_%28Budapest%29._NYPL1226598.tiff",
+      "author": "K. u. k. Militärgeographisches Institut",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Obuda%2C_%28Budapest%29._NYPL1226598.tiff",
+      "caption": {
+        "uk": "Аркуш Spezialkarte 15:XX «Óbuda (Budapest)», 1904",
+        "hu": "A Spezialkarte 15:XX „Óbuda (Budapest)” lapja, 1904"
+      }
+    }
+  ]
+}

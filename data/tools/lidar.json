@@ -1,0 +1,45 @@
+{
+  "id": "lidar",
+  "category": "prepare",
+  "order": 3,
+  "name": {
+    "uk": "Лідар (повітряне лазерне сканування)",
+    "hu": "LiDAR (légi lézerszkennelés)"
+  },
+  "users": [
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Лазерні імпульси з літака проходять крізь листя, і за останніми відбиттями від землі будують рельєф, на якому видно приховані лісом вали й кургани.",
+    "hu": "A repülőről kibocsátott lézerimpulzusok átjutnak a lombon, és a talajról érkező utolsó visszaverődésekből domborzatmodell készül, amelyen látszanak az erdő takarta sáncok és halmok."
+  },
+  "description": {
+    "uk": "За угорською статтею про лідар, метод особливо корисний для мапування вкритих лісом територій. Перша частина відбитого сигналу приходить від верхівок рослин, далі слабша розмита серія від гілок і листя, а наостанок зазвичай дуже слабкий сигнал від ґрунту. За цими останніми відбиттями будують мапу землі, якої інакше не видно. У лісах Центральної Америки так з'явилися невідомі піраміди, міста, укріплення й дороги між містами, а 2018 року в гватемальському біосферному заповіднику майя лідар виявив понад 60 тисяч споруд.\n\nВ Угорщині, за оглядом залізної доби у збірнику «7000 év története» (2018), неруйнівні методи, дистанційне зондування, аерофотоархеологія й геофізика поширюються й стають дедалі ефективнішими, а їхні результати перевіряють комплексними дослідженнями; добрим прикладом автори називають нове картографування гальштатських [курганів Százhalombatta](#/place/szazhalombatta-halomsirok). У вивченні поселень ранньої залізної доби найновіші результати аерофотоархеології, особливо лідарні знімки, стали великим кроком: вони дозволили по-новому витлумачити такі пам'ятки, як Pécs-Jakab-hegy, Zalaszántó, Nagyberki-Szalacska і Sopron-Várhely. На лідарній зйомці 2012 року довкола Sopron-Várhely видно сліди поселення на висоті й курганного могильника.",
+    "hu": "A magyar Wikipédia LIDAR szócikke szerint a módszer különösen hasznos erdővel borított területek feltérképezésére. A visszavert jel első része a növényzet felső felületéről érkezik, majd az ágakról és a lombról egy gyengébb, elmosódott sorozat, legvégül pedig általában egy nagyon gyenge jel a talajról. Ezekből az utolsó visszaverődésekből térkép készül a másként nem látható talajfelszínről. A közép-amerikai erdőkben így kerültek elő korábban ismeretlen piramisok, városok, erődök és a városokat összekötő utak, 2018-ban pedig a guatemalai Maja Bioszféra Rezervátumban a LiDAR több mint 60 ezer építményt mutatott ki.\n\nMagyarországon a 7000 év története című kötet (2018) vaskori áttekintése szerint a roncsolásmentes módszerek, a távérzékelés, a légirégészeti és geofizikai alkalmazások egyre terjednek és egyre hatékonyabbak, eredményeiket pedig komplex kutatásokkal ellenőrzik; jó példaként a szerzők a Hallstatt-kori [százhalombattai halomsírok](#/place/szazhalombatta-halomsirok) új térképezését említik. A kora vaskori települések kutatásában a légirégészet legújabb eredményei, különösen a LiDAR-felvételek nagy előrelépést jelentettek: lehetővé tették olyan lelőhelyek újraértelmezését, mint Pécs-Jakab-hegy, Zalaszántó, Nagyberki-Szalacska és Sopron-Várhely. Egy 2012-es LiDAR-felmérés alapján Sopron-Várhely környékén magaslati telep és halomsíros temető nyomai látszanak."
+  },
+  "sources": [
+    {
+      "title": "LIDAR – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/LIDAR",
+      "note": "Розділ «Régészet»."
+    },
+    {
+      "title": "Ďurkovič Éva – Jerem Erzsébet – Molnár Attila – Tankó Károly: A Kárpát-medence a vaskorban. In: Heinrich-Tamáska Orsolya – Winger Daniel (szerk.): 7000 év története. Fejezetek Magyarország régészetéből. Remshalden, 2018",
+      "url": "https://real.mtak.hu/85973/1/7000_Durkovic_Erzsebet_Molnar_Karoly_2018_u.pdf",
+      "note": "Вступ розділу (Jerem E.) і підпис до лідарної мапи Sopron-Várhely."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/LiDAR_Hillshade_of_the_Carson_site.jpg",
+      "author": "Jmmehta",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:LiDAR_Hillshade_of_the_Carson_site.jpg",
+      "caption": {
+        "uk": "Лідарна тіньова модель рельєфу пам'ятки Carson",
+        "hu": "A Carson lelőhely LiDAR-alapú domborzatárnyékolása"
+      }
+    }
+  ]
+}

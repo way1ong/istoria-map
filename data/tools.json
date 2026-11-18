@@ -1,0 +1,75 @@
+{
+  "_comment": "Розділ «Інструменти»: вступ і підрозділи в порядку показу. Самі інструменти лежать у data/tools/<id>.json і посилаються на id підрозділу в полі category. Джерела лише українські й угорські.",
+  "intro": {
+    "uk": "Інструменти й прийоми, якими користуються археологи та пошуковці з металошукачем: від підготовки за старими мапами до запису знахідки. Розділ упорядковано за етапами роботи, у кожній картці позначено, кому вона корисніша, і вказано джерела: угорські фахові публікації, українська й угорська Вікіпедія. Це довідка, а не дозвіл: правила пошуку в Угорщині зібрано в останньому підрозділі.",
+    "hu": "Régészek és fémkeresősök eszközei és módszerei a régi térképekkel végzett előkészítéstől a lelet rögzítéséig. A fejezet a munka szakaszai szerint épül fel; minden kártyán jelölve van, kinek hasznosabb, és szerepelnek a források: magyar szakirodalom, valamint a magyar és az ukrán Wikipédia. Ez tájékoztató, nem engedély: a magyarországi keresés szabályait az utolsó szakasz foglalja össze."
+  },
+  "categories": [
+    {
+      "id": "prepare",
+      "name": {
+        "uk": "Підготовка: де шукати",
+        "hu": "Előkészítés: hol keressünk"
+      },
+      "summary": {
+        "uk": "Перш ніж іти в поле, місце шукають за старими мапами, знімками з повітря й пішою розвідкою.",
+        "hu": "Mielőtt terepre mennénk, a helyet régi térképek, légifelvételek és terepbejárás alapján keressük."
+      }
+    },
+    {
+      "id": "detector",
+      "name": {
+        "uk": "Металошукач і спорядження",
+        "hu": "Fémkereső és felszerelés"
+      },
+      "summary": {
+        "uk": "Як працює металошукач, які бувають типи, від чого залежить глибина, пінпоінтер і як записати місце знахідки.",
+        "hu": "Hogyan működik a fémkereső, milyen típusai vannak, mitől függ a mélység, a pinpointer és a lelet helyének rögzítése."
+      }
+    },
+    {
+      "id": "geophysics",
+      "name": {
+        "uk": "Геофізика: під землю без копання",
+        "hu": "Geofizika: ásás nélkül a föld alá"
+      },
+      "summary": {
+        "uk": "Прилади, що будують карти прихованого під землею, не руйнуючи пам'ятку.",
+        "hu": "Műszerek, amelyek a lelőhely megbontása nélkül térképezik fel, ami a föld alatt rejtőzik."
+      }
+    },
+    {
+      "id": "dig",
+      "name": {
+        "uk": "Розкопки",
+        "hu": "Ásatás"
+      },
+      "summary": {
+        "uk": "Пробні шурфи й бур, ручні інструменти, просіювання, флотація й техніка.",
+        "hu": "Próbagödrök és fúrás, kéziszerszámok, szitálás, flotálás és gépek."
+      }
+    },
+    {
+      "id": "record",
+      "name": {
+        "uk": "Фіксація: де саме і в якому шарі",
+        "hu": "Dokumentálás: hol és melyik rétegben"
+      },
+      "summary": {
+        "uk": "Як записують місце, висоту й шар кожної знахідки, щоб вона не втратила наукової цінності.",
+        "hu": "Hogyan rögzítik minden lelet helyét, magasságát és rétegét, hogy megmaradjon tudományos értéke."
+      }
+    },
+    {
+      "id": "rules",
+      "name": {
+        "uk": "Правила й етика",
+        "hu": "Szabályok és etika"
+      },
+      "summary": {
+        "uk": "Що кажуть про пошук з металошукачем угорський закон і фахівці, як шукати разом з музеєм і чому важливе місце знахідки.",
+        "hu": "Mit mond a magyar törvény és a szakma a fémkeresőzésről, hogyan lehet a múzeummal együtt keresni, és miért fontos a lelet helye."
+      }
+    }
+  ]
+}

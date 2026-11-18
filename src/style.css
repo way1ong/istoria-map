@@ -7,6 +7,8 @@
   --card: #ffffff;
   --sheet-shadow: 0 -4px 24px rgba(0, 0, 0, 0.18);
   --header-h: 52px;
+  --who-det: #b45309;
+  --who-arch: #1d4ed8;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -16,6 +18,8 @@
     --line: #374151;
     --accent: #f59e0b;
     --card: #1f2937;
+    --who-det: #f59e0b;
+    --who-arch: #93c5fd;
   }
 }
 * { box-sizing: border-box; }
@@ -42,6 +46,12 @@ header.topbar h1 { font-size: 16px; margin: 0; flex: 1 1 0; min-width: 0; white-
   .tabs::-webkit-scrollbar { display: none; }
   .tabs button { padding: 6px 8px; font-size: 14px; }
   .lang button { padding: 6px 5px; font-size: 13px; }
+}
+/* Дуже вузькі екрани: чотири вкладки й перемикач мови мають уміститися без прокручування */
+@media (max-width: 420px) {
+  .tabs { gap: 2px; }
+  .tabs button { padding: 6px 5px; font-size: 13px; }
+  .lang button { padding: 6px 4px; }
 }
 .lang button.active { color: var(--fg); text-decoration: underline; }
 
@@ -155,3 +165,24 @@ figcaption { font-size: 12px; color: var(--muted); }
 .borders-note { position: absolute; left: 12px; right: 60px; bottom: 138px; z-index: 5; pointer-events: none; font-size: 11px; line-height: 1.3; color: var(--fg); background: rgba(255,255,255,0.85); border-radius: 8px; padding: 4px 8px; }
 .borders-note .attr { color: var(--muted); }
 .borders-note[hidden] { display: none; }
+
+/* Розділ «Інструменти» */
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 4px; }
+.chip { padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: inherit; text-decoration: none; font-size: 14px; }
+.chip.active { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.cat-summary { color: var(--muted); font-size: 14px; margin: 0 0 10px; }
+.tool-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.tool-card { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--card); color: inherit; text-decoration: none; }
+.page .tool-card .tool-thumb { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; background: var(--line); border-radius: 0; }
+.tool-body { padding: 8px 10px 10px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.tool-body strong { font-size: 15px; line-height: 1.25; }
+.tool-body p { margin: 0; font-size: 13px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.who-row { display: flex; flex-wrap: wrap; gap: 4px; margin-top: auto; padding-top: 4px; }
+.who { font-size: 11px; line-height: 1.6; padding: 0 7px; border-radius: 999px; border: 1px solid currentColor; white-space: nowrap; }
+.who-detectorist { color: var(--who-det); }
+.who-archaeologist { color: var(--who-arch); }
+.meta .who { font-size: 12px; }
+.cat-badge { --c: #4b5563; }
+.page .lead { font-size: 17px; }
+.tool-nav { display: flex; justify-content: space-between; gap: 12px; margin: 24px 0 8px; font-size: 14px; }
+.tool-nav a { text-decoration: none; }

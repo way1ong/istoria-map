@@ -1,0 +1,56 @@
+{
+  "id": "gps-gis",
+  "category": "record",
+  "order": 3,
+  "name": {
+    "uk": "GPS і геоінформаційна система",
+    "hu": "GPS és térinformatika"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "GPS записує маршрут і точки знахідок, а геоінформаційна система зводить їх на одній мапі з рельєфом, ґрунтами, старими мапами й відомими пам'ятками.",
+    "hu": "A GPS rögzíti a bejárás útvonalát és a leletek pontjait, a térinformatikai rendszer pedig egy térképen egyesíti őket a domborzattal, a talajjal, a régi térképekkel és az ismert lelőhelyekkel."
+  },
+  "description": {
+    "uk": "За українською статтею про GPS, археологи й історики використовують картографічні GPS-системи для навігації та реєстрації розкопок і історичних місць.\n\nУгорський посібник з археології (2011) розрізняє навігаційний GPS (менш точний, простіші дані) і геоінформаційний (точніший, одразу пов'язаний з базою даних). За ним, GPS може сам записувати весь маршрут обходу й окремо важливі точки, тож можна обліковувати й обійдені ділянки без знахідок, а мапу будують шарами: відомі пам'ятки, топографічна мапа, аеро- чи космознімок, мапа розвідки, а для старих відомостей — архівні й сучасні топографічні мапи та архівні аерознімки. Після зняття гумусу геоінформаційним GPS швидко знімають плями об'єктів; ця зйомка не залежить від сітки розкопу, тож годиться й там, де сітку ставити не варто. Хто працює зі старими мапами, має розуміти системи координат: з розвитком вимірювань і зміною картографічних правил вони час від часу змінюються, а розкоп має ще й власну систему.\n\nДля дуже точних робіт беруть геодезичний GPS: дослідники курганних могильників сарматської доби (2019) поєднували його з магнітною зйомкою й 3D-фотограмметрією, щоб помітити не видні оком перепади мікрорельєфу. А досвід Ясшагу (2025) показує, що точки треба зберігати в одній системі координат: різні польові застосунки писали їх по-різному, і частина даних губилася (картка «GPS, пакет і записи пошуковця»).",
+    "hu": "Az ukrán Wikipédia GPS szócikke szerint a régészek és a történészek térképészeti GPS-rendszereket használnak a navigációhoz, valamint az ásatások és a történelmi helyszínek rögzítéséhez.\n\nA Régészeti Kézikönyv (2011) megkülönbözteti a navigációs GPS-t (kevésbé pontos, egyszerűbb adatok) és a térinformatikai GPS-t (pontosabb, közvetlenül kapcsolódik az adatbázishoz). A kézikönyv szerint a GPS automatikusan rögzítheti a teljes bejárási útvonalat (nyomvonalat) és külön a fontosabb pontokat is, így a bejárt, de lelet nélküli területeket is számon lehet tartani, a térképet pedig fóliákból (rétegekből) építik fel: ismert lelőhelyek, topográfiai térkép, légi vagy űrfotó, terepbejárási térkép, a régi adatokhoz pedig archív és modern topográfiai térképek, valamint archív légi fotók. Humuszolás után a térinformatikai GPS-szel gyorsan felmérik az objektumok foltjait; ez a mérés független az ásatási koordináta-rendszertől, ezért ott is alkalmazható, ahol nem érdemes négyzethálót kitűzni. Aki régi térképekkel dolgozik, annak értenie kell a koordináta-rendszerekhez: a mérési módszerek fejlődésével és a térképészeti előírások módosulásával ezek időnként változnak, az ásatásnak pedig saját koordináta-rendszere is van.\n\nNagyon pontos munkákhoz geodéziai GPS-t használnak: a szarmata kori halomsíros temetők kutatói (2019) geomágneses felméréssel és 3D fotogrammetriával kombinálták, hogy kimutassák a mikrodomborzat szabad szemmel nem érzékelhető eltéréseit. A jászsági tapasztalat (2025) pedig azt mutatja, hogy a pontokat egyetlen koordináta-rendszerben kell tárolni: a különböző terepi applikációk eltérően mentették el őket, és az adatok egy része elveszett (lásd a „GPS, zacskó és jegyzetek” kártyát)."
+  },
+  "sources": [
+    {
+      "title": "GPS – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/GPS",
+      "note": "Розділ про цивільне застосування."
+    },
+    {
+      "title": "Holl Balázs – Pusztai Tamás: Térinformatika alkalmazása a régészeti feltárásokon. In: Régészeti Kézikönyv. Magyar Régész Szövetség, 2011, 321–375",
+      "url": "https://real.mtak.hu/3000/1/RK_terinformatika.pdf",
+      "note": "Розділи 2.1, 2.2, 4.2.1 «Koordináta-rendszerek» і 4.2.3 «Folttérkép»."
+    },
+    {
+      "title": "Masek Zsófia – Serlegi Gábor – Vágvölgyi Bence: Halmok, körárkok, és ami mögöttük van. Magyar Régészet 8 (2019) 4, 18–26",
+      "url": "https://real.mtak.hu/105516/1/Masek_H19T_veglegesitett.pdf",
+      "note": "Розділ про методи."
+    },
+    {
+      "title": "Gulyás András Zoltán: Közösségi régészet a Jászságban. Jászsági Évkönyv 2025, 128–142",
+      "url": "https://epa.oszk.hu/02200/02295/00033/pdf/EPA02295_jaszsagi_evkonyv_2025_128-142.pdf",
+      "note": "Труднощі з GPS-точками."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Archaeologist_using_GPS_to_survey_a_trench_at_Northern_Sustainable_Placement_Area_Phase_1%2C_Hillingdon%2C_2019_%28HS2_Phase_One%29.jpg",
+      "author": "Susan Stratton, Archaeology Wales",
+      "license": "OGL v1.0",
+      "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/1/",
+      "source": "https://commons.wikimedia.org/wiki/File:Archaeologist_using_GPS_to_survey_a_trench_at_Northern_Sustainable_Placement_Area_Phase_1%2C_Hillingdon%2C_2019_%28HS2_Phase_One%29.jpg",
+      "caption": {
+        "uk": "Археолог знімає траншею приймачем GPS, Hillingdon (Англія), 2019",
+        "hu": "Régész GPS-szel méri fel az árkot, Hillingdon (Anglia), 2019"
+      }
+    }
+  ]
+}

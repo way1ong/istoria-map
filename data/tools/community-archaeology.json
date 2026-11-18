@@ -1,0 +1,71 @@
+{
+  "id": "community-archaeology",
+  "category": "rules",
+  "order": 2,
+  "name": {
+    "uk": "Громадська археологія: шукати разом з музеєм",
+    "hu": "Közösségi régészet: keresés a múzeummal együtt"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "В Угорщині етичний пошук з металошукачем іде через громадські програми музеїв: учасники вчаться в археологів, мають угоду з музеєм і здають знахідки з координатами.",
+    "hu": "Magyarországon az etikus fémkeresőzés a múzeumok közösségi régészeti programjain keresztül valósul meg: a résztvevők régészektől tanulnak, megállapodást kötnek a múzeummal, és koordinátákkal együtt adják le a leleteket."
+  },
+  "description": {
+    "uk": "Rácz Tibor Ákos (Ferenczy Múzeumi Centrum, Szentendre) визначає громадську археологію як спільну дослідницьку роботу громадян і археологів задля пізнання й порятунку культурної спадщини. За його статтею 2024 року, саме громадські програми дають в Угорщині рамку для етичного, «дружнього до музею» пошуку з металошукачем: знахідки таких пошуковців потрапляють до музею з координатами. Перша загальнонаціональна конференція з громадської археології відбулася восени 2021 року, друга — 2023 року у Visegrád, і за ці два роки кількість таких програм за підтримки музеїв подвоїлася.\n\nЯк це виглядає:\n\n- громадська програма Ferenczy Múzeumi Centrum мала 2019 року понад 130 учасників, і на важливих розкопках 8–10 волонтерів щодня — звична справа. Розчистка об'єктів — найлегша для засвоєння робота і найпопулярніша, частина волонтерів опанувала й документацію, а пакувати знахідки й складати списки можуть допомогти більшість;\n- у Herman Ottó Múzeum у Мішкольці перші спроби почалися на початку 2015 року; фахівець завжди поруч, бо в учасників різні прилади й досвід;\n- у групі Jász Múzeum близько 40 осіб, і не всі шукають металошукачем: хтось обстежує місцевість з повітря, хтось збирає черепки на поверхні, а хтось за старими мапами шукає зниклі села. З металошукачем працюють 18 учасників, 16 з них мають офіційний дозвіл, виданий музеєм.\n\nПриклади з нашої мапи:\n\n- у березні 2019 року пошуковець з Вацу, піднімаючись важкодоступним північним схилом Naszály, під скельним гребенем Szarvas-hegy знайшов десятки денаріїв 1170–1240 років. Разом з друзями він зібрав ще, а тоді вони повідомили Ferenczy Múzeumi Centrum і здали знахідки. Під час огляду місця разом із тими, хто знайшов, за розкидом знахідок і їхніми розповідями встановили щонайменше чотири окремі схованки, а далі музеї Вацу й Szentendre провели там планові розкопки ([сховище часів монгольської навали](#/place/vac-szarvas-hegy-menedek));\n- на [полі битви під Мухі](#/place/muhi-csatater) ([битва 1241 року](#/event/muhi-csata-1241)) часом працюють 70–80 волонтерів з металошукачами, яких об'єднують Közösségi Régészeti Egyesület і Herman Ottó Múzeum. Таку кількість людей ділять на менші групи з чіткими завданнями, і роботу кожної наглядають археологи.",
+    "hu": "Rácz Tibor Ákos (Ferenczy Múzeumi Centrum, Szentendre) meghatározása szerint a közösségi régészet a kulturális örökség megismerése és megmentése céljából a civil szféra és a régész szakma képviselői által közösen végzett kutatói tevékenység. 2024-es cikke szerint Magyarországon éppen a közösségi régészeti programok biztosítanak keretet az etikus, „múzeumbarát” fémkeresőzésnek: az ilyen fémkeresősök leletei koordinátákkal ellátva kerülnek a múzeumba. Az első országos közösségi régészeti konferenciát 2021 őszén rendezték meg, a másodikat 2023-ban Visegrádon, és e két év alatt a múzeumok által támogatott ilyen programok száma megduplázódott.\n\nHogyan működik ez a gyakorlatban:\n\n- a Ferenczy Múzeumi Centrum közösségi régészeti programjának 2019-ben több mint 130 résztvevője volt, és a fontosabb ásatásokon napi 8–10 önkéntes jelenléte teljesen szokványos. Az objektumok bontása a legkönnyebben elsajátítható és a legnépszerűbb feladat, egyes önkéntesek a dokumentálást is megtanulták, a leletek csomagolásában és a listák készítésében pedig a legtöbben tudnak segíteni;\n- a miskolci Herman Ottó Múzeumban 2015 elején indultak az első kísérletek; a szakember mindig jelen van, mert a résztvevők műszerei és tapasztalatai eltérőek;\n- a Jász Múzeum csoportja mintegy 40 főből áll, és nem mindannyian fémkeresősök: van, aki a levegőből vizsgálja a tájat, más a felszínen gyűjt kerámiatöredékeket, megint más régi térképek alapján keresi az eltűnt településeket. Fémkeresővel 18 tag dolgozik, közülük 16 rendelkezik a múzeum által kiadott hivatalos engedéllyel.\n\nPéldák a térképünkről:\n\n- 2019 márciusában egy váci fémkeresős, miközben a Naszály nehezen járható északi oldalán kapaszkodott fel, a Szarvas-hegy sziklagerince alatt több tucat, 1170–1240 között kibocsátott denárt talált. Barátaival együtt továbbiakat gyűjtött, majd értesítették a Ferenczy Múzeumi Centrumot, és beszolgáltatták a leleteket. A megtalálók részvételével tartott helyszíni szemlén a leletek szóródása és a beszámolóik alapján legalább négy különálló rejtést azonosítottak, ezt követően pedig a váci és a szentendrei múzeum tervásatást végzett a helyszínen ([tatárjárás kori menedékhely](#/place/vac-szarvas-hegy-menedek));\n- a [muhi csatatéren](#/place/muhi-csatater) (az [1241-es csata](#/event/muhi-csata-1241)) alkalmanként 70–80 önkéntes fémkeresős dolgozik, akiket a Közösségi Régészeti Egyesület és a Herman Ottó Múzeum fog össze. Ekkora létszámot világos feladatokkal kisebb csoportokba osztanak, és minden csoport munkáját régészek felügyelik."
+  },
+  "sources": [
+    {
+      "title": "Rácz Tibor Ákos: Közösségi régészet. Egy új kutatási eljárás születése. MúzeumCafé 72 (2019)",
+      "url": "https://epa.oszk.hu/03300/03343/00015/pdf/EPA03343_muzeumcafe_72_149-158.pdf",
+      "note": "Визначення й склад програми Ferenczy Múzeumi Centrum."
+    },
+    {
+      "title": "Rácz Tibor Ákos: Helyzetkép a fémkeresőzésről. Javaslatok a felelősségteljes fémkeresőzés működési kereteire. Magyar Régészet 13 (2024) 2, 89–94",
+      "url": "https://real.mtak.hu/234111/1/Racz_H24NY.pdf",
+      "note": "Розділ «Közösségi régészet és fémkeresőzés» і вступ."
+    },
+    {
+      "title": "Rácz Tibor Ákos: Társadalmi szerepvállalás a régészeti kutatásban. In: Rácz T. Á. (szerk.): Kincskeresés, kaland, tudomány. Közösségi régészeti projektek Pest megyében. Szentendre, Ferenczy Múzeumi Centrum, 2021",
+      "url": "https://real.mtak.hu/89623/1/KKT_regeszeti_kiadvany_20210805.pdf",
+      "note": "До яких робіт залучати волонтерів."
+    },
+    {
+      "title": "Bakos Gábor: A fémkereső műszeres terepbejárásoktól a közösségi régészetig Borsod-Abaúj-Zemplén megyében. Magyar Régészet 9 (2020) 2, 65–70",
+      "url": "https://real.mtak.hu/116585/1/Bakos_H20NY.pdf",
+      "note": "Модель програми Herman Ottó Múzeum."
+    },
+    {
+      "title": "Gulyás András Zoltán: Közösségi régészet a Jászságban. Jászsági Évkönyv 2025, 128–142",
+      "url": "https://epa.oszk.hu/02200/02295/00033/pdf/EPA02295_jaszsagi_evkonyv_2025_128-142.pdf",
+      "note": "Група Jászkakasok."
+    },
+    {
+      "title": "Mag Hella – Rácz Tibor Ákos: Tatárjárás kori menedékhely a váci Szarvas-hegyen. In: Rácz T. Á. (szerk.): Kincskeresés, kaland, tudomány. Szentendre, Ferenczy Múzeumi Centrum, 2021",
+      "url": "https://real.mtak.hu/89623/1/KKT_regeszeti_kiadvany_20210805.pdf",
+      "note": "Історія знахідки й розкопок."
+    },
+    {
+      "title": "Laszlovszky József – Rácz Tibor Ákos: Fémkeresős kutatások a muhi csatatéren. Magyar Régészet 9 (2020) 4, 70–80",
+      "url": "https://real.mtak.hu/119236/1/Laszlovszky_Ra%cc%81cz_H20T.pdf",
+      "note": "Організація роботи волонтерів."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Nasz%C3%A1ly_l%C3%A1tk%C3%A9p.jpg",
+      "author": "Szenti Tamás",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Nasz%C3%A1ly_l%C3%A1tk%C3%A9p.jpg",
+      "caption": {
+        "uk": "Гора Naszály біля Вацу: на її схилі Szarvas-hegy пошуковець 2019 року натрапив на сховище часів монгольської навали",
+        "hu": "A Naszály Vác mellett: Szarvas-hegyi oldalán egy fémkeresős 2019-ben tatárjárás kori menedékhelyre bukkant"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "why-context",
+  "category": "rules",
+  "order": 3,
+  "name": {
+    "uk": "Чому важливе місце знахідки",
+    "hu": "Miért fontos a lelet helye"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "Знахідка з точними координатами й записаним оточенням розповідає історію, а вийнята без запису чи потай назавжди зникає для науки й охорони спадщини.",
+    "hu": "A pontos koordinátákkal és rögzített környezettel előkerült lelet történetet mesél, a feljegyzés nélkül vagy titokban kiemelt viszont örökre eltűnik a tudomány és az örökségvédelem számára."
+  },
+  "description": {
+    "uk": "Розкопки знищують пам'ятку, тому кожен об'єкт фіксують у просторі відносно репера та один одного і за глибиною (українська стаття «Археологія»). Те саме стосується одиночних знахідок. На полі битви під Мухі, за Laszlovszky і Rácz (2020), середньовічний збройний конфлікт не лишає звичних археологічних об'єктів, тому головними стають самі предмети. Дуже важливо записати координати кожної знахідки й супутні відомості та тлумачити їх на мапі, бо саме взаємне розташування й щільність знахідок дають картину, з якої можна робити висновки про перебіг події. На горі Szarvas-hegy біля Вацу розкид знахідок разом з розповідями тих, хто їх знайшов, показав щонайменше чотири окремі схованки.\n\nRácz Tibor Ákos (2024) наголошує: знахідки «дружніх до музею» пошуковців потрапляють до музею з координатами, а знайдене нелегальними шукачами назавжди зникає для охорони спадщини. Він визнає і довід противників: пошуковці можуть «вичистити» пам'ятки, і для наступних поколінь металу там не лишиться. На це він відповідає, що такі предмети вже лежать у порушеному положенні, поза археологічним контекстом, а сучасне землеробство (добрива, оранка) постійно їх руйнує.\n\nУкраїнська стаття «Грабіж археології» пояснює, що незаконні розкопки — головне джерело предметів для чорного ринку старожитностей і підпільних колекцій; грабунок не лише незаконний, а й фактично знищує спадщину, бо закриває до неї доступ суспільству.",
+    "hu": "Az ukrán Wikipédia Régészet (Археологія) szócikke szerint az ásatás elpusztítja a lelőhelyet, ezért minden objektumot a térben egy alapponthoz és egymáshoz viszonyítva, valamint mélység szerint rögzítenek. Ugyanez érvényes az egyedi leletekre is. A muhi csatatéren Laszlovszky és Rácz (2020) szerint egy középkori fegyveres konfliktus nem hagy hátra klasszikus régészeti objektumokat, ezért maguk a tárgyak válnak a legfontosabbá. Rendkívül fontos minden lelet koordinátáit és a kapcsolódó információkat rögzíteni, majd térképen értelmezni őket, hiszen éppen a leletek egymáshoz való viszonya és sűrűsége adja ki azt a mintázatot, amelyből az esemény lefolyására lehet következtetni. A Vác melletti Szarvas-hegyen a leletek szóródása a megtalálók beszámolóival együtt legalább négy különálló rejtést mutatott ki.\n\nRácz Tibor Ákos (2024) hangsúlyozza: a „múzeumbarát” fémkeresősök leletei koordinátákkal ellátva kerülnek a múzeumba, az illegális fémkeresősök által megtalált tárgyak viszont örökre elvesznek az örökségvédelem számára. Elismeri az ellenzők érvét is: a fémkeresősök „lekeresőzhetik” a lelőhelyeket, és a későbbi generációk számára nem marad ott fémlelet. Erre azt feleli, hogy ezek a tárgyak eleve bolygatott helyzetben, nem régészeti kontextusban vannak, a mai mezőgazdaság (műtrágyázás, szántás) pedig folyamatosan roncsolja őket.\n\nAz ukrán Wikipédia Régészeti fosztogatás (Грабіж археології) szócikke elmagyarázza, hogy az illegális ásatások jelentik a régiségek feketepiacára és a titkos gyűjteményekbe kerülő tárgyak fő forrását; a fosztogatás nemcsak törvénytelen, hanem gyakorlatilag el is pusztítja az örökséget, mert elzárja a társadalom elől."
+  },
+  "sources": [
+    {
+      "title": "Археологія – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%8F",
+      "note": "Розділ «Методи»."
+    },
+    {
+      "title": "Laszlovszky József – Rácz Tibor Ákos: Fémkeresős kutatások a muhi csatatéren. Magyar Régészet 9 (2020) 4, 70–80",
+      "url": "https://real.mtak.hu/119236/1/Laszlovszky_Ra%cc%81cz_H20T.pdf",
+      "note": "Чому важливі координати знахідок на полі битви."
+    },
+    {
+      "title": "Mag Hella – Rácz Tibor Ákos: Tatárjárás kori menedékhely a váci Szarvas-hegyen. In: Rácz T. Á. (szerk.): Kincskeresés, kaland, tudomány. Szentendre, Ferenczy Múzeumi Centrum, 2021",
+      "url": "https://real.mtak.hu/89623/1/KKT_regeszeti_kiadvany_20210805.pdf",
+      "note": "Розділ «Tervásatás a Szarvas-hegyen»."
+    },
+    {
+      "title": "Rácz Tibor Ákos: Helyzetkép a fémkeresőzésről. Javaslatok a felelősségteljes fémkeresőzés működési kereteire. Magyar Régészet 13 (2024) 2, 89–94",
+      "url": "https://real.mtak.hu/234111/1/Racz_H24NY.pdf",
+      "note": "Розділ «Az illegális fémkeresőzés visszaszorítása»."
+    },
+    {
+      "title": "Грабіж археології – Вікіпедія (uk)",
+      "url": "https://uk.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%B1%D1%96%D0%B6_%D0%B0%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%97",
+      "note": "Вступ."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/A_muhi_csata_helysz%C3%ADn%C3%A9n_%C3%A9p%C3%BClt_eml%C3%A9kpark_l%C3%A9gifot%C3%B3n_2018-ban.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_muhi_csata_helysz%C3%ADn%C3%A9n_%C3%A9p%C3%BClt_eml%C3%A9kpark_l%C3%A9gifot%C3%B3n_2018-ban.jpg",
+      "caption": {
+        "uk": "Меморіальний парк на полі битви під Мухі з повітря",
+        "hu": "A muhi csata emlékparkja légi fotón"
+      }
+    }
+  ]
+}

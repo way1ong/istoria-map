@@ -1,0 +1,57 @@
+{
+  "id": "excavator",
+  "category": "dig",
+  "order": 5,
+  "name": {
+    "uk": "Екскаватор і зняття гумусу",
+    "hu": "Kotrógép és gépi humuszolás"
+  },
+  "users": [
+    "detectorist",
+    "archaeologist"
+  ],
+  "summary": {
+    "uk": "На розкопках машина знімає верхній шар до рівня, де проступають плями археологічних об'єктів; метал із цього шару, якщо його заздалегідь не перевірити металошукачем, просто відгортають.",
+    "hu": "Az ásatásokon gép távolítja el a humuszt addig a szintig, ahol a régészeti objektumok foltjai kirajzolódnak; az ebben a rétegben lévő fémtárgyakat, ha előtte nem nézik át fémkeresővel, egyszerűen eltolják."
+  },
+  "description": {
+    "uk": "За угорським посібником з археології (2011), основу розкопок становлять плями археологічних об'єктів, що проступають на поверхні після зняття гумусу. Поки ручна робота наздожене машину, погода може стерти ці сліди, навіть якщо край плями одразу позначили лопатою. Тому плями швидко наносять на мапу геоінформаційним GPS, а разом з ними межу зачищеної ділянки, місця знахідок, що трапилися під час зняття гумусу, і контрольні точки поза плямами, щоб було видно, що й порожні ділянки переглянуто.\n\nRácz Tibor Ákos (2024) нагадує, що металеві предмети з верхнього шару вже лежать у порушеному положенні, поза археологічним контекстом, і на розкопках, що починаються з механічного зняття гумусу, їх за нинішньою практикою просто відгортають бульдозером. Тому пошук металошукачем перед цим він вважає запобіжним заходом; заперечення проти нього були б слушні лише тоді, якби машинні земляні роботи на кожних розкопках вели шарами по 10 см з безперервним пошуком металошукачем. Крім того, сучасне землеробство, тобто добрива й різні способи оранки, постійно руйнує ці знахідки.",
+    "hu": "A Régészeti Kézikönyv (2011) szerint a feltárás alapját a lehumuszolt felszínen kirajzolódó régészeti objektumok foltjai képezik. Mire a kézi munka utoléri a gépi földmunkát, addigra az időjárás eltüntetheti ezeket a nyomokat, még akkor is, ha a folt szélét azonnal megjelölték ásóval. Ezért a foltokat térinformatikai GPS-szel gyorsan térképre viszik, és velük együtt a lehumuszolt terület határát, a humuszoláskor előkerült leletek helyét, valamint a foltokon kívüli ellenőrző pontokat is, hogy látszódjon: az üres területeket is átnézték.\n\nRácz Tibor Ákos (2024) emlékeztet arra, hogy a felső réteg fémtárgyai eleve bolygatott helyzetben, nem régészeti kontextusban vannak, és a gépi humuszolással kezdődő ásatásokon a jelenlegi gyakorlat szerint egyszerűen eldózerolják őket. Ezért az előzetes fémkeresőzést preventív megoldásnak tartja; az ellene felhozott ellenvetések csak akkor volnának jogosak, ha a gépi földmunkát minden ásatáson 10 cm-es rétegenként, folyamatos fémkeresőzés mellett végeznék. Ráadásul a mai mezőgazdasági eljárások, vagyis a műtrágyázás és a szántás különböző módjai, folyamatosan roncsolják ezeket a leleteket."
+  },
+  "sources": [
+    {
+      "title": "Holl Balázs – Pusztai Tamás: Térinformatika alkalmazása a régészeti feltárásokon. In: Régészeti Kézikönyv. Magyar Régész Szövetség, 2011, 321–375",
+      "url": "https://real.mtak.hu/3000/1/RK_terinformatika.pdf",
+      "note": "Розділ 4.2.3 «Folttérkép»."
+    },
+    {
+      "title": "Rácz Tibor Ákos: Helyzetkép a fémkeresőzésről. Javaslatok a felelősségteljes fémkeresőzés működési kereteire. Magyar Régészet 13 (2024) 2, 89–94",
+      "url": "https://real.mtak.hu/234111/1/Racz_H24NY.pdf",
+      "note": "Розділ «Az illegális fémkeresőzés visszaszorítása»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/R%C3%A9g%C3%A9szeti_felt%C3%A1r%C3%A1s_Keszthely_k%C3%B6zpontj%C3%A1ban.jpg",
+      "author": "Kiss Tamás",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:R%C3%A9g%C3%A9szeti_felt%C3%A1r%C3%A1s_Keszthely_k%C3%B6zpontj%C3%A1ban.jpg",
+      "caption": {
+        "uk": "Розкопки в центрі Keszthely, позаду екскаватор",
+        "hu": "Régészeti feltárás Keszthely központjában, háttérben kotrógép"
+      }
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Vikansvingen%2C_Hitra%2C_S%C3%B8r-Tr%C3%B8ndelag_%E2%80%93_Avdekking_i_regnv%C3%A6r_%283838763545%29.jpg",
+      "author": "NTNU Vitenskapsmuseet",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Vikansvingen%2C_Hitra%2C_S%C3%B8r-Tr%C3%B8ndelag_%E2%80%93_Avdekking_i_regnv%C3%A6r_%283838763545%29.jpg",
+      "caption": {
+        "uk": "Зняття верхнього шару екскаватором на розкопках у Vikansvingen, Hitra (Норвегія)",
+        "hu": "A fedőréteg eltávolítása kotrógéppel a vikansvingeni ásatáson, Hitra (Norvégia)"
+      }
+    }
+  ]
+}
