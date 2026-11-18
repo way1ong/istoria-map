@@ -221,13 +221,24 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
 
   // Стара мапа поверх сучасної; аркуші серії — разом (див. src/oldmap.ts).
   let overlay: OldMapHandle | null = null;
+  // Ключ показаної накладки: для аркушів серії — id серії (будь-який її аркуш показує ту саму серію).
+  let overlayKey: string | null = null;
+  const keyOf = (m: HistMap | null) => (m ? m.series ?? m.id : null);
   const removeOverlay = () => {
     overlay?.remove();
     overlay = null;
+    overlayKey = null;
   };
   const addOverlay = (m: HistMap, opacity: number) => {
     removeOverlay();
     overlay = addOldMap(map, m, { prefix: 'overlay', beforeId: 'places-halo', opacity });
+    overlayKey = keyOf(m);
+  };
+  /** Виконати, коли наші джерела вже в стилі; інакше — після наступного style.load
+   *  (подія 'load' буває лише раз, а isStyleLoaded() хибне, поки вантажаться плитки). */
+  const whenReady = (fn: () => void) => {
+    if (map.getSource(SRC)) fn();
+    else map.once('style.load', fn);
   };
 
   let overlayOpacity = 0.7;
@@ -275,17 +286,15 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   return {
     map,
     setPeriod(id) {
+      if (id === currentPeriod) return;
       currentPeriod = id;
-      if (map.isStyleLoaded()) refresh();
-      else map.once('load', refresh);
+      whenReady(refresh);
     },
     setSelected(id) {
       const changed = id !== selected;
       selected = id;
-      // дані оновлюємо, бо вибране місце показується навіть поза фільтром типу
-      const run = () => { if (changed && placeFilter.types.length + Number(placeFilter.vanishedOnly) > 0) refresh(); applySelection(); };
-      if (map.isStyleLoaded()) run();
-      else map.once('load', run);
+      // дані оновлюємо, бо вибране місце показується навіть поза періодом чи фільтром типу
+      whenReady(() => { if (changed) refresh(); applySelection(); });
     },
     setPlaceFilter(f) {
       placeFilter = f;
@@ -296,14 +305,14 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       map.flyTo({ center: place.coords, zoom: Math.max(map.getZoom(), 13), duration: 800, offset: [0, -120] });
     },
     setOverlay(mapId) {
-      const run = () => {
-        const m = mapId ? histMaps.find((x) => x.id === mapId) : undefined;
-        currentOverlay = m ?? null;
-        if (!m) removeOverlay();
-        else addOverlay(m, overlayOpacity);
-      };
-      if (map.isStyleLoaded()) run();
-      else map.once('load', run);
+      const m = mapId ? histMaps.find((x) => x.id === mapId) ?? null : null;
+      currentOverlay = m;
+      // та сама мапа чи серія вже показана — нічого не перебудовуємо (інакше Allmaps заново тягне плитки IIIF)
+      whenReady(() => {
+        if (keyOf(currentOverlay) === overlayKey && (overlay || !currentOverlay)) return;
+        if (!currentOverlay) removeOverlay();
+        else addOverlay(currentOverlay, overlayOpacity);
+      });
     },
     setOverlayOpacity(v) {
       overlayOpacity = v;
@@ -311,15 +320,12 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     },
     refreshLabels() {
       lang = document.documentElement.lang || 'uk';
-      if (map.isStyleLoaded()) { localizeBasemapLabels(map, lang); refresh(); }
-      if (map.getSource(BORDERS_SRC)) void applyBorders();
+      whenReady(() => { localizeBasemapLabels(map, lang); refresh(); void applyBorders(); });
     },
     setYear(year) {
       if (year === currentYear) return;
       currentYear = year;
-      // isStyleLoaded() буває false одразу після setData, тому перевіряємо наявність джерела.
-      if (map.getSource(BORDERS_SRC)) void applyBorders();
-      else map.once('load', () => void applyBorders());
+      whenReady(() => void applyBorders());
     },
     onBorders(cb) { bordersCb = cb; },
     setBasemap(id) {

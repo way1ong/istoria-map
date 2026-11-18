@@ -80,7 +80,7 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
       ids.push(id);
     }
   } else if (georef && series.overview) {
-    // Оригінали серії йдуть з IIIF; мозаїка лишається під ними на всіх масштабах як запасний шар.
+    // Оригінали серії йдуть з IIIF; мозаїка — дрібніше за allmapsMinzoom і запасний шар, поки вантажиться Allmaps.
     addImage(`${opts.prefix}-ov`, series.overview.url, series.overview.coordinates);
   } else {
     const sheets = members.filter((s) => s.type === 'image' && s.coordinates);
@@ -120,7 +120,16 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
       if (series?.allmapsMinzoom) map.setLayerZoomRange(layerId, series.allmapsMinzoom, 24);
       warped = layer;
       layer.setOpacity(opacity);
-      return layer.addGeoreferenceAnnotationByUrl(new URL(georef, document.baseURI).href);
+      return layer.addGeoreferenceAnnotationByUrl(new URL(georef, document.baseURI).href).then(() => {
+        if (removed) return;
+        // Запасне зображення під оригіналами ховаємо там, де малює Allmaps: інакше при неповній
+        // прозорості дві копії накладаються (трохи різна прив'язка дає «подвійне» зображення).
+        const ovId = `${opts.prefix}-ov`, imgId = `${opts.prefix}-0`;
+        if (series && map.getLayer(ovId)) {
+          if (series.allmapsMinzoom) map.setLayerZoomRange(ovId, 0, series.allmapsMinzoom);
+          else map.setLayoutProperty(ovId, 'visibility', 'none');
+        } else if (!series && map.getLayer(imgId)) map.setLayoutProperty(imgId, 'visibility', 'none');
+      });
     }).catch((e) => console.warn('Allmaps:', e));
   }
 

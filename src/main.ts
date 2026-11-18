@@ -3,7 +3,7 @@ import './style.css';
 import { basemaps, histMaps, placeById, places, routesForEvent } from './data';
 import { mountAnimation, type AnimHandle } from './anim';
 import { mountCompare, type CompareHandle } from './compare';
-import { formatYear, getLang, lt, setLang, t } from './i18n';
+import { getLang, lt, setLang, t } from './i18n';
 import { createMap, type MapController } from './map';
 import { mapChoices } from './oldmap';
 import { chronologyPage } from './pages/chronology';

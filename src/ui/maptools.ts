@@ -23,7 +23,6 @@ function saveFilter(f: PlaceFilter) {
 export const filterActive = (f: PlaceFilter) => f.types.length > 0 || f.vanishedOnly;
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
-/** Для пошуку без діакритики й апострофів: «Sződ» = «szod», «Ґедельо» = «гедельо». */
 /** Нормалізація для пошуку: без діакритики й апострофів; ґ, г і х рівнозначні (угорське h передають то «г», то «х»: Могач/Мохач, Гатван/Хатван). */
 const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[ґх]/g, 'г').replace(/[’'ʼ`«»"]/g, '');
 const typeLabel = (x: PlaceType) => t(`tp_${x}` as Key);
@@ -124,7 +123,7 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
   }
 
   // ---------- пошук ----------
-  type Hit = { kind: 'place' | 'event'; id: string; label: string; sub: string; color: string; text: string; words: string[] };
+  type Hit = { kind: 'place' | 'event'; id: string; label: string; sub: string; color: string; text: string; words: string[]; nlabel: string };
   let index: Hit[] = [];
   let indexLang = '';
   function buildIndex() {
@@ -134,12 +133,12 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
       ...places.map((p) => {
         const per = periodById(p.periods[0]);
         const text = norm(`${p.name.uk} ${p.name.hu ?? ''} ${p.id.replace(/-/g, ' ')}`);
-        return { kind: 'place' as const, id: p.id, label: lt(p.name), sub: `${typeLabel(p.type)} · ${lt(per?.name)}`, color: per?.color ?? '#6b7280', text, words: text.split(/[^\p{L}\p{N}]+/u) };
+        return { kind: 'place' as const, id: p.id, label: lt(p.name), nlabel: norm(lt(p.name)), sub: `${typeLabel(p.type)} · ${lt(per?.name)}`, color: per?.color ?? '#6b7280', text, words: text.split(/[^\p{L}\p{N}]+/u) };
       }),
       ...events.map((e) => {
         const per = periodById(e.period);
         const text = norm(`${e.title.uk} ${e.title.hu ?? ''} ${e.id.replace(/-/g, ' ')}`);
-        return { kind: 'event' as const, id: e.id, label: lt(e.title), sub: `${eventDate(e)} · ${lt(per?.name)}`, color: per?.color ?? '#6b7280', text, words: text.split(/[^\p{L}\p{N}]+/u) };
+        return { kind: 'event' as const, id: e.id, label: lt(e.title), nlabel: norm(lt(e.title)), sub: `${eventDate(e)} · ${lt(per?.name)}`, color: per?.color ?? '#6b7280', text, words: text.split(/[^\p{L}\p{N}]+/u) };
       }),
     ];
   }
@@ -154,7 +153,7 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
         score += h.words.some((w) => w.startsWith(tk)) ? 3 : 1;
       }
       if (score < 0) continue;
-      if (norm(h.label).startsWith(toks[0])) score += 5;
+      if (h.nlabel.startsWith(toks[0])) score += 5;
       if (h.kind === 'place') score += 0.5;
       scored.push([score, h]);
     }
@@ -284,7 +283,8 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
   }
   function renderNearby() {
     title.textContent = t('nearby');
-    if (origin) drawNearby();
+    // при кожному відкритті — свіжа точка відліку: центр мапи міг зсунутися, людина — перейти
+    if (origin && !origin.fromMe) fromCenter();
     else locate();
   }
 

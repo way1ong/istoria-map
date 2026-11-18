@@ -26,7 +26,7 @@ export function parseDate(s: string): number {
 function formatTime(ms: number, detail: 'year' | 'day' | 'minute'): string {
   const d = new Date(ms);
   const y = d.getUTCFullYear();
-  const yr = y < 0 ? formatYear(y) : String(y);
+  const yr = formatYear(y);
   if (detail === 'year') return yr;
   const dd = String(d.getUTCDate()).padStart(2, '0');
   const mm = String(d.getUTCMonth() + 1).padStart(2, '0');

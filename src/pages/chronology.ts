@@ -1,5 +1,5 @@
 import { events, periodById, periods, placeById } from '../data';
-import { getLang, lt, t } from '../i18n';
+import { formatYear, getLang, lt, t } from '../i18n';
 import { precisionLabel } from '../ui/render';
 import type { HistEvent } from '../types';
 
@@ -19,10 +19,7 @@ export function dateKey(s: string): number {
 function yearLabel(e: HistEvent): string {
   const y = (s: string) => {
     const m = /^(-?)(\d{1,4})/.exec(s);
-    if (!m) return s;
-    const n = String(Number(m[2]));
-    if (!m[1]) return n;
-    return getLang() === 'hu' ? `${t('bce')} ${n}` : `${n} ${t('bce')}`;
+    return m ? formatYear(Number(m[2]) * (m[1] ? -1 : 1)) : s;
   };
   const from = y(e.date.from);
   const to = e.date.to ? y(e.date.to) : '';
