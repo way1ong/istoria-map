@@ -1,0 +1,374 @@
+{
+ "Vác": {
+  "lat": 47.7782873,
+  "lon": 19.1278294,
+  "type": "administrative",
+  "osm": "relation/1440602"
+ },
+ "Dunakeszi": {
+  "lat": 47.6316697,
+  "lon": 19.1294055,
+  "type": "administrative",
+  "osm": "relation/214932"
+ },
+ "Sződ": {
+  "lat": 47.7191669,
+  "lon": 19.1819507,
+  "type": "administrative",
+  "osm": "relation/1375511"
+ },
+ "Fót": {
+  "lat": 47.6125871,
+  "lon": 19.1980105,
+  "type": "administrative",
+  "osm": "relation/214931"
+ },
+ "Szentendre": {
+  "lat": 47.6677606,
+  "lon": 19.0760467,
+  "type": "administrative",
+  "osm": "relation/216160"
+ },
+ "Tahitótfalu": {
+  "lat": 47.75434,
+  "lon": 19.0844571,
+  "type": "administrative",
+  "osm": "relation/216161"
+ },
+ "Csomád": {
+  "lat": 47.6547632,
+  "lon": 19.2368611,
+  "type": "administrative",
+  "osm": "relation/1390627"
+ },
+ "Veresegyház": {
+  "lat": 47.655235,
+  "lon": 19.2868815,
+  "type": "administrative",
+  "osm": "relation/1390690"
+ },
+ "Gödöllő": {
+  "lat": 47.601529,
+  "lon": 19.3476981,
+  "type": "administrative",
+  "osm": "relation/1392595"
+ },
+ "Esztergom": {
+  "lat": 47.7856939,
+  "lon": 18.7403377,
+  "type": "administrative",
+  "osm": "relation/1027785"
+ },
+ "Komárom": {
+  "lat": 47.7417349,
+  "lon": 18.1218256,
+  "type": "administrative",
+  "osm": "relation/1027781"
+ },
+ "Tata": {
+  "lat": 47.6516214,
+  "lon": 18.3282083,
+  "type": "administrative",
+  "osm": "relation/1027792"
+ },
+ "Székesfehérvár": {
+  "lat": 47.1910169,
+  "lon": 18.410811,
+  "type": "administrative",
+  "osm": "relation/1361450"
+ },
+ "Kecskemét": {
+  "lat": 46.9075423,
+  "lon": 19.6922302,
+  "type": "administrative",
+  "osm": "relation/1130433"
+ },
+ "Cegléd": {
+  "lat": 47.1716447,
+  "lon": 19.7977516,
+  "type": "administrative",
+  "osm": "relation/1323439"
+ },
+ "Szolnok": {
+  "lat": 47.1753833,
+  "lon": 20.1946279,
+  "type": "administrative",
+  "osm": "relation/1273068"
+ },
+ "Jászberény": {
+  "lat": 47.5030505,
+  "lon": 19.9117887,
+  "type": "administrative",
+  "osm": "relation/1348116"
+ },
+ "Gyöngyös": {
+  "lat": 47.7799838,
+  "lon": 19.9291176,
+  "type": "administrative",
+  "osm": "relation/1417491"
+ },
+ "Hatvan": {
+  "lat": 47.6683971,
+  "lon": 19.6743874,
+  "type": "administrative",
+  "osm": "relation/1418333"
+ },
+ "Eger": {
+  "lat": 47.8989887,
+  "lon": 20.3743665,
+  "type": "administrative",
+  "osm": "relation/1418156"
+ },
+ "Miskolc": {
+  "lat": 48.1030643,
+  "lon": 20.7900429,
+  "type": "administrative",
+  "osm": "relation/1440895"
+ },
+ "Debrecen": {
+  "lat": 47.531399,
+  "lon": 21.6259782,
+  "type": "administrative",
+  "osm": "relation/1444234"
+ },
+ "Szeged": {
+  "lat": 46.2546312,
+  "lon": 20.1486016,
+  "type": "administrative",
+  "osm": "relation/1025105"
+ },
+ "Hódmezővásárhely": {
+  "lat": 46.4171344,
+  "lon": 20.3196068,
+  "type": "administrative",
+  "osm": "relation/1025072"
+ },
+ "Csongrád": {
+  "lat": 46.7097618,
+  "lon": 20.1537305,
+  "type": "administrative",
+  "osm": "relation/1025084"
+ },
+ "Békéscsaba": {
+  "lat": 46.6798003,
+  "lon": 21.0985425,
+  "type": "administrative",
+  "osm": "relation/1026172"
+ },
+ "Gyula": {
+  "lat": 46.6438656,
+  "lon": 21.2747575,
+  "type": "administrative",
+  "osm": "relation/1026161"
+ },
+ "Kalocsa": {
+  "lat": 46.5230265,
+  "lon": 18.9825043,
+  "type": "administrative",
+  "osm": "relation/1130407"
+ },
+ "Baja": {
+  "lat": 46.1785471,
+  "lon": 18.9517255,
+  "type": "administrative",
+  "osm": "relation/1130381"
+ },
+ "Szekszárd": {
+  "lat": 46.3484884,
+  "lon": 18.701663,
+  "type": "administrative",
+  "osm": "relation/1501296"
+ },
+ "Pécs": {
+  "lat": 46.0765092,
+  "lon": 18.2280317,
+  "type": "administrative",
+  "osm": "relation/575380"
+ },
+ "Mohács": {
+  "lat": 45.9933836,
+  "lon": 18.6821079,
+  "type": "administrative",
+  "osm": "relation/575366"
+ },
+ "Kaposvár": {
+  "lat": 46.3564692,
+  "lon": 17.7886886,
+  "type": "administrative",
+  "osm": "relation/1368050"
+ },
+ "Nagykanizsa": {
+  "lat": 46.4548261,
+  "lon": 16.9923923,
+  "type": "administrative",
+  "osm": "relation/1320813"
+ },
+ "Keszthely": {
+  "lat": 46.7675081,
+  "lon": 17.2462801,
+  "type": "administrative",
+  "osm": "relation/1360484"
+ },
+ "Veszprém": {
+  "lat": 47.0933824,
+  "lon": 17.9080406,
+  "type": "administrative",
+  "osm": "relation/1078442"
+ },
+ "Pápa": {
+  "lat": 47.3261087,
+  "lon": 17.4705293,
+  "type": "administrative",
+  "osm": "relation/1078479"
+ },
+ "Győr": {
+  "lat": 47.6835029,
+  "lon": 17.6342832,
+  "type": "administrative",
+  "osm": "relation/1440627"
+ },
+ "Sopron": {
+  "lat": 47.6803063,
+  "lon": 16.5983457,
+  "type": "administrative",
+  "osm": "relation/1491393"
+ },
+ "Szombathely": {
+  "lat": 47.2291184,
+  "lon": 16.6187625,
+  "type": "administrative",
+  "osm": "relation/1131673"
+ },
+ "Zalaegerszeg": {
+  "lat": 46.8415803,
+  "lon": 16.8456316,
+  "type": "administrative",
+  "osm": "relation/1357195"
+ },
+ "Tokaj": {
+  "lat": 48.1235534,
+  "lon": 21.4113895,
+  "type": "administrative",
+  "osm": "relation/1433789"
+ },
+ "Sárospatak": {
+  "lat": 48.3216823,
+  "lon": 21.5655524,
+  "type": "administrative",
+  "osm": "relation/1432114"
+ },
+ "Nyíregyháza": {
+  "lat": 47.9557802,
+  "lon": 21.7167982,
+  "type": "administrative",
+  "osm": "relation/1447608"
+ },
+ "Karcag": {
+  "lat": 47.314646,
+  "lon": 20.9240941,
+  "type": "administrative",
+  "osm": "relation/1325376"
+ },
+ "Paks": {
+  "lat": 46.6229468,
+  "lon": 18.8589364,
+  "type": "administrative",
+  "osm": "relation/1493086"
+ },
+ "Siófok": {
+  "lat": 46.9071694,
+  "lon": 18.0541598,
+  "type": "administrative",
+  "osm": "relation/1368046"
+ },
+ "Kőszeg": {
+  "lat": 47.3894949,
+  "lon": 16.5406843,
+  "type": "administrative",
+  "osm": "relation/1131571"
+ },
+ "Balassagyarmat": {
+  "lat": 48.0768832,
+  "lon": 19.2926037,
+  "type": "administrative",
+  "osm": "relation/1370323"
+ },
+ "Szatmárnémeti": {
+  "lat": 47.7891763,
+  "lon": 22.8725598,
+  "type": "administrative",
+  "osm": "relation/10743034"
+ },
+ "Nagyvárad": {
+  "lat": 47.0549163,
+  "lon": 21.9285231,
+  "type": "city",
+  "osm": "node/2691094601"
+ },
+ "Arad": {
+  "lat": 46.1753793,
+  "lon": 21.3196342,
+  "type": "administrative",
+  "osm": "relation/10488682"
+ },
+ "Temesvár": {
+  "lat": 45.7538355,
+  "lon": 21.2257474,
+  "type": "administrative",
+  "osm": "relation/6927733"
+ },
+ "Szabadka": {
+  "lat": 46.1002058,
+  "lon": 19.6653273,
+  "type": "city",
+  "osm": "node/1547830258"
+ },
+ "Zombor": {
+  "lat": 45.7727397,
+  "lon": 19.1147036,
+  "type": "administrative",
+  "osm": "relation/9064607"
+ },
+ "Eszék": {
+  "lat": 45.5548793,
+  "lon": 18.6953685,
+  "type": "administrative",
+  "osm": "relation/8436035"
+ },
+ "Kassa": {
+  "lat": 48.7172272,
+  "lon": 21.2496774,
+  "type": "administrative",
+  "osm": "relation/1690324"
+ },
+ "Pozsony": {
+  "lat": 48.1435026,
+  "lon": 17.1082867,
+  "type": "administrative",
+  "osm": "relation/1702499"
+ },
+ "Nyitra": {
+  "lat": 48.31295,
+  "lon": 18.0894593,
+  "type": "administrative",
+  "osm": "relation/2210192"
+ },
+ "Losonc": {
+  "lat": 48.3303886,
+  "lon": 19.6634149,
+  "type": "administrative",
+  "osm": "relation/2273295"
+ },
+ "Kolozsvár": {
+  "lat": 46.769379,
+  "lon": 23.5899542,
+  "type": "administrative",
+  "osm": "relation/3277038"
+ },
+ "Nagykároly": {
+  "lat": 47.6829338,
+  "lon": 22.4695102,
+  "type": "city",
+  "osm": "node/128555565"
+ }
+}
