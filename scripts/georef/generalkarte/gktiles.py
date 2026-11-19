@@ -7,11 +7,17 @@
 з поправкою зсуву старої геодезичної основи. Нижчі зуми — зменшення 4 дочірніх тайлів у пам'яті
 (обхід у глибину від тайлів зуму SPLIT, без повторного стиснення).
 
-Запуск (з теки скрипта): python3 -I gktiles.py ../../../public/tiles/generalkarte [--zmax 11] [--zmin 5] [--q 50] [--speed 6] [--jobs 4]
+Різкість (2026-11-19, користувач: «не додавати нове, тільки покращити різкість»): перерахунок фільтром
+Ланцоша замість білінійного і нерізке маскування яскравості (сигма 1 px, сила 1, поріг 5 рівнів — зерно
+паперу не підсилюється). Це лише підсилює краї, які вже є на скані, нічого не домальовує (на відміну від
+ШІ-збільшення, яке вигадує літери). На телефоні тайл зуму 11 розтягується втричі, тому без цього підписи
+розмиті. Якість AVIF 45: з різкістю на вигляд не гірше за 50, а разом ~100 МБ.
+
+Запуск (з теки скрипта): python3 -I gktiles.py ../../../public/tiles/generalkarte [--zmax 11] [--zmin 5] [--q 45]
+        [--usm 1.0,1.0,5] [--interp lanczos] [--speed 6] [--jobs 4]
         python3 -I gktiles.py <тека> --one z/x/y   (один тайл без стиснення, PNG, для перевірки)
 Вихід: <out>/{z}/{x}/{y}.avif; межі й зуми друкуються наприкінці (поля bounds, minzoom, maxzoom
-у data/maps/generalkarte-1910.json). Якість 50 (AVIF) на збільшенні 3× майже не відрізняється від
-нестисненого тайла, а важить удвічі менше за WebP 72."""
+у data/maps/generalkarte-1910.json)."""
 import argparse, json, math, os, sys
 from multiprocessing import Pool
 import numpy as np, cv2
@@ -26,10 +32,14 @@ PAPER = (232, 226, 210)  # колір під прозорими пікселям
 
 ap = argparse.ArgumentParser()
 ap.add_argument('out'); ap.add_argument('--zmax', type=int, default=11); ap.add_argument('--zmin', type=int, default=5)
-ap.add_argument('--split', type=int, default=9); ap.add_argument('--q', type=int, default=50)
+ap.add_argument('--split', type=int, default=9); ap.add_argument('--q', type=int, default=45)
 ap.add_argument('--speed', type=int, default=6); ap.add_argument('--jobs', type=int, default=4)
 ap.add_argument('--one'); ap.add_argument('--fmt', default='avif')
+ap.add_argument('--interp', default='lanczos', choices=['linear', 'cubic', 'lanczos'])
+ap.add_argument('--usm', default='1.0,1.0,5', help='підвищення різкості «сигма,сила,поріг» (нерізке маскування яскравості), 0 — без нього')
 A = ap.parse_args()
+INTERP = {'linear': cv2.INTER_LINEAR, 'cubic': cv2.INTER_CUBIC, 'lanczos': cv2.INTER_LANCZOS4}[A.interp]
+USM = tuple(float(v) for v in A.usm.split(',')) if A.usm != '0' else None
 
 det = json.load(open(B + 'r3300/gk_det.json'))
 SHEETS = {tuple(map(int, k.split('-'))): k for k in det}
@@ -58,6 +68,17 @@ def sheet(LP):
     _cache[LP] = (src, RBFInterpolator(geo, px, kernel='thin_plate_spline'))
     return _cache[LP]
 
+def sharpen(bgr):
+    """Нерізке маскування лише яскравості: підсилює наявні краї ліній і літер, кольори не чіпає.
+    Поріг гасить підсилення дрібного зерна паперу (різниця з розмитою копією менша за поріг)."""
+    sigma, amount, thr = USM
+    ycc = cv2.cvtColor(bgr, cv2.COLOR_BGR2YCrCb).astype(np.float32)
+    Y = ycc[..., 0]
+    d = Y - cv2.GaussianBlur(Y, (0, 0), sigma)
+    if thr > 0: d *= np.clip((np.abs(d) - thr) / thr, 0, 1)
+    ycc[..., 0] = Y + amount * d
+    return cv2.cvtColor(np.clip(np.rint(ycc), 0, 255).astype(np.uint8), cv2.COLOR_YCrCb2BGR)
+
 def render(z, x, y):
     """RGBA uint8 (T, T, 4) тайла найбільшого зуму."""
     gx = (x + (np.arange(T) + 0.5) / T) / 2 ** z * 360 - 180
@@ -71,10 +92,11 @@ def render(z, x, y):
         if (L, P) not in SHEETS: continue
         sel = (Lidx == L) & (Pidx == P)
         src, f = sheet((L, P))
-        pp = f(np.stack([LON[sel], LAT[sel]], 1)).astype(np.float32)
-        mxp = np.full((T, T), -1, np.float32); myp = np.full((T, T), -1, np.float32)
-        mxp[sel] = pp[:, 0]; myp[sel] = pp[:, 1]
-        samp = cv2.remap(src, mxp, myp, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REPLICATE)
+        # весь тайл з цього аркуша (за рамкою — поля аркуша), щоб різкість біля межі рахувалася за сусідніми
+        # пікселями скана, а не за прозорими; далі беремо лише пікселі всередині рамки
+        pp = f(np.stack([LON.ravel(), LAT.ravel()], 1)).astype(np.float32)
+        samp = cv2.remap(src, pp[:, 0].reshape(T, T), pp[:, 1].reshape(T, T), INTERP, borderMode=cv2.BORDER_REPLICATE)
+        if USM: samp = sharpen(samp)
         out[sel, :3] = samp[sel][:, ::-1]; out[sel, 3] = 255
     return out
 
