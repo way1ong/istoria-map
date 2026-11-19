@@ -1,4 +1,4 @@
-import type { StyleSpecification } from 'maplibre-gl';
+import type { ExpressionSpecification, Map as MLMap, StyleSpecification } from 'maplibre-gl';
 import { basemaps } from './data';
 import type { Basemap } from './types';
 
@@ -47,4 +47,22 @@ function reliefStyle(b: Basemap): StyleSpecification {
     );
   }
   return style;
+}
+
+/**
+ * Підписи підкладки мовою інтерфейсу. Стиль OpenFreeMap бере англійські назви (name_en: «Hungary», «Danube»),
+ * тож для всіх його підписів назв ставимо name:uk / name:hu з OSM, а де їх немає — місцеву назву (name).
+ */
+export function localizeBasemapLabels(map: MLMap, lang: string): void {
+  const style = map.getStyle();
+  if (!style?.layers) return;
+  const expr: ExpressionSpecification = ['coalesce', ['get', `name:${lang}`], ['get', 'name']];
+  for (const l of style.layers) {
+    if (l.type !== 'symbol') continue;
+    const tf = map.getLayoutProperty(l.id, 'text-field');
+    if (tf === undefined || tf === null) continue;
+    const js = JSON.stringify(tf);
+    if (!/"name_en"|"name:latin"|"name:(uk|hu)"|\{name(:latin|_en)?\}/.test(js)) continue;
+    map.setLayoutProperty(l.id, 'text-field', expr);
+  }
 }

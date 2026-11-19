@@ -6,8 +6,8 @@
   },
   "type": "other",
   "coords": [
-    19.163,
-    47.683
+    19.1625,
+    47.6746
   ],
   "coordsPrecision": "approximate",
   "periods": [
@@ -31,6 +31,11 @@
       "title": "Archeodatabase HNM: Göd, Bócsaújtelep (Ilkamajor), site 10356",
       "url": "https://archeodatabase.hnm.hu/en/node/3785",
       "note": "Проєкти «Göd, Samsung, Akkumulátor gyártó üzem» на ділянці пам'ятки."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Samsung, Alsógöd, Göd",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Samsung+SDI+G%C3%B6d",
+      "note": "Центр промислової ділянки «Samsung» (relation 16364462): 47.6746, 19.1625 (округлено); дані © учасники OpenStreetMap, ODbL. Раніше картка мала координати форту, що лежить приблизно за 1 км на північ."
     }
   ]
 }

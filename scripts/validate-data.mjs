@@ -32,6 +32,8 @@ function checkSources(file, sources) {
 // Місця й події мають лежати в околиці Göd; маршрути (походи, вали) можуть виходити далеко за неї, але лишатися в Карпатському басейні.
 // Межі проєкту: уся Угорщина в сучасних кордонах із запасом на прикордонні об'єкти (Komárno, Štúrovo, Subotica тощо).
 const REGION = [15.5, 23.5, 45.3, 49.2];
+// Аркуші старих мап можуть виходити за межі області місць (крайні аркуші 1:200 000 сягають 49,5° пн. ш. і 23,8° сх. д.).
+const MAP_REGION = [14, 25, 44, 50.5];
 // Для анімацій (рухи військ тощо) межі ширші.
 const WIDE = [12, 28, 43, 52];
 function checkCoords(file, coords, label = 'coords', box = REGION) {
@@ -121,19 +123,122 @@ for (const { file, path, name } of listJson('events')) {
   checkSources(file, e.sources);
 }
 
+// map-series.json: серії старих мап (аркуші однієї серії показуються разом)
+const seriesPath = join(root, 'map-series.json');
+const seriesIds = new Set();
+if (existsSync(seriesPath)) {
+  const ms = readJson(seriesPath);
+  (ms?.series ?? []).forEach((s, i) => {
+    const f = `data/map-series.json[${i}]`;
+    if (typeof s.id !== 'string' || !s.id) err(f, 'id відсутній');
+    else if (seriesIds.has(s.id)) err(f, `повторний id "${s.id}"`);
+    else seriesIds.add(s.id);
+    if (!isLText(s.title)) err(f, 'title.uk відсутній');
+    if (s.overview) {
+      const o = s.overview;
+      if (typeof o.url !== 'string' || !existsSync(join(root, '..', 'public', o.url))) err(f, `overview.url: немає файлу public/${o.url}`);
+      if (!Array.isArray(o.coordinates) || o.coordinates.length !== 4) err(f, 'overview.coordinates: потрібно 4 кути [NW, NE, SE, SW]');
+      else o.coordinates.forEach((c, k) => checkCoords(f, c, `overview.coordinates[${k}]`, MAP_REGION));
+      if (typeof o.maxzoom !== 'number' || o.maxzoom < 0 || o.maxzoom > 22) err(f, 'overview.maxzoom: число 0–22');
+    }
+    if (s.georef !== undefined && (typeof s.georef !== 'string' || !existsSync(join(root, '..', 'public', s.georef)))) err(f, `georef: немає файлу public/${s.georef}`);
+    if (s.grayscale !== undefined && typeof s.grayscale !== 'boolean') err(f, 'grayscale: true або false');
+    if (s.allmapsMinzoom !== undefined && (typeof s.allmapsMinzoom !== 'number' || s.allmapsMinzoom < 0 || s.allmapsMinzoom > 22)) err(f, 'allmapsMinzoom: число 0–22');
+    if (s.georef && typeof s.georef === 'string' && existsSync(join(root, '..', 'public', s.georef))) {
+      // Georeference Annotation: кожен аркуш — зображення IIIF і щонайменше 3 опорні точки
+      const page = readJson(join(root, '..', 'public', s.georef));
+      const items = page?.type === 'AnnotationPage' ? page.items : [page];
+      (items ?? []).forEach((it, k) => {
+        const src = it?.target?.source;
+        const feats = it?.body?.features;
+        if (!src || typeof src.id !== 'string' || !/^https:\/\//.test(src.id) || !(src.width > 0) || !(src.height > 0)) err(f, `georef item ${k}: target.source (id, width, height)`);
+        if (!Array.isArray(feats) || feats.length < 3) err(f, `georef item ${k}: потрібно щонайменше 3 опорні точки`);
+        else feats.forEach((p) => checkCoords(f, p?.geometry?.coordinates, `georef item ${k}`, MAP_REGION));
+      });
+    }
+  });
+}
+const sheetsSeen = new Map();
+
+// Тайли XYZ старих мап: межі й зуми; для тайлів у public/ — чи є кожен тайл, який MapLibre запитає в межах bounds
+// (MapLibre бере x від floor(X(захід)) до ceil(X(схід)) не включно, так само y), бо відсутній тайл — це помилка 404.
+const mercX = (lon, z) => ((lon + 180) / 360) * 2 ** z;
+const mercY = (lat, z) => ((1 - Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI) / 360)) / Math.PI) / 2) * 2 ** z;
+function checkTiles(file, m) {
+  if (typeof m.url !== 'string' || !['{z}', '{x}', '{y}'].every((k) => m.url.includes(k))) return err(file, 'url тайлів має містити {z}, {x} і {y}');
+  if (m.tileSize !== undefined && ![256, 512].includes(m.tileSize)) err(file, 'tileSize: 256 або 512');
+  for (const k of ['minzoom', 'maxzoom'])
+    if (m[k] !== undefined && (!Number.isInteger(m[k]) || m[k] < 0 || m[k] > 22)) err(file, `${k}: ціле число 0–22`);
+  if (m.minzoom !== undefined && m.maxzoom !== undefined && m.minzoom > m.maxzoom) err(file, 'minzoom більший за maxzoom');
+  const b = m.bounds;
+  if (b !== undefined) {
+    if (!Array.isArray(b) || b.length !== 4 || b.some((n) => typeof n !== 'number')) return err(file, 'bounds: [захід, південь, схід, північ]');
+    checkCoords(file, [b[0], b[1]], 'bounds (південний захід)', MAP_REGION);
+    checkCoords(file, [b[2], b[3]], 'bounds (північний схід)', MAP_REGION);
+    if (b[0] >= b[2] || b[1] >= b[3]) return err(file, 'bounds: захід має бути менший за схід, південь — за північ');
+  }
+  if (/^https?:\/\//.test(m.url)) return;
+  if (!b || m.minzoom === undefined || m.maxzoom === undefined) return err(file, 'для тайлів у public/ потрібні bounds, minzoom і maxzoom');
+  let missing = 0, first = '';
+  for (let z = m.minzoom; z <= m.maxzoom; z++) {
+    const x0 = Math.floor(mercX(b[0], z)), x1 = Math.ceil(mercX(b[2], z));
+    const y0 = Math.floor(mercY(b[3], z)), y1 = Math.ceil(mercY(b[1], z));
+    for (let x = x0; x < x1; x++)
+      for (let y = y0; y < y1; y++) {
+        const rel = m.url.replace('{z}', z).replace('{x}', x).replace('{y}', y);
+        if (!existsSync(join(root, '..', 'public', rel))) { missing++; first ||= rel; }
+      }
+  }
+  if (missing) err(file, `немає ${missing} тайлів у public/ (перший: ${first})`);
+}
+
 // maps
 for (const { file, path, name } of listJson('maps')) {
   const m = readJson(path);
   if (!m) continue;
+  if (m.series !== undefined) {
+    if (!seriesIds.has(m.series)) err(file, `невідома серія "${m.series}" (див. data/map-series.json)`);
+    if (m.type !== 'image') err(file, 'аркуш серії має бути type: image');
+    if (typeof m.sheet !== 'string' || !m.sheet.trim()) err(file, 'sheet: номер аркуша відсутній');
+    else {
+      const k = `${m.series}/${m.sheet}`;
+      if (sheetsSeen.has(k)) err(file, `аркуш ${m.sheet} уже є у ${sheetsSeen.get(k)}`);
+      sheetsSeen.set(k, file);
+    }
+  }
+  if (m.type === 'image' && typeof m.url === 'string' && !/^https?:/.test(m.url) && !existsSync(join(root, '..', 'public', m.url)))
+    err(file, `url: немає файлу public/${m.url}`);
+  if (m.georef !== undefined && (typeof m.georef !== 'string' || !existsSync(join(root, '..', 'public', m.georef))))
+    err(file, `georef: немає файлу public/${m.georef}`);
   if (m.id !== name) err(file, `id має збігатися з назвою файлу "${name}"`);
   if (!isLText(m.title)) err(file, 'title.uk відсутній');
   for (const k of ['license', 'attribution', 'url'])
     if (typeof m[k] !== 'string' || !m[k].trim()) err(file, `${k} відсутній`);
-  if (!['image', 'xyz'].includes(m.type)) err(file, 'type має бути image | xyz');
+  if (!['image', 'xyz', 'geojson'].includes(m.type)) err(file, 'type має бути image | xyz | geojson');
+  if (m.type === 'geojson') {
+    // векторна накладка: url — шлях у data/ (напр. water/lipszky-1806.geojson)
+    const gp = typeof m.url === 'string' ? join(root, m.url) : '';
+    if (!gp || !/^water\/[\w.-]+\.geojson$/.test(m.url) || !existsSync(gp)) err(file, `url: для geojson потрібен файл data/water/*.geojson, а не "${m.url}"`);
+    else {
+      const g = readJson(gp);
+      if (g?.type !== 'FeatureCollection' || !Array.isArray(g.features)) err(`data/${m.url}`, 'потрібна FeatureCollection');
+      else g.features.forEach((f, k) => {
+        const t = f?.geometry?.type;
+        if (!['Polygon', 'MultiPolygon', 'LineString', 'MultiLineString'].includes(t)) err(`data/${m.url}`, `features[${k}]: тип геометрії ${t}`);
+        const first = t === 'Polygon' ? f.geometry.coordinates?.[0]?.[0] : t === 'MultiPolygon' ? f.geometry.coordinates?.[0]?.[0]?.[0] : t === 'LineString' ? f.geometry.coordinates?.[0] : f.geometry.coordinates?.[0]?.[0];
+        checkCoords(`data/${m.url}`, first, `features[${k}]`);
+      });
+      for (const k of ['license', 'attribution']) if (typeof g?.[k] !== 'string' || !g[k].trim()) err(`data/${m.url}`, `${k} відсутній`);
+    }
+  }
   if (m.type === 'image') {
     if (!Array.isArray(m.coordinates) || m.coordinates.length !== 4) err(file, 'coordinates: потрібно 4 кути [NW, NE, SE, SW]');
-    else m.coordinates.forEach((c, i) => checkCoords(file, c, `coordinates[${i}]`));
+    else m.coordinates.forEach((c, i) => checkCoords(file, c, `coordinates[${i}]`, MAP_REGION));
   }
+  if (m.type === 'xyz') checkTiles(file, m);
+  if (!(typeof m.year === 'number' || (typeof m.year === 'string' && m.year.trim()) || isLText(m.year)))
+    err(file, 'year: число, рядок або {"uk": …, "hu": …}');
+  if (m.sources !== undefined) checkSources(file, m.sources);
   if (m.periods) m.periods.forEach((id) => periodIds.has(id) || err(file, `невідомий період "${id}"`));
   if (!m.source || typeof m.source.title !== 'string') err(file, 'source.title відсутній');
 }

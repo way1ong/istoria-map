@@ -14,16 +14,16 @@ import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 
 setWorkerUrl(workerUrl);
 import { basemaps, histMaps, periodById, places } from './data';
-import { basemapStyle, getPreferredBasemap, setPreferredBasemap } from './basemap';
+import { basemapStyle, getPreferredBasemap, localizeBasemapLabels, setPreferredBasemap } from './basemap';
 import { lt } from './i18n';
 import { colorFor, loadBorders, loadModern } from './borders';
-import type { BorderCollection, HistMap, Place } from './types';
+import { addOldMap, type OldMapHandle } from './oldmap';
+import { DOT_RADIUS, DOT_STROKE, HALO_RADIUS } from './markers';
+import type { BorderCollection, HistMap, Place, PlaceType } from './types';
 
 // Стартовий вигляд: уся Угорщина (центр країни, зум під екран телефона).
 const CENTER: [number, number] = [19.4, 47.15];
 const SRC = 'places';
-const OVERLAY_SRC = 'overlay';
-const OVERLAY_LAYER = 'overlay-layer';
 const BORDERS_SRC = 'borders';
 const MODERN_SRC = 'modern-outline';
 /** Нижче цього зуму показуються історичні кордони; вище — лише місця. */
@@ -43,6 +43,21 @@ export interface MapController {
   setYear(year: number | null): void;
   /** Викликається, коли змінюється рік або видимість шару кордонів (для підпису). */
   onBorders(cb: (info: { year: number; attribution: string } | null) => void): void;
+  /** Фільтр місць за типом (порожній набір = усі типи) і «лише зниклі». */
+  setPlaceFilter(f: PlaceFilter): void;
+}
+
+export interface PlaceFilter {
+  types: PlaceType[];
+  vanishedOnly: boolean;
+}
+
+/** Чи проходить місце фільтр періоду й типу. */
+export function placeVisible(p: Place, periodId: string | null, f: PlaceFilter): boolean {
+  if (periodId && !p.periods.includes(periodId)) return false;
+  if (f.types.length && !f.types.includes(p.type)) return false;
+  if (f.vanishedOnly && !p.vanished) return false;
+  return true;
 }
 
 /**
@@ -68,8 +83,9 @@ function spread(list: Place[]): Map<string, [number, number]> {
   return out;
 }
 
-function featureCollection(periodId: string | null, lang: string) {
-  const visible = places.filter((p) => !periodId || p.periods.includes(periodId));
+function featureCollection(periodId: string | null, lang: string, filter: PlaceFilter, forceId: string | null) {
+  // вибране місце (з пошуку чи «Що поруч») показуємо навіть тоді, коли фільтр типу його ховає
+  const visible = places.filter((p) => p.id === forceId || placeVisible(p, periodId, filter));
   const pos = spread(visible);
   return {
     type: 'FeatureCollection' as const,
@@ -100,11 +116,14 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     center: CENTER,
     zoom: 6,
     attributionControl: { compact: true },
+    // старі мапи в повній якості (Allmaps) не підтримують нахил мапи
+    maxPitch: 0,
   });
   map.addControl(new NavigationControl({ showCompass: false }), 'top-right');
   map.addControl(new GeolocateControl({ trackUserLocation: false }), 'top-right');
 
   let currentPeriod: string | null = null;
+  let placeFilter: PlaceFilter = { types: [], vanishedOnly: false };
   let selected: string | null = null;
   let lang = document.documentElement.lang || 'uk';
 
@@ -134,23 +153,23 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       id: 'modern-line', type: 'line', source: MODERN_SRC, maxzoom: BORDERS_MAXZOOM,
       paint: { 'line-color': '#111827', 'line-width': ['case', ['==', ['get', 'id'], 'hungary'], 1.8, 1], 'line-dasharray': ['literal', [2, 2]], 'line-opacity': 0.8 },
     });
-    map.addSource(SRC, { type: 'geojson', data: featureCollection(currentPeriod, lang) });
+    map.addSource(SRC, { type: 'geojson', data: featureCollection(currentPeriod, lang, placeFilter, selected) });
     map.addLayer({
       id: 'places-halo',
       type: 'circle',
       source: SRC,
-      paint: { 'circle-radius': 14, 'circle-color': ['get', 'color'], 'circle-opacity': 0.25 },
+      paint: { 'circle-radius': HALO_RADIUS, 'circle-color': ['get', 'color'], 'circle-opacity': 0.25 },
     });
     map.addLayer({
       id: 'places-dot',
       type: 'circle',
       source: SRC,
       paint: {
-        'circle-radius': 7,
+        'circle-radius': DOT_RADIUS,
         // Зниклі об'єкти (хутори, корчми, млини) малюються порожнім кружком
         'circle-color': ['case', ['==', ['get', 'vanished'], 1], '#ffffff', ['get', 'color']],
         'circle-stroke-color': ['case', ['==', ['get', 'vanished'], 1], ['get', 'color'], '#ffffff'],
-        'circle-stroke-width': 2.5,
+        'circle-stroke-width': DOT_STROKE,
       },
     });
     map.addLayer({
@@ -181,7 +200,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   };
   map.on('load', addLayers);
   // Після зміни стилю підкладки шари місць і накладання треба додати знову
-  map.on('style.load', () => { addLayers(); applySelection(); if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); void applyBorders(); });
+  map.on('style.load', () => { localizeBasemapLabels(map, lang); addLayers(); applySelection(); if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); void applyBorders(); });
   map.on('click', (e: MapMouseEvent) => {
     if (!map.getLayer('places-dot')) return;
     const hits = map.queryRenderedFeatures(e.point, { layers: ['places-dot', 'places-halo'] });
@@ -190,7 +209,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
 
   const refresh = () => {
     const src = map.getSource(SRC) as GeoJSONSource | undefined;
-    src?.setData(featureCollection(currentPeriod, lang));
+    src?.setData(featureCollection(currentPeriod, lang, placeFilter, selected));
   };
   const applySelection = () => {
     if (!map.getLayer('places-dot')) return;
@@ -200,25 +219,26 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     map.setPaintProperty('places-label', 'text-opacity', opacityExpr(selected));
   };
 
+  // Стара мапа поверх сучасної; аркуші серії — разом (див. src/oldmap.ts).
+  let overlay: OldMapHandle | null = null;
+  // Ключ показаної накладки: для аркушів серії — id серії (будь-який її аркуш показує ту саму серію).
+  let overlayKey: string | null = null;
+  const keyOf = (m: HistMap | null) => (m ? m.series ?? m.id : null);
   const removeOverlay = () => {
-    if (map.getLayer(OVERLAY_LAYER)) map.removeLayer(OVERLAY_LAYER);
-    if (map.getSource(OVERLAY_SRC)) map.removeSource(OVERLAY_SRC);
+    overlay?.remove();
+    overlay = null;
+    overlayKey = null;
   };
   const addOverlay = (m: HistMap, opacity: number) => {
     removeOverlay();
-    if (m.type === 'image' && m.coordinates) {
-      map.addSource(OVERLAY_SRC, {
-        type: 'image',
-        url: m.url,
-        coordinates: m.coordinates as [[number, number], [number, number], [number, number], [number, number]],
-      });
-    } else {
-      map.addSource(OVERLAY_SRC, { type: 'raster', tiles: [m.url], tileSize: 256, attribution: m.attribution });
-    }
-    map.addLayer(
-      { id: OVERLAY_LAYER, type: 'raster', source: OVERLAY_SRC, paint: { 'raster-opacity': opacity } },
-      'places-halo',
-    );
+    overlay = addOldMap(map, m, { prefix: 'overlay', beforeId: 'places-halo', opacity });
+    overlayKey = keyOf(m);
+  };
+  /** Виконати, коли наші джерела вже в стилі; інакше — після наступного style.load
+   *  (подія 'load' буває лише раз, а isStyleLoaded() хибне, поки вантажаться плитки). */
+  const whenReady = (fn: () => void) => {
+    if (map.getSource(SRC)) fn();
+    else map.once('style.load', fn);
   };
 
   let overlayOpacity = 0.7;
@@ -227,6 +247,10 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   let currentYear: number | null = null;
   let bordersCb: ((info: { year: number; attribution: string } | null) => void) | null = null;
   let bordersSeq = 0;
+  // Підпис кордонів показуємо лише там, де видно самі кордони (зум < BORDERS_MAXZOOM).
+  let bordersInfo: { year: number; attribution: string } | null = null;
+  const emitBorders = () => bordersCb?.(bordersInfo && map.getZoom() < BORDERS_MAXZOOM ? bordersInfo : null);
+  map.on('zoomend', emitBorders);
   const bordersData = (b: BorderCollection) => ({
     type: 'FeatureCollection' as const,
     features: b.features.map((f) => ({
@@ -247,57 +271,61 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     if (currentYear === null) {
       src.setData({ type: 'FeatureCollection', features: [] });
       msrc.setData({ type: 'FeatureCollection', features: [] });
-      bordersCb?.(null);
+      bordersInfo = null;
+      emitBorders();
       return;
     }
     const [b, m] = await Promise.all([loadBorders(currentYear), loadModern()]);
     if (seq !== bordersSeq) return; // рік змінився, поки вантажилось
     src.setData(bordersData(b));
     msrc.setData(m as unknown as GeoJSON.FeatureCollection);
-    bordersCb?.({ year: b.year, attribution: `${b.attribution}; ${m.attribution}` });
+    bordersInfo = { year: b.year, attribution: `${b.attribution}; ${m.attribution}` };
+    emitBorders();
   };
 
   return {
     map,
     setPeriod(id) {
+      if (id === currentPeriod) return;
       currentPeriod = id;
-      if (map.isStyleLoaded()) refresh();
-      else map.once('load', refresh);
+      whenReady(refresh);
     },
     setSelected(id) {
+      const changed = id !== selected;
       selected = id;
-      if (map.isStyleLoaded()) applySelection();
-      else map.once('load', applySelection);
+      // дані оновлюємо, бо вибране місце показується навіть поза періодом чи фільтром типу
+      whenReady(() => { if (changed) refresh(); applySelection(); });
+    },
+    setPlaceFilter(f) {
+      placeFilter = f;
+      if (map.getSource(SRC)) refresh();
     },
     flyTo(place) {
       // Зсув угору, щоб мітку не закривала нижня картка.
       map.flyTo({ center: place.coords, zoom: Math.max(map.getZoom(), 13), duration: 800, offset: [0, -120] });
     },
     setOverlay(mapId) {
-      const run = () => {
-        const m = mapId ? histMaps.find((x) => x.id === mapId) : undefined;
-        currentOverlay = m ?? null;
-        if (!m) removeOverlay();
-        else addOverlay(m, overlayOpacity);
-      };
-      if (map.isStyleLoaded()) run();
-      else map.once('load', run);
+      const m = mapId ? histMaps.find((x) => x.id === mapId) ?? null : null;
+      currentOverlay = m;
+      // та сама мапа чи серія вже показана — нічого не перебудовуємо (інакше Allmaps заново тягне плитки IIIF)
+      whenReady(() => {
+        if (keyOf(currentOverlay) === overlayKey && (overlay || !currentOverlay)) return;
+        if (!currentOverlay) removeOverlay();
+        else addOverlay(currentOverlay, overlayOpacity);
+      });
     },
     setOverlayOpacity(v) {
       overlayOpacity = v;
-      if (map.getLayer(OVERLAY_LAYER)) map.setPaintProperty(OVERLAY_LAYER, 'raster-opacity', v);
+      overlay?.setOpacity(v);
     },
     refreshLabels() {
       lang = document.documentElement.lang || 'uk';
-      if (map.isStyleLoaded()) refresh();
-      if (map.getSource(BORDERS_SRC)) void applyBorders();
+      whenReady(() => { localizeBasemapLabels(map, lang); refresh(); void applyBorders(); });
     },
     setYear(year) {
       if (year === currentYear) return;
       currentYear = year;
-      // isStyleLoaded() буває false одразу після setData, тому перевіряємо наявність джерела.
-      if (map.getSource(BORDERS_SRC)) void applyBorders();
-      else map.once('load', () => void applyBorders());
+      whenReady(() => void applyBorders());
     },
     onBorders(cb) { bordersCb = cb; },
     setBasemap(id) {

@@ -12,7 +12,7 @@ export function historyIndex(): string {
         <p>${esc(lt(p.summary))}</p></a>`,
     )
     .join('');
-  return `<h1>${t('tabHistory')}</h1><div class="card-list">${cards}</div>`;
+  return `<h1>${t('tabHistory')}</h1><a class="btn chrono-link" href="#/chronology">${t('chronoLink')} →</a><div class="card-list">${cards}</div>`;
 }
 
 export function periodPage(id: string): string {

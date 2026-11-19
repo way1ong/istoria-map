@@ -1,0 +1,43 @@
+{
+  "id": "balassagyarmat-ipolysag-1885",
+  "title": {
+    "uk": "Spezialkarte 1:75 000, аркуш 13:XX «Balassa-Gyarmat und Ipoly-Ság»",
+    "hu": "Spezialkarte 1:75 000, 13:XX Balassa-Gyarmat und Ipoly-Ság"
+  },
+  "year": "1885, виправлено до 1910",
+  "author": "K. u. k. Militärgeographisches Institut, Відень",
+  "license": "CC0 1.0 (скан NYPL), оригінал у суспільному надбанні",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "attribution": "Spezialkarte der österreichisch-ungarischen Monarchie, 13:XX. New York Public Library, Lionel Pincus and Princess Firyal Map Division (CC0), через Wikimedia Commons",
+  "source": {
+    "title": "Wikimedia Commons: File:Balassa-Gyarmat und Ipoly-Sag. NYPL1226537.tiff",
+    "url": "https://commons.wikimedia.org/wiki/File:Balassa-Gyarmat_und_Ipoly-Sag._NYPL1226537.tiff",
+    "note": "Аркуш 13:XX; на полях: «1885», «Nach Aufnahme 1882», «Nach Zeichenschlüssel 1894», «Teilweise berichtigt bis 19. V. 1910». Межі за підписами сітки: 36°30′–37° сх. від Ферро, 48°–48°15′ пн. ш.; у Гринвіч переведено зсувом 17°40′. Скан узято з мініатюри Commons шириною 3840 px (скан лежить боком, повернуто на 90°). Кути внутрішньої рамки (де починається зображення карти) знайдено автоматично за межею зображення й звірено на збільшених вирізках (точність 1–3 px, тобто 10–35 м); аркуш вирівняно в прямокутник 2800 × 2099 px і переведено у відтінки сірого з вирівняною яскравістю, щоб аркуші серії складалися в однорідну мозаїку. Поправку зсуву старої геодезичної основи (0,000965° на захід і 0,00074° на південь) перенесено з двох сусідніх аркушів 14:XX і 15:XX, де її виміряно за церквами; для цього аркуша окремо її не вимірювали."
+  },
+  "type": "image",
+  "url": "maps/balassagyarmat-ipolysag-1885.jpg",
+  "coordinates": [
+    [
+      18.832368,
+      48.24926
+    ],
+    [
+      19.332368,
+      48.24926
+    ],
+    [
+      19.332368,
+      47.99926
+    ],
+    [
+      18.832368,
+      47.99926
+    ]
+  ],
+  "periods": [
+    "long-19",
+    "interwar-ww2"
+  ],
+  "series": "spezialkarte-75000",
+  "sheet": "13:XX"
+}

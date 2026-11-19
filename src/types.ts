@@ -84,18 +84,54 @@ export interface HistEvent {
 export interface HistMap {
   id: string;
   title: LText;
-  year: number | string;
+  /** Рік або підпис дати; можна двомовно: {"uk": "бл. 1910", "hu": "1910 körül"}. */
+  year: number | string | LText;
   author?: string;
   license: string;
   licenseUrl?: string;
   attribution: string;
   source: Source;
-  /** image: один скан з 4 кутами; xyz: тайли {z}/{x}/{y}. */
-  type: 'image' | 'xyz';
+  /** Окремі джерела частин мапи (наприклад, аркушів, з яких складено тайли). */
+  sources?: Source[];
+  /**
+   * image: один скан з 4 кутами; xyz: тайли {z}/{x}/{y} (повна адреса https:// або шлях у public/,
+   * напр. tiles/generalkarte/{z}/{x}/{y}.avif); geojson: векторний шар (url — шлях у data/, напр. water/…geojson).
+   */
+  type: 'image' | 'xyz' | 'geojson';
   url: string;
   /** Для image: 4 кути [NW, NE, SE, SW] як [lon, lat]. */
   coordinates?: [number, number][];
+  /** Для xyz: розмір тайла в пікселях (типово 256). */
+  tileSize?: number;
+  /** Для xyz: найменший і найбільший зум, для яких є тайли (ближче MapLibre збільшує тайли maxzoom). */
+  minzoom?: number;
+  maxzoom?: number;
+  /** Для xyz: межі покриття [захід, південь, схід, північ]; тайли поза ними не запитуються. */
+  bounds?: [number, number, number, number];
   periods?: string[];
+  /** Серія з data/map-series.json: аркуші однієї серії показуються разом. */
+  series?: string;
+  /** Номер аркуша в серії, напр. "14:XX". */
+  sheet?: string;
+  /** Georeference Annotation (шлях у public/): оригінал у повній якості з сервера IIIF бібліотеки через Allmaps. */
+  georef?: string;
+}
+
+/** Серія старих мап (data/map-series.json). */
+export interface MapSeries {
+  id: string;
+  title: LText;
+  note?: LText;
+  /** Зведена мозаїка аркушів для дрібних масштабів: видно до зуму maxzoom, далі — окремі аркуші. */
+  overview?: { url: string; coordinates: [number, number][]; maxzoom: number };
+  /** Georeference Annotation усіх аркушів серії (шлях у public/) для показу оригіналів через Allmaps. */
+  georef?: string;
+  /** Короткий підпис джерел для кнопки «i» мапи (замість підписів кожного аркуша). */
+  attribution?: string;
+  /** Показувати оригінали IIIF у відтінках сірого (аркуші різних бібліотек мають різний тон паперу). */
+  grayscale?: boolean;
+  /** Від якого зуму показувати оригінали IIIF; дрібніше видно лише мозаїку (менше запитів на телефоні). */
+  allmapsMinzoom?: number;
 }
 
 /** Властивості об'єкта в data/routes/*.geojson */

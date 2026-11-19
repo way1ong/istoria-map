@@ -1,7 +1,8 @@
-import type { Basemap, HistEvent, HistMap, Period, Place, RouteCollection, Tool, ToolsDoc } from './types';
+import type { Basemap, HistEvent, HistMap, MapSeries, Period, Place, RouteCollection, Tool, ToolsDoc } from './types';
 import periodsJson from '../data/periods.json';
 import basemapsJson from '../data/basemaps.json';
 import toolsJson from '../data/tools.json';
+import mapSeriesJson from '../data/map-series.json';
 
 const placeModules = import.meta.glob<Place>('../data/places/*.json', {
   eager: true,
@@ -19,6 +20,13 @@ const routeModules = import.meta.glob<RouteCollection>('../data/routes/*.geojson
   eager: true,
   import: 'default',
 });
+/** Векторні накладки (data/water/*.geojson) — вантажаться ліниво, лише коли їх вибрано в списку мап. */
+const vectorModules = import.meta.glob<GeoJSON.FeatureCollection>('../data/water/*.geojson', { import: 'default' });
+export function loadVectorOverlay(url: string): Promise<GeoJSON.FeatureCollection> {
+  const key = `../data/${url}`;
+  const load = vectorModules[key];
+  return load ? load() : Promise.reject(new Error(`немає файлу data/${url}`));
+}
 const toolModules = import.meta.glob<Tool>('../data/tools/*.json', {
   eager: true,
   import: 'default',
@@ -42,6 +50,14 @@ export const basemaps: Basemap[] = (basemapsJson as { basemaps: Basemap[] }).bas
   .map((b) => ({ ...b, tiles: b.tiles?.map((u) => u.replace('{key}', encodeURIComponent(b.key ?? ''))) }));
 export const events: HistEvent[] = Object.values(eventModules);
 export const histMaps: HistMap[] = Object.values(mapModules);
+export const mapSeries: MapSeries[] = (mapSeriesJson as unknown as { series: MapSeries[] }).series;
+export function seriesById(id: string | undefined): MapSeries | undefined {
+  return id ? mapSeries.find((s) => s.id === id) : undefined;
+}
+/** Усі аркуші серії, до якої належить мапа (або лише вона сама). */
+export function seriesSheets(m: HistMap): HistMap[] {
+  return m.series ? histMaps.filter((x) => x.series === m.series) : [m];
+}
 export const routes: RouteCollection[] = Object.values(routeModules);
 export const toolsDoc: ToolsDoc = toolsJson as ToolsDoc;
 const catIndex = (id: string) => toolsDoc.categories.findIndex((c) => c.id === id);

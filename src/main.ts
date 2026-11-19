@@ -3,14 +3,18 @@ import './style.css';
 import { basemaps, histMaps, placeById, places, routesForEvent } from './data';
 import { mountAnimation, type AnimHandle } from './anim';
 import { mountCompare, type CompareHandle } from './compare';
-import { formatYear, getLang, lt, setLang, t } from './i18n';
+import { getLang, lt, setLang, t } from './i18n';
 import { createMap, type MapController } from './map';
+import { mapChoices } from './oldmap';
+import { chronologyPage } from './pages/chronology';
 import { eventPage, historyIndex, periodPage, placePage } from './pages/history';
 import { landscapePage, mountLandscape } from './pages/landscape';
 import { toolPage, toolsIndex } from './pages/tools';
 import { navigate, onRoute, type Route } from './router';
 import { placeCard } from './ui/render';
 import { currentYear, renderTimeline } from './ui/timeline';
+import { filterActive, mountMapTools, TYPES } from './ui/maptools';
+import type { PlaceFilter } from './map';
 
 setLang(getLang());
 
@@ -30,6 +34,7 @@ app.innerHTML = `
         <select id="overlay-select"></select>
         <input id="overlay-opacity" type="range" min="0" max="1" step="0.05" value="0.7" />
       </div>
+      <div id="filter-pill" class="filter-pill" hidden><button type="button" class="fp-open"></button><button type="button" class="fp-clear">×</button></div>
       <div id="borders-note" class="borders-note" hidden></div>
       <div id="timeline" class="timeline"></div>
       <div id="sheet" class="sheet"><div class="handle"></div><button class="close" aria-label="close">×</button><div id="sheet-body"></div></div>
@@ -45,6 +50,19 @@ let mapCtl: MapController | null = null;
 let route: Route = { page: 'map' };
 let anims: AnimHandle[] = [];
 let cmp: CompareHandle | null = null;
+let tools: ReturnType<typeof mountMapTools> | null = null;
+let lastFilter: PlaceFilter = { types: [], vanishedOnly: false };
+
+/** Підпис на мапі, коли діє фільтр типів: нагадування і кнопка скинути. */
+function renderFilterPill(f: PlaceFilter = lastFilter) {
+  lastFilter = f;
+  const pill = $('filter-pill');
+  pill.hidden = !filterActive(f);
+  const names = TYPES.filter((x) => f.types.includes(x)).map((x) => t(`tp_${x}` as Parameters<typeof t>[0]));
+  if (f.vanishedOnly) names.push(t('filterVanished'));
+  pill.querySelector<HTMLButtonElement>('.fp-open')!.textContent = `${t('filterActive')}: ${names.join(', ')}`;
+  pill.querySelector<HTMLButtonElement>('.fp-clear')!.ariaLabel = t('filterAll');
+}
 
 function ensureMap(): MapController {
   if (!mapCtl) {
@@ -52,10 +70,16 @@ function ensureMap(): MapController {
       navigate(id ? `#/map?${state.period ? `period=${state.period}&` : ''}place=${id}` : `#/map${state.period ? `?period=${state.period}` : ''}`);
     });
     mapCtl.setOverlayOpacity(0.7);
+    tools = mountMapTools(mapCtl, $('view-map'), {
+      getPeriod: () => state.period,
+      openPlace: (id, keep) => navigate(`#/map?${keep && state.period ? `period=${state.period}&` : ''}place=${id}`),
+      openEvent: (id) => navigate(`#/event/${id}`),
+      onFilter: (f) => renderFilterPill(f),
+    });
     mapCtl.onBorders((info) => {
       const el = $('borders-note');
       el.hidden = !info;
-      if (info) el.innerHTML = `${t('bordersNote').replace('{year}', formatYear(info.year))} <span class="attr">${info.attribution}</span>`;
+      if (info) el.innerHTML = `${(info.year < 0 ? t('bordersNoteBce') : t('bordersNote')).replace('{year}', String(Math.abs(info.year)))} <span class="attr">${info.attribution}</span>`;
     });
   }
   return mapCtl;
@@ -78,6 +102,7 @@ function goSection(s: Section) {
 
 function renderChrome() {
   $('title').textContent = t('appTitle');
+  document.title = t('appTitle');
   const cur = currentSection();
   for (const s of SECTIONS) {
     const b = $(`tab-${s}`);
@@ -104,8 +129,9 @@ function renderOverlayCtl(ctl: MapController) {
   const visible = histMaps.filter((m) => !state.period || !m.periods || m.periods.includes(state.period));
   box.hidden = visible.length === 0;
   const prev = sel.value;
-  sel.innerHTML = `<option value="">${t('noOverlay')}</option>` + visible.map((m) => `<option value="${m.id}">${lt(m.title)} (${m.year})</option>`).join('');
-  sel.value = visible.some((m) => m.id === prev) ? prev : '';
+  const choices = mapChoices(visible, prev);
+  sel.innerHTML = `<option value="">${t('noOverlay')}</option>` + choices.map((c) => `<option value="${c.value}">${c.label}</option>`).join('');
+  sel.value = choices.some((c) => c.value === prev) ? prev : '';
   ctl.setOverlay(sel.value || null);
 }
 
@@ -117,6 +143,8 @@ function renderMapView() {
   ctl.setYear(state.period ? currentYear() : null);
   renderBasemapCtl(ctl);
   renderOverlayCtl(ctl);
+  renderFilterPill();
+  tools?.refresh();
   const sheet = $('sheet');
   const place = state.place ? placeById(state.place) : undefined;
   if (place) {
@@ -163,6 +191,7 @@ function render() {
   switch (route.page) {
     case 'history': page.innerHTML = historyIndex(); break;
     case 'period': page.innerHTML = periodPage(route.id); break;
+    case 'chronology': page.innerHTML = chronologyPage(route.period); break;
     case 'place': page.innerHTML = placePage(route.id); break;
     case 'tools': page.innerHTML = toolsIndex(route.audience); break;
     case 'tool': page.innerHTML = toolPage(route.id); break;
@@ -187,6 +216,8 @@ document.querySelectorAll<HTMLButtonElement>('.lang button').forEach((b) => {
     render();
   };
 });
+$('filter-pill').querySelector<HTMLButtonElement>('.fp-clear')!.onclick = () => tools?.clearFilter();
+$('filter-pill').querySelector<HTMLButtonElement>('.fp-open')!.onclick = () => tools?.open('filter');
 $('sheet').querySelector<HTMLButtonElement>('.close')!.onclick = () => navigate(`#/map${state.period ? `?period=${state.period}` : ''}`);
 $<HTMLSelectElement>('overlay-select').onchange = (e) => mapCtl?.setOverlay((e.target as HTMLSelectElement).value || null);
 $<HTMLInputElement>('overlay-opacity').oninput = (e) => mapCtl?.setOverlayOpacity(Number((e.target as HTMLInputElement).value));

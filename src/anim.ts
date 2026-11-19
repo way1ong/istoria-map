@@ -1,6 +1,6 @@
 import { Map as MLMap, type GeoJSONSource, type LngLatBoundsLike } from 'maplibre-gl';
 import type { Feature, FeatureCollection } from 'geojson';
-import { getLang, lt, t } from './i18n';
+import { formatYear, getLang, lt, t } from './i18n';
 import type { RouteCollection, RouteProps } from './types';
 
 const STYLE_URL = 'https://tiles.openfreemap.org/styles/liberty';
@@ -26,7 +26,7 @@ export function parseDate(s: string): number {
 function formatTime(ms: number, detail: 'year' | 'day' | 'minute'): string {
   const d = new Date(ms);
   const y = d.getUTCFullYear();
-  const yr = y < 0 ? `${-y} ${t('bce')}` : String(y);
+  const yr = formatYear(y);
   if (detail === 'year') return yr;
   const dd = String(d.getUTCDate()).padStart(2, '0');
   const mm = String(d.getUTCMonth() + 1).padStart(2, '0');

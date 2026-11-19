@@ -1,0 +1,23 @@
+{
+  "id": "lipszky-1806-water",
+  "title": {
+    "uk": "Болота й водойми за мапою Ліпскі 1806 (автоматичне оцифрування)",
+    "hu": "Mocsarak és vizek a Lipszky-térkép (1806) alapján (automatikus digitalizálás)"
+  },
+  "year": "1806",
+  "author": "За мапою Lipszky János; оцифровано автоматично в цьому проєкті",
+  "license": "CC BY-NC-SA 3.0 (похідне від сканів David Rumsey Map Collection); оригінал 1806 р. у суспільному надбанні",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+  "attribution": "Болота й водойми за мапою Ліпскі 1806 (автоматичне оцифрування); скани David Rumsey Map Collection (CC BY-NC-SA 3.0)",
+  "source": {
+    "title": "Wikimedia Commons: Category:Mappa Generalis Regni Hungariae (David Rumsey Historical Map Collection); оригінали — IIIF David Rumsey",
+    "url": "https://commons.wikimedia.org/wiki/Category:Mappa_Generalis_Regni_Hungariae_(David_Rumsey_Historical_Map_Collection)",
+    "note": "Векторний шар (data/water/lipszky-1806.geojson): ділянки, позначені на мапі 1806 року горизонтальним штрихуванням (болота — «Paludes», а також озера), знайдено автоматично на плитках 1/4 роздільності й перераховано в координати тією ж прив'язкою, що й накладку мапи Ліпскі. Межі приблизні (сотні метрів); частину боліт пропущено там, де штрихування перебите лісом, підписами чи межами комітатів; озера Балатон і Фертő виділено уривками. Лише ділянки, що заходять у сучасну Угорщину. Старі русла річок цим шаром не показано — їх видно на самій накладці мапи 1806 року."
+  },
+  "type": "geojson",
+  "url": "water/lipszky-1806.geojson",
+  "periods": [
+    "habsburg-18",
+    "long-19"
+  ]
+}

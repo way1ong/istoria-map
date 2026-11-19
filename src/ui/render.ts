@@ -1,6 +1,6 @@
 import { marked } from 'marked';
 import { periodById } from '../data';
-import { formatYear, lt, t } from '../i18n';
+import { formatYear, getLang, lt, t } from '../i18n';
 import type { CoordsPrecision, DatePrecision, HistEvent, Photo, Place, Source } from '../types';
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
@@ -131,7 +131,8 @@ function fmtDate(s: string): string {
   const m = /^(-?)(\d{1,4})(.*)$/.exec(s);
   if (!m) return s;
   const year = String(Number(m[2]));
-  return m[1] ? `${year}${m[3]} ${t('bce')}` : `${year}${m[3]}`;
+  if (!m[1]) return `${year}${m[3]}`;
+  return getLang() === 'hu' ? `${t('bce')} ${year}${m[3]}` : `${year}${m[3]} ${t('bce')}`;
 }
 
 export function eventDate(e: HistEvent): string {

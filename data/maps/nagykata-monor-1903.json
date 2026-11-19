@@ -1,0 +1,43 @@
+{
+  "id": "nagykata-monor-1903",
+  "title": {
+    "uk": "Spezialkarte 1:75 000, аркуш 16:XXI «Nagykáta und Monor»",
+    "hu": "Spezialkarte 1:75 000, 16:XXI Nagykáta und Monor"
+  },
+  "year": "1903, виправлено до 1912",
+  "author": "K. u. k. Militärgeographisches Institut, Відень",
+  "license": "Суспільне надбання (скан IOS, Реґенсбурґ)",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "attribution": "Spezialkarte der österreichisch-ungarischen Monarchie, 16:XXI. Leibniz-Institut für Ost- und Südosteuropaforschung (IOS), Реґенсбурґ, суспільне надбання, через Wikimedia Commons",
+  "source": {
+    "title": "Wikimedia Commons: File:Nagykáta BV043869627.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Nagykáta_BV043869627.jpg",
+    "note": "Аркуш 16:XXI; на полях: «1903», «Nach Zeichenschlüssel 1894», «Teilweise berichtigt bis 2. V. 1912». Межі за підписами сітки: 37°–37°30′ сх. від Ферро, 47°15′–47°30′ пн. ш.; у Гринвіч переведено зсувом 17°40′. Скан узято з мініатюри Commons шириною 3840 px. Кути внутрішньої рамки (де починається зображення карти) знайдено автоматично за межею зображення й звірено на збільшених вирізках (точність 1–3 px, тобто 10–35 м); аркуш вирівняно в прямокутник 2800 × 2085 px і переведено у відтінки сірого з вирівняною яскравістю, щоб аркуші серії складалися в однорідну мозаїку. Поправку зсуву старої геодезичної основи (0,000965° на захід і 0,00074° на південь) перенесено з двох сусідніх аркушів 14:XX і 15:XX, де її виміряно за церквами; для цього аркуша окремо її не вимірювали."
+  },
+  "type": "image",
+  "url": "maps/nagykata-monor-1903.jpg",
+  "coordinates": [
+    [
+      19.332368,
+      47.49926
+    ],
+    [
+      19.832368,
+      47.49926
+    ],
+    [
+      19.832368,
+      47.24926
+    ],
+    [
+      19.332368,
+      47.24926
+    ]
+  ],
+  "periods": [
+    "long-19",
+    "interwar-ww2"
+  ],
+  "series": "spezialkarte-75000",
+  "sheet": "16:XXI"
+}
