@@ -160,6 +160,38 @@ if (existsSync(seriesPath)) {
 }
 const sheetsSeen = new Map();
 
+// Тайли XYZ старих мап: межі й зуми; для тайлів у public/ — чи є кожен тайл, який MapLibre запитає в межах bounds
+// (MapLibre бере x від floor(X(захід)) до ceil(X(схід)) не включно, так само y), бо відсутній тайл — це помилка 404.
+const mercX = (lon, z) => ((lon + 180) / 360) * 2 ** z;
+const mercY = (lat, z) => ((1 - Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI) / 360)) / Math.PI) / 2) * 2 ** z;
+function checkTiles(file, m) {
+  if (typeof m.url !== 'string' || !['{z}', '{x}', '{y}'].every((k) => m.url.includes(k))) return err(file, 'url тайлів має містити {z}, {x} і {y}');
+  if (m.tileSize !== undefined && ![256, 512].includes(m.tileSize)) err(file, 'tileSize: 256 або 512');
+  for (const k of ['minzoom', 'maxzoom'])
+    if (m[k] !== undefined && (!Number.isInteger(m[k]) || m[k] < 0 || m[k] > 22)) err(file, `${k}: ціле число 0–22`);
+  if (m.minzoom !== undefined && m.maxzoom !== undefined && m.minzoom > m.maxzoom) err(file, 'minzoom більший за maxzoom');
+  const b = m.bounds;
+  if (b !== undefined) {
+    if (!Array.isArray(b) || b.length !== 4 || b.some((n) => typeof n !== 'number')) return err(file, 'bounds: [захід, південь, схід, північ]');
+    checkCoords(file, [b[0], b[1]], 'bounds (південний захід)', MAP_REGION);
+    checkCoords(file, [b[2], b[3]], 'bounds (північний схід)', MAP_REGION);
+    if (b[0] >= b[2] || b[1] >= b[3]) return err(file, 'bounds: захід має бути менший за схід, південь — за північ');
+  }
+  if (/^https?:\/\//.test(m.url)) return;
+  if (!b || m.minzoom === undefined || m.maxzoom === undefined) return err(file, 'для тайлів у public/ потрібні bounds, minzoom і maxzoom');
+  let missing = 0, first = '';
+  for (let z = m.minzoom; z <= m.maxzoom; z++) {
+    const x0 = Math.floor(mercX(b[0], z)), x1 = Math.ceil(mercX(b[2], z));
+    const y0 = Math.floor(mercY(b[3], z)), y1 = Math.ceil(mercY(b[1], z));
+    for (let x = x0; x < x1; x++)
+      for (let y = y0; y < y1; y++) {
+        const rel = m.url.replace('{z}', z).replace('{x}', x).replace('{y}', y);
+        if (!existsSync(join(root, '..', 'public', rel))) { missing++; first ||= rel; }
+      }
+  }
+  if (missing) err(file, `немає ${missing} тайлів у public/ (перший: ${first})`);
+}
+
 // maps
 for (const { file, path, name } of listJson('maps')) {
   const m = readJson(path);
@@ -203,6 +235,10 @@ for (const { file, path, name } of listJson('maps')) {
     if (!Array.isArray(m.coordinates) || m.coordinates.length !== 4) err(file, 'coordinates: потрібно 4 кути [NW, NE, SE, SW]');
     else m.coordinates.forEach((c, i) => checkCoords(file, c, `coordinates[${i}]`, MAP_REGION));
   }
+  if (m.type === 'xyz') checkTiles(file, m);
+  if (!(typeof m.year === 'number' || (typeof m.year === 'string' && m.year.trim()) || isLText(m.year)))
+    err(file, 'year: число, рядок або {"uk": …, "hu": …}');
+  if (m.sources !== undefined) checkSources(file, m.sources);
   if (m.periods) m.periods.forEach((id) => periodIds.has(id) || err(file, `невідомий період "${id}"`));
   if (!m.source || typeof m.source.title !== 'string') err(file, 'source.title відсутній');
 }

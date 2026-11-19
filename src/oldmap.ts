@@ -79,7 +79,15 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
     const id = `${opts.prefix}-0`;
     if (m.type === 'image' && m.coordinates) addImage(id, m.url, m.coordinates);
     else {
-      map.addSource(id, { type: 'raster', tiles: [m.url], tileSize: 256, attribution: m.attribution });
+      // Шлях у public/ -> повна адреса. Не через new URL(m.url, …): він закодував би дужки {z}/{x}/{y}.
+      const url = /^https?:\/\//.test(m.url) ? m.url : new URL('.', document.baseURI).href + m.url;
+      map.addSource(id, {
+        type: 'raster', tiles: [url], tileSize: m.tileSize ?? 256, attribution: m.attribution,
+        ...(m.minzoom !== undefined ? { minzoom: m.minzoom } : {}),
+        ...(m.maxzoom !== undefined ? { maxzoom: m.maxzoom } : {}),
+        // поза межами тайлів немає: без bounds MapLibre запитував би їх і отримував 404
+        ...(m.bounds ? { bounds: m.bounds } : {}),
+      });
       map.addLayer({ id, type: 'raster', source: id, paint: { 'raster-opacity': opacity } }, before());
       ids.push(id);
     }
@@ -173,7 +181,7 @@ export function mapChoices(list: HistMap[], selectedId?: string | null): { value
   const seen = new Set<string>();
   for (const m of list) {
     const s = seriesById(m.series);
-    if (!s) { out.push({ value: m.id, label: `${lt(m.title)} (${m.year})` }); continue; }
+    if (!s) { out.push({ value: m.id, label: `${lt(m.title)} (${typeof m.year === 'object' ? lt(m.year) : m.year})` }); continue; }
     if (seen.has(s.id)) continue;
     seen.add(s.id);
     const members = list.filter((x) => x.series === s.id);
@@ -186,8 +194,15 @@ export function mapChoices(list: HistMap[], selectedId?: string | null): { value
 
 const GOD: [number, number] = [19.14, 47.7];
 function sheetCovers(s: HistMap, p: [number, number]): boolean {
-  const c = s.coordinates;
-  return !!c && p[0] > c[0][0] && p[0] < c[1][0] && p[1] < c[0][1] && p[1] > c[2][1];
+  const b = mapBox(s);
+  return !!b && p[0] > b[0] && p[0] < b[2] && p[1] > b[1] && p[1] < b[3];
+}
+
+/** Межі мапи [захід, південь, схід, північ]: з кутів зображення або з bounds тайлів. */
+export function mapBox(m: HistMap): [number, number, number, number] | null {
+  const c = m.coordinates;
+  if (c && c.length === 4) return [Math.min(c[0][0], c[3][0]), Math.min(c[2][1], c[3][1]), Math.max(c[1][0], c[2][0]), Math.max(c[0][1], c[1][1])];
+  return m.bounds ?? null;
 }
 
 /** Чи покриває мапа (або будь-який аркуш її серії) точку. */

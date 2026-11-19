@@ -84,17 +84,30 @@ export interface HistEvent {
 export interface HistMap {
   id: string;
   title: LText;
-  year: number | string;
+  /** Рік або підпис дати; можна двомовно: {"uk": "бл. 1910", "hu": "1910 körül"}. */
+  year: number | string | LText;
   author?: string;
   license: string;
   licenseUrl?: string;
   attribution: string;
   source: Source;
-  /** image: один скан з 4 кутами; xyz: тайли {z}/{x}/{y}; geojson: векторний шар (url — шлях у data/, напр. water/…geojson). */
+  /** Окремі джерела частин мапи (наприклад, аркушів, з яких складено тайли). */
+  sources?: Source[];
+  /**
+   * image: один скан з 4 кутами; xyz: тайли {z}/{x}/{y} (повна адреса https:// або шлях у public/,
+   * напр. tiles/generalkarte/{z}/{x}/{y}.avif); geojson: векторний шар (url — шлях у data/, напр. water/…geojson).
+   */
   type: 'image' | 'xyz' | 'geojson';
   url: string;
   /** Для image: 4 кути [NW, NE, SE, SW] як [lon, lat]. */
   coordinates?: [number, number][];
+  /** Для xyz: розмір тайла в пікселях (типово 256). */
+  tileSize?: number;
+  /** Для xyz: найменший і найбільший зум, для яких є тайли (ближче MapLibre збільшує тайли maxzoom). */
+  minzoom?: number;
+  maxzoom?: number;
+  /** Для xyz: межі покриття [захід, південь, схід, північ]; тайли поза ними не запитуються. */
+  bounds?: [number, number, number, number];
   periods?: string[];
   /** Серія з data/map-series.json: аркуші однієї серії показуються разом. */
   series?: string;

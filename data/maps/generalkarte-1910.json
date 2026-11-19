@@ -1,0 +1,157 @@
+{
+  "id": "generalkarte-1910",
+  "title": {
+    "uk": "Generalkarte 1:200 000: уся Угорщина",
+    "hu": "Generalkarte 1:200 000: egész Magyarország"
+  },
+  "year": {
+    "uk": "бл. 1910",
+    "hu": "1910 körül"
+  },
+  "author": "K. u. k. Militärgeographisches Institut, Відень",
+  "license": "Суспільне надбання",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "attribution": "Generalkarte von Mitteleuropa 1:200 000, K. u. k. Militärgeographisches Institut; скани László Zentai (ELTE) через Wikimedia Commons (суспільне надбання)",
+  "source": {
+    "title": "Wikimedia Commons: Category:3rd Military Mapping Survey of Austria-Hungary",
+    "url": "https://commons.wikimedia.org/wiki/Category:3rd_Military_Mapping_Survey_of_Austria-Hungary",
+    "note": "24 аркуші генеральної мапи Середньої Європи 1:200 000 (Generalkarte von Mitteleuropa) на всю сучасну Угорщину й прикордоння: аркуші 34°–41° сх. д. від Ферро і 46°–49° пн. ш., кожен 1° × 1° (окремі файли — у полі sources). Мапу 1:200 000 виведено з третьої військової зйомки, яку в Угорщині провели 1872–1884 роках (hu.wikipedia: https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_harmadik_katonai_felm%C3%A9r%C3%A9se). Скани László Zentai (ELTE) узято з Wikimedia Commons (суспільне надбання, датування «circa 1910» за описом файлів); первісне джерело lazarus.elte.hu 2026-11-19 не відповідало. Рамку кожного аркуша знайдено автоматично на копіях 3840 px, зображення перераховано в проєкцію вебмапи по 8 точках (кути й середини сторін); довготи від Ферро переведено в Гринвіч за зсувом 17°40′; поправку зсуву старої геодезичної основи (−0,000965°, −0,00074°) взято таку саму, як для Spezialkarte, окремо для цих аркушів не перевірену. Показується тайлами 512 px (AVIF) на зумах 5–11; зум 11 (~26 м на піксель) близький до роздільності сканів, ближче тайли лише збільшуються. Тайли нарізає scripts/georef/generalkarte/gktiles.py."
+  },
+  "sources": [
+    {
+      "title": "Wikimedia Commons: File:Leutschau - 38-49.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Leutschau_-_38-49.jpg",
+      "note": "Аркуш 38°49° (середина аркуша за описом файлу), межі 37°30′–38°30′ сх. д. від Ферро, 48°30′–49°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Kassa - 39-49.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kassa_-_39-49.jpg",
+      "note": "Аркуш 39°49° (середина аркуша за описом файлу), межі 38°30′–39°30′ сх. д. від Ферро, 48°30′–49°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Ungvár - 40-49.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Ungv%C3%A1r_-_40-49.jpg",
+      "note": "Аркуш 40°49° (середина аркуша за описом файлу), межі 39°30′–40°30′ сх. д. від Ферро, 48°30′–49°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Wien - 34-48.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Wien_-_34-48.jpg",
+      "note": "Аркуш 34°48° (середина аркуша за описом файлу), межі 33°30′–34°30′ сх. д. від Ферро, 47°30′–48°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Pressburg - 35-48.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Pressburg_-_35-48.jpg",
+      "note": "Аркуш 35°48° (середина аркуша за описом файлу), межі 34°30′–35°30′ сх. д. від Ферро, 47°30′–48°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Komárom - 36-48.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kom%C3%A1rom_-_36-48.jpg",
+      "note": "Аркуш 36°48° (середина аркуша за описом файлу), межі 35°30′–36°30′ сх. д. від Ферро, 47°30′–48°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Budapest - Losoncz - 37-48.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Budapest_-_Losoncz_-_37-48.jpg",
+      "note": "Аркуш 37°48° (середина аркуша за описом файлу), межі 36°30′–37°30′ сх. д. від Ферро, 47°30′–48°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Miskolcz - 38-48.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Miskolcz_-_38-48.jpg",
+      "note": "Аркуш 38°48° (середина аркуша за описом файлу), межі 37°30′–38°30′ сх. д. від Ферро, 47°30′–48°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Debrecen - 39-48.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Debrecen_-_39-48.jpg",
+      "note": "Аркуш 39°48° (середина аркуша за описом файлу), межі 38°30′–39°30′ сх. д. від Ферро, 47°30′–48°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Munkács - 40-48.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Munk%C3%A1cs_-_40-48.jpg",
+      "note": "Аркуш 40°48° (середина аркуша за описом файлу), межі 39°30′–40°30′ сх. д. від Ферро, 47°30′–48°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Szatmár-Németi - 41-48.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Szatm%C3%A1r-N%C3%A9meti_-_41-48.jpg",
+      "note": "Аркуш 41°48° (середина аркуша за описом файлу), межі 40°30′–41°30′ сх. д. від Ферро, 47°30′–48°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Szombathely - 34-47.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Szombathely_-_34-47.jpg",
+      "note": "Аркуш 34°47° (середина аркуша за описом файлу), межі 33°30′–34°30′ сх. д. від Ферро, 46°30′–47°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Pápa - 35-47.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:P%C3%A1pa_-_35-47.jpg",
+      "note": "Аркуш 35°47° (середина аркуша за описом файлу), межі 34°30′–35°30′ сх. д. від Ферро, 46°30′–47°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Székesfehérvár - 36-47.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sz%C3%A9kesfeh%C3%A9rv%C3%A1r_-_36-47.jpg",
+      "note": "Аркуш 36°47° (середина аркуша за описом файлу), межі 35°30′–36°30′ сх. д. від Ферро, 46°30′–47°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Budapest - Kecskemét - 37-47.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Budapest_-_Kecskem%C3%A9t_-_37-47.jpg",
+      "note": "Аркуш 37°47° (середина аркуша за описом файлу), межі 36°30′–37°30′ сх. д. від Ферро, 46°30′–47°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Szolnok - 38-47.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Szolnok_-_38-47.jpg",
+      "note": "Аркуш 38°47° (середина аркуша за описом файлу), межі 37°30′–38°30′ сх. д. від Ферро, 46°30′–47°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Békéscsaba - 39-47.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:B%C3%A9k%C3%A9scsaba_-_39-47.jpg",
+      "note": "Аркуш 39°47° (середина аркуша за описом файлу), межі 38°30′–39°30′ сх. д. від Ферро, 46°30′–47°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Nagyvárad - 40-47.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Nagyv%C3%A1rad_-_40-47.jpg",
+      "note": "Аркуш 40°47° (середина аркуша за описом файлу), межі 39°30′–40°30′ сх. д. від Ферро, 46°30′–47°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Zagreb - 34-46.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Zagreb_-_34-46.jpg",
+      "note": "Аркуш 34°46° (середина аркуша за описом файлу), межі 33°30′–34°30′ сх. д. від Ферро, 45°30′–46°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Nagykanizsa - 35-46.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Nagykanizsa_-_35-46.jpg",
+      "note": "Аркуш 35°46° (середина аркуша за описом файлу), межі 34°30′–35°30′ сх. д. від Ферро, 45°30′–46°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Pécs - 36-46.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:P%C3%A9cs_-_36-46.jpg",
+      "note": "Аркуш 36°46° (середина аркуша за описом файлу), межі 35°30′–36°30′ сх. д. від Ферро, 45°30′–46°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Szabadka - 37-46.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Szabadka_-_37-46.jpg",
+      "note": "Аркуш 37°46° (середина аркуша за описом файлу), межі 36°30′–37°30′ сх. д. від Ферро, 45°30′–46°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Szeged - 38-46.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Szeged_-_38-46.jpg",
+      "note": "Аркуш 38°46° (середина аркуша за описом файлу), межі 37°30′–38°30′ сх. д. від Ферро, 45°30′–46°30′ пн. ш."
+    },
+    {
+      "title": "Wikimedia Commons: File:Temesvár - 39-46.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Temesv%C3%A1r_-_39-46.jpg",
+      "note": "Аркуш 39°46° (середина аркуша за описом файлу), межі 38°30′–39°30′ сх. д. від Ферро, 45°30′–46°30′ пн. ш."
+    }
+  ],
+  "type": "xyz",
+  "url": "tiles/generalkarte/{z}/{x}/{y}.avif",
+  "tileSize": 512,
+  "minzoom": 5,
+  "maxzoom": 11,
+  "bounds": [
+    15.832368,
+    45.49926,
+    23.832368,
+    49.49926
+  ],
+  "periods": [
+    "long-19",
+    "interwar-ww2"
+  ]
+}

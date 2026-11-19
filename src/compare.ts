@@ -2,7 +2,7 @@ import { Map as MLMap, Marker, type LngLatLike, type StyleSpecification } from '
 import { basemapStyle, getPreferredBasemap, localizeBasemapLabels, setPreferredBasemap } from './basemap';
 import { basemaps, histMaps, periodById, places } from './data';
 import { lt, t } from './i18n';
-import { addOldMap, mapChoices, mapCovers } from './oldmap';
+import { addOldMap, mapBox, mapChoices, mapCovers } from './oldmap';
 import { CMP_DOT_RADIUS, DOT_STROKE } from './markers';
 import type { Place } from './types';
 
@@ -47,10 +47,13 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   const [topEl, botEl] = [...container.querySelectorAll<HTMLElement>('.cmp-map-el')];
   // Стартуємо від Göd; якщо мапа (чи її серія аркушів) його не покриває, беремо центр мапи.
   const god: [number, number] = [19.14, 47.7];
-  const center: LngLatLike = !hm?.coordinates || mapCovers(hm, god) ? god : [(hm.coordinates[0][0] + hm.coordinates[2][0]) / 2, (hm.coordinates[0][1] + hm.coordinates[2][1]) / 2];
-  // Для мап на всю країну стартуємо з оглядового масштабу, для аркушів околиць — з детального
-  const span = hm?.coordinates ? hm.coordinates[1][0] - hm.coordinates[0][0] : 0;
-  const common = { center, zoom: span > 2 ? 9 : 12, attributionControl: { compact: true } as const, pitchWithRotate: false, dragRotate: false, maxPitch: 0 };
+  const box = hm ? mapBox(hm) : null;
+  const center: LngLatLike = !hm || !box || mapCovers(hm, god) ? god : [(box[0] + box[2]) / 2, (box[1] + box[3]) / 2];
+  // Для мап на всю країну стартуємо з оглядового масштабу, для аркушів околиць — з детального;
+  // для тайлів — з найдетальнішого зуму, який для них є
+  const span = box ? box[2] - box[0] : 0;
+  const zoom = hm?.maxzoom !== undefined ? Math.min(hm.maxzoom, 12) : span > 2 ? 9 : 12;
+  const common = { center, zoom, attributionControl: { compact: true } as const, pitchWithRotate: false, dragRotate: false, maxPitch: 0 };
   const top = new MLMap({ container: topEl, style: EMPTY_STYLE, ...common });
   const bot = new MLMap({ container: botEl, style: basemapStyle(base), ...common });
   const period = opts.periodId ?? null;
