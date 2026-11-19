@@ -19,6 +19,9 @@ function hasWebGL2(): boolean {
   return webgl2;
 }
 
+/** Події Allmaps (напр. 'imageinfofetcherror') MapLibre не знає в типах, тому підписуємося через цей інтерфейс. */
+type Evented = { on(type: string, fn: (e: { layerId?: string }) => void): unknown; off(type: string, fn: (e: { layerId?: string }) => void): unknown };
+
 /** Мінімальний інтерфейс шару Allmaps, яким ми користуємося. */
 interface WarpedLayer extends CustomLayerInterface {
   setOpacity(v: number): void;
@@ -39,6 +42,7 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
   let opacity = opts.opacity;
   let removed = false;
   let warped: WarpedLayer | null = null;
+  let onImageError: ((e: { layerId?: string }) => void) | null = null;
   const before = () => (opts.beforeId && map.getLayer(opts.beforeId) ? opts.beforeId : undefined);
   const addImage = (id: string, url: string, coordinates: [number, number][], zoom: { minzoom?: number; maxzoom?: number } = {}) => {
     map.addSource(id, { type: 'image', url, coordinates: coordinates as Corners });
@@ -129,6 +133,14 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
           if (series.allmapsMinzoom) map.setLayerZoomRange(ovId, 0, series.allmapsMinzoom);
           else map.setLayoutProperty(ovId, 'visibility', 'none');
         } else if (!series && map.getLayer(imgId)) map.setLayoutProperty(imgId, 'visibility', 'none');
+        // Allmaps не повторює невдалий запит info.json аркуша (збій сервера бібліотеки): тоді повертаємо
+        // запасне зображення на всі масштаби, щоб на місці аркуша не лишилося дірки.
+        onImageError = (e: { layerId?: string }) => {
+          if (removed || e.layerId !== layerId) return;
+          if (map.getLayer(ovId)) { map.setLayerZoomRange(ovId, 0, 24); map.setLayoutProperty(ovId, 'visibility', 'visible'); }
+          if (map.getLayer(imgId)) map.setLayoutProperty(imgId, 'visibility', 'visible');
+        };
+        (map as unknown as Evented).on('imageinfofetcherror', onImageError);
       });
     }).catch((e) => console.warn('Allmaps:', e));
   }
@@ -143,6 +155,7 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
     remove() {
       removed = true;
       if (update) map.off('moveend', update);
+      if (onImageError) (map as unknown as Evented).off('imageinfofetcherror', onImageError);
       if (warped && map.getLayer(warped.id)) map.removeLayer(warped.id);
       warped = null;
       for (const id of ids) {

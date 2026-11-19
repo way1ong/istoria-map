@@ -3,3 +3,4 @@ dist/
 .DS_Store
 *.log
 scripts/georef/hu/work/
+scripts/georef/generalkarte/work/

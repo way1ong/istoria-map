@@ -37,6 +37,40 @@
       "attribution": "Spezialkarte 1:75 000, K. u. k. Militärgeographisches Institut; скани IOS Regensburg (суспільне надбання) та NYPL (CC0)",
       "grayscale": true,
       "allmapsMinzoom": 9
+    },
+    {
+      "id": "generalkarte-200000",
+      "title": {
+        "uk": "Generalkarte 1:200 000: уся Угорщина (бл. 1910)",
+        "hu": "Generalkarte 1:200 000: egész Magyarország (1910 körül)"
+      },
+      "note": {
+        "uk": "24 аркуші генеральної мапи Середньої Європи 1:200 000 (Generalkarte von Mitteleuropa) на всю сучасну Угорщину й прикордоння: аркуші 34°–41° сх. д. від Ферро і 46°–49° пн. ш., кожен 1° × 1°. Мапу 1:200 000 виведено з третьої військової зйомки, яку в Угорщині провели 1872–1884 роках (hu.wikipedia: https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_harmadik_katonai_felm%C3%A9r%C3%A9se). Скани László Zentai (ELTE) узято з Wikimedia Commons (суспільне надбання, датування «circa 1910» за описом файлів); первісне джерело lazarus.elte.hu 2026-11-19 не відповідало. Рамку кожного аркуша знайдено автоматично, зображення перераховано в проєкцію вебмапи по 8 точках; поправку зсуву старої геодезичної основи взято таку саму, як для Spezialkarte. Дрібніше за зум 8,5 видно зведену мозаїку, ближче — окремі аркуші в полі зору.",
+        "hu": "A közép-európai általános térkép (Generalkarte von Mitteleuropa, 1:200 000) 24 szelvénye a mai Magyarország egészére és a határvidékre: Ferrótól keletre 34°–41°, északi szélesség 46°–49°, egyenként 1° × 1°. Az 1:200 000-es térkép a harmadik katonai felmérésből készült, amelyet Magyarországon 1872–1884 között végeztek (hu.wikipedia: https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_harmadik_katonai_felm%C3%A9r%C3%A9se). Zentai László (ELTE) szkennelései a Wikimedia Commonsból származnak (közkincs, a fájlleírások szerint „circa 1910”); az eredeti forrás, a lazarus.elte.hu 2026. november 19-én nem volt elérhető. A szelvények keretét automatikusan határoztuk meg, a képeket 8 pont alapján a webtérkép vetületébe számítottuk át; a régi geodéziai alap eltolásának javítása ugyanaz, mint a Spezialkarténál. 8,5-ös nagyításig az összesítő mozaik látszik, közelebb a látótérbe eső szelvények."
+      },
+      "overview": {
+        "url": "maps/generalkarte-overview.webp",
+        "coordinates": [
+          [
+            15.832368,
+            49.49926
+          ],
+          [
+            23.832368,
+            49.49926
+          ],
+          [
+            23.832368,
+            45.49926
+          ],
+          [
+            15.832368,
+            45.49926
+          ]
+        ],
+        "maxzoom": 8.5
+      },
+      "attribution": "Generalkarte von Mitteleuropa 1:200 000, K. u. k. Militärgeographisches Institut; скани László Zentai (ELTE) через Wikimedia Commons (суспільне надбання)"
     }
   ]
 }

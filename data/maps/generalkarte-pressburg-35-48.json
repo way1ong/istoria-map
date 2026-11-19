@@ -1,0 +1,43 @@
+{
+  "id": "generalkarte-pressburg-35-48",
+  "title": {
+    "uk": "Generalkarte 1:200 000, аркуш 35°48° «Pressburg»",
+    "hu": "Generalkarte 1:200 000, 35°48° Pressburg"
+  },
+  "year": "бл. 1910",
+  "author": "K. u. k. Militärgeographisches Institut, Відень",
+  "license": "Суспільне надбання",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "attribution": "Generalkarte von Mitteleuropa 1:200 000, аркуш Pressburg. Скан: László Zentai, ELTE, через Wikimedia Commons",
+  "source": {
+    "title": "Wikimedia Commons: File:Pressburg - 35-48.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Pressburg_-_35-48.jpg",
+    "note": "Аркуш 35-48: середина аркуша на 48° пн. ш. і 35° сх. д. від Ферро (опис файлу на Commons), межі 34°30′–35°30′ сх. від Ферро, 47°30′–48°30′ пн. ш.; датування «circa 1910» і джерело скану (lazarus.elte.hu, László Zentai) — за описом файлу. Довготи від Ферро переведено в Гринвіч за зсувом 17°40′. Рамку (внутрішню лінію смуги поділок) знайдено автоматично на копії 3840 px, по 8 точках (кути й середини сторін) зображення перераховано в проєкцію Web Mercator точно на межах аркуша; застосовано ту саму поправку зсуву старої геодезичної основи, що й для Spezialkarte (−0,000965°, −0,00074°), окремо для цього аркуша не перевірену."
+  },
+  "type": "image",
+  "url": "maps/generalkarte/35-48.webp",
+  "coordinates": [
+    [
+      16.832368,
+      48.49926
+    ],
+    [
+      17.832368,
+      48.49926
+    ],
+    [
+      17.832368,
+      47.49926
+    ],
+    [
+      16.832368,
+      47.49926
+    ]
+  ],
+  "periods": [
+    "long-19",
+    "interwar-ww2"
+  ],
+  "series": "generalkarte-200000",
+  "sheet": "35°48°"
+}

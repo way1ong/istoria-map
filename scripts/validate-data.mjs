@@ -32,6 +32,8 @@ function checkSources(file, sources) {
 // Місця й події мають лежати в околиці Göd; маршрути (походи, вали) можуть виходити далеко за неї, але лишатися в Карпатському басейні.
 // Межі проєкту: уся Угорщина в сучасних кордонах із запасом на прикордонні об'єкти (Komárno, Štúrovo, Subotica тощо).
 const REGION = [15.5, 23.5, 45.3, 49.2];
+// Аркуші старих мап можуть виходити за межі області місць (крайні аркуші 1:200 000 сягають 49,5° пн. ш. і 23,8° сх. д.).
+const MAP_REGION = [14, 25, 44, 50.5];
 // Для анімацій (рухи військ тощо) межі ширші.
 const WIDE = [12, 28, 43, 52];
 function checkCoords(file, coords, label = 'coords', box = REGION) {
@@ -136,7 +138,7 @@ if (existsSync(seriesPath)) {
       const o = s.overview;
       if (typeof o.url !== 'string' || !existsSync(join(root, '..', 'public', o.url))) err(f, `overview.url: немає файлу public/${o.url}`);
       if (!Array.isArray(o.coordinates) || o.coordinates.length !== 4) err(f, 'overview.coordinates: потрібно 4 кути [NW, NE, SE, SW]');
-      else o.coordinates.forEach((c, k) => checkCoords(f, c, `overview.coordinates[${k}]`));
+      else o.coordinates.forEach((c, k) => checkCoords(f, c, `overview.coordinates[${k}]`, MAP_REGION));
       if (typeof o.maxzoom !== 'number' || o.maxzoom < 0 || o.maxzoom > 22) err(f, 'overview.maxzoom: число 0–22');
     }
     if (s.georef !== undefined && (typeof s.georef !== 'string' || !existsSync(join(root, '..', 'public', s.georef)))) err(f, `georef: немає файлу public/${s.georef}`);
@@ -151,7 +153,7 @@ if (existsSync(seriesPath)) {
         const feats = it?.body?.features;
         if (!src || typeof src.id !== 'string' || !/^https:\/\//.test(src.id) || !(src.width > 0) || !(src.height > 0)) err(f, `georef item ${k}: target.source (id, width, height)`);
         if (!Array.isArray(feats) || feats.length < 3) err(f, `georef item ${k}: потрібно щонайменше 3 опорні точки`);
-        else feats.forEach((p) => checkCoords(f, p?.geometry?.coordinates, `georef item ${k}`));
+        else feats.forEach((p) => checkCoords(f, p?.geometry?.coordinates, `georef item ${k}`, MAP_REGION));
       });
     }
   });
@@ -199,7 +201,7 @@ for (const { file, path, name } of listJson('maps')) {
   }
   if (m.type === 'image') {
     if (!Array.isArray(m.coordinates) || m.coordinates.length !== 4) err(file, 'coordinates: потрібно 4 кути [NW, NE, SE, SW]');
-    else m.coordinates.forEach((c, i) => checkCoords(file, c, `coordinates[${i}]`));
+    else m.coordinates.forEach((c, i) => checkCoords(file, c, `coordinates[${i}]`, MAP_REGION));
   }
   if (m.periods) m.periods.forEach((id) => periodIds.has(id) || err(file, `невідомий період "${id}"`));
   if (!m.source || typeof m.source.title !== 'string') err(file, 'source.title відсутній');
