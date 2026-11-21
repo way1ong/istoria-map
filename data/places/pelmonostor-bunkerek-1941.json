@@ -1,0 +1,81 @@
+{
+  "id": "pelmonostor-bunkerek-1941",
+  "name": {
+    "uk": "Бункери довкола Pélmonostor (Beli Manastir), 1941",
+    "hu": "Bunkerek Pélmonostor környékén, 1941"
+  },
+  "type": "military",
+  "coords": [
+    18.596176,
+    45.765736
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "interwar-ww2"
+  ],
+  "summary": {
+    "uk": "Світлини 1941 року з архіву Fortepan: бетонні бункери біля залізничної станції Pélmonostor (нині Beli Manastir у Хорватії) і на дорогах до Baranyavár і Baranyaszentistván.",
+    "hu": "1941-es Fortepan-fényképek: betonbunkerek a pélmonostori (ma Beli Manastir, Horvátország) vasútállomás mellett, valamint a Baranyavár és Baranyaszentistván felé vezető utak mentén."
+  },
+  "description": {
+    "uk": "Підписи світлин Тівадара Ліссака (Lissák Tivadar) в архіві Fortepan: «бункер біля залізничної станції», «бункер, що охороняв дорогу на Baranyavár», «бункер біля Pélmonostor при шосе на Baranyaszentistván». Хто і коли збудував ці бункери, у підписах не сказано. Координати — станція Beli Manastir, приблизні.",
+    "hu": "Lissák Tivadar Fortepan-fényképeinek feliratai: „bunker a vasútállomás mellett”, „a Baranyavár felé vezető utat őrző bunker”, „bunker Pélmonostor közelében a Baranyaszentistván felé vezető országút mellett”. Hogy ki és mikor építette őket, a feliratokból nem derül ki. A koordináták a Beli Manastir-i vasútállomást jelölik, közelítőek."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Bunker_a_vas%C3%BAt%C3%A1llom%C3%A1s_mellett._Fortepan_71554.jpg",
+      "author": "FOTO:FORTEPAN / Lissák Tivadar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File%3ABunker_a_vas%C3%BAt%C3%A1llom%C3%A1s_mellett._Fortepan_71554.jpg",
+      "caption": {
+        "uk": "Бункер біля залізничної станції, 1941",
+        "hu": "Bunker a vasútállomás mellett, 1941"
+      }
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Bunker_P%C3%A9lmonostor_k%C3%B6zel%C3%A9ben_a_Baranyaszentistv%C3%A1n_fel%C3%A9_vezet%C5%91_orsz%C3%A1g%C3%BAt_mellett._Fortepan_71485.jpg",
+      "author": "FOTO:FORTEPAN / Lissák Tivadar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File%3ABunker_P%C3%A9lmonostor_k%C3%B6zel%C3%A9ben_a_Baranyaszentistv%C3%A1n_fel%C3%A9_vezet%C5%91_orsz%C3%A1g%C3%BAt_mellett._Fortepan_71485.jpg",
+      "caption": {
+        "uk": "Бункер при шосе на Baranyaszentistván, 1941",
+        "hu": "Bunker a Baranyaszentistván felé vezető országút mellett, 1941"
+      }
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/A_Baranyav%C3%A1r_fel%C3%A9_vezet%C5%91_utat_%C5%91rz%C5%91_bunker._Fortepan_71561.jpg",
+      "author": "FOTO:FORTEPAN / Lissák Tivadar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File%3AA_Baranyav%C3%A1r_fel%C3%A9_vezet%C5%91_utat_%C5%91rz%C5%91_bunker._Fortepan_71561.jpg",
+      "caption": {
+        "uk": "Бункер, що охороняв дорогу на Baranyavár, 1941",
+        "hu": "A Baranyavár felé vezető utat őrző bunker, 1941"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikimedia Commons: File:Bunker a vasútállomás mellett. Fortepan 71554.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3ABunker_a_vas%C3%BAt%C3%A1llom%C3%A1s_mellett._Fortepan_71554.jpg",
+      "note": "Fortepan 71554, 1941: «bunker a vasútállomás mellett», місце: Beli Manastir (CC BY-SA 3.0)."
+    },
+    {
+      "title": "Wikimedia Commons: File:A Baranyavár felé vezető utat őrző bunker. Fortepan 71561.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3AA_Baranyav%C3%A1r_fel%C3%A9_vezet%C5%91_utat_%C5%91rz%C5%91_bunker._Fortepan_71561.jpg",
+      "note": "Fortepan 71561, 1941: «a Baranyavár felé vezető utat őrző bunker» (CC BY-SA 3.0)."
+    },
+    {
+      "title": "Wikimedia Commons: File:Bunker Pélmonostor közelében a Baranyaszentistván felé vezető országút mellett. Fortepan 71485.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3ABunker_P%C3%A9lmonostor_k%C3%B6zel%C3%A9ben_a_Baranyaszentistv%C3%A1n_fel%C3%A9_vezet%C5%91_orsz%C3%A1g%C3%BAt_mellett._Fortepan_71485.jpg",
+      "note": "Fortepan 71485, 1941: «bunker Pélmonostor közelében a Baranyaszentistván felé vezető országút mellett» (CC BY-SA 3.0)."
+    },
+    {
+      "title": "OpenStreetMap (Nominatim): станція Beli Manastir",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=%C5%BDeljezni%C4%8Dki+kolodvor+Beli+Manastir",
+      "note": "Координати станції (ODbL)."
+    }
+  ]
+}

@@ -119,6 +119,8 @@ export interface HistMap {
   georef?: string;
   /** Для geojson: умовні знаки за properties.kind об'єктів (без legend шар малюється як водойми — заливкою й контуром). */
   legend?: LegendItem[];
+  /** Поки накладку вибрано, на мапі лишаються мітки лише цих типів місць (напр. ["military"] для укріплень). */
+  placeTypes?: PlaceType[];
 }
 
 /** Умовний знак векторної накладки: як малювати об'єкти з properties.kind, що писати в легенді й у підказці. */
@@ -193,8 +195,11 @@ export interface Basemap {
   title: LText;
   /** Коротка назва для кнопок. */
   short?: LText;
-  /** style: готовий стиль MapLibre; raster: тайли зображень; relief: тіньовий рельєф з тайлів висот (tiles) і сучасна вода з векторних тайлів (vector). */
-  type: 'style' | 'raster' | 'relief';
+  /**
+   * style: готовий стиль MapLibre; raster: тайли зображень; relief: тіньовий рельєф з тайлів висот (tiles) і сучасна вода
+   * з векторних тайлів (vector); offline: мапа Угорщини з пристрою (пакет панелі «Без інтернету», url — стиль у public/).
+   */
+  type: 'style' | 'raster' | 'relief' | 'offline';
   url?: string;
   tiles?: string[];
   /** Для relief: кодування тайлів висот. */

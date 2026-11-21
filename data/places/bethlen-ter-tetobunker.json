@@ -1,0 +1,55 @@
+{
+  "id": "bethlen-ter-tetobunker",
+  "name": {
+    "uk": "Бетонний бункер на даху будинку Bethlen Gábor tér, 3",
+    "hu": "Betonbunker a Bethlen Gábor tér 3. tetején"
+  },
+  "type": "military",
+  "coords": [
+    19.079128,
+    47.504248
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "На даху семиповерхового будинку 1929 року в Будапешті (VII район) під час Другої світової війни збудували бетонний бункер на кілька осіб, звідки можна було тримати під вогнем довколишні квартали. Бункер зберігся.",
+    "hu": "A budapesti Bethlen Gábor tér 3. alatti, 1929-ben épült hétemeletes bérház tetején a második világháború alatt néhány férőhelyes betonbunkert építettek, ahonnan a környező városrészt tűz alatt tarthatták. A bunker ma is megvan."
+  },
+  "description": {
+    "uk": "Будинок з двома дворами звів 1929 року архітектор Дежьо Райнер (Reiner Dezső). За угорською Вікіпедією, із сімома поверхами й приблизно сотнею квартир це найбільший багатоквартирний будинок Будапешта, збудований до війни; його добре видно навіть з гори Gellért-hegy. Під час Другої світової війни на даху збудували бетонний бункер на кілька осіб, з якого можна було тримати під вогнем усе довколишнє місто. Бункер зберігся; на фото 2018 року — бетонна споруда з дверима посеред даху.",
+    "hu": "A kétudvaros bérházat Reiner Dezső tervezte, 1929-ben épült. A magyar Wikipédia szerint hét emeletével és mintegy száz lakásával a főváros legnagyobb háború előtt épült bérháza, amely a Gellért-hegyről is jól látszik. A második világháború alatt a tetején néhány férőhelyes betonbunkert építettek, ahonnan az egész környező várost tűz alatt tarthatták. A bunker ma is megvan; a 2018-as fényképen ajtós betonépítmény a tető közepén."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Bethlen_t%C3%A9r_3%2C_bunker%2C_2018_Erzs%C3%A9betv%C3%A1ros.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File%3ABethlen_t%C3%A9r_3%2C_bunker%2C_2018_Erzs%C3%A9betv%C3%A1ros.jpg",
+      "caption": {
+        "uk": "Бункер на даху, 2018",
+        "hu": "A tetőn álló bunker, 2018"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bethlen Gábor tér – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Bethlen_G%C3%A1bor_t%C3%A9r",
+      "note": "Розділ «Bethlen Gábor tér 3.»: житловий будинок Reiner Dezső (1929), сім поверхів, близько ста квартир; бетонний бункер на даху з часів Другої світової, зберігся."
+    },
+    {
+      "title": "Wikimedia Commons: File:Bethlen tér 3, bunker, 2018 Erzsébetváros.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3ABethlen_t%C3%A9r_3%2C_bunker%2C_2018_Erzs%C3%A9betv%C3%A1ros.jpg",
+      "note": "Фото бункера на даху (6 травня 2018, CC BY-SA 3.0)."
+    },
+    {
+      "title": "OpenStreetMap (Nominatim): Bethlen Gábor tér 3, Budapest",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Bethlen+G%C3%A1bor+t%C3%A9r+3%2C+Budapest",
+      "note": "Координати будинку (ODbL)."
+    }
+  ]
+}

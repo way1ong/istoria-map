@@ -1,0 +1,50 @@
+{
+  "id": "sziklakorhaz",
+  "name": {
+    "uk": "Шпиталь у скелі (Sziklakórház) під Будайською фортецею",
+    "hu": "Sziklakórház a Budai Vár alatt"
+  },
+  "type": "military",
+  "coords": [
+    19.031517,
+    47.500717
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Запасний хірургічний шпиталь для поранених під час авіанальотів, облаштований у печерах під Замковим пагорбом Буди в 1939–1944 роках; відкрився в лютому 1944 року. Нині — музей «Sziklakórház Atombunker Múzeum».",
+    "hu": "A légitámadások sebesültjei számára a budai Várhegy barlangjaiban 1939–1944 között kialakított sebészeti szükségkórház, amely 1944 februárjában nyílt meg. Ma a Sziklakórház Atombunker Múzeum."
+  },
+  "description": {
+    "uk": "Під Замковим пагорбом (Várhegy) на глибині близько 12 м тягнеться система печер і підвалів завдовжки 3,3 км (Budavári labirintus). За угорською Вікіпедією, напередодні Другої світової війни ходи укріпили, а мер Будапешта Károly Szendy наказав облаштувати під фортецею хірургічний шпиталь на випадок авіанальотів. Його будували в 1939–1944 роках, пристосовуючи до печер: печера ставала палатою, хід — коридором. У лютому 1944 року відкрився «Székesfőváros Sebészeti Szükségkórháza» (запасний хірургічний шпиталь столиці); він приймав і цивільних, і військових, поранених під час авіанальотів. Шпиталь використовували й під час революції 1956 року, у роки холодної війни це був засекречений об'єкт LOSK 0101/1, а з 2008 року тут музей.",
+    "hu": "A Várhegy belsejében, mintegy 12 méter mélyen 3,3 km hosszú barlang- és pincerendszer (a Budavári labirintus) húzódik. A magyar Wikipédia szerint a második világháború előestéjén a járatokat megerősítették, Szendy Károly polgármester pedig elrendelte egy sebészeti szükségkórház építését a vár alatt. 1939 és 1944 között épült a barlangrendszerhez igazítva: a barlangteremből szoba, a járatból folyosó lett. 1944 februárjában nyílt meg a Székesfőváros Sebészeti Szükségkórháza, amely a légitámadásokban megsebesült polgári és katonai személyeket is ellátta. Az 1956-os forradalom idején is használták, a hidegháború alatt LOSK 0101/1 jelzéssel titkos objektum volt, 2008 óta múzeum."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Budapest._I._Lovas_%C3%BAt._4.-_Hospital_in_the_Rock_-_Secret_Military_Hospital_and_Nuclear_Bunker.JPG",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File%3ABudapest._I._Lovas_%C3%BAt._4.-_Hospital_in_the_Rock_-_Secret_Military_Hospital_and_Nuclear_Bunker.JPG",
+      "caption": {
+        "uk": "Вхід до музею на Lovas út, 2015",
+        "hu": "A múzeum bejárata a Lovas úton, 2015"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sziklakórház Atombunker Múzeum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sziklak%C3%B3rh%C3%A1z_Atombunker_M%C3%BAzeum",
+      "note": "Розділ «1939–1945»: будівництво 1939–1944, відкриття в лютому 1944, мер Szendy Károly; вступ: використання 1956 року, LOSK 0101/1, музей з 2008 року; координати."
+    },
+    {
+      "title": "Wikimedia Commons: File:Budapest. I. Lovas út. 4.- Hospital in the Rock - Secret Military Hospital and Nuclear Bunker.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File%3ABudapest._I._Lovas_%C3%BAt._4.-_Hospital_in_the_Rock_-_Secret_Military_Hospital_and_Nuclear_Bunker.JPG",
+      "note": "Фото входу (2015, CC BY-SA 3.0)."
+    }
+  ]
+}

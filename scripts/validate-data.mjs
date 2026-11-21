@@ -1,5 +1,5 @@
 // Перевірка файлів у data/. Запуск: node scripts/validate-data.mjs
-import { readdirSync, readFileSync, existsSync } from 'node:fs';
+import { readdirSync, readFileSync, existsSync, statSync } from 'node:fs';
 import { join, basename } from 'node:path';
 
 const root = new URL('../data/', import.meta.url).pathname;
@@ -251,6 +251,8 @@ for (const { file, path, name } of listJson('maps')) {
       for (const k of ['license', 'attribution']) if (typeof g?.[k] !== 'string' || !g[k].trim()) err(`data/${m.url}`, `${k} відсутній`);
     }
   } else if (m.legend !== undefined) err(file, 'legend буває лише в мап type: geojson');
+  if (m.placeTypes !== undefined && (!Array.isArray(m.placeTypes) || m.placeTypes.length === 0 || m.placeTypes.some((x) => !placeTypes.includes(x))))
+    err(file, `placeTypes має бути непорожнім масивом типів місць: ${placeTypes.join(', ')}`);
   if (m.type === 'image') {
     if (!Array.isArray(m.coordinates) || m.coordinates.length !== 4) err(file, 'coordinates: потрібно 4 кути [NW, NE, SE, SW]');
     else m.coordinates.forEach((c, i) => checkCoords(file, c, `coordinates[${i}]`, MAP_REGION));
@@ -269,14 +271,29 @@ if (bm) (bm.basemaps ?? []).forEach((b, i) => {
   const f = `data/basemaps.json[${i}]`;
   if (typeof b.id !== 'string') err(f, 'id відсутній');
   if (!isLText(b.title)) err(f, 'title.uk відсутній');
-  if (!['style', 'raster', 'relief'].includes(b.type)) err(f, 'type має бути style | raster | relief');
-  if (b.type === 'style' && typeof b.url !== 'string') err(f, 'url відсутній');
+  if (!['style', 'raster', 'relief', 'offline'].includes(b.type)) err(f, 'type має бути style | raster | relief | offline');
+  if ((b.type === 'style' || b.type === 'offline') && typeof b.url !== 'string') err(f, 'url відсутній');
+  if (b.type === 'offline' && !existsSync(join(root, '..', 'public', b.url ?? ''))) err(f, `немає файлу public/${b.url}`);
   if ((b.type === 'raster' || b.type === 'relief') && !Array.isArray(b.tiles)) err(f, 'tiles має бути масивом');
   if (b.type === 'relief' && b.encoding !== undefined && !['terrarium', 'mapbox'].includes(b.encoding)) err(f, 'encoding має бути terrarium | mapbox');
   if (b.type === 'relief' && b.vector !== undefined && typeof b.vector !== 'string') err(f, 'vector має бути адресою');
   if (b.key !== undefined && typeof b.key !== 'string') err(f, 'key має бути рядком');
   for (const k of ['attribution', 'license']) if (typeof b[k] !== 'string') err(f, `${k} відсутній`);
 });
+
+// мапа без інтернету: частини файлу PMTiles з public/offline/hungary.json на місці й потрібного розміру
+const offDesc = join(root, '..', 'public', 'offline', 'hungary.json');
+if (existsSync(offDesc)) {
+  const d = readJson(offDesc);
+  let sum = 0;
+  for (const p of d?.parts ?? []) {
+    const f = join(root, '..', 'public', p.url ?? '');
+    if (!existsSync(f)) err('public/offline/hungary.json', `немає частини ${p.url}`);
+    else if (statSync(f).size !== p.bytes) err('public/offline/hungary.json', `розмір ${p.url} не збігається з описом`);
+    sum += p.bytes ?? 0;
+  }
+  if (d && sum !== d.bytes) err('public/offline/hungary.json', 'сума розмірів частин не дорівнює bytes');
+}
 
 // routes
 const routesDir = join(root, 'routes');

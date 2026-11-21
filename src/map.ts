@@ -14,7 +14,8 @@ import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 
 setWorkerUrl(workerUrl);
 import { basemaps, histMaps, periodById, places } from './data';
-import { basemapStyle, getPreferredBasemap, localizeBasemapLabels, setPreferredBasemap } from './basemap';
+import { basemapStyle, chooseBasemap, localizeBasemapLabels, offlineBasemap, setPreferredBasemap } from './basemap';
+import { installed, offlineMapReady } from './offline';
 import { lt } from './i18n';
 import { colorFor, loadBorders, loadModern } from './borders';
 import { addOldMap, type OldMapHandle } from './oldmap';
@@ -39,12 +40,18 @@ export interface MapController {
   refreshLabels(): void;
   setBasemap(id: string): void;
   currentBasemap(): string;
+  /** Зникла чи з'явилася мережа, або мапу з пристрою завантажено чи видалено: перевибрати підкладку й накладку. */
+  networkChanged(): void;
+  /** Підкладку змінила сама мапа (стиль з інтернету не завантажився — узято мапу з пристрою). */
+  onBasemapChange(cb: () => void): void;
   /** Рік повзунка (null = усі періоди): перемикає шар історичних кордонів. */
   setYear(year: number | null): void;
   /** Викликається, коли змінюється рік або видимість шару кордонів (для підпису). */
   onBorders(cb: (info: { year: number; attribution: string } | null) => void): void;
   /** Фільтр місць за типом (порожній набір = усі типи) і «лише зниклі». */
   setPlaceFilter(f: PlaceFilter): void;
+  /** Типи місць, якими обмежує мітки вибрана накладка (поле placeTypes у data/maps), або null. */
+  overlayPlaceTypes(): PlaceType[] | null;
 }
 
 export interface PlaceFilter {
@@ -53,8 +60,10 @@ export interface PlaceFilter {
 }
 
 /** Чи проходить місце фільтр періоду й типу. */
-export function placeVisible(p: Place, periodId: string | null, f: PlaceFilter): boolean {
+export function placeVisible(p: Place, periodId: string | null, f: PlaceFilter, onlyTypes?: PlaceType[] | null): boolean {
   if (periodId && !p.periods.includes(periodId)) return false;
+  // накладка з полем placeTypes (напр. укріплення) лишає на мапі лише свої типи місць
+  if (onlyTypes?.length && !onlyTypes.includes(p.type)) return false;
   if (f.types.length && !f.types.includes(p.type)) return false;
   if (f.vanishedOnly && !p.vanished) return false;
   return true;
@@ -83,9 +92,9 @@ function spread(list: Place[]): Map<string, [number, number]> {
   return out;
 }
 
-function featureCollection(periodId: string | null, lang: string, filter: PlaceFilter, forceId: string | null) {
+function featureCollection(periodId: string | null, lang: string, filter: PlaceFilter, forceId: string | null, onlyTypes: PlaceType[] | null) {
   // вибране місце (з пошуку чи «Що поруч») показуємо навіть тоді, коли фільтр типу його ховає
-  const visible = places.filter((p) => p.id === forceId || placeVisible(p, periodId, filter));
+  const visible = places.filter((p) => p.id === forceId || placeVisible(p, periodId, filter, onlyTypes));
   const pos = spread(visible);
   return {
     type: 'FeatureCollection' as const,
@@ -101,6 +110,8 @@ function featureCollection(periodId: string | null, lang: string, filter: PlaceF
             label: lt(p.name),
             color: period?.color ?? '#6b7280',
             vanished: p.vanished ? 1 : 0,
+            // є фото — біля кружка значок фотоапарата
+            photo: p.photos?.length ? 1 : 0,
             lang,
           },
         };
@@ -108,8 +119,34 @@ function featureCollection(periodId: string | null, lang: string, filter: PlaceF
   };
 }
 
+/** Значок фотоапарата 32×32 (на екрані 16×16): білий кружок з темним контуром і фотоапаратом. */
+function cameraIcon(): ImageData {
+  const c = document.createElement('canvas');
+  c.width = c.height = 32;
+  const g = c.getContext('2d')!;
+  g.fillStyle = '#ffffff';
+  g.strokeStyle = '#1f2937';
+  g.lineWidth = 2;
+  g.beginPath(); g.arc(16, 16, 14, 0, Math.PI * 2); g.fill(); g.stroke();
+  g.fillStyle = '#1f2937';
+  g.beginPath();
+  if (typeof g.roundRect === 'function') g.roundRect(7, 11, 18, 12, 2.5); else g.rect(7, 11, 18, 12);
+  g.fill();
+  g.fillRect(12, 8.5, 8, 3.5);
+  g.fillStyle = '#ffffff';
+  g.beginPath(); g.arc(16, 17, 4, 0, Math.PI * 2); g.fill();
+  g.fillStyle = '#1f2937';
+  g.beginPath(); g.arc(16, 17, 2.2, 0, Math.PI * 2); g.fill();
+  return g.getImageData(0, 0, 32, 32);
+}
+
+/** Широкий екран (ПК): картка місця — панель праворуч, а не знизу. */
+export const isWide = () => matchMedia('(min-width: 900px)').matches;
+
 export function createMap(container: HTMLElement, onSelect: (id: string | null) => void): MapController {
-  let basemap = getPreferredBasemap();
+  let basemap = chooseBasemap();
+  // чи завантажився стиль поточної підкладки (для переходу на мапу з пристрою, якщо мережі насправді немає)
+  let styleOk = false;
   const map = new MLMap({
     container,
     style: basemapStyle(basemap),
@@ -153,7 +190,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       id: 'modern-line', type: 'line', source: MODERN_SRC, maxzoom: BORDERS_MAXZOOM,
       paint: { 'line-color': '#111827', 'line-width': ['case', ['==', ['get', 'id'], 'hungary'], 1.8, 1], 'line-dasharray': ['literal', [2, 2]], 'line-opacity': 0.8 },
     });
-    map.addSource(SRC, { type: 'geojson', data: featureCollection(currentPeriod, lang, placeFilter, selected) });
+    map.addSource(SRC, { type: 'geojson', data: featureCollection(currentPeriod, lang, placeFilter, selected, currentOverlay?.placeTypes ?? null) });
     map.addLayer({
       id: 'places-halo',
       type: 'circle',
@@ -172,6 +209,17 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
         'circle-stroke-width': DOT_STROKE,
       },
     });
+    // значок фотоапарата в правому верхньому куті кружка місця, у якого є фото
+    if (!map.hasImage('photo-badge')) map.addImage('photo-badge', cameraIcon(), { pixelRatio: 2 });
+    map.addLayer({
+      id: 'places-photo',
+      type: 'symbol',
+      source: SRC,
+      // у містах місць з фото багато: значки лише при наближенні
+      minzoom: 11,
+      filter: ['==', ['get', 'photo'], 1],
+      layout: { 'icon-image': 'photo-badge', 'icon-offset': [9, -9], 'icon-allow-overlap': true, 'icon-ignore-placement': true },
+    });
     map.addLayer({
       id: 'places-label',
       type: 'symbol',
@@ -189,7 +237,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       paint: { 'text-color': '#111827', 'text-halo-color': '#ffffff', 'text-halo-width': 1.5 },
     });
 
-    for (const layer of ['places-dot', 'places-halo']) {
+    for (const layer of ['places-dot', 'places-halo', 'places-photo']) {
       map.on('click', layer, (e: MapLayerMouseEvent) => {
         const f = e.features?.[0];
         if (f) onSelect(String(f.properties?.id));
@@ -200,16 +248,32 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   };
   map.on('load', addLayers);
   // Після зміни стилю підкладки шари місць і накладання треба додати знову
-  map.on('style.load', () => { localizeBasemapLabels(map, lang); addLayers(); applySelection(); if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); void applyBorders(); });
+  map.on('style.load', () => { styleOk = true; localizeBasemapLabels(map, lang); addLayers(); applySelection(); if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); void applyBorders(); });
+  // версія пакета мапи з пристрою, з якою завантажено стиль (після оновлення пакета стиль треба перечитати)
+  let offlineVersion: string | undefined = basemap.type === 'offline' ? installed('basemap')?.version : undefined;
+  const useStyle = (b: typeof basemap) => {
+    basemap = b;
+    styleOk = false;
+    offlineVersion = b.type === 'offline' ? installed('basemap')?.version : undefined;
+    map.setStyle(basemapStyle(b));
+  };
+  // Стиль підкладки не завантажився (браузер вважає, що мережа є, а її немає): беремо мапу з пристрою, якщо вона є.
+  let basemapCb: (() => void) | null = null;
+  map.on('error', (e) => {
+    // з власним обробником MapLibre сам помилок не пише — лишаємо їх у консолі, як було
+    console.error(e.error ?? e);
+    const off = offlineBasemap();
+    if (!styleOk && off && basemap.id !== off.id && offlineMapReady()) { useStyle(off); basemapCb?.(); }
+  });
   map.on('click', (e: MapMouseEvent) => {
     if (!map.getLayer('places-dot')) return;
-    const hits = map.queryRenderedFeatures(e.point, { layers: ['places-dot', 'places-halo'] });
+    const hits = map.queryRenderedFeatures(e.point, { layers: ['places-dot', 'places-halo', 'places-photo'] });
     if (hits.length === 0) onSelect(null);
   });
 
   const refresh = () => {
     const src = map.getSource(SRC) as GeoJSONSource | undefined;
-    src?.setData(featureCollection(currentPeriod, lang, placeFilter, selected));
+    src?.setData(featureCollection(currentPeriod, lang, placeFilter, selected, currentOverlay?.placeTypes ?? null));
   };
   const applySelection = () => {
     if (!map.getLayer('places-dot')) return;
@@ -217,6 +281,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     map.setPaintProperty('places-dot', 'circle-stroke-opacity', opacityExpr(selected));
     map.setPaintProperty('places-halo', 'circle-opacity', selected ? ['case', ['==', ['get', 'id'], selected], 0.35, 0.08] : 0.25);
     map.setPaintProperty('places-label', 'text-opacity', opacityExpr(selected));
+    map.setPaintProperty('places-photo', 'icon-opacity', opacityExpr(selected));
   };
 
   // Стара мапа поверх сучасної; аркуші серії — разом (див. src/oldmap.ts).
@@ -302,13 +367,16 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       placeFilter = f;
       if (map.getSource(SRC)) refresh();
     },
+    overlayPlaceTypes() { return currentOverlay?.placeTypes?.length ? currentOverlay.placeTypes : null; },
     flyTo(place) {
-      // Зсув угору, щоб мітку не закривала нижня картка.
-      map.flyTo({ center: place.coords, zoom: Math.max(map.getZoom(), 13), duration: 800, offset: [0, -120] });
+      // Зсув, щоб мітку не закривала картка: на телефоні вона знизу, на ПК — панель праворуч (400 px).
+      map.flyTo({ center: place.coords, zoom: Math.max(map.getZoom(), 13), duration: 800, offset: isWide() ? [-210, 0] : [0, -120] });
     },
     setOverlay(mapId) {
       const m = mapId ? histMaps.find((x) => x.id === mapId) ?? null : null;
+      const typesChanged = JSON.stringify(currentOverlay?.placeTypes ?? null) !== JSON.stringify(m?.placeTypes ?? null);
       currentOverlay = m;
+      if (typesChanged) whenReady(refresh);
       // та сама мапа чи серія вже показана — нічого не перебудовуємо (інакше Allmaps заново тягне плитки IIIF)
       whenReady(() => {
         if (keyOf(currentOverlay) === overlayKey && (overlay || !currentOverlay)) return;
@@ -333,10 +401,17 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     setBasemap(id) {
       const b = basemaps.find((x) => x.id === id);
       if (!b || b.id === basemap.id) return;
-      basemap = b;
       setPreferredBasemap(id);
-      map.setStyle(basemapStyle(b));
+      useStyle(b);
     },
     currentBasemap() { return basemap.id; },
+    onBasemapChange(cb) { basemapCb = cb; },
+    networkChanged() {
+      const b = chooseBasemap();
+      // мапу з пристрою оновили — стиль треба перечитати, навіть якщо підкладка та сама
+      if (b.id !== basemap.id || (b.type === 'offline' && installed('basemap')?.version !== offlineVersion)) { useStyle(b); return; }
+      // стара мапа з оригіналами IIIF без мережі показується запасними зображеннями (і навпаки)
+      if (currentOverlay && (currentOverlay.georef || currentOverlay.series)) whenReady(() => { if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); });
+    },
   };
 }

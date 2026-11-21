@@ -1,0 +1,49 @@
+{
+  "id": "manci-hid-legvedelmi-geppuska-1945",
+  "name": {
+    "uk": "Зенітна кулеметна позиція біля мосту Manci, 1945",
+    "hu": "Légvédelmi géppuskaállás a Manci hídnál, 1945"
+  },
+  "type": "military",
+  "coords": [
+    19.043669,
+    47.516805
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "interwar-ww2"
+  ],
+  "summary": {
+    "uk": "Позиція 12,7-мм зенітного кулемета ДШК зразка 1938 року біля дерев'яного пальового мосту між Будою й островом Margit, який Червона армія збудувала навесні 1945 року (попередника мосту Manci), на світлині 1945 року з архіву Fortepan.",
+    "hu": "Az 1938M DSK 12,7 mm-es légvédelmi géppuska állása a Buda és a Margit-sziget közötti, a Vörös Hadsereg által 1945 tavaszán épített fa cölöphídnál (a Manci híd elődjénél), egy 1945-ös Fortepan-fényképen."
+  },
+  "description": {
+    "uk": "Підпис світлини в архіві Fortepan: «Перший, пальовий варіант мосту Manci; ліворуч набережна Újlaki rakpart, праворуч спортивний басейн на острові Margit. Позиція 12,7-мм зенітного кулемета ДШК зразка 1938 року». За угорською Вікіпедією, після облоги Будапешта поруч з уламками підірваного мосту Margit Червона армія у квітні 1945 року збудувала дерев'яний пальовий міст; 11 січня 1946 року його знесла крига, а навесні 1946 року на його місці постав понтонний міст, який у народі прозвали Manci. Координати — за угорською Вікіпедією, для мосту загалом.",
+    "hu": "A Fortepan-fénykép felirata: „Manci híd első, cölöphíd változata, balra az Újlaki rakpart, jobbra a margitszigeti Sportuszoda. 1938M DSK 12,7 mm-es légvédelmi géppuska állás.” A magyar Wikipédia szerint Budapest ostroma után a Margit híd roncsai mellett a Vörös Hadsereg 1945 áprilisában fa cölöphidat épített, amelyet 1946. január 11-én elvitt a jégzajlás; helyén 1946 tavaszára pontonhíd épült, amelyet a köznyelv Mancinak nevezett el. A koordináták a magyar Wikipédia szerint a hidat jelölik."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Manci_h%C3%ADd_els%C5%91%2C_c%C3%B6l%C3%B6ph%C3%ADd_v%C3%A1ltozata%2C_balra_az_%C3%9Ajlaki_rakpart%2C_jobbra_a_margiszigeti_Sportuszoda._1938M_DSK_12%2C7_mm-es_l%C3%A9gv%C3%A9delmi_g%C3%A9ppuska_%C3%A1ll%C3%A1s._Fortepan_22257.jpg",
+      "author": "FOTO:FORTEPAN / Military Museum of Southern New England",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File%3AManci_h%C3%ADd_els%C5%91%2C_c%C3%B6l%C3%B6ph%C3%ADd_v%C3%A1ltozata%2C_balra_az_%C3%9Ajlaki_rakpart%2C_jobbra_a_margiszigeti_Sportuszoda._1938M_DSK_12%2C7_mm-es_l%C3%A9gv%C3%A9delmi_g%C3%A9ppuska_%C3%A1ll%C3%A1s._Fortepan_22257.jpg",
+      "caption": {
+        "uk": "Зенітний кулемет біля мосту Manci, 1945",
+        "hu": "Légvédelmi géppuska a Manci hídnál, 1945"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikimedia Commons: File:Manci híd első, cölöphíd változata, balra az Újlaki rakpart, jobbra a margiszigeti Sportuszoda. 1938M DSK 12,7 mm-es légvédelmi géppuska állás. Fortepan 22257.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3AManci_h%C3%ADd_els%C5%91%2C_c%C3%B6l%C3%B6ph%C3%ADd_v%C3%A1ltozata%2C_balra_az_%C3%9Ajlaki_rakpart%2C_jobbra_a_margiszigeti_Sportuszoda._1938M_DSK_12%2C7_mm-es_l%C3%A9gv%C3%A9delmi_g%C3%A9ppuska_%C3%A1ll%C3%A1s._Fortepan_22257.jpg",
+      "note": "Fortepan 22257, 1945: підпис світлини (CC BY-SA 3.0)."
+    },
+    {
+      "title": "Manci híd – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Manci_h%C3%ADd",
+      "note": "Квітень 1945: дерев'яний пальовий міст Червоної армії біля уламків мосту Margit; 11 січня 1946 року його знесла крига; навесні 1946 — понтонний міст Manci; координати."
+    }
+  ]
+}

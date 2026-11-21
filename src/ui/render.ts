@@ -85,6 +85,12 @@ export function sourcesList(sources: Source[]): string {
 // Показуємо стандартну мініатюру 960 px (як у статтях Вікіпедії); якщо її немає
 // (оригінал вужчий за 960 px), браузер підставляє оригінал з data-orig.
 const COMMONS_ORIG = /^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/([0-9a-f])\/([0-9a-f]{2})\/([^/?#]+)$/;
+/**
+ * Мініатюри вантажаться з CORS (crossorigin), щоб service worker міг зберегти їх для роботи без інтернету
+ * (сервер мініатюр це дозволяє). Якщо мініатюри немає, беремо оригінал уже без CORS.
+ */
+export const IMG_FALLBACK = "this.onerror=null;this.removeAttribute('crossorigin');this.src=this.dataset.orig";
+
 export function thumbUrl(url: string, width = 960): string {
   const m = COMMONS_ORIG.exec(url);
   if (!m) return url;
@@ -98,11 +104,17 @@ export function thumbUrl(url: string, width = 960): string {
   return `https://thumb.wikimedia.org/wikipedia/commons/thumb/${a}/${ab}/${name}/${file}`;
 }
 
-export function photos(list: Photo[] | undefined): string {
+/** Підпис фото для перегляду на весь екран: опис, автор, ліцензія. */
+const photoCredit = (p: Photo) => `${lt(p.caption) ? `${lt(p.caption)}. ` : ''}${t('photoBy')}: ${p.author}, ${t('license')}: ${p.license}`;
+/** Атрибути, за якими фото відкривається на весь екран (src/ui/lightbox.ts); group — фото однієї картки. */
+const lbAttrs = (p: Photo, group: string) =>
+  `data-lb="${esc(group)}" data-lb-cap="${esc(photoCredit(p))}" data-lb-src="${esc(p.source)}" tabindex="0" role="button"`;
+
+export function photos(list: Photo[] | undefined, group = 'page'): string {
   if (!list?.length) return '';
   return list
     .map(
-      (p) => `<figure><img src="${esc(thumbUrl(p.url))}" data-orig="${esc(p.url)}" onerror="this.onerror=null;this.src=this.dataset.orig" alt="${esc(lt(p.caption) || '')}" loading="lazy" />
+      (p) => `<figure><img crossorigin="anonymous" src="${esc(thumbUrl(p.url))}" data-orig="${esc(p.url)}" onerror="${IMG_FALLBACK}" alt="${esc(lt(p.caption) || '')}" loading="lazy" ${lbAttrs(p, group)} />
       <figcaption>${lt(p.caption) ? esc(lt(p.caption)) + '. ' : ''}${t('photoBy')}: ${esc(p.author)}, ${t('license')}: ${
         p.licenseUrl ? `<a href="${esc(p.licenseUrl)}" target="_blank" rel="noopener">${esc(p.license)}</a>` : esc(p.license)
       } (<a href="${esc(p.source)}" target="_blank" rel="noopener">${t('photoSource')}</a>)</figcaption></figure>`,
@@ -115,12 +127,18 @@ export function coordsLine(coords: [number, number], precision: CoordsPrecision)
   return `${t('coords')}: ${lat.toFixed(precision === 'exact' ? 5 : 3)}, ${lon.toFixed(precision === 'exact' ? 5 : 3)} (${precisionLabel(precision)})`;
 }
 
+/** Фото в картці на мапі: стрічка мініатюр, натискання відкриває фото на весь екран. */
+function photoStrip(list: Photo[], group: string): string {
+  return `<div class="ph-strip">${list.map((p) => `<img class="ph-thumb" crossorigin="anonymous" src="${esc(thumbUrl(p.url))}" data-orig="${esc(p.url)}" onerror="${IMG_FALLBACK}" alt="${esc(lt(p.caption) || '')}" loading="lazy" ${lbAttrs(p, group)} />`).join('')}</div>`;
+}
+
 export function placeCard(p: Place, full: boolean): string {
   return `
     <h2>${esc(lt(p.name))}</h2>
     <div class="meta">${p.vanished ? `<span class="badge badge-vanished">${t('vanished')}</span> ` : ''}${periodBadges(p.periods)}</div>
+    ${!full && p.photos?.length ? photoStrip(p.photos, `place-${p.id}`) : ''}
     <p>${esc(lt(p.summary))}</p>
-    ${full ? `<div class="prose">${md(lt(p.description))}</div>${photos(p.photos)}` : ''}
+    ${full ? `<div class="prose">${md(lt(p.description))}</div>${photos(p.photos, `place-${p.id}`)}` : ''}
     <p class="meta">${coordsLine(p.coords, p.coordsPrecision)}</p>
     ${full ? sourcesList(p.sources) : `<a class="btn" href="#/place/${p.id}">${t('openCard')}</a>`}
   `;
