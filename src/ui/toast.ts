@@ -1,8 +1,10 @@
 // Коротке повідомлення внизу екрана (мережа зникла чи з'явилася, є нова версія застосунку).
 let el: HTMLElement | null = null;
 let timer = 0;
+let seq = 0;
 
-export function toast(msg: string, opts: { action?: string; onAction?: () => void; ms?: number } = {}): void {
+/** Показує повідомлення; повертає його номер для hideToast. */
+export function toast(msg: string, opts: { action?: string; onAction?: () => void; ms?: number } = {}): number {
   if (!el) {
     el = document.createElement('div');
     el.className = 'toast';
@@ -35,4 +37,10 @@ export function toast(msg: string, opts: { action?: string; onAction?: () => voi
   // ms: 0 — висить, доки не закриють
   const ms = opts.ms ?? 4000;
   if (ms > 0) timer = window.setTimeout(() => { box.hidden = true; }, ms);
+  return ++seq;
+}
+
+/** Сховати повідомлення з цим номером, якщо його ще не замінило інше. */
+export function hideToast(id: number): void {
+  if (el && id === seq) { clearTimeout(timer); el.hidden = true; }
 }

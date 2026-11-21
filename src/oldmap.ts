@@ -35,6 +35,19 @@ interface WarpedLayer extends CustomLayerInterface {
 }
 
 /**
+ * Запас плиток Allmaps. Типово бібліотека наперед вантажить огляди (плитки низької роздільності) аркушів
+ * у межах 8 екранів довкола видимого, тримає їх у межах 16 екранів, разом до 50 площ екрана; для серії
+ * зі 122 аркушів це зайві десятки МБ пам'яті й відеопам'яті, а коли телефону бракує пам'яті, браузер
+ * забирає в сторінки графіку і мапа стає білою (src/glloss.ts). Тримаємо менший запас.
+ */
+const ALLMAPS_BUFFER = {
+  pruneViewportBufferRatio: 2,
+  overviewRequestViewportBufferRatio: 2,
+  overviewPruneViewportBufferRatio: 4,
+  maxTotalOverviewResolutionRatio: 10,
+};
+
+/**
  * Додає стару мапу на мапу MapLibre.
  * - Окрема мапа — одним шаром-зображенням.
  * - Аркуш серії (поле series) — разом з іншими аркушами серії: на дрібних масштабах зведена мозаїка,
@@ -74,6 +87,7 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
 
   let update: (() => void) | null = null;
   let onAreaMove: (() => void) | null = null;
+  let onRestored: (() => void) | null = null;
   const vectorIds: { id: string; prop: 'fill-opacity' | 'line-opacity' | 'circle-opacity' | 'circle-stroke-opacity'; k: number }[] = [];
   const clickLayers: string[] = [];
   let onClick: ((e: MapLayerMouseEvent) => void) | null = null;
@@ -204,18 +218,28 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
   }
 
   if (georef) {
-    // Бібліотеку вантажимо лише тоді, коли справді показуємо стару мапу.
-    void import('@allmaps/maplibre').then(({ WarpedMapLayer }) => {
-      if (removed) return;
-      const layerId = `${opts.prefix}-warped`;
-      const layer = new WarpedMapLayer({ layerId, ...(series?.grayscale ? { saturation: 0 } : {}) }) as unknown as WarpedLayer;
+    const layerId = `${opts.prefix}-warped`;
+    // Бібліотеку вантажимо лише тоді, коли справді показуємо стару мапу. Після втрати графіки шар додається
+    // знову (див. onRestored нижче); запасні шари й обробники налаштовуються лише раз (setupDone).
+    let setupDone = false;
+    const addWarped = () => import('@allmaps/maplibre').then(({ WarpedMapLayer }) => {
+      if (removed || map.getLayer(layerId)) return;
+      const layer = new WarpedMapLayer({ layerId, ...ALLMAPS_BUFFER, ...(series?.grayscale ? { saturation: 0 } : {}) }) as unknown as WarpedLayer;
+      // Allmaps рахує масштаб з розміру полотна: на схованій мапі (відкрито інший розділ) розмір нульовий,
+      // проєкція дає NaN і кидає помилку — тоді не малюємо
+      const draw = layer.render.bind(layer);
+      layer.render = (...args) => {
+        const c = map.getCanvas();
+        if (c.offsetWidth > 0 && c.offsetHeight > 0) draw(...args);
+      };
       map.addLayer(layer, before());
       // дрібніше за allmapsMinzoom шар прихований: MapLibre не викликає render, тож Allmaps нічого не вантажить
       if (series?.allmapsMinzoom) map.setLayerZoomRange(layerId, series.allmapsMinzoom, 24);
       warped = layer;
       layer.setOpacity(opacity);
       return layer.addGeoreferenceAnnotationByUrl(new URL(georef, document.baseURI).href).then(() => {
-        if (removed) return;
+        if (removed || setupDone) return;
+        setupDone = true;
         // Запасне зображення під оригіналами ховаємо там, де малює Allmaps: інакше при неповній
         // прозорості дві копії накладаються (трохи різна прив'язка дає «подвійне» зображення).
         const ovId = `${opts.prefix}-ov`, imgId = `${opts.prefix}-0`;
@@ -244,6 +268,17 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
         (map as unknown as Evented).on('imageinfofetcherror', onImageError);
       });
     }).catch((e) => console.warn('Allmaps:', e));
+    void addWarped();
+    // Після втрати графіки MapLibre знімає шар Allmaps (onRemove) і перебудовує стиль зі знімка вже без нього
+    // (власні шари WebGL відновити не може): коли стиль перечитано, додаємо шар знову.
+    onRestored = () => {
+      map.once('style.load', () => {
+        if (removed) return;
+        if (warped && !map.getLayer(warped.id)) warped = null;
+        void addWarped();
+      });
+    };
+    map.on('webglcontextrestored', onRestored);
   }
 
   return {
@@ -262,6 +297,7 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
       if (update) map.off('moveend', update);
       if (onAreaMove) map.off('moveend', onAreaMove);
       if (onImageError) (map as unknown as Evented).off('imageinfofetcherror', onImageError);
+      if (onRestored) map.off('webglcontextrestored', onRestored);
       if (warped && map.getLayer(warped.id)) map.removeLayer(warped.id);
       warped = null;
       if (onClick) for (const lid of clickLayers) {

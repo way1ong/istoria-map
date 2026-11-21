@@ -35,9 +35,49 @@ function saveAreas(list: SavedArea[]) {
   try { localStorage.setItem(LS, JSON.stringify(list)); } catch { /* без запам'ятовування */ }
 }
 
-/** Чи лежить видима частина мапи всередині однієї зі збережених ділянок (тоді запасні зображення не потрібні). */
+/**
+ * Чи вся видима частина мапи лежить у збережених ділянках (однією чи кількома сусідніми) — тоді запасні
+ * зображення не потрібні. Перевіряємо сіткою 5×5 точок.
+ */
 export function areaCovers(b: BBox): boolean {
-  return savedAreas().some((a) => b[0] >= a.bbox[0] && b[1] >= a.bbox[1] && b[2] <= a.bbox[2] && b[3] <= a.bbox[3]);
+  const areas = savedAreas();
+  if (!areas.length) return false;
+  for (let i = 0; i <= 4; i++) for (let j = 0; j <= 4; j++) {
+    const x = b[0] + ((b[2] - b[0]) * i) / 4, y = b[1] + ((b[3] - b[1]) * j) / 4;
+    if (!areas.some((a) => x >= a.bbox[0] && x <= a.bbox[2] && y >= a.bbox[1] && y <= a.bbox[3])) return false;
+  }
+  return true;
+}
+
+/** Межі збережених ділянок для показу на мапі (пунктирні прямокутники). */
+export function areasGeoJSON(): GeoJSON.FeatureCollection {
+  return {
+    type: 'FeatureCollection',
+    features: savedAreas().map((a) => ({
+      type: 'Feature' as const,
+      properties: { id: a.id },
+      geometry: { type: 'Polygon' as const, coordinates: [[[a.bbox[0], a.bbox[1]], [a.bbox[2], a.bbox[1]], [a.bbox[2], a.bbox[3]], [a.bbox[0], a.bbox[3]], [a.bbox[0], a.bbox[1]]]] },
+    })),
+  };
+}
+
+let storageP: Promise<number> | null = null;
+/** Скільки насправді займають усі збережені ділянки: кожен тайл рахується один раз, хоч би скільки ділянок його мали. */
+export function areasStorage(): Promise<number> {
+  if (!storageP) {
+    storageP = (async () => {
+      if (!offlineSupported() || !(await caches.has(IIIF_CACHE))) return 0;
+      const cache = await caches.open(IIIF_CACHE);
+      let sum = 0;
+      for (const r of await cache.keys()) {
+        const res = await cache.match(r);
+        const n = Number(res?.headers.get('content-length'));
+        sum += Number.isFinite(n) && n > 0 ? n : (await res?.blob())?.size ?? 0;
+      }
+      return sum;
+    })();
+  }
+  return storageP;
 }
 
 /** Ширина й висота ділянки в кілометрах. */
@@ -143,6 +183,9 @@ export interface AreaPlan {
   /** Скільки аркушів (зображень) зачіпає ділянка. */
   images: number;
   estBytes: number;
+  /** Тайлів, яких ще немає серед збережених (інші ділянки могли вже мати частину), і їхній приблизний розмір. */
+  newTiles: number;
+  newBytes: number;
 }
 
 /**
@@ -154,7 +197,8 @@ export async function planArea(bbox: BBox): Promise<AreaPlan> {
   const items = (await loadItems(cache)).filter((it) => it.bbox[0] < bbox[2] && it.bbox[2] > bbox[0] && it.bbox[1] < bbox[3] && it.bbox[3] > bbox[1]);
   const { Image } = await import('@allmaps/iiif-parser');
   const tiles = new Set<string>();
-  let estBytes = 0;
+  const have = new Set((await cache.keys()).map((r) => r.url));
+  let estBytes = 0, newBytes = 0, newTiles = 0;
   for (const it of items) {
     const image = Image.parse(await cachedJson(`${it.service}/info.json`, cache));
     // ділянка, обрізана межами аркуша, у пікселях скана (рамка аркуша — з опорних точок)
@@ -172,11 +216,13 @@ export async function planArea(bbox: BBox): Promise<AreaPlan> {
         const url = image.getImageUrl(image.getTileImageRequest(lv, c, r), { preferredFormats: ['webp', 'jpg'] });
         if (tiles.has(url)) continue;
         tiles.add(url);
-        estBytes += estTile(url, lv.scaleFactor);
+        const est = estTile(url, lv.scaleFactor);
+        estBytes += est;
+        if (!have.has(url)) { newTiles++; newBytes += est; }
       }
     }
   }
-  return { bbox, tiles: [...tiles], images: items.length, estBytes };
+  return { bbox, tiles: [...tiles], images: items.length, estBytes, newTiles, newBytes };
 }
 
 const listUrl = (id: string) => siteUrl(`offline/areas/${id}.json`);
@@ -230,6 +276,7 @@ export async function downloadArea(plan: AreaPlan, label?: string): Promise<Down
     for (const u of plan.tiles) bytes += (await (await cache.match(u, { ignoreVary: true }))?.blob())?.size ?? 0;
     const area: SavedArea = { id, bbox: plan.bbox, label, placeId: nearestPlace(plan.bbox)?.id, bytes, tiles: plan.tiles.length, date: new Date().toISOString().slice(0, 10) };
     saveAreas([...savedAreas(), area]);
+    storageP = null;
     return 'ok';
   } catch (e) {
     return failureKind(e);
@@ -242,6 +289,7 @@ export async function downloadArea(plan: AreaPlan, label?: string): Promise<Down
 export async function deleteArea(id: string): Promise<void> {
   const rest = savedAreas().filter((a) => a.id !== id);
   saveAreas(rest);
+  storageP = null;
   if (!offlineSupported()) return;
   const cache = await caches.open(IIIF_CACHE);
   const list = async (aid: string) => ((await (await cache.match(listUrl(aid)))?.json()) ?? []) as string[];
@@ -250,6 +298,7 @@ export async function deleteArea(id: string): Promise<void> {
   for (const u of await list(id)) if (!keep.has(u)) await cache.delete(u, { ignoreVary: true });
   await cache.delete(listUrl(id));
   if (!rest.length) await caches.delete(IIIF_CACHE);
+  storageP = null;
 }
 
 /** Браузер міг стерти кеш, коли бракувало місця: тоді збережених ділянок більше немає. */
@@ -257,5 +306,6 @@ export async function verifyAreas(): Promise<boolean> {
   if (!offlineSupported() || !savedAreas().length) return false;
   if (await caches.has(IIIF_CACHE)) return false;
   saveAreas([]);
+  storageP = null;
   return true;
 }
