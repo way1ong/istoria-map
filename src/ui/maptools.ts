@@ -229,11 +229,12 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
   function drawNearby() {
     if (mode !== 'nearby' || !origin) return;
     const per = opts.getPeriod();
-    const list = places.filter((p) => placeVisible(p, per, filter))
+    const only = ctl.overlayPlaceTypes();
+    const list = places.filter((p) => placeVisible(p, per, filter, only))
       .map((p) => ({ p, d: haversine(origin!.at, p.coords), b: bearing(origin!.at, p.coords) }))
       .sort((a, b) => a.d - b.d).slice(0, 40);
     const dirs = t('dirs').split(',');
-    const notes = [origin.note, per || filterActive(filter) ? t('nearbyFilters') : ''].filter(Boolean);
+    const notes = [origin.note, per || filterActive(filter) ? t('nearbyFilters') : '', only ? t('overlayOnlyNearby') : ''].filter(Boolean);
     body.innerHTML = `
       <div class="mtool-seg"><button type="button" data-from="me" class="${origin.fromMe ? 'on' : ''}">${esc(t('nearbyFromMe'))}</button><button type="button" data-from="center" class="${origin.fromMe ? '' : 'on'}">${esc(t('nearbyFromCenter'))}</button></div>
       ${notes.map((n) => `<p class="mtool-note">${esc(n!)}</p>`).join('')}

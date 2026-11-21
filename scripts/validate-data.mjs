@@ -251,6 +251,8 @@ for (const { file, path, name } of listJson('maps')) {
       for (const k of ['license', 'attribution']) if (typeof g?.[k] !== 'string' || !g[k].trim()) err(`data/${m.url}`, `${k} відсутній`);
     }
   } else if (m.legend !== undefined) err(file, 'legend буває лише в мап type: geojson');
+  if (m.placeTypes !== undefined && (!Array.isArray(m.placeTypes) || m.placeTypes.length === 0 || m.placeTypes.some((x) => !placeTypes.includes(x))))
+    err(file, `placeTypes має бути непорожнім масивом типів місць: ${placeTypes.join(', ')}`);
   if (m.type === 'image') {
     if (!Array.isArray(m.coordinates) || m.coordinates.length !== 4) err(file, 'coordinates: потрібно 4 кути [NW, NE, SE, SW]');
     else m.coordinates.forEach((c, i) => checkCoords(file, c, `coordinates[${i}]`, MAP_REGION));

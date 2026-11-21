@@ -45,6 +45,8 @@ export interface MapController {
   onBorders(cb: (info: { year: number; attribution: string } | null) => void): void;
   /** Фільтр місць за типом (порожній набір = усі типи) і «лише зниклі». */
   setPlaceFilter(f: PlaceFilter): void;
+  /** Типи місць, якими обмежує мітки вибрана накладка (поле placeTypes у data/maps), або null. */
+  overlayPlaceTypes(): PlaceType[] | null;
 }
 
 export interface PlaceFilter {
@@ -53,8 +55,10 @@ export interface PlaceFilter {
 }
 
 /** Чи проходить місце фільтр періоду й типу. */
-export function placeVisible(p: Place, periodId: string | null, f: PlaceFilter): boolean {
+export function placeVisible(p: Place, periodId: string | null, f: PlaceFilter, onlyTypes?: PlaceType[] | null): boolean {
   if (periodId && !p.periods.includes(periodId)) return false;
+  // накладка з полем placeTypes (напр. укріплення) лишає на мапі лише свої типи місць
+  if (onlyTypes?.length && !onlyTypes.includes(p.type)) return false;
   if (f.types.length && !f.types.includes(p.type)) return false;
   if (f.vanishedOnly && !p.vanished) return false;
   return true;
@@ -83,9 +87,9 @@ function spread(list: Place[]): Map<string, [number, number]> {
   return out;
 }
 
-function featureCollection(periodId: string | null, lang: string, filter: PlaceFilter, forceId: string | null) {
+function featureCollection(periodId: string | null, lang: string, filter: PlaceFilter, forceId: string | null, onlyTypes: PlaceType[] | null) {
   // вибране місце (з пошуку чи «Що поруч») показуємо навіть тоді, коли фільтр типу його ховає
-  const visible = places.filter((p) => p.id === forceId || placeVisible(p, periodId, filter));
+  const visible = places.filter((p) => p.id === forceId || placeVisible(p, periodId, filter, onlyTypes));
   const pos = spread(visible);
   return {
     type: 'FeatureCollection' as const,
@@ -153,7 +157,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       id: 'modern-line', type: 'line', source: MODERN_SRC, maxzoom: BORDERS_MAXZOOM,
       paint: { 'line-color': '#111827', 'line-width': ['case', ['==', ['get', 'id'], 'hungary'], 1.8, 1], 'line-dasharray': ['literal', [2, 2]], 'line-opacity': 0.8 },
     });
-    map.addSource(SRC, { type: 'geojson', data: featureCollection(currentPeriod, lang, placeFilter, selected) });
+    map.addSource(SRC, { type: 'geojson', data: featureCollection(currentPeriod, lang, placeFilter, selected, currentOverlay?.placeTypes ?? null) });
     map.addLayer({
       id: 'places-halo',
       type: 'circle',
@@ -209,7 +213,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
 
   const refresh = () => {
     const src = map.getSource(SRC) as GeoJSONSource | undefined;
-    src?.setData(featureCollection(currentPeriod, lang, placeFilter, selected));
+    src?.setData(featureCollection(currentPeriod, lang, placeFilter, selected, currentOverlay?.placeTypes ?? null));
   };
   const applySelection = () => {
     if (!map.getLayer('places-dot')) return;
@@ -302,13 +306,16 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       placeFilter = f;
       if (map.getSource(SRC)) refresh();
     },
+    overlayPlaceTypes() { return currentOverlay?.placeTypes?.length ? currentOverlay.placeTypes : null; },
     flyTo(place) {
       // Зсув угору, щоб мітку не закривала нижня картка.
       map.flyTo({ center: place.coords, zoom: Math.max(map.getZoom(), 13), duration: 800, offset: [0, -120] });
     },
     setOverlay(mapId) {
       const m = mapId ? histMaps.find((x) => x.id === mapId) ?? null : null;
+      const typesChanged = JSON.stringify(currentOverlay?.placeTypes ?? null) !== JSON.stringify(m?.placeTypes ?? null);
       currentOverlay = m;
+      if (typesChanged) whenReady(refresh);
       // та сама мапа чи серія вже показана — нічого не перебудовуємо (інакше Allmaps заново тягне плитки IIIF)
       whenReady(() => {
         if (keyOf(currentOverlay) === overlayKey && (overlay || !currentOverlay)) return;

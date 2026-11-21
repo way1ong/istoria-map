@@ -150,7 +150,8 @@ function renderOverlayLegend(mapId: string | null, open: boolean) {
   if (!m?.legend?.length) { box.hidden = true; box.innerHTML = ''; return; }
   box.innerHTML = `<div class="ov-legend-head"><strong>${t('legend')}</strong><button type="button" class="ov-legend-close" aria-label="${t('close')}">×</button></div>`
     + `<ul>${m.legend.map((it) => `<li>${swatch(it.style, it.color)}<span>${lt(it.label)}</span></li>`).join('')}</ul>`
-    + `<p class="ov-legend-hint">${t('legendHint')}</p>`;
+    + `<p class="ov-legend-hint">${t('legendHint')}</p>`
+    + (m.placeTypes?.length ? `<p class="ov-legend-hint">${t('overlayOnly').replace('{types}', m.placeTypes.map((x) => t(`tp_${x}` as Parameters<typeof t>[0])).join(', '))}</p>` : '');
   box.querySelector<HTMLButtonElement>('.ov-legend-close')!.onclick = () => { box.hidden = true; };
   if (open) box.hidden = false;
 }

@@ -92,6 +92,8 @@ const dict = {
     tp_military: 'Укріплення світових війн',
     tp_other: 'Інше',
     legendHint: 'Натисніть на лінію, пляму чи кружок: з\'явиться джерело й точність.',
+    overlayOnly: 'Поки ввімкнено цю накладку, на мапі лише мітки типу: {types}. Інші місця повернуться, коли накладку вимкнете.',
+    overlayOnlyNearby: 'Показано лише місця, які лишає на мапі вибрана накладка.',
   },
   hu: {
     appTitle: 'Magyarország története térképen',
@@ -184,6 +186,8 @@ const dict = {
     tp_military: 'Világháborús erődítések',
     tp_other: 'Egyéb',
     legendHint: 'Koppintson egy vonalra, foltra vagy körre: megjelenik a forrás és a pontosság.',
+    overlayOnly: 'Amíg ez a réteg be van kapcsolva, a térképen csak ilyen típusú helyek látszanak: {types}. A többi hely a réteg kikapcsolásakor visszatér.',
+    overlayOnlyNearby: 'Csak azok a helyek szerepelnek, amelyeket a kiválasztott réteg a térképen hagy.',
   },
 } satisfies Record<Lang, Record<string, string>>;
 
