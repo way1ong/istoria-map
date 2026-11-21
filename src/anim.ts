@@ -3,6 +3,7 @@ import type { Feature, FeatureCollection } from 'geojson';
 import { formatYear, getLang, lt, t } from './i18n';
 import type { RouteCollection, RouteProps } from './types';
 import { basemapStyle, chooseBasemap } from './basemap';
+import { watchContextLoss } from './glloss';
 
 const STYLE_URL = 'https://tiles.openfreemap.org/styles/liberty';
 export const KIND_COLORS: Record<RouteProps['kind'], string> = {
@@ -167,6 +168,7 @@ export function mountAnimation(container: HTMLElement, c: RouteCollection): Anim
   // без мережі — мапа з пристрою, якщо її завантажено
   const chosen = chooseBasemap();
   const map = new MLMap({ container: mapEl, style: chosen.type === 'offline' ? basemapStyle(chosen) : STYLE_URL, bounds: boundsOf(c), fitBoundsOptions: { padding: 40, maxZoom: 13 }, attributionControl: { compact: true } });
+  watchContextLoss(map);
   let time = from;
   let playing = false;
   let raf = 0;

@@ -9,6 +9,7 @@ import { mountAnimation, type AnimHandle } from './anim';
 import { mountCompare, type CompareHandle } from './compare';
 import { getLang, lt, setLang, t } from './i18n';
 import { createMap, type MapController } from './map';
+import { takeSavedView, watchContextLoss } from './glloss';
 import { mapChoices } from './oldmap';
 import { chronologyPage } from './pages/chronology';
 import { eventPage, historyIndex, periodPage, placePage } from './pages/history';
@@ -63,6 +64,8 @@ let tools: ReturnType<typeof mountMapTools> | null = null;
 let lastFilter: PlaceFilter = { types: [], vanishedOnly: false };
 /** Відкрити панель «Без інтернету», щойно з'явиться мапа (з повідомлення на іншій сторінці). */
 let openOfflinePanel = false;
+// вигляд мапи, збережений перед перезавантаженням через втрату графіки (src/glloss.ts)
+let restoreView = takeSavedView();
 
 /** Підпис на мапі, коли діє фільтр типів: нагадування і кнопка скинути. */
 function renderFilterPill(f: PlaceFilter = lastFilter) {
@@ -81,6 +84,11 @@ function ensureMap(): MapController {
       navigate(id ? `#/map?${state.period ? `period=${state.period}&` : ''}place=${id}` : `#/map${state.period ? `?period=${state.period}` : ''}`);
     });
     mapCtl.setOverlayOpacity(0.7);
+    // біла мапа після втрати графіки: якщо браузер не поверне її сам — кнопка «Перезавантажити мапу»
+    watchContextLoss(mapCtl.map, () => ({
+      overlay: $<HTMLSelectElement>('overlay-select').value || null,
+      opacity: Number($<HTMLInputElement>('overlay-opacity').value),
+    }));
     tools = mountMapTools(mapCtl, $('view-map'), {
       getPeriod: () => state.period,
       openPlace: (id, keep) => navigate(`#/map?${keep && state.period ? `period=${state.period}&` : ''}place=${id}`),
@@ -141,7 +149,8 @@ function renderOverlayCtl(ctl: MapController) {
   const sel = $<HTMLSelectElement>('overlay-select');
   const visible = histMaps.filter((m) => !state.period || !m.periods || m.periods.includes(state.period));
   box.hidden = visible.length === 0;
-  const prev = sel.value;
+  // після перезавантаження через втрату графіки — та сама стара мапа, що була
+  const prev = restoreView?.overlay ?? sel.value;
   const choices = mapChoices(visible, prev);
   sel.innerHTML = `<option value="">${t('noOverlay')}</option>` + choices.map((c) => `<option value="${c.value}">${c.label}</option>`).join('');
   sel.value = choices.some((c) => c.value === prev) ? prev : '';
@@ -194,6 +203,16 @@ function renderMapView() {
   // на ПК картка — панель праворуч: кнопки мапи й повзунок зсуваються, щоб вона їх не закривала
   $('view-map').classList.toggle('sheet-open', sheet.classList.contains('open'));
   setTimeout(() => ctl.map.resize(), 0);
+  if (restoreView) {
+    const v = restoreView;
+    restoreView = null;
+    ctl.map.stop();
+    ctl.map.jumpTo({ center: v.center, zoom: v.zoom });
+    if (typeof v.opacity === 'number') {
+      $<HTMLInputElement>('overlay-opacity').value = String(v.opacity);
+      ctl.setOverlayOpacity(v.opacity);
+    }
+  }
 }
 
 function render() {

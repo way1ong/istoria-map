@@ -3,6 +3,7 @@ import { availableBasemaps, basemapStyle, chooseBasemap, getPreferredBasemap, LO
 import { basemaps, histMaps, periodById, places } from './data';
 import { lt, t } from './i18n';
 import { addOldMap, mapBox, mapChoices, mapCovers } from './oldmap';
+import { watchContextLoss } from './glloss';
 import { CMP_DOT_RADIUS, DOT_STROKE } from './markers';
 import type { Place } from './types';
 
@@ -58,6 +59,8 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   const common = { center, zoom, attributionControl: { compact: true } as const, pitchWithRotate: false, dragRotate: false, maxPitch: 0 };
   const top = new MLMap({ container: topEl, style: EMPTY_STYLE, ...common });
   const bot = new MLMap({ container: botEl, style: basemapStyle(base), ...common });
+  watchContextLoss(top);
+  watchContextLoss(bot);
   const period = opts.periodId ?? null;
 
   // style.load спрацьовує і при першому завантаженні, і після зміни стилю

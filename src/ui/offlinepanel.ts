@@ -7,7 +7,8 @@ import {
   currentJob, deletePack, downloadPack, installed, loadManifest, offlineSupported, onOfflineChange, PACK_IDS, pending,
   photosManifest, stopDownload, storageInfo, type DownloadResult, type PackId, type PackManifest, type PacksManifest,
 } from '../offline';
-import { areaKm, deleteArea, downloadArea, nearestPlace, planArea, savedAreas, type AreaPlan } from '../offlineareas';
+import { areaKm, areasGeoJSON, areasStorage, deleteArea, downloadArea, nearestPlace, planArea, savedAreas, type AreaPlan } from '../offlineareas';
+import type { GeoJSONSource } from 'maplibre-gl';
 import { placeById } from '../data';
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
@@ -109,7 +110,7 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     });
   };
 
-  const areaSection = (online: boolean, job: ReturnType<typeof currentJob>): string => {
+  const areaSection = (online: boolean, job: ReturnType<typeof currentJob>, total: number): string => {
     const running = job?.id === 'area';
     let state = '';
     let canSave = false;
@@ -118,10 +119,14 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     else if (view.state === 'loading') state = esc(t('offAreaCounting'));
     else if (view.state === 'error' || !online) state = esc(t('offNeedNet'));
     else if (view.plan) {
-      const [w, h] = areaKm(view.plan.bbox);
-      const sub = (k: Key) => t(k).replace('{w}', km(w)).replace('{h}', km(h)).replace('{size}', fmtBytes(view.plan!.estBytes));
-      if (!view.plan.tiles.length) state = esc(t('offAreaEmpty'));
-      else if (view.plan.estBytes > AREA_MAX_BYTES) state = esc(sub('offAreaTooBig'));
+      const plan = view.plan;
+      const [w, h] = areaKm(plan.bbox);
+      const sub = (k: Key, size = plan.estBytes) => t(k).replace('{w}', km(w)).replace('{h}', km(h)).replace('{size}', fmtBytes(size)).replace('{new}', fmtBytes(plan.newBytes));
+      if (!plan.tiles.length) state = esc(t('offAreaEmpty'));
+      // уже збережене (іншими ділянками) вдруге не завантажується, тож межа й підтвердження — за новою частиною
+      else if (!plan.newTiles) state = esc(sub('offAreaHave'));
+      else if (plan.newBytes > AREA_MAX_BYTES) state = esc(sub('offAreaTooBig', plan.newBytes));
+      else if (plan.newTiles < plan.tiles.length) { state = esc(sub('offAreaViewPart')); canSave = true; }
       else { state = esc(sub('offAreaView')); canSave = true; }
     }
     const busy = !!job && !running;
@@ -143,7 +148,8 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
       <div class="off-state">${state}</div>
       ${msg ? `<p class="off-err">${esc(msg)}</p>` : ''}
       <div class="off-btns">${button}</div>
-      ${list ? `<p class="off-sub">${esc(t('offAreaSaved'))}</p><ul class="off-area-list">${list}</ul>` : ''}
+      ${list ? `<p class="off-sub">${esc(t('offAreaSaved'))}</p><ul class="off-area-list">${list}</ul>
+        <p class="off-note">${esc(t('offAreasTotal').replace('{size}', fmtBytes(total)))}</p>` : ''}
     </li>`;
   };
 
@@ -151,6 +157,7 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     const my = ++seq;
     if (!manifest) manifest = await loadManifest().catch(() => null);
     const st = await storageInfo();
+    const total = savedAreas().length ? await areasStorage() : 0;
     if (my !== seq) return;
     const online = navigator.onLine !== false;
     const job = currentJob();
@@ -197,7 +204,7 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
         <div class="off-btns">${buttons}</div>
       </li>`;
       // ділянки в повній якості — одразу після огляду старих мап
-      return id === 'oldmaps' ? li + areaSection(online, job) : li;
+      return id === 'oldmaps' ? li + areaSection(online, job, total) : li;
     }).join('');
 
     const storage = st.usage !== undefined && st.quota
@@ -214,6 +221,22 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
       ${offlineSupported() ? `<p class="mtool-note">${esc(t('offIntro'))}</p><ul class="off-packs">${packs}</ul>${storage}` : `<p class="mtool-note">${esc(t('offNoSupport'))}</p>`}
       <div class="off-install-box">${install}</div>`;
     progress();
+    showAreas();
+  };
+  /** Поки панель відкрита, збережені ділянки обведено на мапі пунктиром. */
+  const AREAS_ID = 'offline-saved-areas';
+  const showAreas = () => {
+    try {
+      const data = areasGeoJSON();
+      const src = map.getSource(AREAS_ID) as GeoJSONSource | undefined;
+      if (src) { src.setData(data); return; }
+      map.addSource(AREAS_ID, { type: 'geojson', data });
+      map.addLayer({ id: AREAS_ID, type: 'line', source: AREAS_ID, paint: { 'line-color': '#f59e0b', 'line-width': 2.5, 'line-dasharray': [3, 2] } });
+    } catch { /* стиль ще вантажиться — додамо під час наступного оновлення панелі */ }
+  };
+  const hideAreas = () => {
+    if (map.getLayer(AREAS_ID)) map.removeLayer(AREAS_ID);
+    if (map.getSource(AREAS_ID)) map.removeSource(AREAS_ID);
   };
   /** Хід завантаження оновлюємо на місці, щоб натискання «Зупинити» не губилося через перемальовування. */
   const progress = (): boolean => {
@@ -239,9 +262,10 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
       const plan = view.plan;
       const label = mapPlaceName(map, plan.bbox);
       const what = areaName(label, nearestPlace(plan.bbox)?.id);
-      if (!confirm(t('offConfirmArea').replace('{name}', what).replace('{size}', fmtBytes(plan.estBytes)))) return;
+      if (!confirm(t('offConfirmArea').replace('{name}', what).replace('{size}', fmtBytes(plan.newBytes)))) return;
       delete lastResult.area;
-      void downloadArea(plan, label).then((res) => { lastResult.area = { res, failed: 0 }; void draw(); });
+      // після збереження (чи видалення) та сама видима ділянка має нову оцінку: «уже збережена» тощо
+      void downloadArea(plan, label).then((res) => { lastResult.area = { res, failed: 0 }; view.key = ''; updatePlan(); void draw(); });
       return;
     }
     if (act === 'area-show') {
@@ -252,7 +276,7 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     if (act === 'area-del') {
       const a = savedAreas().find((x) => x.id === b.dataset.id);
       if (!a || !confirm(t('offConfirmDelete').replace('{name}', areaName(a.label, a.placeId) || t('offAreas')))) return;
-      void deleteArea(a.id).then(draw);
+      void deleteArea(a.id).then(() => { view.key = ''; updatePlan(); void draw(); });
       return;
     }
     const name = t(`pack_${id}` as Key);
@@ -291,6 +315,7 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     off1();
     off2();
     map.off('moveend', onMove);
+    hideAreas();
     window.removeEventListener('online', net);
     window.removeEventListener('offline', net);
     body.onclick = null;
