@@ -1,16 +1,24 @@
 import type { ExpressionSpecification, Map as MLMap, StyleSpecification } from 'maplibre-gl';
 import { basemaps } from './data';
+import { offlineMapReady } from './offline';
 import type { Basemap } from './types';
 
-/** Стиль MapLibre для підкладки: готовий URL стилю або растровий стиль з тайлів. */
+/**
+ * Шрифти для наших стилів і підписів місць: з сайту (public/fonts), а якщо завантажено мапу для роботи
+ * без інтернету — з кешу пристрою (адресу offline:// обробляє src/offline.ts).
+ */
+export const LOCAL_GLYPHS = 'offline://fonts/{fontstack}/{range}.pbf';
+
+/** Стиль MapLibre для підкладки: готовий URL стилю, мапа з пристрою або растровий стиль з тайлів. */
 export function basemapStyle(b: Basemap): StyleSpecification | string {
   if (b.type === 'style' && b.url) return b.url;
+  if (b.type === 'offline' && b.url) return `offline://${b.url}`;
   if (b.type === 'relief') return reliefStyle(b);
   return {
     version: 8,
     sources: { base: { type: 'raster', tiles: b.tiles ?? [], tileSize: b.tileSize ?? 256, maxzoom: b.maxzoom ?? 18, attribution: b.attribution } },
     layers: [{ id: 'base', type: 'raster', source: 'base' }],
-    glyphs: 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf',
+    glyphs: LOCAL_GLYPHS,
   };
 }
 
@@ -24,12 +32,29 @@ export function setPreferredBasemap(id: string): void {
   try { localStorage.setItem(STORAGE, id); } catch { /* ignore */ }
 }
 
+/** Мапа з пристрою (запис type: offline у data/basemaps.json). */
+export const offlineBasemap = (): Basemap | undefined => basemaps.find((b) => b.type === 'offline');
+/** Підкладки для списку: мапа з пристрою — лише коли її завантажено. */
+export function availableBasemaps(): Basemap[] {
+  return basemaps.filter((b) => b.type !== 'offline' || offlineMapReady());
+}
+/**
+ * Яку підкладку показати зараз: без мережі — мапу з пристрою (якщо її завантажено), інакше вибрану людиною;
+ * вибрана раніше мапа з пристрою, яку потім видалили, замінюється першою підкладкою зі списку.
+ */
+export function chooseBasemap(preferred: Basemap = getPreferredBasemap()): Basemap {
+  const off = offlineBasemap();
+  if (off && offlineMapReady() && navigator.onLine === false) return off;
+  if (preferred.type === 'offline' && !offlineMapReady()) return basemaps.find((b) => b.type !== 'offline') ?? preferred;
+  return preferred;
+}
+
 /** Тіньовий рельєф з тайлів висот, поверх нього сучасна вода й назви міст з векторних тайлів OpenMapTiles. */
 function reliefStyle(b: Basemap): StyleSpecification {
   const water = '#4f8fd1';
   const style: StyleSpecification = {
     version: 8,
-    glyphs: 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf',
+    glyphs: LOCAL_GLYPHS,
     sources: {
       dem: { type: 'raster-dem', tiles: b.tiles ?? [], tileSize: b.tileSize ?? 256, maxzoom: b.maxzoom ?? 15, encoding: b.encoding ?? 'terrarium', attribution: b.attribution },
     },
@@ -51,7 +76,8 @@ function reliefStyle(b: Basemap): StyleSpecification {
 
 /**
  * Підписи підкладки мовою інтерфейсу. Стиль OpenFreeMap бере англійські назви (name_en: «Hungary», «Danube»),
- * тож для всіх його підписів назв ставимо name:uk / name:hu з OSM, а де їх немає — місцеву назву (name).
+ * а мапа з пристрою (Protomaps) — угорські, тож для всіх підписів назв ставимо name:uk / name:hu з OSM,
+ * а де їх немає — місцеву назву (name).
  */
 export function localizeBasemapLabels(map: MLMap, lang: string): void {
   const style = map.getStyle();

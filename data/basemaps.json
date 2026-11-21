@@ -1,5 +1,5 @@
 {
-  "_comment": "Сучасні підкладки для мапи й режиму порівняння. type: style (стиль MapLibre), raster (тайли {z}/{x}/{y} чи {z}/{y}/{x}) або relief (тіньовий рельєф з тайлів висот у tiles, з кодуванням encoding, і сучасна вода й назви міст з векторних тайлів у vector). Якщо в адресі є {key}, підкладка показується лише коли заповнено поле key.",
+  "_comment": "Сучасні підкладки для мапи й режиму порівняння. type: style (стиль MapLibre), offline (мапа Угорщини з пристрою: показується в списку лише після завантаження в панелі «Без інтернету», а без мережі вмикається сама; url — стиль у public/), raster (тайли {z}/{x}/{y} чи {z}/{y}/{x}) або relief (тіньовий рельєф з тайлів висот у tiles, з кодуванням encoding, і сучасна вода й назви міст з векторних тайлів у vector). Якщо в адресі є {key}, підкладка показується лише коли заповнено поле key.",
   "basemaps": [
     {
       "id": "osm",
@@ -92,6 +92,27 @@
       "short": {
         "uk": "Esri",
         "hu": "Esri"
+      }
+    },
+    {
+      "id": "offline",
+      "title": {
+        "uk": "Мапа з пристрою (без інтернету)",
+        "hu": "Térkép a készüléken (internet nélkül)"
+      },
+      "short": {
+        "uk": "З пристрою",
+        "hu": "Készüléken"
+      },
+      "type": "offline",
+      "url": "offline/basemap-hungary.json",
+      "attribution": "<a href=\"https://protomaps.com\">Protomaps</a> © <a href=\"https://openstreetmap.org\">OpenStreetMap</a>",
+      "license": "ODbL",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/",
+      "source": {
+        "title": "Protomaps Basemaps: щоденні збірки (build.protomaps.com)",
+        "url": "https://docs.protomaps.com/basemaps/downloads",
+        "note": "Вирізка Угорщини зі збірки 20261120 (дані OpenStreetMap на 20.11.2026), зуми 0–14, 310 МБ; стиль «light» з @protomaps/basemaps без значків. Як оновити — scripts/offline/README.md."
       }
     }
   ]

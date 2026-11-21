@@ -9,6 +9,8 @@
   --header-h: 52px;
   --who-det: #b45309;
   --who-arch: #1d4ed8;
+  --ok: #15803d;
+  --err: #b91c1c;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -20,6 +22,8 @@
     --card: #1f2937;
     --who-det: #f59e0b;
     --who-arch: #93c5fd;
+    --ok: #4ade80;
+    --err: #fca5a5;
   }
 }
 * { box-sizing: border-box; }
@@ -291,3 +295,57 @@ figcaption { font-size: 12px; color: var(--muted); }
 .ov-pop .ov-name { font-weight: 600; margin-top: 2px; }
 .ov-pop p { margin: 6px 0 0; }
 .ov-pop .ov-src { font-size: 12px; color: #4b5563; overflow-wrap: anywhere; }
+
+/* Панель «Без інтернету» (src/ui/offlinepanel.ts) */
+.off-net { margin: 2px 2px 6px; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
+.off-net::before { content: ''; flex: none; width: 9px; height: 9px; border-radius: 50%; background: #16a34a; }
+.off-net.off::before { background: #dc2626; }
+.off-packs { list-style: none; margin: 6px 0 0; padding: 0; }
+.off-pack { padding: 10px 2px; border-top: 1px solid var(--line); }
+.off-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.off-head b { font-size: 14px; }
+.off-size { flex: none; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.off-note { margin: 3px 0 6px; font-size: 12px; color: var(--muted); line-height: 1.35; }
+.off-state { display: flex; align-items: center; gap: 8px; font-size: 12.5px; margin: 4px 0; }
+.off-state progress { flex: 1; min-width: 0; height: 8px; accent-color: var(--accent); }
+.off-pct { flex: none; font-variant-numeric: tabular-nums; color: var(--muted); font-size: 12px; }
+.off-ok { color: var(--ok); font-weight: 600; }
+.off-err { margin: 4px 0; font-size: 12px; color: var(--err); }
+.off-btns { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+.off-btn { font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); cursor: pointer; }
+.off-btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.off-btn:disabled { opacity: .45; cursor: default; }
+.off-install-box { border-top: 1px solid var(--line); margin-top: 6px; padding-top: 8px; }
+.off-install { width: 100%; padding: 9px 12px; }
+
+/* Коротке повідомлення внизу (мережа, нова версія) */
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(104px + env(safe-area-inset-bottom)); z-index: 50; width: max-content; max-width: min(520px, calc(100% - 24px)); display: flex; align-items: center; gap: 8px; padding: 9px 6px 9px 14px; border-radius: 12px; background: #111827; color: #f9fafb; font-size: 14px; line-height: 1.35; box-shadow: 0 6px 24px rgba(0,0,0,.3); }
+.toast[hidden] { display: none; }
+.toast-act { flex: none; font-weight: 700; color: #fbbf24; padding: 4px 8px; }
+.toast-close { flex: none; font-size: 20px; line-height: 1; color: #9ca3af; padding: 2px 8px; }
+
+/* ПК і великі планшети: картка місця — панель праворуч, кнопки-панелі мапи — вузькою колонкою зліва,
+   повзунок і тексти — по центру, у «Порівняти» мапи поруч */
+@media (min-width: 900px) {
+  .basemap-select, .overlay-ctl, .filter-pill, .ov-legend, .mtool, .borders-note { right: auto; width: 380px; }
+  .sheet {
+    left: auto; top: 10px; right: 10px; bottom: 10px; width: 400px; max-height: none; border-radius: 14px;
+    padding: 14px 18px 18px; box-shadow: 0 6px 28px rgba(0,0,0,.22); transform: translateX(calc(100% + 24px));
+  }
+  .sheet.open { transform: none; }
+  .sheet .handle { display: none; }
+  #view-map .maplibregl-ctrl-top-right, #view-map .maplibregl-ctrl-bottom-right, #view-map .timeline { transition: right .25s ease; }
+  #view-map.sheet-open .maplibregl-ctrl-top-right, #view-map.sheet-open .maplibregl-ctrl-bottom-right, #view-map.sheet-open .timeline { right: 420px; }
+  /* по центру вільної частини мапи (ліворуч від картки, якщо вона відкрита) */
+  .timeline { background: none; margin: 0 auto; max-width: 784px; }
+  .toast { bottom: calc(96px + env(safe-area-inset-bottom)); }
+  .page { padding-left: max(24px, calc((100% - 820px) / 2)); padding-right: max(24px, calc((100% - 820px) / 2)); }
+  .page h1 { font-size: 26px; }
+  .page figure img { max-height: 70vh; }
+  .card-list { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+  .compare { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto minmax(0, 1fr) auto; }
+  .cmp-bar, .cmp-hint { grid-column: 1 / -1; }
+  .cmp-bar select { flex: 0 1 420px; }
+  .cmp-top { border-bottom: none; border-right: 2px solid var(--accent); }
+  .anim-map { height: 62vh; }
+}

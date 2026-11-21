@@ -1,0 +1,96 @@
+{
+  "_comment": "Мапа Угорщини для роботи без інтернету: вирізка зі збірки Protomaps (дані OpenStreetMap), частини файлу PMTiles. Створюється скриптами в scripts/offline/ (README там), вручну не редагувати.",
+  "date": "2026-11-20",
+  "build": "https://build.protomaps.com/20261120.pmtiles",
+  "minzoom": 0,
+  "maxzoom": 14,
+  "bounds": [
+    10,
+    41,
+    29,
+    53
+  ],
+  "bytes": 319147717,
+  "parts": [
+    {
+      "url": "offline/hungary-20261120-00.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-01.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-02.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-03.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-04.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-05.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-06.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-07.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-08.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-09.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-10.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-11.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-12.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-13.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-14.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-15.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-16.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-17.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-18.bin",
+      "bytes": 16777216
+    },
+    {
+      "url": "offline/hungary-20261120-19.bin",
+      "bytes": 380613
+    }
+  ]
+}

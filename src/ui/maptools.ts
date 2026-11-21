@@ -4,6 +4,7 @@ import { getLang, lt, t, type Key } from '../i18n';
 import { placeVisible, type MapController, type PlaceFilter } from '../map';
 import type { PlaceType } from '../types';
 import { eventDate } from './render';
+import { renderOffline } from './offlinepanel';
 
 /** Порядок фішок у фільтрі. */
 export const TYPES: PlaceType[] = ['castle', 'military', 'church', 'archaeological', 'monument', 'settlement', 'nature', 'farmstead', 'inn', 'mill', 'other'];
@@ -31,7 +32,10 @@ const ICON = {
   search: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>',
   filter: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M3 5h18l-7 8.5V20l-4-2v-4.5z"/></svg>',
   nearby: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 6h12M9 12h12M9 18h12"/><circle cx="4" cy="6" r="1.4" fill="currentColor"/><circle cx="4" cy="12" r="1.4" fill="currentColor"/><circle cx="4" cy="18" r="1.4" fill="currentColor"/></svg>',
+  offline: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg>',
 };
+type Mode = keyof typeof ICON;
+const MODES: Mode[] = ['search', 'filter', 'nearby', 'offline'];
 
 function haversine(a: [number, number], b: [number, number]): number {
   const R = 6371000, rad = Math.PI / 180;
@@ -59,9 +63,11 @@ interface Opts {
   openEvent(id: string): void;
   /** Змінився фільтр типів (для підпису на мапі). */
   onFilter(f: PlaceFilter): void;
+  /** Мапу з пристрою завантажено, оновлено чи видалено. */
+  onOfflineMap(): void;
 }
 
-/** Кнопки «Пошук», «Типи місць», «Що поруч» у правому стовпчику мапи і панель для них. */
+/** Кнопки «Пошук», «Типи місць», «Що поруч», «Без інтернету» у правому стовпчику мапи і панель для них. */
 export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts) {
   let filter = loadFilter();
   ctl.setPlaceFilter(filter);
@@ -75,15 +81,17 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
   const title = panel.querySelector<HTMLElement>('.mtool-title')!;
   const body = panel.querySelector<HTMLElement>('.mtool-body')!;
   const closeBtn = panel.querySelector<HTMLButtonElement>('.mtool-close')!;
-  let mode: 'search' | 'filter' | 'nearby' | null = null;
+  let mode: Mode | null = null;
   let me: Marker | null = null;
+  // панель «Без інтернету» оновлюється сама під час завантаження; при закритті відписуємо її
+  let stopOffline: (() => void) | null = null;
 
-  const buttons: Record<'search' | 'filter' | 'nearby', HTMLButtonElement> = {} as never;
+  const buttons: Record<Mode, HTMLButtonElement> = {} as never;
   const control: IControl = {
     onAdd() {
       const div = document.createElement('div');
       div.className = 'maplibregl-ctrl maplibregl-ctrl-group mtool-ctrl';
-      for (const k of ['search', 'filter', 'nearby'] as const) {
+      for (const k of MODES) {
         const b = document.createElement('button');
         b.type = 'button';
         b.className = `mtool-btn mtool-${k}`;
@@ -102,24 +110,37 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
     buttons.search.title = buttons.search.ariaLabel = t('search');
     buttons.filter.title = buttons.filter.ariaLabel = t('filterTitle');
     buttons.nearby.title = buttons.nearby.ariaLabel = t('nearby');
+    buttons.offline.title = buttons.offline.ariaLabel = t('offline');
     buttons.filter.classList.toggle('on', filterActive(filter));
     closeBtn.ariaLabel = t('close');
   }
 
   function close() {
+    stopOffline?.();
+    stopOffline = null;
     mode = null;
     panel.hidden = true;
     Object.values(buttons).forEach((b) => b.classList.remove('open'));
   }
   closeBtn.onclick = close;
 
-  function open(k: 'search' | 'filter' | 'nearby') {
+  function open(k: Mode) {
+    stopOffline?.();
+    stopOffline = null;
     mode = k;
     panel.hidden = false;
     Object.entries(buttons).forEach(([n, b]) => b.classList.toggle('open', n === k));
     if (k === 'search') { body.innerHTML = ''; renderSearch(true); }
     else if (k === 'filter') renderFilter();
-    else renderNearby();
+    else if (k === 'nearby') renderNearby();
+    else renderOfflinePanel();
+  }
+
+  // ---------- без інтернету ----------
+  function renderOfflinePanel() {
+    title.textContent = t('offline');
+    stopOffline?.();
+    stopOffline = renderOffline(body, opts.onOfflineMap);
   }
 
   // ---------- пошук ----------
@@ -297,9 +318,11 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
       if (mode === 'search') renderSearch();
       else if (mode === 'filter') renderFilter();
       else if (mode === 'nearby') { title.textContent = t('nearby'); drawNearby(); }
+      else if (mode === 'offline') renderOfflinePanel();
     },
     close,
     open,
+    isOpen: () => mode !== null,
     clearFilter() { setFilter({ types: [], vanishedOnly: false }); if (mode === 'filter') renderFilter(); },
   };
 }

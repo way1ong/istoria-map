@@ -1,5 +1,5 @@
 import { Map as MLMap, Marker, type LngLatLike, type StyleSpecification } from 'maplibre-gl';
-import { basemapStyle, getPreferredBasemap, localizeBasemapLabels, setPreferredBasemap } from './basemap';
+import { availableBasemaps, basemapStyle, chooseBasemap, getPreferredBasemap, LOCAL_GLYPHS, localizeBasemapLabels, setPreferredBasemap } from './basemap';
 import { basemaps, histMaps, periodById, places } from './data';
 import { lt, t } from './i18n';
 import { addOldMap, mapBox, mapChoices, mapCovers } from './oldmap';
@@ -8,7 +8,7 @@ import type { Place } from './types';
 
 export interface CompareHandle { destroy(): void }
 
-const EMPTY_STYLE: StyleSpecification = { version: 8, sources: {}, layers: [{ id: 'bg', type: 'background', paint: { 'background-color': '#efe9dc' } }], glyphs: 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf' };
+const EMPTY_STYLE: StyleSpecification = { version: 8, sources: {}, layers: [{ id: 'bg', type: 'background', paint: { 'background-color': '#efe9dc' } }], glyphs: LOCAL_GLYPHS };
 
 function placesGeo(periodId: string | null, lang: string) {
   return {
@@ -34,12 +34,14 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   // Векторні накладки (болота 1806) порівнювати нема з чим: зверху порожнє тло, тож лише растрові мапи.
   const rasterMaps = histMaps.filter((m) => m.type !== 'geojson');
   const hm = rasterMaps.find((m) => m.id === opts.mapId) ?? rasterMaps[0];
-  const base = basemaps.find((b) => b.id === opts.baseId) ?? getPreferredBasemap();
-  setPreferredBasemap(base.id);
+  const wanted = basemaps.find((b) => b.id === opts.baseId) ?? getPreferredBasemap();
+  // без мережі — мапа з пристрою (якщо завантажена); вибір людини при цьому не перезаписуємо
+  const base = chooseBasemap(wanted);
+  if (base.id === wanted.id) setPreferredBasemap(base.id);
   container.innerHTML = `
     <div class="cmp-bar">
       <select class="cmp-map">${mapChoices(rasterMaps, hm?.id).map((c) => `<option value="${c.value}" ${c.value === hm?.id ? 'selected' : ''}>${c.label}</option>`).join('')}</select>
-      <select class="cmp-base" aria-label="${t('modernMap')}">${basemaps.map((b) => `<option value="${b.id}" ${b.id === base.id ? 'selected' : ''}>${lt(b.short) || lt(b.title)}</option>`).join('')}</select>
+      <select class="cmp-base" aria-label="${t('modernMap')}">${availableBasemaps().map((b) => `<option value="${b.id}" ${b.id === base.id ? 'selected' : ''}>${lt(b.short) || lt(b.title)}</option>`).join('')}</select>
     </div>
     <div class="cmp-pane cmp-top"><div class="cmp-map-el"></div><div class="cmp-cross"></div><span class="cmp-tag">${t('oldMap')}</span></div>
     <div class="cmp-pane cmp-bottom"><div class="cmp-map-el"></div><div class="cmp-cross"></div><span class="cmp-tag">${t('modernMap')}</span></div>

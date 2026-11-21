@@ -1,7 +1,7 @@
 import { toolById, tools, toolsDoc } from '../data';
 import { lt, t } from '../i18n';
 import type { Tool, ToolUser } from '../types';
-import { md, photos, sourcesList, thumbUrl } from '../ui/render';
+import { IMG_FALLBACK, md, photos, sourcesList, thumbUrl } from '../ui/render';
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
 
@@ -12,7 +12,7 @@ const userBadges = (users: ToolUser[]) => users.map((u) => `<span class="who who
 function thumb(x: Tool): string {
   const ph = x.photos?.[0];
   if (!ph) return '<div class="tool-thumb tool-thumb-empty" aria-hidden="true"></div>';
-  return `<img class="tool-thumb" src="${esc(thumbUrl(ph.url, 330))}" data-orig="${esc(ph.url)}" onerror="this.onerror=null;this.src=this.dataset.orig" alt="${esc(lt(ph.caption) || lt(x.name))}" loading="lazy" />`;
+  return `<img class="tool-thumb" crossorigin="anonymous" src="${esc(thumbUrl(ph.url, 330))}" data-orig="${esc(ph.url)}" onerror="${IMG_FALLBACK}" alt="${esc(lt(ph.caption) || lt(x.name))}" loading="lazy" />`;
 }
 
 /** #/tools і #/tools?for=detectorist|archaeologist */

@@ -195,8 +195,11 @@ export interface Basemap {
   title: LText;
   /** Коротка назва для кнопок. */
   short?: LText;
-  /** style: готовий стиль MapLibre; raster: тайли зображень; relief: тіньовий рельєф з тайлів висот (tiles) і сучасна вода з векторних тайлів (vector). */
-  type: 'style' | 'raster' | 'relief';
+  /**
+   * style: готовий стиль MapLibre; raster: тайли зображень; relief: тіньовий рельєф з тайлів висот (tiles) і сучасна вода
+   * з векторних тайлів (vector); offline: мапа Угорщини з пристрою (пакет панелі «Без інтернету», url — стиль у public/).
+   */
+  type: 'style' | 'raster' | 'relief' | 'offline';
   url?: string;
   tiles?: string[];
   /** Для relief: кодування тайлів висот. */

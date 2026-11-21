@@ -1,6 +1,8 @@
 import './style.css';
 
-import { basemaps, histMaps, placeById, places, routesForEvent } from './data';
+import { registerSW } from 'virtual:pwa-register';
+import { availableBasemaps } from './basemap';
+import { histMaps, placeById, places, routesForEvent } from './data';
 import { mountAnimation, type AnimHandle } from './anim';
 import { mountCompare, type CompareHandle } from './compare';
 import { getLang, lt, setLang, t } from './i18n';
@@ -14,6 +16,8 @@ import { navigate, onRoute, type Route } from './router';
 import { placeCard } from './ui/render';
 import { currentYear, renderTimeline } from './ui/timeline';
 import { filterActive, mountMapTools, TYPES } from './ui/maptools';
+import { toast } from './ui/toast';
+import { offlineMapReady, verifyInstalled } from './offline';
 import type { PlaceFilter } from './map';
 
 setLang(getLang());
@@ -54,6 +58,8 @@ let anims: AnimHandle[] = [];
 let cmp: CompareHandle | null = null;
 let tools: ReturnType<typeof mountMapTools> | null = null;
 let lastFilter: PlaceFilter = { types: [], vanishedOnly: false };
+/** Відкрити панель «Без інтернету», щойно з'явиться мапа (з повідомлення на іншій сторінці). */
+let openOfflinePanel = false;
 
 /** Підпис на мапі, коли діє фільтр типів: нагадування і кнопка скинути. */
 function renderFilterPill(f: PlaceFilter = lastFilter) {
@@ -77,7 +83,9 @@ function ensureMap(): MapController {
       openPlace: (id, keep) => navigate(`#/map?${keep && state.period ? `period=${state.period}&` : ''}place=${id}`),
       openEvent: (id) => navigate(`#/event/${id}`),
       onFilter: (f) => renderFilterPill(f),
+      onOfflineMap: () => { mapCtl?.networkChanged(); if (mapCtl) renderBasemapCtl(mapCtl); },
     });
+    mapCtl.onBasemapChange(() => { if (mapCtl) renderBasemapCtl(mapCtl); });
     mapCtl.onBorders((info) => {
       const el = $('borders-note');
       el.hidden = !info;
@@ -120,7 +128,7 @@ function renderChrome() {
 
 function renderBasemapCtl(ctl: MapController) {
   const sel = $<HTMLSelectElement>('basemap-select');
-  sel.innerHTML = basemaps.map((b) => `<option value="${b.id}">${lt(b.title)}</option>`).join('');
+  sel.innerHTML = availableBasemaps().map((b) => `<option value="${b.id}">${lt(b.title)}</option>`).join('');
   sel.value = ctl.currentBasemap();
   sel.onchange = () => ctl.setBasemap(sel.value);
 }
@@ -166,6 +174,7 @@ function renderMapView() {
   renderOverlayCtl(ctl);
   renderFilterPill();
   tools?.refresh();
+  if (openOfflinePanel) { openOfflinePanel = false; tools?.open('offline'); }
   const sheet = $('sheet');
   const place = state.place ? placeById(state.place) : undefined;
   if (place) {
@@ -179,6 +188,8 @@ function renderMapView() {
     $('sheet-body').innerHTML = `<p class="empty">${t('noPlaces')}</p>`;
     sheet.classList.add('open');
   }
+  // на ПК картка — панель праворуч: кнопки мапи й повзунок зсуваються, щоб вона їх не закривала
+  $('view-map').classList.toggle('sheet-open', sheet.classList.contains('open'));
   setTimeout(() => ctl.map.resize(), 0);
 }
 
@@ -266,8 +277,57 @@ document.addEventListener('click', (e) => {
   setTimeout(() => target.classList.remove('fn-hl'), 1600);
 });
 
+// Esc на ПК: закрити панель інструментів, легенду чи картку місця
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'Escape' || e.defaultPrevented || route.page !== 'map') return;
+  if (tools?.isOpen()) tools.close();
+  else if (!$('overlay-legend').hidden) $('overlay-legend').hidden = true;
+  else if (state.place) navigate(`#/map${state.period ? `?period=${state.period}` : ''}`);
+});
+
+// Мережа зникла чи з'явилася: мапа з пристрою (якщо завантажена) замість мапи з інтернету і навпаки.
+function netNotice() {
+  if (navigator.onLine) return;
+  if (offlineMapReady()) toast(t('netOff'), { ms: 4000 });
+  else toast(t('netOffNoMap'), { action: t('more'), onAction: openOfflineTools, ms: 10000 });
+}
+function openOfflineTools() {
+  if (route.page === 'map') { tools?.open('offline'); return; }
+  openOfflinePanel = true;
+  navigate(`#/map${state.period ? `?period=${state.period}` : ''}`);
+}
+function onNetwork() {
+  mapCtl?.networkChanged();
+  if (mapCtl) renderBasemapCtl(mapCtl);
+  if (route.page === 'compare') render();
+  if (navigator.onLine) toast(t('netOn'), { ms: 2500 });
+  else netNotice();
+}
+window.addEventListener('online', onNetwork);
+window.addEventListener('offline', onNetwork);
+
 onRoute((r) => {
   route = r;
   lastFnRef = null;
   render();
+});
+
+netNotice();
+// браузер міг стерти завантажені мапи, коли бракувало місця
+void verifyInstalled().then((changed) => {
+  if (!changed) return;
+  mapCtl?.networkChanged();
+  if (mapCtl) renderBasemapCtl(mapCtl);
+});
+
+// Service worker: застосунок відкривається без інтернету; нову версію ставимо, коли людина погодиться.
+const updateSW = registerSW({
+  immediate: true,
+  onNeedRefresh() {
+    toast(t('updateReady'), { action: t('updateNow'), onAction: () => void updateSW(true), ms: 0 });
+  },
+  onRegisteredSW(_url, reg) {
+    // встановлений застосунок може бути відкритий днями: раз на годину перевіряємо, чи є нова версія
+    if (reg) setInterval(() => { if (navigator.onLine) void reg.update(); }, 60 * 60 * 1000);
+  },
 });

@@ -58,7 +58,8 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
   };
 
   const series = seriesById(m.series);
-  const georef = hasWebGL2() ? (series ? series.georef : m.georef) : undefined;
+  // Оригінали IIIF ідуть із серверів бібліотек: без мережі показуємо запасні зображення (як без WebGL2).
+  const georef = hasWebGL2() && navigator.onLine !== false ? (series ? series.georef : m.georef) : undefined;
   const members = series ? seriesSheets(m) : [m];
 
   // Підпис джерел у кнопці «i» мапи: невидимий шар з атрибуцією, поки стара мапа показана.

@@ -14,7 +14,8 @@ import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 
 setWorkerUrl(workerUrl);
 import { basemaps, histMaps, periodById, places } from './data';
-import { basemapStyle, getPreferredBasemap, localizeBasemapLabels, setPreferredBasemap } from './basemap';
+import { basemapStyle, chooseBasemap, localizeBasemapLabels, offlineBasemap, setPreferredBasemap } from './basemap';
+import { installed, offlineMapReady } from './offline';
 import { lt } from './i18n';
 import { colorFor, loadBorders, loadModern } from './borders';
 import { addOldMap, type OldMapHandle } from './oldmap';
@@ -39,6 +40,10 @@ export interface MapController {
   refreshLabels(): void;
   setBasemap(id: string): void;
   currentBasemap(): string;
+  /** Зникла чи з'явилася мережа, або мапу з пристрою завантажено чи видалено: перевибрати підкладку й накладку. */
+  networkChanged(): void;
+  /** Підкладку змінила сама мапа (стиль з інтернету не завантажився — узято мапу з пристрою). */
+  onBasemapChange(cb: () => void): void;
   /** Рік повзунка (null = усі періоди): перемикає шар історичних кордонів. */
   setYear(year: number | null): void;
   /** Викликається, коли змінюється рік або видимість шару кордонів (для підпису). */
@@ -112,8 +117,13 @@ function featureCollection(periodId: string | null, lang: string, filter: PlaceF
   };
 }
 
+/** Широкий екран (ПК): картка місця — панель праворуч, а не знизу. */
+export const isWide = () => matchMedia('(min-width: 900px)').matches;
+
 export function createMap(container: HTMLElement, onSelect: (id: string | null) => void): MapController {
-  let basemap = getPreferredBasemap();
+  let basemap = chooseBasemap();
+  // чи завантажився стиль поточної підкладки (для переходу на мапу з пристрою, якщо мережі насправді немає)
+  let styleOk = false;
   const map = new MLMap({
     container,
     style: basemapStyle(basemap),
@@ -204,7 +214,23 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   };
   map.on('load', addLayers);
   // Після зміни стилю підкладки шари місць і накладання треба додати знову
-  map.on('style.load', () => { localizeBasemapLabels(map, lang); addLayers(); applySelection(); if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); void applyBorders(); });
+  map.on('style.load', () => { styleOk = true; localizeBasemapLabels(map, lang); addLayers(); applySelection(); if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); void applyBorders(); });
+  // версія пакета мапи з пристрою, з якою завантажено стиль (після оновлення пакета стиль треба перечитати)
+  let offlineVersion: string | undefined = basemap.type === 'offline' ? installed('basemap')?.version : undefined;
+  const useStyle = (b: typeof basemap) => {
+    basemap = b;
+    styleOk = false;
+    offlineVersion = b.type === 'offline' ? installed('basemap')?.version : undefined;
+    map.setStyle(basemapStyle(b));
+  };
+  // Стиль підкладки не завантажився (браузер вважає, що мережа є, а її немає): беремо мапу з пристрою, якщо вона є.
+  let basemapCb: (() => void) | null = null;
+  map.on('error', (e) => {
+    // з власним обробником MapLibre сам помилок не пише — лишаємо їх у консолі, як було
+    console.error(e.error ?? e);
+    const off = offlineBasemap();
+    if (!styleOk && off && basemap.id !== off.id && offlineMapReady()) { useStyle(off); basemapCb?.(); }
+  });
   map.on('click', (e: MapMouseEvent) => {
     if (!map.getLayer('places-dot')) return;
     const hits = map.queryRenderedFeatures(e.point, { layers: ['places-dot', 'places-halo'] });
@@ -308,8 +334,8 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     },
     overlayPlaceTypes() { return currentOverlay?.placeTypes?.length ? currentOverlay.placeTypes : null; },
     flyTo(place) {
-      // Зсув угору, щоб мітку не закривала нижня картка.
-      map.flyTo({ center: place.coords, zoom: Math.max(map.getZoom(), 13), duration: 800, offset: [0, -120] });
+      // Зсув, щоб мітку не закривала картка: на телефоні вона знизу, на ПК — панель праворуч (400 px).
+      map.flyTo({ center: place.coords, zoom: Math.max(map.getZoom(), 13), duration: 800, offset: isWide() ? [-210, 0] : [0, -120] });
     },
     setOverlay(mapId) {
       const m = mapId ? histMaps.find((x) => x.id === mapId) ?? null : null;
@@ -340,10 +366,17 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     setBasemap(id) {
       const b = basemaps.find((x) => x.id === id);
       if (!b || b.id === basemap.id) return;
-      basemap = b;
       setPreferredBasemap(id);
-      map.setStyle(basemapStyle(b));
+      useStyle(b);
     },
     currentBasemap() { return basemap.id; },
+    onBasemapChange(cb) { basemapCb = cb; },
+    networkChanged() {
+      const b = chooseBasemap();
+      // мапу з пристрою оновили — стиль треба перечитати, навіть якщо підкладка та сама
+      if (b.id !== basemap.id || (b.type === 'offline' && installed('basemap')?.version !== offlineVersion)) { useStyle(b); return; }
+      // стара мапа з оригіналами IIIF без мережі показується запасними зображеннями (і навпаки)
+      if (currentOverlay && (currentOverlay.georef || currentOverlay.series)) whenReady(() => { if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); });
+    },
   };
 }

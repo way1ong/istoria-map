@@ -85,6 +85,12 @@ export function sourcesList(sources: Source[]): string {
 // Показуємо стандартну мініатюру 960 px (як у статтях Вікіпедії); якщо її немає
 // (оригінал вужчий за 960 px), браузер підставляє оригінал з data-orig.
 const COMMONS_ORIG = /^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/([0-9a-f])\/([0-9a-f]{2})\/([^/?#]+)$/;
+/**
+ * Мініатюри вантажаться з CORS (crossorigin), щоб service worker міг зберегти їх для роботи без інтернету
+ * (сервер мініатюр це дозволяє). Якщо мініатюри немає, беремо оригінал уже без CORS.
+ */
+export const IMG_FALLBACK = "this.onerror=null;this.removeAttribute('crossorigin');this.src=this.dataset.orig";
+
 export function thumbUrl(url: string, width = 960): string {
   const m = COMMONS_ORIG.exec(url);
   if (!m) return url;
@@ -102,7 +108,7 @@ export function photos(list: Photo[] | undefined): string {
   if (!list?.length) return '';
   return list
     .map(
-      (p) => `<figure><img src="${esc(thumbUrl(p.url))}" data-orig="${esc(p.url)}" onerror="this.onerror=null;this.src=this.dataset.orig" alt="${esc(lt(p.caption) || '')}" loading="lazy" />
+      (p) => `<figure><img crossorigin="anonymous" src="${esc(thumbUrl(p.url))}" data-orig="${esc(p.url)}" onerror="${IMG_FALLBACK}" alt="${esc(lt(p.caption) || '')}" loading="lazy" />
       <figcaption>${lt(p.caption) ? esc(lt(p.caption)) + '. ' : ''}${t('photoBy')}: ${esc(p.author)}, ${t('license')}: ${
         p.licenseUrl ? `<a href="${esc(p.licenseUrl)}" target="_blank" rel="noopener">${esc(p.license)}</a>` : esc(p.license)
       } (<a href="${esc(p.source)}" target="_blank" rel="noopener">${t('photoSource')}</a>)</figcaption></figure>`,
