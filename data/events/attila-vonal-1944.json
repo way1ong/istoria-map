@@ -1,0 +1,43 @@
+{
+  "id": "attila-vonal-1944",
+  "title": {
+    "uk": "Лінія «Аттіла» на схід від Пешта",
+    "hu": "Az Attila-vonal"
+  },
+  "date": {
+    "from": "1944-09-22",
+    "to": "1944-12-28",
+    "precision": "exact"
+  },
+  "period": "interwar-ww2",
+  "places": [
+    "attila-i-alsogod",
+    "somlyo-hegy-loveszarok",
+    "attila-iii-harckocsiarok"
+  ],
+  "summary": {
+    "uk": "Три підковоподібні пояси оборони на схід від Пешта, від Alsógöd і Dunakeszi до Dunaharaszti й Soroksár; наказ про будівництво віддано 22 вересня 1944 року, радянські війська прорвали лінію після боїв з 4 листопада до 28 грудня.",
+    "hu": "Három patkó alakú védőöv Pesttől keletre, Alsógödtől és Dunakeszitől Dunaharasztiig és Soroksárig; építését 1944. szeptember 22-én rendelték el, a szovjet csapatok november 4. és december 28. közötti harcokban törték át."
+  },
+  "description": {
+    "uk": "Перший пояс ішов через Alsógöd, Csomád, Veresegyház, Maglód, Ecser і Dunaharaszti, другий через Dunakeszi, Mogyoród, Isaszeg, Pécel, Pestszentimre і Soroksár, третій за 5–10 км позаду; на Буду лінія не поширювалася й так і не була завершена. Кожен пояс мав 2–4 ряди окопів; будувало 28 тисяч людей, серед них 3000 солдатів словацької інженерної дивізії, мобілізовані цивільні й єврейські робітні батальйони. За реконструкцією Juhász і Balogh за аерофото 1950-х років протитанковий рів мали лише зовнішній і внутрішній пояси, а середній складався з окремих укріплених ділянок з піхотними окопами. На початку листопада в південному секторі лінія зупинила наступ радянської 46-ї армії. Траси й позиції показано на мапі в накладці «Укріплення 1914 і 1944 років».",
+    "hu": "Az első öv Alsógöd, Csomád, Veresegyház, Maglód, Ecser és Dunaharaszti, a második Dunakeszi, Mogyoród, Isaszeg, Pécel, Pestszentimre és Soroksár vonalában, a harmadik e mögött 5–10 kilométerre húzódott; a budai oldalra nem terjedt ki, és nem épült ki teljesen. Állásonként 2–4 sor lövészárok volt; 28 000 ember építette, köztük a szlovák műszaki hadosztály 3000 katonája, a kivezényelt civil lakosság és zsidó munkaszolgálatosok. Juhász és Balogh 1950-es évekbeli légifotókon alapuló rekonstrukciója szerint harckocsiárok csak a külső és a belső övben volt, a középső gyalogsági árkokkal megerősített terepszakaszokból állt. November elején a déli szektorban a vonal megállította a szovjet 46. hadsereg offenzíváját. A nyomvonalak és állások az „Erődítések 1914-ből és 1944-ből” térképrétegen láthatók."
+  },
+  "sources": [
+    {
+      "title": "Attila-vonal – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Attila-vonal",
+      "note": "Вступ і розділ «Elhelyezkedése és szerepe»."
+    },
+    {
+      "title": "Juhász A., Balogh Á., Térinformatika alkalmazása katonai objektumok rekonstruálásához. Haditechnika LIX (2025/4) 44–49",
+      "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf",
+      "note": "Розділи про лінію «Аттіла» й рис. 8."
+    },
+    {
+      "title": "Ádám B., A Karola-vonal erődítési rendszere. Hadtudományi Szemle 15 (2022) 3. szám 33–59",
+      "url": "https://real.mtak.hu/154969/1/03_adam_33-59_HSZ_2022_3.pdf",
+      "note": "Розділ 4: «Az Attila-vonal három védőállásból állt, állásonként 2-4 sor lövészárokból»."
+    }
+  ]
+}

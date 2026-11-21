@@ -6,7 +6,7 @@ import type { PlaceType } from '../types';
 import { eventDate } from './render';
 
 /** Порядок фішок у фільтрі. */
-export const TYPES: PlaceType[] = ['castle', 'church', 'archaeological', 'monument', 'settlement', 'nature', 'farmstead', 'inn', 'mill', 'other'];
+export const TYPES: PlaceType[] = ['castle', 'military', 'church', 'archaeological', 'monument', 'settlement', 'nature', 'farmstead', 'inn', 'mill', 'other'];
 const LS_KEY = 'istoria.placeFilter';
 
 export function loadFilter(): PlaceFilter {

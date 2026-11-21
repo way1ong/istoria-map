@@ -1,0 +1,254 @@
+{
+ "Alsógöd": {
+  "lat": 47.6782491,
+  "lon": 19.1385239,
+  "type": "suburb",
+  "cat": "place",
+  "name": "Alsógöd, Göd, Dunakeszi járás, Pest megye, 2131, Magyarország"
+ },
+ "Dunakeszi": {
+  "lat": 47.6316697,
+  "lon": 19.1294055,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Dunakeszi, Dunakeszi járás, Pest megye, 2120, Magyarország"
+ },
+ "Fót": {
+  "lat": 47.6125871,
+  "lon": 19.1980105,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Fót, Dunakeszi járás, Pest megye, 2151, Magyarország"
+ },
+ "Veresegyház": {
+  "lat": 47.655235,
+  "lon": 19.2868815,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Veresegyház, Gödöllői járás, Pest megye, 2112, Magyarország"
+ },
+ "Vácegres": {
+  "lat": 47.6751335,
+  "lon": 19.3656575,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Vácegres, Aszódi járás, Pest megye, 2184, Magyarország"
+ },
+ "Szada": {
+  "lat": 47.6363332,
+  "lon": 19.3116981,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Szada, Gödöllői járás, Pest megye, 2111, Magyarország"
+ },
+ "Gödöllő": {
+  "lat": 47.601529,
+  "lon": 19.3476981,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Gödöllő, Gödöllői járás, Pest megye, 2100, Magyarország"
+ },
+ "Mogyoród": {
+  "lat": 47.5986636,
+  "lon": 19.2384215,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Mogyoród, Gödöllői járás, Pest megye, 2146, Magyarország"
+ },
+ "Csömör": {
+  "lat": 47.5489158,
+  "lon": 19.2242144,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Csömör, Gödöllői járás, Pest megye, 2141, Magyarország"
+ },
+ "Kistarcsa": {
+  "lat": 47.5447322,
+  "lon": 19.2636378,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Kistarcsa, Gödöllői járás, Pest megye, 2143, Magyarország"
+ },
+ "Isaszeg": {
+  "lat": 47.5303335,
+  "lon": 19.4017001,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Isaszeg, Gödöllői járás, Pest megye, 2117, Magyarország"
+ },
+ "Cinkota": {
+  "lat": 47.5222844,
+  "lon": 19.2300729,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Cinkota, XVI. kerület, Budapest, 1164, Magyarország"
+ },
+ "Pécel": {
+  "lat": 47.4911201,
+  "lon": 19.3446801,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Pécel, Gödöllői járás, Pest megye, 2119, Magyarország"
+ },
+ "Rákosliget": {
+  "lat": 47.4889412,
+  "lon": 19.259332,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Rákosliget, XVII. kerület, Budapest, Magyarország"
+ },
+ "Rákoshegy": {
+  "lat": 47.4609582,
+  "lon": 19.2416271,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Rákoshegy, XVII. kerület, Budapest, 1174, Magyarország"
+ },
+ "Maglód": {
+  "lat": 47.4449622,
+  "lon": 19.3593136,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Maglód, Vecsési járás, Pest megye, 2234, Magyarország"
+ },
+ "Gyömrő": {
+  "lat": 47.4223375,
+  "lon": 19.394503,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Gyömrő, Monori járás, Pest megye, 2230, Magyarország"
+ },
+ "Mende": {
+  "lat": 47.4288652,
+  "lon": 19.4515363,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Mende, Nagykátai járás, Pest megye, 2235, Magyarország"
+ },
+ "Vecsés": {
+  "lat": 47.4068966,
+  "lon": 19.2643066,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Vecsés, Vecsési járás, Pest megye, 2220, Magyarország"
+ },
+ "Üllő": {
+  "lat": 47.3850605,
+  "lon": 19.3453263,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Üllő, Vecsési járás, Pest megye, 2225, Magyarország"
+ },
+ "Péteri": {
+  "lat": 47.3880659,
+  "lon": 19.4107817,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Péteri, Monori járás, Pest megye, 2209, Magyarország"
+ },
+ "Monor": {
+  "lat": 47.3527433,
+  "lon": 19.4468404,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Monor, Monori járás, Pest megye, 2200, Magyarország"
+ },
+ "Soroksár": {
+  "lat": 47.3894047,
+  "lon": 19.1441576,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "XXIII. kerület, Budapest, Magyarország"
+ },
+ "Pesterzsébet": {
+  "lat": 47.4333961,
+  "lon": 19.1209209,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "XX. kerület, Budapest, Magyarország"
+ },
+ "Csepel": {
+  "lat": 47.425621,
+  "lon": 19.0703744,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "XXI. kerület, Budapest, Magyarország"
+ },
+ "Budaörs": {
+  "lat": 47.4611263,
+  "lon": 18.9611838,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Budaörs, Budakeszi járás, Pest megye, 2040, Magyarország"
+ },
+ "Pesthidegkút": {
+  "lat": 47.5609282,
+  "lon": 18.9652973,
+  "type": "historic",
+  "cat": "boundary",
+  "name": "Pesthidegkút, Budapest, Magyarország"
+ },
+ "Pázmánd": {
+  "lat": 47.2836305,
+  "lon": 18.6566197,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Pázmánd, Gárdonyi járás, Fejér megye, Dunántúl, 2476, Magyarország"
+ },
+ "Baracska": {
+  "lat": 47.2857906,
+  "lon": 18.7575803,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Baracska, Martonvásári járás, Fejér megye, Dunántúl, 2471, Magyarország"
+ },
+ "Ráckeresztúr": {
+  "lat": 47.2739444,
+  "lon": 18.8340424,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Ráckeresztúr, Martonvásári járás, Fejér megye, Dunántúl, 2465, Magyarország"
+ },
+ "Kápolnásnyék": {
+  "lat": 47.237503,
+  "lon": 18.6722759,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Kápolnásnyék, Gárdonyi járás, Fejér megye, Dunántúl, 2475, Magyarország"
+ },
+ "Velence": {
+  "lat": 47.2353177,
+  "lon": 18.6605263,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Velence, Gárdonyi járás, Fejér megye, Dunántúl, 2481, Magyarország"
+ },
+ "Besnyő": {
+  "lat": 47.1914649,
+  "lon": 18.7936451,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Besnyő, Dunaújvárosi járás, Fejér megye, Dunántúl, 2456, Magyarország"
+ },
+ "Beloiannisz": {
+  "lat": 47.1821153,
+  "lon": 18.8255164,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Beloiannisz, Dunaújvárosi járás, Fejér megye, Dunántúl, 2455, Magyarország"
+ },
+ "Ercsi": {
+  "lat": 47.2519697,
+  "lon": 18.8983773,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Ercsi, Martonvásári járás, Fejér megye, Dunántúl, Magyarország"
+ },
+ "Martonvásár": {
+  "lat": 47.3299049,
+  "lon": 18.7687291,
+  "type": "administrative",
+  "cat": "boundary",
+  "name": "Martonvásár, Martonvásári járás, Fejér megye, Dunántúl, 2462, Magyarország"
+ }
+}

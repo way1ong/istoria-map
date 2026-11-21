@@ -1,0 +1,38 @@
+{
+  "id": "szilas-patak-loszerkamrak",
+  "name": {
+    "uk": "Бетонні погреби для боєприпасів 1914 року біля Szilas-patak",
+    "hu": "Első világháborús lőszerkamrák a Szilas-pataknál"
+  },
+  "type": "military",
+  "coords": [
+    19.147068,
+    47.556757
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "long-19",
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Дві бетонні споруди кільця укріплень Будапешта 1914 року на березі Szilas-patak у Rákospalota, найімовірніше погреби для боєприпасів батареї; обидві добре збереглися.",
+    "hu": "Az 1914-es budapesti erődítési öv két betonobjektuma a Szilas-patak partján, Rákospalotán, valószínűleg egy üteg lőszerkamrái; mindkettő jó állapotban maradt fenn."
+  },
+  "description": {
+    "uk": "Споруди стоять приблизно за 600 м на північний захід від мосту через Szilas-patak на південний схід від ставу Szilas-tó і належали до VII сектора оборони. Кожна має близько 400 × 200 см; у стелі видно рештки хвилястої бляхи, якою армували бетон. Східніша споруда звернена із заходу на схід, її вхід до 110 см заввишки й 100 см завширшки (від нинішньої поверхні), стіни біля входу 50 см, бетонна стеля до 70 см. Друга, такого самого розміру й призначення, стоїть за 230 м на північний захід, повернута з південного заходу на північний схід, вхід з південного сходу. Обидві мають лише один отвір, з боку, протилежного можливому наступу; їх, імовірно, частково присипали землею, маскували й з'єднували ровами з іншими укріпленнями. Відділ військової археології Військово-історичного інституту й музею обстежив їх у 2020–2021 роках; обидві позначено на мапі укріплень, складеній у жовтні 1914 року. Координати другої споруди: 47.558275, 19.144857.",
+    "hu": "Az objektumok a Szilas-tótól délkeletre lévő Szilas-patak-hídtól mintegy 600 m-re északnyugatra állnak, és a védelmi rendszer VII. szakaszához tartoztak. Méretük megközelítőleg 400 × 200 cm, a födémnél látszik a betonszerkezet hullámbádog-erősítésének maradványa. A keletebbre eső nyugat–keleti tájolású, bejárata (a mai talajszinttől) legfeljebb 110 cm magas és 100 cm széles, a fal a bejáratnál 50 cm, a betonfödém legfeljebb 70 cm vastag. A másik, azonos méretű és rendeltetésű fedezék 230 m-re északnyugatra áll, délnyugat–északkeleti irányítású, bejárata délkeleten van. Mindkettőn csak egy nyílás van, a lehetséges támadási iránnyal ellentétes oldalon; valószínűleg részben földdel fedték, álcázták, és árkokkal kötötték össze a többi létesítménnyel. A HM Hadtörténeti Intézet és Múzeum Hadirégészeti Osztálya 2020–2021-ben mérte fel őket; mindkettő szerepel az 1914 októberében készült erődítési térképen. A második objektum koordinátái: 47.558275, 19.144857."
+  },
+  "sources": [
+    {
+      "title": "Kulcsár V., Budapest 1914. évi erődítése. Hadtudományi Szemle 2025/1, 95–105 (DOI 10.35926/HSZ.2025.1.9)",
+      "url": "https://real.mtak.hu/218170/1/009_KulcsarViktor_95-105.pdf",
+      "note": "Розділ «Az erődítési vonal hadtörténeti régészeti kutatása», рис. 5–6; координати обох споруд у виносках 28–29 (координати опубліковані відкрито)."
+    },
+    {
+      "title": "OpenStreetMap (Nominatim): зворотне геокодування 47.556757, 19.147068",
+      "url": "https://nominatim.openstreetmap.org/ui/reverse.html?lat=47.556757&lon=19.147068",
+      "note": "Szilas-patak tanösvény, Rákospalota, XV район Будапешта (ODbL)."
+    }
+  ]
+}

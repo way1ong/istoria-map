@@ -89,7 +89,9 @@ const dict = {
     tp_farmstead: 'Хутори й пусти',
     tp_inn: 'Корчми',
     tp_mill: 'Млини',
+    tp_military: 'Укріплення світових війн',
     tp_other: 'Інше',
+    legendHint: 'Натисніть на лінію, пляму чи кружок: з\'явиться джерело й точність.',
   },
   hu: {
     appTitle: 'Magyarország története térképen',
@@ -179,7 +181,9 @@ const dict = {
     tp_farmstead: 'Majorok, puszták',
     tp_inn: 'Csárdák',
     tp_mill: 'Malmok',
+    tp_military: 'Világháborús erődítések',
     tp_other: 'Egyéb',
+    legendHint: 'Koppintson egy vonalra, foltra vagy körre: megjelenik a forrás és a pontosság.',
   },
 } satisfies Record<Lang, Record<string, string>>;
 

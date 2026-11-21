@@ -1,0 +1,32 @@
+{
+  "id": "budapest-erodites-1914",
+  "title": {
+    "uk": "Кільце укріплень довкола Будапешта",
+    "hu": "Budapest 1914. évi erődítése"
+  },
+  "date": {
+    "from": "1914-08",
+    "to": "1914-12",
+    "precision": "approximate"
+  },
+  "period": "long-19",
+  "places": [
+    "harmas-tampont",
+    "szilas-patak-loszerkamrak"
+  ],
+  "summary": {
+    "uk": "З кінця серпня до грудня 1914 року довкола Будапешта звели кільце укріплень проти можливого прориву російської армії через Карпати: вісім секторів, суцільна загорода й опорні пункти з гарматами.",
+    "hu": "1914 augusztusának végétől decemberig erődítési öv épült Budapest körül egy esetleges kárpáti orosz áttörés ellen: nyolc szakasz, egybefüggő műszaki zár és ágyúkkal felszerelt támpontok."
+  },
+  "description": {
+    "uk": "Кільце було частиною лінії «Donaulinie» вздовж Дунаю від Кремса до Будапешта. Місто поділили на вісім секторів, пронумерованих від Békásmegyer проти годинникової стрілки; опорні пункти з круговою обороною мали в середньому по чотири гармати й по два знаряддя «szórólöveg», дротяні загородження, окопи, спостережні пункти, укриття; бетонними були спостережні й командні пункти, невеликі сховища й, імовірно, погреби для боєприпасів, а також діяли телефонна мережа й підземні ходи. До грудня 1914 року лінію завершили, але боїв тут не було, і 1917 року більшість укріплень розібрали, лишивши бетон. Плани знадобилися 1944 року: лінія 1914 року приблизно збігається з третім поясом лінії «Аттіла». Опорні пункти показано на мапі в накладці «Укріплення 1914 і 1944 років».",
+    "hu": "Az öv a Kremstől Budapestig a Duna mentén húzódó „Donaulinie” része volt. A várost nyolc, Békásmegyertől az óramutató járásával ellentétesen számozott szakaszra osztották; a körvédőképes támpontokon átlagosan négy löveg és két szórólöveg, drótakadályok, árkok, megfigyelőállások és fedezékek voltak; betonból készültek a megfigyelő- és parancsnoki állások, a kisebb óvóhelyek és feltehetően a lőszertárolók, és saját telefonhálózat, valamint föld alatti járatrendszer is épült. Decemberre a vonal elkészült, harc azonban nem érte, és 1917-ben az erődítések nagy részét felszámolták, a betont meghagyva. A terveket 1944-ben hasznosították: az 1914-es vonalra nagyjából az Attila-vonal III. öve illeszkedik. A támpontok az „Erődítések 1914-ből és 1944-ből” térképrétegen láthatók."
+  },
+  "sources": [
+    {
+      "title": "Kulcsár V., Budapest 1914. évi erődítése. Hadtudományi Szemle 2025/1, 95–105",
+      "url": "https://real.mtak.hu/218170/1/009_KulcsarViktor_95-105.pdf",
+      "note": "Розділи «Bevezető» і «Az erődítési vonal hadtörténeti régészeti kutatása», рис. 1."
+    }
+  ]
+}

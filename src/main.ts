@@ -33,7 +33,9 @@ app.innerHTML = `
       <div id="overlay-ctl" class="overlay-ctl" hidden>
         <select id="overlay-select"></select>
         <input id="overlay-opacity" type="range" min="0" max="1" step="0.05" value="0.7" />
+        <button id="overlay-legend-btn" class="ov-legend-btn" type="button" hidden>i</button>
       </div>
+      <div id="overlay-legend" class="ov-legend" hidden></div>
       <div id="filter-pill" class="filter-pill" hidden><button type="button" class="fp-open"></button><button type="button" class="fp-clear">×</button></div>
       <div id="borders-note" class="borders-note" hidden></div>
       <div id="timeline" class="timeline"></div>
@@ -133,6 +135,24 @@ function renderOverlayCtl(ctl: MapController) {
   sel.innerHTML = `<option value="">${t('noOverlay')}</option>` + choices.map((c) => `<option value="${c.value}">${c.label}</option>`).join('');
   sel.value = choices.some((c) => c.value === prev) ? prev : '';
   ctl.setOverlay(sel.value || null);
+  renderOverlayLegend(sel.value || null, sel.value !== prev);
+}
+
+/** Умовні позначки векторної накладки (поле legend у data/maps/*.json): кнопка «i» біля списку мап і панель під ним. */
+const swatch = (style: string, color: string) => `<span class="sw sw-${style}" style="--c:${color}"></span>`;
+function renderOverlayLegend(mapId: string | null, open: boolean) {
+  const m = mapId ? histMaps.find((x) => x.id === mapId) : undefined;
+  const btn = $<HTMLButtonElement>('overlay-legend-btn');
+  const box = $('overlay-legend');
+  btn.hidden = !m?.legend?.length;
+  btn.setAttribute('aria-label', t('legend'));
+  btn.title = t('legend');
+  if (!m?.legend?.length) { box.hidden = true; box.innerHTML = ''; return; }
+  box.innerHTML = `<div class="ov-legend-head"><strong>${t('legend')}</strong><button type="button" class="ov-legend-close" aria-label="${t('close')}">×</button></div>`
+    + `<ul>${m.legend.map((it) => `<li>${swatch(it.style, it.color)}<span>${lt(it.label)}</span></li>`).join('')}</ul>`
+    + `<p class="ov-legend-hint">${t('legendHint')}</p>`;
+  box.querySelector<HTMLButtonElement>('.ov-legend-close')!.onclick = () => { box.hidden = true; };
+  if (open) box.hidden = false;
 }
 
 function renderMapView() {
@@ -219,7 +239,12 @@ document.querySelectorAll<HTMLButtonElement>('.lang button').forEach((b) => {
 $('filter-pill').querySelector<HTMLButtonElement>('.fp-clear')!.onclick = () => tools?.clearFilter();
 $('filter-pill').querySelector<HTMLButtonElement>('.fp-open')!.onclick = () => tools?.open('filter');
 $('sheet').querySelector<HTMLButtonElement>('.close')!.onclick = () => navigate(`#/map${state.period ? `?period=${state.period}` : ''}`);
-$<HTMLSelectElement>('overlay-select').onchange = (e) => mapCtl?.setOverlay((e.target as HTMLSelectElement).value || null);
+$<HTMLSelectElement>('overlay-select').onchange = (e) => {
+  const v = (e.target as HTMLSelectElement).value || null;
+  mapCtl?.setOverlay(v);
+  renderOverlayLegend(v, true);
+};
+$('overlay-legend-btn').onclick = () => { const box = $('overlay-legend'); box.hidden = !box.hidden; };
 $<HTMLInputElement>('overlay-opacity').oninput = (e) => mapCtl?.setOverlayOpacity(Number((e.target as HTMLInputElement).value));
 
 // Виноски в текстах: посилання #fn-… не змінюють маршрут, а прокручують до джерела і назад.

@@ -1,0 +1,36 @@
+{
+  "id": "attila-i-alsogod",
+  "name": {
+    "uk": "Перший пояс лінії «Аттіла» в Alsógöd",
+    "hu": "Az Attila-vonal első öve Alsógödnél"
+  },
+  "type": "military",
+  "coords": [
+    19.1308,
+    47.68046
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "interwar-ww2"
+  ],
+  "summary": {
+    "uk": "Восени 1944 року зовнішній пояс лінії «Аттіла» починався в Alsógöd і йшов через Csomád і Veresegyház на схід від Пешта; на реконструкції тут протитанковий рів.",
+    "hu": "1944 őszén az Attila-vonal külső öve Alsógödnél kezdődött, és Csomádon, Veresegyházon át húzódott Pesttől keletre; a rekonstrukción itt harckocsiárok látható."
+  },
+  "description": {
+    "uk": "Перший пояс лінії «Аттіла» йшов через Alsógöd, Csomád, Veresegyház, Maglód, Ecser і Dunaharaszti, другий — через Dunakeszi, Mogyoród, Isaszeg, Pécel, Pestszentimre і Soroksár. На реконструкції Juhász і Balogh за аерофото протитанковий рів першого поясу тягнеться від Alsógöd повз Csomád до Veresegyház. Точка на мапі — найзахідніше місце траси, яке видно на мапі в статті: там рисунок обрізано краєм, тож рів міг починатися ближче до Дунаю. Похибка орієнтовно 100–300 м. Усю трасу видно на мапі в накладці «Укріплення 1914 і 1944 років».",
+    "hu": "Az Attila-vonal első öve Alsógöd, Csomád, Veresegyház, Maglód, Ecser és Dunaharaszti vonalában, a második Dunakeszi, Mogyoród, Isaszeg, Pécel, Pestszentimre és Soroksár vonalában húzódott. Juhász és Balogh légifotók alapján készült rekonstrukcióján az első öv harckocsiárka Alsógödtől Csomád mellett Veresegyházig fut. A térképi pont a cikk térképén látható legnyugatibb pontja a nyomvonalnak: ott a térkép széle levágja, így az árok közelebb is kezdődhetett a Dunához. A pontatlanság nagyjából 100–300 m. A teljes nyomvonal az „Erődítések 1914-ből és 1944-ből” rétegen látható."
+  },
+  "sources": [
+    {
+      "title": "Attila-vonal – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Attila-vonal",
+      "note": "Перший рядок статті: пояси та населені пункти."
+    },
+    {
+      "title": "Juhász A., Balogh Á., Térinformatika alkalmazása katonai objektumok rekonstruálásához. Haditechnika LIX (2025/4) 44–49",
+      "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf",
+      "note": "Рис. 8 «Budapest védelmi rendszere 1944 végén», 1:300 000."
+    }
+  ]
+}

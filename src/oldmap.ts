@@ -1,10 +1,15 @@
-import type { CustomLayerInterface, GeoJSONSource, Map as MLMap } from 'maplibre-gl';
+import { Popup } from 'maplibre-gl';
+import type { CustomLayerInterface, ExpressionSpecification, FilterSpecification, GeoJSONSource, MapLayerMouseEvent, Map as MLMap } from 'maplibre-gl';
 import { loadVectorOverlay, seriesById, seriesSheets } from './data';
-import { lt } from './i18n';
-import type { HistMap } from './types';
+import { lt, t } from './i18n';
+import type { HistMap, LText } from './types';
+
+const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
 
 export interface OldMapHandle {
   setOpacity(v: number): void;
+  /** Закрити підказку об'єкта векторної накладки (наприклад, коли вибрано інше місце). */
+  closePopup(): void;
   remove(): void;
 }
 
@@ -44,6 +49,8 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
   let warped: WarpedLayer | null = null;
   let onImageError: ((e: { layerId?: string }) => void) | null = null;
   const before = () => (opts.beforeId && map.getLayer(opts.beforeId) ? opts.beforeId : undefined);
+  const setPointer = () => { map.getCanvas().style.cursor = 'pointer'; };
+  const unsetPointer = () => { map.getCanvas().style.cursor = ''; };
   const addImage = (id: string, url: string, coordinates: [number, number][], zoom: { minzoom?: number; maxzoom?: number } = {}) => {
     map.addSource(id, { type: 'image', url, coordinates: coordinates as Corners });
     map.addLayer({ id, type: 'raster', source: id, paint: { 'raster-opacity': opacity }, ...zoom }, before());
@@ -62,8 +69,71 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
   ids.push(attrId);
 
   let update: (() => void) | null = null;
-  const vectorIds: { id: string; prop: 'fill-opacity' | 'line-opacity'; k: number }[] = [];
-  if (!series && m.type === 'geojson') {
+  const vectorIds: { id: string; prop: 'fill-opacity' | 'line-opacity' | 'circle-opacity' | 'circle-stroke-opacity'; k: number }[] = [];
+  const clickLayers: string[] = [];
+  let onClick: ((e: MapLayerMouseEvent) => void) | null = null;
+  let popup: Popup | null = null;
+  if (!series && m.type === 'geojson' && m.legend?.length) {
+    // Векторна накладка з умовними знаками: кожен вид об'єктів (properties.kind) малюється своїм стилем,
+    // натискання показує підказку з назвою, поясненням точності й джерелом.
+    const id = `${opts.prefix}-v`;
+    map.addSource(id, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+    ids.push(id);
+    const width: ExpressionSpecification = ['interpolate', ['linear'], ['zoom'], 8, 1.2, 12, 2.4, 15, 3.6];
+    // площі знизу, далі лінії, кружки зверху
+    const order = { fill: 0, line: 1, dash: 1, longdash: 1, point: 2 } as const;
+    for (const it of [...m.legend].sort((a, b) => order[a.style] - order[b.style])) {
+      const lid = `${id}-${it.kind}`;
+      const filter: FilterSpecification = ['==', ['get', 'kind'], it.kind];
+      if (it.style === 'fill') {
+        map.addLayer({ id: lid, type: 'fill', source: id, filter, paint: { 'fill-color': it.color, 'fill-opacity': 0.55 * opacity, 'fill-outline-color': it.color } }, before());
+        vectorIds.push({ id: lid, prop: 'fill-opacity', k: 0.55 });
+      } else if (it.style === 'point') {
+        map.addLayer({ id: lid, type: 'circle', source: id, filter, paint: {
+          'circle-radius': ['interpolate', ['linear'], ['zoom'], 8, 3, 12, 5, 15, 7],
+          'circle-color': it.color, 'circle-stroke-color': '#ffffff', 'circle-stroke-width': 1.5,
+          'circle-opacity': opacity, 'circle-stroke-opacity': opacity,
+        } }, before());
+        vectorIds.push({ id: lid, prop: 'circle-opacity', k: 1 }, { id: lid, prop: 'circle-stroke-opacity', k: 1 });
+      } else {
+        const dash = it.style === 'dash' ? [2, 1.5] : it.style === 'longdash' ? [4, 2.5] : undefined;
+        map.addLayer({ id: lid, type: 'line', source: id, filter, layout: { 'line-cap': dash ? 'butt' : 'round', 'line-join': 'round' },
+          paint: { 'line-color': it.color, 'line-width': width, 'line-opacity': opacity, ...(dash ? { 'line-dasharray': dash } : {}) } }, before());
+        vectorIds.push({ id: lid, prop: 'line-opacity', k: 1 });
+      }
+      ids.unshift(lid);
+      clickLayers.push(lid);
+    }
+    const legend = m.legend;
+    onClick = (e: MapLayerMouseEvent) => {
+      const f = e.features?.[0];
+      const it = legend.find((x) => x.kind === f?.properties?.kind);
+      if (!f || !it) return;
+      // натиснули на мітку місця поверх накладки — відкривається картка місця, підказка не потрібна
+      const placeLayers = ['places-dot', 'places-halo'].filter((l) => map.getLayer(l));
+      if (placeLayers.length && map.queryRenderedFeatures(e.point, { layers: placeLayers }).length) return;
+      let name = '';
+      try { name = f.properties?.name ? lt(JSON.parse(String(f.properties.name)) as LText) : ''; } catch { name = ''; }
+      const url = f.properties?.url ? String(f.properties.url) : '';
+      const src = it.source;
+      const html = `<div class="ov-pop"><strong>${esc(lt(it.label))}</strong>${name ? `<div class="ov-name">${esc(name)}</div>` : ''}`
+        + (it.note ? `<p>${esc(lt(it.note))}</p>` : '')
+        + (src ? `<p class="ov-src">${t('sources')}: ${src.url ? `<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.title)}</a>` : esc(src.title)}</p>` : '')
+        + (url ? `<p class="ov-src"><a href="${esc(url)}" target="_blank" rel="noopener">OpenStreetMap</a></p>` : '')
+        + '</div>';
+      popup?.remove();
+      popup = new Popup({ maxWidth: '280px', closeButton: true }).setLngLat(e.lngLat).setHTML(html).addTo(map);
+    };
+    for (const lid of clickLayers) {
+      map.on('click', lid, onClick);
+      map.on('mouseenter', lid, setPointer);
+      map.on('mouseleave', lid, unsetPointer);
+    }
+    void loadVectorOverlay(m.url).then((data) => {
+      if (removed) return;
+      (map.getSource(id) as GeoJSONSource | undefined)?.setData(data);
+    }).catch((e) => console.warn('Векторна накладка:', e));
+  } else if (!series && m.type === 'geojson') {
     // Векторна накладка: заливка й контур; дані вантажаться ліниво.
     const id = `${opts.prefix}-v`;
     map.addSource(id, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
@@ -154,6 +224,10 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
   }
 
   return {
+    closePopup() {
+      popup?.remove();
+      popup = null;
+    },
     setOpacity(v) {
       opacity = v;
       for (const id of ids) if (map.getLayer(id) && map.getLayer(id)!.type === 'raster') map.setPaintProperty(id, 'raster-opacity', v);
@@ -166,6 +240,14 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
       if (onImageError) (map as unknown as Evented).off('imageinfofetcherror', onImageError);
       if (warped && map.getLayer(warped.id)) map.removeLayer(warped.id);
       warped = null;
+      if (onClick) for (const lid of clickLayers) {
+        map.off('click', lid, onClick);
+        map.off('mouseenter', lid, setPointer);
+        map.off('mouseleave', lid, unsetPointer);
+      }
+      unsetPointer();
+      popup?.remove();
+      popup = null;
       for (const id of ids) {
         if (map.getLayer(id)) map.removeLayer(id);
         if (map.getSource(id)) map.removeSource(id);
