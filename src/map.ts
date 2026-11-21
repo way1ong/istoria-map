@@ -16,6 +16,7 @@ setWorkerUrl(workerUrl);
 import { basemaps, histMaps, periodById, places } from './data';
 import { basemapStyle, chooseBasemap, localizeBasemapLabels, offlineBasemap, setPreferredBasemap } from './basemap';
 import { installed, offlineMapReady } from './offline';
+import { areasGeoJSON, areasOutline, onAreasChange, savedAreas } from './offlineareas';
 import { lt } from './i18n';
 import { colorFor, loadBorders, loadModern } from './borders';
 import { addOldMap, type OldMapHandle } from './oldmap';
@@ -25,6 +26,8 @@ import type { BorderCollection, HistMap, Place, PlaceType } from './types';
 // Стартовий вигляд: уся Угорщина (центр країни, зум під екран телефона).
 const CENTER: [number, number] = [19.4, 47.15];
 const SRC = 'places';
+/** Межі збережених ділянок старих мап (див. applyAreas). */
+const AREAS_ID = 'offline-saved-areas';
 const BORDERS_SRC = 'borders';
 const MODERN_SRC = 'modern-outline';
 /** Нижче цього зуму показуються історичні кордони; вище — лише місця. */
@@ -248,7 +251,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   };
   map.on('load', addLayers);
   // Після зміни стилю підкладки шари місць і накладання треба додати знову
-  map.on('style.load', () => { styleOk = true; localizeBasemapLabels(map, lang); addLayers(); applySelection(); if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); void applyBorders(); });
+  map.on('style.load', () => { styleOk = true; localizeBasemapLabels(map, lang); addLayers(); applySelection(); applyAreas(); if (currentOverlay) addOverlay(currentOverlay, overlayOpacity); void applyBorders(); });
   // версія пакета мапи з пристрою, з якою завантажено стиль (після оновлення пакета стиль треба перечитати)
   let offlineVersion: string | undefined = basemap.type === 'offline' ? installed('basemap')?.version : undefined;
   const useStyle = (b: typeof basemap) => {
@@ -284,6 +287,23 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     map.setPaintProperty('places-photo', 'icon-opacity', opacityExpr(selected));
   };
 
+  // Межі ділянок старих мап, збережених для роботи без інтернету (src/offlineareas.ts): пунктир над старою мапою,
+  // під мітками місць; перемикач — у панелі «Без інтернету».
+  const applyAreas = () => {
+    if (!map.getLayer('places-halo')) return;
+    const show = areasOutline() && savedAreas().length > 0;
+    const src = map.getSource(AREAS_ID) as GeoJSONSource | undefined;
+    if (!show) {
+      if (map.getLayer(AREAS_ID)) map.removeLayer(AREAS_ID);
+      if (src) map.removeSource(AREAS_ID);
+      return;
+    }
+    if (src) { src.setData(areasGeoJSON()); return; }
+    map.addSource(AREAS_ID, { type: 'geojson', data: areasGeoJSON() });
+    map.addLayer({ id: AREAS_ID, type: 'line', source: AREAS_ID, paint: { 'line-color': '#f59e0b', 'line-width': 2.5, 'line-dasharray': [3, 2] } }, 'places-halo');
+  };
+  onAreasChange(() => whenReady(applyAreas));
+
   // Стара мапа поверх сучасної; аркуші серії — разом (див. src/oldmap.ts).
   let overlay: OldMapHandle | null = null;
   // Ключ показаної накладки: для аркушів серії — id серії (будь-який її аркуш показує ту саму серію).
@@ -296,7 +316,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   };
   const addOverlay = (m: HistMap, opacity: number) => {
     removeOverlay();
-    overlay = addOldMap(map, m, { prefix: 'overlay', beforeId: 'places-halo', opacity });
+    overlay = addOldMap(map, m, { prefix: 'overlay', beforeId: [AREAS_ID, 'places-halo'], opacity });
     overlayKey = keyOf(m);
   };
   /** Виконати, коли наші джерела вже в стилі; інакше — після наступного style.load

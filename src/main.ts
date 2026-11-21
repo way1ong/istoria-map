@@ -9,7 +9,7 @@ import { mountAnimation, type AnimHandle } from './anim';
 import { mountCompare, type CompareHandle } from './compare';
 import { getLang, lt, setLang, t } from './i18n';
 import { createMap, type MapController } from './map';
-import { takeSavedView, watchContextLoss } from './glloss';
+import { dropSavedView, showGlFailure, takeSavedView, watchContextLoss } from './glloss';
 import { mapChoices } from './oldmap';
 import { chronologyPage } from './pages/chronology';
 import { eventPage, historyIndex, periodPage, placePage } from './pages/history';
@@ -64,6 +64,8 @@ let tools: ReturnType<typeof mountMapTools> | null = null;
 let lastFilter: PlaceFilter = { types: [], vanishedOnly: false };
 /** Відкрити панель «Без інтернету», щойно з'явиться мапа (з повідомлення на іншій сторінці). */
 let openOfflinePanel = false;
+/** Пояснення «мапа не запустилася» в «Порівняти» (src/glloss.ts). */
+let cmpFail: (() => void) | null = null;
 // вигляд мапи, збережений перед перезавантаженням через втрату графіки (src/glloss.ts)
 let restoreView = takeSavedView();
 
@@ -78,11 +80,24 @@ function renderFilterPill(f: PlaceFilter = lastFilter) {
   pill.querySelector<HTMLButtonElement>('.fp-clear')!.ariaLabel = t('filterAll');
 }
 
-function ensureMap(): MapController {
+/** Пояснення «мапа не запустилася» на місці мапи; null — мапа є або ще не пробували. */
+let mapFail: (() => void) | null = null;
+
+function ensureMap(): MapController | null {
   if (!mapCtl) {
-    mapCtl = createMap($('map'), (id) => {
-      navigate(id ? `#/map?${state.period ? `period=${state.period}&` : ''}place=${id}` : `#/map${state.period ? `?period=${state.period}` : ''}`);
-    });
+    try {
+      mapCtl = createMap($('map'), (id) => {
+        navigate(id ? `#/map?${state.period ? `period=${state.period}&` : ''}place=${id}` : `#/map${state.period ? `?period=${state.period}` : ''}`);
+      });
+    } catch (e) {
+      // Браузер не дав графіки (WebGL2): буває одразу після збою графіки на телефоні. Замість порожньої сторінки —
+      // пояснення; мапа запуститься сама, щойно графіка повернеться (src/glloss.ts).
+      console.warn(e);
+      if (!mapFail) mapFail = showGlFailure($('view-map'), () => { mapFail = null; if (route.page === 'map') render(); });
+      return null;
+    }
+    mapFail?.();
+    mapFail = null;
     mapCtl.setOverlayOpacity(0.7);
     // біла мапа після втрати графіки: якщо браузер не поверне її сам — кнопка «Перезавантажити мапу»
     watchContextLoss(mapCtl.map, () => ({
@@ -178,6 +193,7 @@ function renderOverlayLegend(mapId: string | null, open: boolean) {
 
 function renderMapView() {
   const ctl = ensureMap();
+  if (!ctl) return;
   ctl.setPeriod(state.period);
   ctl.setSelected(state.place);
   renderTimeline($('timeline'), state.period, (id) => navigate(`#/map${id ? `?period=${id}` : ''}`), (year) => ctl.setYear(year));
@@ -206,6 +222,7 @@ function renderMapView() {
   if (restoreView) {
     const v = restoreView;
     restoreView = null;
+    dropSavedView();
     ctl.map.stop();
     ctl.map.jumpTo({ center: v.center, zoom: v.zoom });
     if (typeof v.opacity === 'number') {
@@ -223,14 +240,24 @@ function render() {
   $('view-page').classList.toggle('active', !isMap && !isCmp);
   $('view-compare').classList.toggle('active', isCmp);
   if (!isCmp && cmp) { cmp.destroy(); cmp = null; }
+  if (!isCmp && cmpFail) { cmpFail(); cmpFail = null; }
   if (isCmp) {
     const r = route as Extract<Route, { page: 'compare' }>;
     cmp?.destroy();
-    cmp = mountCompare($('compare'), {
-      mapId: r.map, periodId: r.period ?? state.period, baseId: r.base,
-      onChange: (q) => navigate(`#/compare?map=${q.map}&base=${q.base}${r.period ? `&period=${r.period}` : ''}`),
-      onPlace: (id) => navigate(`#/place/${id}`),
-    });
+    cmpFail?.();
+    cmpFail = null;
+    try {
+      cmp = mountCompare($('compare'), {
+        mapId: r.map, periodId: r.period ?? state.period, baseId: r.base,
+        onChange: (q) => navigate(`#/compare?map=${q.map}&base=${q.base}${r.period ? `&period=${r.period}` : ''}`),
+        onPlace: (id) => navigate(`#/place/${id}`),
+      });
+    } catch (e) {
+      // браузер не дав графіки — пояснення й повтор, як для основної мапи
+      console.warn(e);
+      cmp = null;
+      cmpFail = showGlFailure($('compare'), () => { cmpFail = null; if (route.page === 'compare') render(); });
+    }
     return;
   }
   if (route.page === 'map') {
@@ -253,8 +280,17 @@ function render() {
     case 'event': {
       page.innerHTML = eventPage(route.id);
       const rs = routesForEvent(route.id);
+      const mount = (host: HTMLElement, r: (typeof rs)[number]) => {
+        try {
+          anims.push(mountAnimation(host, r));
+        } catch (e) {
+          // браузер не дав графіки: пояснення в місці анімації, повтор — лише для неї (сторінка не прокручується вгору)
+          console.warn(e);
+          showGlFailure(host, () => { if (host.isConnected) mount(host, r); });
+        }
+      };
       page.querySelectorAll<HTMLElement>('.anim-host').forEach((host, i) => {
-        if (rs[i]) anims.push(mountAnimation(host, rs[i]));
+        if (rs[i]) mount(host, rs[i]);
       });
       break;
     }

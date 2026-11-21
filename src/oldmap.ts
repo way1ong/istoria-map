@@ -56,13 +56,14 @@ const ALLMAPS_BUFFER = {
  *   бібліотек (бібліотека Allmaps вантажить лише видимі шматки потрібної роздільності); звичайні
  *   зображення під ними лишаються запасним шаром.
  */
-export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; beforeId?: string; opacity: number }): OldMapHandle {
+export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; beforeId?: string | string[]; opacity: number }): OldMapHandle {
   const ids: string[] = [];
   let opacity = opts.opacity;
   let removed = false;
   let warped: WarpedLayer | null = null;
   let onImageError: ((e: { layerId?: string }) => void) | null = null;
-  const before = () => (opts.beforeId && map.getLayer(opts.beforeId) ? opts.beforeId : undefined);
+  // шар, під яким лягає стара мапа: перший наявний з переліку (межі збережених ділянок, інакше мітки місць)
+  const before = () => [opts.beforeId ?? []].flat().find((id) => map.getLayer(id));
   const setPointer = () => { map.getCanvas().style.cursor = 'pointer'; };
   const unsetPointer = () => { map.getCanvas().style.cursor = ''; };
   const addImage = (id: string, url: string, coordinates: [number, number][], zoom: { minzoom?: number; maxzoom?: number } = {}) => {
