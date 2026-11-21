@@ -33,6 +33,25 @@ export function savedAreas(): SavedArea[] {
 }
 function saveAreas(list: SavedArea[]) {
   try { localStorage.setItem(LS, JSON.stringify(list)); } catch { /* без запам'ятовування */ }
+  emitAreas();
+}
+
+/** Хто стежить за ділянками й налаштуванням меж на мапі (src/map.ts малює межі пунктиром). */
+const areaListeners = new Set<() => void>();
+export function onAreasChange(cb: () => void): () => void {
+  areaListeners.add(cb);
+  return () => areaListeners.delete(cb);
+}
+function emitAreas() { for (const cb of areaListeners) cb(); }
+
+/** Чи показувати межі збережених ділянок на мапі (типово так; перемикач у панелі «Без інтернету»). */
+const OUTLINE_LS = 'istoria.offline.areasOutline';
+export function areasOutline(): boolean {
+  try { return localStorage.getItem(OUTLINE_LS) !== '0'; } catch { return true; }
+}
+export function setAreasOutline(v: boolean): void {
+  try { localStorage.setItem(OUTLINE_LS, v ? '1' : '0'); } catch { /* приватний режим */ }
+  emitAreas();
 }
 
 /**

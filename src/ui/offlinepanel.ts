@@ -7,8 +7,7 @@ import {
   currentJob, deletePack, downloadPack, installed, loadManifest, offlineSupported, onOfflineChange, PACK_IDS, pending,
   photosManifest, stopDownload, storageInfo, type DownloadResult, type PackId, type PackManifest, type PacksManifest,
 } from '../offline';
-import { areaKm, areasGeoJSON, areasStorage, deleteArea, downloadArea, nearestPlace, planArea, savedAreas, type AreaPlan } from '../offlineareas';
-import type { GeoJSONSource } from 'maplibre-gl';
+import { areaKm, areasOutline, areasStorage, deleteArea, downloadArea, nearestPlace, planArea, savedAreas, setAreasOutline, type AreaPlan } from '../offlineareas';
 import { placeById } from '../data';
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
@@ -158,7 +157,8 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
         <summary><span class="off-saved-t">${esc(t('offAreaSaved').replace('{n}', String(savedAreas().length)))}</span><span class="off-size">${esc(t('offAreasSum').replace('{size}', fmtBytes(total)))}</span></summary>
         <ul class="off-area-list">${list}</ul>
         <p class="off-note">${esc(t('offAreasShared'))}</p>
-      </details>` : ''}
+      </details>
+      <label class="off-check"><input type="checkbox" data-act="areas-outline" ${areasOutline() ? 'checked' : ''} /> ${esc(t('offAreasOutline'))}</label>` : ''}
     </li>`;
   };
 
@@ -230,22 +230,6 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
       ${offlineSupported() ? `<p class="mtool-note">${esc(t('offIntro'))}</p><ul class="off-packs">${packs}</ul>${storage}` : `<p class="mtool-note">${esc(t('offNoSupport'))}</p>`}
       <div class="off-install-box">${install}</div>`;
     progress();
-    showAreas();
-  };
-  /** Поки панель відкрита, збережені ділянки обведено на мапі пунктиром. */
-  const AREAS_ID = 'offline-saved-areas';
-  const showAreas = () => {
-    try {
-      const data = areasGeoJSON();
-      const src = map.getSource(AREAS_ID) as GeoJSONSource | undefined;
-      if (src) { src.setData(data); return; }
-      map.addSource(AREAS_ID, { type: 'geojson', data });
-      map.addLayer({ id: AREAS_ID, type: 'line', source: AREAS_ID, paint: { 'line-color': '#f59e0b', 'line-width': 2.5, 'line-dasharray': [3, 2] } });
-    } catch { /* стиль ще вантажиться — додамо під час наступного оновлення панелі */ }
-  };
-  const hideAreas = () => {
-    if (map.getLayer(AREAS_ID)) map.removeLayer(AREAS_ID);
-    if (map.getSource(AREAS_ID)) map.removeSource(AREAS_ID);
   };
   /** Хід завантаження оновлюємо на місці, щоб натискання «Зупинити» не губилося через перемальовування. */
   const progress = (): boolean => {
@@ -316,6 +300,11 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     try { localStorage.setItem(AREAS_OPEN_KEY, areasOpen ? '1' : '0'); } catch { /* приватний режим */ }
   };
   body.addEventListener('toggle', onToggle, true);
+  // перемикач «Показувати межі ділянок на мапі» (межі малює src/map.ts)
+  body.onchange = (e) => {
+    const el = e.target;
+    if (el instanceof HTMLInputElement && el.dataset.act === 'areas-outline') setAreasOutline(el.checked);
+  };
   const off1 = onOfflineChange(() => { if (!progress()) void draw(); });
   const off2 = onInstallChange(() => void draw());
   const net = () => { view.key = ''; updatePlan(); };
@@ -332,10 +321,10 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     off1();
     off2();
     map.off('moveend', onMove);
-    hideAreas();
     window.removeEventListener('online', net);
     window.removeEventListener('offline', net);
     body.onclick = null;
+    body.onchange = null;
     body.removeEventListener('toggle', onToggle, true);
   };
 }
