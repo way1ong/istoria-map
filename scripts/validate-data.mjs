@@ -245,6 +245,8 @@ for (const { file, path, name } of listJson('maps')) {
         checkCoords(`data/${m.url}`, first, `features[${k}]`, MAP_REGION);
         if (legendKinds.size && !legendKinds.has(f?.properties?.kind)) err(`data/${m.url}`, `features[${k}]: kind "${f?.properties?.kind}" немає в legend ${file}`);
         if (f?.properties?.name !== undefined && !isLText(f.properties.name)) err(`data/${m.url}`, `features[${k}]: name має бути {"uk": …, "hu": …}`);
+        if (f?.properties?.note !== undefined && !isLText(f.properties.note)) err(`data/${m.url}`, `features[${k}]: note має бути {"uk": …, "hu": …}`);
+        if (f?.properties?.url !== undefined && !/^https:\/\/\S+$/.test(String(f.properties.url))) err(`data/${m.url}`, `features[${k}]: url має починатися з https://`);
       });
       for (const k of ['license', 'attribution']) if (typeof g?.[k] !== 'string' || !g[k].trim()) err(`data/${m.url}`, `${k} відсутній`);
     }

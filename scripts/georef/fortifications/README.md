@@ -28,3 +28,12 @@ Python 3 з numpy, scipy, OpenCV, Pillow; для `reg/osmtiles.py` ще `mapbox-
 
 ## 4. Збірка
 `assemble.py` зводить усе в `data/fortifications/fortifications-1914-1944.geojson` і додає вцілілі ділянки рову «Attila III» з OpenStreetMap (Nominatim lookup з `polygon_geojson=1`, ODbL). Властивості об'єктів: `kind` (див. `legend` у записі мапи), `era`, необов'язкові `name` ({uk, hu}) і `url`.
+
+## 5. Окопи на аерофото fentrol.hu (тека `fentrol/`)
+Архів аерофото Lechner Tudásközpont (fentrol.hu, знімки 1959–2008). Сайт віддає:
+- перелік знімків у прямокутнику: POST `/DLAMap/create_cluster.php` (межі в EPSG:3857, фільтр років `felmeres_ido`) — `query.py`;
+- розміщення знімка: POST `/DLAMap/nyitooldalhoz.php` з `mode=getfilmkockaproperties&gid=…` (рамка `mbr_*`, `mapfilepath`, `layername`); дату й висоту польоту — `mode=getfilmkockapropertiesforsenswerk`;
+- сам знімок у EPSG:3857 через WMS: `/cgi-bin/mapserv.fcgi?map=<mapfilepath>&SERVICE=WMS&REQUEST=GetMap&LAYERS=<layername>&SRS=EPSG:3857&BBOX=…`.
+Розміщення сайту наближене (FAQ: точно визначено лише центри знімків, поворот і масштаб — автоматично), тому `regframe.py` уточнює його афінною поправкою за дорогами, залізницями й водою OpenStreetMap (векторні тайли OpenFreeMap z14, `osmtiles.py` з теки `reg/`): зрізана відстань від ліній OSM до країв Canny на знімку, перебір зсуву й повороту, далі Powell. Перевіряти результат обов'язково: де OSM-ліній у кадрі мало, поправка буває хибною (1960-0704-6248 лишився зсунутим на ~80 м). `geocrop.py` вирізає знімок у правильному розміщенні (північ угорі, задана роздільність на місцевості) і малює поверх сітку, реконструкцію й OSM; `zoom.py` — збільшена частина з сіткою.
+Окопи обведено `tracephoto.py`: найдешевший шлях між опорними точками по карті «темності» (дно окопу темніше за околицю). Результат — `photo_trenches.json` (17 ліній: окоп на Somlyó-hegy зі знімка 1963-0139-4364 і основні лінії мережі південніше зі знімка 1963-0139-4363, обидва 18.09.1963); `add_photo_trenches.py` додає їх у шар як вид `photo_trench` з приміткою й посиланням на сторінку знімка. Перевірка: два незалежно прив'язані знімки 1963 року показують окоп на Somlyó-hegy у тому самому місці; точка зі статті Juhász–Balogh за 22 м від обведеного окопу; знімок 1960-0704-6235 (прив'язаний окремо) показує ту саму мережу на тому самому місці.
+Самі знімки в репозиторій не кладемо; умови використання (ÁSZF на Google Drive) у сесії прочитати не вдалося.

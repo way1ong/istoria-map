@@ -112,14 +112,21 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
       // натиснули на мітку місця поверх накладки — відкривається картка місця, підказка не потрібна
       const placeLayers = ['places-dot', 'places-halo'].filter((l) => map.getLayer(l));
       if (placeLayers.length && map.queryRenderedFeatures(e.point, { layers: placeLayers }).length) return;
-      let name = '';
-      try { name = f.properties?.name ? lt(JSON.parse(String(f.properties.name)) as LText) : ''; } catch { name = ''; }
-      const url = f.properties?.url ? String(f.properties.url) : '';
+      // MapLibre віддає вкладені об'єкти властивостей рядком JSON
+      const ltext = (v: unknown): string => {
+        if (!v) return '';
+        try { return lt((typeof v === 'string' ? JSON.parse(v) : v) as LText); } catch { return ''; }
+      };
+      const name = ltext(f.properties?.name);
+      const fnote = ltext(f.properties?.note);
+      const url = f.properties?.url && /^https:\/\//.test(String(f.properties.url)) ? String(f.properties.url) : '';
+      const host = url ? new URL(url).hostname.replace(/^www\./, '') : '';
       const src = it.source;
       const html = `<div class="ov-pop"><strong>${esc(lt(it.label))}</strong>${name ? `<div class="ov-name">${esc(name)}</div>` : ''}`
+        + (fnote ? `<p>${esc(fnote)}</p>` : '')
         + (it.note ? `<p>${esc(lt(it.note))}</p>` : '')
         + (src ? `<p class="ov-src">${t('sources')}: ${src.url ? `<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.title)}</a>` : esc(src.title)}</p>` : '')
-        + (url ? `<p class="ov-src"><a href="${esc(url)}" target="_blank" rel="noopener">OpenStreetMap</a></p>` : '')
+        + (url ? `<p class="ov-src"><a href="${esc(url)}" target="_blank" rel="noopener">${esc(host)}</a></p>` : '')
         + '</div>';
       popup?.remove();
       popup = new Popup({ maxWidth: '280px', closeButton: true }).setLngLat(e.lngLat).setHTML(html).addTo(map);

@@ -1,0 +1,42 @@
+{
+  "id": "fot-loveszarok-halozat",
+  "name": {
+    "uk": "Мережа окопів південніше Somlyó-hegy (Fót)",
+    "hu": "Lövészárok-hálózat a Somlyó-hegytől délre (Fót)"
+  },
+  "type": "military",
+  "coords": [
+    19.2058,
+    47.6232
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Густа мережа зиґзаґоподібних окопів на трав'янистому схилі на південь від Somlyó-hegy, видима на аерофото 1960 і 1963 років; лежить у межах позицій піхоти лінії «Аттіла» за реконструкцією Juhász–Balogh.",
+    "hu": "Sűrű, cikcakkos lövészárok-hálózat a Somlyó-hegytől délre fekvő füves lejtőn, amely az 1960-as és 1963-as légifotókon látható; Juhász és Balogh rekonstrukciója szerint az Attila-vonal gyalogsági állásainak területén fekszik."
+  },
+  "description": {
+    "uk": "На аерофото 18 вересня 1963 року з архіву fentrol.hu (знімок 1963-0139-4363) між польовою дорогою і лісом на південь від Somlyó-hegy видно десятки зиґзаґоподібних окопів, кілька з них по 100–150 м завдовжки. Основні лінії обведено в цьому проєкті й показано в накладці «Укріплення 1914 і 1944 років» (розміщення знімка уточнено за дорогами OpenStreetMap, похибка орієнтовно 10–20 м). За реконструкцією Juhász і Balogh за аерофото 1950-х років тут лежать позиції піхоти лінії «Аттіла». Водночас на знімку 23 серпня 1960 року (1960-0704-6235) частина цих окопів світла, як свіжовикопана, тому дату окремих окопів знімки не встановлюють: їх могли копати й після війни.",
+    "hu": "A fentrol.hu archívumának 1963. szeptember 18-i légifotóján (1963-0139-4363) a Somlyó-hegytől délre, a földút és az erdő között több tucat cikcakkos lövészárok látszik, közülük néhány 100–150 m hosszú. A fő vonalakat ebben a projektben rajzoltuk meg, és az „Erődítések 1914-ből és 1944-ből” rétegen láthatók (a felvétel helyzetét az OpenStreetMap útjai alapján pontosítottuk, a pontatlanság nagyjából 10–20 m). Juhász és Balogh 1950-es évekbeli légifotókon alapuló rekonstrukciója szerint itt az Attila-vonal gyalogsági állásai húzódtak. Ugyanakkor az 1960. augusztus 23-i felvételen (1960-0704-6235) az árkok egy része világos, frissen ásottnak látszik, így az egyes árkok korát a felvételek nem döntik el: a háború után is áshatták őket."
+  },
+  "sources": [
+    {
+      "title": "fentrol.hu — архів аерофото Lechner Tudásközpont",
+      "url": "https://www.fentrol.hu/hu/legifoto/67121",
+      "note": "Знімок 1963-0139-4363, 18 вересня 1963 року; координати — центр мережі окопів за цим знімком."
+    },
+    {
+      "title": "fentrol.hu — архів аерофото Lechner Tudásközpont",
+      "url": "https://www.fentrol.hu/hu/legifoto/265999",
+      "note": "Знімок 1960-0704-6235, 23 серпня 1960 року."
+    },
+    {
+      "title": "Juhász A., Balogh Á., Térinformatika alkalmazása katonai objektumok rekonstruálásához. Haditechnika LIX (2025/4) 44–49",
+      "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf",
+      "note": "Рис. 8: позиції піхоти лінії «Аттіла» біля Fót."
+    }
+  ]
+}
