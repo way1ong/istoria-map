@@ -1,0 +1,50 @@
+{
+  "id": "brennbergbanya-szalasi-ovohely",
+  "name": {
+    "uk": "Сховище Салаші в Brennbergbánya",
+    "hu": "Szálasi óvóhelye Brennbergbányán"
+  },
+  "type": "military",
+  "coords": [
+    16.488834,
+    47.651981
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Наприкінці 1944 року керівництво нілашистів, тікаючи від Червоної армії, тимчасово перенесло свій осідок до шахтарського селища Brennbergbánya біля Шопрона; сховища, вирубані в схилі на кшталт штолень, вважали безпечними для Ференца Салаші (Szálasi Ferenc).",
+    "hu": "1944 végén a Vörös Hadsereg elől menekülő nyilas vezetőség ideiglenesen a Sopron melletti Brennbergbányára tette át székhelyét; a hegyoldalban kialakított, bányatárószerű óvóhelyeket biztonságosnak tartották Szálasi Ferenc számára."
+  },
+  "description": {
+    "uk": "За угорською Вікіпедією, наприкінці 1944 року нілашистське керівництво перебралося сюди з Farkasgyepű, а звідси — далі до Kőszeg. Сховища у схилі пагорба, схожі на шахтні штольні, вважали безпечними для Салаші; його наречену Gizella Lutz поселили в службовій квартирі керівника шахти, відомого орнітолога György Breuer. На фото 2022 року — вхід до сховища в схилі. Координати взято за місцем зйомки, тому вони приблизні.",
+    "hu": "A magyar Wikipédia szerint 1944 végén a nyilas vezetőség Farkasgyepűről költözött ide, majd innen Kőszegre ment tovább. A hegyoldalban kialakított, bányatárószerű óvóhelyeket biztonságosnak tartották Szálasi számára; menyasszonyát, Lutz Gizellát a bánya vezető tisztviselője, a neves ornitológus Breuer György szolgálati lakásában szállásolták el. A 2022-es fényképen az óvóhely bejárata a hegyoldalban. A koordináták a fénykép készítésének helyét jelölik, ezért közelítőek."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Brennbergb%C3%A1nya%2C_Sz%C3%A1lasi-bunker_2022_02.jpg",
+      "author": "Pasztilla (Attila Terbócs)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File%3ABrennbergb%C3%A1nya%2C_Sz%C3%A1lasi-bunker_2022_02.jpg",
+      "caption": {
+        "uk": "Вхід до сховища, 2022",
+        "hu": "Az óvóhely bejárata, 2022"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Brennbergbánya – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Brennbergb%C3%A1nya",
+      "note": "Кінець 1944 року: осідок нілашистського керівництва, сховища в схилі для Szálasi, Lutz Gizella в квартирі Breuer György."
+    },
+    {
+      "title": "Wikimedia Commons: File:Brennbergbánya, Szálasi-bunker 2022 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3ABrennbergb%C3%A1nya%2C_Sz%C3%A1lasi-bunker_2022_02.jpg",
+      "note": "Фото «бункера Салаші 1944 року» (14 березня 2022, CC BY-SA 4.0); місце зйомки."
+    }
+  ]
+}

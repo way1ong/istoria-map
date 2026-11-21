@@ -1,4 +1,6 @@
 import './style.css';
+// перегляд фото на весь екран: його обробник Esc має спрацьовувати раніше, ніж закриття картки нижче
+import './ui/lightbox';
 
 import { registerSW } from 'virtual:pwa-register';
 import { availableBasemaps } from './basemap';
@@ -18,6 +20,7 @@ import { currentYear, renderTimeline } from './ui/timeline';
 import { filterActive, mountMapTools, TYPES } from './ui/maptools';
 import { toast } from './ui/toast';
 import { offlineMapReady, verifyInstalled } from './offline';
+import { verifyAreas } from './offlineareas';
 import type { PlaceFilter } from './map';
 
 setLang(getLang());
@@ -314,6 +317,7 @@ onRoute((r) => {
 
 netNotice();
 // браузер міг стерти завантажені мапи, коли бракувало місця
+void verifyAreas();
 void verifyInstalled().then((changed) => {
   if (!changed) return;
   mapCtl?.networkChanged();

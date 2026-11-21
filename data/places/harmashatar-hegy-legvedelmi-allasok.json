@@ -1,0 +1,66 @@
+{
+  "id": "harmashatar-hegy-legvedelmi-allasok",
+  "name": {
+    "uk": "Зенітні позиції на вершині Hármashatár-hegy",
+    "hu": "Légvédelmi lőállások a Hármashatár-hegy csúcsán"
+  },
+  "type": "military",
+  "coords": [
+    18.998883,
+    47.555569
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Чотири заглиблені в землю зенітні позиції часів Другої світової війни на вершині гори Hármashatár-hegy у Будапешті; під час облоги їх не використали. На одній з них 2015–2016 років звели оглядовий майданчик Guckler Károly.",
+    "hu": "A második világháború idején a budapesti Hármashatár-hegy csúcsán épített négy, földbe süllyesztett légvédelmi lőállás, amelyeket az ostrom alatt nem használtak. Egyikükre épült 2015–2016-ban a Guckler Károly-kilátó."
+  },
+  "description": {
+    "uk": "За угорською Вікіпедією, під час війни на вершині спорудили чотири заглиблені в землю зенітні вогневі позиції, але в облогу Будапешта їх не використали. У 1950-х роках їх перебудували, у 1955–1956 роках тут стояла зенітна батарея; три позиції збереглися. Поруч лишилися невелика ніша для боєприпасів, бункери й окопи, які в боях так і не знадобилися, бо радянські війська обійшли гору. Одну з позицій використали як основу оглядового майданчика Guckler Károly (Guckler Károly-kilátó), який лісове господарство Pilisi Parkerdő збудувало 2015–2016 років за проєктом архітектора Йожефа Коллера (Koller József).",
+    "hu": "A magyar Wikipédia szerint a háború idején a csúcson négy, földbe süllyesztett légvédelmi lőállást építettek, de Budapest ostromakor nem használták őket. Az 1950-es években átalakították, 1955–1956-ban légvédelmi üteg települt ide; három lőállás ma is megvan. A közelben egy kisebb lőszertároló fülke, bunkerek és lövészárkok maradtak, amelyeket a harcokban nem használtak, mert a szovjet csapatok megkerülték a hegyet. Az egyik lőállásra építette a Pilisi Parkerdő 2015–2016-ban Koller József tervei alapján a Guckler Károly-kilátót."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Aussichtspunkt_Guckler_SW%2C_H%C3%A1rm%C3%A1shat%C3%A1rberg%2C_2023_Budapest.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File%3AAussichtspunkt_Guckler_SW%2C_H%C3%A1rm%C3%A1shat%C3%A1rberg%2C_2023_Budapest.jpg",
+      "caption": {
+        "uk": "Оглядовий майданчик на колишній зенітній позиції, 2023",
+        "hu": "A kilátó az egykori légvédelmi lőálláson, 2023"
+      }
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Guckler_K%C3%A1roly-kil%C3%A1t%C3%B3.jpg",
+      "author": "Gergely Dóra Viktória",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File%3AGuckler_K%C3%A1roly-kil%C3%A1t%C3%B3.jpg",
+      "caption": {
+        "uk": "Оглядовий майданчик Guckler Károly, 2023",
+        "hu": "A Guckler Károly-kilátó, 2023"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hármashatár-hegy – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/H%C3%A1rmashat%C3%A1r-hegy",
+      "note": "Розділ про 1945 рік: чотири заглиблені зенітні позиції, не використані в облогу, перебудовані в 1950-х, одна — основа оглядового майданчика; батарея 1955–1956; ніша для боєприпасів, бункери, окопи."
+    },
+    {
+      "title": "Wikimedia Commons: File:Aussichtspunkt Guckler SW, Hármáshatárberg, 2023 Budapest.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3AAussichtspunkt_Guckler_SW%2C_H%C3%A1rm%C3%A1shat%C3%A1rberg%2C_2023_Budapest.jpg",
+      "note": "Опис фото: оглядовий майданчик Pilisi Parkerdő 2015–2016 років на зенітній позиції за проєктом Koller József; координати об'єкта (CC BY-SA 3.0)."
+    },
+    {
+      "title": "Wikimedia Commons: File:Guckler Károly-kilátó.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3AGuckler_K%C3%A1roly-kil%C3%A1t%C3%B3.jpg",
+      "note": "Фото (2 жовтня 2023, CC BY-SA 4.0)."
+    }
+  ]
+}

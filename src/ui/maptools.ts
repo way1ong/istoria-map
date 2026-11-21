@@ -140,7 +140,7 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
   function renderOfflinePanel() {
     title.textContent = t('offline');
     stopOffline?.();
-    stopOffline = renderOffline(body, opts.onOfflineMap);
+    stopOffline = renderOffline(body, { map: ctl.map, onBasemap: opts.onOfflineMap, close });
   }
 
   // ---------- пошук ----------

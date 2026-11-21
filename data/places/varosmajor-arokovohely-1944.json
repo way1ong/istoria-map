@@ -1,0 +1,65 @@
+{
+  "id": "varosmajor-arokovohely-1944",
+  "name": {
+    "uk": "Траншейні укриття в парку Városmajor, 1944",
+    "hu": "Árokóvóhelyek a Városmajorban, 1944"
+  },
+  "type": "military",
+  "coords": [
+    19.017796,
+    47.507624
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "interwar-ww2"
+  ],
+  "summary": {
+    "uk": "Траншейні укриття від авіанальотів (árokóvóhely), викопані в будапештському парку Városmajor, на світлинах 1944 року з архіву Fortepan.",
+    "hu": "A budapesti Városmajorban ásott légoltalmi árokóvóhelyek 1944-es Fortepan-fényképeken."
+  },
+  "description": {
+    "uk": "На двох світлинах Тівадара Ліссака (Lissák Tivadar) 1944 року з архіву Fortepan — зиґзаґоподібні траншеї-укриття, викопані в парку Városmajor (XII район Будапешта). Де саме в парку їх зроблено, невідомо; координати — центр парку.",
+    "hu": "Lissák Tivadar két 1944-es Fortepan-fényképén a budapesti Városmajorban (XII. kerület) ásott, cikcakkos árokóvóhelyek láthatók. Hogy a parkon belül pontosan hol, nem ismert; a koordináták a park közepét jelölik."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/V%C3%A1rosmajor._%C3%81rok%C3%B3v%C3%B3hely._Fortepan_72682.jpg",
+      "author": "FOTO:FORTEPAN / Lissák Tivadar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File%3AV%C3%A1rosmajor._%C3%81rok%C3%B3v%C3%B3hely._Fortepan_72682.jpg",
+      "caption": {
+        "uk": "Траншейні укриття, 1944",
+        "hu": "Árokóvóhely, 1944"
+      }
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/V%C3%A1rosmajor._%C3%81rok%C3%B3v%C3%B3hely._Fortepan_72683.jpg",
+      "author": "FOTO:FORTEPAN / Lissák Tivadar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File%3AV%C3%A1rosmajor._%C3%81rok%C3%B3v%C3%B3hely._Fortepan_72683.jpg",
+      "caption": {
+        "uk": "Траншейні укриття, 1944",
+        "hu": "Árokóvóhely, 1944"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikimedia Commons: File:Városmajor. Árokóvóhely. Fortepan 72682.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3AV%C3%A1rosmajor._%C3%81rok%C3%B3v%C3%B3hely._Fortepan_72682.jpg",
+      "note": "Fortepan 72682, 1944: «árokóvóhely», місце: Budapest XII., Városmajor (CC BY-SA 3.0)."
+    },
+    {
+      "title": "Wikimedia Commons: File:Városmajor. Árokóvóhely. Fortepan 72683.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3AV%C3%A1rosmajor._%C3%81rok%C3%B3v%C3%B3hely._Fortepan_72683.jpg",
+      "note": "Fortepan 72683, 1944 (CC BY-SA 3.0)."
+    },
+    {
+      "title": "OpenStreetMap (Nominatim): Városmajor, Budapest",
+      "url": "https://nominatim.openstreetmap.org/ui/search.html?q=V%C3%A1rosmajor%2C+Budapest",
+      "note": "Координати парку (ODbL)."
+    }
+  ]
+}

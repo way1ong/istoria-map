@@ -1,0 +1,61 @@
+{
+  "id": "kisterenye-loveszbunker",
+  "name": {
+    "uk": "Стрілецький бункер біля станції Kisterenye",
+    "hu": "Lövészbunker a kisterenyei vasútállomásnál"
+  },
+  "type": "military",
+  "coords": [
+    19.830683,
+    48.006519
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Бетонний стрілецький бункер часів Другої світової війни біля початку залізничної станції Kisterenye (Bátonyterenye, медьє Ноґрад); такі бункери внесено до переліку місцевих цінностей міста.",
+    "hu": "Második világháborús betonlövészbunker a kisterenyei vasútállomás kezdőpontja közelében (Bátonyterenye, Nógrád megye); az ilyen bunkerek a város helyi értékei között szerepelnek."
+  },
+  "description": {
+    "uk": "За описом фото на Вікісховищі, бункер стоїть біля початку станції Kisterenye; неподалік було кругле паровозне депо Kisterenye (1908–2008). У переліку місцевих цінностей Bátonyterenye (розділ «Забудова») окремо названо «стрілецькі бункери» Другої світової війни — за рішенням 1/2017 (XI. 23.) і додатком 6 до місцевих будівельних правил міста (постанова 10/2022 (VII. 20.)).",
+    "hu": "A Wikimédia Commons fényképleírása szerint a bunker a kisterenyei vasútállomás kezdőpontja közelében áll; a közelében volt a kisterenyei körfűtőház (1908–2008). Bátonyterenye települési értéktárában (épített környezet) külön szerepelnek a második világháborús „lövészbunkerek” – az 1/2017. (XI. 23.) határozat és a helyi építési szabályzatról szóló 10/2022. (VII. 20.) rendelet 6. melléklete alapján."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Bahnhof%2C_Bunker%2C_2026_B%C3%A1tonyterenye.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File%3ABahnhof%2C_Bunker%2C_2026_B%C3%A1tonyterenye.jpg",
+      "caption": {
+        "uk": "Бункер біля станції, 2026",
+        "hu": "A bunker az állomás mellett, 2026"
+      }
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Bahnhof%2C_Bunker%2C_Fenster%2C_2026_B%C3%A1tonyterenye.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File%3ABahnhof%2C_Bunker%2C_Fenster%2C_2026_B%C3%A1tonyterenye.jpg",
+      "caption": {
+        "uk": "Отвір бункера, 2026",
+        "hu": "A bunker nyílása, 2026"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikimedia Commons: File:Bahnhof, Bunker, 2026 Bátonyterenye.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3ABahnhof%2C_Bunker%2C_2026_B%C3%A1tonyterenye.jpg",
+      "note": "Опис угорською: бункер біля початку станції Kisterenye; місцеві цінності Bátonyterenye, розділ 1.2 «Épített környezet»: «Második világháborús lövészbunkerek»; координати об'єкта (CC BY-SA 4.0)."
+    },
+    {
+      "title": "Wikimedia Commons: File:Bahnhof, Bunker, Fenster, 2026 Bátonyterenye.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3ABahnhof%2C_Bunker%2C_Fenster%2C_2026_B%C3%A1tonyterenye.jpg",
+      "note": "Фото отвору бункера (CC BY-SA 4.0)."
+    }
+  ]
+}

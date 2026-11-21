@@ -110,11 +110,34 @@ function featureCollection(periodId: string | null, lang: string, filter: PlaceF
             label: lt(p.name),
             color: period?.color ?? '#6b7280',
             vanished: p.vanished ? 1 : 0,
+            // є фото — біля кружка значок фотоапарата
+            photo: p.photos?.length ? 1 : 0,
             lang,
           },
         };
       }),
   };
+}
+
+/** Значок фотоапарата 32×32 (на екрані 16×16): білий кружок з темним контуром і фотоапаратом. */
+function cameraIcon(): ImageData {
+  const c = document.createElement('canvas');
+  c.width = c.height = 32;
+  const g = c.getContext('2d')!;
+  g.fillStyle = '#ffffff';
+  g.strokeStyle = '#1f2937';
+  g.lineWidth = 2;
+  g.beginPath(); g.arc(16, 16, 14, 0, Math.PI * 2); g.fill(); g.stroke();
+  g.fillStyle = '#1f2937';
+  g.beginPath();
+  if (typeof g.roundRect === 'function') g.roundRect(7, 11, 18, 12, 2.5); else g.rect(7, 11, 18, 12);
+  g.fill();
+  g.fillRect(12, 8.5, 8, 3.5);
+  g.fillStyle = '#ffffff';
+  g.beginPath(); g.arc(16, 17, 4, 0, Math.PI * 2); g.fill();
+  g.fillStyle = '#1f2937';
+  g.beginPath(); g.arc(16, 17, 2.2, 0, Math.PI * 2); g.fill();
+  return g.getImageData(0, 0, 32, 32);
 }
 
 /** Широкий екран (ПК): картка місця — панель праворуч, а не знизу. */
@@ -186,6 +209,17 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
         'circle-stroke-width': DOT_STROKE,
       },
     });
+    // значок фотоапарата в правому верхньому куті кружка місця, у якого є фото
+    if (!map.hasImage('photo-badge')) map.addImage('photo-badge', cameraIcon(), { pixelRatio: 2 });
+    map.addLayer({
+      id: 'places-photo',
+      type: 'symbol',
+      source: SRC,
+      // у містах місць з фото багато: значки лише при наближенні
+      minzoom: 11,
+      filter: ['==', ['get', 'photo'], 1],
+      layout: { 'icon-image': 'photo-badge', 'icon-offset': [9, -9], 'icon-allow-overlap': true, 'icon-ignore-placement': true },
+    });
     map.addLayer({
       id: 'places-label',
       type: 'symbol',
@@ -203,7 +237,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       paint: { 'text-color': '#111827', 'text-halo-color': '#ffffff', 'text-halo-width': 1.5 },
     });
 
-    for (const layer of ['places-dot', 'places-halo']) {
+    for (const layer of ['places-dot', 'places-halo', 'places-photo']) {
       map.on('click', layer, (e: MapLayerMouseEvent) => {
         const f = e.features?.[0];
         if (f) onSelect(String(f.properties?.id));
@@ -233,7 +267,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   });
   map.on('click', (e: MapMouseEvent) => {
     if (!map.getLayer('places-dot')) return;
-    const hits = map.queryRenderedFeatures(e.point, { layers: ['places-dot', 'places-halo'] });
+    const hits = map.queryRenderedFeatures(e.point, { layers: ['places-dot', 'places-halo', 'places-photo'] });
     if (hits.length === 0) onSelect(null);
   });
 
@@ -247,6 +281,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     map.setPaintProperty('places-dot', 'circle-stroke-opacity', opacityExpr(selected));
     map.setPaintProperty('places-halo', 'circle-opacity', selected ? ['case', ['==', ['get', 'id'], selected], 0.35, 0.08] : 0.25);
     map.setPaintProperty('places-label', 'text-opacity', opacityExpr(selected));
+    map.setPaintProperty('places-photo', 'icon-opacity', opacityExpr(selected));
   };
 
   // Стара мапа поверх сучасної; аркуші серії — разом (див. src/oldmap.ts).

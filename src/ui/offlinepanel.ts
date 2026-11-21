@@ -1,10 +1,14 @@
-// Панель «Без інтернету» на мапі: пакети для роботи без мережі (src/offline.ts), місце на пристрої, встановлення застосунку.
-import { getLang, t, type Key } from '../i18n';
+// Панель «Без інтернету» на мапі: пакети для роботи без мережі (src/offline.ts), ділянки старих мап у повній якості
+// (src/offlineareas.ts), місце на пристрої, встановлення застосунку.
+import type { Map as MLMap } from 'maplibre-gl';
+import { getLang, lt, t, type Key } from '../i18n';
 import { canInstall, isStandalone, onInstallChange, promptInstall } from '../install';
 import {
   currentJob, deletePack, downloadPack, installed, loadManifest, offlineSupported, onOfflineChange, PACK_IDS, pending,
   photosManifest, stopDownload, storageInfo, type DownloadResult, type PackId, type PackManifest, type PacksManifest,
 } from '../offline';
+import { areaKm, deleteArea, downloadArea, nearestPlace, planArea, savedAreas, type AreaPlan } from '../offlineareas';
+import { placeById } from '../data';
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
 
@@ -22,17 +26,126 @@ function fmtDate(d: string | undefined): string {
   if (!m) return d ?? '';
   return getLang() === 'hu' ? `${m[1]}. ${m[2]}. ${m[3]}.` : `${m[3]}.${m[2]}.${m[1]}`;
 }
+const km = (x: number) => (x < 10 ? x.toFixed(1).replace('.', ',') : String(Math.round(x)));
 
-/** Останній результат завантаження кожного пакета — показується під ним, доки не почнеться нове. */
-const lastResult: Partial<Record<PackId, { res: DownloadResult; failed: number }>> = {};
+/** «біля Göd»: назва з підписів мапи, інакше найближче населене місце з карток (без пояснення після коми). */
+function areaName(label: string | undefined, placeId: string | undefined): string {
+  const p = placeId ? placeById(placeId) : undefined;
+  const name = label || (p ? lt(p.name).split(',')[0].trim() : '');
+  return name ? t('offAreaNear').replace('{name}', name) : '';
+}
 
 /**
- * Намалювати панель у body і оновлювати її під час завантаження. onBasemap — мапу з пристрою встановлено,
- * оновлено чи видалено (треба перевибрати підкладку). Повертає функцію, що відписує панель від змін.
+ * Найближчий до центру ділянки населений пункт серед даних підкладки (OpenMapTiles: шар place, Protomaps: places),
+ * місцевою мовою. Беремо дані завантажених тайлів, а не лише видимі підписи: центр міста може бути поза екраном.
  */
-export function renderOffline(body: HTMLElement, onBasemap: () => void): () => void {
+function mapPlaceName(map: MLMap, bbox: [number, number, number, number]): string | undefined {
+  const c = [(bbox[0] + bbox[2]) / 2, (bbox[1] + bbox[3]) / 2];
+  const kx = Math.cos(c[1] * Math.PI / 180);
+  const towns = ['city', 'town', 'village'];
+  let best: { name: string; r: number; d: number } | undefined;
+  for (const [id, src] of Object.entries(map.getStyle()?.sources ?? {})) {
+    if (src.type !== 'vector') continue;
+    for (const sourceLayer of ['place', 'places']) {
+      let feats: ReturnType<MLMap['querySourceFeatures']> = [];
+      try { feats = map.querySourceFeatures(id, { sourceLayer }); } catch { continue; }
+      for (const f of feats) {
+        const p = f.properties ?? {};
+        const name = p.name;
+        if (typeof name !== 'string' || !name || f.geometry.type !== 'Point') continue;
+        // OpenMapTiles: class = city/town/village/…; Protomaps: kind = locality, kind_detail = city/town/village/…
+        const cls = String(p.class ?? p.kind_detail ?? '');
+        if (p.kind && p.kind !== 'locality') continue;
+        const r = towns.includes(cls) ? 0 : ['suburb', 'hamlet', 'neighbourhood', 'quarter'].includes(cls) ? 1 : 2;
+        if (r === 2) continue;
+        const [x, y] = f.geometry.coordinates;
+        const d = ((x - c[0]) * kx) ** 2 + (y - c[1]) ** 2;
+        if (!best || r < best.r || (r === best.r && d < best.d)) best = { name, r, d };
+      }
+    }
+  }
+  return best?.name;
+}
+
+/** Останній результат завантаження кожного пакета (і ділянки) — показується під ним, доки не почнеться нове. */
+const lastResult: Partial<Record<PackId | 'area', { res: DownloadResult; failed: number }>> = {};
+/** Ділянка, більша за це (за оцінкою), не зберігається: на телефоні це вже забагато. */
+const AREA_MAX_BYTES = 400e6;
+/** Дрібніше за цей зум видима частина мапи завелика для збереження ділянки. */
+const AREA_MIN_ZOOM = 9;
+
+/**
+ * Намалювати панель у body і оновлювати її під час завантаження й руху мапи. onBasemap — мапу з пристрою
+ * встановлено, оновлено чи видалено (треба перевибрати підкладку). Повертає функцію, що відписує панель від змін.
+ */
+export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap(): void; close(): void }): () => void {
+  const { map, onBasemap } = opts;
   let manifest: PacksManifest | null = null;
   let seq = 0;
+  // оцінка видимої ділянки: рахується після зупинки мапи (потрібні info.json аркушів з мережі)
+  let view: { key: string; state: 'zoom' | 'loading' | 'ready' | 'error'; plan?: AreaPlan } = { key: '', state: 'loading' };
+  let planSeq = 0;
+
+  const viewBox = (): [number, number, number, number] => {
+    const b = map.getBounds();
+    return [b.getWest(), b.getSouth(), b.getEast(), b.getNorth()];
+  };
+  const updatePlan = () => {
+    const bbox = viewBox();
+    const key = bbox.map((x) => x.toFixed(4)).join(',');
+    if (map.getZoom() < AREA_MIN_ZOOM) { view = { key, state: 'zoom' }; void draw(); return; }
+    if (key === view.key && view.state !== 'error') return;
+    const my = ++planSeq;
+    view = { key, state: 'loading' };
+    void draw();
+    planArea(bbox).then((plan) => {
+      if (my !== planSeq) return;
+      view = { key, state: 'ready', plan };
+      void draw();
+    }, () => {
+      if (my !== planSeq) return;
+      view = { key, state: 'error' };
+      void draw();
+    });
+  };
+
+  const areaSection = (online: boolean, job: ReturnType<typeof currentJob>): string => {
+    const running = job?.id === 'area';
+    let state = '';
+    let canSave = false;
+    if (running) state = `<progress max="1" value="0"></progress><span class="off-pct"></span>`;
+    else if (view.state === 'zoom') state = esc(t('offAreaZoom'));
+    else if (view.state === 'loading') state = esc(t('offAreaCounting'));
+    else if (view.state === 'error' || !online) state = esc(t('offNeedNet'));
+    else if (view.plan) {
+      const [w, h] = areaKm(view.plan.bbox);
+      const sub = (k: Key) => t(k).replace('{w}', km(w)).replace('{h}', km(h)).replace('{size}', fmtBytes(view.plan!.estBytes));
+      if (!view.plan.tiles.length) state = esc(t('offAreaEmpty'));
+      else if (view.plan.estBytes > AREA_MAX_BYTES) state = esc(sub('offAreaTooBig'));
+      else { state = esc(sub('offAreaView')); canSave = true; }
+    }
+    const busy = !!job && !running;
+    const r = !running ? lastResult.area : undefined;
+    const msg = r && r.res !== 'ok' && r.res !== 'aborted' ? t(r.res === 'quota' ? 'offErrQuota' : r.res === 'net' ? 'offErrNet' : 'offErr') : '';
+    const button = running
+      ? `<button type="button" class="off-btn" data-act="stop">${esc(t('offStop'))}</button>`
+      : `<button type="button" class="off-btn primary" data-act="area-save" ${canSave && online && !busy ? '' : 'disabled'} ${busy ? `title="${esc(t('offBusy'))}"` : ''}>${esc(t('offAreaSave'))}</button>`;
+    const list = savedAreas().map((a) => {
+      const [w, h] = areaKm(a.bbox);
+      const name = areaName(a.label, a.placeId) || `${km(w)} × ${km(h)} ${t('unitKm')}`;
+      return `<li><span class="off-area-name"><b>${esc(name)}</b><span>${km(w)} × ${km(h)} ${esc(t('unitKm'))} · ${fmtBytes(a.bytes)} · ${fmtDate(a.date)}</span></span>
+        <button type="button" class="off-btn" data-act="area-show" data-id="${a.id}">${esc(t('offAreaShow'))}</button>
+        <button type="button" class="off-btn" data-act="area-del" data-id="${a.id}">${esc(t('offDelete'))}</button></li>`;
+    }).join('');
+    return `<li class="off-pack off-areas" ${running ? 'data-running="area"' : ''}>
+      <div class="off-head"><b>${esc(t('offAreas'))}</b></div>
+      <p class="off-note">${esc(t('offAreasNote'))}</p>
+      <div class="off-state">${state}</div>
+      ${msg ? `<p class="off-err">${esc(msg)}</p>` : ''}
+      <div class="off-btns">${button}</div>
+      ${list ? `<p class="off-sub">${esc(t('offAreaSaved'))}</p><ul class="off-area-list">${list}</ul>` : ''}
+    </li>`;
+  };
 
   const draw = async () => {
     const my = ++seq;
@@ -76,13 +189,15 @@ export function renderOffline(body: HTMLElement, onBasemap: () => void): () => v
       const msg = r && r.res !== 'ok' && r.res !== 'aborted'
         ? t(r.res === 'quota' ? 'offErrQuota' : r.res === 'net' ? 'offErrNet' : 'offErr')
         : r?.failed ? t('offPhotosFailed').replace('{n}', String(r.failed)) : '';
-      return `<li class="off-pack" ${running ? `data-running="${id}"` : ''}>
+      const li = `<li class="off-pack" ${running ? `data-running="${id}"` : ''}>
         <div class="off-head"><b>${esc(t(`pack_${id}` as Key))}</b>${size ? `<span class="off-size">${size}</span>` : ''}</div>
         <p class="off-note">${esc(note)}</p>
         ${state ? `<div class="off-state">${state}</div>` : ''}
         ${msg ? `<p class="off-err">${esc(msg)}</p>` : ''}
         <div class="off-btns">${buttons}</div>
       </li>`;
+      // ділянки в повній якості — одразу після огляду старих мап
+      return id === 'oldmaps' ? li + areaSection(online, job) : li;
     }).join('');
 
     const storage = st.usage !== undefined && st.quota
@@ -107,7 +222,9 @@ export function renderOffline(body: HTMLElement, onBasemap: () => void): () => v
     if (!job || !li) return false;
     const f = job.total ? job.done / job.total : 0;
     li.querySelector('progress')!.value = f;
-    li.querySelector('.off-pct')!.textContent = `${pct(f)}${job.byCount ? '' : ` · ${fmtBytes(job.done)} / ${fmtBytes(job.total)}`}`;
+    li.querySelector('.off-pct')!.textContent = job.id === 'area'
+      ? `${pct(f)} · ${fmtBytes(job.bytes)}`
+      : `${pct(f)}${job.byCount ? '' : ` · ${fmtBytes(job.done)} / ${fmtBytes(job.total)}`}`;
     return true;
   };
 
@@ -118,6 +235,26 @@ export function renderOffline(body: HTMLElement, onBasemap: () => void): () => v
     const act = b.dataset.act;
     if (act === 'install') { void promptInstall().then(draw); return; }
     if (act === 'stop') { stopDownload(); return; }
+    if (act === 'area-save' && view.plan) {
+      const plan = view.plan;
+      const label = mapPlaceName(map, plan.bbox);
+      const what = areaName(label, nearestPlace(plan.bbox)?.id);
+      if (!confirm(t('offConfirmArea').replace('{name}', what).replace('{size}', fmtBytes(plan.estBytes)))) return;
+      delete lastResult.area;
+      void downloadArea(plan, label).then((res) => { lastResult.area = { res, failed: 0 }; void draw(); });
+      return;
+    }
+    if (act === 'area-show') {
+      const a = savedAreas().find((x) => x.id === b.dataset.id);
+      if (a) { opts.close(); map.fitBounds([[a.bbox[0], a.bbox[1]], [a.bbox[2], a.bbox[3]]], { padding: 20, duration: 800 }); }
+      return;
+    }
+    if (act === 'area-del') {
+      const a = savedAreas().find((x) => x.id === b.dataset.id);
+      if (!a || !confirm(t('offConfirmDelete').replace('{name}', areaName(a.label, a.placeId) || t('offAreas')))) return;
+      void deleteArea(a.id).then(draw);
+      return;
+    }
     const name = t(`pack_${id}` as Key);
     if (act === 'del') {
       if (!confirm(t('offConfirmDelete').replace('{name}', name))) return;
@@ -140,14 +277,20 @@ export function renderOffline(body: HTMLElement, onBasemap: () => void): () => v
 
   const off1 = onOfflineChange(() => { if (!progress()) void draw(); });
   const off2 = onInstallChange(() => void draw());
-  const net = () => void draw();
+  const net = () => { view.key = ''; updatePlan(); };
   window.addEventListener('online', net);
   window.addEventListener('offline', net);
-  void draw();
+  let moveTimer = 0;
+  const onMove = () => { clearTimeout(moveTimer); moveTimer = window.setTimeout(updatePlan, 400); };
+  map.on('moveend', onMove);
+  updatePlan();
   return () => {
     seq++;
+    planSeq++;
+    clearTimeout(moveTimer);
     off1();
     off2();
+    map.off('moveend', onMove);
     window.removeEventListener('online', net);
     window.removeEventListener('offline', net);
     body.onclick = null;

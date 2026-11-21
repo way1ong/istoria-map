@@ -1,6 +1,7 @@
 import { Popup } from 'maplibre-gl';
 import type { CustomLayerInterface, ExpressionSpecification, FilterSpecification, GeoJSONSource, MapLayerMouseEvent, Map as MLMap } from 'maplibre-gl';
 import { loadVectorOverlay, seriesById, seriesSheets } from './data';
+import { areaCovers } from './offlineareas';
 import { lt, t } from './i18n';
 import type { HistMap, LText } from './types';
 
@@ -58,8 +59,10 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
   };
 
   const series = seriesById(m.series);
-  // Оригінали IIIF ідуть із серверів бібліотек: без мережі показуємо запасні зображення (як без WebGL2).
-  const georef = hasWebGL2() && navigator.onLine !== false ? (series ? series.georef : m.georef) : undefined;
+  const georef = hasWebGL2() ? (series ? series.georef : m.georef) : undefined;
+  // Без мережі оригінали IIIF є лише на збережених ділянках (src/offlineareas.ts): запасні зображення лишаються
+  // на всіх масштабах, а ховаються там, де видима частина мапи — у збереженій ділянці.
+  const offline = navigator.onLine === false;
   const members = series ? seriesSheets(m) : [m];
 
   // Підпис джерел у кнопці «i» мапи: невидимий шар з атрибуцією, поки стара мапа показана.
@@ -70,6 +73,7 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
   ids.push(attrId);
 
   let update: (() => void) | null = null;
+  let onAreaMove: (() => void) | null = null;
   const vectorIds: { id: string; prop: 'fill-opacity' | 'line-opacity' | 'circle-opacity' | 'circle-stroke-opacity'; k: number }[] = [];
   const clickLayers: string[] = [];
   let onClick: ((e: MapLayerMouseEvent) => void) | null = null;
@@ -169,7 +173,7 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
       map.addLayer({ id, type: 'raster', source: id, paint: { 'raster-opacity': opacity } }, before());
       ids.push(id);
     }
-  } else if (georef && series.overview) {
+  } else if (georef && series.overview && !offline) {
     // Оригінали серії йдуть з IIIF; мозаїка — дрібніше за allmapsMinzoom і запасний шар, поки вантажиться Allmaps.
     addImage(`${opts.prefix}-ov`, series.overview.url, series.overview.coordinates);
   } else {
@@ -215,7 +219,18 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
         // Запасне зображення під оригіналами ховаємо там, де малює Allmaps: інакше при неповній
         // прозорості дві копії накладаються (трохи різна прив'язка дає «подвійне» зображення).
         const ovId = `${opts.prefix}-ov`, imgId = `${opts.prefix}-0`;
-        if (series && map.getLayer(ovId)) {
+        if (offline) {
+          // без мережі Allmaps малює лише збережені ділянки — запасні зображення ховаємо тільки там
+          onAreaMove = () => {
+            const b = map.getBounds();
+            const inside = areaCovers([b.getWest(), b.getSouth(), b.getEast(), b.getNorth()]);
+            for (const id of ids) {
+              if ((id === ovId || id === imgId || id.startsWith(`${opts.prefix}-s-`)) && map.getLayer(id)) map.setLayoutProperty(id, 'visibility', inside ? 'none' : 'visible');
+            }
+          };
+          map.on('moveend', onAreaMove);
+          onAreaMove();
+        } else if (series && map.getLayer(ovId)) {
           if (series.allmapsMinzoom) map.setLayerZoomRange(ovId, 0, series.allmapsMinzoom);
           else map.setLayoutProperty(ovId, 'visibility', 'none');
         } else if (!series && map.getLayer(imgId)) map.setLayoutProperty(imgId, 'visibility', 'none');
@@ -245,6 +260,7 @@ export function addOldMap(map: MLMap, m: HistMap, opts: { prefix: string; before
     remove() {
       removed = true;
       if (update) map.off('moveend', update);
+      if (onAreaMove) map.off('moveend', onAreaMove);
       if (onImageError) (map as unknown as Evented).off('imageinfofetcherror', onImageError);
       if (warped && map.getLayer(warped.id)) map.removeLayer(warped.id);
       warped = null;

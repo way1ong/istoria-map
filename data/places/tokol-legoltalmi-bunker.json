@@ -1,0 +1,45 @@
+{
+  "id": "tokol-legoltalmi-bunker",
+  "name": {
+    "uk": "Протиповітряне сховище авіазаводу в Tököl",
+    "hu": "A tököli repülőgépgyár légoltalmi bunkere"
+  },
+  "type": "military",
+  "coords": [
+    18.997279,
+    47.339832
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Бомбостійке сховище авіаційного заводу біля аеродрому Tököl, збудоване 1943 року; нині стоїть на території торгового центру.",
+    "hu": "A tököli repülőtér melletti repülőgépgyár 1943-ban épült bombabiztos óvóhelye; ma egy bevásárlóközpont területén áll."
+  },
+  "description": {
+    "uk": "За описом фото на Вікісховищі (з посиланням на блог falanszter.blog.hu), сховище збудували 1943 року для заводу, з якого згодом постав Дунайський авіазавод (Dunai Repülőgépgyár). Це одне з трьох бомбостійких сховищ системи BBGS, які тоді називали «бункерним містом»; перекриття — 2,70 м залізобетону, перегородки — 40–50 см. Нині будівля стоїть на території торгового центру Sziget Center.",
+    "hu": "A Wikimédia Commons fényképleírása szerint (a falanszter.blog.hu blogra hivatkozva) a későbbi Dunai Repülőgépgyár légoltalmi bunkere 1943-ban épült. Három BBGS rendszerű bombabiztos bunker (korabeli szóval „bunkerváros”) egyike; felső födéme 2,70 méter vasbeton, válaszfalai 40–50 centiméteresek. Ma a Sziget Center bevásárlóközpont területén áll."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/L%C3%A9goltalmi_bunker%2C_5101-es_%C3%BAt%2C_2019_T%C3%B6k%C3%B6l.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File%3AL%C3%A9goltalmi_bunker%2C_5101-es_%C3%BAt%2C_2019_T%C3%B6k%C3%B6l.jpg",
+      "caption": {
+        "uk": "Колишнє сховище біля дороги 5101, 2019",
+        "hu": "Az egykori óvóhely az 5101-es út mellett, 2019"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikimedia Commons: File:Légoltalmi bunker, 5101-es út, 2019 Tököl.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File%3AL%C3%A9goltalmi_bunker%2C_5101-es_%C3%BAt%2C_2019_T%C3%B6k%C3%B6l.jpg",
+      "note": "Опис угорською: протиповітряне сховище авіазаводу, збудоване 1943 року, одне з трьох сховищ BBGS, перекриття 2,70 м залізобетону; координати об'єкта (CC BY-SA 3.0)."
+    }
+  ]
+}

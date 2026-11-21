@@ -31,7 +31,8 @@ export default defineConfig({
       // маніфест лежить у public/manifest.webmanifest
       manifest: false,
       workbox: {
-        globPatterns: ['**/*.{js,css,html,webmanifest}', 'icons/*.png'],
+        // прив'язки старих мап (georef) потрібні Allmaps і без мережі — для збережених ділянок
+        globPatterns: ['**/*.{js,css,html,webmanifest}', 'icons/*.png', 'georef/*.json'],
         // основний файл з усіма даними ~3 МБ
         maximumFileSizeToCacheInBytes: 12 * 1024 * 1024,
         clientsClaim: true,
@@ -56,6 +57,13 @@ export default defineConfig({
             urlPattern: ({ url, request }) => url.hostname === 'thumb.wikimedia.org' && request.cache !== 'no-store',
             handler: 'CacheFirst',
             options: { cacheName: 'istoria-offline-photos', matchOptions: { ignoreVary: true }, cacheableResponse: { statuses: [200] } },
+          },
+          {
+            // оригінали старих мап із серверів IIIF бібліотек: збережені ділянки (src/offlineareas.ts) — з кешу,
+            // решта — з мережі без додаткового кешування (браузер і так тримає їх у звичайному кеші)
+            urlPattern: ({ url }) => url.hostname === 'iiif.ios-regensburg.de' || url.hostname === 'iiif.nypl.org'
+              || (url.hostname === 'www.davidrumsey.com' && url.pathname.startsWith('/luna/servlet/iiif/')),
+            handler: async ({ request }) => (await caches.match(request, { cacheName: 'istoria-offline-iiif', ignoreVary: true })) || fetch(request),
           },
           {
             // стиль OpenFreeMap і його TileJSON: остання отримана версія лишається для роботи без мережі

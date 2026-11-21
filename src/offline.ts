@@ -180,29 +180,50 @@ addProtocol('offline', async (params, ac) => {
 });
 
 // ---------- завантаження ----------
+/** Завантаження: пакет або ділянка старих мап у повній якості (src/offlineareas.ts). */
+export type JobId = PackId | 'area';
 export interface Job {
-  id: PackId;
-  /** Байти (або кількість файлів, якщо розміри невідомі — для фото). */
+  id: JobId;
+  /** Байти (або кількість файлів, якщо розміри невідомі — для фото й ділянок). */
   done: number;
   total: number;
   byCount: boolean;
   failed: number;
+  /** Скільки байтів уже записано (для ділянок, де хід рахується файлами). */
+  bytes: number;
   abort: AbortController;
 }
 let job: Job | null = null;
 export const currentJob = () => job;
+/** Почати завантаження, якщо інше не йде (одночасно — лише одне). */
+export function beginJob(id: JobId, byCount: boolean): Job | null {
+  if (job) return null;
+  job = { id, done: 0, total: 0, byCount, failed: 0, bytes: 0, abort: new AbortController() };
+  emit();
+  return job;
+}
+export function endJob(j: Job) {
+  if (job === j) job = null;
+  emit();
+}
+let lastTick = 0;
+/** Повідомити панель про хід (не частіше ніж раз на чверть секунди). */
+export function tickJob() {
+  const now = Date.now();
+  if (now - lastTick > 250) { lastTick = now; emit(); }
+}
 
 export type DownloadResult = 'ok' | 'aborted' | 'quota' | 'net' | 'error';
 
 /** Помилка, після якої варто повторити запит (сервер перевантажений чи обрив зв'язку). */
-class Retry extends Error {}
+export class Retry extends Error {}
 const sleep = (ms: number, signal: AbortSignal) => new Promise<void>((res, rej) => {
   const id = setTimeout(res, ms);
   signal.addEventListener('abort', () => { clearTimeout(id); rej(signal.reason); }, { once: true });
 });
 
 /** Завантажити один файл у кеш, рахуючи байти на льоту; розмір перевіряється, якщо відомий. */
-async function fetchInto(cache: Cache, url: string, expected: number, signal: AbortSignal, onBytes: (n: number) => void): Promise<number> {
+export async function fetchInto(cache: Cache, url: string, expected: number, signal: AbortSignal, onBytes: (n: number) => void): Promise<number> {
   for (let attempt = 0; ; attempt++) {
     let got = 0;
     try {
@@ -236,13 +257,11 @@ async function fetchInto(cache: Cache, url: string, expected: number, signal: Ab
  * з того місця, де зупинилось.
  */
 export async function downloadPack(id: PackId): Promise<DownloadResult> {
-  if (job || !offlineSupported()) return 'error';
-  const abort = new AbortController();
-  const current: Job = { id, done: 0, total: 0, byCount: id === 'photos', failed: 0, abort };
-  job = current;
-  emit();
-  let last = 0;
-  const tick = () => { const now = Date.now(); if (now - last > 250) { last = now; emit(); } };
+  if (!offlineSupported()) return 'error';
+  const current = beginJob(id, id === 'photos');
+  if (!current) return 'error';
+  const abort = current.abort;
+  const tick = tickJob;
   try {
     const m = id === 'photos' ? photosManifest() : (await loadManifest())[id];
     // браузер не стиратиме дані сам, якщо дозволить (у Chrome — для встановленого застосунку)
@@ -307,14 +326,18 @@ export async function downloadPack(id: PackId): Promise<DownloadResult> {
     if (id === 'basemap') resetOfflineSource();
     return 'ok';
   } catch (e) {
-    if ((e as Error)?.name === 'QuotaExceededError') return 'quota';
-    if (e instanceof TypeError || e instanceof Retry || navigator.onLine === false) return 'net';
-    console.warn('Пакет без інтернету:', e);
-    return 'error';
+    return failureKind(e);
   } finally {
-    if (job === current) job = null;
-    emit();
+    endJob(current);
   }
+}
+
+/** Вид невдачі завантаження для повідомлення в панелі. */
+export function failureKind(e: unknown): DownloadResult {
+  if ((e as Error)?.name === 'QuotaExceededError') return 'quota';
+  if (e instanceof TypeError || e instanceof Retry || navigator.onLine === false) return 'net';
+  console.warn('Завантаження без інтернету:', e);
+  return 'error';
 }
 
 /** Зупинити поточне завантаження (уже записані файли лишаються, можна продовжити). */
