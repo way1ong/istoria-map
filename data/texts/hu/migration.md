@@ -4,7 +4,11 @@
 
 A 4. század végén a hunok elől menekülő alán és germán törzsek költöztek a Kárpát-medencébe, a századfordulón pedig megjelentek maguk a hunok is, akik néhány évtized alatt uralmuk alá vonták a térséget: 409-ben a rómaiak átengedték nekik Pannónia keleti felét, 433-ra az egész tartományt elvesztették. A hunok birodalma egyesítette először a medence keleti és nyugati felét; 451-ben Aëtius a catalaunumi csatában megállította a hunokat, Attila halála (453) után pedig a birodalom szétesett, helyét egymással marakodó germán királyságok vették át: gepidák az Erdélyi-medencében és a Tiszántúlon, keleti gótok Pannóniában, később herulok és langobardok. 567-ben a Közép-Ázsiából érkezett avarok vették birtokba a területet, és mintegy 250 évig meg is tartották; az avarok szövetségeseként a langobardok ebben az évben győzték le a gepidákat a Tiszánál, a következő év tavaszán pedig az avarok a langobardok által kiürített Dunántúlt is elfoglalták. A germán törzsek többsége Itáliába vonult, a Felső-Tisza vidékének gepidái az avarok hűbéresei lettek. Az avarok a gyepűkre szlávokat telepítettek, akik később a belső területekre is beköltöztek. A népek mozgása során 811–895 között, a honfoglalásnak nevezett folyamatban a turkoknak vagy onoguroknak is nevezett magyarok vették birtokba a medencét.[^11]
 
+![](lovasijaszok-karoling)
+
 895-ben Árpád vezér vezetésével a magyarok többsége a Vereckei-hágón át nyomult be az új hazába, Etelközből a veszedelmes keleti szomszéd, a besenyők elől; gyorsan lejutottak az Alföldre, és a Garam–Duna vonaláig megszállták a vidéket, ahol a bolgárokon kívül nem találkoztak számottevő ellenállással. 898-ban a keleti frank uralkodó kérésére Észak-Itáliában harcoltak, majd kiverték a morvákat a medencéből, a bajorokat támadták, és 900-ban elfoglalták Pannóniát (a Dunántúlt, a Dráva–Száva közét és a Bécsi-medencét), elsöpörve a kis szláv hűbéres fejedelemségeket; a tartományt visszaszerezni próbáló nagy bajor sereget 907-ben Pozsony közelében verték meg.[^12]
+
+![](magyarok-bejovetele-kepes-kronika)
 
 ## Göd, Vác és Dunakeszi környéke
 
@@ -20,9 +24,13 @@ Vác tudományosan feldolgozott avar temetője a kavicsbánya területén fekszi
 
 Gödön az avar korra teszik a felsőgödi Várdomb földvárát, amelyről az utat és a Dunát lehetett ellenőrizni; később itt alakult ki a körtemplom és Gud, Göde falu.[^2] A Wikimedia Commons légi felvételének leírása ezzel szemben Árpád-kori földvárnak nevezi a dombot, a keltezés tehát ellenőrzésre vár.[^3] Sződön és Sződligeten avar cserepek és késő avar telep nyomai kerültek elő.[^4] A Vác fölötti Naszály Szarvas-hegyén a kis barlangot, amely 1241-ben a tatárok elől menedékül szolgált, kézzel formált edények és egy római bronz ládikagomb alapján a késő római és a kora középkori korban is használták időnként.[^10]
 
+![](felsogod-vardomb-legifoto)
+
 ## A magyarok megjelenése
 
 A váci Hétkápolna melletti és Hattyú utcai leletek szerint a magyarok már a 10. században megtelepedtek itt; e lelőhelyek az avar temető közelében fekszenek, így a honfoglalást megélt avarok beolvadhattak az új népbe.[^1] Dunakeszit valószínűleg a Keszi törzs egy, az Ipolyon túlról érkezett töredéke alapította, amely a 10–11. század fordulóján a gyér helyi, főként avar és szláv népességgel együtt telepedett meg.[^5]
+
+![](vac-hetkapolna-2023)
 
 [^1]: Vác – Wikipédia (hu), „Római kor, népvándorlás kora, honfoglalás kora” szakasz: https://hu.wikipedia.org/wiki/V%C3%A1c
 [^2]: Göd – Wikipédia (hu), „Mohácsig” szakasz: https://hu.wikipedia.org/wiki/G%C3%B6d

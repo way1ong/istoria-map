@@ -366,8 +366,10 @@ if (existsSync(illPath)) {
       const f = `data/illustrations.json: ${id}`;
       illIds.add(id);
       if (!/^[a-z0-9][a-z0-9-]*$/.test(id)) err(f, 'id — лише малі латинські літери, цифри й дефіс');
-      for (const k of ['url', 'author', 'license', 'source'])
+      for (const k of ['url', 'license', 'source'])
         if (typeof x?.[k] !== 'string' || !x[k].trim()) err(f, `${k} відсутній`);
+      // автор — рядок або двомовно {"uk": "невідомий автор", "hu": "ismeretlen szerző"}
+      if (!(typeof x?.author === 'string' && x.author.trim()) && !isLText(x?.author)) err(f, 'author відсутній');
       if (typeof x?.url === 'string' && !/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/[0-9a-f]\/[0-9a-f]{2}\/[^/]+$/.test(x.url) && !existsSync(join(root, '..', 'public', x.url)))
         err(f, 'url — адреса оригіналу на upload.wikimedia.org/wikipedia/commons/… або шлях до файлу в public/');
       if (typeof x?.license === 'string' && !ILL_LICENSE.test(x.license))

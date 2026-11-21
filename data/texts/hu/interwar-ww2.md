@@ -4,7 +4,11 @@
 
 A Magyar Királyság az Osztrák–Magyar Monarchia részeként, a központi hatalmak oldalán vett részt az első világháborúban, és 660 821 fős emberveszteséget szenvedett az orosz, az olasz és a balkáni fronton. 1918. október 28-án kitört az őszirózsás forradalom, 31-én Károlyi Mihály polgári demokratikus kormányt alakított, november 13-án IV. Károly eckartsaui nyilatkozatával megszűnt a királyság, november 16-án kikiáltották a Népköztársaságot. A belgrádi konvenció nyomán a szerbek, a románok, majd a csehek az ország nagy részén bevezették saját közigazgatásukat; 1919. március 21-én a kommunisták ragadták magukhoz a hatalmat, a Tanácsköztársaság 133 napig tartott, a román csapatok 1920-ban, a szerbek 1921-ben távoztak. A trianoni béke Romániának 103 093 km²-t (a királyság 31,78%-át), Csehszlovákiának mintegy 61 633 km²-t, Ausztriának Burgenlandot, Olaszországnak Fiumét juttatta; az ország Horvátország nélküli területe 282 870-ről 92 963 km²-re, lakossága 20 886 487-ről (1910) 7 615 117-re csökkent.[^10]
 
+![](trianon-1920-junius-4)
+
 A Tanácsköztársaság bukása után az államforma formálisan újra királyság lett, de az ország élén kormányzóként Horthy Miklós állt 1944-ig; Teleki Pál és Bethlen István miniszterelnöksége alatt a rendszer az 1920-as évek elején konszolidálódott, az 1930-as években jobbra tolódott. A fő cél az elcsatolt területek visszaszerzése volt Mussolini Olaszországa, majd Hitler Németországa segítségével; a kezdetben sikeres stratégia 1941-ben a Szovjetunióval szembeni hadba lépéshez vezetett. Az állami szintre emelt antiszemitizmus 1941 és 1945 között több mint 400 000, a mai országterületről 200 000 zsidó erőszakos halálához vezetett. 1944–45 telén a front végigvonult az országon, a legpusztítóbb Budapest ostroma volt; a háborúnak a haláltáborokban megölt százezreken kívül mintegy félmillió polgári és katonai áldozata volt, az infrastruktúra elpusztult, a visszacsatolt területek elvesztek. Vác, Alag és Dunakeszi zsidóságának sorsát az alábbi helyi szakaszok írják le.[^11]
+
+![](margit-hid-1944)
 
 ## Göd, Vác és Dunakeszi környéke
 
@@ -16,11 +20,15 @@ Dunakeszi iparosodását az Óceán konzervgyár 1910-es alapítási kísérlete
 
 A Dunakeszi Főműhelyt 1926. május 23-án helyezték üzembe, az Északi Főműhely személykocsi-osztályának egyidejű bezárásával; feladata kizárólag a személy-, kalauz- és postakocsik javítása volt. A munka 600 fővel indult: munkát kaptak a szakmát tudó helyi férfiak is, de sok munkás érkezett az elcsatolt felvidéki területekről, a felvételnél pedig szempont volt a helyi kulturális vagy sportegyesületi tagság. Az első főnök Lányi Ferenc (1883–1961) lett. 1926. június 23-án az ő elnökletével alakult meg a Magyarság Dal- és Önképző Egyesület és a Magyarság Sportegyesület; a tagok béréből havonta egy pengőt vontak le. A válság éveiben, 1933-ig csökkentett munkaidővel, csökkentett bérért dolgoztak, az 1930-as években azonban a főműhely igényes megrendeléseket kapott: a kormányzati „Turán-vonatot”, amelyet Horthy Miklós személyesen vett át, és az aranyvonat „aranykocsiját”, amelyen 1935-től dolgoztak, és amely 1938-ban, Szent István halálának 900. évfordulóján körbevitte a Szent Jobbot az országban.[^4][^1]
 
+![](dunakeszi-jarmujavito-bejarat)
+
 ## Konzervgyár, versenypálya, községek
 
 Az 1916-ban Budapesten alapított Óceán konzervgyár 1917-ben indította el dunakeszi üzemét a halkonzervekhez szükséges ecet és mustár gyártására; a falu az iparosodás útjára lépett. 1922-ben a gyárban „Az Oceán konzervgyár munkásaihoz” című röpiratot terjesztettek, amelynek szerzőjét, Kékedi Ferencet letartóztatták és „a tőkés osztály elleni gyűlöletre izgatás” miatt bíróság elé állították.[^5] 1928-ban állították fel a 116 nevet viselő hősi emlékművet, 1936–1937-ben bővítették a Szent Mihály-templomot.[^1]
 
 Miután a háborúban a városligeti pálya tönkrement, a magyar lóversenyzés központja Alagra helyeződött át: a versenyek 1919 szeptemberében indultak újra, a közönség villamossal Rákospalotáig, onnan másfél órát gyalog a sínek mellett jutott el a pályára. 1921-ben itt rendezték az első Magyar Derbyt, és fénykorában több mint 600 ló állt a tréningtelepen. 1924-ben megépült az új pesti pálya, Alag elvesztette központi szerepét, és tréningtelep, valamint az úrlovas versenyek helyszíne maradt; 1925-ben a versenytér minden szétszedhető részét bevitték az új fővárosi pályára, de egy 1938-as térkép még 6 gyep- és 9 homokpályát mutat Alagon.[^1][^6][^7]
+
+![](alag-treningtelep-1938)
 
 Gödön 1921-ben Alsógöd kisközség lett; Felsőgödön 1924-ben szentelték fel a Jézus Szíve-templomot, villany, tűzoltóság, mozik létesültek, 1939-ben református templom és zsinagóga épült. 1939-ben Huzella Tivadar biológus villájában anatómiai világkongresszust tartottak.[^2] Vácon 1939 után lengyel menekültek, köztük zsidók találtak otthonra; lengyel árvaház működött.[^3]
 

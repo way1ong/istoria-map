@@ -133,8 +133,9 @@ marked.use({
     image({ href, text }) {
       const ill = illustrationById(href);
       if (!ill) return false;
+      const p: Photo = { ...ill, author: typeof ill.author === 'string' ? ill.author : lt(ill.author) };
       // серед ілюстрацій є малюнки й старі мапи, тож підпис «Автор», а не «Фото»
-      return figure(text.trim() ? { ...ill, caption: { uk: text.trim() } } : ill, 'text', 'txt-fig', t('illBy'));
+      return figure(text.trim() ? { ...p, caption: { uk: text.trim() } } : p, 'text', 'txt-fig', t('illBy'));
     },
     paragraph({ tokens }) {
       // абзац лише з ілюстрацій — без <p>: <figure> усередині абзацу не допускається

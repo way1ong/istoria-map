@@ -4,6 +4,8 @@
 
 Az 1699-es karlócai béke után Erdélyt nem egyesítették Magyarországgal, hanem külön kormányozták; az ország, megmaradt önállóságát is elvesztve, a Habsburg-kormányzat katonailag megszállt országa lett, a porció és a forspont hatalmas terheivel. A függetlenség kivívására II. Rákóczi Ferenc szabadságharca tett kísérletet a század elején, amely az 1711-es kompromisszumos szatmári békével zárult: az ígéretet tett az alkotmány visszaállítására, a vallásszabadságra és az országgyűlés összehívására, amnesztiát adott a résztvevőknek, de az ellenállás és a szabad királyválasztás jogát nem állította vissza, és külön magyar hadsereg sem jött létre. 1741. szeptember 11-én Mária Terézia a pozsonyi országgyűléshez fordult fegyveres segítségért, és a rendek „életünket és vérünket!” felkiáltással álltak mellé; ugyanő vezette be 1754-ben a magyar ipart visszavető kettős vámrendszert, a jobbágykérdést pedig az országgyűlés elutasítása után rendeleti úton (Urbárium) szabályozta. Fia, II. József, a „kalapos király” 1780-tól lemondott a koronázásról és az eskütételről, rendeletekkel kormányzott, országgyűlést nem hívott össze, 1784-ben a németet tette hivatalos nyelvvé, a Szent Koronát Bécsbe szállíttatta, és támadást indított a vármegyerendszer ellen. Mindketten a felvilágosult abszolutizmus szellemében uralkodtak: korlátozták a rendi kiváltságokat, adófizetésre kötelezték a nemességet, oktatási és közegészségügyi újításokat vezettek be, és megnyitották a hivatali pályát a nem nemesek előtt.[^14]
 
+![](szatmari-beke-okirat)
+
 ## Göd, Vác és Dunakeszi környéke
 
 ## A török után: a Wattayak, a kurucok és a pestis
@@ -16,11 +18,15 @@ Az újjáépítés már a háború vége előtt megkezdődött. Az 1680-as évek
 
 Az újjáépítés százada két erő jegyében telt: a váci püspökök és a Grassalkovich család jegyében. Vácon az ellenreformáció odáig vezetett, hogy a püspök megtiltotta a nem katolikusok szabad vallásgyakorlását, és a református lakosságot kitelepítették: ők alapították Kisvác jobbágyfalut, amely ma a város része; helyükre a püspökök katolikus németeket és szláv papságot telepítettek.[^1] Althann Mihály és Migazzi Kristóf püspökök kiépítették a várost: 1745-ben készült el a piarista templom, 1755-ben a domonkos (Fehérek temploma, amelynek építése már 1699-ben megkezdődött), 1766-ban a ferences templom, 1772-ben a püspöki palota; 1761–1777 között Isidore Canevale tervei szerint felépült a székesegyház.[^1][^2][^3] Lőrincz Viktor Olivér művészettörténész a városépítészeti koncepcióra hívja fel a figyelmet: Róka János 1777-es könyvének metszetén a székesegyház főhomlokzatától lejtő vezet a Dunáig, a templom előtti téren obeliszk áll, a püspöki palota pedig – Franz Anton Pilgram korábbi terveitől eltérően – kikerül a főtengelyből, szabaddá téve az utat a folyóig, a párizsi esplanade-okhoz hasonlóan. A székesegyház homlokzata elvesztette íves záródásait, kupolájának nincs dobja; a belső tér kialakítását is Canevale-hoz kötik.[^12] 1764-ben Mária Terézia személyesen látogatott Vácra, tiszteletére épült Magyarország egyetlen diadalíve; az ő rendeletére alapították 1762-ben a szomszédos épületben a nemesi Theresianumot, amely 1777–1778-tól II. József 1784-es bezáró rendeletéig működött.[^1][^4][^5]
 
+![](vaci-szekesegyhaz-2009)
+
 ## A Grassalkovich-uradalom
 
 A falvakban a fő földesúr gróf Grassalkovich I. Antal lett: 1736-ban megvette Sződöt Göd-pusztával a Madách családtól (az 1718 óta birtokostól), 1747-ben pedig Dunakeszit és Alagot, a gödöllői uradalomhoz csatolva őket.[^6][^7][^8] A Wattay család nem nyugodott bele a veszteségbe: 1774-ben Wattay Pál táblai pert indított herceg Grassalkovich II. Antal ellen a csere érvénytelenítéséért, és bár az ítéletek rendre a Wattayak igazát bizonyították, a Grassalkovichok és utódaik mindig fellebbeztek, így a per a Bach-korszakig húzódott, amikor megszüntették. Az utolsó herceg, Grassalkovich III. Antal 1841-ben gyermek nélkül halt meg, és a gödöllői birtok Dunakeszivel együtt a leányági Viczay grófokra szállt, akik azonnal eladták a bécsi bankárnak, Sina György Simonnak.[^13]
 
 Göd-pusztán gazdasági központ (a későbbi Kincsem telep), szeszfőzde és sörfőzde épült a Duna partján; a bérlő Mayerffy József juhtenyésztést és szőlőművelést vezetett be.[^7] Dunakeszin nagy fogadó (Beszálló), malom, vágóhíd és kovácsműhely létesült, 1756. szeptember 29-én pedig felszentelték az új Szent Mihály-templomot; 1768-ban a falunak 600, 1785-ben 740 lakosa volt. II. József alatt készült a falu első részletes katonai térképe.[^8] Sződön 1744-ben szentelték fel a Mária Magdolna-templomot, katolikus székelyeket telepítettek, 1769-ben urbáriumot kötöttek.[^6] A Sződrákos-patakon a Grassalkovich-uradalom a század elején malmot emelt, amely ma is áll.[^9]
+
+![](god-nemeskeri-kuria-kapu)
 
 [^1]: Vác – Wikipédia (hu), „Újkor” szakasz: https://hu.wikipedia.org/wiki/V%C3%A1c
 [^2]: Váci székesegyház – Wikipédia (hu): https://hu.wikipedia.org/wiki/V%C3%A1ci_sz%C3%A9kesegyh%C3%A1z

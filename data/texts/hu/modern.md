@@ -4,7 +4,11 @@
 
 Magyarország vesztesként fejezte be a második világháborút: az 1947-es párizsi béke a trianoni határoknál is kisebb területet hagyott (a csehszlovák delegáció elérte a 62 km²-es pozsonyi hídfő elcsatolását), és 300 millió dollár kártérítést rótt ki. Néhány évnyi többpárti demokrácia után a Szovjetunió támogatta kommunisták választási csalással átvették a hatalmat, és 1947-től egypártrendszert építettek ki; az ötvenes évek első felében Rákosi Mátyás totális diktatúrája kényszerrel államosította a termelőeszközöket, politikai ellenségnek nyilvánított emberek százezreit érte retorzió, kitelepítés, börtön, kivégzés (a recski tábor is ebbe a korszakba esik). 1955. december 14-én az ország belépett az ENSZ-be. 1956 októberében forradalom tört ki: Nagy Imre miniszterelnök szakított a Varsói Szerződéssel, kikiáltotta a semlegességet és visszaállította a többpártrendszert, a szovjet hadosztályok azonban leverték a forradalmat, Kádár János kormánya vette át a hatalmat, csaknem kétszázezren emigráltak nyugatra, Nagy Imrét és a forradalom több száz résztvevőjét kivégezték, 1963-ban amnesztia következett.[^13]
 
+![](nagy-imre-portre)
+
 A szocialista tömb többi országához képest a Kádár-rendszer a diktatúra viszonylag enyhe változata volt, amely bizonyos kapcsolatot tarthatott a Nyugattal; az 1968-as új gazdasági mechanizmus enyhítette a tervgazdaság merevségét, a fejlesztések finanszírozása azonban jelentős külföldi adósságot halmozott fel, és a 80-as évek végén az ország belépett az IMF-be és a Világbankba. A rendszerváltás legfontosabb aktusa a Magyar Köztársaság kikiáltása volt 1989. október 23-án, 1990-ben megválasztották az első demokratikus Országgyűlést, kormányt, köztársasági elnököt és önkormányzatokat; a 90-es éveket a privatizáció jellemezte, 1999-ben az ország a NATO tagja lett. A Sopron melletti páneurópai piknik és a nagymarosi vízlépcső 1989-es leállítása külön eseményként szerepel a térképen.[^14]
+
+![](paneuropai-piknik-emlekhely)
 
 ## Göd, Vác és Dunakeszi környéke
 
@@ -14,6 +18,8 @@ A háború után földet osztottak: Dunakeszin a szegényparasztoknak, Alagon a 
 
 A versenypályán létesült hadirepülőteret a szovjet hadsereg idővel átadta a magyar sportrepülésnek. 1951 októberében a Magyar Repülő Szövetség állami forrásból és társadalmi munkával itt nyitotta meg Központi Repülőgép Javító Műhelyét, amely nem csak a klubok gépeit javította, hanem építette is azokat. Első munkája a Nagy Hugó tervezte kétüléses alapfokú kiképző vitorlázó, a Bene volt, amely 1952 augusztusában repült először és egy példányban maradt, mert az 1951-es tervpályázat győztesét, a Zsebő Ferenc tervezte Z-03 Ifjúságot ítélték jobbnak: ez 1953. február 5-én emelkedett először a levegőbe, bemutatták a lipcsei vásáron, egy változatát Belgiumba exportálták; a Z-03B változatból 1957 és 1959 között 33 darab épült. Az Ifjúság, a fa és a fém keveréke, a fémszerkezetű gépek úttörője lett a magyar vitorlázórepülésben és az üzem legnagyobb példányszámban gyártott gépe; a dunakeszi üzem sok kiváló fémipari szakembert gyűjtött össze.[^9] 1957-től itt működött az Alagi Központi Kísérleti Üzem, amely az Ifjúság, Béke és Gébics vitorlázókat gyártotta, majd a Mechanikai Laboratórium 2. számú telepe; ekkor kezdték a kisgépeket mezőgazdasági célra átalakítani (a Repülő Növényvédő Szolgálat „kukacbombázói”). Az 1950–60-as években a repülőtér kulturális események helyszíne is volt: 1954 május–júniusában itt forgatták a „2×2 néha öt” című film jeleneteit. Az 1980-as évek közepétől a magyar vitorlázópilóták a „dunakeszi hullámon” állítottak fel magassági rekordokat. 2003 óta a repülőtér a város tulajdona és a Nemzeti Ökológiai Hálózat része, mert itt és a szomszédos versenypályákon él Magyarország egyik legnagyobb ürgeállománya.[^10]
 
+![](dunakeszi-repuloter-1974)
+
 ## 1956 Alagon
 
 1956 őszéről fennmaradt a Lósport Vállalat alagi telepének dossziéja az ideiglenes munkástanács jegyzőkönyveivel és 68 szavazócédulájával. November 20-án a tanács határozott a tízmilliós népgazdasági vagyont őrző kétfős biztonsági őrség fenntartásáról és arról, hogy a szénbányák leállása miatt 105 száraz fát jelölnek ki a dolgozóknak tüzelőre; november 24-én a telepen készpénzért szétmértek egy vágómarhát. November 30-án, a Himnusz közös eléneklése után a telep 76 dolgozójából 68 választotta meg a munkástanács négy tagját; összekötő Cseh Vilmos patkolómester lett. December 27-én a tanács a telep vezetőségével egyetértésben cserét hagyott jóvá: Nagy János főkertész 79 liter pálinkáért 19 csille illetményszenet vásárol a nógrádi bányászoktól, hogy a váci szeszfőzdében kifőzhessék a Lovaregylet által az 1930-as évek végén telepített, 2800 fás szilvás közel 500 hektoliter cefréjét.[^11]
@@ -21,6 +27,8 @@ A versenypályán létesült hadirepülőteret a szovjet hadsereg idővel átadt
 ## Iparosodás és városok
 
 Az 1957 utáni iparosítás átalakította Dunakeszit: Mechanikai Laboratórium, bővített konzervgyár, 1969-ben házgyár, hűtőház; az 1970-es évek elején a lakosság 70%-ának az ipar adott munkát. Dunakeszi 1970. január 1-jén nagyközség, 1977. április 1-jén város lett.[^1] Ugyanabban az 1970-es évben Alsógöd és Felsőgöd Göd néven egyesült.[^4] Az alagi versenypálya mai formája 1955-ben alakult ki: 2800 m kerületű, belső szélén homokpályával, belsejében akadálypályával az ország legnagyobb versenypályája; a régi pályák vízvezetékeit a háború után kitépték a földből és a dunaújvárosi kohóba vitték.[^7] A telep ma kb. 120 ha, mintegy 100 fő dolgozik rajta, és a hazai versenylóállomány közel kilencven százaléka itt végzi napi munkáját.[^8] Vácon az állam háttérbe szorította az egyházi intézményeket, 1965-ben új rendezési tervet fogadtak el, az 1960–70-es években Deákváron és az Alsóvárosban lakótelepek épültek, 1972–73-ban áruházak nyíltak; a fegyház 1956 után a politikai elítéltek egyik fő fogva tartási helye lett, 1960-ban és 1963-ban börtönsztrájkokkal.[^3][^5]
+
+![](dunakeszi-hazgyar-1970)
 
 ## 1989 után
 

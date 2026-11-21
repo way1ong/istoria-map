@@ -6,6 +6,8 @@ Az Árpád-ház kihalása után az ország jogilag egységes maradt, de a hatalo
 
 1437-ben trónra lépett az első Habsburg, Albert, majd kettős királyválasztás következett, és az ország kormányzása Hunyadi János kezébe került, aki az 1440-es években eredményesen harcolt a török ellen; 1456-ban Kapisztrán Jánossal együtt vereséget mért II. Mehmedre Nándorfehérvárnál, amelyet Szilágyi Mihály vezetésével hétezer katona védett. 1458. január 24-én Hunyadi Mátyást választották királlyá: alatta az ország kulturálisan felzárkózott a Nyugathoz, udvara reneszánsz központtá vált, az 1460-as évektől megszervezte a fekete sereget, 1479-ben Báthori István vajda Kenyérmezőnél megállította az oszmánokat, 1483-ban pedig Mátyás békét kötött a törökkel, amelyet a királyok 1520-ig megújítottak. A Jagelló Dobzse László alatt a tényleges hatalom a királyi tanácsé lett; a Dózsa György vezette keresztes had az urak ellen fordult, és Szapolyai verte le Temesvárnál. A kor utolsó uralkodója, a húszéves II. Lajos Mohácsnál vesztette életét.[^9]
 
+![](matyas-mantegna)
+
 ## Göd, Vác és Dunakeszi környéke
 
 1317-ben Göd falut Károly Róbert király Szécsi Dénesnek adományozta; a Sződről szóló cikk szerint a Sigfrid-nemzetség kihalása után Sződ Göddel és Keszivel együtt a Balog nembeli Széchy családra szállt, és 1579-ig, az utolsó Széchy, Tamás haláláig annak kezén maradt.[^1][^2] Dunakeszi a késő középkorban a Szécsi és a Garai családé volt, majd Corvin Jánosé, végül Ráskai Balázsé.[^3] Alagot 1328-ban említik először mint Pest megye tipikus kisnemesi faluját, amely gyakran volt örökösödési viták tárgya; rotundájához a 15. században gótikus sekrestyét és szentélyt építettek.[^3]
@@ -18,9 +20,13 @@ A váci székeskáptalannak a szakirodalom szerint 16 tagja volt: a prépost, az
 
 A város virágzását a humanista Báthory Miklós püspökhöz (püspök 1474–1506) kötik, aki szobrászokat, festőket és építészeket hívott a városba; a víz fölött magasodó helyen állt a váci vár.[^5] A vár területén állt középkori székesegyházból a műemléki nyilvántartás szerint egyetlen ép sírkő sem maradt. Báthory vörösmárvány sírlapját a ferencesek találták meg, akik 1719-ben kapták meg a vár területét, kolostoruk alapjainak ásásakor; mosdómedencét faragtak belőle, amely falikútként ma is látható az épületben. A püspök tízsoros latin sírversét Pray György és Wagner Károly 1776-os kiadásaiból ismerjük, amelyek a Bártfa város levéltárában őrzött, a keletkezéssel közel egykorú, a székesegyházi eredetiről készült másolatra támaszkodtak. A székesegyház pusztulását a régészeti topográfia írja le: a török háborúk alatt maguk a várvédők bontották le az épületeket, hogy köveikkel erősítsék a bástyákat, a többit az ostromok végezték el.[^7]
 
+![](vac-hegyes-torony)
+
 A város gazdasági szerepéről az archaeozoológia tanúskodik: a váci rév az élőállat-kereskedelem egyik legfontosabb tranzitállomása volt; a kereskedelem a 14. század közepétől indult és a 16. században teljesedett ki, a vámnaplók szerint a 15–16. században évente 100–200 ezer magyar marhát hajtottak a nyugati piacokra. A német városban, a Piac utcai mélygarázs helyén végzett feltárás 3422 meghatározható állatcsontot adott négy korszakból (Árpád-kor, késő középkor, török kor, a 17–18. század fordulója); a késő középkorban a szarvasmarha erősen túlsúlyban van.[^8]
 
 Ezt a békés korszakot az oszmán veszély szakította meg: 1526 szeptemberében, közvetlenül Mohács után a törökök a Duna mentén először jutottak el Vácig.[^2]
+
+![](szulejman-1526)
 
 [^1]: Göd – Wikipédia (hu), „Mohácsig” szakasz: https://hu.wikipedia.org/wiki/G%C3%B6d
 [^2]: Sződ – Wikipédia (hu), „Története” szakasz: https://hu.wikipedia.org/wiki/Sz%C5%91d
