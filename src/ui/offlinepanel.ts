@@ -29,6 +29,12 @@ function fmtDate(d: string | undefined): string {
 }
 const km = (x: number) => (x < 10 ? x.toFixed(1).replace('.', ',') : String(Math.round(x)));
 
+/** Список збережених ділянок типово згорнутий; розгорнутий чи ні — пам'ятається на пристрої. */
+const AREAS_OPEN_KEY = 'istoria.offline.areasOpen';
+let areasOpen = (() => {
+  try { return localStorage.getItem(AREAS_OPEN_KEY) === '1'; } catch { return false; }
+})();
+
 /** «біля Göd»: назва з підписів мапи, інакше найближче населене місце з карток (без пояснення після коми). */
 function areaName(label: string | undefined, placeId: string | undefined): string {
   const p = placeId ? placeById(placeId) : undefined;
@@ -148,8 +154,11 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
       <div class="off-state">${state}</div>
       ${msg ? `<p class="off-err">${esc(msg)}</p>` : ''}
       <div class="off-btns">${button}</div>
-      ${list ? `<p class="off-sub">${esc(t('offAreaSaved'))}</p><ul class="off-area-list">${list}</ul>
-        <p class="off-note">${esc(t('offAreasTotal').replace('{size}', fmtBytes(total)))}</p>` : ''}
+      ${list ? `<details class="off-saved" ${areasOpen ? 'open' : ''}>
+        <summary><span class="off-saved-t">${esc(t('offAreaSaved').replace('{n}', String(savedAreas().length)))}</span><span class="off-size">${esc(t('offAreasSum').replace('{size}', fmtBytes(total)))}</span></summary>
+        <ul class="off-area-list">${list}</ul>
+        <p class="off-note">${esc(t('offAreasShared'))}</p>
+      </details>` : ''}
     </li>`;
   };
 
@@ -299,6 +308,14 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     }
   };
 
+  // подія toggle не спливає — ловимо на етапі перехоплення; draw() перемальовує панель і бере стан звідси
+  const onToggle = (e: Event) => {
+    const d = e.target;
+    if (!(d instanceof HTMLDetailsElement) || !d.classList.contains('off-saved')) return;
+    areasOpen = d.open;
+    try { localStorage.setItem(AREAS_OPEN_KEY, areasOpen ? '1' : '0'); } catch { /* приватний режим */ }
+  };
+  body.addEventListener('toggle', onToggle, true);
   const off1 = onOfflineChange(() => { if (!progress()) void draw(); });
   const off2 = onInstallChange(() => void draw());
   const net = () => { view.key = ''; updatePlan(); };
@@ -319,5 +336,6 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     window.removeEventListener('online', net);
     window.removeEventListener('offline', net);
     body.onclick = null;
+    body.removeEventListener('toggle', onToggle, true);
   };
 }
