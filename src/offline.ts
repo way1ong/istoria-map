@@ -8,7 +8,7 @@
 // мапу Угорщини й шрифти читають напряму обробники адрес pmtiles:// і offline:// — вони працюють і тоді,
 // коли service worker ще не встановився.
 import { addProtocol, type AddProtocolAction } from 'maplibre-gl';
-import { events, places, tools } from './data';
+import { events, illustrations, places, tools } from './data';
 import { thumbUrl } from './ui/render';
 
 export type PackId = 'basemap' | 'generalkarte' | 'oldmaps' | 'photos';
@@ -65,6 +65,8 @@ const hashStr = (s: string) => {
 export function photosManifest(): PackManifest {
   const urls = new Set<string>();
   for (const x of [...places, ...events, ...tools]) for (const ph of x.photos ?? []) urls.add(thumbUrl(ph.url));
+  // ілюстрації в текстах «Історії» й «Ландшафту» (data/illustrations.json)
+  for (const ill of Object.values(illustrations)) urls.add(thumbUrl(ill.url));
   // на сторінці «Інструменти» картки показують першу фотографію меншою мініатюрою
   for (const x of tools) if (x.photos?.[0]) urls.add(thumbUrl(x.photos[0].url, 330));
   const files = [...urls].filter((u) => u.startsWith('https://thumb.wikimedia.org/')).sort().map((u): FileEntry => [u, 0]);

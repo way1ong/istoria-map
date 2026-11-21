@@ -353,6 +353,34 @@ if (existsSync(bordersDir)) {
   }
 }
 
+// illustrations: data/illustrations.json — ілюстрації для текстів, у Markdown рядок ![](id)
+const ILL_LICENSE = /^(Public domain|CC0( 1\.0)?|CC BY(-SA)?(-NC)? \d\.\d( [a-z]{2})?|OGL v\d\.\d)$/;
+const illIds = new Set();
+const illPath = join(root, 'illustrations.json');
+if (existsSync(illPath)) {
+  const doc = readJson(illPath);
+  const list = doc?.illustrations;
+  if (!list || typeof list !== 'object' || Array.isArray(list)) err('data/illustrations.json', 'illustrations має бути об\'єктом { id: {...} }');
+  else
+    for (const [id, x] of Object.entries(list)) {
+      const f = `data/illustrations.json: ${id}`;
+      illIds.add(id);
+      if (!/^[a-z0-9][a-z0-9-]*$/.test(id)) err(f, 'id — лише малі латинські літери, цифри й дефіс');
+      for (const k of ['url', 'author', 'license', 'source'])
+        if (typeof x?.[k] !== 'string' || !x[k].trim()) err(f, `${k} відсутній`);
+      if (typeof x?.url === 'string' && !/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/[0-9a-f]\/[0-9a-f]{2}\/[^/]+$/.test(x.url) && !existsSync(join(root, '..', 'public', x.url)))
+        err(f, 'url — адреса оригіналу на upload.wikimedia.org/wikipedia/commons/… або шлях до файлу в public/');
+      if (typeof x?.license === 'string' && !ILL_LICENSE.test(x.license))
+        err(f, `ліцензія «${x.license}» не з дозволених (Public domain, CC0, CC BY, CC BY-SA, CC BY-NC з версією)`);
+      if (!isLText(x?.caption)) err(f, 'caption.uk відсутній');
+    }
+}
+/** Ілюстрації в тексті: кожне ![…](…) має посилатися на id з data/illustrations.json. */
+function checkIllustrations(file, txt) {
+  for (const m of txt.matchAll(/!\[[^\]]*\]\(([^)\s]*)[^)]*\)/g))
+    if (!illIds.has(m[1])) err(file, `ілюстрація «${m[1]}» — немає такого id у data/illustrations.json (адреси зображень пишуться там, а в тексті лише ![](id))`);
+}
+
 // landscape: data/landscape/uk.md (обов'язково) і hu.md, перший рядок «# Заголовок»
 const landDir = join(root, 'landscape');
 if (existsSync(landDir)) {
@@ -363,6 +391,7 @@ if (existsSync(landDir)) {
   for (const f of files.filter((f) => f === 'uk.md' || f === 'hu.md')) {
     const txt = readFileSync(join(landDir, f), 'utf8');
     if (!/^# \S/.test(txt)) err(`data/landscape/${f}`, 'перший рядок має бути заголовком «# …»');
+    checkIllustrations(`data/landscape/${f}`, txt);
   }
   if (!files.includes('uk.md')) err('data/landscape', 'бракує uk.md');
 }
@@ -375,6 +404,7 @@ if (existsSync(textsDir))
     for (const f of readdirSync(join(textsDir, lang)).filter((f) => f.endsWith('.md'))) {
       const id = basename(f, '.md');
       if (!periodIds.has(id)) err(`data/texts/${lang}/${f}`, `назва файлу має бути id періоду; "${id}" невідомий`);
+      checkIllustrations(`data/texts/${lang}/${f}`, readFileSync(join(textsDir, lang, f), 'utf8'));
     }
   }
 
