@@ -20,8 +20,8 @@ const routeModules = import.meta.glob<RouteCollection>('../data/routes/*.geojson
   eager: true,
   import: 'default',
 });
-/** Векторні накладки (data/water/*.geojson) — вантажаться ліниво, лише коли їх вибрано в списку мап. */
-const vectorModules = import.meta.glob<GeoJSON.FeatureCollection>('../data/water/*.geojson', { import: 'default' });
+/** Векторні накладки (data/water/*.geojson, data/fortifications/*.geojson) — вантажаться ліниво, лише коли їх вибрано в списку мап. */
+const vectorModules = import.meta.glob<GeoJSON.FeatureCollection>(['../data/water/*.geojson', '../data/fortifications/*.geojson'], { import: 'default' });
 export function loadVectorOverlay(url: string): Promise<GeoJSON.FeatureCollection> {
   const key = `../data/${url}`;
   const load = vectorModules[key];

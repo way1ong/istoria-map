@@ -1,0 +1,42 @@
+{
+  "id": "attila-iii-harckocsiarok",
+  "name": {
+    "uk": "Вцілілий протитанковий рів «Аттіла III» у Ferihegy",
+    "hu": "Az Attila III megmaradt harckocsiárka Ferihegyen"
+  },
+  "type": "military",
+  "coords": [
+    19.2040757,
+    47.4560251
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Ділянки протитанкового рову третього поясу лінії «Аттіла», що збереглися в XVII і XVIII районах Будапешта й позначені в OpenStreetMap.",
+    "hu": "Az Attila-vonal harmadik övének harckocsiárkából megmaradt szakaszok Budapest XVII. és XVIII. kerületében, az OpenStreetMapen jelölve."
+  },
+  "description": {
+    "uk": "В OpenStreetMap як «Attila III. vonal páncélvédelmi árok» позначено чотири відрізки: два біля Csévéző utca і Gyömrői út у Ferihegy (XVIII район, найдовший близько 240 м) і два біля Helikopter út і Régivám köz у Rákoshegy (XVII район). За відрізками в Rákoshegy на сайті уточнено прив'язку мапи-реконструкції Juhász і Balogh, де тут проходить рів «Аттіла III». Третій пояс майже збігався з кільцем укріплень 1914 року, хоча через ріст міста його трасу подекуди відсунули на схід.",
+    "hu": "Az OpenStreetMapen négy szakasz szerepel „Attila III. vonal páncélvédelmi árok” néven: kettő a Csévéző utca és a Gyömrői út mellett Ferihegyen (XVIII. kerület, a leghosszabb kb. 240 m), kettő a Helikopter út és a Régivám köz mellett Rákoshegyen (XVII. kerület). A rákoshegyi szakaszok alapján pontosította a honlap Juhász és Balogh rekonstrukciós térképének illesztését; ott fut az Attila III harckocsiárka. A harmadik öv nagyjából az 1914-es erődítési vonalat követte, bár a város növekedése miatt helyenként keletebbre tolták."
+  },
+  "sources": [
+    {
+      "title": "OpenStreetMap: Attila III. vonal páncélvédelmi árok (лінії 1307275979, 1307275976, 1487267062, 1487267055)",
+      "url": "https://www.openstreetmap.org/way/1307275979",
+      "note": "Геометрія з OpenStreetMap через Nominatim, ODbL; координати — середина найдовшого відрізка."
+    },
+    {
+      "title": "Juhász A., Balogh Á., Térinformatika alkalmazása katonai objektumok rekonstruálásához. Haditechnika LIX (2025/4) 44–49",
+      "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf",
+      "note": "Рис. 8: траса рову «Attila III»."
+    },
+    {
+      "title": "Kulcsár V., Budapest 1914. évi erődítése. Hadtudományi Szemle 2025/1, 95–105 (DOI 10.35926/HSZ.2025.1.9)",
+      "url": "https://real.mtak.hu/218170/1/009_KulcsarViktor_95-105.pdf",
+      "note": "Розділ про лінію 1914 року: «Az 1914-es vonalra nagyjából az 1944-ben kiépült Attila-vonal III. védőöve illeszkedik»."
+    }
+  ]
+}

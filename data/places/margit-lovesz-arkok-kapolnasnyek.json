@@ -1,0 +1,36 @@
+{
+  "id": "margit-lovesz-arkok-kapolnasnyek",
+  "name": {
+    "uk": "Окопи лінії «Маргіт» біля Kápolnásnyék і Velence",
+    "hu": "A Margit-vonal lövészárkai Kápolnásnyék és Velence mellett"
+  },
+  "type": "military",
+  "coords": [
+    18.67267,
+    47.22962
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "interwar-ww2"
+  ],
+  "summary": {
+    "uk": "Мережа стрілецьких окопів східного сектора лінії «Маргіт» на південний схід від Velence й Kápolnásnyék, відновлена за аерофото.",
+    "hu": "A Margit-vonal keleti szektorának lövészárok-hálózata Velencétől és Kápolnásnyéktől délkeletre, légifotók alapján rekonstruálva."
+  },
+  "description": {
+    "uk": "Лінія «Маргіт» ішла від столиці вздовж озер Velencei-tó і Балатон до Драви. За реконструкцією Juhász і Balogh за аерофото, ділянка біля озера Velencei-tó складалася майже лише зі стрілецьких окопів; на південний захід від озера справжня траса збігається з описами того часу, а на північний схід далі не продовжується. На мапі в накладці «Укріплення 1914 і 1944 років» показано окопи між Velence, Baracska і Besnyő з рисунка в їхній статті (похибка орієнтовно 50–100 м). 21–23 грудня 1944 року радянська 46-та армія прорвала позицію «Маргіт» у районі озера Velencei-tó, а ввечері 24 грудня танки 6-ї гвардійської механізованої бригади з боку Budakeszi увірвалися до Будапешта.",
+    "hu": "A Margit-vonal a fővárostól a Velencei-tó és a Balaton mentén húzódott a Dráváig. Juhász és Balogh légifotókon alapuló rekonstrukciója szerint a Velencei-tó melletti szakasz szinte csak lövészárkokból állt; a valós nyomvonal a tótól délnyugatra egybeesik a korabeli leírásokkal, északkeletre viszont nem folytatódik. Az „Erődítések 1914-ből és 1944-ből” rétegen a cikk ábrájáról átvett lövészárkok láthatók Velence, Baracska és Besnyő között (pontatlanság nagyjából 50–100 m). 1944. december 21–23-án a szovjet 46. hadsereg a Velencei-tó térségében áttörte a Margit-állást, december 24-én este pedig a 6. gárda-gépesítettdandár harckocsijai Budakeszi felől betörtek Budapestre."
+  },
+  "sources": [
+    {
+      "title": "Juhász A., Balogh Á., Térinformatika alkalmazása katonai objektumok rekonstruálásához. Haditechnika LIX (2025/4) 44–49",
+      "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf",
+      "note": "Розділ «Az adatok térinformatikai feldolgozása és eredménye», рис. 2 і 8."
+    },
+    {
+      "title": "Berta K., Adalékok a Margit-állás áttörésének 1944. december 21. és 22. közötti döntő eseményeihez. Hadtörténelmi Közlemények 2023/1, 195–223",
+      "url": "https://epa.oszk.hu/00000/00018/00298/pdf/EPA00018_hadtortenelmi_2023_01_195-223.pdf",
+      "note": "Вступ і рис. «A Margit-állás áttörésének színtere a Velencei-tó térségében»."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "margit-harckocsiarok-papkeszi",
+  "name": {
+    "uk": "Засипаний протитанковий рів лінії «Маргіт» біля Papkeszi",
+    "hu": "A Margit-vonal betemetett harckocsiárka Papkeszi mellett"
+  },
+  "type": "military",
+  "coords": [
+    18.065292,
+    47.06395
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Засипаний протитанковий рів лінії «Маргіт» між Balatonfűzfő і Papkeszi, який видно на супутникових знімках.",
+    "hu": "A Margit-vonal betemetett harckocsiárka Balatonfűzfő és Papkeszi között, amely a műholdképeken látható."
+  },
+  "description": {
+    "uk": "Juhász і Balogh наводять цей рів поряд з окопом на Somlyó-hegy як приклад того, що засипані укріплення видно на сучасних супутникових знімках; координати подано в підписі до рисунка.",
+    "hu": "Juhász és Balogh a Somlyó-hegyi lövészárok mellett ezt az árkot hozza példának arra, hogy a betemetett erődítések is látszanak a mai műholdképeken; a koordináták az ábra feliratában szerepelnek."
+  },
+  "sources": [
+    {
+      "title": "Juhász A., Balogh Á., Térinformatika alkalmazása katonai objektumok rekonstruálásához. Haditechnika LIX (2025/4) 44–49",
+      "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf",
+      "note": "Рис. 3b: координати 47°3′50,22″ пн. ш., 18°3′55,05″ сх. д. (координати опубліковані відкрито)."
+    },
+    {
+      "title": "OpenStreetMap (Nominatim): зворотне геокодування 47.063950, 18.065292",
+      "url": "https://nominatim.openstreetmap.org/ui/reverse.html?lat=47.06395&lon=18.065292",
+      "note": "Dakamajor, Papkeszi (ODbL)."
+    }
+  ]
+}

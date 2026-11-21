@@ -293,6 +293,8 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     setSelected(id) {
       const changed = id !== selected;
       selected = id;
+      // нове місце — стара підказка накладки вже не про нього; зняття вибору (клік по мапі) підказку не чіпає
+      if (changed && id) overlay?.closePopup();
       // дані оновлюємо, бо вибране місце показується навіть поза періодом чи фільтром типу
       whenReady(() => { if (changed) refresh(); applySelection(); });
     },

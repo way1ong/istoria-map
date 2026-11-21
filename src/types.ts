@@ -36,6 +36,8 @@ export type PlaceType =
   | 'farmstead'
   | 'inn'
   | 'mill'
+  /** Укріплення світових війн: окопи, рови, бункери, опорні пункти. */
+  | 'military'
   | 'other';
 
 export interface Photo {
@@ -115,6 +117,20 @@ export interface HistMap {
   sheet?: string;
   /** Georeference Annotation (шлях у public/): оригінал у повній якості з сервера IIIF бібліотеки через Allmaps. */
   georef?: string;
+  /** Для geojson: умовні знаки за properties.kind об'єктів (без legend шар малюється як водойми — заливкою й контуром). */
+  legend?: LegendItem[];
+}
+
+/** Умовний знак векторної накладки: як малювати об'єкти з properties.kind, що писати в легенді й у підказці. */
+export interface LegendItem {
+  kind: string;
+  label: LText;
+  /** line — суцільна лінія, dash — пунктир, longdash — довгий пунктир, fill — площа, point — кружок. */
+  style: 'line' | 'dash' | 'longdash' | 'fill' | 'point';
+  color: string;
+  /** Звідки взято й наскільки точно — показується в підказці при натисканні на об'єкт. */
+  note?: LText;
+  source?: Source;
 }
 
 /** Серія старих мап (data/map-series.json). */

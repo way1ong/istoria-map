@@ -1,0 +1,42 @@
+{
+  "id": "somlyo-hegy-loveszarok",
+  "name": {
+    "uk": "Окоп лінії «Аттіла» на Somlyó-hegy",
+    "hu": "Az Attila-vonal lövészárka a Somlyó-hegyen"
+  },
+  "type": "military",
+  "coords": [
+    19.204261,
+    47.631133
+  ],
+  "coordsPrecision": "exact",
+  "periods": [
+    "interwar-ww2",
+    "modern"
+  ],
+  "summary": {
+    "uk": "Стрілецький окоп лінії «Аттіла» на схилі Somlyó-hegy біля Fót, який і досі видно на супутникових знімках.",
+    "hu": "Az Attila-vonalhoz tartozó lövészárok a Fót melletti Somlyó-hegy oldalában, amely ma is látszik a műholdképeken."
+  },
+  "description": {
+    "uk": "Juhász і Balogh показують цей окоп як приклад того, що на сучасних супутникових знімках високої роздільності видно навіть найменші елементи укріплень; координати місця подано в підписі до рисунка. Поруч, за їхньою реконструкцією, лежать позиції піхоти другого поясу лінії «Аттіла», який, за їхньою мапою, ішов від Дунаю на північ від Dunakeszi повз Kisalag, Fót і Mogyoród. На аерофото 18 вересня 1963 року з архіву fentrol.hu (знімок 1963-0139-4364) окоп видно чітко: зиґзаґ завдовжки близько 280 м уздовж схилу з коротким відгалуженням на схід; точка зі статті лежить за 22 м від нього. Його обведено на мапі в накладці «Укріплення 1914 і 1944 років».",
+    "hu": "Juhász és Balogh e lövészárkot hozza példának arra, hogy a mai nagy felbontású műholdképeken a legkisebb erődítési elemek is azonosíthatók; a hely koordinátái az ábra feliratában szerepelnek. Rekonstrukciójuk szerint a közelben az Attila-vonal második övének gyalogsági állásai húzódtak, amely térképük szerint a Dunától, Dunakeszitől északra Kisalag, Fót és Mogyoród mellett húzódott. A fentrol.hu archívumának 1963. szeptember 18-i légifotóján (1963-0139-4364) az árok jól látszik: mintegy 280 m hosszú cikcakk a lejtő mentén, keletre egy rövid elágazással; a cikk pontja 22 m-re van tőle. Az árok az „Erődítések 1914-ből és 1944-ből” térképrétegen látható."
+  },
+  "sources": [
+    {
+      "title": "Juhász A., Balogh Á., Térinformatika alkalmazása katonai objektumok rekonstruálásához. Haditechnika LIX (2025/4) 44–49",
+      "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf",
+      "note": "Рис. 3a: координати 47°37′52,08″ пн. ш., 19°12′15,34″ сх. д. (координати опубліковані відкрито)."
+    },
+    {
+      "title": "OpenStreetMap (Nominatim): зворотне геокодування 47.631133, 19.204261",
+      "url": "https://nominatim.openstreetmap.org/ui/reverse.html?lat=47.631133&lon=19.204261",
+      "note": "Királydomb, Fótfürdő, Fót (ODbL)."
+    },
+    {
+      "title": "fentrol.hu — архів аерофото Lechner Tudásközpont",
+      "url": "https://www.fentrol.hu/hu/legifoto/67122",
+      "note": "Знімок 1963-0139-4364, 18 вересня 1963 року (Kartográfiai Vállalat, висота 1850 м); окоп обведено в цьому проєкті."
+    }
+  ]
+}

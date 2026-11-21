@@ -1,0 +1,186 @@
+{
+  "id": "fortifications-1914-1944",
+  "title": {
+    "uk": "Укріплення 1914 і 1944 років: опорні пункти, рови, окопи",
+    "hu": "Erődítések 1914-ből és 1944-ből: támpontok, árkok, lövészárkok"
+  },
+  "year": {
+    "uk": "1914 і 1944",
+    "hu": "1914 és 1944"
+  },
+  "author": "Оцифровано в цьому проєкті з рисунків статей Kulcsár 2025 і Juhász–Balogh 2025 та з аерофото fentrol.hu; вцілілі ділянки рову — OpenStreetMap",
+  "license": "Розташування знято з рисунків опублікованих статей з посиланням на джерела; ділянки з OpenStreetMap — ODbL; окопи 1963 року обведено на аерофото fentrol.hu (Lechner Tudásközpont), самі знімки не публікуються",
+  "licenseUrl": "https://opendatacommons.org/licenses/odbl/",
+  "attribution": "Укріплення 1914 і 1944: Kulcsár 2025, Juhász–Balogh 2025; аерофото fentrol.hu (Lechner Tudásközpont); © учасники OpenStreetMap (ODbL)",
+  "source": {
+    "title": "Kulcsár V., Budapest 1914. évi erődítése. Hadtudományi Szemle 2025/1, 95–105; Juhász A., Balogh Á., Térinformatika alkalmazása katonai objektumok rekonstruálásához. Haditechnika 2025/4",
+    "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf",
+    "note": "Векторний шар (data/fortifications/fortifications-1914-1944.geojson). Опорні пункти 1914 року — кружки з мапи «A védelmi rendszer támpontjai» (Kulcsár 2025, рис. 1), накресленої на Spezialkarte 1:75 000: рисунок зіставлено з аркушами 15:XX і 16:XX, які вже прив'язані на сайті (ознаки SIFT, 835 і 437 спільних точок), похибка орієнтовно 100–200 м; найближчий кружок лежить за 78 і 174 м від двох бетонних погребів біля Szilas-patak, координати яких подає та сама стаття. Пояси лінії «Аттіла» 1944 року — реконструкція Juhász і Balogh за аерофото (рис. 8, мапа 1:300 000): червоні траси й жовті плями позицій піхоти перенесено за підкладкою рисунка (залізниці й Дунай з OpenStreetMap) з урахуванням вцілілого рову в Rákoshegy і окопу на Somlyó-hegy, похибка орієнтовно 100–300 м. Окопи лінії «Маргіт» між Velence, Baracska і Besnyő — рис. 2 тієї ж статті (реконструкція за аерофото), прив'язка за залізницями й водою з OpenStreetMap, похибка орієнтовно 50–100 м. Протитанкові загородження всередині Будапешта з рис. 8 не перенесено: на мапі 1:300 000 вони надто густі. Оригінальні плани 1914 року зберігаються у Військово-історичному архіві (HM HLT II. 466) і в мережі не опубліковані. Окопи на Somlyó-hegy і південніше, біля Fót, обведено на аерофото 18 вересня 1963 року з архіву fentrol.hu (знімки 1963-0139-4364 і 1963-0139-4363, Lechner Tudásközpont): розміщення знімка, яке дає сайт, уточнено за дорогами й залізницями OpenStreetMap (зсув до 15 м), окопи обведено найдешевшим шляхом по темній лінії між опорними точками; два незалежно прив'язані знімки 1963 року показують окоп на Somlyó-hegy в тому самому місці, а точка зі статті Juhász–Balogh лежить за 22 м від нього; похибка орієнтовно 10–20 м. Мережа південніше лежить у межах позицій піхоти з реконструкції Juhász–Balogh, але на знімку 23 серпня 1960 року (1960-0704-6235) частина її окопів має вигляд свіжовикопаних, тож їх могли копати й після війни. Обведено лише основні лінії. Протитанкового рову першого поясу між Alsógöd і Csomád на переглянутих знімках 1960–1965 років розпізнати не вдалося (перевірено не всю трасу)."
+  },
+  "sources": [
+    {
+      "title": "Kulcsár V., Budapest 1914. évi erődítése. Hadtudományi Szemle 2025/1, 95–105",
+      "url": "https://real.mtak.hu/218170/1/009_KulcsarViktor_95-105.pdf",
+      "note": "Рис. 1 «A védelmi rendszer támpontjai» — опорні пункти 1914 року."
+    },
+    {
+      "title": "Juhász A., Balogh Á., Térinformatika alkalmazása katonai objektumok rekonstruálásához. Haditechnika LIX (2025/4)",
+      "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf",
+      "note": "Рис. 8 (уся лінія «Аттіла», 1:300 000) і рис. 2 (східний сектор лінії «Маргіт»)."
+    },
+    {
+      "title": "OpenStreetMap: Attila III. vonal páncélvédelmi árok",
+      "url": "https://www.openstreetmap.org/way/1307275979",
+      "note": "Вцілілі ділянки рову в XVII і XVIII районах Будапешта (лінії OSM 1307275979, 1307275976, 1487267062, 1487267055), ODbL."
+    },
+    {
+      "title": "fentrol.hu — архів аерофото Lechner Tudásközpont: знімки 1963-0139-4364 і 1963-0139-4363 (18.09.1963), 1960-0704-6235 (23.08.1960)",
+      "url": "https://www.fentrol.hu/hu/legifoto/67121",
+      "note": "Інші знімки: https://www.fentrol.hu/hu/legifoto/67122 (1963-0139-4364), https://www.fentrol.hu/hu/legifoto/265999 (1960-0704-6235). На сайті сказано, що повні версії знімків завантажуються безкоштовно; тут опубліковано лише обведені лінії."
+    }
+  ],
+  "type": "geojson",
+  "url": "fortifications/fortifications-1914-1944.geojson",
+  "periods": [
+    "long-19",
+    "interwar-ww2"
+  ],
+  "legend": [
+    {
+      "kind": "strongpoint_1914",
+      "label": {
+        "uk": "Опорний пункт, 1914",
+        "hu": "Támpont, 1914"
+      },
+      "style": "point",
+      "color": "#1e3a8a",
+      "note": {
+        "uk": "Опорний пункт кільця укріплень Будапешта 1914 року (у середньому 4 гармати, дротяні загородження, окопи, спостережні пункти). Кружок з мапи в статті, похибка орієнтовно 100–200 м.",
+        "hu": "Az 1914-es budapesti erődítési öv támpontja (átlagosan négy löveg, drótakadályok, árkok, megfigyelőállások). A cikk térképéről átvett pont, a pontatlanság nagyjából 100–200 m."
+      },
+      "source": {
+        "title": "Kulcsár V., Budapest 1914. évi erődítése. Hadtudományi Szemle 2025/1, рис. 1",
+        "url": "https://real.mtak.hu/218170/1/009_KulcsarViktor_95-105.pdf"
+      }
+    },
+    {
+      "kind": "ditch",
+      "label": {
+        "uk": "Протитанковий рів, 1944",
+        "hu": "Harckocsiárok, 1944"
+      },
+      "style": "line",
+      "color": "#b71c1c",
+      "note": {
+        "uk": "Протитанковий рів лінії «Аттіла», відновлений за аерофото. Перенесено з мапи 1:300 000 у статті, похибка орієнтовно 100–300 м.",
+        "hu": "Az Attila-vonal légifotók alapján rekonstruált harckocsiárka. A cikk 1:300 000-es térképéről átvéve, a pontatlanság nagyjából 100–300 m."
+      },
+      "source": {
+        "title": "Juhász A., Balogh Á., Haditechnika 2025/4, рис. 8",
+        "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf"
+      }
+    },
+    {
+      "kind": "ditch_assumed",
+      "label": {
+        "uk": "Імовірний рів «Аттіла III»",
+        "hu": "Az Attila III feltételezett harckocsiárka"
+      },
+      "style": "dash",
+      "color": "#e53935",
+      "note": {
+        "uk": "Ділянка, де автори реконструкції лише припускають протитанковий рів третього поясу. Похибка орієнтовно 100–300 м.",
+        "hu": "Szakasz, ahol a rekonstrukció szerzői csak feltételezik a harmadik öv harckocsiárkát. A pontatlanság nagyjából 100–300 m."
+      },
+      "source": {
+        "title": "Juhász A., Balogh Á., Haditechnika 2025/4, рис. 8",
+        "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf"
+      }
+    },
+    {
+      "kind": "course_assumed",
+      "label": {
+        "uk": "Імовірна траса «Аттіла II»",
+        "hu": "Az Attila II feltételezett futása"
+      },
+      "style": "longdash",
+      "color": "#e53935",
+      "note": {
+        "uk": "Середній пояс: суцільного рову тут не знайдено, лише укріплені ділянки з окопами піхоти (жовті плями). Траса за мапою в статті, похибка орієнтовно 100–300 м.",
+        "hu": "A középső öv: összefüggő harckocsiárkot itt nem találtak, csak gyalogsági árkokkal megerősített szakaszokat (sárga foltok). A cikk térképe szerint, a pontatlanság nagyjából 100–300 m."
+      },
+      "source": {
+        "title": "Juhász A., Balogh Á., Haditechnika 2025/4, рис. 8",
+        "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf"
+      }
+    },
+    {
+      "kind": "infantry",
+      "label": {
+        "uk": "Позиції піхоти, 1944",
+        "hu": "Gyalogsági állásrendszerek, 1944"
+      },
+      "style": "fill",
+      "color": "#f9a825",
+      "note": {
+        "uk": "Система стрілецьких окопів лінії «Аттіла» за аерофото. Обрис з мапи 1:300 000, тож це площа, а не окремі окопи; похибка орієнтовно 100–300 м.",
+        "hu": "Az Attila-vonal gyalogsági állásrendszere légifotók alapján. Az 1:300 000-es térkép foltja, tehát terület, nem egyes árkok; a pontatlanság nagyjából 100–300 m."
+      },
+      "source": {
+        "title": "Juhász A., Balogh Á., Haditechnika 2025/4, рис. 8",
+        "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf"
+      }
+    },
+    {
+      "kind": "trench",
+      "label": {
+        "uk": "Окопи лінії «Маргіт», 1944",
+        "hu": "A Margit-vonal lövészárkai, 1944"
+      },
+      "style": "line",
+      "color": "#e65100",
+      "note": {
+        "uk": "Окопи східного сектора лінії «Маргіт» між Velence, Baracska і Besnyő, відновлені за аерофото. Похибка орієнтовно 50–100 м.",
+        "hu": "A Margit-vonal keleti szektorának lövészárkai Velence, Baracska és Besnyő között, légifotók alapján. A pontatlanság nagyjából 50–100 m."
+      },
+      "source": {
+        "title": "Juhász A., Balogh Á., Haditechnika 2025/4, рис. 2",
+        "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf"
+      }
+    },
+    {
+      "kind": "photo_trench",
+      "label": {
+        "uk": "Окопи на аерофото 1963 року",
+        "hu": "Lövészárkok az 1963-as légifotón"
+      },
+      "style": "line",
+      "color": "#6a1b9a",
+      "note": {
+        "uk": "Окоп, обведений у цьому проєкті на аерофото 1963 року з архіву fentrol.hu; розміщення знімка уточнено за дорогами й залізницями OpenStreetMap, похибка орієнтовно 10–20 м. Посилання нижче відкриває сам знімок.",
+        "hu": "A projektben a fentrol.hu archívumának 1963-as légifotóján rajzolt lövészárok; a felvétel helyzetét az OpenStreetMap útjai és vasútjai alapján pontosítottuk, a pontatlanság nagyjából 10–20 m. Az alábbi hivatkozás magát a felvételt nyitja meg."
+      },
+      "source": {
+        "title": "fentrol.hu (Lechner Tudásközpont), знімки 1963-0139-4363 і 1963-0139-4364",
+        "url": "https://www.fentrol.hu/hu/legifoto/67121"
+      }
+    },
+    {
+      "kind": "remains",
+      "label": {
+        "uk": "Вцілілий рів (OpenStreetMap)",
+        "hu": "Megmaradt árok (OpenStreetMap)"
+      },
+      "style": "line",
+      "color": "#1b5e20",
+      "note": {
+        "uk": "Ділянка протитанкового рову «Attila III», що збереглася на місцевості й позначена учасниками OpenStreetMap.",
+        "hu": "Az Attila III harckocsiárkának a terepen megmaradt, az OpenStreetMap szerkesztői által felrajzolt szakasza."
+      },
+      "source": {
+        "title": "OpenStreetMap (ODbL)",
+        "url": "https://www.openstreetmap.org/copyright"
+      }
+    }
+  ]
+}

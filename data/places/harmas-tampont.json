@@ -1,0 +1,32 @@
+{
+  "id": "harmas-tampont",
+  "name": {
+    "uk": "Опорний пункт «Hármas» (1914)",
+    "hu": "A „Hármas” támpont (1914)"
+  },
+  "type": "military",
+  "coords": [
+    19.19594,
+    47.4647
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "long-19",
+    "interwar-ww2"
+  ],
+  "summary": {
+    "uk": "Укріплений опорний пункт кільця 1914 року в лісі Határ-erdő на стику Kőbánya, Pestszentlőrinc і Rákoskeresztúr; від бетонного спостережного пункту лишилися руїни.",
+    "hu": "Az 1914-es erődítési öv megerősített támpontja a kőbányai Határ-erdőben, Kőbánya, Pestszentlőrinc és Rákoskeresztúr határpontján; a beton megfigyelőállásnak romjai maradtak."
+  },
+  "description": {
+    "uk": "Опорний пункт належав до V артилерійського сектора; назва «Hármas» («Трійковий») — від спільної межі трьох громад: Kőbánya, Pestszentlőrinc і Rákoskeresztúr. Він мав затримати наступ у районі Нового громадського кладовища й не дати ворогу прорватися до внутрішніх районів міста. Наказ від 10 жовтня 1914 року озброїв його чотирма австро-угорськими польовими гарматами зразка 1875/96 калібру 9 см і двома знаряддями «szórólöveg» з боєприпасами; тут були вогневі позиції, піхотні окопи й спостережні пункти. У лісі на схід від вулиці Régivám utca, імовірно, лежать руїни бетонного спостережного пункту командира групи: після 1917 року він уцілів, а зруйнували його, найпевніше, радянські сапери під час облоги 1944–1945 років. Точку на мапі взято з кружка на мапі опорних пунктів у статті (похибка орієнтовно 100–200 м); план опорного пункту надруковано там само (рис. 3).",
+    "hu": "A támpont az V. tüzér védőszakaszhoz tartozott; a „Hármas” név a Kőbánya–Pestszentlőrinc–Rákoskeresztúr határpontból ered. Feladata az ellenség támadásának akadályozása volt az Új köztemető térségében, és a város belsőbb kerületei felé irányuló előretörés megakasztása. Egy 1914. október 10-i parancs négy osztrák–magyar 1875/96 mintájú 9 cm-es tábori ágyúval és két szórólöveggel, valamint a hozzájuk tartozó lőszerrel szerelte fel; tüzelőállások, gyalogsági árkok és megfigyelőállások épültek itt. A Régivám utca keleti oldalán levő erdős területen feltehetőleg a csoportparancsnok beton megfigyelőállásának romjai láthatók: a vonal 1917-es felszámolását túlélte, és valószínűleg szovjet műszaki csapatok robbantották fel az 1944–1945-ös ostrom idején. A térképi pont a cikk támponttérképének köréről származik (pontatlansága nagyjából 100–200 m); a támpont helyszínrajza ugyanott látható (3. ábra)."
+  },
+  "sources": [
+    {
+      "title": "Kulcsár V., Budapest 1914. évi erődítése. Hadtudományi Szemle 2025/1, 95–105 (DOI 10.35926/HSZ.2025.1.9)",
+      "url": "https://real.mtak.hu/218170/1/009_KulcsarViktor_95-105.pdf",
+      "note": "Розділ «Az erődítési vonal hadtörténeti régészeti kutatása», рис. 1, 3, 4; точку знято з рис. 1 і перенесено через прив'язку Spezialkarte 16:XX."
+    }
+  ]
+}

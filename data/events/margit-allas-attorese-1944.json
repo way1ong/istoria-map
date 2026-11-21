@@ -1,0 +1,37 @@
+{
+  "id": "margit-allas-attorese-1944",
+  "title": {
+    "uk": "Прорив позиції «Маргіт» біля озера Velencei-tó",
+    "hu": "A Margit-állás áttörése a Velencei-tó térségében"
+  },
+  "date": {
+    "from": "1944-12-20",
+    "to": "1944-12-23",
+    "precision": "exact"
+  },
+  "period": "interwar-ww2",
+  "places": [
+    "margit-lovesz-arkok-kapolnasnyek",
+    "margit-harckocsiarok-papkeszi"
+  ],
+  "summary": {
+    "uk": "20–23 грудня 1944 року радянські війська прорвали позицію «Маргіт» біля озера Velencei-tó, прибравши останню велику перешкоду на шляху до Будапешта; ввечері 24 грудня їхні танки з боку Budakeszi увірвалися до міста.",
+    "hu": "1944. december 20–23. között a szovjet csapatok a Velencei-tó térségében áttörték a Margit-állást, és ezzel elhárították az utolsó nagyobb akadályt Budapest előtt; december 24-én este harckocsijaik Budakeszi felől betörtek a fővárosba."
+  },
+  "description": {
+    "uk": "Позиція «Маргіт», яку почали будувати восени 1944 року, тяглася від Nagytétény на Дунаї вздовж залізниці Будапешт – Székesfehérvár до Балатону й далі до Драви, мала два-три пояси, головний завглибшки 7–10 км. Найкраще її укріпили на схід від озера Velencei-tó і між ним та Балатоном: ходи сполучення у 2–3 ряди, бліндажі з дерева й землі, кулеметні й танкові позиції, мінні поля й протитанкові рови, а села між озером і долиною Váli-völgy пристосували до кругової оборони. За радянським планом головний удар мали завдати на північ від східного краю озера. У боях 21–22 грудня радянські війська взяли Nadap, а згодом Vereb і Lovasberény, бронегрупа німецької 6-ї танкової дивізії на добу відбила Velence; найважчі бої з найбільшими втратами припали на 22 грудня. Окопи цієї ділянки, відновлені за аерофото, показано на мапі в накладці «Укріплення 1914 і 1944 років».",
+    "hu": "Az 1944 őszén épülni kezdett Margit-állás Nagytétény (Duna) térségéből a Budapest–Székesfehérvár vasútvonal mentén húzódott a Balatonig, majd a Dráváig; 2–3 védőövből állt, a fővédőöv mélysége 7–10 km volt. Legjobban a Velencei-tótól keletre, illetve a Balaton és a Velencei-tó között építették ki: 2–3 soros futóárkok, fa-föld bunkerek, géppuska- és harckocsiállások, aknamezők és harckocsiárkok, a tó és a Váli-völgy közötti települések körkörös védelemre berendezve. A szovjet terv szerint a fő csapást a Velencei-tó keleti szélétől észak felé kellett mérni. A december 21–22-i harcokban a szovjetek elfoglalták Nadapot, majd Verebet és Lovasberényt, a német 6. páncéloshadosztály páncélozott harccsoportja egy napra visszafoglalta Velencét; a legkeményebb, legnagyobb veszteségekkel járó harcok december 22-én zajlottak. E szakasz légifotók alapján rekonstruált lövészárkai az „Erődítések 1914-ből és 1944-ből” térképrétegen láthatók."
+  },
+  "sources": [
+    {
+      "title": "Berta K., Adalékok a Margit-állás áttörésének 1944. december 21. és 22. közötti döntő eseményeihez. Hadtörténelmi Közlemények 2023/1, 195–223",
+      "url": "https://epa.oszk.hu/00000/00018/00298/pdf/EPA00018_hadtortenelmi_2023_01_195-223.pdf",
+      "note": "Вступ і розділ про будову позиції; розділи про бої 21–22 грудня."
+    },
+    {
+      "title": "Juhász A., Balogh Á., Térinformatika alkalmazása katonai objektumok rekonstruálásához. Haditechnika LIX (2025/4) 44–49",
+      "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf",
+      "note": "Рис. 2: окопи східного сектора лінії «Маргіт»."
+    }
+  ]
+}

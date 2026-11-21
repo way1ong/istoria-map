@@ -77,7 +77,7 @@ if (periodsDoc) {
 
 // places
 const placeIds = new Set();
-const placeTypes = ['settlement', 'archaeological', 'church', 'castle', 'monument', 'nature', 'farmstead', 'inn', 'mill', 'other'];
+const placeTypes = ['settlement', 'archaeological', 'church', 'castle', 'military', 'monument', 'nature', 'farmstead', 'inn', 'mill', 'other'];
 for (const { file, path, name } of listJson('places')) {
   const p = readJson(path);
   if (!p) continue;
@@ -216,21 +216,41 @@ for (const { file, path, name } of listJson('maps')) {
     if (typeof m[k] !== 'string' || !m[k].trim()) err(file, `${k} відсутній`);
   if (!['image', 'xyz', 'geojson'].includes(m.type)) err(file, 'type має бути image | xyz | geojson');
   if (m.type === 'geojson') {
-    // векторна накладка: url — шлях у data/ (напр. water/lipszky-1806.geojson)
+    // векторна накладка: url — шлях у data/ (water/….geojson або fortifications/….geojson)
     const gp = typeof m.url === 'string' ? join(root, m.url) : '';
-    if (!gp || !/^water\/[\w.-]+\.geojson$/.test(m.url) || !existsSync(gp)) err(file, `url: для geojson потрібен файл data/water/*.geojson, а не "${m.url}"`);
+    const legendKinds = new Set();
+    if (m.legend !== undefined) {
+      if (!Array.isArray(m.legend) || m.legend.length === 0) err(file, 'legend має бути непорожнім масивом');
+      else m.legend.forEach((it, i) => {
+        const at = `legend[${i}]`;
+        if (typeof it?.kind !== 'string' || !it.kind.trim()) err(file, `${at}: kind відсутній`);
+        else if (legendKinds.has(it.kind)) err(file, `${at}: kind "${it.kind}" повторюється`);
+        else legendKinds.add(it.kind);
+        if (!isLText(it?.label)) err(file, `${at}: label.uk відсутній`);
+        if (!['line', 'dash', 'longdash', 'fill', 'point'].includes(it?.style)) err(file, `${at}: style має бути line | dash | longdash | fill | point`);
+        if (typeof it?.color !== 'string' || !/^#[0-9a-fA-F]{6}$/.test(it.color)) err(file, `${at}: color має бути #rrggbb`);
+        if (it?.note !== undefined && !isLText(it.note)) err(file, `${at}: note.uk відсутній`);
+        if (it?.source !== undefined) checkSources(file, [it.source]);
+      });
+    }
+    if (!gp || !/^(water|fortifications)\/[\w.-]+\.geojson$/.test(m.url) || !existsSync(gp)) err(file, `url: для geojson потрібен файл data/water/*.geojson або data/fortifications/*.geojson, а не "${m.url}"`);
     else {
       const g = readJson(gp);
       if (g?.type !== 'FeatureCollection' || !Array.isArray(g.features)) err(`data/${m.url}`, 'потрібна FeatureCollection');
       else g.features.forEach((f, k) => {
         const t = f?.geometry?.type;
-        if (!['Polygon', 'MultiPolygon', 'LineString', 'MultiLineString'].includes(t)) err(`data/${m.url}`, `features[${k}]: тип геометрії ${t}`);
-        const first = t === 'Polygon' ? f.geometry.coordinates?.[0]?.[0] : t === 'MultiPolygon' ? f.geometry.coordinates?.[0]?.[0]?.[0] : t === 'LineString' ? f.geometry.coordinates?.[0] : f.geometry.coordinates?.[0]?.[0];
-        checkCoords(`data/${m.url}`, first, `features[${k}]`);
+        if (!['Polygon', 'MultiPolygon', 'LineString', 'MultiLineString', 'Point'].includes(t)) err(`data/${m.url}`, `features[${k}]: тип геометрії ${t}`);
+        if (t === 'Point' && !legendKinds.size) err(`data/${m.url}`, `features[${k}]: точки можна показати лише з legend у записі мапи`);
+        const first = t === 'Point' ? f.geometry.coordinates : t === 'Polygon' ? f.geometry.coordinates?.[0]?.[0] : t === 'MultiPolygon' ? f.geometry.coordinates?.[0]?.[0]?.[0] : t === 'LineString' ? f.geometry.coordinates?.[0] : f.geometry.coordinates?.[0]?.[0];
+        checkCoords(`data/${m.url}`, first, `features[${k}]`, MAP_REGION);
+        if (legendKinds.size && !legendKinds.has(f?.properties?.kind)) err(`data/${m.url}`, `features[${k}]: kind "${f?.properties?.kind}" немає в legend ${file}`);
+        if (f?.properties?.name !== undefined && !isLText(f.properties.name)) err(`data/${m.url}`, `features[${k}]: name має бути {"uk": …, "hu": …}`);
+        if (f?.properties?.note !== undefined && !isLText(f.properties.note)) err(`data/${m.url}`, `features[${k}]: note має бути {"uk": …, "hu": …}`);
+        if (f?.properties?.url !== undefined && !/^https:\/\/\S+$/.test(String(f.properties.url))) err(`data/${m.url}`, `features[${k}]: url має починатися з https://`);
       });
       for (const k of ['license', 'attribution']) if (typeof g?.[k] !== 'string' || !g[k].trim()) err(`data/${m.url}`, `${k} відсутній`);
     }
-  }
+  } else if (m.legend !== undefined) err(file, 'legend буває лише в мап type: geojson');
   if (m.type === 'image') {
     if (!Array.isArray(m.coordinates) || m.coordinates.length !== 4) err(file, 'coordinates: потрібно 4 кути [NW, NE, SE, SW]');
     else m.coordinates.forEach((c, i) => checkCoords(file, c, `coordinates[${i}]`, MAP_REGION));
