@@ -16,7 +16,7 @@ setWorkerUrl(workerUrl);
 import { basemaps, histMaps, periodById, places } from './data';
 import { basemapStyle, chooseBasemap, localizeBasemapLabels, offlineBasemap, setPreferredBasemap } from './basemap';
 import { installed, offlineMapReady } from './offline';
-import { areasGeoJSON, areasOutline, onAreasChange, savedAreas } from './offlineareas';
+import { areasGeoJSON, areasOutline, areasRelevant, onAreasChange, savedAreas } from './offlineareas';
 import { watchTracking } from './tracking';
 import { addMarksLayer, MARKS_LAYER, watchMarks } from './markslayer';
 import { addTracksLayer, TRACKS_CASING, watchTracks } from './trackslayer';
@@ -371,10 +371,11 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   };
 
   // Межі ділянок старих мап, збережених для роботи без інтернету (src/offlineareas.ts): пунктир над старою мапою,
-  // під мітками місць; перемикач — у панелі «Без інтернету».
+  // під мітками місць; перемикач — у панелі «Без інтернету». Видно їх лише з накладкою, якої ділянки стосуються
+  // (Spezialkarte, Ліпскі), або поки відкрита панель «Без інтернету» (areasRelevant): без накладки рамки лише заважали.
   const applyAreas = () => {
     if (!map.getLayer('places-halo')) return;
-    const show = areasOutline() && savedAreas().length > 0;
+    const show = areasOutline() && savedAreas().length > 0 && areasRelevant(currentOverlay);
     const src = map.getSource(AREAS_ID) as GeoJSONSource | undefined;
     if (!show) {
       if (map.getLayer(AREAS_ID)) map.removeLayer(AREAS_ID);
@@ -480,6 +481,8 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       const typesChanged = JSON.stringify(currentOverlay?.placeTypes ?? null) !== JSON.stringify(m?.placeTypes ?? null);
       currentOverlay = m;
       if (typesChanged) whenReady(refresh);
+      // межі збережених ділянок — лише з накладкою, якої вони стосуються
+      whenReady(applyAreas);
       // та сама мапа чи серія вже показана — нічого не перебудовуємо (інакше Allmaps заново тягне плитки IIIF)
       whenReady(() => {
         if (keyOf(currentOverlay) === overlayKey && (overlay || !currentOverlay)) return;

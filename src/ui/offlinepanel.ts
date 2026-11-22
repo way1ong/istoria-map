@@ -7,7 +7,7 @@ import {
   currentJob, deletePack, downloadPack, installed, loadManifest, offlineSupported, onOfflineChange, PACK_IDS, pending,
   photosManifest, stopDownload, storageInfo, type DownloadResult, type PackId, type PackManifest, type PacksManifest,
 } from '../offline';
-import { areaKm, areasOutline, areasStorage, deleteArea, downloadArea, nearestPlace, planArea, savedAreas, setAreasOutline, type AreaPlan } from '../offlineareas';
+import { areaKm, areasOutline, areasStorage, deleteArea, downloadArea, nearestPlace, peekAreas, planArea, savedAreas, setAreasOutline, setAreasPanelOpen, type AreaPlan } from '../offlineareas';
 import { placeById } from '../data';
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
@@ -276,7 +276,8 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     }
     if (act === 'area-show') {
       const a = savedAreas().find((x) => x.id === b.dataset.id);
-      if (a) { opts.close(); map.fitBounds([[a.bbox[0], a.bbox[1]], [a.bbox[2], a.bbox[3]]], { padding: 20, duration: 800 }); }
+      // панель закривається, а межі без старої мапи ховаються — лишаємо їх ще на кілька секунд, щоб було видно ділянку
+      if (a) { peekAreas(); opts.close(); map.fitBounds([[a.bbox[0], a.bbox[1]], [a.bbox[2], a.bbox[3]]], { padding: 20, duration: 800 }); }
       return;
     }
     if (act === 'area-del') {
@@ -327,7 +328,10 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
   const onMove = () => { clearTimeout(moveTimer); moveTimer = window.setTimeout(updatePlan, 400); };
   map.on('moveend', onMove);
   updatePlan();
+  // поки панель відкрита, межі збережених ділянок видно й без старої мапи (src/map.ts, areasRelevant)
+  setAreasPanelOpen(true);
   return () => {
+    setAreasPanelOpen(false);
     seq++;
     planSeq++;
     clearTimeout(moveTimer);
