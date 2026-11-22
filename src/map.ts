@@ -19,6 +19,7 @@ import { installed, offlineMapReady } from './offline';
 import { areasGeoJSON, areasOutline, onAreasChange, savedAreas } from './offlineareas';
 import { watchTracking } from './tracking';
 import { addMarksLayer, MARKS_LAYER, watchMarks } from './markslayer';
+import { addTracksLayer, TRACKS_CASING, watchTracks } from './trackslayer';
 import { lt } from './i18n';
 import { colorFor, loadBorders, loadModern } from './borders';
 import { addOldMap, type OldMapHandle } from './oldmap';
@@ -62,6 +63,13 @@ export interface MapController {
   onMarkClick(cb: (id: string) => void): void;
   /** Довге натискання на мапі (або права кнопка миші): координати точки [довгота, широта]. */
   onLongPress(cb: (at: [number, number]) => void): void;
+  /**
+   * Перехопити дотики до мапи (вимірювання): поки обробник заданий, дотик віддає йому точку й не відкриває
+   * картки місць і міток, а довге натискання не ставить мітку. null — повернути звичайну поведінку.
+   */
+  onMapTap(cb: ((at: [number, number]) => void) | null): void;
+  /** Увімкнути точку місця людини (стеження), якщо її ще не ввімкнено. */
+  locate(): void;
 }
 
 export interface PlaceFilter {
@@ -250,6 +258,8 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       paint: { 'text-color': '#111827', 'text-halo-color': '#ffffff', 'text-halo-width': 1.5 },
     });
 
+    // Власні шляхи — лінії над старою мапою, під мітками місць (src/trackslayer.ts).
+    addTracksLayer(map, 'places-halo');
     // Власні мітки людини — прапорці поверх усього (src/markslayer.ts); дані лише з цього браузера.
     addMarksLayer(map);
 
@@ -258,8 +268,8 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     layerHandlers = true;
     for (const layer of ['places-dot', 'places-halo', 'places-photo']) {
       map.on('click', layer, (e: MapLayerMouseEvent) => {
-        // прапорець поверх місця: відкривається мітка, а не картка місця під нею
-        if (onFlag(e.point)) return;
+        // прапорець поверх місця: відкривається мітка, а не картка місця під нею; під час вимірювання дотик ставить точку
+        if (tapCb || onFlag(e.point)) return;
         const f = e.features?.[0];
         if (f) onSelect(String(f.properties?.id));
       });
@@ -287,6 +297,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     if (!styleOk && off && basemap.id !== off.id && offlineMapReady()) { useStyle(off); basemapCb?.(); }
   });
   map.on('click', (e: MapMouseEvent) => {
+    if (tapCb) { tapCb([e.lngLat.lng, e.lngLat.lat]); return; }
     if (!map.getLayer('places-dot')) return;
     if (onFlag(e.point)) return;
     const hits = map.queryRenderedFeatures(e.point, { layers: ['places-dot', 'places-halo', 'places-photo'] });
@@ -296,14 +307,17 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   // ---------- власні мітки ----------
   let markCb: ((id: string) => void) | null = null;
   let longPressCb: ((at: [number, number]) => void) | null = null;
+  let tapCb: ((at: [number, number]) => void) | null = null;
   const onFlag = (pt: MapMouseEvent['point']) => !!map.getLayer(MARKS_LAYER) && map.queryRenderedFeatures(pt, { layers: [MARKS_LAYER] }).length > 0;
   map.on('click', MARKS_LAYER, (e: MapLayerMouseEvent) => {
+    if (tapCb) return;
     const id = e.features?.[0]?.properties?.id;
     if (id) markCb?.(String(id));
   });
   map.on('mouseenter', MARKS_LAYER, () => (map.getCanvas().style.cursor = 'pointer'));
   map.on('mouseleave', MARKS_LAYER, () => (map.getCanvas().style.cursor = ''));
   watchMarks(map);
+  watchTracks(map);
   // Довге натискання пальцем (≈ 0,65 с без руху) або права кнопка миші — нова мітка в цій точці.
   {
     const el = map.getCanvasContainer();
@@ -320,7 +334,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       start = p;
       timer = window.setTimeout(() => {
         timer = 0;
-        if (!start || !longPressCb) return;
+        if (!start || !longPressCb || tapCb) return;
         start = null;
         // на прапорці довге натискання нової мітки не ставить
         if (onFlag([p.x, p.y] as unknown as MapMouseEvent['point'])) return;
@@ -338,7 +352,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     el.addEventListener('touchcancel', cancel, { passive: true });
     map.on('contextmenu', (e: MapMouseEvent) => {
       // на телефоні довге натискання дає ще й цю подію — її вже опрацював таймер
-      if (Date.now() - lastTouch < 1500 || !longPressCb) return;
+      if (Date.now() - lastTouch < 1500 || !longPressCb || tapCb) return;
       e.preventDefault();
       if (!onFlag(e.point)) longPressCb([e.lngLat.lng, e.lngLat.lat]);
     });
@@ -385,7 +399,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   };
   const addOverlay = (m: HistMap, opacity: number) => {
     removeOverlay();
-    overlay = addOldMap(map, m, { prefix: 'overlay', beforeId: [AREAS_ID, 'places-halo'], opacity });
+    overlay = addOldMap(map, m, { prefix: 'overlay', beforeId: [TRACKS_CASING, AREAS_ID, 'places-halo'], opacity });
     overlayKey = keyOf(m);
   };
   /** Виконати, коли наші джерела вже в стилі; інакше — після наступного style.load
@@ -489,6 +503,12 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     onBorders(cb) { bordersCb = cb; },
     onMarkClick(cb) { markCb = cb; },
     onLongPress(cb) { longPressCb = cb; },
+    onMapTap(cb) { tapCb = cb; map.getCanvasContainer().classList.toggle('measuring', !!cb); },
+    locate() {
+      const btn = map.getContainer().querySelector('.maplibregl-ctrl-geolocate');
+      // trigger() перемикає стан, тому викликаємо лише коли стеження вимкнене
+      if (btn && !/maplibregl-ctrl-geolocate-(active|background|waiting)/.test(btn.className)) geolocate.trigger();
+    },
     setBasemap(id) {
       const b = basemaps.find((x) => x.id === id);
       if (!b || b.id === basemap.id) return;

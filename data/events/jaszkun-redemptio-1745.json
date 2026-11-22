@@ -1,0 +1,31 @@
+{
+  "id": "jaszkun-redemptio-1745",
+  "title": {
+    "uk": "Редемпція: яси й куни викуповують свої вольності",
+    "hu": "A redemptio: a jászok és kunok megváltják szabadságukat"
+  },
+  "date": {
+    "from": "1745-05-06",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [
+    "jaszbereny-lehel-kurtje",
+    "kiskunhalas"
+  ],
+  "summary": {
+    "uk": "6 травня 1745 року Марія Терезія підписала диплом, що повернув ясам і кунам спадкові привілеї, відібрані 1702 року. За це округа сама зібрала й сплатила 575 900 форинтів.",
+    "hu": "1745. május 6-án Mária Terézia aláírta azt a diplomát, amely visszaadta a jászok és kunok 1702-ben elvesztett örökös kiváltságait. Ezért a kerület maga gyűjtött össze és fizetett ki 575 900 forintot."
+  },
+  "description": {
+    "uk": "За статтею про редемпцію (латинське redemptio, «викуп»), під час турецьких воєн населення ясько-кунської округи дуже змінилося: багато хто пішов геть, два з шести кунських «престолів» зникли зовсім, а після визволення прийшли нові люди. Пославшись на це, Леопольд I перестав визнавати давні привілеї і 1702 року за 500 тисяч рейнських золотих форинтів заставив Тевтонському ордену Ясшаґ, Малу й Велику Кунію. Цей указ скасував спадкові вольності ясів і кунів і зробив їх кріпаками; через цю кривду вони запально підтримали визвольну війну Ракоці.\n\nОрден не зміг скористатися купленими правами і 1731 року (за іншими джерелами, 1730 чи 1735) продав їх пештському Дому інвалідів, який спробував запровадити панщинні повинності. В окрузі піднявся рух за повернення прав. Поступившись загальному протесту, Марія Терезія 1745 року погодилася на самовикуп. За кілька років зі складок і позик зібрали суму, яка тим часом зросла до 575 900 форинтів і, за деякими джерелами, була сумірна з тодішнім бюджетом Угорщини; понад те округа зобов'язалася спорядити тисячу вершників, ставати до загального ополчення й платити палатинові та іншим урядникам.\n\nДиплом, підписаний 6 травня 1745 року, відновив спадкові привілеї вільних ясів і кунів: вільний вибір урядників і священників, право меча (суд у карних справах), звільнення від перевізного, мит і панських повинностей. На мапі подію прив'язано до двох осередків округи: Ясбереня й Кішкунгалаша.",
+    "hu": "A redemptióról (latinul „megváltás”) szóló szócikk szerint a török háborúk során a jászkun kerület népessége nagyon megváltozott: sokan elvándoroltak, a hat kun szék közül kettő teljesen eltűnt, a felszabadulás után pedig idegenek költöztek a területre. Erre hivatkozva I. Lipót nem tekintette többé érvényesnek a korábbi kiváltságokat, és 1702-ben 500 ezer rajnai aranyforintért zálogba adta a Német Lovagrendnek a Jászságot, a Kiskunságot és a Nagykunságot. Ez a rendelet eltörölte a jászok és kunok örökös kiváltságait, és jobbágysorba süllyesztette őket; a sérelem miatt lelkes támogatói voltak a Rákóczi-szabadságharcnak.\n\nA lovagrend nem tudta érvényesíteni vásárolt jogait, és 1731-ben (más források szerint 1730-ban, illetve 1735-ben) eladta őket a pesti Invalidus-háznak, amely megkísérelte bevezetni a földesúri szolgáltatásokat. A kerületben mozgalom indult a jogok visszaszerzésére. Mária Terézia az országos tiltakozásnak engedve 1745-ben beleegyezett az önmegváltásba. Több éves gyűjtésből és kölcsönökből szedték össze a közben 575 900 forintra nőtt összeget, amely egyes források szerint az akkori Magyarország költségvetésével volt összemérhető; ezen felül a kerület vállalta 1000 lovas felszerelését, az általános hadfelkelést, valamint a nádor és más tisztviselők fizetését.\n\nAz 1745. május 6-án aláírt diploma visszaállította a szabad jászok és kunok örökös kiváltságait: a szabad tisztviselő- és lelkészválasztást, a pallosjogot, a révtől, vámoktól és a földesúri szolgáltatásoktól való mentességet. A térképen az esemény a kerület két központjához, Jászberényhez és Kiskunhalashoz kapcsolódik."
+  },
+  "sources": [
+    {
+      "title": "Redemptio – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Redemptio",
+      "note": "Вступ і розділи «Előzmények», «A megváltás»: застава 1702 року, продаж 1731 (1730, 1735) року, сума 575 900 форинтів, диплом 6 травня 1745 року."
+    }
+  ]
+}

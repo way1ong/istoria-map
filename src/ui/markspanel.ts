@@ -1,20 +1,15 @@
 // Панель «Мої мітки»: власні прапорці людини на мапі (src/marks.ts). Список міток і редагування однієї:
 // назва, нотатка, колір, маршрут, перенесення, видалення; вивантаження у файл GeoJSON і завантаження з файлу.
 import type { Map as MLMap } from 'maplibre-gl';
-import { getLang, t, type Key } from '../i18n';
+import { fmtDateTime, t, type Key } from '../i18n';
 import { addMark, deleteMark, exportMarks, flagSvg, importMarks, MARK_COLORS, markById, marks, onMarksChange, updateMark, type Mark } from '../marks';
 import { routeAttrs } from './render';
 import { toast } from './toast';
+import { canShareFile, download, shareFile } from './files';
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
 
-function fmtWhen(iso: string): string {
-  const d = new Date(iso);
-  if (Number.isNaN(d.getTime())) return '';
-  const p = (n: number) => String(n).padStart(2, '0');
-  const date = getLang() === 'hu' ? `${d.getFullYear()}. ${p(d.getMonth() + 1)}. ${p(d.getDate())}.` : `${p(d.getDate())}.${p(d.getMonth() + 1)}.${d.getFullYear()}`;
-  return `${date} ${p(d.getHours())}:${p(d.getMinutes())}`;
-}
+const fmtWhen = fmtDateTime;
 const coordsText = (m: Mark) => `${m.lat.toFixed(5)}, ${m.lon.toFixed(5)}`;
 
 function fileName(): string {
@@ -23,19 +18,6 @@ function fileName(): string {
   return `istoria-mitky-${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}.geojson`;
 }
 const exportFile = () => new File([exportMarks()], fileName(), { type: 'application/geo+json' });
-function canShareFile(): boolean {
-  try { return !!navigator.canShare?.({ files: [exportFile()] }); } catch { return false; }
-}
-function download(file: File): void {
-  const url = URL.createObjectURL(file);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = file.name;
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  window.setTimeout(() => URL.revokeObjectURL(url), 10000);
-}
 
 export interface MarksPanel {
   /** Відкрити редагування мітки. */
@@ -57,7 +39,7 @@ export function renderMarks(body: HTMLElement, opts: { map: MLMap; setTitle(s: s
     const list = marks();
     body.innerHTML = `
       <div class="off-btns mk-add">
-        <button type="button" class="off-btn primary" data-act="here" ${locating ? 'disabled' : ''}>${flagSvg('red', 16)} ${esc(t(locating ? 'markLocating' : 'markHere'))}</button>
+        ${'geolocation' in navigator ? `<button type="button" class="off-btn primary" data-act="here" ${locating ? 'disabled' : ''}>${flagSvg('red', 16)} ${esc(t(locating ? 'markLocating' : 'markHere'))}</button>` : ''}
         <button type="button" class="off-btn" data-act="center">${esc(t('markCenter'))}</button>
       </div>
       <p class="mtool-note">${esc(t('markHint'))}</p>
@@ -67,8 +49,8 @@ export function renderMarks(body: HTMLElement, opts: { map: MLMap; setTitle(s: s
           <span class="txt"><span class="nm">${esc(m.name || t('markDefault'))}</span><span class="sub">${esc([fmtWhen(m.created), m.note.replace(/\s+/g, ' ').slice(0, 60)].filter(Boolean).join(' · '))}</span></span>
         </button></li>`).join('')}</ul>` : `<p class="mtool-empty">${esc(t('markEmpty'))}</p>`}
       <div class="off-btns mk-file">
-        <button type="button" class="off-btn" data-act="export" ${list.length ? '' : 'disabled'}>${esc(t('markExport'))}</button>
-        ${list.length && canShareFile() ? `<button type="button" class="off-btn" data-act="share">${esc(t('markShare'))}</button>` : ''}
+        ${list.length ? `<button type="button" class="off-btn" data-act="export">${esc(t('markExport'))}</button>` : ''}
+        ${list.length && canShareFile(exportFile()) ? `<button type="button" class="off-btn" data-act="share">${esc(t('markShare'))}</button>` : ''}
         <button type="button" class="off-btn" data-act="import">${esc(t('markImport'))}</button>
         <input type="file" class="mk-file-input" accept=".geojson,.json,application/geo+json,application/json" hidden />
       </div>
@@ -150,7 +132,7 @@ export function renderMarks(body: HTMLElement, opts: { map: MLMap; setTitle(s: s
       );
     }
     else if (act === 'export') download(exportFile());
-    else if (act === 'share') void navigator.share({ files: [exportFile()], title: t('marks') }).catch(() => undefined);
+    else if (act === 'share') shareFile(exportFile(), t('marks'));
     else if (act === 'import') body.querySelector<HTMLInputElement>('.mk-file-input')?.click();
     else if (m && act === 'show') flyTo(m);
     else if (m && act === 'move') { const c = map.getCenter(); updateMark(m.id, { lon: c.lng, lat: c.lat, acc: undefined }); draw(); }

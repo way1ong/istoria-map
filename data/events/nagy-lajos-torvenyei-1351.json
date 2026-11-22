@@ -1,0 +1,33 @@
+{
+  "id": "nagy-lajos-torvenyei-1351",
+  "title": {
+    "uk": "Закони Людовика I Великого 1351 року",
+    "hu": "Nagy Lajos 1351. évi törvényei"
+  },
+  "date": {
+    "from": "1351-12-11",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [],
+  "summary": {
+    "uk": "11 грудня 1351 року Людовик I Великий оголосив закони, що підтвердили Золоту буллу, запровадили непорушність родових маєтків і однакову для всіх кріпаків дев'ятину. До 1848 року вони були основою дворянського устрою Угорщини.",
+    "hu": "1351. december 11-én Nagy Lajos kihirdette törvényeit, amelyek megerősítették az Aranybullát, bevezették az ősiséget és az egységes kilencedet. 1848-ig ezek képezték a magyar nemesi alkotmányos berendezkedés gerincét."
+  },
+  "description": {
+    "uk": "За статтею про короля, Людовик I правив переважно у згоді з магнатами, але намагався прихилити й рядове дворянство; його закони 1351 року аж до 1848 року були стрижнем дворянського конституційного устрою. Закон поновив Золоту буллу 1222 року, яка через півтора століття після появи стала основним законом дворянських вольностей, і проголосив засаду «однієї й тієї самої свободи»; первісно йшлося про рівноправність угорських, хорватських і славонських дворян, а пізніше тлумачення Werbőczy побачило тут рівність рядового дворянства з магнатами.\n\nЗа статтею про право родових маєтків (ősiség), цей закон король оголосив 11 грудня 1351 року під тиском дрібних і великих землевласників. Він переписав і підтвердив Золоту буллу, крім статті про вільне розпорядження маєтком: натомість заборонив вільно розпоряджатися будь-яким родовим маєтком і наказав, щоб його успадковував рід. Родовим не вважався лише маєток, який власник сам набув, дістав у дар чи купив.\n\nДев'ятину, яку відтепер належало збирати скрізь однаково, король запровадив, щоб багатші пани не переманювали кріпаків у бідніших: кріпаки могли вільно переходити від одного пана до іншого. Відтоді вони однаково віддавали панові дев'яту десятину врожаю, а крім того платили ворітний податок (kapuadó) і надзвичайні податки. Де саме оголошено закони, статті не кажуть, тому подія не має точки на мапі.",
+    "hu": "A királyról szóló szócikk szerint I. Lajos alapvetően a főurakkal egyetértésben kormányzott, de a köznemességet is igyekezett megnyerni; 1351-es törvényei egészen 1848-ig a magyar nemesi alkotmányos berendezkedés gerincét képezték. A törvény megújította az 1222-es Aranybullát, amely másfél évszázaddal keletkezése után a nemesi szabadságok alaptörvényévé vált, és kimondta az „egyazon szabadság” elvét; eredetileg a magyarországi, illetve a horvát és szlavón nemesek egyenjogúságát deklarálták, Werbőczy későbbi értelmezése látta benne a köznemesség és a főnemesség azonos jogait.\n\nAz ősiségről szóló szócikk szerint a törvényt kis- és nagybirtokosi nyomásra a király 1351. december 11-én hirdette ki. Átírta és megerősítette az Aranybullát, a szabad rendelkezésről szóló cikkely kivételével: ehelyett megtiltotta a szabad rendelkezést minden ősi birtok felett, és a nemzetség által örökölni rendelte azt. Csak az a birtok nem számított ősinek, amit az örökhagyó maga szerzett, kapott adományba vagy vásárolt.\n\nAz egységesen szedendő kilenceddel a király azt kívánta megakadályozni, hogy a jobbágyokat a szegényebb birtokosok kárára átcsábítsák, hiszen a jobbágyok szabadon költözhettek egyik úrtól a másikhoz. Ezentúl egységesen terményük kilencedik tizedét fizették földesuruknak, emellett a kapuadót és a rendkívüli adókat. Hogy a törvényeket hol hirdették ki, arról a szócikkek nem szólnak, ezért az eseménynek nincs pontja a térképen."
+  },
+  "sources": [
+    {
+      "title": "I. Lajos magyar király – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/I._Lajos_magyar_kir%C3%A1ly",
+      "note": "Розділи «Nemesség» і «Jobbágyság»: значення законів 1351 року, поновлення Золотої булли, дев'ятина."
+    },
+    {
+      "title": "Ősiség – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/%C5%90sis%C3%A9g",
+      "note": "Вступ і розділ «Az ősiség kiteljesítése»: закон оголошено 11 грудня 1351 року; зміст."
+    }
+  ]
+}

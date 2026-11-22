@@ -8,14 +8,14 @@
     "uk": "1914 і 1944",
     "hu": "1914 és 1944"
   },
-  "author": "Оцифровано в цьому проєкті з рисунків статей Kulcsár 2025 і Juhász–Balogh 2025 та з аерофото fentrol.hu; вцілілі ділянки рову — OpenStreetMap",
+  "author": "Оцифровано в цьому проєкті з рисунків статей Kulcsár 2025, Juhász–Balogh 2025 і Ádám 2022 та з аерофото fentrol.hu; вцілілі ділянки рову — OpenStreetMap",
   "license": "Розташування знято з рисунків опублікованих статей з посиланням на джерела; ділянки з OpenStreetMap — ODbL; окопи 1963 року обведено на аерофото fentrol.hu (Lechner Tudásközpont), самі знімки не публікуються",
   "licenseUrl": "https://opendatacommons.org/licenses/odbl/",
-  "attribution": "Укріплення 1914 і 1944: Kulcsár 2025, Juhász–Balogh 2025; аерофото fentrol.hu (Lechner Tudásközpont); © учасники OpenStreetMap (ODbL)",
+  "attribution": "Укріплення 1914 і 1944: Kulcsár 2025, Juhász–Balogh 2025, Ádám 2022; аерофото fentrol.hu (Lechner Tudásközpont); © учасники OpenStreetMap (ODbL)",
   "source": {
-    "title": "Kulcsár V., Budapest 1914. évi erődítése. Hadtudományi Szemle 2025/1, 95–105; Juhász A., Balogh Á., Térinformatika alkalmazása katonai objektumok rekonstruálásához. Haditechnika 2025/4",
+    "title": "Kulcsár V., Budapest 1914. évi erődítése. Hadtudományi Szemle 2025/1, 95–105; Juhász A., Balogh Á., Térinformatika alkalmazása katonai objektumok rekonstruálásához. Haditechnika 2025/4; Ádám B., A Karola-vonal erődítési rendszere. Hadtudományi Szemle 2022/3",
     "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf",
-    "note": "Векторний шар (data/fortifications/fortifications-1914-1944.geojson). Опорні пункти 1914 року — кружки з мапи «A védelmi rendszer támpontjai» (Kulcsár 2025, рис. 1), накресленої на Spezialkarte 1:75 000: рисунок зіставлено з аркушами 15:XX і 16:XX, які вже прив'язані на сайті (ознаки SIFT, 835 і 437 спільних точок), похибка орієнтовно 100–200 м; найближчий кружок лежить за 78 і 174 м від двох бетонних погребів біля Szilas-patak, координати яких подає та сама стаття. Пояси лінії «Аттіла» 1944 року — реконструкція Juhász і Balogh за аерофото (рис. 8, мапа 1:300 000): червоні траси й жовті плями позицій піхоти перенесено за підкладкою рисунка (залізниці й Дунай з OpenStreetMap) з урахуванням вцілілого рову в Rákoshegy і окопу на Somlyó-hegy, похибка орієнтовно 100–300 м. Окопи лінії «Маргіт» між Velence, Baracska і Besnyő — рис. 2 тієї ж статті (реконструкція за аерофото), прив'язка за залізницями й водою з OpenStreetMap, похибка орієнтовно 50–100 м. Протитанкові загородження всередині Будапешта з рис. 8 не перенесено: на мапі 1:300 000 вони надто густі. Оригінальні плани 1914 року зберігаються у Військово-історичному архіві (HM HLT II. 466) і в мережі не опубліковані. Окопи на Somlyó-hegy і південніше, біля Fót, обведено на аерофото 18 вересня 1963 року з архіву fentrol.hu (знімки 1963-0139-4364 і 1963-0139-4363, Lechner Tudásközpont): розміщення знімка, яке дає сайт, уточнено за дорогами й залізницями OpenStreetMap (зсув до 15 м), окопи обведено найдешевшим шляхом по темній лінії між опорними точками; два незалежно прив'язані знімки 1963 року показують окоп на Somlyó-hegy в тому самому місці, а точка зі статті Juhász–Balogh лежить за 22 м від нього; похибка орієнтовно 10–20 м. Мережа південніше лежить у межах позицій піхоти з реконструкції Juhász–Balogh, але на знімку 23 серпня 1960 року (1960-0704-6235) частина її окопів має вигляд свіжовикопаних, тож їх могли копати й після війни. Обведено лише основні лінії. Протитанкового рову першого поясу між Alsógöd і Csomád на переглянутих знімках 1960–1965 років розпізнати не вдалося (перевірено не всю трасу)."
+    "note": "Векторний шар (data/fortifications/fortifications-1914-1944.geojson). Опорні пункти 1914 року — кружки з мапи «A védelmi rendszer támpontjai» (Kulcsár 2025, рис. 1), накресленої на Spezialkarte 1:75 000: рисунок зіставлено з аркушами 15:XX і 16:XX, які вже прив'язані на сайті (ознаки SIFT, 835 і 437 спільних точок), похибка орієнтовно 100–200 м; найближчий кружок лежить за 78 і 174 м від двох бетонних погребів біля Szilas-patak, координати яких подає та сама стаття. Пояси лінії «Аттіла» 1944 року — реконструкція Juhász і Balogh за аерофото (рис. 8, мапа 1:300 000): червоні траси й жовті плями позицій піхоти перенесено за підкладкою рисунка (залізниці й Дунай з OpenStreetMap) з урахуванням вцілілого рову в Rákoshegy і окопу на Somlyó-hegy, похибка орієнтовно 100–300 м. Окопи лінії «Маргіт» між Velence, Baracska і Besnyő — рис. 2 тієї ж статті (реконструкція за аерофото), прив'язка за залізницями й водою з OpenStreetMap, похибка орієнтовно 50–100 м. Протитанкові загородження всередині Будапешта з рис. 8 не перенесено: на мапі 1:300 000 вони надто густі. Оригінальні плани 1914 року зберігаються у Військово-історичному архіві (HM HLT II. 466) і в мережі не опубліковані. Окопи на Somlyó-hegy і південніше, біля Fót, обведено на аерофото 18 вересня 1963 року з архіву fentrol.hu (знімки 1963-0139-4364 і 1963-0139-4363, Lechner Tudásközpont): розміщення знімка, яке дає сайт, уточнено за дорогами й залізницями OpenStreetMap (зсув до 15 м), окопи обведено найдешевшим шляхом по темній лінії між опорними точками; два незалежно прив'язані знімки 1963 року показують окоп на Somlyó-hegy в тому самому місці, а точка зі статті Juhász–Balogh лежить за 22 м від нього; похибка орієнтовно 10–20 м. Мережа південніше лежить у межах позицій піхоти з реконструкції Juhász–Balogh, але на знімку 23 серпня 1960 року (1960-0704-6235) частина її окопів має вигляд свіжовикопаних, тож їх могли копати й після війни. Обведено лише основні лінії. Протитанкового рову першого поясу між Alsógöd і Csomád на переглянутих знімках 1960–1965 років розпізнати не вдалося (перевірено не всю трасу). Права частина рис. 8 Juhász–Balogh (лінія «Маргіт» довкола Velencei-tó й Székesfehérvár, оглядова мапа, близько 62 м на піксель): протитанкові рови, окопи й траса лінії за тогочасними описами. Прив'язка за водою, дорогами й залізницями OpenStreetMap (окремі прив'язки лише за водою й лише за дорогами розходяться на 15–120 м); у ділянці, спільній з рис. 2, окопи з рис. 8 лежать у медіані за 55 м від окопів рис. 2 (90 % ближче 130 м); похибка орієнтовно 100–200 м. Окопи рис. 8, що повторюють уже нанесені з рис. 2, не бралися; з мапи такого масштабу знято осі смуг окопів, а не окремі окопи. Позиції лінії «Карола» між Aszód, Hatvan і Gyöngyös — рис. 8, 12 і 14 статті Ádám 2022 (знімки Google Earth із синіми лініями): знімки прив'язано за межами комітатів Heves і Nógrád та районів Hatvani і Gyöngyösi járás з OpenStreetMap (лінії меж на знімках лягають на них у межах 2 пікселів, тобто 30–45 м) і узгоджено між собою (ті самі лінії на різних рисунках сходяться в медіані до 15 м, 95 % до 50 м). Перенесення з рисунків — близько 50 м, але самі лінії — це схеми з донесень радянських військ 1944 року, які автор статті наклав на сучасну мапу: він сам застерігає про розбіжності через неточність схем і прив'язки, а ту саму позицію різні схеми показують за сотні метрів одна від одної."
   },
   "sources": [
     {
@@ -26,7 +26,12 @@
     {
       "title": "Juhász A., Balogh Á., Térinformatika alkalmazása katonai objektumok rekonstruálásához. Haditechnika LIX (2025/4)",
       "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf",
-      "note": "Рис. 8 (уся лінія «Аттіла», 1:300 000) і рис. 2 (східний сектор лінії «Маргіт»)."
+      "note": "Рис. 8 (ліворуч уся лінія «Аттіла», 1:300 000; праворуч лінія «Маргіт» довкола Velencei-tó) і рис. 2 (східний сектор лінії «Маргіт»)."
+    },
+    {
+      "title": "Ádám B., A Karola-vonal erődítési rendszere. Hadtudományi Szemle 15 (2022) 3. szám, 33–59",
+      "url": "https://real.mtak.hu/154969/1/03_adam_33-59_HSZ_2022_3.pdf",
+      "note": "Рис. 8, 12 і 14: реконструкція позицій лінії «Карола» між Aszód, Hatvan і Gyöngyös за схемами з донесень радянських військ."
     },
     {
       "title": "OpenStreetMap: Attila III. vonal páncélvédelmi árok",
@@ -146,6 +151,74 @@
       "source": {
         "title": "Juhász A., Balogh Á., Haditechnika 2025/4, рис. 2",
         "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf"
+      }
+    },
+    {
+      "kind": "margit_ditch",
+      "label": {
+        "uk": "Протитанковий рів лінії «Маргіт», 1944",
+        "hu": "A Margit-vonal harckocsiárka, 1944"
+      },
+      "style": "line",
+      "color": "#b71c1c",
+      "note": {
+        "uk": "Протитанковий рів лінії «Маргіт» довкола Velencei-tó за реконструкцією Juhász і Balogh (аерофото). Перенесено з оглядової мапи в статті (близько 60 м на піксель), похибка орієнтовно 100–200 м.",
+        "hu": "A Margit-vonal harckocsiárka a Velencei-tó környékén, Juhász és Balogh légifotókra épülő rekonstrukciója szerint. A cikk áttekintő térképéről átvéve (képpontonként kb. 60 m), a pontatlanság nagyjából 100–200 m."
+      },
+      "source": {
+        "title": "Juhász A., Balogh Á., Haditechnika 2025/4, рис. 8 (права частина)",
+        "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf"
+      }
+    },
+    {
+      "kind": "margit_trench",
+      "label": {
+        "uk": "Окопи довкола Velencei-tó (оглядова мапа)",
+        "hu": "Lövészárkok a Velencei-tó környékén (áttekintő térkép)"
+      },
+      "style": "line",
+      "color": "#ef6c00",
+      "note": {
+        "uk": "Окопи за реконструкцією Juhász і Balogh (аерофото). На південний захід від озера вони збігаються з лінією «Маргіт» за описами; системи окопів на південному боці озера, перпендикулярні до берега, за авторами, ймовірно, копали вже радянські війська проти німецьких контрударів. З оглядової мапи (близько 60 м на піксель) знято осі смуг окопів, а не окремі окопи; похибка орієнтовно 100–200 м.",
+        "hu": "Lövészárkok Juhász és Balogh légifotókra épülő rekonstrukciója szerint. A tótól délnyugatra egybeesnek a leírások szerinti Margit-vonallal; a tó déli oldalán a partra merőleges árokrendszereket a szerzők szerint valószínűleg már a szovjetek építették a német ellentámadások ellen. Az áttekintő térképről (képpontonként kb. 60 m) az árokcsoportok tengelyvonalai vehetők át, nem az egyes árkok; a pontatlanság nagyjából 100–200 m."
+      },
+      "source": {
+        "title": "Juhász A., Balogh Á., Haditechnika 2025/4, рис. 8 (права частина)",
+        "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf"
+      }
+    },
+    {
+      "kind": "margit_described",
+      "label": {
+        "uk": "Лінія «Маргіт» за описами",
+        "hu": "A Margit-vonal a leírások szerint"
+      },
+      "style": "longdash",
+      "color": "#6d4c41",
+      "note": {
+        "uk": "Траса лінії «Маргіт» за тогочасними описами, як її подають Juhász і Balogh. На південний захід від Velencei-tó справжня траса з нею збігається (ближче до озера її продовжує протитанковий рів), а на північний схід від озера, за авторами, вона вздовж описаної лінії не продовжується: окопи там знайдено південніше. В описах лінію задано лише переліком місцевостей; перенесено з оглядової мапи, похибка орієнтовно 100–200 м.",
+        "hu": "A Margit-vonal nyomvonala a korabeli leírások szerint, ahogyan Juhász és Balogh ábrázolja. A Velencei-tótól délnyugatra a valós nyomvonal egybeesik vele (a tóhoz közelebb harckocsiárok folytatja), a tótól északkeletre viszont a szerzők szerint a leírt vonal mentén nem folytatódik: ott az árkok délebbre kerültek elő. A leírások a vonalat csak helységek felsorolásával adják meg; az áttekintő térképről átvéve, a pontatlanság nagyjából 100–200 m."
+      },
+      "source": {
+        "title": "Juhász A., Balogh Á., Haditechnika 2025/4, рис. 8 (права частина) і рис. 2",
+        "url": "https://real.mtak.hu/248100/1/haditechnika4_2025_4_book-8.pdf"
+      }
+    },
+    {
+      "kind": "karola",
+      "label": {
+        "uk": "Позиції лінії «Карола», 1944",
+        "hu": "A Karola-vonal állásai, 1944"
+      },
+      "style": "line",
+      "color": "#283593",
+      "note": {
+        "uk": "Позиції лінії «Карола» між Aszód, Hatvan і Gyöngyös за реконструкцією Balázs Ádám: схеми з донесень радянських військ листопада–грудня 1944 року, накладені на сучасну мапу. Які укріплення й скільки рядів окопів були на кожній ділянці, джерела не кажуть; ту саму позицію різні схеми показують за сотні метрів одна від одної, тому поруч часто йде кілька ліній (автор не виключає, що частина з них — різні позиції). Перенесення з рисунків статті — близько 50 м.",
+        "hu": "A Karola-vonal állásai Aszód, Hatvan és Gyöngyös között Ádám Balázs rekonstrukciója szerint: a szovjet csapatok 1944. november–decemberi jelentéseinek vázlatai mai térképre illesztve. Hogy az egyes állásrészek milyen erődítési elemekből és hány sor lövészárokból álltak, arról a források nem szólnak; ugyanazt az állást a különböző vázlatok több száz méteres eltéréssel mutatják, ezért gyakran több vonal fut egymás mellett (a szerző azt sem zárja ki, hogy egy részük valójában más állás). A cikk ábráiról való átvétel pontossága kb. 50 m."
+      },
+      "source": {
+        "title": "Ádám B., A Karola-vonal erődítési rendszere. Hadtudományi Szemle 2022/3, рис. 8, 12, 14",
+        "url": "https://real.mtak.hu/154969/1/03_adam_33-59_HSZ_2022_3.pdf"
       }
     },
     {

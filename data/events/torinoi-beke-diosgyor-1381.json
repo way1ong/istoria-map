@@ -1,0 +1,48 @@
+{
+  "id": "torinoi-beke-diosgyor-1381",
+  "title": {
+    "uk": "Туринський мир з Венецією затверджено в Діошдьйорі",
+    "hu": "A torinói béke megerősítése Diósgyőrött"
+  },
+  "date": {
+    "from": "1381-11-26",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [
+    "diosgyori-var"
+  ],
+  "summary": {
+    "uk": "26 листопада 1381 року в Діошдьйорському замку Людовик I Великий у присутності венеційських послів затвердив Туринський мир: Венеція зобов'язалася платити данину й у неділі та свята підіймати прапор Анжу на площі Святого Марка.",
+    "hu": "1381. november 26-án a diósgyőri várban Nagy Lajos velencei követek jelenlétében ratifikálta a torinói békét: Velence adófizetésre kötelezte magát, és arra, hogy vasárnap és ünnepnapokon felvonja az Anjou-lobogót a Szent Márk téren."
+  },
+  "description": {
+    "uk": "За статтею про замок, його розквіт почався за Людовика I: від 1360-х років король бував тут дедалі частіше, а після 1370 року, коли він став і королем Польщі, Діошдьйор був однією зі станцій на шляху до Кракова. Поруч з Вишеградом і Zólyom король зробив його своєю третьою резиденцією, перебудував і оновив; у замку з чотирма кутовими вежами довкола прямокутного двору була найбільша в Європі лицарська зала.\n\n26 листопада 1381 року в Діошдьйорському замку король у присутності венеційських послів затвердив укладений раніше Туринський мир, у якому Венеція зобов'язалася в неділі й свята підіймати прапор Анжу на площі Святого Марка; цю подію показує паноптикум у північно-східній вежі замку. За статтею про короля, мир завершив війну 1378–1381 років, у якій союзний Угорщині генуезький флот спершу завдав венеційцям тяжкої поразки й дійшов до лагун, а потім сам був розбитий; мир укладено під проводом Карла Дураццького, якого італійці за це прозвали «della Pace» (миротворець). Мир, по суті, поновив давніший мир, укладений у Zára, і додатково зобов'язав Венецію платити данину. Тоді ж до Угорщини потрапили мощі святого Павла Пустельника.",
+    "hu": "A várról szóló szócikk szerint fénykora I. Lajos uralkodása alatt kezdődött: az 1360-as évektől a király mind gyakrabban fordult meg itt, 1370 után pedig, amikor lengyel király is lett, Diósgyőr a Krakkóba vezető út egyik állomása volt. Visegrád és Zólyom mellett harmadik székhelyévé tette, átépíttette és korszerűsítette; a négyszögletes udvar köré épült, négy saroktornyos várban volt Európa legnagyobb lovagterme.\n\n1381. november 26-án a diósgyőri várban a király velencei követek jelenlétében ratifikálta a korábban megkötött torinói békét, amelyben Velence kötelezte magát, hogy vasárnap és ünnepnapokon felvonja az Anjou-lobogót a Szent Márk téren; az eseményt panoptikum örökíti meg a vár északkeleti tornyában. A királyról szóló szócikk szerint a béke az 1378–1381-es háborút zárta le, amelyben a Magyarországgal szövetséges genovai hajóhad előbb súlyos vereséget mért a velencei flottára és a lagúnákig hatolt, majd maga is vereséget szenvedett; a békét Durazzói Károly vezetésével kötötték meg, aki ezért az olaszoktól a „della Pace” (békéltető) melléknevet kapta. Ez gyakorlatilag a zárai béke megújítása volt, de ezúttal adófizetésre is kötelezték Velencét. Ekkor kerültek Remete Szent Pál ereklyéi Magyarországra."
+  },
+  "sources": [
+    {
+      "title": "Diósgyőri vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Di%C3%B3sgy%C5%91ri_v%C3%A1r",
+      "note": "Розділ «Diósgyőr és a vár története»: розквіт за Людовика I, затвердження миру 26 листопада 1381 року, паноптикум."
+    },
+    {
+      "title": "I. Lajos magyar király – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/I._Lajos_magyar_kir%C3%A1ly",
+      "note": "Розділ «Dalmácia»: війна 1378–1381 років і зміст Туринського миру."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Di%C3%B3sgy%C5%91ri_v%C3%A1r_2016.jpg",
+      "author": "CivertanS",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Di%C3%B3sgy%C5%91ri_v%C3%A1r_2016.jpg",
+      "caption": {
+        "uk": "Діошдьйорський замок, 2016",
+        "hu": "A diósgyőri vár 2016-ban"
+      }
+    }
+  ]
+}

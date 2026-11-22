@@ -1,0 +1,43 @@
+{
+  "id": "matyas-koronazasa-1464",
+  "title": {
+    "uk": "Коронація Матяша Святою короною",
+    "hu": "Mátyás megkoronázása a Szent Koronával"
+  },
+  "date": {
+    "from": "1464-03-29",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [
+    "szekesfehervar-kiralyi-bazilika"
+  ],
+  "summary": {
+    "uk": "29 березня 1464 року в Секешфегерварі Матяша Гуняді, обраного королем ще 1458 року, нарешті короновано Святою короною, яку попереднього року викупили в імператора Фрідріха III за 70 тисяч золотих.",
+    "hu": "1464. március 29-én Székesfehérvárott végre megkoronázták a Szent Koronával az 1458-ban királlyá választott Hunyadi Mátyást; a koronát az előző évben 70 ezer aranyért váltották vissza III. Frigyes császártól."
+  },
+  "description": {
+    "uk": "За статтею про короля, за угорським звичаєвим правом законним володарем був лише той, кого короною святого Іштвана в Секешфегерварі коронував естергомський архієпископ, а Свята корона була в руках імператора Фрідріха III. Тому після обрання 1458 року коронацію замінили ретельно продуманою церемонією в Буді: урочистий в'їзд, підтвердження вольностей міста, звільнення в'язнів, подячний молебень.\n\n1463 року після тривалих переговорів János Vitéz уклав з Фрідріхом III угоду в місті Bécsújhely: за корону сплачено 70 тисяч золотих, спільною метою названо боротьбу з турками, а на випадок, якщо Матяш помре без сина, угорський трон мав успадкувати син Фрідріха Максиміліан; імператор зі свого боку всиновив Матяша. За словами хроніста Bonfini, повернену корону три дні показували в Шопроні, і з навколишніх міст та сіл подивитися на неї зійшлася незліченна сила людей.\n\nКоронація відбулася в Секешфегерварі лише 29 березня 1464 року, через три чверті року після повернення корони; водночас король скликав до коронаційного міста державні збори. Одразу після неї Матяш розпочав реформи: змінив керівництво канцелярії та об'єднав королівські суди.",
+    "hu": "A királyról szóló szócikk szerint a magyar szokásjog értelmében csak az volt törvényes uralkodó, akit Szent István koronájával Székesfehérvárott az esztergomi érsek koronázott meg, a Szent Korona azonban III. Frigyes császár birtokában volt. Ezért az 1458-as királyválasztás után a koronázást egy gondosan kidolgozott budai ceremónia pótolta: ünnepélyes bevonulás, a város szabadságainak megerősítése, a foglyok szabadon bocsátása, Te Deum.\n\n1463-ban Vitéz János hosszas tárgyalásai eredményeképpen létrejött III. Frigyessel a bécsújhelyi megállapodás: a koronáért hetvenezer aranyat fizettek, közös célnak a török elleni harcot nevezték meg, és kimondták, hogy ha Mátyás fiú utód nélkül hal meg, a magyar trónt Frigyes fia, Miksa örökli; a császár a maga részéről örökbe fogadta Mátyást. Bonfini szerint a visszaszerzett koronát Sopronban három napon át lehetett megnézni, és a szomszédos városokból és falvakból megszámlálhatatlan sokaság hömpölygött oda.\n\nA koronázásra csak 1464. március 29-én került sor Székesfehérvárott, háromnegyed évvel a korona visszaszerzése után; a király egyúttal országgyűlést is hirdetett a koronázóvárosba. Utána Mátyás nyomban megkezdte reformjait: személycseréket hajtott végre a kancellária élén, és egyesítette a királyi bíróságokat."
+  },
+  "sources": [
+    {
+      "title": "I. Mátyás magyar király – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/I._M%C3%A1ty%C3%A1s_magyar_kir%C3%A1ly",
+      "note": "Розділи «Trónra lépése és hatalmának biztosítása» і «Koronázás és reformok»: угода 1463 року, показ корони в Шопроні, коронація 29 березня 1464 року."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/A_Romkert_l%C3%A9gi_felv%C3%A9tele%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_Romkert_l%C3%A9gi_felv%C3%A9tele%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r.jpg",
+      "caption": {
+        "uk": "Руїнний сад Székesfehérvár з повітря",
+        "hu": "A székesfehérvári Romkert légi felvétele"
+      }
+    }
+  ]
+}

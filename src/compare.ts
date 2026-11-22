@@ -7,6 +7,7 @@ import { watchContextLoss } from './glloss';
 import { MARKER_IMAGE, markerSize, SHAPE, useMarkerImages } from './shapes';
 import { watchTracking } from './tracking';
 import { addMarksLayer } from './markslayer';
+import { addTracksLayer, watchTracks } from './trackslayer';
 import type { Place } from './types';
 
 export interface CompareHandle { destroy(): void }
@@ -31,6 +32,8 @@ function addPlacesLayers(map: MLMap, periodId: string | null) {
   // ті самі мітки, що на головній мапі (колір — період, форма — тип), трохи менші
   map.addLayer({ id: 'cmp-dot', type: 'symbol', source: 'cmp-places', layout: { 'icon-image': MARKER_IMAGE, 'icon-size': markerSize(0.85), 'icon-allow-overlap': true, 'icon-ignore-placement': true } });
   map.addLayer({ id: 'cmp-label', type: 'symbol', source: 'cmp-places', layout: { 'text-field': ['get', 'label'], 'text-font': ['Noto Sans Bold'], 'text-size': 11, 'text-offset': [0, 1.1], 'text-anchor': 'top', 'text-max-width': 9 }, paint: { 'text-color': '#111827', 'text-halo-color': '#ffffff', 'text-halo-width': 1.5 } });
+  // власні шляхи (вкладка «Шляхи» на головній мапі) — під мітками місць, над старою мапою
+  addTracksLayer(map, 'cmp-dot');
 }
 
 /** Дві синхронні мапи: стара зверху, сучасна знизу; хрестик і дзеркальний курсор. */
@@ -45,7 +48,7 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   container.innerHTML = `
     <div class="cmp-bar">
       <select class="cmp-map">${mapChoices(rasterMaps, hm?.id).map((c) => `<option value="${c.value}" ${c.value === hm?.id ? 'selected' : ''}>${c.label}</option>`).join('')}</select>
-      <select class="cmp-base" aria-label="${t('modernMap')}">${availableBasemaps().map((b) => `<option value="${b.id}" ${b.id === base.id ? 'selected' : ''}>${lt(b.short) || lt(b.title)}</option>`).join('')}</select>
+      ${availableBasemaps().length > 1 && navigator.onLine !== false ? `<select class="cmp-base" aria-label="${t('modernMap')}">${availableBasemaps().map((b) => `<option value="${b.id}" ${b.id === base.id ? 'selected' : ''}>${lt(b.short) || lt(b.title)}</option>`).join('')}</select>` : ''}
     </div>
     <div class="cmp-pane cmp-top"><div class="cmp-map-el"></div><div class="cmp-cross"></div><span class="cmp-tag">${t('oldMap')}</span></div>
     <div class="cmp-pane cmp-bottom"><div class="cmp-map-el"></div><div class="cmp-cross"></div><span class="cmp-tag">${t('modernMap')}</span></div>
@@ -77,7 +80,7 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
 
   // style.load спрацьовує і при першому завантаженні, і після зміни стилю
   // Власні мітки-прапорці (панель «Мої мітки» на головній мапі) видно на обох мапах: легше знайти своє місце на старій.
-  top.on('style.load', () => { if (!top.getSource('cmp-places')) { addPlacesLayers(top, period); if (hm) addOldMap(top, hm, { prefix: 'cmp-old', beforeId: 'cmp-dot', opacity: 1 }); } addMarksLayer(top); });
+  top.on('style.load', () => { if (!top.getSource('cmp-places')) { addPlacesLayers(top, period); if (hm) addOldMap(top, hm, { prefix: 'cmp-old', beforeId: ['tracks-casing', 'cmp-dot'], opacity: 1 }); } addMarksLayer(top); });
   bot.on('style.load', () => { localizeBasemapLabels(bot, document.documentElement.lang || 'uk'); if (!bot.getSource('cmp-places')) addPlacesLayers(bot, period); addMarksLayer(bot); });
 
   // синхронізація положення
@@ -110,9 +113,13 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   }
 
   container.querySelector<HTMLSelectElement>('.cmp-map')!.onchange = (e) => opts.onChange({ map: (e.target as HTMLSelectElement).value, base: base.id });
-  container.querySelector<HTMLSelectElement>('.cmp-base')!.onchange = (e) => opts.onChange({ map: hm?.id ?? '', base: (e.target as HTMLSelectElement).value });
+  // вибору підкладки немає без інтернету (інші не завантажаться) і коли підкладка одна
+  const baseSel = container.querySelector<HTMLSelectElement>('.cmp-base');
+  if (baseSel) baseSel.onchange = (e) => opts.onChange({ map: hm?.id ?? '', base: (e.target as HTMLSelectElement).value });
 
   const ro = new ResizeObserver(() => { top.resize(); bot.resize(); });
   ro.observe(container);
-  return { destroy() { ro.disconnect(); top.remove(); bot.remove(); } };
+  // шляхи читаються зі сховища не миттєво: лінії домальовуються, коли прочитаються
+  const offTracks = [watchTracks(top), watchTracks(bot)];
+  return { destroy() { offTracks.forEach((off) => off()); ro.disconnect(); top.remove(); bot.remove(); } };
 }

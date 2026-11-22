@@ -1,0 +1,38 @@
+{
+  "id": "urberi-rendelet-1767",
+  "title": {
+    "uk": "Урбаріальний указ Марії Терезії",
+    "hu": "Mária Terézia úrbéri rendelete"
+  },
+  "date": {
+    "from": "1767-01-23",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [],
+  "summary": {
+    "uk": "23 січня 1767 року Марія Терезія в обхід державних зборів видала указ, що вперше однаково для всієї країни визначив розмір кріпацького наділу й повинності перед паном: за повний наділ 52 дні панщини з тяглом або 104 дні пішої на рік.",
+    "hu": "1767. január 23-án Mária Terézia az országgyűlés mellőzésével kiadta azt a rendeletet, amely először szabályozta országosan egységesen a jobbágytelek nagyságát és a földesúrnak járó szolgáltatásokat: egész telek után évi 52 nap igás vagy 104 nap kézi robot."
+  },
+  "description": {
+    "uk": "За статтею про указ, на державних зборах 1764–1765 років королева посварилася зі станами, бо двір хотів оподаткувати духовенство й дворянство; вона закрила збори й відтоді не зважала навіть на зовнішні форми станового устрою. У 1765–1766 роках у Задунав'ї, надто в комітатах Ваш, Зала й Шомодь, селяни повстали проти панської сваволі, насамперед проти надміру збільшеної панщини. Королева спершу навела лад військом, а 23 січня 1767 року видала урбаріальний указ (урбарій). Одним з його творців був її довірений радник Pál Festetics. Спершу указ оголосили в шести задунайських комітатах (Ваш, Зала, Шомодь, Шопрон, Толна, Бараня), а в наступні роки надіслані комісії провели волю королеви в усіх комітатах.\n\nУрбарій замінив давні приписи, що спиралися почасти на звичай, почасти на місцеві письмові угоди: визначив розмір кріпацького наділу й повинності перед паном. Кріпак з повним наділом мусив відробити 52 дні панщини з тяглом або 104 дні пішої на рік; за статтею про королеву, грошовий чинш становив один форинт незалежно від розміру наділу, а з урожаю зерна, вина, льону й конопель віддавали дев'ятину. Метою було зберегти спроможність кріпаків платити державні податки. У більшості місць указ полегшив тягарі, але подекуди збільшив їх: там, де в найзаможніших панів кріпаки доти працювали менше за нову державну норму.\n\nВ околицях Göd: за статтею про Sződ, урбарій там укладено 1769 року.",
+    "hu": "A rendeletről szóló szócikk szerint az 1764–1765. évi országgyűlésen a királynő összeütközésbe került a rendekkel, mert az udvar a papság és a nemesség megadóztatására törekedett; bezárta az országgyűlést, és szakított a rendi alkotmányosság formális tiszteletben tartásával is. 1765–1766-ban a Dunántúlon, különösen Vas, Zala és Somogy megyében parasztmozgalmak bontakoztak ki a földesúri önkény, elsősorban a mértéktelenül megnövekedett robot ellen. A királynő előbb katonai karhatalommal biztosította a rendet, majd 1767. január 23-án kiadta az úrbéri rendeletet (urbáriumot). Egyik megalkotója bizalmasa, Festetics Pál volt. Először hat dunántúli vármegyében hirdették ki (Vas, Zala, Somogy, Sopron, Tolna, Baranya), a következő években pedig a kiküldött bizottságok valamennyi vármegyében keresztülvitték a királynő akaratát.\n\nAz urbárium felváltotta az addig részben szokásjogon, részben helyről helyre változó írásos megállapodásokon alapuló előírásokat: szabályozta a jobbágytelek nagyságát és a földesurat megillető szolgáltatásokat. Az egész telekkel rendelkező jobbágy évi 52 nap igás vagy 104 nap kézi robotra volt köteles; a királynőről szóló szócikk szerint a pénzadó teleknagyságtól függetlenül 1 forint volt, a gabona, bor, len és kender terméséből pedig kilencedet kellett adni. A cél a jobbágyok állami adóképességének megőrzése volt. A rendelet a legtöbb helyen enyhítette a terheket, néhol azonban növelte őket: ott, ahol a legtehetősebb földesurak jobbágyai addig kevesebbet dolgoztak az új állami normánál.\n\nGöd környékén: a Sződről szóló szócikk szerint ott 1769-ben jött létre az urbárium."
+  },
+  "sources": [
+    {
+      "title": "Úrbéri rendelet – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/%C3%9Arb%C3%A9ri_rendelet",
+      "note": "Вступ і розділ «Előzmények»: збори 1764–1765 років, селянські рухи, дата 23 січня 1767 року, шість комітатів, норма панщини, Pál Festetics."
+    },
+    {
+      "title": "Mária Terézia magyar királynő – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/M%C3%A1ria_Ter%C3%A9zia_magyar_kir%C3%A1lyn%C5%91",
+      "note": "Розділ «Magyarországi politikája»: чинш один форинт, дев'ятина."
+    },
+    {
+      "title": "Sződ – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sz%C5%91d",
+      "note": "Розділ «Története»: урбарій у Sződ укладено 1769 року."
+    }
+  ]
+}

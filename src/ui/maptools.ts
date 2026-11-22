@@ -6,8 +6,12 @@ import type { PlaceType } from '../types';
 import { eventDate } from './render';
 import { renderOffline } from './offlinepanel';
 import { renderMarks, type MarksPanel } from './markspanel';
+import { renderTracks, type TracksPanel } from './trackspanel';
 import { addMark } from '../marks';
 import { SHAPE, shapeSvg } from '../shapes';
+import { bearing, fmtArea, fmtLength, haversine } from '../geo';
+import { createMeasure, type Measure } from '../measure';
+import { isRecording, onTracksChange } from '../tracks';
 
 /** Порядок фішок у фільтрі. */
 export const TYPES: PlaceType[] = ['castle', 'military', 'church', 'archaeological', 'monument', 'settlement', 'nature', 'farmstead', 'inn', 'mill', 'other'];
@@ -36,23 +40,12 @@ const ICON = {
   filter: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M3 5h18l-7 8.5V20l-4-2v-4.5z"/></svg>',
   nearby: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 6h12M9 12h12M9 18h12"/><circle cx="4" cy="6" r="1.4" fill="currentColor"/><circle cx="4" cy="12" r="1.4" fill="currentColor"/><circle cx="4" cy="18" r="1.4" fill="currentColor"/></svg>',
   marks: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V3.5"/><path d="M6 4.5h13l-3.2 4.2L19 13H6" fill="currentColor" fill-opacity=".25"/></svg>',
+  measure: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5 16.5 3l4.5 4.5L7.5 21z"/><path d="m7.2 12.3 1.9 1.9M10.2 9.3l1.9 1.9M13.2 6.3l1.9 1.9"/></svg>',
   offline: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg>',
 };
 type Mode = keyof typeof ICON;
-const MODES: Mode[] = ['search', 'filter', 'nearby', 'marks', 'offline'];
+const MODES: Mode[] = ['search', 'filter', 'nearby', 'marks', 'measure', 'offline'];
 
-function haversine(a: [number, number], b: [number, number]): number {
-  const R = 6371000, rad = Math.PI / 180;
-  const dLat = (b[1] - a[1]) * rad, dLon = (b[0] - a[0]) * rad;
-  const h = Math.sin(dLat / 2) ** 2 + Math.cos(a[1] * rad) * Math.cos(b[1] * rad) * Math.sin(dLon / 2) ** 2;
-  return 2 * R * Math.asin(Math.sqrt(h));
-}
-function bearing(a: [number, number], b: [number, number]): number {
-  const rad = Math.PI / 180;
-  const y = Math.sin((b[0] - a[0]) * rad) * Math.cos(b[1] * rad);
-  const x = Math.cos(a[1] * rad) * Math.sin(b[1] * rad) - Math.sin(a[1] * rad) * Math.cos(b[1] * rad) * Math.cos((b[0] - a[0]) * rad);
-  return (Math.atan2(y, x) / rad + 360) % 360;
-}
 function fmtDist(m: number): string {
   if (m < 1000) return `${Math.max(10, Math.round(m / 10) * 10)} ${t('unitM')}`;
   const km = m / 1000;
@@ -71,7 +64,7 @@ interface Opts {
   onOfflineMap(): void;
 }
 
-/** Кнопки «Пошук», «Типи місць», «Що поруч», «Без інтернету» у правому стовпчику мапи і панель для них. */
+/** Кнопки «Пошук», «Типи місць», «Що поруч», «Мої мітки» (з вкладкою «Шляхи»), «Виміряти», «Без інтернету» у правому стовпчику мапи і панель для них. */
 export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts) {
   let filter = loadFilter();
   ctl.setPlaceFilter(filter);
@@ -89,9 +82,18 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
   let me: Marker | null = null;
   // панель «Без інтернету» оновлюється сама під час завантаження; при закритті відписуємо її
   let stopOffline: (() => void) | null = null;
-  // панель «Мої мітки»: так само відписується при закритті
+  // панель «Мої мітки» з вкладкою «Шляхи»: так само відписується при закритті
   let marksPanel: MarksPanel | null = null;
-  const stopPanels = () => { stopOffline?.(); stopOffline = null; marksPanel?.dispose(); marksPanel = null; };
+  let tracksPanel: TracksPanel | null = null;
+  let mineTab: 'marks' | 'tracks' = 'marks';
+  // вимірювання: поки панель відкрита, дотики до мапи ставлять точки
+  let measure: Measure | null = null;
+  const stopPanels = () => {
+    stopOffline?.(); stopOffline = null;
+    marksPanel?.dispose(); marksPanel = null;
+    tracksPanel?.dispose(); tracksPanel = null;
+    if (measure) { measure.destroy(); measure = null; ctl.onMapTap(null); }
+  };
 
   const buttons: Record<Mode, HTMLButtonElement> = {} as never;
   const control: IControl = {
@@ -112,12 +114,15 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
     onRemove() { /* мапа живе весь час */ },
   };
   ctl.map.addControl(control, 'top-right');
+  // поки йде запис шляху, на кнопці з прапорцем горить червона цятка (панель при цьому може бути закрита)
+  onTracksChange(() => buttons.marks?.classList.toggle('rec', isRecording()));
 
   function labels() {
     buttons.search.title = buttons.search.ariaLabel = t('search');
     buttons.filter.title = buttons.filter.ariaLabel = t('filterTitle');
     buttons.nearby.title = buttons.nearby.ariaLabel = t('nearby');
-    buttons.marks.title = buttons.marks.ariaLabel = t('marks');
+    buttons.marks.title = buttons.marks.ariaLabel = `${t('marks')}, ${t('tabTracks').toLowerCase()}`;
+    buttons.measure.title = buttons.measure.ariaLabel = t('measure');
     buttons.offline.title = buttons.offline.ariaLabel = t('offline');
     buttons.filter.classList.toggle('on', filterActive(filter));
     closeBtn.ariaLabel = t('close');
@@ -142,13 +147,70 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
     if (k === 'search') { body.innerHTML = ''; renderSearch(true); }
     else if (k === 'filter') renderFilter();
     else if (k === 'nearby') renderNearby();
-    else if (k === 'marks') marksPanel = renderMarks(body, { map: ctl.map, setTitle: (x) => { title.textContent = x; }, editId: markId });
+    else if (k === 'marks') renderMine(markId);
+    else if (k === 'measure') renderMeasure();
     else renderOfflinePanel();
+  }
+
+  // ---------- мої мітки й шляхи ----------
+  /** Дві вкладки в одній панелі: «Мітки» (прапорці) і «Шляхи»; markId — одразу відкрити редагування мітки. */
+  function renderMine(markId?: string) {
+    if (markId) mineTab = 'marks';
+    body.innerHTML = `<div class="mtool-seg mk-tabs"><button type="button" data-tab="marks">${esc(t('tabMarks'))}</button><button type="button" data-tab="tracks">${esc(t('tabTracks'))}</button></div><div class="mk-pane"></div>`;
+    const pane = body.querySelector<HTMLElement>('.mk-pane')!;
+    const tabs = body.querySelector<HTMLElement>('.mk-tabs')!;
+    const setTitle = (x: string) => { title.textContent = x; };
+    const show = (editId?: string) => {
+      marksPanel?.dispose(); marksPanel = null;
+      tracksPanel?.dispose(); tracksPanel = null;
+      pane.innerHTML = '';
+      tabs.querySelectorAll<HTMLButtonElement>('button').forEach((b) => b.classList.toggle('on', b.dataset.tab === mineTab));
+      if (mineTab === 'marks') marksPanel = renderMarks(pane, { map: ctl.map, setTitle, editId });
+      else tracksPanel = renderTracks(pane, { map: ctl.map, setTitle, locate: () => ctl.locate() });
+    };
+    tabs.onclick = (e) => {
+      const b = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-tab]');
+      if (!b || b.dataset.tab === mineTab) return;
+      mineTab = b.dataset.tab as typeof mineTab;
+      show();
+    };
+    show(markId);
   }
   /** Відкрити панель «Мої мітки» на редагуванні мітки (натиснуто прапорець або щойно поставлено нову). */
   function openMark(id: string) {
     if (mode === 'marks' && marksPanel) marksPanel.edit(id);
     else open('marks', id);
+  }
+
+  // ---------- вимірювання ----------
+  function drawMeasure() {
+    if (mode !== 'measure' || !measure) return;
+    const n = measure.count();
+    body.innerHTML = `
+      <p class="mtool-note">${esc(t('measureHint'))}</p>
+      <dl class="ms-out">
+        <div><dt>${esc(t('measureLength'))}</dt><dd>${esc(fmtLength(measure.length()))}</dd></div>
+        ${n >= 3 ? `<div><dt>${esc(t('measureArea'))}</dt><dd>${esc(fmtArea(measure.area()))}</dd></div><div><dt>${esc(t('measurePerimeter'))}</dt><dd>${esc(fmtLength(measure.perimeter()))}</dd></div>` : ''}
+      </dl>
+      ${n ? `<div class="off-btns">
+        <button type="button" class="off-btn" data-act="undo">${esc(t('measureUndo'))}</button>
+        <button type="button" class="off-btn" data-act="clear">${esc(t('measureClear'))}</button>
+      </div>` : ''}`;
+  }
+  function renderMeasure() {
+    title.textContent = t('measure');
+    if (!measure) {
+      const m = createMeasure(ctl.map);
+      measure = m;
+      m.onChange(drawMeasure);
+      ctl.onMapTap((at) => m.add(at));
+    }
+    body.onclick = (e) => {
+      const act = (e.target as HTMLElement).closest<HTMLElement>('[data-act]')?.dataset.act;
+      if (act === 'undo') measure?.undo();
+      else if (act === 'clear') measure?.clear();
+    };
+    drawMeasure();
   }
   ctl.onMarkClick(openMark);
   ctl.onLongPress((at) => openMark(addMark(at).id));
@@ -250,7 +312,7 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
       <p class="mtool-note">${esc(t('filterShapes'))}</p>
       <div class="chips">${TYPES.map((x) => `<button type="button" class="chip ${filter.types.includes(x) ? 'on' : ''}" data-type="${x}">${shapeSvg(SHAPE[x], '#6b7280', false, 14)} ${esc(typeLabel(x))} <span class="cnt">${count(x)}</span></button>`).join('')}</div>
       <label class="mtool-check"><input type="checkbox" ${filter.vanishedOnly ? 'checked' : ''}> ${esc(t('filterVanished'))}</label>
-      <button type="button" class="mtool-reset" ${filterActive(filter) ? '' : 'disabled'}>${esc(t('filterAll'))}</button>`;
+      ${filterActive(filter) ? `<button type="button" class="mtool-reset">${esc(t('filterAll'))}</button>` : ''}`;
     body.querySelectorAll<HTMLButtonElement>('.chip').forEach((b) => {
       b.onclick = () => {
         const x = b.dataset.type as PlaceType;
@@ -260,7 +322,9 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
       };
     });
     body.querySelector<HTMLInputElement>('.mtool-check input')!.onchange = (e) => { setFilter({ ...filter, vanishedOnly: (e.target as HTMLInputElement).checked }); renderFilter(); };
-    body.querySelector<HTMLButtonElement>('.mtool-reset')!.onclick = () => { setFilter({ types: [], vanishedOnly: false }); renderFilter(); };
+    // «Усі типи» є лише тоді, коли фільтр діє: без фільтра скидати нічого
+    const reset = body.querySelector<HTMLButtonElement>('.mtool-reset');
+    if (reset) reset.onclick = () => { setFilter({ types: [], vanishedOnly: false }); renderFilter(); };
   }
 
   // ---------- що поруч ----------
@@ -336,7 +400,13 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
       if (mode === 'search') renderSearch();
       else if (mode === 'filter') renderFilter();
       else if (mode === 'nearby') { title.textContent = t('nearby'); drawNearby(); }
-      else if (mode === 'marks') marksPanel?.refresh();
+      else if (mode === 'marks') {
+        // назви вкладок — новою мовою, вміст вкладки перемальовує її панель
+        body.querySelectorAll<HTMLButtonElement>('.mk-tabs button').forEach((b) => { b.textContent = t(b.dataset.tab === 'marks' ? 'tabMarks' : 'tabTracks'); });
+        marksPanel?.refresh();
+        tracksPanel?.refresh();
+      }
+      else if (mode === 'measure') { title.textContent = t('measure'); measure?.refresh(); drawMeasure(); }
       else if (mode === 'offline') renderOfflinePanel();
     },
     close,

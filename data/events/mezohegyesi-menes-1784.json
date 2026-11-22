@@ -1,0 +1,43 @@
+{
+  "id": "mezohegyesi-menes-1784",
+  "title": {
+    "uk": "Заснування кінного заводу в Мезьогедєші",
+    "hu": "A mezőhegyesi ménes alapítása"
+  },
+  "date": {
+    "from": "1784-12-20",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [
+    "mezohegyes"
+  ],
+  "summary": {
+    "uk": "20 грудня 1784 року Йосиф II підписав фундаційну грамоту цісарсько-королівського кінного заводу на пустці Mezőhegyes. Завод, який постав за порадою ротмістра József Csekonics, сприяв повторному заселенню місцевості.",
+    "hu": "1784. december 20-án II. József aláírta a Császári és Királyi Ménesintézet alapítólevelét a mezőhegyesi pusztán. A Csekonics József lovaskapitány javaslatára alapított ménes elősegítette a hely újratelepülését."
+  },
+  "description": {
+    "uk": "За статтею про місто, після турецького спустошення місцевість збезлюдніла. 1702 року її присуджено марошській прикордонній варті, а після ліквідації військового кордону 1741 року пустку забрав Арадський казенний маєток; від 1750-х років її здавали в оренду частинами, а 1772 року всю на дванадцять років узяв Bernát Bogdanovics.\n\nУ війнах за спадщину часів Марії Терезії поголів'я коней зменшилося, і щоб поповнити його кількістю і якістю, треба було створити державний кінний завод. Фундаційну грамоту цісарсько-королівського кінного закладу (Császári és Királyi Ménesintézet) Йосиф II підписав 20 грудня 1784 року; 1785 року вже стояли дві казарми. В іншому місці стаття пише, що завод Йосиф II заснував 1785 року за порадою ротмістра кінноти József Csekonics, якого звуть його засновником; поява заводу допомогла знову заселити село. 20 березня 1789 року завод дістав право на крайові ярмарки двічі на рік, 1 квітня й 1 жовтня. Із давніх будівель 53 нині під охороною як пам'ятки.",
+    "hu": "A városról szóló szócikk szerint a török pusztítás után a terület elnéptelenedett. 1702-ben a marosi határőrségnek ítélték, a határőrvidék felszámolása után, 1741-ben pedig a pusztát az Aradi Kincstári Uradalom részére foglalták le; az 1750-es évektől részenként bérbe adták, 1772-ben pedig az egészet tizenkét évre Bogdanovics Bernát vette bérbe.\n\nA Mária Terézia kori örökösödési háborúkban a lóállomány lecsökkent, és pótlására mind számban, mind minőségben állami ménest kellett felállítani. A Császári és Királyi Ménesintézet alapítólevelét II. József 1784. december 20-án írta alá; 1785-ben már állt két kaszárnya. A szócikk másutt azt írja, hogy a ménest II. József 1785-ben alapította Csekonics József lovaskapitány javaslatára, akit megalapítójaként tartanak számon; a ménes elősegítette a falu újratelepülését. 1789. március 20-án a ménes országos vásárjogot kapott, évente kétszer, április 1-jén és október 1-jén. A régi épületekből ma 53 áll műemléki védelem alatt."
+  },
+  "sources": [
+    {
+      "title": "Mezőhegyes – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Mez%C5%91hegyes",
+      "note": "Розділ «Újkor»: історія пустки у XVIII столітті, грамота 20 грудня 1784 року, казарми 1785 року, József Csekonics, ярмаркове право 1789 року, 53 пам'ятки."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/A_mez%C5%91hegyesi_m%C3%A9nesbirtok.jpg",
+      "author": "User:Somogyi Kincső",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_mez%C5%91hegyesi_m%C3%A9nesbirtok.jpg",
+      "caption": {
+        "uk": "Кінний завод Мезьогедєша",
+        "hu": "A mezőhegyesi ménesbirtok"
+      }
+    }
+  ]
+}

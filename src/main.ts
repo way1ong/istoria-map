@@ -154,9 +154,19 @@ function renderChrome() {
 
 function renderBasemapCtl(ctl: MapController) {
   const sel = $<HTMLSelectElement>('basemap-select');
-  sel.innerHTML = availableBasemaps().map((b) => `<option value="${b.id}">${lt(b.title)}</option>`).join('');
+  const list = availableBasemaps();
+  sel.innerHTML = list.map((b) => `<option value="${b.id}">${lt(b.title)}</option>`).join('');
   sel.value = ctl.currentBasemap();
   sel.onchange = () => ctl.setBasemap(sel.value);
+  // Вибір підкладки показуємо, лише коли є з чого вибирати: без інтернету інші підкладки не завантажаться
+  // (мапа сама бере мапу з пристрою), а з однією підкладкою в переліку вибирати нічого.
+  sel.hidden = list.length < 2 || navigator.onLine === false;
+  $('view-map').classList.toggle('no-basemap', sel.hidden);
+}
+
+/** Повзунок прозорості потрібен лише тоді, коли стару мапу вибрано: без накладання він нічого не змінює. */
+function syncOverlayOpacity() {
+  $('overlay-opacity').hidden = !$<HTMLSelectElement>('overlay-select').value;
 }
 
 function renderOverlayCtl(ctl: MapController) {
@@ -170,6 +180,7 @@ function renderOverlayCtl(ctl: MapController) {
   sel.innerHTML = `<option value="">${t('noOverlay')}</option>` + choices.map((c) => `<option value="${c.value}">${c.label}</option>`).join('');
   sel.value = choices.some((c) => c.value === prev) ? prev : '';
   ctl.setOverlay(sel.value || null);
+  syncOverlayOpacity();
   renderOverlayLegend(sel.value || null, sel.value !== prev);
 }
 
@@ -312,10 +323,45 @@ $('sheet').querySelector<HTMLButtonElement>('.close')!.onclick = () => navigate(
 $<HTMLSelectElement>('overlay-select').onchange = (e) => {
   const v = (e.target as HTMLSelectElement).value || null;
   mapCtl?.setOverlay(v);
+  syncOverlayOpacity();
   renderOverlayLegend(v, true);
 };
 $('overlay-legend-btn').onclick = () => { const box = $('overlay-legend'); box.hidden = !box.hidden; };
 $<HTMLInputElement>('overlay-opacity').oninput = (e) => mapCtl?.setOverlayOpacity(Number((e.target as HTMLInputElement).value));
+
+// Ручка вгорі картки місця (телефон): потягнути вниз — картка закривається.
+{
+  const sheet = $('sheet');
+  const handle = sheet.querySelector<HTMLElement>('.handle')!;
+  let y0: number | null = null;
+  let dy = 0;
+  handle.addEventListener('pointerdown', (e) => {
+    y0 = e.clientY;
+    dy = 0;
+    handle.setPointerCapture(e.pointerId);
+    sheet.style.transition = 'none';
+  });
+  handle.addEventListener('pointermove', (e) => {
+    if (y0 === null) return;
+    dy = Math.max(0, e.clientY - y0);
+    sheet.style.transform = `translateY(${dy}px)`;
+  });
+  const end = () => {
+    if (y0 === null) return;
+    y0 = null;
+    sheet.style.transition = '';
+    if (dy > 60) {
+      // доводимо картку донизу й закриваємо; власний зсув прибираємо, коли клас «open» уже знято
+      sheet.style.transform = 'translateY(100%)';
+      navigate(`#/map${state.period ? `?period=${state.period}` : ''}`);
+      window.setTimeout(() => { sheet.style.transform = ''; }, 300);
+    } else {
+      sheet.style.transform = '';
+    }
+  };
+  handle.addEventListener('pointerup', end);
+  handle.addEventListener('pointercancel', end);
+}
 
 // Виноски в текстах: посилання #fn-… не змінюють маршрут, а прокручують до джерела і назад.
 let lastFnRef: HTMLElement | null = null;

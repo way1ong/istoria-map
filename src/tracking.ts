@@ -7,7 +7,7 @@ import { toast } from './ui/toast';
 // ---------- екран не гасне ----------
 type Sentinel = { release(): Promise<void>; addEventListener(type: 'release', cb: () => void): void };
 let sentinel: Sentinel | null = null;
-/** Скільки мап зараз стежать за місцем (основна, «Порівняти»). */
+/** Скільки разів просили тримати екран (мапи, що стежать за місцем, і запис шляху). */
 let holders = 0;
 
 async function acquire(): Promise<void> {
@@ -21,7 +21,11 @@ async function acquire(): Promise<void> {
     if (holders <= 0) { sentinel = null; void s.release(); }
   } catch { /* браузер відмовив (наприклад, режим заощадження заряду) — екран гаснутиме як звичайно */ }
 }
-function hold(delta: number): void {
+/**
+ * Тримати екран увімкненим (+1) або відпустити (−1). Рахунок спільний для всіх, кому це потрібно:
+ * стеження за місцем на мапах і запис шляху (src/tracks.ts); екран гасне, коли рахунок доходить до нуля.
+ */
+export function holdScreen(delta: number): void {
   holders = Math.max(0, holders + delta);
   if (holders > 0) void acquire();
   else if (sentinel) { const s = sentinel; sentinel = null; void s.release().catch(() => undefined); }
@@ -43,7 +47,7 @@ export function watchTracking(map: MLMap, ctl: GeolocateControl, onPosition?: (a
     const now = !!btn && /maplibregl-ctrl-geolocate-(active|background|waiting)/.test(btn.className);
     if (now === on) return;
     on = now;
-    hold(on ? 1 : -1);
+    holdScreen(on ? 1 : -1);
     if (on && !told) { told = true; toast(t('trackOn'), { ms: 5000 }); }
     if (!on) onPosition?.(null);
   };
@@ -56,5 +60,5 @@ export function watchTracking(map: MLMap, ctl: GeolocateControl, onPosition?: (a
   });
   const onClick = (e: Event) => { if ((e.target as HTMLElement).closest?.('.maplibregl-ctrl-geolocate')) later(); };
   map.getContainer().addEventListener('click', onClick);
-  map.once('remove', () => { if (on) { on = false; hold(-1); } });
+  map.once('remove', () => { if (on) { on = false; holdScreen(-1); } });
 }

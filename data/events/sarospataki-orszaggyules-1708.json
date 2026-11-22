@@ -1,0 +1,43 @@
+{
+  "id": "sarospataki-orszaggyules-1708",
+  "title": {
+    "uk": "Шарошпатакські державні збори: воля кріпакам-воякам",
+    "hu": "A sárospataki országgyűlés: szabadság a katonáskodó jobbágyoknak"
+  },
+  "date": {
+    "from": "1708-11-28",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [
+    "sarospataki-var"
+  ],
+  "summary": {
+    "uk": "28 листопада 1708 року в Шарошпатакському замку почалися останні державні збори визвольної війни Ракоці. Вони ухвалили закон, що звільняв з-під влади пана кожного кріпака, який воює за батьківщину.",
+    "hu": "1708. november 28-án a sárospataki várban megkezdődött a Rákóczi-szabadságharc utolsó országgyűlése. Törvényt hozott arról, hogy a hazáért fegyvert fogó jobbágy felszabadul a földesúri joghatóság alól."
+  },
+  "description": {
+    "uk": "За статтею про збори, Ференц Ракоці II скликав їх заради національної єдності й зміцнення війська. Наради почалися 28 листопада 1708 року в замку, в Старому палаці Червоної вежі (Vörös-torony). Це були останні й одні з найважливіших зборів визвольної війни. Тут князь зробив свою відому пропозицію, щоб набір до війська був успішним: кожен кріпак, який візьме зброю й принесе жертву батьківщині, виходить з-під влади пана; таких вояків оселять і нададуть їм привілеї гайдуцьких міст. Збори прийняли пропозицію й ухвалили закон про долю кріпаків, що воюють, відкривши їм шлях до вищого суспільного стану.\n\nТа було вже пізно. Після поразки під Trencsén розвіялися міжнародні надії, станові інтереси дворянства брали гору над інтересами країни, а виснажена війною й чумою земля дедалі гірше могла утримувати військо. Генерал Heister зайняв гірничі міста, Ocskay перейшов на бік імператора, бригадира Bezerédj заарештували за звинуваченням у зраді; у війську стало видно ознаки розкладу, селянство збайдужіло. Закони шарошпатакських зборів уже не могли відвернути поразки.",
+    "hu": "Az országgyűlésről szóló szócikk szerint II. Rákóczi Ferenc a nemzeti összefogás és a hadsereg megerősítése céljából hívta össze. A tanácskozások 1708. november 28-án kezdődtek a várban, a Vörös-torony Öregpalotájában. Ez volt a szabadságharc utolsó, de egyik legjelentősebb országgyűlése. Itt tette meg a fejedelem sokat emlegetett javaslatát a katonaállítás sikere érdekében: aki a jobbágyok közül fegyvert fog és áldozatot hoz a hazáért, szabaduljon fel a földesúri joghatóság alól; ezeket a katonákat letelepítik, és megkapják a hajdúvárosok kiváltságait. Az országgyűlés elfogadta a javaslatot, és törvényt alkotott a harcoló jobbágyok sorsáról, biztosítva társadalmi felemelkedésük lehetőségét.\n\nEkkor azonban már késő volt. A trencséni csatavesztéssel szertefoszlottak a nemzetközi remények, a nemesi rend érdekei felülkerekedtek az ország érdekein, a háborúban kimerült, pestissel sújtott ország pedig egyre kevésbé tudta biztosítani a hadviselés feltételeit. Heister elfoglalta a bányavárosokat, Ocskay átállt a császári oldalra, Bezerédj brigadérost árulás vádjával letartóztatták; a seregben láthatóvá váltak a bomlás jelei, a parasztság közömbössé vált. A sárospataki országgyűlés törvényei már nem tudták megakadályozni a vereséget."
+  },
+  "sources": [
+    {
+      "title": "Sárospataki országgyűlés – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/S%C3%A1rospataki_orsz%C3%A1ggy%C5%B1l%C3%A9s",
+      "note": "Уся стаття: початок 28 листопада 1708 року в Старому палаці Червоної вежі, закон про кріпаків-вояків, становище після поразки під Trencsén."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/A_s%C3%A1rospataki_R%C3%A1k%C3%B3czi-v%C3%A1r_l%C3%A9g_fot%C3%B3n.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_s%C3%A1rospataki_R%C3%A1k%C3%B3czi-v%C3%A1r_l%C3%A9g_fot%C3%B3n.jpg",
+      "caption": {
+        "uk": "Замок Ракоці в Шарошпатаку з повітря",
+        "hu": "A sárospataki Rákóczi-vár légi fotón"
+      }
+    }
+  ]
+}

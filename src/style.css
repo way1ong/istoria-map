@@ -76,12 +76,12 @@ main { flex: 1; min-height: 0; position: relative; overflow: hidden; overflow: c
   background: linear-gradient(to top, var(--bg) 75%, transparent);
 }
 .tl-all { flex: none; padding: 8px 12px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); font-size: 14px; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
-.tl-all.active { background: var(--fg); color: var(--bg); border-color: var(--fg); }
 .tl-main { flex: 1; min-width: 0; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 6px 12px 4px; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
 .tl-label { display: flex; align-items: center; gap: 6px; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .tl-label .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
 .tl-label .yr { color: var(--muted); font-variant-numeric: tabular-nums; }
-.tl-all-mode .tl-label { opacity: .55; }
+/* показано всі періоди: у підписі підказка замість назви періоду */
+.tl-all-mode .tl-label .yr { font-variant-numeric: normal; }
 .tl-range { width: 100%; margin: 4px 0 0; accent-color: var(--c, var(--accent)); height: 28px; }
 .tl-ticks { display: flex; height: 4px; border-radius: 2px; overflow: hidden; margin: 0 2px; }
 .tl-ticks span { flex: 1; background: var(--c); opacity: .7; }
@@ -89,6 +89,10 @@ main { flex: 1; min-height: 0; position: relative; overflow: hidden; overflow: c
 /* Перемикач підкладки і панель старих мап */
 .basemap-select { position: absolute; top: 10px; left: 10px; right: 56px; font: inherit; font-size: 13px; background: var(--card); color: inherit; border: 1px solid var(--line); border-radius: 10px; padding: 6px 8px; }
 .overlay-ctl { top: 52px !important; }
+/* вибір підкладки сховано (немає інтернету чи підкладка одна): решта піднімається на її місце */
+.no-basemap .overlay-ctl { top: 10px !important; }
+.no-basemap .filter-pill { top: 52px; }
+.no-basemap .ov-legend { top: 54px; }
 
 .overlay-ctl {
   position: absolute; top: 10px; left: 10px; right: 56px; display: flex; gap: 8px; align-items: center;
@@ -107,7 +111,9 @@ main { flex: 1; min-height: 0; position: relative; overflow: hidden; overflow: c
   z-index: 10;
 }
 .sheet.open { transform: none; }
-.sheet .handle { width: 40px; height: 4px; border-radius: 2px; background: var(--line); margin: 0 auto 10px; }
+/* Ручка: за неї картку тягнуть донизу, щоб закрити (src/main.ts); смуга на всю ширину, щоб легко влучити пальцем */
+.sheet .handle { position: relative; height: 24px; margin: -12px 40px 0; touch-action: none; cursor: grab; }
+.sheet .handle::before { content: ''; position: absolute; left: 50%; top: 10px; width: 40px; height: 4px; margin-left: -20px; border-radius: 2px; background: var(--line); }
 .sheet h2 { font-size: 18px; margin: 0 0 6px; }
 .sheet .close { position: absolute; top: 8px; right: 10px; font-size: 22px; color: var(--muted); padding: 4px 8px; }
 .meta { color: var(--muted); font-size: 13px; margin: 2px 0 8px; display: flex; flex-wrap: wrap; gap: 6px 12px; }
@@ -138,7 +144,8 @@ figcaption { font-size: 12px; color: var(--muted); }
 .marker-label { font-size: 12px; }
 
 /* Атрибуцію і масштаб піднімаємо над шкалою періодів */
-#view-map .maplibregl-ctrl-bottom-left, #view-map .maplibregl-ctrl-bottom-right { bottom: calc(56px + env(safe-area-inset-bottom)); }
+/* підпис джерел мапи — над повзунком років, а не поверх його підпису (повзунок заввишки ~83 px) */
+#view-map .maplibregl-ctrl-bottom-left, #view-map .maplibregl-ctrl-bottom-right { bottom: calc(76px + env(safe-area-inset-bottom)); }
 .footnotes { word-break: break-word; }
 .footnotes li { scroll-margin-top: 64px; transition: background-color .3s; border-radius: 4px; }
 .footnotes .fn-back { text-decoration: none; padding: 0 6px; }
@@ -217,6 +224,8 @@ figcaption { font-size: 12px; color: var(--muted); }
 .mtool-ctrl .mtool-btn { display: flex; align-items: center; justify-content: center; color: #1f2937; }
 .mtool-ctrl .mtool-btn.open { background: #fde68a; }
 .mtool-ctrl .mtool-filter.on { color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); }
+.mtool-ctrl .mtool-marks.rec { position: relative; }
+.mtool-ctrl .mtool-marks.rec::after { content: ''; position: absolute; top: 3px; right: 3px; width: 8px; height: 8px; border-radius: 50%; background: #dc2626; box-shadow: 0 0 0 2px #fff; }
 .mtool { position: absolute; top: 10px; left: 10px; right: 56px; z-index: 6; max-height: calc(100% - 190px); display: flex; flex-direction: column; background: var(--card); color: var(--fg); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 6px 24px rgba(0,0,0,.18); }
 .mtool[hidden] { display: none; }
 .mtool-head { display: flex; align-items: center; justify-content: space-between; padding: 8px 6px 4px 12px; }
@@ -249,7 +258,6 @@ figcaption { font-size: 12px; color: var(--muted); }
 .mtool .chip.on .cnt { color: #fde68a; }
 .mtool-check { display: flex; align-items: center; gap: 8px; margin: 10px 2px 4px; font-size: 14px; }
 .mtool-reset { margin-top: 8px; font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); cursor: pointer; }
-.mtool-reset:disabled { opacity: .45; cursor: default; }
 .mtool-seg { display: flex; gap: 0; margin: 2px 0 4px; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
 .mtool-seg button { flex: 1; font: inherit; font-size: 13px; padding: 7px 6px; border: none; background: var(--bg); color: var(--fg); cursor: pointer; }
 .mtool-seg button.on { background: var(--accent); color: #fff; }
@@ -371,6 +379,22 @@ textarea.mtool-input { font-family: inherit; line-height: 1.35; resize: vertical
 .mk-info { font-variant-numeric: tabular-nums; }
 a.off-btn { display: inline-block; text-decoration: none; }
 .mk-del { color: var(--err); }
+/* Вкладки «Мітки | Шляхи» в панелі власних даних */
+.mk-tabs { margin-bottom: 10px; }
+.mk-tabs button { font-weight: 600; }
+/* Шляхи: запис і стан */
+.tr-stop { border-color: var(--err); color: var(--err); font-weight: 600; }
+.tr-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--err); animation: tr-pulse 1.4s ease-in-out infinite; }
+@keyframes tr-pulse { 50% { opacity: .25; } }
+@media (prefers-reduced-motion: reduce) { .tr-dot { animation: none; } }
+.tr-live { font-size: 13px; color: var(--fg); font-variant-numeric: tabular-nums; }
+.tr-warn { color: var(--err); }
+/* Вимірювання: відстань, площа, периметр */
+.maplibregl-canvas-container.measuring, .maplibregl-canvas-container.measuring canvas { cursor: crosshair !important; }
+.ms-out { margin: 6px 2px 4px; display: grid; gap: 4px; }
+.ms-out div { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.ms-out dt { font-size: 13px; color: var(--muted); }
+.ms-out dd { margin: 0; font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums; text-align: right; }
 
 /* Кнопки картки місця: «Відкрити картку» і «Маршрут сюди» */
 .card-btns { display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0 6px; }

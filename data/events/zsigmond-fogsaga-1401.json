@@ -1,0 +1,49 @@
+{
+  "id": "zsigmond-fogsaga-1401",
+  "title": {
+    "uk": "Магнати ув'язнюють короля Сигізмунда",
+    "hu": "A főurak fogságba vetik Zsigmond királyt"
+  },
+  "date": {
+    "from": "1401-04-28",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [
+    "siklosi-var",
+    "budai-varnegyed"
+  ],
+  "summary": {
+    "uk": "28 квітня 1401 року бунтівні магнати схопили короля Сигізмунда Люксембурзького в будайському палаці й усунули його від влади. Його тримали у Вишеграді, потім у Шиклоші, замку роду Garai, де Miklós Garai уклав з ним союз і випустив на волю.",
+    "hu": "1401. április 28-án a fellázadt főurak a budai palotában foglyul ejtették Luxemburgi Zsigmond királyt, és felfüggesztették uralkodói jogainak gyakorlását. Visegrádon, majd a Garaiak siklósi várában őrizték, ahol Garai Miklós szövetséget kötött vele, és szabadon engedte."
+  },
+  "description": {
+    "uk": "За статтею про змову, розгульне й марнотратне життя Сигізмунда, а надто щедрі надання чужинцям, що зібралися довкола нього, дедалі більше дратували знать. 28 квітня 1401 року ліга Kanizsai на чолі з естергомським архієпископом János Kanizsai, еґерським єпископом Tamás Ludányi, враньським пріором Imre Bebek і палатином Detre Bebek схопила короля в будайському палаці й призупинила його право правити.\n\nБунтівники не дійшли згоди щодо того, хто має бути королем. Тоді на бік Сигізмунда стала ліга Garai: Miklós Garai перевіз короля до власного замку в Шиклоші, уклав з ним союз і випустив із полону. За статтею про Шиклошський замок, короля спершу тримали у Вишеграді, а в Шиклоші його врешті, за порадою місцевого пана, повернули до королівської гідності; союз скріпили шлюбами: король і барон Garai одружилися з двома доньками графа Cillei. Ліга Garai, яку звуть і Шиклошською, врятувала королівство Сигізмунда. Архієпископ Kanizsai далі змовлявся проти короля й приєднався до тих, хто 5 серпня 1403 року коронував у місті Zára Владислава Неаполітанського, але й ця спроба провалилася.",
+    "hu": "Az összeesküvésről szóló szócikk szerint Zsigmond kicsapongó és pazarló életmódja, különösen a köréje sereglett idegeneknek tett bőkezű adományai egyre fokozták az elégedetlenséget. 1401. április 28-án a Kanizsai-liga Kanizsai János esztergomi érsek, Ludányi Tamás egri püspök, Bebek Imre vránai perjel és Bebek Detre nádor vezetésével a budai palotában foglyul ejtette a királyt, és felfüggesztette uralkodói jogainak gyakorlásában.\n\nA lázadók nem jutottak egységre a király személyét illetően. Ekkor a Garai-liga a király mellett lépett fel: Garai Miklós saját várába, Siklósra szállította Zsigmondot, szövetséget kötött vele, és kiengedte a fogságból. A siklósi várról szóló szócikk szerint a királyt előbb Visegrádon őrizték, Siklóson pedig a helyi földesúr tanácsára végül visszahelyezték uralkodói méltóságába; a szövetséget házasságok pecsételték meg: a király és Garai báró feleségül vették Cillei gróf két leányát. A Garai- vagy más néven Siklósi-liga megmentette Zsigmond királyságát. Kanizsai érsek tovább szervezkedett a király ellen, és csatlakozott azokhoz, akik 1403. augusztus 5-én Zárában királlyá koronázták Nápolyi Lászlót, de ez a kísérlet is elbukott."
+  },
+  "sources": [
+    {
+      "title": "A Zsigmond király elleni összeesküvés és fogsága 1401-ben – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/A_Zsigmond_kir%C3%A1ly_elleni_%C3%B6sszeesk%C3%BCv%C3%A9s_%C3%A9s_fogs%C3%A1ga_1401-ben",
+      "note": "Вступ і розділ «Az összeesküvés»: 28 квітня 1401 року, учасники, Шиклош, ліга Garai, 1403 рік."
+    },
+    {
+      "title": "Siklósi vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Sikl%C3%B3si_v%C3%A1r",
+      "note": "Розділ «Története»: короля після Вишеграда тримали в Шиклоші; союз і шлюби."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/A_sikl%C3%B3si_v%C3%A1r_mad%C3%A1rt%C3%A1vlatb%C3%B3l.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_sikl%C3%B3si_v%C3%A1r_mad%C3%A1rt%C3%A1vlatb%C3%B3l.jpg",
+      "caption": {
+        "uk": "Шиклошський замок з пташиного польоту",
+        "hu": "A siklósi vár madártávlatból"
+      }
+    }
+  ]
+}

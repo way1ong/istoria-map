@@ -1,0 +1,33 @@
+{
+  "id": "pragmatica-sanctio-1722",
+  "title": {
+    "uk": "Угорські стани приймають Прагматичну санкцію",
+    "hu": "A magyar rendek elfogadják a Pragmatica sanctiót"
+  },
+  "date": {
+    "from": "1722-06-30",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [],
+  "summary": {
+    "uk": "30 червня 1722 року в Пожоні угорські стани проголосували за Прагматичну санкцію: спадкування трону Габсбургами по жіночій лінії й нероздільність їхніх земель (закони 1723 року). Це відкрило шлях до трону Марії Терезії.",
+    "hu": "1722. június 30-án Pozsonyban a magyar rendek megszavazták a Pragmatica sanctiót: a Habsburg-ház nőági örökösödését és országainak oszthatatlanságát (1723. évi törvények). Ez nyitotta meg az utat Mária Terézia trónra lépése előtt."
+  },
+  "description": {
+    "uk": "За статтею про Прагматичну санкцію, імператор Карл VI (угорський король Карл III) не мав сина, тож віденський двір домагався, щоб великі держави й дворянство власних країн визнали спадкування по жіночій лінії. 19 квітня 1713 року у віденському Бурзі перед міністрами й таємними радниками зачитано родинну угоду 1703 року, і Карл додав: усі його спадкові королівства й провінції мають переходити нероздільно, також по жіночій лінії, за правом первородства. Відтоді цей документ звуть Прагматичною санкцією.\n\nХорватські стани ще в березні 1712 року самі запропонували поширити спадкування на жіночу лінію; угорські стани запідозрили, що це підказав двір. Відень двічі вів з ними переговори про спадкування по жіночій лінії, але угорці ставили умови, і переговори застрягли. Після трансільванських зборів у Nagyszeben 30 червня 1722 року в Пожоні за санкцію проголосували й угорські стани, окремо наголосивши: усі спадкові країни Австрійського дому разом з майбутніми набутками заради більшої безпеки й взаємної оборони навіки утворюють нероздільний і невіддільний союз, а право обирати короля відновиться лише тоді, коли згасне весь панівний дім (статті I–II законів 1723 року). За статтею, за цим стояло розуміння, що ні Трансільванія, ні Угорське королівство не здатні самі оборонитися від зовнішніх держав, насамперед від турків.\n\nДе саме в Пожоні засідали стани, стаття не каже, тому подія не має точки на мапі.",
+    "hu": "A Pragmatica sanctióról szóló szócikk szerint VI. Károly császárnak (III. Károly magyar királynak) nem volt fia, ezért a bécsi udvar arra törekedett, hogy a nagyhatalmakkal és saját országainak nemességével is elfogadtassa a leányági örökösödést. 1713. április 19-én a bécsi Burgban a miniszterek és titkos tanácsosok előtt felolvasták az 1703-as családi szerződést, Károly pedig hozzáfűzte: valamennyi örökös királysága és tartománya feloszthatatlanul öröklődjön nőágon is, az elsőszülöttségi jog alapján. Azóta nevezik ezt a dokumentumot Pragmatica sanctiónak.\n\nA horvát rendek már 1712 márciusában maguk javasolták az öröklés kiterjesztését a nőágra; a magyar rendek azt gyanították, hogy ezt az udvar sugallta. Bécs két alkalommal is tárgyalt velük a nőági örökösödésről, a magyarok azonban feltételeket szabtak, így a tárgyalások elakadtak. A Nagyszebenbe összehívott erdélyi országgyűlés után 1722. június 30-án Pozsonyban a magyar rendek is megszavazták, külön hangsúlyozva: az Ausztriai-ház valamennyi örökös országa a jövőbeni szerzeményekkel együtt a nagyobb biztonság és a kölcsönös védelem érdekében örökre oszthatatlan és elválaszthatatlan szövetséget alkosson, és a királyválasztási jog csak az egész uralkodóház kihalása esetén lépjen újra érvénybe (1723: I–II. tc.). A szócikk szerint ezt az a felismerés diktálta, hogy sem Erdély, sem a Magyar Királyság nem képes egyedül megvédeni magát a külső hatalmak, kivált a törökök ellen.\n\nHogy a rendek Pozsonyban pontosan hol üléseztek, arról a szócikk nem szól, ezért az eseménynek nincs pontja a térképen."
+  },
+  "sources": [
+    {
+      "title": "Pragmatica sanctio – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Pragmatica_sanctio",
+      "note": "Розділ «A III. Károly-féle pragmatica sanctio»: оголошення 19 квітня 1713 року, хорватська пропозиція 1712 року, голосування угорських станів 30 червня 1722 року, статті I–II 1723 року."
+    },
+    {
+      "title": "Mária Terézia magyar királynő – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/M%C3%A1ria_Ter%C3%A9zia_magyar_kir%C3%A1lyn%C5%91",
+      "note": "Вступ: Прагматична санкція мала забезпечити спадкування Марії Терезії."
+    }
+  ]
+}
