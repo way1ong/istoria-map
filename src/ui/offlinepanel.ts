@@ -7,7 +7,7 @@ import {
   currentJob, deletePack, downloadPack, installed, loadManifest, offlineSupported, onOfflineChange, PACK_IDS, pending,
   photosManifest, stopDownload, storageInfo, type DownloadResult, type PackId, type PackManifest, type PacksManifest,
 } from '../offline';
-import { areaKm, areasOutline, areasStorage, deleteArea, downloadArea, nearestPlace, planArea, savedAreas, setAreasOutline, type AreaPlan } from '../offlineareas';
+import { areaKm, areasOutline, areasStorage, deleteArea, downloadArea, nearestPlace, peekAreas, planArea, savedAreas, setAreasOutline, setAreasPanelOpen, type AreaPlan } from '../offlineareas';
 import { placeById } from '../data';
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
@@ -161,8 +161,7 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
         <summary><span class="off-saved-t">${esc(t('offAreaSaved').replace('{n}', String(savedAreas().length)))}</span><span class="off-size">${esc(t('offAreasSum').replace('{size}', fmtBytes(total)))}</span></summary>
         <ul class="off-area-list">${list}</ul>
         <p class="off-note">${esc(t('offAreasShared'))}</p>
-      </details>
-      <label class="off-check"><input type="checkbox" data-act="areas-outline" ${areasOutline() ? 'checked' : ''} /> ${esc(t('offAreasOutline'))}</label>` : ''}
+      </details>` : ''}
     </li>`;
   };
 
@@ -238,7 +237,13 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
         ? `<button type="button" class="off-btn primary off-install" data-act="install">${esc(t('install'))}</button>`
         : `<p class="mtool-note">${esc(t('installHint'))}</p>`;
 
+    // Перемикач рамок збережених ділянок — першим рядком панелі, щоб не шукати його внизу розділу про старі мапи
+    // (рамки малює src/map.ts); без збережених ділянок його немає.
+    const outline = savedAreas().length
+      ? `<label class="off-check off-check-top"><input type="checkbox" data-act="areas-outline" ${areasOutline() ? 'checked' : ''} /> ${esc(t('offAreasOutline'))}</label>`
+      : '';
     body.innerHTML = `
+      ${outline}
       <p class="off-net ${online ? 'on' : 'off'}">${esc(t(online ? 'offOnline' : 'offOffline'))}</p>
       ${offlineSupported() ? `<p class="mtool-note">${esc(t('offIntro'))}</p><ul class="off-packs">${packs}</ul>${storage}` : `<p class="mtool-note">${esc(t('offNoSupport'))}</p>`}
       <div class="off-install-box">${install}</div>`;
@@ -276,7 +281,8 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     }
     if (act === 'area-show') {
       const a = savedAreas().find((x) => x.id === b.dataset.id);
-      if (a) { opts.close(); map.fitBounds([[a.bbox[0], a.bbox[1]], [a.bbox[2], a.bbox[3]]], { padding: 20, duration: 800 }); }
+      // панель закривається, а межі без старої мапи ховаються — лишаємо їх ще на кілька секунд, щоб було видно ділянку
+      if (a) { peekAreas(); opts.close(); map.fitBounds([[a.bbox[0], a.bbox[1]], [a.bbox[2], a.bbox[3]]], { padding: 20, duration: 800 }); }
       return;
     }
     if (act === 'area-del') {
@@ -313,7 +319,7 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     try { localStorage.setItem(AREAS_OPEN_KEY, areasOpen ? '1' : '0'); } catch { /* приватний режим */ }
   };
   body.addEventListener('toggle', onToggle, true);
-  // перемикач «Показувати межі ділянок на мапі» (межі малює src/map.ts)
+  // перемикач «Показувати рамки збережених ділянок» угорі панелі (рамки малює src/map.ts)
   body.onchange = (e) => {
     const el = e.target;
     if (el instanceof HTMLInputElement && el.dataset.act === 'areas-outline') setAreasOutline(el.checked);
@@ -327,7 +333,10 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
   const onMove = () => { clearTimeout(moveTimer); moveTimer = window.setTimeout(updatePlan, 400); };
   map.on('moveend', onMove);
   updatePlan();
+  // поки панель відкрита, межі збережених ділянок видно й без старої мапи (src/map.ts, areasRelevant)
+  setAreasPanelOpen(true);
   return () => {
+    setAreasPanelOpen(false);
     seq++;
     planSeq++;
     clearTimeout(moveTimer);

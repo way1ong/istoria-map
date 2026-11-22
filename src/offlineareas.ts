@@ -44,7 +44,7 @@ export function onAreasChange(cb: () => void): () => void {
 }
 function emitAreas() { for (const cb of areaListeners) cb(); }
 
-/** Чи показувати межі збережених ділянок на мапі (типово так; перемикач у панелі «Без інтернету»). */
+/** Чи дозволено показувати межі збережених ділянок (типово так; перемикач у панелі «Без інтернету»); коли саме їх видно — areasRelevant. */
 const OUTLINE_LS = 'istoria.offline.areasOutline';
 export function areasOutline(): boolean {
   try { return localStorage.getItem(OUTLINE_LS) !== '0'; } catch { return true; }
@@ -52,6 +52,31 @@ export function areasOutline(): boolean {
 export function setAreasOutline(v: boolean): void {
   try { localStorage.setItem(OUTLINE_LS, v ? '1' : '0'); } catch { /* приватний режим */ }
   emitAreas();
+}
+
+/** Панель «Без інтернету» відкрита: людина саме керує ділянками, тож межі видно й без старої мапи. */
+let panelOpen = false;
+export function setAreasPanelOpen(v: boolean): void {
+  if (panelOpen === v) return;
+  panelOpen = v;
+  emitAreas();
+}
+/** «Показати» в списку ділянок закриває панель: межі ще кілька секунд лишаються на мапі, щоб було видно, де ділянка. */
+let peekTimer = 0;
+export function peekAreas(ms = 8000): void {
+  clearTimeout(peekTimer);
+  peekTimer = window.setTimeout(() => { peekTimer = 0; emitAreas(); }, ms);
+  emitAreas();
+}
+/**
+ * Чи доречні зараз межі ділянок на мапі. Ділянки стосуються лише старих мап з оригіналами IIIF (Spezialkarte,
+ * Ліпскі), тому без такої накладки меж не видно — хіба що відкрита панель «Без інтернету» або щойно натиснуто
+ * «Показати». Правило проєкту: показувати лише тоді, коли потрібно.
+ */
+export function areasRelevant(overlay: { georef?: string; series?: string } | null): boolean {
+  if (panelOpen || peekTimer) return true;
+  if (!overlay) return false;
+  return !!(overlay.georef || mapSeries.find((s) => s.id === overlay.series)?.georef);
 }
 
 /**
