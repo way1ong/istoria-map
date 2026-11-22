@@ -1,0 +1,516 @@
+{
+  "illustrations": {
+    "kolked-altinum-legifoto": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/K%C3%B6lked_-_aerial_photography_of_the_Roman_Castrum.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:K%C3%B6lked_-_aerial_photography_of_the_Roman_Castrum.jpg",
+      "caption": {
+        "uk": "Римський форт Альтінум (Altinum) біля Кьолкеда (Kölked) з повітря: колись він стояв на Дунаї, а тепер його вали ледь вирізняються на місцевості; на передньому плані — ландшафт, сформований Дунаєм",
+        "hu": "Az egykor a Duna mellett állt altinumi római erőd Kölked határában, légi felvétel: sáncai alig rajzolódnak ki a környezetből; előtérben a Duna formálta táj"
+      }
+    },
+    "pesti-arviz-1838": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Budapesti_%C3%A1rv%C3%ADz_John_H%C3%BCrlimann_1838.jpg",
+      "author": "John Hürlimann (1793–1850)",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Budapesti_%C3%A1rv%C3%ADz_John_H%C3%BCrlimann_1838.jpg",
+      "caption": {
+        "uk": "Повінь 1838 року на площі Színház tér у Пешті, кольорова акватинта",
+        "hu": "Árvíz a pesti Színház téren, 1838, színezett akvatinta"
+      }
+    },
+    "szazhalombatta-halomsir-115": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Sz%C3%A1zhalombattai_haloms%C3%ADr.jpg",
+      "author": "Peyerk",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Sz%C3%A1zhalombattai_haloms%C3%ADr.jpg",
+      "caption": {
+        "uk": "Курган № 115, розкопаний для показу, в археологічному парку Сасгаломбатти (Százhalombatta), 2009",
+        "hu": "A bemutatásra feltárt 115. számú halomsír a százhalombattai régészeti parkban, 2009"
+      }
+    },
+    "veroce-romai-erod": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Ver%C5%91ce%2C_r%C3%B3mai_er%C5%91d_maradv%C3%A1nyai.JPG",
+      "author": "Kossuthzsuzsa (hu.wikipedia)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Ver%C5%91ce,_r%C3%B3mai_er%C5%91d_maradv%C3%A1nyai.JPG",
+      "caption": {
+        "uk": "Рештки римського плацдармного укріплення (форту) у Verőce над Дунаєм, 2015",
+        "hu": "Római hídfőállás (erőd) maradványai Verőcén, a Duna partján, 2015"
+      }
+    },
+    "zalavar-varsziget-legifoto": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Zalav%C3%A1r_-_l%C3%A9gi_felv%C3%A9tel.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Zalav%C3%A1r_-_l%C3%A9gi_felv%C3%A9tel.jpg",
+      "caption": {
+        "uk": "Острів Vársziget у Зала-варі (Zalavár) з повітря, 2018",
+        "hu": "Zalavár, Vársziget – légi felvétel, 2018"
+      }
+    },
+    "szolnok-1617": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Szolnok1617.jpg",
+      "author": "Georg Braun, Frans Hogenberg; Georg Hoefnagel",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szolnok1617.jpg",
+      "caption": {
+        "uk": "Сольнок (Szolnok) у 1617 році, гравюра з атласу міст",
+        "hu": "Szolnok 1617-ben, metszet egy városatlaszból"
+      }
+    },
+    "ecsedi-lap-1783": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Planum_lacus_Etsediensis_L%C3%A1p_dicti%2C_cum_circum_jacentibus_possessionibus.jpg",
+      "author": "Cyrillus Mezeő",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Planum_lacus_Etsediensis_L%C3%A1p_dicti,_cum_circum_jacentibus_possessionibus.jpg",
+      "caption": {
+        "uk": "Мапа Ечеді-лап (Ecsedi-láp) і довколишніх маєтків 1783 року",
+        "hu": "Az Ecsedi-láp és a környező birtokok térképe, 1783"
+      }
+    },
+    "martely-holt-tisza": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Martelyi_Holt-Tisza_molo.jpg",
+      "author": "Azagi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Martelyi_Holt-Tisza_molo.jpg",
+      "caption": {
+        "uk": "Стариця Тиси біля Мартей (Mártély): причал із човнами, 2023",
+        "hu": "A Mártély melletti Tisza-holtág egyik mólója a kikötött csónakokkal, 2023"
+      }
+    },
+    "vaci-dunaag-1975": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/K%C3%B6z%C3%A9pen_a_v%C3%A1ci_Duna-%C3%A1g%2C_balra_a_Szentendrei-sziget%2C_jobbra_a_sz%C3%A1rny_felett_Dunakeszi_l%C3%A1tszik._Fortepan_9728.jpg",
+      "author": "FOTO:FORTEPAN / MHSZ",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:K%C3%B6z%C3%A9pen_a_v%C3%A1ci_Duna-%C3%A1g,_balra_a_Szentendrei-sziget,_jobbra_a_sz%C3%A1rny_felett_Dunakeszi_l%C3%A1tszik._Fortepan_9728.jpg",
+      "caption": {
+        "uk": "Вацький рукав Дунаю з літака, 1975: ліворуч острів Сентендре (Szentendrei-sziget), праворуч над крилом — Dunakeszi",
+        "hu": "Középen a váci Duna-ág, balra a Szentendrei-sziget, jobbra a szárny felett Dunakeszi, 1975"
+      }
+    },
+    "vertesszolos-oskori-telep": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/V%C3%A9rtessz%C5%91l%C5%91s_paleolitic_locality_site_I_view.JPG",
+      "author": "Ajznbony",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A9rtessz%C5%91l%C5%91s_paleolitic_locality_site_I_view.JPG",
+      "caption": {
+        "uk": "Палеолітична стоянка у Вертешселеші (Vértesszőlős), ділянка I, 2010",
+        "hu": "A vértesszőlősi őskőkori lelőhely I. lelőhelye, 2010"
+      }
+    },
+    "vonaldiszes-edeny-plzen": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Linear_pottery%2C_Museum_of_Western_Bohemia%2C_187681.jpg",
+      "author": "Zde",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Linear_pottery,_Museum_of_Western_Bohemia,_187681.jpg",
+      "caption": {
+        "uk": "Багато оздоблена посудина культури лінійно-стрічкової кераміки, Західночеський музей у Пльзені (Чехія)",
+        "hu": "Gazdagon díszített edény a vonaldíszes kerámia kultúrájából, Nyugat-csehországi Múzeum, Plzeň"
+      }
+    },
+    "iv-bela-kepes-kronika": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/B%C3%A9la_IV_%28Chronicon_Pictum_126%29.jpg",
+      "author": {
+        "uk": "невідомий автор",
+        "hu": "ismeretlen szerző"
+      },
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:B%C3%A9la_IV_(Chronicon_Pictum_126).jpg",
+      "caption": {
+        "uk": "Король Бела IV у королівських регаліях, мініатюра Ілюстрованої хроніки (близько 1360)",
+        "hu": "IV. Béla uralkodói díszben, a Képes krónika miniatúrája (1360 körül)"
+      }
+    },
+    "harom-reszre-szakadt-orszag-1572": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Central_europe_1572_hu.svg",
+      "author": "PANONIAN",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Central_europe_1572_hu.svg",
+      "caption": {
+        "uk": "Угорське королівство, поділене на три частини, 1572 рік (сучасна мапа з угорськими підписами)",
+        "hu": "A három részre szakadt Magyar Királyság területe 1572-ben"
+      }
+    },
+    "vaci-csata-1684-metszet": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/B%C3%A1nlaky_Battle_of_V%C3%A1c_1684_%28June_27%29.jpg",
+      "author": {
+        "uk": "невідомий автор",
+        "hu": "ismeretlen szerző"
+      },
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:B%C3%A1nlaky_Battle_of_V%C3%A1c_1684_(June_27).jpg",
+      "caption": {
+        "uk": "Битва під Вацом 27 червня 1684 року, перед облогою Буди: гравюра",
+        "hu": "Váci csata, 1684. június 27. (Buda 1684-es ostroma előtt), metszet"
+      }
+    },
+    "trianon-1920-junius-4": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/1920._j%C3%BAnius_4._Magyarok_Trianonban.jpg",
+      "author": "Mondial Photo-Presse",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:1920._j%C3%BAnius_4._Magyarok_Trianonban.jpg",
+      "caption": {
+        "uk": "4 червня 1920 року, за кілька хвилин після підписання Тріанонського договору: голова угорської делегації Ágost Benárd (ліворуч, з циліндром у руці) і Alfréd Drasche-Lázár (праворуч, з непокритою головою) виходять з палацу Великий Тріанон у Версалі",
+        "hu": "1920. június 4-én, néhány perccel a trianoni békeszerződés aláírása után Benárd Ágost küldöttségvezető (balra, cilinderrel a kezében) és Drasche-Lázár Alfréd (jobbra, fedetlen fővel) elhagyja a versailles-i Nagy Trianon kastélyt"
+      }
+    },
+    "dunakeszi-repuloter-1974": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Dunakeszi_rep%C3%BCl%C5%91t%C3%A9r_1974%2C_vitorl%C3%A1z%C3%B3_rep%C3%BCl%C5%91g%C3%A9pek_%C3%A9s_vontat%C3%B3-rep%C3%BCl%C5%91g%C3%A9pek._Fortepan_15353.jpg",
+      "author": "FOTO:FORTEPAN / MHSZ",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Dunakeszi_rep%C3%BCl%C5%91t%C3%A9r_1974,_vitorl%C3%A1z%C3%B3_rep%C3%BCl%C5%91g%C3%A9pek_%C3%A9s_vontat%C3%B3-rep%C3%BCl%C5%91g%C3%A9pek._Fortepan_15353.jpg",
+      "caption": {
+        "uk": "Аеродром Dunakeszi, 1974: планери типів Rubik і PZL та літаки-буксирувальники PZL-101A Gawron",
+        "hu": "Dunakeszi repülőtér, 1974: Rubik és PZL típusú vitorlázó repülőgépek, valamint PZL-101A Gawron típusú vontató-repülőgépek"
+      }
+    },
+    "dunakeszi-hazgyar-1970": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Dunakeszi_a_h%C3%A1zgy%C3%A1r_avat%C3%A1sa_1970._m%C3%A1rcius_27-%C3%A9n._Fortepan_87140.jpg",
+      "author": "FOTO:FORTEPAN / Urbán Tamás",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Dunakeszi_a_h%C3%A1zgy%C3%A1r_avat%C3%A1sa_1970._m%C3%A1rcius_27-%C3%A9n._Fortepan_87140.jpg",
+      "caption": {
+        "uk": "Відкриття домобудівного комбінату в Dunakeszi 27 березня 1970 року",
+        "hu": "A dunakeszi házgyár avatása 1970. március 27-én"
+      }
+    },
+    "aquincum-polgarvaros": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Polg%C3%A1rv%C3%A1ros1.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Polg%C3%A1rv%C3%A1ros1.jpg",
+      "caption": {
+        "uk": "Руїни цивільного міста Аквінкум",
+        "hu": "Az aquincumi polgárváros romjai"
+      }
+    },
+    "valentinianus-erme": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/ValentinianI.jpg",
+      "author": {
+        "uk": "невідомий автор",
+        "hu": "ismeretlen szerző"
+      },
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:ValentinianI.jpg",
+      "caption": {
+        "uk": "Монета Валентиніана I",
+        "hu": "I. Valentinianus érméje"
+      }
+    },
+    "dunakeszi-kikotoerod-2020": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Kik%C3%B6t%C5%91er%C5%91d.jpg",
+      "author": "KerekesDora",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kik%C3%B6t%C5%91er%C5%91d.jpg",
+      "caption": {
+        "uk": "Залишки пізньоримського портового форту в Dunakeszi, 2020",
+        "hu": "A dunakeszi késő római kikötőerőd maradványai, 2020"
+      }
+    },
+    "lovasijaszok-karoling": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Bogenschuetzen_Reiter-2.jpg",
+      "author": {
+        "uk": "невідомий автор",
+        "hu": "ismeretlen szerző"
+      },
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Bogenschuetzen_Reiter-2.jpg",
+      "caption": {
+        "uk": "Кінні лучники на каролінзькій мініатюрі IX століття",
+        "hu": "Íjász lovasok egy 9. századi Karoling-kori kéziratban"
+      }
+    },
+    "magyarok-bejovetele-kepes-kronika": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Chronicon_Pictum_P021_A_magyarok_bej%C3%B6vetele.JPG",
+      "author": {
+        "uk": "невідомий автор",
+        "hu": "ismeretlen szerző"
+      },
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Chronicon_Pictum_P021_A_magyarok_bej%C3%B6vetele.JPG",
+      "caption": {
+        "uk": "«Прихід мадярів» в Ілюстрованій хроніці (XIV ст.)",
+        "hu": "A magyarok bejövetele a Képes krónikában (14. század)"
+      }
+    },
+    "felsogod-vardomb-legifoto": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Fels%C5%91g%C3%B6d_-_V%C3%A1rdomb%2C_l%C3%A9gi_fot%C3%B3.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Fels%C5%91g%C3%B6d_-_V%C3%A1rdomb,_l%C3%A9gi_fot%C3%B3.jpg",
+      "caption": {
+        "uk": "Várdomb у Felsőgöd з повітря, 2018",
+        "hu": "Felsőgöd, Várdomb légi fotón, 2018"
+      }
+    },
+    "vac-hetkapolna-2023": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/V%C3%A1c%2C_H%C3%A9tk%C3%A1polna_2023_01.jpg",
+      "author": "Pasztilla (Attila Terbócs)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A1c,_H%C3%A9tk%C3%A1polna_2023_01.jpg",
+      "caption": {
+        "uk": "Hétkápolna у Ваці, 2023",
+        "hu": "A váci Hétkápolna, 2023"
+      }
+    },
+    "istvan-koronazasi-palast": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Portrayal_of_Stephen_I%2C_King_of_Hungary_on_the_coronation_pall.jpg",
+      "author": {
+        "uk": "невідомий автор",
+        "hu": "ismeretlen szerző"
+      },
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Portrayal_of_Stephen_I%2C_King_of_Hungary_on_the_coronation_pall.jpg",
+      "caption": {
+        "uk": "Іштван I на коронаційній мантії",
+        "hu": "I. István ábrázolása a koronázási paláston"
+      }
+    },
+    "aranybulla-1222": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/II._Andr%C3%A1s_aranybull%C3%A1ja.jpg",
+      "author": {
+        "uk": "невідомий автор",
+        "hu": "ismeretlen szerző"
+      },
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:II._Andr%C3%A1s_aranybull%C3%A1ja.jpg",
+      "caption": {
+        "uk": "Золота булла Андраша II",
+        "hu": "II. András aranybullája"
+      }
+    },
+    "alagi-templomrom": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Alagi_templomrom.jpg",
+      "author": "Livvyfan",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Alagi_templomrom.jpg",
+      "caption": {
+        "uk": "Руїни церкви в Alagi-major, 2017",
+        "hu": "Alagi templomrom, 2017"
+      }
+    },
+    "matyas-mantegna": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Andrea_Mantegna_-_King_Matthias_Corvinus_of_Hungary.jpg",
+      "author": "Andrea Mantegna",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Andrea_Mantegna_-_King_Matthias_Corvinus_of_Hungary.jpg",
+      "caption": {
+        "uk": "Матяш Корвін, портрет роботи Андреа Мантеньї",
+        "hu": "Mátyás király, Andrea Mantegna festménye"
+      }
+    },
+    "vac-hegyes-torony": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Hegyes_torony.jpg",
+      "author": "Magyarkúti Barna",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Hegyes_torony.jpg",
+      "caption": {
+        "uk": "Hegyes torony — кругла вежа середньовічних міських мурів Вацу",
+        "hu": "A Hegyes torony, a váci középkori városfal kerek tornya"
+      }
+    },
+    "szulejman-1526": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/SOLIMANUS_IMPERATOR_TURCHARUM_1526.jpg",
+      "author": "Jan Swart van Groningen, Willem Liefrinck",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:SOLIMANUS_IMPERATOR_TURCHARUM_1526.jpg",
+      "caption": {
+        "uk": "Султан Сулейман на гравюрі 1526 року",
+        "hu": "Szulejmán szultán 1526-os metszeten"
+      }
+    },
+    "szentgotthardi-csata-dorfmeister": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Dorfmeister-_Az_1664-es_szentgotth%C3%A1rdi_csata.jpg",
+      "author": "Stephan Dorfmeister (1729–1797)",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Dorfmeister-_Az_1664-es_szentgotth%C3%A1rdi_csata.jpg",
+      "caption": {
+        "uk": "Битва під Сентґоттгардом 1664 року на картині Штефана Дорфмейстера",
+        "hu": "Az 1664-es szentgotthárdi csata Dorfmeister István festményén"
+      }
+    },
+    "szatmari-beke-okirat": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Friede_von_Sathmar_1711_01.jpg",
+      "author": "Österreichisches Staatsarchiv",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Friede_von_Sathmar_1711_01.jpg",
+      "caption": {
+        "uk": "Документ Сатмарського миру, 1711",
+        "hu": "A szatmári béke okirata, 1711"
+      }
+    },
+    "vaci-szekesegyhaz-2009": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/V%C3%A1c_Sz%C3%A9kesegyh%C3%A1z_20090725.jpg",
+      "author": "Pasztilla (Attila Terbócs)",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A1c_Sz%C3%A9kesegyh%C3%A1z_20090725.jpg",
+      "caption": {
+        "uk": "Вацький собор, 2009",
+        "hu": "A váci székesegyház, 2009"
+      }
+    },
+    "god-nemeskeri-kuria-kapu": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Nemesk%C3%A9ry-Kiss_Country_House_Park_gate%2C_2020_G%C3%B6d.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Nemesk%C3%A9ry-Kiss_Country_House_Park_gate,_2020_G%C3%B6d.jpg",
+      "caption": {
+        "uk": "Брама парку садиби Nemeskéri-Kiss у Göd, 2020",
+        "hu": "A gödi Nemeskéri-Kiss-kúria parkjának kapuja, 2020"
+      }
+    },
+    "marcius-15-1848": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/March15.jpg",
+      "author": {
+        "uk": "невідомий автор",
+        "hu": "ismeretlen szerző"
+      },
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:March15.jpg",
+      "caption": {
+        "uk": "15 березня 1848 року на тогочасному зображенні",
+        "hu": "1848. március 15. korabeli ábrázoláson"
+      }
+    },
+    "deak-ferenc-ellinger": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/De%C3%A1k_Ferenc_Ellinger.jpg",
+      "author": "Ellinger Ede",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:De%C3%A1k_Ferenc_Ellinger.jpg",
+      "caption": {
+        "uk": "Ференц Деак на фото Еде Еллінгера (Ede Ellinger)",
+        "hu": "Deák Ferenc Ellinger Ede fényképén"
+      }
+    },
+    "vasut-megnyitasa-1846": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/1846_Pest_V%C3%A1c_megnyit%C3%B3.jpg",
+      "author": {
+        "uk": "невідомий автор",
+        "hu": "ismeretlen szerző"
+      },
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:1846_Pest_V%C3%A1c_megnyit%C3%B3.jpg",
+      "caption": {
+        "uk": "Відкриття першої угорської залізниці, 15 липня 1846",
+        "hu": "Az első magyarországi vasútvonal megnyitója, 1846. július 15."
+      }
+    },
+    "vaci-csata-1849-delben": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/The_first_battle_of_V%C3%A1c_%281849%29._The_situation_at_noon._The_situation_at_noon%2C_before_the_Hungarian_battalions_attacked_the_stone_bridge.png",
+      "author": "Sylvain1975",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:The_first_battle_of_V%C3%A1c_(1849)._The_situation_at_noon._The_situation_at_noon,_before_the_Hungarian_battalions_attacked_the_stone_bridge.png",
+      "caption": {
+        "uk": "Схема першої битви під Вацом 10 квітня 1849, ситуація опівдні перед атакою на кам'яний міст",
+        "hu": "Az első váci csata, 1849. április 10., a déli helyzet a kőhíd elleni roham előtt"
+      }
+    },
+    "kincsem-istallo-2020": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Az_egykori_ist%C3%A1ll%C3%B3_%C3%A9szaki_sz%C3%A1rnya%2C_2020_G%C3%B6d.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Az_egykori_ist%C3%A1ll%C3%B3_%C3%A9szaki_sz%C3%A1rnya,_2020_G%C3%B6d.jpg",
+      "caption": {
+        "uk": "Північне крило колишньої стайні Kincsem у Göd, 2020",
+        "hu": "A gödi egykori Kincsem-istálló északi szárnya, 2020"
+      }
+    },
+    "margit-hid-1944": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Margit_h%C3%ADd_1944._november_4.jpg",
+      "author": "Tambo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Margit_h%C3%ADd_1944._november_4.jpg",
+      "caption": {
+        "uk": "Міст Маргіт 4 листопада 1944 року",
+        "hu": "A Margit híd 1944. november 4-én"
+      }
+    },
+    "dunakeszi-jarmujavito-bejarat": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Entrance_building%2C_Rail_Vehicle_factory%2C_Korond%2C_2016_Dunakeszi.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Entrance_building,_Rail_Vehicle_factory,_Korond,_2016_Dunakeszi.jpg",
+      "caption": {
+        "uk": "Прохідна заводу Dunakeszi Járműjavító на площі Körönd, 2016",
+        "hu": "A dunakeszi járműjavító főbejárati épülete a Köröndön, 2016"
+      }
+    },
+    "alag-treningtelep-1938": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Tr%C3%A9ningtelep._Fortepan_19902.jpg",
+      "author": "FOTO:FORTEPAN / Kölcsey Ferenc Dunakeszi Városi Könyvtár / Petanovics fényképek",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Tr%C3%A9ningtelep._Fortepan_19902.jpg",
+      "caption": {
+        "uk": "Тренувальна база в Alag, 1938",
+        "hu": "Az alagi tréningtelep, 1938"
+      }
+    },
+    "nagy-imre-portre": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Imre_Nagy_portrait.jpg",
+      "author": {
+        "uk": "невідомий автор (власність Будинку-музею Імре Надя)",
+        "hu": "ismeretlen szerző (Nagy Imre Emlékház tulajdona)"
+      },
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Imre_Nagy_portrait.jpg",
+      "caption": {
+        "uk": "Імре Надь",
+        "hu": "Nagy Imre"
+      }
+    },
+    "paneuropai-piknik-emlekhely": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/00_P%C3%A1neur%C3%B3pai_Piknik_eml%C3%A9khely.jpg",
+      "author": "Kiss Tamás (Kit36a)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:00_P%C3%A1neur%C3%B3pai_Piknik_eml%C3%A9khely.jpg",
+      "caption": {
+        "uk": "Меморіал Панєвропейського пікніка",
+        "hu": "A Páneurópai Piknik emlékhelye"
+      }
+    }
+  }
+}

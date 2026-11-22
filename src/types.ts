@@ -40,6 +40,11 @@ export type PlaceType =
   | 'military'
   | 'other';
 
+/** Ілюстрація в тексті (data/illustrations.json): як фото, але автора можна дати двома мовами («невідомий автор»). */
+export interface Illustration extends Omit<Photo, 'author'> {
+  author: string | LText;
+}
+
 export interface Photo {
   /** URL зображення або шлях у public/photos/. */
   url: string;

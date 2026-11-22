@@ -4,17 +4,27 @@
 
 A napóleoni háborúk idején a Habsburg Birodalom vészesen eladósodott, és a Magyarországról beszedendő több adó a nemesség ellenállását váltotta ki: I. Ferenc idő előtt berekesztette az országgyűlést és rendeletekkel kormányzott, a rendek nem hajtották végre azokat, és csak 1825-re hívták össze újra az országgyűlést. A Széchenyi István által megindított nemzeti reformmozgalom időszakát reformkornak nevezzük: a jobbágykérdés, az önálló ipar, a Himnusz, a nyelvújítás; 1844-ben a magyar lett az ország hivatalos nyelve. Az 1848-as forradalom nyomán Batthyány Lajos független kormánya az áprilisi törvényekkel megszüntette a nemesi kiváltságokat és a jobbágyságot; miután a Habsburg-ház visszavonta az alkotmányt, Kossuth Lajos vezetésével szabadságharc kezdődött, amely az európai forradalmak közül a legtovább tartott ki, és csak a cári Oroszország beavatkozásával lehetett leverni. 1851 és 1859 között Bécs megkísérelte Magyarországot az összbirodalomba tagolni: leválasztotta Erdélyt, Horvátországot, a Határőrvidéket és a Szerb Vajdaságot, a maradékot öt kerületre osztotta (Pest, Pozsony, Sopron, Kassa, Nagyvárad), eltörölte a vármegyéket és az önkormányzatokat, a közigazgatás nyelve a német lett a „Bach-huszárokkal”.[^15][^16]
 
+![](marcius-15-1848)
+
 Az 1867-es kiegyezés, amelyet Ferenc József július 28-án szentesített, és amely szerinte „Deák, Andrássy és jómagam” műve volt, létrehozta a két részből álló Osztrák–Magyar Monarchiát, amelyet a közös uralkodó, a külügy, a hadügy és az ezekhez kapcsolódó pénzügy fűzött össze; Magyarországon alkotmányos királyi hatalom és vagyoni alapú parlamenti demokrácia született. A dualizmus fél évszázadát „boldog békeidőknek” nevezik: Eötvös József 1868-ban a világ első nemzetiségi törvényét és világszínvonalú népiskolai törvényt vezetett be; az elmaradott agrárország a 20. század elejére fejlett élelmiszeriparral rendelkező, exportáló agrár-ipari országgá vált. 1873-ban Buda, Pest és Óbuda egyesítésével létrejött az új főváros, amelynek lakossága húsz év alatt milliósra duplázódott. A németajkúak asszimilációja, közel egymillió zsidó bevándorlása Kelet-Európából és az 1895-ös egyenjogúsító törvény formálta a polgárságot, az iparosodás viszont a parasztság tömeges elnyomorodásával járt: százezrek vándoroltak ki, főleg az Egyesült Államokba. Ebben a korban változtatta meg Göd környékét az 1846-os Pest–Vác vasút, a birtokok parcellázása és az alagi versenypálya.[^17]
+
+![](deak-ferenc-ellinger)
 
 ## Göd, Vác és Dunakeszi környéke
 
 A hosszú 19. század minden korábbi korszaknál erősebben változtatta meg a vidéket. 1846. július 15-én József nádor jelenlétében megnyílt az első magyar közforgalmú vasút, a Pest–Vác vonal: a különvonat 33,6 km-t 59 perc alatt tett meg, 10 perces dunakeszi megállóval, utasai között volt Petőfi Sándor, aki az út után írta a „Vasúton” című versét.[^1] Göd a vonal harmadik állomása lett.[^2] A váci kereskedők nem fogadták lelkesen a vasutat, mert a gyors fővárosi összeköttetés aláásta a helyi kereskedelmet; 1855-ben viszont Vácon megnyílt a fegyház, 1889-ben pedig az ország első kötszövőgyára.[^3][^4]
 
+![](vasut-megnyitasa-1846)
+
 Az 1848–49-es forradalom és szabadságharc háborút hozott. 1849. április 8-án Kmety hadosztálya Dunakeszin állt fel, fedezve a fősereg mozgását Vác felé, április 10-én pedig Damjanich János III. hadteste Vácnál megverte Christian Götz tábornok osztrákjait; a július 17-i második csata orosz győzelemmel végződött. A két csata emlékműve a Hétkápolnánál áll.[^3][^5][^6] Gödön az uradalmat és a kúriát feldúlták; Sződön Mikó József falusi bírót a nemzetőrség szervezése körüli félreértés miatt Habsburg-pártisággal ítélték el.[^2][^7]
+
+![](vaci-csata-1849-delben)
 
 ## Új birtokosok és nyaralótelepek
 
 A földbirtok kézről kézre járt: Mayerffy (1830), Sina (1850-ben Dunakeszin, 1864-ig Gödön), belga bank (1864), majd parcellázás. Így jött létre 1873-ban a Felsőgödtelep nyaralótelep Szapáry gróf földjein, 1910-ben pedig Sződligettelep Floch-Reyhersberg Alfréd birtokán.[^2][^6][^8] 1875–1880 között a gödi istállóban tartották Kincsemet, Blaskovich Ernő veretlen kancáját.[^2] Dunakeszi eközben a paradicsom és a szőlő faluja maradt: lakói az 1870-es években Magyarország első ipari paradicsomtermelői voltak, népessége az 1850-es 988-ról 1910-re 4980-ra nőtt.[^6] A Duna-part még üres volt: amikor a budapesti Hunnia Csónakázó Egyesület 1905-ben a rév mellett elkezdte építeni vasárnapi telepét, ott csak a rév, a Révcsárda és „Harcsa bácsi” vízimalma állt.[^14] Gödön 1902-ben épült a Biciklista Nagyvendéglő, amely az első amatőr Budapest–Göd kerékpárversenyekről kapta nevét.[^2]
+
+![](kincsem-istallo-2020)
 
 ## Alag, „a magyar Newmarket”
 

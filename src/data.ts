@@ -1,8 +1,9 @@
-import type { Basemap, HistEvent, HistMap, MapSeries, Period, Place, RouteCollection, Tool, ToolsDoc } from './types';
+import type { Basemap, HistEvent, HistMap, Illustration, MapSeries, Period, Place, RouteCollection, Tool, ToolsDoc } from './types';
 import periodsJson from '../data/periods.json';
 import basemapsJson from '../data/basemaps.json';
 import toolsJson from '../data/tools.json';
 import mapSeriesJson from '../data/map-series.json';
+import illustrationsJson from '../data/illustrations.json';
 
 const placeModules = import.meta.glob<Place>('../data/places/*.json', {
   eager: true,
@@ -43,6 +44,11 @@ const textModules = import.meta.glob<string>('../data/texts/*/*.md', {
 });
 
 export const periods: Period[] = (periodsJson as { periods: Period[] }).periods;
+/** Ілюстрації для текстів (data/illustrations.json): у Markdown вставляються рядком `![](id)`. */
+export const illustrations: Record<string, Illustration> = (illustrationsJson as { illustrations: Record<string, Illustration> }).illustrations;
+export function illustrationById(id: string): Illustration | undefined {
+  return Object.prototype.hasOwnProperty.call(illustrations, id) ? illustrations[id] : undefined;
+}
 export const places: Place[] = Object.values(placeModules);
 export const basemaps: Basemap[] = (basemapsJson as { basemaps: Basemap[] }).basemaps
   // Підкладки з {key} в адресі доступні лише із заповненим ключем.

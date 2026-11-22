@@ -1,5 +1,5 @@
 import { marked } from 'marked';
-import { periodById } from '../data';
+import { illustrationById, periodById } from '../data';
 import { formatYear, getLang, lt, t } from '../i18n';
 import type { CoordsPrecision, DatePrecision, HistEvent, Photo, Place, Source } from '../types';
 
@@ -104,23 +104,46 @@ export function thumbUrl(url: string, width = 960): string {
   return `https://thumb.wikimedia.org/wikipedia/commons/thumb/${a}/${ab}/${name}/${file}`;
 }
 
-/** Підпис фото для перегляду на весь екран: опис, автор, ліцензія. */
-const photoCredit = (p: Photo) => `${lt(p.caption) ? `${lt(p.caption)}. ` : ''}${t('photoBy')}: ${p.author}, ${t('license')}: ${p.license}`;
+/** Підпис фото для перегляду на весь екран: опис, автор, ліцензія (by — «Фото» чи «Автор» для малюнків і мап). */
+const photoCredit = (p: Photo, by = t('photoBy')) => `${lt(p.caption) ? `${lt(p.caption)}. ` : ''}${by}: ${p.author}, ${t('license')}: ${p.license}`;
 /** Атрибути, за якими фото відкривається на весь екран (src/ui/lightbox.ts); group — фото однієї картки. */
-const lbAttrs = (p: Photo, group: string) =>
-  `data-lb="${esc(group)}" data-lb-cap="${esc(photoCredit(p))}" data-lb-src="${esc(p.source)}" tabindex="0" role="button"`;
+const lbAttrs = (p: Photo, group: string, by?: string) =>
+  `data-lb="${esc(group)}" data-lb-cap="${esc(photoCredit(p, by))}" data-lb-src="${esc(p.source)}" tabindex="0" role="button"`;
+
+/** Фото з підписом, автором і ліцензією; натискання відкриває перегляд на весь екран (група group). */
+function figure(p: Photo, group: string, cls = '', by = t('photoBy')): string {
+  return `<figure${cls ? ` class="${cls}"` : ''}><img crossorigin="anonymous" src="${esc(thumbUrl(p.url))}" data-orig="${esc(p.url)}" onerror="${IMG_FALLBACK}" alt="${esc(lt(p.caption) || '')}" loading="lazy" ${lbAttrs(p, group, by)} />
+      <figcaption>${lt(p.caption) ? esc(lt(p.caption)) + '. ' : ''}${esc(by)}: ${esc(p.author)}, ${t('license')}: ${
+        p.licenseUrl ? `<a href="${esc(p.licenseUrl)}" target="_blank" rel="noopener">${esc(p.license)}</a>` : esc(p.license)
+      } (<a href="${esc(p.source)}" target="_blank" rel="noopener">${t('photoSource')}</a>)</figcaption></figure>`;
+}
 
 export function photos(list: Photo[] | undefined, group = 'page'): string {
   if (!list?.length) return '';
-  return list
-    .map(
-      (p) => `<figure><img crossorigin="anonymous" src="${esc(thumbUrl(p.url))}" data-orig="${esc(p.url)}" onerror="${IMG_FALLBACK}" alt="${esc(lt(p.caption) || '')}" loading="lazy" ${lbAttrs(p, group)} />
-      <figcaption>${lt(p.caption) ? esc(lt(p.caption)) + '. ' : ''}${t('photoBy')}: ${esc(p.author)}, ${t('license')}: ${
-        p.licenseUrl ? `<a href="${esc(p.licenseUrl)}" target="_blank" rel="noopener">${esc(p.license)}</a>` : esc(p.license)
-      } (<a href="${esc(p.source)}" target="_blank" rel="noopener">${t('photoSource')}</a>)</figcaption></figure>`,
-    )
-    .join('');
+  return list.map((p) => figure(p, group)).join('');
 }
+
+/**
+ * Ілюстрації в текстах (розділи «Історія» й «Ландшафт»): рядок `![](id)` з id з data/illustrations.json стає
+ * фото чи малюнком з підписом, автором і ліцензією. Підпис — з опису ілюстрації мовою інтерфейсу, або текст у
+ * квадратних дужках, якщо його вписано: `![Інший підпис](id)`. Усі ілюстрації сторінки гортаються разом.
+ */
+marked.use({
+  renderer: {
+    image({ href, text }) {
+      const ill = illustrationById(href);
+      if (!ill) return false;
+      const p: Photo = { ...ill, author: typeof ill.author === 'string' ? ill.author : lt(ill.author) };
+      // серед ілюстрацій є малюнки й старі мапи, тож підпис «Автор», а не «Фото»
+      return figure(text.trim() ? { ...p, caption: { uk: text.trim() } } : p, 'text', 'txt-fig', t('illBy'));
+    },
+    paragraph({ tokens }) {
+      // абзац лише з ілюстрацій — без <p>: <figure> усередині абзацу не допускається
+      const only = tokens.length > 0 && tokens.every((x) => (x.type === 'image' && !!illustrationById(x.href)) || ((x.type === 'text' || x.type === 'br') && !x.raw.trim()));
+      return only ? this.parser.parseInline(tokens) : false;
+    },
+  },
+});
 
 export function coordsLine(coords: [number, number], precision: CoordsPrecision): string {
   const [lon, lat] = coords;

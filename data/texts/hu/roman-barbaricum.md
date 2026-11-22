@@ -6,6 +6,8 @@ Róma, amely addig csak kereskedett a Kárpát-medence népeivel, az i. e. 1. sz
 
 A tartomány fővárosa Carnuntum lett, de Aquincum jelentősebb volt, és az 1. század végére 12 000 lakosú várossá nőtt; a borostyánút mentén Poetovio, Sala, Savaria, Scarbantia és Vindobona, a többi út mentén Sirmium, Sopianae, Brigetio, Arrabona, Gorsium és mások alakultak ki. Pannoniának nagy katonai szerepe is volt: a Duna természetes határvonala mentén védte a birodalmat az Alföld közepét elfoglaló alánok (a római írók „szarmatái”), a nyugati germán törzsek és a dákok ellen. A rómaiak által barbároknak nevezett alánok és germánok az Alföldet, a Felvidéket és az Erdélyi-medencét lakták, és Rómának sohasem sikerült őket beolvasztania. A Duna bal partja Váccal, Göddel és Dunakeszivel szemben éppen ebben a Barbaricumban feküdt.[^14]
 
+![](aquincum-polgarvaros)
+
 ## Göd, Vác és Dunakeszi környéke
 
 A római korban a Duna a birodalom határa volt: a jobb part Pannonia (a késő császárkorban Valeria) provinciához tartozott, a bal part, ahol Dunakeszi, Göd és Vác fekszik, a „barbárok” földje volt. Vác környéke az iráni nyelvű szarmaták és a germán kvádok közötti határzónába esett; Ptolemaiosz a jazigok városai között említi Uscenumot, amelyet Váccal azonosítanak.[^1][^2] Dunakeszin a jazigok a Székesdűlőn telepedtek meg, ahol falurészletet és két sírt tártak fel; Sződön 2–3. századi szarmata és kvád nyomokat rögzítettek.[^2][^3] A gödi erőd kutatói szerint a 4. században ez a vidék valószínűleg már kvád területnek számított.[^9]
@@ -18,7 +20,11 @@ Dunakeszitől délre a Dunától indul a Csörsz-árok, a Kárpát-medence legna
 
 A korszak legfényesebb lapja I. Valentinianus (364–375) uralkodására esik. A verőcei kikötőerőd kerámiáját feldolgozó tanulmány (Ottományi és Soós, 2023) szerint Valeria provincia dunai határát többszörös erődrendszer alkotta: a két parton egymással szemben álló táborok, őrtornyok és kikötőerődök, a Szentendrei-sziget esetében egy harmadik sorral. A Dunakanyarban kb. hét, hasonló alaprajzú Valentinianus-kori kikötőerőd ismert, közülük három a bal parton, a kvádok földjén: Szob, Verőce és Dunakeszi. A szerzők feltételezik, hogy a bal part menti sáv semleges terület lehetett, ezért épülhettek rajta római katonai építmények. A kikötőerődök biztosították a folyó és a bal parti sáv felügyeletét, és innen indult az utánpótlás a barbaricumi építkezésekhez.[^5]
 
+![](valentinianus-erme)
+
 A dunakeszi erőd 50,5 × 43 m-es volt, főépületében téglaalapozású habarcspadló volt, és 28 m hosszan megmaradt a Dunáig lefutó szárnyfala. A verőcei erőd építését a több száz téglabélyeg (Frigeridus dux, Lupicinus, Terentianus és Caris tribunusok, OFAR Ursicinus és Bonus magisterek) alapján 371–373 közé teszik; az OFAR csoport és a legio X Gemina magistereinek bélyegei elsősorban a Barbaricumban épült kikötőerődök falazótégláin szerepelnek: Verőce, Dunakeszi, Szalk-sziget, Bölcske, Zádor–Imsós, Dunafalva. Ha az építkezés északról dél felé haladt, ezek az erődök Dunakeszitől kezdve 373-ban épültek.[^5] Dunakeszivel szemben, a Szentendrei-szigeten, Horánynál állt a párja; a két pont között ma is komp jár.[^2]
+
+![](dunakeszi-kikotoerod-2020)
 
 ## A be nem fejezett erőd Göd-Bócsaújtelepen
 
