@@ -1,0 +1,350 @@
+{
+ "Heréd": {
+  "lon": 19.6335945,
+  "lat": 47.7044017,
+  "type": "administrative",
+  "name": "Heréd, Hatvani járás, Heves megye, Alföld és Észak, 3011, Ma",
+  "bbox": [
+   "47.6920768",
+   "47.7365461",
+   "19.6036652",
+   "19.6742038"
+  ]
+ },
+ "Kartal": {
+  "lon": 19.5311002,
+  "lat": 47.66792,
+  "type": "administrative",
+  "name": "Kartal, Aszódi járás, Pest megye, 2173, Magyarország",
+  "bbox": [
+   "47.6554123",
+   "47.7097399",
+   "19.4772780",
+   "19.6071726"
+  ]
+ },
+ "Hatvan": {
+  "lon": 19.6743874,
+  "lat": 47.6683971,
+  "type": "administrative",
+  "name": "Hatvan, Hatvani járás, Heves megye, Alföld és Észak, 3000, M",
+  "bbox": [
+   "47.6134562",
+   "47.7294515",
+   "19.6120159",
+   "19.7686598"
+  ]
+ },
+ "Kerekharaszt": {
+  "lon": 19.6256594,
+  "lat": 47.6628648,
+  "type": "administrative",
+  "name": "Kerekharaszt, Hatvani járás, Heves megye, Alföld és Észak, 3",
+  "bbox": [
+   "47.6570480",
+   "47.7026218",
+   "19.5914358",
+   "19.6624814"
+  ]
+ },
+ "Bag": {
+  "lon": 19.4792099,
+  "lat": 47.6337331,
+  "type": "administrative",
+  "name": "Bag, Aszódi járás, Pest megye, 2191, Magyarország",
+  "bbox": [
+   "47.5923118",
+   "47.6487052",
+   "19.4198449",
+   "19.5014942"
+  ]
+ },
+ "Hévízgyörk": {
+  "lon": 19.5190457,
+  "lat": 47.6303011,
+  "type": "administrative",
+  "name": "Hévízgyörk, Aszódi járás, Pest megye, 2192, Magyarország",
+  "bbox": [
+   "47.6118980",
+   "47.6687526",
+   "19.4894396",
+   "19.5764810"
+  ]
+ },
+ "Galgahévíz": {
+  "lon": 19.5558378,
+  "lat": 47.6222577,
+  "type": "administrative",
+  "name": "Galgahévíz, Aszódi járás, Pest megye, 2193, Magyarország",
+  "bbox": [
+   "47.5927044",
+   "47.6685381",
+   "19.4674324",
+   "19.6091890"
+  ]
+ },
+ "Aszód": {
+  "lon": 19.4747432,
+  "lat": 47.6532732,
+  "type": "administrative",
+  "name": "Aszód, Aszódi járás, Pest megye, 2170, Magyarország",
+  "bbox": [
+   "47.6450612",
+   "47.7146057",
+   "19.4454102",
+   "19.5120257"
+  ]
+ },
+ "Hort": {
+  "lon": 19.7826055,
+  "lat": 47.689575,
+  "type": "administrative",
+  "name": "Hort, Hatvani járás, Heves megye, Alföld és Észak, 3014, Mag",
+  "bbox": [
+   "47.6512786",
+   "47.7397199",
+   "19.7116091",
+   "19.8531678"
+  ]
+ },
+ "Gyöngyössolymos": {
+  "lon": 19.9332261,
+  "lat": 47.8169351,
+  "type": "administrative",
+  "name": "Gyöngyössolymos, Gyöngyösi járás, Heves megye, Alföld és Ész",
+  "bbox": [
+   "47.7909805",
+   "47.9190085",
+   "19.8732855",
+   "19.9822358"
+  ]
+ },
+ "Gyöngyöspata": {
+  "lon": 19.7903391,
+  "lat": 47.8146817,
+  "type": "administrative",
+  "name": "Gyöngyöspata, Gyöngyösi járás, Heves megye, Alföld és Észak,",
+  "bbox": [
+   "47.7703331",
+   "47.9048319",
+   "19.7219236",
+   "19.8357167"
+  ]
+ },
+ "Gyöngyöstarján": {
+  "lon": 19.8668338,
+  "lat": 47.8117356,
+  "type": "administrative",
+  "name": "Gyöngyöstarján, Gyöngyösi járás, Heves megye, Alföld és Észa",
+  "bbox": [
+   "47.7778011",
+   "47.8841835",
+   "19.8063440",
+   "19.8989911"
+  ]
+ },
+ "Szűcsi": {
+  "lon": 19.7632166,
+  "lat": 47.8041906,
+  "type": "administrative",
+  "name": "Szűcsi, Hatvani járás, Heves megye, Alföld és Észak, 3034, M",
+  "bbox": [
+   "47.7578167",
+   "47.8305058",
+   "19.7156652",
+   "19.7923073"
+  ]
+ },
+ "Apc": {
+  "lon": 19.6916338,
+  "lat": 47.7963496,
+  "type": "administrative",
+  "name": "Apc, Hatvani járás, Heves megye, Alföld és Észak, 3032, Magy",
+  "bbox": [
+   "47.7728442",
+   "47.8202607",
+   "19.6325441",
+   "19.7250553"
+  ]
+ },
+ "Rózsaszentmárton": {
+  "lon": 19.7419306,
+  "lat": 47.7828558,
+  "type": "administrative",
+  "name": "Rózsaszentmárton, Hatvani járás, Heves megye, Alföld és Észa",
+  "bbox": [
+   "47.7505441",
+   "47.8182101",
+   "19.7178789",
+   "19.7612786"
+  ]
+ },
+ "Gyöngyös": {
+  "lon": 19.9291176,
+  "lat": 47.7799838,
+  "type": "administrative",
+  "name": "Gyöngyös, Gyöngyösi járás, Heves megye, Alföld és Észak, Mag",
+  "bbox": [
+   "47.7327165",
+   "47.8847308",
+   "19.8816779",
+   "20.0220036"
+  ]
+ },
+ "Zagyvaszántó": {
+  "lon": 19.6705195,
+  "lat": 47.7755885,
+  "type": "administrative",
+  "name": "Zagyvaszántó, Hatvani járás, Heves megye, Alföld és Észak, 3",
+  "bbox": [
+   "47.7582748",
+   "47.8134134",
+   "19.6346458",
+   "19.6951815"
+  ]
+ },
+ "Nagyréde": {
+  "lon": 19.8503473,
+  "lat": 47.7654882,
+  "type": "administrative",
+  "name": "Nagyréde, Gyöngyösi járás, Heves megye, Alföld és Észak, 321",
+  "bbox": [
+   "47.7296376",
+   "47.7909922",
+   "19.7853526",
+   "19.8967338"
+  ]
+ },
+ "Petőfibánya": {
+  "lon": 19.7019335,
+  "lat": 47.7661279,
+  "type": "administrative",
+  "name": "Petőfibánya, Hatvani járás, Heves megye, Alföld és Észak, 30",
+  "bbox": [
+   "47.7339175",
+   "47.7791657",
+   "19.6847023",
+   "19.7293667"
+  ]
+ },
+ "Gyöngyöshalász": {
+  "lon": 19.9217283,
+  "lat": 47.7417728,
+  "type": "administrative",
+  "name": "Gyöngyöshalász, Gyöngyösi járás, Heves megye, Alföld és Észa",
+  "bbox": [
+   "47.7091976",
+   "47.7683312",
+   "19.8861817",
+   "19.9835642"
+  ]
+ },
+ "Lőrinci": {
+  "lon": 19.6773099,
+  "lat": 47.7400504,
+  "type": "administrative",
+  "name": "Lőrinci, Hatvani járás, Heves megye, Alföld és Észak, Magyar",
+  "bbox": [
+   "47.7032683",
+   "47.7694490",
+   "19.6294993",
+   "19.7302203"
+  ]
+ },
+ "Ecséd": {
+  "lon": 19.7728816,
+  "lat": 47.7323069,
+  "type": "administrative",
+  "name": "Ecséd, Hatvani járás, Heves megye, Alföld és Észak, 3013, Ma",
+  "bbox": [
+   "47.6895741",
+   "47.7678920",
+   "19.7118298",
+   "19.8264124"
+  ]
+ },
+ "Atkár": {
+  "lon": 19.8901629,
+  "lat": 47.7196216,
+  "type": "administrative",
+  "name": "Atkár, Gyöngyösi járás, Heves megye, Alföld és Észak, 3213, ",
+  "bbox": [
+   "47.6656280",
+   "47.7434959",
+   "19.8360679",
+   "19.9228725"
+  ]
+ },
+ "Vámosgyörk": {
+  "lon": 19.9279066,
+  "lat": 47.68085,
+  "type": "administrative",
+  "name": "Vámosgyörk, Gyöngyösi járás, Heves megye, Alföld és Észak, 3",
+  "bbox": [
+   "47.6544481",
+   "47.7100240",
+   "19.8849331",
+   "19.9761850"
+  ]
+ },
+ "Tura": {
+  "lon": 19.5949442,
+  "lat": 47.60935,
+  "type": "administrative",
+  "name": "Tura, Aszódi járás, Pest megye, 2194, Magyarország",
+  "bbox": [
+   "47.5510176",
+   "47.6613980",
+   "19.5472388",
+   "19.6663277"
+  ]
+ },
+ "Verseg": {
+  "lon": 19.5487063,
+  "lat": 47.722441,
+  "type": "administrative",
+  "name": "Verseg, Aszódi járás, Pest megye, 2174, Magyarország",
+  "bbox": [
+   "47.6828182",
+   "47.7464039",
+   "19.4895607",
+   "19.6067257"
+  ]
+ },
+ "Csány": {
+  "lon": 19.830145,
+  "lat": 47.6473605,
+  "type": "administrative",
+  "name": "Csány, Hatvani járás, Heves megye, Alföld és Észak, 3015, Ma",
+  "bbox": [
+   "47.5939211",
+   "47.6747970",
+   "19.7583725",
+   "19.8748645"
+  ]
+ },
+ "Boldog": {
+  "lon": 19.6954291,
+  "lat": 47.6012001,
+  "type": "administrative",
+  "name": "Boldog, Hatvani járás, Heves megye, Alföld és Észak, 3016, M",
+  "bbox": [
+   "47.5850329",
+   "47.6564444",
+   "19.6369362",
+   "19.7259631"
+  ]
+ },
+ "Jászfényszaru": {
+  "lon": 19.7168149,
+  "lat": 47.5692314,
+  "type": "administrative",
+  "name": "Jászfényszaru, Jászberényi járás, Jász-Nagykun-Szolnok megye",
+  "bbox": [
+   "47.5172407",
+   "47.6210568",
+   "19.6510411",
+   "19.8116695"
+  ]
+ }
+}
