@@ -115,7 +115,7 @@ function ensureMap(): MapController | null {
     mapCtl.onBorders((info) => {
       const el = $('borders-note');
       el.hidden = !info;
-      if (info) el.innerHTML = `${(info.year < 0 ? t('bordersNoteBce') : t('bordersNote')).replace('{year}', String(Math.abs(info.year)))} <span class="attr">${info.attribution}</span>`;
+      if (info) el.innerHTML = `${(info.year < 0 ? t('bordersNoteBce') : t('bordersNote')).replace('{year}', String(Math.abs(info.year)))} <span class="attr">${info.attribution.replace('© учасники OpenStreetMap', t('osmContrib'))}</span>`;
     });
   }
   return mapCtl;
