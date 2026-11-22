@@ -161,8 +161,7 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
         <summary><span class="off-saved-t">${esc(t('offAreaSaved').replace('{n}', String(savedAreas().length)))}</span><span class="off-size">${esc(t('offAreasSum').replace('{size}', fmtBytes(total)))}</span></summary>
         <ul class="off-area-list">${list}</ul>
         <p class="off-note">${esc(t('offAreasShared'))}</p>
-      </details>
-      <label class="off-check"><input type="checkbox" data-act="areas-outline" ${areasOutline() ? 'checked' : ''} /> ${esc(t('offAreasOutline'))}</label>` : ''}
+      </details>` : ''}
     </li>`;
   };
 
@@ -238,7 +237,13 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
         ? `<button type="button" class="off-btn primary off-install" data-act="install">${esc(t('install'))}</button>`
         : `<p class="mtool-note">${esc(t('installHint'))}</p>`;
 
+    // Перемикач рамок збережених ділянок — першим рядком панелі, щоб не шукати його внизу розділу про старі мапи
+    // (рамки малює src/map.ts); без збережених ділянок його немає.
+    const outline = savedAreas().length
+      ? `<label class="off-check off-check-top"><input type="checkbox" data-act="areas-outline" ${areasOutline() ? 'checked' : ''} /> ${esc(t('offAreasOutline'))}</label>`
+      : '';
     body.innerHTML = `
+      ${outline}
       <p class="off-net ${online ? 'on' : 'off'}">${esc(t(online ? 'offOnline' : 'offOffline'))}</p>
       ${offlineSupported() ? `<p class="mtool-note">${esc(t('offIntro'))}</p><ul class="off-packs">${packs}</ul>${storage}` : `<p class="mtool-note">${esc(t('offNoSupport'))}</p>`}
       <div class="off-install-box">${install}</div>`;
@@ -314,7 +319,7 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     try { localStorage.setItem(AREAS_OPEN_KEY, areasOpen ? '1' : '0'); } catch { /* приватний режим */ }
   };
   body.addEventListener('toggle', onToggle, true);
-  // перемикач «Показувати межі ділянок на мапі» (межі малює src/map.ts)
+  // перемикач «Показувати рамки збережених ділянок» угорі панелі (рамки малює src/map.ts)
   body.onchange = (e) => {
     const el = e.target;
     if (el instanceof HTMLInputElement && el.dataset.act === 'areas-outline') setAreasOutline(el.checked);
