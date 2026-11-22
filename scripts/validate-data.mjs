@@ -50,6 +50,11 @@ function checkPhotos(file, photos) {
   photos.forEach((p, i) => {
     for (const k of ['url', 'author', 'license', 'source'])
       if (typeof p?.[k] !== 'string' || !p[k].trim()) err(file, `photos[${i}].${k} відсутній`);
+    // адреса в мережі або файл у public/photos/ (вирізки старих мап тощо)
+    if (typeof p?.url === 'string' && !/^https:\/\//.test(p.url)) {
+      if (!/^photos\/[A-Za-z0-9._-]+\.(jpg|jpeg|png|webp)$/.test(p.url)) err(file, `photos[${i}].url — повна адреса https://… або шлях photos/<файл>.jpg у public/`);
+      else if (!existsSync(join(root, '..', 'public', p.url))) err(file, `photos[${i}].url — немає файлу public/${p.url}`);
+    }
   });
 }
 
@@ -102,7 +107,8 @@ for (const { file, path, name } of listJson('places')) {
 
 // events
 const eventIds = new Set();
-const dateRe = /^-?\d{1,4}(-\d{2}(-\d{2})?)?$/;
+// рік до 6 цифр: події палеоліту (сотні тисяч років до н. е.)
+const dateRe = /^-?\d{1,6}(-\d{2}(-\d{2})?)?$/;
 for (const { file, path, name } of listJson('events')) {
   const e = readJson(path);
   if (!e) continue;

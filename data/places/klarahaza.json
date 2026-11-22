@@ -33,5 +33,18 @@
       "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=8&bounded=1&viewbox=19.0,47.85,19.35,47.55&q=Kl%C3%A1rah%C3%A1za",
       "note": "place=hamlet Kláraháza, Vác: 47.760833, 19.192449. Дані © учасники OpenStreetMap, ODbL."
     }
+  ],
+  "photos": [
+    {
+      "url": "photos/klarahaza-spezialkarte.jpg",
+      "author": "K. u. k. Militärgeographisches Institut",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
+      "caption": {
+        "uk": "Хутір «Klaraháza» на аркуші Spezialkarte 14:XX 1885 року (виправлено до 1912; скан NYPL)",
+        "hu": "A „Klaraháza” major a Spezialkarte 14:XX 1885-ös lapján (1912-ig javítva; szkennelt példány: NYPL)"
+      }
+    }
   ]
 }

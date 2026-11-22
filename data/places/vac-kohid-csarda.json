@@ -19,8 +19,8 @@
     "hu": "Csárda Vác északi szélén, a Duna és a folyó menti út között, az 1885-ös lapon „Kőhíd cs.” felirattal; a Kőhíd név Kisvác egyik városrészének nevében él tovább."
   },
   "description": {
-    "uk": "На аркуші Spezialkarte 14:XX 1885 року на північ від Вацу, між Дунаєм і дорогою вздовж річки, підписано «Kőhíd cs.» (корчма «Кам'яний міст»); поруч позначено цегельню «Ziegel H.», а південніше корчму «Buki cs.» (окремі картки). За статтею про Вац, Kőhíd і Buki нині є частинами району Kisvác (Felsőváros). Корчми в сучасних даних OpenStreetMap немає; за зворотним геокодуванням місце лежить у житловому масиві Kőhíd lakópark. Координати зняті з мапи з точністю близько 50 м.",
-    "hu": "Az 1885-ös Spezialkarte 14:XX lapján Váctól északra, a Duna és a folyó menti út között „Kőhíd cs.” felirat áll; a közelében „Ziegel H.” téglaház, délebbre a „Buki cs.” csárda látható (külön kártyák). A Vácról szóló szócikk szerint Kőhíd és Buki ma Kisvác (Felsőváros) részei. A csárdának a mai OpenStreetMap-adatokban nincs nyoma; a fordított geokódolás szerint a hely a Kőhíd lakóparkban van. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+    "uk": "На аркуші Spezialkarte 14:XX 1885 року на північ від Вацу, між Дунаєм і дорогою вздовж річки, підписано «Kőhíd cs.» (корчма «Кам'яний міст»); поруч позначено цегельню «Ziegel Fb.», а південніше корчму «Buki cs.» (окремі картки). За статтею про Вац, Kőhíd і Buki нині є частинами району Kisvác (Felsőváros). Корчми в сучасних даних OpenStreetMap немає; за зворотним геокодуванням місце лежить у житловому масиві Kőhíd lakópark. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1885-ös Spezialkarte 14:XX lapján Váctól északra, a Duna és a folyó menti út között „Kőhíd cs.” felirat áll; a közelében „Ziegel Fb.” téglagyár, délebbre a „Buki cs.” csárda látható (külön kártyák). A Vácról szóló szócikk szerint Kőhíd és Buki ma Kisvác (Felsőváros) részei. A csárdának a mai OpenStreetMap-adatokban nincs nyoma; a fordított geokódolás szerint a hely a Kőhíd lakóparkban van. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
   },
   "sources": [
     {
@@ -37,6 +37,19 @@
       "title": "Nominatim (OpenStreetMap): зворотне геокодування",
       "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.80066&lon=19.10454",
       "note": "Нині на цьому місці: житловий масив Kőhíd lakópark (Vác). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "photos/vac-kohid-csarda-spezialkarte.jpg",
+      "author": "K. u. k. Militärgeographisches Institut",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
+      "caption": {
+        "uk": "Корчма «Kőhíd cs.» на північній околиці Вацу на аркуші Spezialkarte 14:XX 1885 року (виправлено до 1912; скан NYPL)",
+        "hu": "A „Kőhíd cs.” (csárda) Vác északi szélén a Spezialkarte 14:XX 1885-ös lapján (1912-ig javítva; szkennelt példány: NYPL)"
+      }
     }
   ]
 }

@@ -1,0 +1,47 @@
+{
+  "id": "keltak-megjelenese",
+  "title": {
+    "uk": "Кельти приходять на Дунай",
+    "hu": "A kelták megjelenése a Duna mentén"
+  },
+  "date": {
+    "from": "-0500",
+    "to": "-0400",
+    "precision": "approximate"
+  },
+  "period": "prehistory",
+  "places": [
+    "dunakeszi-szekesdulo",
+    "regoly"
+  ],
+  "summary": {
+    "uk": "У V столітті до н. е. вздовж Дунаю до Карпатської улоговини прийшли кельти; у Ваці відомо 23 їхні пам'ятки, у Székesdűlő в Dunakeszi розкопано три кельтські будинки. До III століття до н. е. вони опанували всю улоговину.",
+    "hu": "Az i. e. 5. században a Duna mentén kelták érkeztek a Kárpát-medencébe; Vácon 23 lelőhelyük ismert, a dunakeszi Székesdűlőn három kelta házat tártak fel. Az i. e. 3. századra az egész medencét uralmuk alá vonták."
+  },
+  "description": {
+    "uk": "За статтею про Вац, кельти з'явилися тут уже в першій половині V століття до н. е.; у місті була густа мережа кельтських поселень, на нинішній забудованій і позаміській території відомо разом 23 пам'ятки. Стаття про Dunakeszi пише, що в Székesdűlő оселилися кельти, і археологам вдалося розкопати три їхні будинки.\n\nОглядова стаття про давню історію Карпатської улоговини подає загальний перебіг трохи пізніше: наприкінці V століття до н. е. гурти кельтів ішли вздовж Дунаю на схід і досягли Малої низовини (Kisalföld), у IV столітті зайняли Альфельд, а в III столітті заволоділи всією улоговиною. Кельти жили вже не лише в розкиданих селах, а й засновували невеликі міста, населення яких почасти лишилося й після римського завоювання разом з кельтськими назвами місць; археологи називають цю добу латенською культурою. За статтею про Regöly, тамтешнє кельтське городище — найбагатше в Угорщині місце знахідок латенської культури (окрема картка).\n\nДати в картці умовні й охоплюють обидва твердження: «перша половина V століття» для Вацу і «кінець V століття» для улоговини загалом.",
+    "hu": "A Vácról szóló szócikk szerint a kelták már a Kr. e. 5. század első felében megjelentek itt; Vácon sűrű kelta településhálózatról beszélhetünk, a jelenlegi kül- és belterületen összesen 23 lelőhelyről tudunk. A Dunakesziről szóló szócikk szerint a Székesdűlőn kelták telepedtek meg, akiknek három házát sikerült a régészeknek feltárniuk.\n\nA Kárpát-medence korai történetéről szóló áttekintő szócikk az általános folyamatot valamivel későbbre teszi: az i. e. 5. század végén kelta csoportok vándoroltak kelet felé a Duna mentén, és elérték a Kisalföldet, az i. e. 4. században megszállták az Alföldet, az i. e. 3. században pedig a Kárpát-medence egész területét birtokba vették. A kelták már nemcsak elszórt falvakban laktak, hanem kisebb városokat is alapítottak, amelyek lakossága részben a római hódítás után is megmaradt a kelta eredetű helynevekkel együtt; a régészek a korszakot La Tène-kultúrának nevezik. A Regölyről szóló szócikk szerint az ottani kelta földvár a La Tène-kultúra leggazdagabb magyarországi lelőhelye (külön kártya).\n\nA kártya dátumai hozzávetőlegesek, és mindkét állítást átfogják: „az 5. század első fele” Vácra, „az 5. század vége” a medence egészére vonatkozik."
+  },
+  "sources": [
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділ «Őskor»: кельти в першій половині V століття до н. е., 23 пам'ятки."
+    },
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділ «Dunakeszi területe az ókorban»: три кельтські будинки в Székesdűlő."
+    },
+    {
+      "title": "A Kárpát-medence története a honfoglalásig – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/A_K%C3%A1rp%C3%A1t-medence_t%C3%B6rt%C3%A9nete_a_honfoglal%C3%A1sig",
+      "note": "Розділ «Vaskor»: кельти наприкінці V століття до н. е. досягли Малої низовини, у IV столітті зайняли Альфельд, у III — всю улоговину; латенська культура."
+    },
+    {
+      "title": "Regöly – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Reg%C3%B6ly",
+      "note": "Кельтське городище, найбагатше в Угорщині місце знахідок латенської культури."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "halomsiros-kultura",
+  "title": {
+    "uk": "Прихід людей курганної культури (halomsíros kultúra)",
+    "hu": "A halomsíros kultúra népének beáramlása"
+  },
+  "date": {
+    "from": "-1400",
+    "to": "-1300",
+    "precision": "approximate"
+  },
+  "period": "prehistory",
+  "places": [],
+  "summary": {
+    "uk": "Близько 1400/1300 року до н. е. до Карпатської улоговини прийшли люди курганної культури; їхні сліди знайдено на північній околиці Вацу, а в Dunakeszi розкопано їхні стовпові будинки й колодязі.",
+    "hu": "I. e. 1400/1300 táján áramlott be a Kárpát-medencébe a halomsíros kultúra népe; hagyatékuk Vác északi szélén került elő, Dunakeszin pedig cölöpházaikat és kútjaikat tárták fel."
+  },
+  "description": {
+    "uk": "За статтею про Вац, близько 1400/1300 року до н. е. до Карпатської улоговини прийшли люди курганної культури; у Ваці їхні речі знайдено на північному краю міста, біля вулиці Építők útja. У другій половині пізньої бронзової доби тут жили люди культури полів поховальних урн: серед їхніх пам'яток стаття виокремлює піщаний кар'єр у Derecske-dűlő та гирло потічка Kis-ér, що тече від Hétkápolna до Дунаю.\n\nСтаття про Dunakeszi серед пам'яток бронзової доби називає характерний посуд урнових цвинтарів культури Ватя, а також стовпові будинки й колодязі курганної культури. Оглядова стаття про давню історію Карпатської улоговини пише, що другу половину II тисячоліття до н. е. позначили постійні рухи народів і пов'язані з ними зміни культур.\n\nДати в картці умовні: «близько 1400/1300 року до н. е.».",
+    "hu": "A Vácról szóló szócikk szerint Kr. e. 1400/1300 táján a halomsíros kultúra népe áramlott be a Kárpát-medencébe; Vác területén hagyatékuk a város északi szélén, az Építők útjánál került elő. A késő bronzkor második felében az urnamezős nép lakott itt: lelőhelyeik közül a szócikk a derecske-dűlői homokbányát és a Hétkápolnától a Dunába folyó Kis-ér torkolatát emeli ki.\n\nA Dunakesziről szóló szócikk a bronzkori emlékek között a vatyai kultúra jellegzetes urnatemető edényeit, valamint a halomsíros kultúra cölöpházait és kútjait említi. A Kárpát-medence korai történetéről szóló áttekintő szócikk szerint az i. e. 2. évezred második felét állandó népmozgások és az ezekkel járó kulturális változások jellemezték.\n\nA kártya dátumai hozzávetőlegesek: „Kr. e. 1400/1300 táján”."
+  },
+  "sources": [
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділ «Őskor»: курганна культура близько 1400/1300 року до н. е., знахідки біля Építők útja; культура полів поховальних урн."
+    },
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділ «Dunakeszi térsége az őskorban»: стовпові будинки й колодязі курганної культури."
+    },
+    {
+      "title": "A Kárpát-medence története a honfoglalásig – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/A_K%C3%A1rp%C3%A1t-medence_t%C3%B6rt%C3%A9nete_a_honfoglal%C3%A1sig",
+      "note": "Розділ про бронзову добу: рухи народів у другій половині II тисячоліття до н. е."
+    }
+  ]
+}

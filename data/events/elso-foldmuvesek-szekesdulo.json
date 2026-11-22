@@ -1,0 +1,41 @@
+{
+  "id": "elso-foldmuvesek-szekesdulo",
+  "title": {
+    "uk": "Перші землероби на лівому березі Дунаю: село в Székesdűlő",
+    "hu": "Az első földművesek a Duna bal partján: a székesdűlői telep"
+  },
+  "date": {
+    "from": "-5480",
+    "to": "-5000",
+    "precision": "approximate"
+  },
+  "period": "prehistory",
+  "places": [
+    "dunakeszi-szekesdulo"
+  ],
+  "summary": {
+    "uk": "У другій половині VI тисячоліття до н. е. на пагорбі над старим рукавом Дунаю в нинішньому Dunakeszi стояло село культури лінійно-стрічкової кераміки з довгими будинками: найдавніші землероби околиці.",
+    "hu": "Az i. e. 6. évezred második felében a mai Dunakeszi területén, egy régi Duna-ág fölötti dombon a vonaldíszes kerámia kultúrájának hosszú házas faluja állt: a környék legkorábbi földművesei."
+  },
+  "description": {
+    "uk": "За оглядовою статтею про давню історію Карпатської улоговини, культура лінійно-стрічкової кераміки (друга половина VI — перша половина V тисячоліття до н. е.) склалася в Задунав'ї й звідти поширилася всією Центральною Європою; її люди жили у відкритих селах, які час від часу переносили, будували довгі будинки, до 30–40 на 5–8 метрів, для цілої великої родини, вирощували хліб на випалених ділянках лісу і тримали овець, кіз та велику рогату худобу.\n\nСтаття про Dunakeszi називає розкопане в Székesdűlő поселення найзначнішим новокам'яним поселенням у межах міста. За публікацією László András Horváth (2002), під час охоронних розкопок 1996 року на трасі автомагістралі M0 тут відкрито 125 об'єктів і сліди двох довгих будинків, орієнтованих з півночі на південь; посуд належить до першого ступеня середньоєвропейської лінійно-стрічкової кераміки, є й привізні речі альфельдської культури (докладніше — у картці місця).\n\nДати в картці умовні: це межі радіовуглецевих дат подібних поселень, які наводить Horváth (приблизно 5480/5450–5000 років до н. е.); саме село в Székesdűlő цим способом не датоване.",
+    "hu": "A Kárpát-medence korai történetéről szóló áttekintő szócikk szerint a vonaldíszes kerámia kultúrája (i. e. 6. évezred második fele – i. e. 5. évezred első fele) a Dunántúlon alakult ki, és innen terjedt el egész Közép-Európában; népe nyílt, időről időre továbbköltöző falvakban élt, akár 30–40 × 5–8 méteres hosszú házakat épített az egész nagycsaládnak, égetéses-irtásos földművelést folytatott, és juhot, kecskét, szarvasmarhát tartott.\n\nA Dunakesziről szóló szócikk a Székesdűlőn feltárt telepet a város határain belüli legjelentősebb újkőkori telepnek nevezi. Horváth László András (2002) közlése szerint az M0 autóút nyomvonalán 1996-ban végzett leletmentés során 125 objektum és két, észak–déli tájolású hosszú ház nyomai kerültek elő; a kerámia a közép-európai vonaldíszes kerámia első fokozatához tartozik, és akadnak köztük az alföldi vonaldíszes kultúrából származó importdarabok is (részletesen a hely kártyáján).\n\nA kártya dátumai hozzávetőlegesek: a hasonló telepek Horváth által idézett radiokarbon adatainak határai (kb. i. e. 5480/5450–5000); magát a székesdűlői falut ezzel a módszerrel nem keltezték."
+  },
+  "sources": [
+    {
+      "title": "Horváth L. A., Neolithische Funde und Befunde in der Gemarkung von Dunakeszi. Acta Archaeologica Academiae Scientiarum Hungaricae 53 (2002) 1–40",
+      "url": "https://real.mtak.hu/65107/",
+      "note": "Розкопки 1996 року, 125 об'єктів, два довгі будинки, належність посуду, радіовуглецеві дати подібних поселень."
+    },
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділ «Dunakeszi térsége az őskorban»: найзначніше новокам'яне поселення міста розкопано в Székesdűlő."
+    },
+    {
+      "title": "A Kárpát-medence története a honfoglalásig – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/A_K%C3%A1rp%C3%A1t-medence_t%C3%B6rt%C3%A9nete_a_honfoglal%C3%A1sig",
+      "note": "Розділ про неоліт: культура лінійно-стрічкової кераміки, довгі будинки, господарство."
+    }
+  ]
+}

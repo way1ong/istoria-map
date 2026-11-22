@@ -1,6 +1,6 @@
 import { marked } from 'marked';
 import { illustrationById, periodById } from '../data';
-import { formatYear, getLang, lt, t } from '../i18n';
+import { formatYear, formatYearRange, getLang, groupYear, lt, t } from '../i18n';
 import type { CoordsPrecision, DatePrecision, HistEvent, Photo, Place, Source } from '../types';
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
@@ -104,14 +104,19 @@ export function thumbUrl(url: string, width = 960): string {
   return `https://thumb.wikimedia.org/wikipedia/commons/thumb/${a}/${ab}/${name}/${file}`;
 }
 
+/**
+ * Слово перед іменем автора: «Фото» для світлин з мережі, «Автор» для власних зображень з public/photos/
+ * (це вирізки старих мап, а не світлини).
+ */
+const byLabel = (p: Photo) => (/^https?:/.test(p.url) ? t('photoBy') : t('illBy'));
 /** Підпис фото для перегляду на весь екран: опис, автор, ліцензія (by — «Фото» чи «Автор» для малюнків і мап). */
-const photoCredit = (p: Photo, by = t('photoBy')) => `${lt(p.caption) ? `${lt(p.caption)}. ` : ''}${by}: ${p.author}, ${t('license')}: ${p.license}`;
+const photoCredit = (p: Photo, by = byLabel(p)) => `${lt(p.caption) ? `${lt(p.caption)}. ` : ''}${by}: ${p.author}, ${t('license')}: ${p.license}`;
 /** Атрибути, за якими фото відкривається на весь екран (src/ui/lightbox.ts); group — фото однієї картки. */
 const lbAttrs = (p: Photo, group: string, by?: string) =>
   `data-lb="${esc(group)}" data-lb-cap="${esc(photoCredit(p, by))}" data-lb-src="${esc(p.source)}" tabindex="0" role="button"`;
 
 /** Фото з підписом, автором і ліцензією; натискання відкриває перегляд на весь екран (група group). */
-function figure(p: Photo, group: string, cls = '', by = t('photoBy')): string {
+function figure(p: Photo, group: string, cls = '', by = byLabel(p)): string {
   return `<figure${cls ? ` class="${cls}"` : ''}><img crossorigin="anonymous" src="${esc(thumbUrl(p.url))}" data-orig="${esc(p.url)}" onerror="${IMG_FALLBACK}" alt="${esc(lt(p.caption) || '')}" loading="lazy" ${lbAttrs(p, group, by)} />
       <figcaption>${lt(p.caption) ? esc(lt(p.caption)) + '. ' : ''}${esc(by)}: ${esc(p.author)}, ${t('license')}: ${
         p.licenseUrl ? `<a href="${esc(p.licenseUrl)}" target="_blank" rel="noopener">${esc(p.license)}</a>` : esc(p.license)
@@ -145,6 +150,24 @@ marked.use({
   },
 });
 
+/**
+ * Посилання «Маршрут сюди». На Android — адреса geo:, яку відкриває встановлений навігатор на вибір людини
+ * (зокрема ті, що працюють без інтернету); деінде — маршрут у веб-мапах.
+ */
+export function routeHref(lat: number, lon: number, label = ''): string {
+  const at = `${lat.toFixed(6)},${lon.toFixed(6)}`;
+  if (/Android/i.test(navigator.userAgent)) return `geo:${at}?q=${at}${label ? `(${encodeURIComponent(label.replace(/[()]/g, ' '))})` : ''}`;
+  return `https://www.google.com/maps/dir/?api=1&destination=${at}`;
+}
+/**
+ * Атрибути посилання «Маршрут сюди»: веб-мапи відкриваються в новій вкладці, а адресу geo: телефон передає
+ * навігаторові сам (нова вкладка тут лишалася б порожньою).
+ */
+export function routeAttrs(lat: number, lon: number, label = ''): string {
+  const href = routeHref(lat, lon, label);
+  return `href="${esc(href)}"${href.startsWith('geo:') ? '' : ' target="_blank" rel="noopener"'}`;
+}
+
 export function coordsLine(coords: [number, number], precision: CoordsPrecision): string {
   const [lon, lat] = coords;
   return `${t('coords')}: ${lat.toFixed(precision === 'exact' ? 5 : 3)}, ${lon.toFixed(precision === 'exact' ? 5 : 3)} (${precisionLabel(precision)})`;
@@ -163,22 +186,26 @@ export function placeCard(p: Place, full: boolean): string {
     <p>${esc(lt(p.summary))}</p>
     ${full ? `<div class="prose">${md(lt(p.description))}</div>${photos(p.photos, `place-${p.id}`)}` : ''}
     <p class="meta">${coordsLine(p.coords, p.coordsPrecision)}</p>
-    ${full ? sourcesList(p.sources) : `<a class="btn" href="#/place/${p.id}">${t('openCard')}</a>`}
+    <div class="card-btns">${full ? '' : `<a class="btn" href="#/place/${p.id}">${t('openCard')}</a>`}<a class="btn btn-alt" ${routeAttrs(p.coords[1], p.coords[0], lt(p.name))}>${t('routeHere')}</a></div>
+    ${full ? sourcesList(p.sources) : ''}
   `;
 }
 
 // Дата у форматі YYYY[-MM[-DD]] або -YYYY (до н. е.); рік без провідних нулів, до н. е. словами
 function fmtDate(s: string): string {
-  const m = /^(-?)(\d{1,4})(.*)$/.exec(s);
+  const m = /^(-?)(\d{1,6})(.*)$/.exec(s);
   if (!m) return s;
-  const year = String(Number(m[2]));
+  const year = groupYear(Number(m[2]));
   if (!m[1]) return `${year}${m[3]}`;
   return getLang() === 'hu' ? `${t('bce')} ${year}${m[3]}` : `${year}${m[3]} ${t('bce')}`;
 }
 
 export function eventDate(e: HistEvent): string {
   const d = e.date;
-  return `${fmtDate(d.from)}${d.to ? `–${fmtDate(d.to)}` : ''} (${precisionLabel(d.precision)})`;
+  // обидва роки до н. е. без місяця й дня: позначка один раз («5480–5000 до н. е.»)
+  const bare = /^-\d{1,6}$/;
+  const range = d.to && bare.test(d.from) && bare.test(d.to) ? formatYearRange(Number(d.from), Number(d.to)) : `${fmtDate(d.from)}${d.to ? `–${fmtDate(d.to)}` : ''}`;
+  return `${range} (${precisionLabel(d.precision)})`;
 }
 
 export function eventCard(e: HistEvent): string {

@@ -1,8 +1,8 @@
 {
   "id": "vac-ziegelhaus",
   "name": {
-    "uk": "Цегельня «Ziegel H.» у Ваці",
-    "hu": "Téglaház („Ziegel H.”), Vác"
+    "uk": "Цегельня «Ziegel Fb.» у Ваці",
+    "hu": "Téglagyár („Ziegel Fb.”), Vác"
   },
   "type": "other",
   "coords": [
@@ -15,18 +15,18 @@
   ],
   "vanished": true,
   "summary": {
-    "uk": "Цегельня на північній околиці Вацу, підписана німецькою «Ziegel H.» на аркуші 1885 року; нині тут житлові вулиці частини Szentmihály.",
-    "hu": "Téglaház Vác északi szélén, az 1885-ös lapon német „Ziegel H.” felirattal; ma Szentmihály városrész lakóutcái vannak itt."
+    "uk": "Цегельня на північній околиці Вацу, підписана німецькою «Ziegel Fb.» (Ziegelfabrik, цегельний завод) на аркуші 1885 року; нині тут житлові вулиці частини Szentmihály.",
+    "hu": "Téglagyár Vác északi szélén, az 1885-ös lapon német „Ziegel Fb.” (Ziegelfabrik) felirattal; ma Szentmihály városrész lakóutcái vannak itt."
   },
   "description": {
-    "uk": "На аркуші 1885 року між корчмами «Kőhíd cs.» і «Buki cs.», на схід від дороги вздовж Дунаю, позначено будівлі з німецьким підписом «Ziegel H.» (цегельня). Північніше на тому ж аркуші стоїть ще одна цегельня, «Káptalan Téglaháza» (окрема картка). За статтею про Вац, Szentmihály і Téglaház нині є частинами району Deákvár; за зворотним геокодуванням місце цегельні припадає на вулицю Angyal utca в частині Szentmihály. Слідів цегельні в сучасних даних немає. Координати зняті з мапи з точністю близько 50 м.",
-    "hu": "Az 1885-ös lapon a „Kőhíd cs.” és a „Buki cs.” csárda között, a Duna menti úttól keletre német „Ziegel H.” (téglaház) feliratú épületek láthatók. Ugyanezen a lapon északabbra egy másik téglaház is áll, a „Káptalan Téglaháza” (külön kártya). A Vácról szóló szócikk szerint Szentmihály és Téglaház ma Deákvár részei; a fordított geokódolás szerint a téglaház helye a szentmihályi Angyal utcára esik. A téglaháznak a mai adatokban nincs nyoma. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+    "uk": "На аркуші 1885 року між корчмами «Kőhíd cs.» і «Buki cs.», на схід від дороги вздовж Дунаю, позначено будівлі з німецьким підписом «Ziegel Fb.» (Ziegelfabrik, цегельний завод). Такий самий підпис стоїть і трохи північніше, над назвою пагорба «Cigány h.», а на північний схід на тому ж аркуші позначено ще одну цегельню, «Káptalan Téglaháza» (окрема картка). За статтею про Вац, Szentmihály і Téglaház нині є частинами району Deákvár; за зворотним геокодуванням місце цегельні припадає на вулицю Angyal utca в частині Szentmihály. Слідів цегельні в сучасних даних немає. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1885-ös lapon a „Kőhíd cs.” és a „Buki cs.” csárda között, a Duna menti úttól keletre német „Ziegel Fb.” (Ziegelfabrik, téglagyár) feliratú épületek láthatók. Ugyanez a felirat valamivel északabbra, a „Cigány h.” domb neve fölött is áll, északkeletre pedig ugyanezen a lapon egy másik téglaház is látható, a „Káptalan Téglaháza” (külön kártya). A Vácról szóló szócikk szerint Szentmihály és Téglaház ma Deákvár részei; a fordított geokódolás szerint a téglagyár helye a szentmihályi Angyal utcára esik. A téglagyárnak a mai adatokban nincs nyoma. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
   },
   "sources": [
     {
       "title": "Spezialkarte 14:XX Nógrád und Waitzen, 1885, NYPL/Commons",
       "url": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
-      "note": "Підпис «Ziegel H.» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+      "note": "Підпис «Ziegel Fb.» на аркуші (до 22.11.2026 у картці помилково стояло «Ziegel H.»). Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
     },
     {
       "title": "Vác – Wikipédia (hu)",
@@ -37,6 +37,19 @@
       "title": "Nominatim (OpenStreetMap): зворотне геокодування",
       "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.79937&lon=19.11214",
       "note": "Нині на цьому місці: житлова вулиця Angyal utca, Szentmihály (Vác). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "photos/vac-ziegelhaus-spezialkarte.jpg",
+      "author": "K. u. k. Militärgeographisches Institut",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
+      "caption": {
+        "uk": "Цегельня «Ziegel Fb.» між корчмами «Kőhíd cs.» і «Buki cs.» на північній околиці Вацу на аркуші Spezialkarte 14:XX 1885 року (виправлено до 1912; скан NYPL)",
+        "hu": "A „Ziegel Fb.” téglagyár a „Kőhíd cs.” és a „Buki cs.” között, Vác északi szélén a Spezialkarte 14:XX 1885-ös lapján (1912-ig javítva; szkennelt példány: NYPL)"
+      }
     }
   ]
 }

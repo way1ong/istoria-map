@@ -32,13 +32,14 @@ export default defineConfig({
       manifest: false,
       workbox: {
         // прив'язки старих мап (georef) потрібні Allmaps і без мережі — для збережених ділянок
-        globPatterns: ['**/*.{js,css,html,webmanifest}', 'icons/*.png', 'georef/*.json'],
+        // photos/ — власні зображення до карток (вирізки старих мап): невеликі, тож ідуть у кеш застосунку
+        globPatterns: ['**/*.{js,css,html,webmanifest}', 'icons/*.png', 'georef/*.json', 'photos/*.{jpg,jpeg,png,webp}'],
         // основний файл з усіма даними ~3 МБ
         maximumFileSizeToCacheInBytes: 12 * 1024 * 1024,
         clientsClaim: true,
         cleanupOutdatedCaches: true,
         navigateFallback: 'index.html',
-        navigateFallbackDenylist: [/\/(maps|tiles|offline|fonts|georef|icons|screenshots)\//],
+        navigateFallbackDenylist: [/\/(maps|tiles|offline|fonts|georef|icons|screenshots|photos)\//],
         runtimeCaching: [
           {
             // тайли генеральної мапи ~1910: пакет «Генеральна мапа» і переглянуті ділянки

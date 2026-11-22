@@ -1,0 +1,41 @@
+{
+  "id": "jazigok-bekoltozese",
+  "title": {
+    "uk": "Язиги переселяються на Альфельд",
+    "hu": "A jazigok beköltözése az Alföldre"
+  },
+  "date": {
+    "from": "0001",
+    "to": "0020",
+    "precision": "approximate"
+  },
+  "period": "roman-barbaricum",
+  "places": [
+    "dunakeszi-szekesdulo"
+  ],
+  "summary": {
+    "uk": "У перші десятиліття нашої ери на Альфельд прийшли язиги з групи сарматів і зайняли долини Дунаю й Тиси та межиріччя; відтоді лівий берег Дунаю біля Dunakeszi, Göd і Вацу був їхньою землею навпроти римської Паннонії.",
+    "hu": "Időszámításunk első évtizedeiben a szarmaták közé tartozó jazigok költöztek az Alföldre, és megszállták a Duna és a Tisza völgyét, valamint a Duna–Tisza közét; ettől fogva a Duna bal partja Dunakeszi, Göd és Vác táján az ő földjük volt a római Pannoniával szemben."
+  },
+  "description": {
+    "uk": "Оглядова стаття про давню історію Карпатської улоговини подає час приходу язигів двояко: у вступі — у перше десятиліття нашої ери, у розділі про римську добу — близько 20 року, за правління імператора Тіберія. За статтею, плем'я, що дало назву цьому народові (iazyges; пізніше їх звали й ясами), ішло вгору вздовж Дунаю і найперше зайняло долини Дунаю й Тиси та межиріччя між ними; їхні володіння сягали від річки Олт через Банат приблизно до рівнини Borsodi-Mezőség. У II столітті, коли скінчилося панування даків, вони оселилися й за Тисою.\n\nЗа статтею про Dunakeszi, у римський час Задунав'я належало імперії, яку від східних «варварських» сусідів відділяв Дунай; на східному боці закріпилися сармати, і в Dunakeszi жила одна з їхніх гілок, язиги: у Székesdűlő археологи розкопали дві могили й частини села. Околиця Вацу, за статтею про місто, у римський час лежала в прикордонній смузі між іраномовними сарматами й германськими квадами.\n\nДати в картці умовні й охоплюють обидва твердження оглядової статті.",
+    "hu": "A Kárpát-medence korai történetéről szóló áttekintő szócikk a jazigok érkezésének idejét kétféleképpen adja meg: a bevezetőben időszámításunk első évtizedére, a római korról szóló részben 20 körülre, Tiberius császár uralkodásának idejére teszi. A szócikk szerint a nép névadó törzse (iazyges; később jászoknak is nevezték őket) a Duna mentén vándorolt felfelé, és legkorábban a Duna és a Tisza völgyét, valamint a Duna–Tisza közét foglalta el; birtokaik az Olt folyótól a Bánságon keresztül nagyjából a Borsodi-Mezőségig terjedtek. A 2. században, amikor a dákok uralmának vége szakadt, a Tiszántúlon is megtelepedtek.\n\nA Dunakesziről szóló szócikk szerint a római császárkorban a Dunántúl a Római Birodalomhoz tartozott, amelyet a keleti „barbár” szomszédoktól a Duna határolt el; a keleti részen a szarmaták vetették meg a lábukat, és Dunakeszin is e népcsoport egyik ága, a jazigok éltek: a Székesdűlőn a régészek két sírt és egy falu részeit tárták fel. Vác térsége a városról szóló szócikk szerint a római korban az iráni nyelvű szarmaták és a germán kvádok közti határzónába esett.\n\nA kártya dátumai hozzávetőlegesek, és az áttekintő szócikk mindkét állítását átfogják."
+  },
+  "sources": [
+    {
+      "title": "A Kárpát-medence története a honfoglalásig – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/A_K%C3%A1rp%C3%A1t-medence_t%C3%B6rt%C3%A9nete_a_honfoglal%C3%A1sig",
+      "note": "Вступ: язиги переселилися на Альфельд у перше десятиліття нашої ери; розділ про римську добу: близько 20 року, за Тіберія; межі їхніх володінь."
+    },
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділ «Dunakeszi területe az ókorban»: язиги в Székesdűlő, дві могили й частини села."
+    },
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділ про римську добу: прикордонна смуга між сарматами й квадами."
+    }
+  ]
+}

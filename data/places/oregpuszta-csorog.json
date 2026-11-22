@@ -14,18 +14,18 @@
     "long-19"
   ],
   "summary": {
-    "uk": "Пуста на схід від дороги Вац–Sződ, підписана «Öregpsz.» на аркуші 1904 року; нині місце в межах громади Csörög, за 230 м від залізничної зупинки Csörög.",
-    "hu": "Puszta a Vác–Sződ úttól keletre, az 1904-es lapon „Öregpsz.” felirattal; helye ma Csörög területén van, 230 m-re a csörögi vasúti megállótól."
+    "uk": "Пуста на схід від дороги Вац–Sződ, підписана «Öreg psz.» на аркуші 1904 року; нині місце в межах громади Csörög, за 230 м від залізничної зупинки Csörög.",
+    "hu": "Puszta a Vác–Sződ úttól keletre, az 1904-es lapon „Öreg psz.” felirattal; helye ma Csörög területén van, 230 m-re a csörögi vasúti megállótól."
   },
   "description": {
-    "uk": "На аркуші 1904 року на південний схід від корчми «Pendelhajtó», біля дороги, позначено будівлі з підписом «Öregpsz.» (Öreg puszta, «стара пуста»). Назви в сучасних даних OpenStreetMap немає; за зворотним геокодуванням позначка з мапи припадає на спортивний майданчик біля вулиці Vasút utca в Csörög, приблизно за 230 м від залізничної зупинки. Стаття про Csörög пише, що в XIX столітті тут постало кілька панських садиб, серед них садиба Holló близько 1810 року біля нинішньої станції (тепер сироварня); чи це та сама пуста, з джерел не видно, тому позначки «зник» картка не має. Координати зняті з мапи з точністю близько 50 м.",
-    "hu": "Az 1904-es lapon a „Pendelhajtó” vendéglőtől délkeletre, az út mellett „Öregpsz.” (Öreg puszta) feliratú épületek láthatók. A név a mai OpenStreetMap-adatokban nem szerepel; a fordított geokódolás szerint a térképi jel a csörögi Vasút utca melletti sportpályára esik, mintegy 230 m-re a vasúti megállótól. A Csörögről szóló szócikk szerint a 19. században több nemesi lak épült itt, köztük 1810 körül a Holló-kúria a mai vasútállomás mellett (ma sajtgyár); hogy ez ugyanaz a puszta-e, a forrásokból nem derül ki, ezért a kártya nem kapott „eltűnt” jelölést. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+    "uk": "На аркуші 1904 року на південний схід від корчми «Pendelhajtó», біля дороги, позначено будівлі з підписом «Öreg psz.» (Öreg puszta, «стара пуста»). Назви в сучасних даних OpenStreetMap немає; за зворотним геокодуванням позначка з мапи припадає на спортивний майданчик біля вулиці Vasút utca в Csörög, приблизно за 230 м від залізничної зупинки. Стаття про Csörög пише, що в XIX столітті тут постало кілька панських садиб, серед них садиба Holló близько 1810 року біля нинішньої станції (тепер сироварня); чи це та сама пуста, з джерел не видно, тому позначки «зник» картка не має. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1904-es lapon a „Pendelhajtó” vendéglőtől délkeletre, az út mellett „Öreg psz.” (Öreg puszta) feliratú épületek láthatók. A név a mai OpenStreetMap-adatokban nem szerepel; a fordított geokódolás szerint a térképi jel a csörögi Vasút utca melletti sportpályára esik, mintegy 230 m-re a vasúti megállótól. A Csörögről szóló szócikk szerint a 19. században több nemesi lak épült itt, köztük 1810 körül a Holló-kúria a mai vasútállomás mellett (ma sajtgyár); hogy ez ugyanaz a puszta-e, a forrásokból nem derül ki, ezért a kártya nem kapott „eltűnt” jelölést. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
   },
   "sources": [
     {
       "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
       "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
-      "note": "Підпис «Öregpsz.» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
+      "note": "Підпис «Öreg psz.» на аркуші. Координати зчитано з копії аркуша шириною 3840 px за кутами рамки, з поправкою на зсув старої геодезичної основи (близько 70 м на захід і 80 м на південь, визначено за вісьмома сільськими церквами з координатами OpenStreetMap); точність близько 50 м."
     },
     {
       "title": "Nominatim (OpenStreetMap): пошук «Öregpuszta»",
@@ -41,6 +41,19 @@
       "title": "Nominatim (OpenStreetMap): зворотне геокодування",
       "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.73536&lon=19.19862",
       "note": "Нині на цьому місці: спортивний майданчик, Vasút utca (Csörög). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "photos/oregpuszta-csorog-spezialkarte.jpg",
+      "author": "K. u. k. Militärgeographisches Institut",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Budapest-%C3%93buda_BV035904981.jpg",
+      "caption": {
+        "uk": "Пуста «Öreg psz.» на аркуші Spezialkarte 15:XX, видання 1914 року (виправлено до 1913; скан IOS Regensburg)",
+        "hu": "Az „Öreg psz.” (Öreg puszta) a Spezialkarte 15:XX lapján, 1914-es kiadás (1913-ig javítva; szkennelt példány: IOS Regensburg)"
+      }
     }
   ]
 }

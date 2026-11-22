@@ -17,10 +17,13 @@ import { basemaps, histMaps, periodById, places } from './data';
 import { basemapStyle, chooseBasemap, localizeBasemapLabels, offlineBasemap, setPreferredBasemap } from './basemap';
 import { installed, offlineMapReady } from './offline';
 import { areasGeoJSON, areasOutline, onAreasChange, savedAreas } from './offlineareas';
+import { watchTracking } from './tracking';
+import { addMarksLayer, MARKS_LAYER, watchMarks } from './markslayer';
 import { lt } from './i18n';
 import { colorFor, loadBorders, loadModern } from './borders';
 import { addOldMap, type OldMapHandle } from './oldmap';
-import { DOT_RADIUS, DOT_STROKE, HALO_RADIUS } from './markers';
+import { HALO_RADIUS } from './markers';
+import { MARKER_IMAGE, markerSize, SHAPE, useMarkerImages } from './shapes';
 import type { BorderCollection, HistMap, Place, PlaceType } from './types';
 
 // Стартовий вигляд: уся Угорщина (центр країни, зум під екран телефона).
@@ -55,6 +58,10 @@ export interface MapController {
   setPlaceFilter(f: PlaceFilter): void;
   /** Типи місць, якими обмежує мітки вибрана накладка (поле placeTypes у data/maps), або null. */
   overlayPlaceTypes(): PlaceType[] | null;
+  /** Натиснуто власну мітку (прапорець). */
+  onMarkClick(cb: (id: string) => void): void;
+  /** Довге натискання на мапі (або права кнопка миші): координати точки [довгота, широта]. */
+  onLongPress(cb: (at: [number, number]) => void): void;
 }
 
 export interface PlaceFilter {
@@ -112,6 +119,8 @@ function featureCollection(periodId: string | null, lang: string, filter: PlaceF
             id: p.id,
             label: lt(p.name),
             color: period?.color ?? '#6b7280',
+            // форма мітки — за типом місця (src/shapes.ts)
+            shape: SHAPE[p.type],
             vanished: p.vanished ? 1 : 0,
             // є фото — біля кружка значок фотоапарата
             photo: p.photos?.length ? 1 : 0,
@@ -159,8 +168,12 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
     // старі мапи в повній якості (Allmaps) не підтримують нахил мапи
     maxPitch: 0,
   });
+  useMarkerImages(map);
   map.addControl(new NavigationControl({ showCompass: false }), 'top-right');
-  map.addControl(new GeolocateControl({ trackUserLocation: false }), 'top-right');
+  // Кнопка місця стежить за людиною: точка рухається разом з нею (і на старій мапі), екран при цьому не гасне.
+  const geolocate = new GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true, showAccuracyCircle: true, fitBoundsOptions: { maxZoom: 15 } });
+  map.addControl(geolocate, 'top-right');
+  watchTracking(map, geolocate);
 
   let currentPeriod: string | null = null;
   let placeFilter: PlaceFilter = { types: [], vanishedOnly: false };
@@ -170,6 +183,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   const opacityExpr = (sel: string | null): ExpressionSpecification | number =>
     sel ? ['case', ['==', ['get', 'id'], sel], 1, 0.25] : 1;
 
+  let layerHandlers = false;
   const addLayers = () => {
     if (map.getSource(SRC)) return;
     // Історичні кордони: заливка за державою, контур і підпис; видимі лише при віддаленні.
@@ -200,17 +214,13 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       source: SRC,
       paint: { 'circle-radius': HALO_RADIUS, 'circle-color': ['get', 'color'], 'circle-opacity': 0.25 },
     });
+    // Мітка: колір — період, форма — тип місця; зниклі об'єкти (хутори, корчми, млини) — порожні.
+    // Зображення малюються за потреби (useMarkerImages).
     map.addLayer({
       id: 'places-dot',
-      type: 'circle',
+      type: 'symbol',
       source: SRC,
-      paint: {
-        'circle-radius': DOT_RADIUS,
-        // Зниклі об'єкти (хутори, корчми, млини) малюються порожнім кружком
-        'circle-color': ['case', ['==', ['get', 'vanished'], 1], '#ffffff', ['get', 'color']],
-        'circle-stroke-color': ['case', ['==', ['get', 'vanished'], 1], ['get', 'color'], '#ffffff'],
-        'circle-stroke-width': DOT_STROKE,
-      },
+      layout: { 'icon-image': MARKER_IMAGE, 'icon-size': markerSize(), 'icon-allow-overlap': true, 'icon-ignore-placement': true },
     });
     // значок фотоапарата в правому верхньому куті кружка місця, у якого є фото
     if (!map.hasImage('photo-badge')) map.addImage('photo-badge', cameraIcon(), { pixelRatio: 2 });
@@ -240,8 +250,16 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       paint: { 'text-color': '#111827', 'text-halo-color': '#ffffff', 'text-halo-width': 1.5 },
     });
 
+    // Власні мітки людини — прапорці поверх усього (src/markslayer.ts); дані лише з цього браузера.
+    addMarksLayer(map);
+
+    // обробники шарів прив'язуються один раз: після зміни підкладки шари додаються знову, а обробники лишаються
+    if (layerHandlers) return;
+    layerHandlers = true;
     for (const layer of ['places-dot', 'places-halo', 'places-photo']) {
       map.on('click', layer, (e: MapLayerMouseEvent) => {
+        // прапорець поверх місця: відкривається мітка, а не картка місця під нею
+        if (onFlag(e.point)) return;
         const f = e.features?.[0];
         if (f) onSelect(String(f.properties?.id));
       });
@@ -270,9 +288,61 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   });
   map.on('click', (e: MapMouseEvent) => {
     if (!map.getLayer('places-dot')) return;
+    if (onFlag(e.point)) return;
     const hits = map.queryRenderedFeatures(e.point, { layers: ['places-dot', 'places-halo', 'places-photo'] });
     if (hits.length === 0) onSelect(null);
   });
+
+  // ---------- власні мітки ----------
+  let markCb: ((id: string) => void) | null = null;
+  let longPressCb: ((at: [number, number]) => void) | null = null;
+  const onFlag = (pt: MapMouseEvent['point']) => !!map.getLayer(MARKS_LAYER) && map.queryRenderedFeatures(pt, { layers: [MARKS_LAYER] }).length > 0;
+  map.on('click', MARKS_LAYER, (e: MapLayerMouseEvent) => {
+    const id = e.features?.[0]?.properties?.id;
+    if (id) markCb?.(String(id));
+  });
+  map.on('mouseenter', MARKS_LAYER, () => (map.getCanvas().style.cursor = 'pointer'));
+  map.on('mouseleave', MARKS_LAYER, () => (map.getCanvas().style.cursor = ''));
+  watchMarks(map);
+  // Довге натискання пальцем (≈ 0,65 с без руху) або права кнопка миші — нова мітка в цій точці.
+  {
+    const el = map.getCanvasContainer();
+    let timer = 0;
+    let start: { x: number; y: number } | null = null;
+    let lastTouch = 0;
+    const cancel = () => { clearTimeout(timer); timer = 0; start = null; };
+    const at = (t: Touch) => { const r = el.getBoundingClientRect(); return { x: t.clientX - r.left, y: t.clientY - r.top }; };
+    el.addEventListener('touchstart', (e) => {
+      lastTouch = Date.now();
+      cancel();
+      if (e.touches.length !== 1 || !longPressCb) return;
+      const p = at(e.touches[0]);
+      start = p;
+      timer = window.setTimeout(() => {
+        timer = 0;
+        if (!start || !longPressCb) return;
+        start = null;
+        // на прапорці довге натискання нової мітки не ставить
+        if (onFlag([p.x, p.y] as unknown as MapMouseEvent['point'])) return;
+        const ll = map.unproject([p.x, p.y]);
+        navigator.vibrate?.(35);
+        longPressCb([ll.lng, ll.lat]);
+      }, 650);
+    }, { passive: true });
+    el.addEventListener('touchmove', (e) => {
+      if (!start) return;
+      const p = at(e.touches[0]);
+      if (e.touches.length !== 1 || Math.hypot(p.x - start.x, p.y - start.y) > 10) cancel();
+    }, { passive: true });
+    el.addEventListener('touchend', cancel, { passive: true });
+    el.addEventListener('touchcancel', cancel, { passive: true });
+    map.on('contextmenu', (e: MapMouseEvent) => {
+      // на телефоні довге натискання дає ще й цю подію — її вже опрацював таймер
+      if (Date.now() - lastTouch < 1500 || !longPressCb) return;
+      e.preventDefault();
+      if (!onFlag(e.point)) longPressCb([e.lngLat.lng, e.lngLat.lat]);
+    });
+  }
 
   const refresh = () => {
     const src = map.getSource(SRC) as GeoJSONSource | undefined;
@@ -280,8 +350,7 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
   };
   const applySelection = () => {
     if (!map.getLayer('places-dot')) return;
-    map.setPaintProperty('places-dot', 'circle-opacity', opacityExpr(selected));
-    map.setPaintProperty('places-dot', 'circle-stroke-opacity', opacityExpr(selected));
+    map.setPaintProperty('places-dot', 'icon-opacity', opacityExpr(selected));
     map.setPaintProperty('places-halo', 'circle-opacity', selected ? ['case', ['==', ['get', 'id'], selected], 0.35, 0.08] : 0.25);
     map.setPaintProperty('places-label', 'text-opacity', opacityExpr(selected));
     map.setPaintProperty('places-photo', 'icon-opacity', opacityExpr(selected));
@@ -418,6 +487,8 @@ export function createMap(container: HTMLElement, onSelect: (id: string | null) 
       whenReady(() => void applyBorders());
     },
     onBorders(cb) { bordersCb = cb; },
+    onMarkClick(cb) { markCb = cb; },
+    onLongPress(cb) { longPressCb = cb; },
     setBasemap(id) {
       const b = basemaps.find((x) => x.id === id);
       if (!b || b.id === basemap.id) return;

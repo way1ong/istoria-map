@@ -33,5 +33,18 @@
       "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.76898&lon=19.14371",
       "note": "Нині на цьому місці: житловий масив Földváry Károly-lakótelep, Alsóváros (Vác). Дані © учасники OpenStreetMap, ODbL."
     }
+  ],
+  "photos": [
+    {
+      "url": "photos/vac-teufelsmuhle-spezialkarte.jpg",
+      "author": "K. u. k. Militärgeographisches Institut",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
+      "caption": {
+        "uk": "Млин «Teufels M.» на південній околиці Вацу на аркуші Spezialkarte 14:XX 1885 року (виправлено до 1912; скан NYPL)",
+        "hu": "A „Teufels M.” (malom) Vác déli szélén a Spezialkarte 14:XX 1885-ös lapján (1912-ig javítva; szkennelt példány: NYPL)"
+      }
+    }
   ]
 }

@@ -1,0 +1,30 @@
+{
+  "id": "mai-ember-megjelenese",
+  "title": {
+    "uk": "Поява сучасної людини в Карпатській улоговині",
+    "hu": "A mai ember megjelenése a Kárpát-medencében"
+  },
+  "date": {
+    "from": "-33000",
+    "precision": "approximate"
+  },
+  "period": "prehistory",
+  "places": [
+    "istallos-ko-barlang"
+  ],
+  "summary": {
+    "uk": "Близько 35 000 років тому, під час останнього зледеніння, в Карпатській улоговині з'явилася сучасна людина; пам'ятки її оріньякської культури знайдено в печері Istállós-kő у горах Бюкк.",
+    "hu": "Mintegy 35 000 évvel ezelőtt, a legutóbbi jégkorszak idején jelent meg a Kárpát-medencében a mai ember; aurignaci kultúrájának emlékeit a bükki Istállós-kői-barlangban találták meg."
+  },
+  "description": {
+    "uk": "За оглядовою статтею про давню історію Карпатської улоговини, появу сучасної людини тут відносять приблизно до 35 000 років тому (пізній палеоліт). Це збіглося з останнім, вюрмським зледенінням, коли улоговина була холодним краєм на зразок тундри. Тисячоліттями ці люди належали до кількох культурних кіл: місцевої селетської культури, а також поширених і в решті Європи оріньякської та граветської; за типом це були кроманьйонці, перші європейські представники сучасної людини.\n\nУ печері Istállós-kő знайдено пам'ятки оріньякської культури, серед них кістяну сопілку з трьома отворами, на якій можна було видобути п'ять звуків. У печерах гір Бюкк поряд зі слідами неандертальців знайдено і сліди кроманьйонців; у печері Szeleta — тонко оброблені кам'яні знаряддя селетської культури.\n\nДата в картці умовна: «близько 35 000 років тому».",
+    "hu": "A Kárpát-medence korai történetéről szóló áttekintő szócikk szerint a mai ember megjelenése a területen mintegy 35 000 évvel ezelőttre tehető (késői őskőkor). Ez a legutóbbi jégkorszak, a Würm-glaciális idejére esett, amikor a Kárpát-medence hideg, tundrajellegű terület lehetett. Ezek az emberek évezredeken át néhány fő kultúrkörhöz tartoztak: a helyi kialakulású Szeleta-kultúrához, valamint az Európa többi részén is elterjedt aurignaci és gravetti kultúrához; embertípusuk szerint a mai ember első európai képviselői, a cro-magnoni emberek közé tartoztak.\n\nAz Istállós-kői-barlangban az aurignaci kultúra emlékeit találták meg, többek között egy háromlyukú csontsípot, amely öt hang megszólaltatására volt alkalmas. A Bükk barlangjaiban a neandervölgyiek mellett a cro-magnoni emberek emlékei is előkerültek; a Szeleta-barlangban a Szeleta-kultúra finoman kidolgozott kőeszközei.\n\nA kártya dátuma hozzávetőleges: „mintegy 35 000 évvel ezelőtt”."
+  },
+  "sources": [
+    {
+      "title": "A Kárpát-medence története a honfoglalásig – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/A_K%C3%A1rp%C3%A1t-medence_t%C3%B6rt%C3%A9nete_a_honfoglal%C3%A1sig",
+      "note": "Розділ про пізній палеоліт: поява сучасної людини близько 35 000 років тому, культури, печери Istállós-kő і Szeleta."
+    }
+  ]
+}
