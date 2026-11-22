@@ -20,14 +20,14 @@
     "hu": "Puszta és malom a Sződrákosi-patak mellett Göd és Sződ között; 1883-ban Floch-Reyhersberg birtoka. Az 1910-es parcellázásból lett Sződliget."
   },
   "description": {
-    "uk": "На аркуші 1904 року на північ від Göd підписано «Sződrákos pszt.» (puszta). За статтею про Sződliget, 1883 року Sződrákos, Sződrákospuszta і Csörögpuszta належали dr. lovag Alfréd Floch-Reyhersberg, а 1910 року він розпарцелював землі від зупинки Sződ до млина Sződrákos і до межі Вацу, звідки постало Sződligettelep. Млин маєтку Grassalkovich на тому самому місці стоїть донині. Координати пусти зняті з мапи з точністю близько 50 м. Будівлі пусти на аркуші стоять біля прибережної дороги над Дунаєм; за зворотним геокодуванням це місце нині займає пристань Sződligeti kikötő в рибальському селищі Sződliget.",
-    "hu": "Az 1904-es térképlapon Gödtől északra a „Sződrákos pszt.” (puszta) felirat olvasható. A Sződligetről szóló szócikk szerint 1883-ban Sződrákos, Sződrákospuszta és Csörögpuszta dr. lovag Floch-Reyhersberg Alfréd tulajdonában volt, 1910-ben pedig felparcellázta a földeket a sződi megállótól a sződrákosi malomig és Vác határáig, amiből Sződligettelep keletkezett. A Grassalkovich-uradalom malma ugyanazon a helyen ma is áll. A puszta koordinátáit a térképről vettük mintegy 50 m pontossággal. A puszta épületei a lapon a Duna feletti parti út mellett állnak; a fordított geokódolás szerint ezt a helyet ma a Sződligeti kikötő foglalja el a sződligeti horgásztelepen."
+    "uk": "На аркуші 1904 року на північ від Göd підписано «Psz. Sződrákos» (Puszta Sződrákos). За статтею про Sződliget, 1883 року Sződrákos, Sződrákospuszta і Csörögpuszta належали dr. lovag Alfréd Floch-Reyhersberg, а 1910 року він розпарцелював землі від зупинки Sződ до млина Sződrákos і до межі Вацу, звідки постало Sződligettelep. Млин маєтку Grassalkovich на тому самому місці стоїть донині. Координати пусти зняті з мапи з точністю близько 50 м. Будівлі пусти на аркуші стоять біля прибережної дороги над Дунаєм; за зворотним геокодуванням це місце нині займає пристань Sződligeti kikötő в рибальському селищі Sződliget.",
+    "hu": "Az 1904-es térképlapon Gödtől északra a „Psz. Sződrákos” (Puszta Sződrákos) felirat olvasható. A Sződligetről szóló szócikk szerint 1883-ban Sződrákos, Sződrákospuszta és Csörögpuszta dr. lovag Floch-Reyhersberg Alfréd tulajdonában volt, 1910-ben pedig felparcellázta a földeket a sződi megállótól a sződrákosi malomig és Vác határáig, amiből Sződligettelep keletkezett. A Grassalkovich-uradalom malma ugyanazon a helyen ma is áll. A puszta koordinátáit a térképről vettük mintegy 50 m pontossággal. A puszta épületei a lapon a Duna feletti parti út mellett állnak; a fordított geokódolás szerint ezt a helyet ma a Sződligeti kikötő foglalja el a sződligeti horgásztelepen."
   },
   "sources": [
     {
       "title": "Spezialkarte 15:XX Óbuda (Budapest), 1904, NYPL/Commons",
       "url": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
-      "note": "Підпис «Sződrákos pszt.» на аркуші. Координати 16.11.2026 перезняті з копії 3840 px по значку будівель (раніше точка стояла за кількасот метрів від нього) з поправкою на зсув старої геодезичної основи; точність близько 50 м."
+      "note": "Підпис «Psz. Sződrákos» на аркуші. Координати 16.11.2026 перезняті з копії 3840 px по значку будівель (раніше точка стояла за кількасот метрів від нього) з поправкою на зсув старої геодезичної основи; точність близько 50 м."
     },
     {
       "title": "Sződliget – Wikipédia (hu)",
@@ -38,6 +38,19 @@
       "title": "Nominatim (OpenStreetMap): зворотне геокодування",
       "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.7308&lon=19.1345",
       "note": "Нині на цьому місці: пристань Sződligeti kikötő, Sződligeti Horgásztelep (Sződliget). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "photos/szodrakos-puszta-spezialkarte.jpg",
+      "author": "K. u. k. Militärgeographisches Institut",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Budapest-%C3%93buda_BV035904981.jpg",
+      "caption": {
+        "uk": "Пуста «Psz. Sződrákos» над Дунаєм на аркуші Spezialkarte 15:XX, видання 1914 року (виправлено до 1913; скан IOS Regensburg)",
+        "hu": "A „Psz. Sződrákos” (puszta) a Duna mellett a Spezialkarte 15:XX lapján, 1914-es kiadás (1913-ig javítva; szkennelt példány: IOS Regensburg)"
+      }
     }
   ]
 }

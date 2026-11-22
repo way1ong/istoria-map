@@ -1,5 +1,5 @@
 import { events, periodById, periods, placeById } from '../data';
-import { formatYear, getLang, lt, t } from '../i18n';
+import { formatYear, formatYearRange, getLang, lt, t } from '../i18n';
 import { precisionLabel } from '../ui/render';
 import type { HistEvent } from '../types';
 
@@ -7,7 +7,7 @@ const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&l
 
 /** Числовий ключ дати «рік-місяць-день» (рік може бути від'ємним і без нулів попереду: «-0400», «324», «1241-04-11»). */
 export function dateKey(s: string): number {
-  const m = /^(-?)(\d{1,4})(?:-(\d{2}))?(?:-(\d{2}))?/.exec(s.trim());
+  const m = /^(-?)(\d{1,6})(?:-(\d{2}))?(?:-(\d{2}))?/.exec(s.trim());
   if (!m) return Number.POSITIVE_INFINITY;
   const y = Number(m[2]) * (m[1] ? -1 : 1);
   const mo = m[3] ? Number(m[3]) : 0;
@@ -15,20 +15,22 @@ export function dateKey(s: string): number {
   return y + (mo ? (mo - 1) / 12 : 0) + (d ? (d - 1) / 372 : 0);
 }
 
-/** Рік для лівої колонки: «1241», «1526–1541», «400 до н. е.». */
+/** Рік з дати події числом («-0400» → −400). */
+function yearNum(s: string): number | null {
+  const m = /^(-?)(\d{1,6})/.exec(s);
+  return m ? Number(m[2]) * (m[1] ? -1 : 1) : null;
+}
+
+/** Рік для лівої колонки: «1241», «1526–1541», «400 до н. е.», «5480–5000 до н. е.». */
 function yearLabel(e: HistEvent): string {
-  const y = (s: string) => {
-    const m = /^(-?)(\d{1,4})/.exec(s);
-    return m ? formatYear(Number(m[2]) * (m[1] ? -1 : 1)) : s;
-  };
-  const from = y(e.date.from);
-  const to = e.date.to ? y(e.date.to) : '';
-  return to && to !== from ? `${from}–${to}` : from;
+  const from = yearNum(e.date.from);
+  if (from === null) return e.date.from;
+  return formatYearRange(from, e.date.to ? yearNum(e.date.to) : null);
 }
 
 /** Повна дата з днем і місяцем, якщо вона відома (для підпису під назвою). */
 function fullDate(s: string): string | null {
-  const m = /^(-?)(\d{1,4})-(\d{2})(?:-(\d{2}))?/.exec(s);
+  const m = /^(-?)(\d{1,6})-(\d{2})(?:-(\d{2}))?/.exec(s);
   if (!m) return null;
   const i = Number(m[3]) - 1;
   if (!m[4]) return t('monthsNom').split(',')[i] ?? null;
@@ -54,9 +56,14 @@ export function chronologyPage(periodId?: string): string {
         .map((p) => `<a class="chip chip-period${period?.id === p.id ? ' active' : ''}" style="--c:${p.color}" href="#/chronology?period=${p.id}">${esc(lt(p.name))} (${count(p.id)})</a>`),
     )
     .join('');
-  const first = shown[0], last = shown[shown.length - 1];
-  const lead = shown.length
-    ? t('chronoLead').replace('{n}', String(shown.length)).replace('{from}', yearLabel(first)).replace('{to}', yearLabel(last))
+  // межі переліку: рік початку першої події й найпізніший рік кінця
+  const firstYear = shown.length ? yearNum(shown[0].date.from) : null;
+  const lastYear = shown.reduce<number | null>((mx, e) => {
+    const y = yearNum(e.date.to ?? e.date.from);
+    return y !== null && (mx === null || y > mx) ? y : mx;
+  }, null);
+  const lead = shown.length && firstYear !== null && lastYear !== null
+    ? t('chronoLead').replace('{n}', String(shown.length)).replace('{from}', formatYear(firstYear)).replace('{to}', formatYear(lastYear)).replace('..', '.')
     : t('chronoEmpty');
 
   const item = (e: HistEvent) => {
@@ -68,7 +75,7 @@ export function chronologyPage(periodId?: string): string {
       ? `<a class="chrono-map" href="#/map?period=${e.period}&place=${pl[0]!.id}">📍 ${esc(lt(pl[0]!.name))}${pl.length > 1 ? ` +${pl.length - 1}` : ''}</a>`
       : '';
     return `<li class="chrono-item" style="--c:${p?.color ?? 'var(--muted)'}">
-      <div class="chrono-year">${esc(yearLabel(e))}</div>
+      <div class="chrono-year${/\d\u202f\d/.test(yearLabel(e)) ? ' long' : ''}">${esc(yearLabel(e))}</div>
       <div class="chrono-body">
         <a class="chrono-title" href="#/event/${e.id}">${esc(lt(e.title))}</a>
         <div class="chrono-meta">${day ? `<span>${esc(day)}</span>` : ''}${prec}${where}</div>

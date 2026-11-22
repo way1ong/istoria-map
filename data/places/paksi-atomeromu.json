@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/MVM_Paksi_Atomer%C5%91m%C5%B1",
       "note": "Роки, потужність, частка, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Paksi_atomer%C5%91m%C5%B1-2.JPG",
+      "author": "Barna Rovács (Rovibroni)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Paksi_atomer%C5%91m%C5%B1-2.JPG",
+      "caption": {
+        "uk": "Панорама Пакшської АЕС, 5 березня 2010 року",
+        "hu": "A paksi atomerőmű látképe, 2010. március 5."
+      }
+    }
   ]
 }

@@ -1,0 +1,39 @@
+{
+  "id": "harangedenyes-nep",
+  "title": {
+    "uk": "Народ дзвоноподібних кубків на Дунаї: початок бронзової доби",
+    "hu": "A harangedényes nép a Duna mentén: a bronzkor kezdete"
+  },
+  "date": {
+    "from": "-2500",
+    "to": "-2000",
+    "precision": "approximate"
+  },
+  "period": "prehistory",
+  "places": [],
+  "summary": {
+    "uk": "У другій половині III тисячоліття до н. е. вздовж Дунаю із Західної Європи прийшов мандрівний народ дзвоноподібних кубків — перша відома культура бронзової доби в Карпатській улоговині; дійшов він і до околиць Вацу та Dunakeszi.",
+    "hu": "Az i. e. 3. évezred második felében Nyugat-Európa felől a Duna mentén érkezett a harangedényes kultúra vándorló népe, a Kárpát-medence első ismert bronzkori kultúrája; eljutott Vác és Dunakeszi környékére is."
+  },
+  "description": {
+    "uk": "За оглядовою статтею про давню історію Карпатської улоговини, першою відомою культурою бронзової доби тут був мандрівний народ дзвоноподібних кубків, що в другій половині III тисячоліття до н. е. з'явився по всій Європі. Перед тим, у першій половині III тисячоліття, значні кліматичні зміни зробили скотарство головним заняттям і спричинили велику хвилю переселень, за якої давнє населення мідної доби зникло. У бронзову добу народи улоговини підтримували значні культурні зв'язки з краями мікенської культури.\n\nЗа статтею про Вац, на початку бронзової доби народ дзвоноподібних кубків, що йшов із Західної Європи вздовж Дунаю, дістався й сюди; деякі археологи вважають Pogányvár, що здіймається над Дунаєм на північній межі міста, укріпленим поселенням культури Гатван. Стаття про Dunakeszi серед знахідок бронзової доби в місті називає миски, дзвоноподібні кубки, поховання і прикраси.\n\nДати в картці умовні: «друга половина III тисячоліття до н. е.».",
+    "hu": "A Kárpát-medence korai történetéről szóló áttekintő szócikk szerint a bronzkor első ismert kárpát-medencei kultúrája az i. e. 3. évezred második felében egész Európában megjelenő harangedényes kultúra vándorló népe volt. Ezt megelőzően, az évezred első felében jelentős éghajlati változások nyomán az állattenyésztés lett a fő gazdasági tevékenység, és nagy népvándorlási hullám indult, amellyel a korábbi rézkori népességek eltűntek. A bronzkorban a Kárpát-medence népei jelentős kulturális kapcsolatokat tartottak fenn a mükénéi kultúra régióival.\n\nA Vácról szóló szócikk szerint a korszak elején eljutott idáig a Nyugat-Európa felől a Duna mentén érkező harangalakú edények népe; egyes régészek szerint a város északi határában a Duna mellett emelkedő Pogányvár a hatvani kultúra erődített települése volt. A Dunakesziről szóló szócikk a város bronzkori leletei között tálakat, harangedényeket, sírokat és ékszereket említ.\n\nA kártya dátumai hozzávetőlegesek: „az i. e. 3. évezred második fele”."
+  },
+  "sources": [
+    {
+      "title": "A Kárpát-medence története a honfoglalásig – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/A_K%C3%A1rp%C3%A1t-medence_t%C3%B6rt%C3%A9nete_a_honfoglal%C3%A1sig",
+      "note": "Розділ про бронзову добу: народ дзвоноподібних кубків у другій половині III тисячоліття до н. е., зв'язки з мікенським світом."
+    },
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділ «Őskor»: народ дзвоноподібних кубків дійшов до Вацу; Pogányvár і культура Гатван."
+    },
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділ «Dunakeszi térsége az őskorban»: дзвоноподібні кубки серед знахідок бронзової доби."
+    }
+  ]
+}

@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Isaszegi_csata_%281849%29",
       "note": "Дата, чисельність, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Honv%C3%A9d-eml%C3%A9km%C5%B1_%28Radnai_B%C3%A9la%29%2C_2019_Isaszeg.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Honv%C3%A9d-eml%C3%A9km%C5%B1_%28Radnai_B%C3%A9la%29%2C_2019_Isaszeg.jpg",
+      "caption": {
+        "uk": "Пам'ятник гонведам (скульптор Radnai Béla) на пагорбі Szobor-hegy в Ішасеґу, жовтень 2019 року",
+        "hu": "A Honvéd-emlékmű (Radnai Béla) az isaszegi Szobor-hegyen, 2019. október"
+      }
+    }
   ]
 }

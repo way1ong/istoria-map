@@ -35,5 +35,18 @@
       "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Sopron",
       "note": "Координати 47.6803, 16.5983 (округлено); дані © учасники OpenStreetMap, ODbL."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/2012-ben_meg%C3%BAjult_T%C5%B1ztorony.JPG",
+      "author": "Pan Peter12",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:2012-ben_meg%C3%BAjult_T%C5%B1ztorony.JPG",
+      "caption": {
+        "uk": "Оновлена 2012 року Пожежна вежа (Tűztorony) у Шопроні, 1 березня 2014 року",
+        "hu": "A 2012-ben megújult soproni Tűztorony, 2014. március 1."
+      }
+    }
   ]
 }

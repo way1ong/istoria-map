@@ -32,5 +32,18 @@
       "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=%C3%93nod",
       "note": "Координати 48.0011, 20.9144 (округлено); дані © учасники OpenStreetMap, ODbL."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/%C3%93nod_v%C3%A1rrom.JPG",
+      "author": "Sóstói András",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:%C3%93nod_v%C3%A1rrom.JPG",
+      "caption": {
+        "uk": "Руїни замку в Ónod, 8 вересня 2013 року",
+        "hu": "Az ónodi várrom, 2013. szeptember 8."
+      }
+    }
   ]
 }

@@ -1,0 +1,48 @@
+{
+  "id": "vertesszolosi-eloember",
+  "title": {
+    "uk": "Прадавня людина у Вертешсьолеші («Samu»)",
+    "hu": "A vértesszőlősi előember („Samu”)"
+  },
+  "date": {
+    "from": "-350000",
+    "precision": "approximate"
+  },
+  "period": "prehistory",
+  "places": [
+    "vertesszolos-samu"
+  ],
+  "summary": {
+    "uk": "Близько 350 тисяч років тому біля нинішнього Vértesszőlős жила людина, чию потиличну кістку 1965 року знайшли в кар'єрі травертину разом з двома дитячими зубами: найдавніша відома людина Карпатської улоговини.",
+    "hu": "Mintegy 350 ezer évvel ezelőtt a mai Vértesszőlős mellett élt az az előember, akinek nyakszirtcsontját 1965-ben két gyermekfoggal együtt találták meg a mésztufabányában: a Kárpát-medence legkorábbi ismert embere."
+  },
+  "description": {
+    "uk": "За статтею про знахідку, «Samu» (Homo erectus seu sapiens paleohungaricus) — один з найдавніших мешканців Європи, що жив близько 350 тисяч років тому; його рештки походять з кар'єру травертину біля Vértesszőlős. Улітку 1965 року під час розкопок László Vértes на світ вийшли потилична кістка людини віком близько 350 тисяч років і два дитячі зуби. Знахідку зроблено 21 серпня, на день Самуїла, звідси ім'я. Видова належність, за статтею, досить умовна: у той час жила гейдельберзька людина (Homo heidelbergensis), і зуби та потилична кістка не відрізняються від її відомих решток.\n\nОглядова стаття про давню історію Карпатської улоговини називає мешканця Vértesszőlős найдавнішою відомою людиною улоговини, імовірно місцевим різновидом пізньої прадавньої людини; серед знахідок стоянки вона згадує також кістяні знаряддя, оббиті знаряддя з кварциту й кременевої гальки та вогнище. Копії решток виставлено на місці, у філії Угорського національного музею.\n\nДата в картці умовна: «близько 350 тисяч років тому». Таблиця в статті про знахідку подає вік 380–320 тисяч років і, як інший варіант, 210–185 тисяч років.",
+    "hu": "A leletről szóló szócikk szerint „Samu” (Homo erectus seu sapiens paleohungaricus) Európa egyik legidősebb, mintegy 350 ezer évvel ezelőtt élt előembere; csontmaradványai a Vértesszőlős melletti mésztufabányából kerültek elő. 1965 nyarán, Vértes László ásatásai során került napvilágra egy körülbelül 350 ezer éves ősember nyakszirtcsontja és két gyermekfog. A leletet augusztus 21-én, Sámuel napján találták meg, innen a név. Faji besorolása a szócikk szerint meglehetősen esetleges: a korban a heidelbergi ember (Homo heidelbergensis) élt, a fogak és a tarkócsont pedig nem térnek el ennek ismert leleteitől.\n\nA Kárpát-medence korai történetéről szóló áttekintő szócikk a vértesszőlősi embert a medencéből ismert legkorábbi embernek, valószínűleg a késői előember helyi változatának nevezi; a telep leletei között csonteszközöket, kvarcitból és kovakavicsból pattintott kőeszközöket és tűzhelyet is említ. A leletek másolatai a helyszínen, a Magyar Nemzeti Múzeum bemutatóhelyén láthatók.\n\nA kártya dátuma hozzávetőleges: „mintegy 350 ezer évvel ezelőtt”. A leletről szóló szócikk táblázata 380–320 ezer évet, másik lehetőségként 210–185 ezer évet ad meg."
+  },
+  "sources": [
+    {
+      "title": "Samu (előember) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Samu_%28el%C5%91ember%29",
+      "note": "Вік близько 350 тисяч років, розкопки 1965 року, походження імені, видова належність; у таблиці — 0,38–0,32 або 0,21–0,185 млн років."
+    },
+    {
+      "title": "A Kárpát-medence története a honfoglalásig – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/A_K%C3%A1rp%C3%A1t-medence_t%C3%B6rt%C3%A9nete_a_honfoglal%C3%A1sig",
+      "note": "Розділ про палеоліт: найдавніша відома людина Карпатської улоговини, склад знахідок стоянки."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/V%C3%A9rtessz%C5%91l%C5%91s_paleolitic_locality_site_I_view.JPG",
+      "author": "Ajznbony",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A9rtessz%C5%91l%C5%91s_paleolitic_locality_site_I_view.JPG",
+      "caption": {
+        "uk": "Палеолітична стоянка у Вертешсьолеші (Vértesszőlős), ділянка I, 2010",
+        "hu": "A vértesszőlősi őskőkori lelőhely I. lelőhelye, 2010"
+      }
+    }
+  ]
+}

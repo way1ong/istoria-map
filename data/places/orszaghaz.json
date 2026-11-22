@@ -29,5 +29,18 @@
       "url": "https://hu.wikipedia.org/wiki/Orsz%C3%A1gh%C3%A1z",
       "note": "Архітектор, роки будівництва, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Orsz%C3%A1gh%C3%A1z_%28Hungarian_Parliament_Building%29%282%29.jpg",
+      "author": "Lynx1211",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Orsz%C3%A1gh%C3%A1z_%28Hungarian_Parliament_Building%29%282%29.jpg",
+      "caption": {
+        "uk": "Будинок парламенту на заході сонця, 18 березня 2023 року",
+        "hu": "Az Országház naplemente idején, 2023. március 18."
+      }
+    }
   ]
 }

@@ -1,0 +1,723 @@
+{
+ "Vác": {
+  "lat": 47.7782873,
+  "lon": 19.1278294,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Dunakeszi": {
+  "lat": 47.6316697,
+  "lon": 19.1294055,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Sződ": {
+  "lat": 47.7191669,
+  "lon": 19.1819507,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Fót": {
+  "lat": 47.6125871,
+  "lon": 19.1980105,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Szentendre": {
+  "lat": 47.6677606,
+  "lon": 19.0760467,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Tahitótfalu": {
+  "lat": 47.75434,
+  "lon": 19.0844571,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Csomád": {
+  "lat": 47.6547632,
+  "lon": 19.2368611,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Veresegyház": {
+  "lat": 47.655235,
+  "lon": 19.2868815,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Gödöllő": {
+  "lat": 47.601529,
+  "lon": 19.3476981,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Esztergom": {
+  "lat": 47.7856939,
+  "lon": 18.7403377,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Komárom": {
+  "lat": 47.7417349,
+  "lon": 18.1218256,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Tata": {
+  "lat": 47.6516214,
+  "lon": 18.3282083,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Székesfehérvár": {
+  "lat": 47.1910169,
+  "lon": 18.410811,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Kecskemét": {
+  "lat": 46.9075423,
+  "lon": 19.6922302,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Cegléd": {
+  "lat": 47.1716447,
+  "lon": 19.7977516,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Szolnok": {
+  "lat": 47.1753833,
+  "lon": 20.1946279,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Jászberény": {
+  "lat": 47.5030505,
+  "lon": 19.9117887,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Gyöngyös": {
+  "lat": 47.7799838,
+  "lon": 19.9291176,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Hatvan": {
+  "lat": 47.6683971,
+  "lon": 19.6743874,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Eger": {
+  "lat": 47.8989887,
+  "lon": 20.3743665,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Miskolc": {
+  "lat": 48.1030643,
+  "lon": 20.7900429,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Debrecen": {
+  "lat": 47.531399,
+  "lon": 21.6259782,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Szeged": {
+  "lat": 46.2546312,
+  "lon": 20.1486016,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Hódmezővásárhely": {
+  "lat": 46.4171344,
+  "lon": 20.3196068,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Csongrád": {
+  "lat": 46.7097618,
+  "lon": 20.1537305,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Békéscsaba": {
+  "lat": 46.6798003,
+  "lon": 21.0985425,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Gyula": {
+  "lat": 46.6438656,
+  "lon": 21.2747575,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Kalocsa": {
+  "lat": 46.5230265,
+  "lon": 18.9825043,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Baja": {
+  "lat": 46.1785471,
+  "lon": 18.9517255,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Szekszárd": {
+  "lat": 46.3484884,
+  "lon": 18.701663,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Pécs": {
+  "lat": 46.0765092,
+  "lon": 18.2280317,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Mohács": {
+  "lat": 45.9933836,
+  "lon": 18.6821079,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Kaposvár": {
+  "lat": 46.3564692,
+  "lon": 17.7886886,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Nagykanizsa": {
+  "lat": 46.4548261,
+  "lon": 16.9923923,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Keszthely": {
+  "lat": 46.7675081,
+  "lon": 17.2462801,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Veszprém": {
+  "lat": 47.0933824,
+  "lon": 17.9080406,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Pápa": {
+  "lat": 47.3261087,
+  "lon": 17.4705293,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Győr": {
+  "lat": 47.6835029,
+  "lon": 17.6342832,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Sopron": {
+  "lat": 47.6803063,
+  "lon": 16.5983457,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Szombathely": {
+  "lat": 47.2291184,
+  "lon": 16.6187625,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Zalaegerszeg": {
+  "lat": 46.8415803,
+  "lon": 16.8456316,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Tokaj": {
+  "lat": 48.1235534,
+  "lon": 21.4113895,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Sárospatak": {
+  "lat": 48.3216823,
+  "lon": 21.5655524,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Nyíregyháza": {
+  "lat": 47.9557802,
+  "lon": 21.7167982,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Karcag": {
+  "lat": 47.314646,
+  "lon": 20.9240941,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Paks": {
+  "lat": 46.6229468,
+  "lon": 18.8589364,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Siófok": {
+  "lat": 46.9071694,
+  "lon": 18.0541598,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Kőszeg": {
+  "lat": 47.3894949,
+  "lon": 16.5406843,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Balassagyarmat": {
+  "lat": 48.0768832,
+  "lon": 19.2926037,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Szatmárnémeti": {
+  "lat": 47.7891763,
+  "lon": 22.8725598,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Nagyvárad": {
+  "lat": 47.0549163,
+  "lon": 21.9285231,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Arad": {
+  "lat": 46.1753793,
+  "lon": 21.3196342,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Temesvár": {
+  "lat": 45.7538355,
+  "lon": 21.2257474,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Szabadka": {
+  "lat": 46.1002058,
+  "lon": 19.6653273,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Zombor": {
+  "lat": 45.7727397,
+  "lon": 19.1147036,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Eszék": {
+  "lat": 45.5548793,
+  "lon": 18.6953685,
+  "q": "Osijek, Croatia",
+  "osm": "relation/8436035",
+  "src": "Nominatim"
+ },
+ "Kassa": {
+  "lat": 48.7172272,
+  "lon": 21.2496774,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Pozsony": {
+  "lat": 48.1435026,
+  "lon": 17.1082867,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Nyitra": {
+  "lat": 48.31295,
+  "lon": 18.0894593,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Losonc": {
+  "lat": 48.3303886,
+  "lon": 19.6634149,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Kolozsvár": {
+  "lat": 46.769379,
+  "lon": 23.5899542,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Nagykároly": {
+  "lat": 47.6829338,
+  "lon": 22.4695102,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Várad": {
+  "lat": 47.0549163,
+  "lon": 21.9285231,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Szatmár": {
+  "lat": 47.7891763,
+  "lon": 22.8725598,
+  "src": "lipszky-towns (Nominatim)"
+ },
+ "Olomouc": {
+  "lat": 49.5940567,
+  "lon": 17.251143,
+  "q": "Olomouc, Czechia",
+  "osm": "relation/437057",
+  "src": "Nominatim"
+ },
+ "Brno": {
+  "lat": 49.1922443,
+  "lon": 16.6113382,
+  "q": "Brno, Czechia",
+  "osm": "relation/438171",
+  "src": "Nominatim"
+ },
+ "Linz": {
+  "lat": 48.3059078,
+  "lon": 14.286198,
+  "q": "Linz, Austria",
+  "osm": "relation/86708",
+  "src": "Nominatim"
+ },
+ "Bécs": {
+  "lat": 48.2083537,
+  "lon": 16.3725042,
+  "q": "Wien, Austria",
+  "osm": "relation/109166",
+  "src": "Nominatim"
+ },
+ "Graz": {
+  "lat": 47.0708678,
+  "lon": 15.4382786,
+  "q": "Graz, Austria",
+  "osm": "relation/34719",
+  "src": "Nominatim"
+ },
+ "Klagenfurt": {
+  "lat": 46.623943,
+  "lon": 14.3075976,
+  "q": "Klagenfurt, Austria",
+  "osm": "relation/105870",
+  "src": "Nominatim"
+ },
+ "Maribor": {
+  "lat": 46.5576439,
+  "lon": 15.6455854,
+  "q": "Maribor, Slovenia",
+  "osm": "node/36667529",
+  "src": "Nominatim"
+ },
+ "Ljubljana": {
+  "lat": 46.0500268,
+  "lon": 14.5069289,
+  "q": "Ljubljana, Slovenia",
+  "osm": "node/6968827",
+  "src": "Nominatim"
+ },
+ "Varasd": {
+  "lat": 46.3079645,
+  "lon": 16.3378198,
+  "q": "Varaždin, Croatia",
+  "osm": "relation/8427892",
+  "src": "Nominatim"
+ },
+ "Zágráb": {
+  "lat": 45.8130967,
+  "lon": 15.9772795,
+  "q": "Zagreb, Croatia",
+  "osm": "relation/226224",
+  "src": "Nominatim"
+ },
+ "Károlyváros": {
+  "lat": 45.4892522,
+  "lon": 15.5486303,
+  "q": "Karlovac, Croatia",
+  "osm": "relation/11227312",
+  "src": "Nominatim"
+ },
+ "Bihács": {
+  "lat": 44.8146563,
+  "lon": 15.86896,
+  "q": "Bihać, Bosnia and Herzegovina",
+  "osm": "relation/13473176",
+  "src": "Nominatim"
+ },
+ "Banja Luka": {
+  "lat": 44.7720845,
+  "lon": 17.1917651,
+  "q": "Banja Luka, Bosnia and Herzegovina",
+  "osm": "relation/9063920",
+  "src": "Nominatim"
+ },
+ "Pozsega": {
+  "lat": 45.3310723,
+  "lon": 17.6765332,
+  "q": "Požega, Croatia",
+  "osm": "relation/8801758",
+  "src": "Nominatim"
+ },
+ "Pétervárad": {
+  "lat": 45.2449664,
+  "lon": 19.8806305,
+  "q": "Petrovaradin, Serbia",
+  "osm": "relation/9274232",
+  "src": "Nominatim"
+ },
+ "Belgrád": {
+  "lat": 44.8153318,
+  "lon": 20.4456588,
+  "q": "Beograd, Serbia",
+  "osm": "relation/2728438",
+  "src": "Nominatim"
+ },
+ "Szendrő": {
+  "lat": 44.6651048,
+  "lon": 20.9271115,
+  "q": "Smederevo, Serbia",
+  "osm": "relation/8747155",
+  "src": "Nominatim"
+ },
+ "Szörényvár": {
+  "lat": 44.6257835,
+  "lon": 22.6531975,
+  "q": "Drobeta-Turnu Severin, Romania",
+  "osm": "relation/9711987",
+  "src": "Nominatim"
+ },
+ "Karánsebes": {
+  "lat": 45.4106108,
+  "lon": 22.2182232,
+  "q": "Caransebeș, Romania",
+  "osm": "node/34088249",
+  "src": "Nominatim"
+ },
+ "Lugos": {
+  "lat": 45.6862542,
+  "lon": 21.9063162,
+  "q": "Lugoj, Romania",
+  "osm": "node/31726127",
+  "src": "Nominatim"
+ },
+ "Déva": {
+  "lat": 45.8817402,
+  "lon": 22.9008611,
+  "q": "Deva, Romania",
+  "osm": "relation/10494275",
+  "src": "Nominatim"
+ },
+ "Gyulafehérvár": {
+  "lat": 46.0682753,
+  "lon": 23.5664761,
+  "q": "Alba Iulia, Romania",
+  "osm": "relation/10630982",
+  "src": "Nominatim"
+ },
+ "Zilah": {
+  "lat": 47.1819416,
+  "lon": 23.0562143,
+  "q": "Zalău, Romania",
+  "osm": "node/129993092",
+  "src": "Nominatim"
+ },
+ "Nagybánya": {
+  "lat": 47.6565584,
+  "lon": 23.5719843,
+  "q": "Baia Mare, Romania",
+  "osm": "node/128510650",
+  "src": "Nominatim"
+ },
+ "Munkács": {
+  "lat": 48.4421119,
+  "lon": 22.7185408,
+  "q": "Mukachevo, Ukraine",
+  "osm": "relation/2283083",
+  "src": "Nominatim"
+ },
+ "Ungvár": {
+  "lat": 48.6223731,
+  "lon": 22.3022572,
+  "q": "Uzhhorod, Ukraine",
+  "osm": "relation/2692232",
+  "src": "Nominatim"
+ },
+ "Eperjes": {
+  "lat": 49.0000074,
+  "lon": 21.2392122,
+  "q": "Prešov, Slovakia",
+  "osm": "relation/2320257",
+  "src": "Nominatim"
+ },
+ "Besztercebánya": {
+  "lat": 48.735429,
+  "lon": 19.1457338,
+  "q": "Banská Bystrica, Slovakia",
+  "osm": "relation/2265296",
+  "src": "Nominatim"
+ },
+ "Túrócszentmárton": {
+  "lat": 49.0724921,
+  "lon": 18.929193,
+  "q": "Martin, Slovakia",
+  "osm": "relation/2183317",
+  "src": "Nominatim"
+ },
+ "Trencsén": {
+  "lat": 48.8922719,
+  "lon": 18.0387465,
+  "q": "Trenčín, Slovakia",
+  "osm": "relation/1799254",
+  "src": "Nominatim"
+ },
+ "Nagyszombat": {
+  "lat": 48.3767652,
+  "lon": 17.5858175,
+  "q": "Trnava, Slovakia",
+  "osm": "relation/2204009",
+  "src": "Nominatim"
+ },
+ "Lippa": {
+  "lat": 46.0912516,
+  "lon": 21.6935996,
+  "q": "Lipova, Arad, Romania",
+  "osm": "relation/10718621",
+  "src": "Nominatim"
+ },
+ "Csanád": {
+  "lat": 46.1374895,
+  "lon": 20.5855464,
+  "q": "Cenad, Romania",
+  "osm": "relation/10718400",
+  "src": "Nominatim"
+ },
+ "Szigetvár": {
+  "lat": 46.0474395,
+  "lon": 17.7993511,
+  "q": "Szigetvár, Hungary",
+  "osm": "relation/575202",
+  "src": "Nominatim"
+ },
+ "Simontornya": {
+  "lat": 46.756962,
+  "lon": 18.5435129,
+  "q": "Simontornya, Hungary",
+  "osm": "relation/1403104",
+  "src": "Nominatim"
+ },
+ "Nógrád": {
+  "lat": 47.9094266,
+  "lon": 19.0478895,
+  "q": "Nógrád, Nógrád, Hungary",
+  "osm": "relation/1401468",
+  "src": "Nominatim"
+ },
+ "Szécsény": {
+  "lat": 48.0802507,
+  "lon": 19.5206814,
+  "q": "Szécsény, Hungary",
+  "osm": "relation/1370535",
+  "src": "Nominatim"
+ },
+ "Fülek": {
+  "lat": 48.2701641,
+  "lon": 19.8222938,
+  "q": "Fiľakovo, Slovakia",
+  "osm": "relation/2273333",
+  "src": "Nominatim"
+ },
+ "Tatabánya": {
+  "lat": 47.583845,
+  "lon": 18.3979855,
+  "q": "Tatabánya, Hungary",
+  "osm": "relation/1027771",
+  "src": "Nominatim"
+ },
+ "Göd": {
+  "lat": 47.6834336,
+  "lon": 19.1341568,
+  "q": "Göd, Hungary",
+  "osm": "relation/214933",
+  "src": "Nominatim"
+ },
+ "Érsekújvár": {
+  "lat": 47.9861843,
+  "lon": 18.1631415,
+  "q": "Nové Zámky, Slovakia",
+  "osm": "relation/2218539",
+  "src": "Nominatim"
+ },
+ "Kanizsa": {
+  "lat": 46.4548261,
+  "lon": 16.9923923,
+  "q": "Nagykanizsa, Hungary",
+  "osm": "relation/1320813",
+  "src": "Nominatim"
+ },
+ "Brassó": {
+  "lat": 45.6525105,
+  "lon": 25.6105654,
+  "q": "Brașov, Romania",
+  "osm": "relation/10367676",
+  "src": "Nominatim"
+ },
+ "Nagyszeben": {
+  "lat": 45.7973912,
+  "lon": 24.1519202,
+  "q": "Sibiu, Romania",
+  "osm": "relation/9846497",
+  "src": "Nominatim"
+ },
+ "Marosvásárhely": {
+  "lat": 46.5446253,
+  "lon": 24.561196,
+  "q": "Târgu Mureș, Romania",
+  "osm": "relation/8334767",
+  "src": "Nominatim"
+ },
+ "Beszterce": {
+  "lat": 47.1327012,
+  "lon": 24.4963949,
+  "q": "Bistrița, Romania",
+  "osm": "node/128561166",
+  "src": "Nominatim"
+ },
+ "Huszt": {
+  "lat": 48.1764917,
+  "lon": 23.291166,
+  "q": "Khust, Ukraine",
+  "osm": "relation/12299281",
+  "src": "Nominatim"
+ },
+ "Lőcse": {
+  "lat": 49.025087,
+  "lon": 20.5887098,
+  "q": "Levoča, Slovakia",
+  "osm": "relation/2275758",
+  "src": "Nominatim"
+ },
+ "Segesvár": {
+  "lat": 46.2202037,
+  "lon": 24.7934483,
+  "q": "Sighișoara, Romania",
+  "osm": "node/59722301",
+  "src": "Nominatim"
+ },
+ "Zimony": {
+  "lat": 44.8444,
+  "lon": 20.4123996,
+  "q": "Zemun, Serbia",
+  "osm": "relation/10476357",
+  "src": "Nominatim"
+ },
+ "Sziszek": {
+  "lat": 45.489175,
+  "lon": 16.3746041,
+  "q": "Sisak, Croatia",
+  "osm": "relation/8778895",
+  "src": "Nominatim"
+ },
+ "Buda": {
+  "lat": 47.4978789,
+  "lon": 19.0402383,
+  "q": "Budapest, Hungary",
+  "osm": "relation/1244004",
+  "src": "Nominatim"
+ },
+ "Szarajevó": {
+  "lat": 43.8570713,
+  "lon": 18.4126147,
+  "q": "Sarajevo, Bosnia and Herzegovina",
+  "osm": "relation/15445108",
+  "src": "Nominatim"
+ },
+ "Szófia": {
+  "lat": 42.6977028,
+  "lon": 23.3217359,
+  "q": "Sofia, Bulgaria",
+  "osm": "relation/4283101",
+  "src": "Nominatim"
+ },
+ "Jászvásár": {
+  "lat": 47.1615598,
+  "lon": 27.5837814,
+  "q": "Iași, Romania",
+  "osm": "relation/1207838",
+  "src": "Nominatim"
+ },
+ "Szilisztra": {
+  "lat": 43.9057061,
+  "lon": 27.0705496,
+  "q": "Silistra, Bulgaria",
+  "osm": "relation/1739539",
+  "src": "Nominatim"
+ },
+ "Bukarest": {
+  "lat": 44.4361414,
+  "lon": 26.102684,
+  "q": "Bucharest, Romania",
+  "osm": "relation/377733",
+  "src": "Nominatim"
+ }
+}

@@ -38,5 +38,18 @@
       "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.71195&lon=19.14865",
       "note": "Нині на цьому місці: житлова вулиця Füzike utca, Nevelek (Göd). Дані © учасники OpenStreetMap, ODbL."
     }
+  ],
+  "photos": [
+    {
+      "url": "photos/nevelek-csarda-spezialkarte.jpg",
+      "author": "K. u. k. Militärgeographisches Institut",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Budapest-%C3%93buda_BV035904981.jpg",
+      "caption": {
+        "uk": "Корчма з позначкою «W.H.» (Wirtshaus) біля залізниці, поруч хутір «Usztatómajor», на аркуші Spezialkarte 15:XX, видання 1914 року (виправлено до 1913; скан IOS Regensburg)",
+        "hu": "A „W.H.” (Wirtshaus, vendéglő) jelölésű épület a vasút mellett, mellette az „Usztatómajor”, a Spezialkarte 15:XX lapján, 1914-es kiadás (1913-ig javítva; szkennelt példány: IOS Regensburg)"
+      }
+    }
   ]
 }

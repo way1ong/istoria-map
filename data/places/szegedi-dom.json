@@ -28,5 +28,18 @@
       "url": "https://hu.wikipedia.org/wiki/Fogadalmi_templom_%28Szeged%29",
       "note": "Стиль, розміри, площа 1929–1932, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Fogadalmi_templom_%2812498._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_18_cropped.jpg",
+      "author": "toldym",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:Fogadalmi_templom_%2812498._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_18_cropped.jpg",
+      "caption": {
+        "uk": "Обітна церква в Сеґеді, 14 жовтня 2010 року",
+        "hu": "A szegedi Fogadalmi templom, 2010. október 14."
+      }
+    }
   ]
 }

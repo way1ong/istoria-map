@@ -33,5 +33,18 @@
       "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
       "note": "Розділи «Történelem» і «Látnivalók»; координати центру міста."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/VacHauptplatzBlick_Nach_Norden.JPG",
+      "author": "Allexkoch",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:VacHauptplatzBlick_Nach_Norden.JPG",
+      "caption": {
+        "uk": "Площа Március 15. tér у Ваці, 16 травня 2013 року",
+        "hu": "A váci Március 15. tér, 2013. május 16."
+      }
+    }
   ]
 }

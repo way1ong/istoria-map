@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Kir%C3%A1lyi_palota_%28Visegr%C3%A1d%29",
       "note": "1323, функції, музей, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Kir%C3%A1lyi_palota_maradv%C3%A1nyai_%287594._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_6.jpg",
+      "author": "Elamy",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kir%C3%A1lyi_palota_maradv%C3%A1nyai_%287594._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_6.jpg",
+      "caption": {
+        "uk": "Рештки королівського палацу у Вишеграді, 14 серпня 2011 року",
+        "hu": "A királyi palota maradványai, Visegrád, 2011. augusztus 14."
+      }
+    }
   ]
 }

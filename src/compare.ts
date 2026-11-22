@@ -1,10 +1,12 @@
-import { Map as MLMap, Marker, type LngLatLike, type StyleSpecification } from 'maplibre-gl';
+import { GeolocateControl, Map as MLMap, Marker, type LngLatLike, type StyleSpecification } from 'maplibre-gl';
 import { availableBasemaps, basemapStyle, chooseBasemap, getPreferredBasemap, LOCAL_GLYPHS, localizeBasemapLabels, setPreferredBasemap } from './basemap';
 import { basemaps, histMaps, periodById, places } from './data';
 import { lt, t } from './i18n';
 import { addOldMap, mapBox, mapChoices, mapCovers } from './oldmap';
 import { watchContextLoss } from './glloss';
-import { CMP_DOT_RADIUS, DOT_STROKE } from './markers';
+import { MARKER_IMAGE, markerSize, SHAPE, useMarkerImages } from './shapes';
+import { watchTracking } from './tracking';
+import { addMarksLayer } from './markslayer';
 import type { Place } from './types';
 
 export interface CompareHandle { destroy(): void }
@@ -19,14 +21,15 @@ function placesGeo(periodId: string | null, lang: string) {
       .map((p) => ({
         type: 'Feature' as const,
         geometry: { type: 'Point' as const, coordinates: p.coords },
-        properties: { id: p.id, label: lt(p.name), color: periodById(p.periods[0])?.color ?? '#6b7280', vanished: p.vanished ? 1 : 0, lang },
+        properties: { id: p.id, label: lt(p.name), color: periodById(p.periods[0])?.color ?? '#6b7280', shape: SHAPE[p.type], vanished: p.vanished ? 1 : 0, lang },
       })),
   };
 }
 
 function addPlacesLayers(map: MLMap, periodId: string | null) {
   map.addSource('cmp-places', { type: 'geojson', data: placesGeo(periodId, document.documentElement.lang) });
-  map.addLayer({ id: 'cmp-dot', type: 'circle', source: 'cmp-places', paint: { 'circle-radius': CMP_DOT_RADIUS, 'circle-color': ['case', ['==', ['get', 'vanished'], 1], '#ffffff', ['get', 'color']], 'circle-stroke-color': ['get', 'color'], 'circle-stroke-width': DOT_STROKE } });
+  // ті самі мітки, що на головній мапі (колір — період, форма — тип), трохи менші
+  map.addLayer({ id: 'cmp-dot', type: 'symbol', source: 'cmp-places', layout: { 'icon-image': MARKER_IMAGE, 'icon-size': markerSize(0.85), 'icon-allow-overlap': true, 'icon-ignore-placement': true } });
   map.addLayer({ id: 'cmp-label', type: 'symbol', source: 'cmp-places', layout: { 'text-field': ['get', 'label'], 'text-font': ['Noto Sans Bold'], 'text-size': 11, 'text-offset': [0, 1.1], 'text-anchor': 'top', 'text-max-width': 9 }, paint: { 'text-color': '#111827', 'text-halo-color': '#ffffff', 'text-halo-width': 1.5 } });
 }
 
@@ -61,11 +64,21 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   const bot = new MLMap({ container: botEl, style: basemapStyle(base), ...common });
   watchContextLoss(top);
   watchContextLoss(bot);
+  useMarkerImages(top);
+  useMarkerImages(bot);
+  // Кнопка місця на сучасній мапі; та сама точка — на старій, щоб бачити, де стоїш на мапі тих часів.
+  const geolocate = new GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true, showAccuracyCircle: true, fitBoundsOptions: { maxZoom: 15 } });
+  bot.addControl(geolocate, 'top-right');
+  const meEl = document.createElement('div');
+  meEl.className = 'me-dot';
+  const meOnTop = new Marker({ element: meEl });
+  watchTracking(bot, geolocate, (at) => { if (at) meOnTop.setLngLat(at).addTo(top); else meOnTop.remove(); });
   const period = opts.periodId ?? null;
 
   // style.load спрацьовує і при першому завантаженні, і після зміни стилю
-  top.on('style.load', () => { if (!top.getSource('cmp-places')) { addPlacesLayers(top, period); if (hm) addOldMap(top, hm, { prefix: 'cmp-old', beforeId: 'cmp-dot', opacity: 1 }); } });
-  bot.on('style.load', () => { localizeBasemapLabels(bot, document.documentElement.lang || 'uk'); if (!bot.getSource('cmp-places')) addPlacesLayers(bot, period); });
+  // Власні мітки-прапорці (панель «Мої мітки» на головній мапі) видно на обох мапах: легше знайти своє місце на старій.
+  top.on('style.load', () => { if (!top.getSource('cmp-places')) { addPlacesLayers(top, period); if (hm) addOldMap(top, hm, { prefix: 'cmp-old', beforeId: 'cmp-dot', opacity: 1 }); } addMarksLayer(top); });
+  bot.on('style.load', () => { localizeBasemapLabels(bot, document.documentElement.lang || 'uk'); if (!bot.getSource('cmp-places')) addPlacesLayers(bot, period); addMarksLayer(bot); });
 
   // синхронізація положення
   let lock = false;

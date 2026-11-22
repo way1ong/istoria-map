@@ -5,6 +5,9 @@ import { placeVisible, type MapController, type PlaceFilter } from '../map';
 import type { PlaceType } from '../types';
 import { eventDate } from './render';
 import { renderOffline } from './offlinepanel';
+import { renderMarks, type MarksPanel } from './markspanel';
+import { addMark } from '../marks';
+import { SHAPE, shapeSvg } from '../shapes';
 
 /** Порядок фішок у фільтрі. */
 export const TYPES: PlaceType[] = ['castle', 'military', 'church', 'archaeological', 'monument', 'settlement', 'nature', 'farmstead', 'inn', 'mill', 'other'];
@@ -32,10 +35,11 @@ const ICON = {
   search: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>',
   filter: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M3 5h18l-7 8.5V20l-4-2v-4.5z"/></svg>',
   nearby: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 6h12M9 12h12M9 18h12"/><circle cx="4" cy="6" r="1.4" fill="currentColor"/><circle cx="4" cy="12" r="1.4" fill="currentColor"/><circle cx="4" cy="18" r="1.4" fill="currentColor"/></svg>',
+  marks: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V3.5"/><path d="M6 4.5h13l-3.2 4.2L19 13H6" fill="currentColor" fill-opacity=".25"/></svg>',
   offline: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg>',
 };
 type Mode = keyof typeof ICON;
-const MODES: Mode[] = ['search', 'filter', 'nearby', 'offline'];
+const MODES: Mode[] = ['search', 'filter', 'nearby', 'marks', 'offline'];
 
 function haversine(a: [number, number], b: [number, number]): number {
   const R = 6371000, rad = Math.PI / 180;
@@ -85,6 +89,9 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
   let me: Marker | null = null;
   // панель «Без інтернету» оновлюється сама під час завантаження; при закритті відписуємо її
   let stopOffline: (() => void) | null = null;
+  // панель «Мої мітки»: так само відписується при закритті
+  let marksPanel: MarksPanel | null = null;
+  const stopPanels = () => { stopOffline?.(); stopOffline = null; marksPanel?.dispose(); marksPanel = null; };
 
   const buttons: Record<Mode, HTMLButtonElement> = {} as never;
   const control: IControl = {
@@ -110,41 +117,51 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
     buttons.search.title = buttons.search.ariaLabel = t('search');
     buttons.filter.title = buttons.filter.ariaLabel = t('filterTitle');
     buttons.nearby.title = buttons.nearby.ariaLabel = t('nearby');
+    buttons.marks.title = buttons.marks.ariaLabel = t('marks');
     buttons.offline.title = buttons.offline.ariaLabel = t('offline');
     buttons.filter.classList.toggle('on', filterActive(filter));
     closeBtn.ariaLabel = t('close');
   }
 
   function close() {
-    stopOffline?.();
-    stopOffline = null;
+    stopPanels();
     mode = null;
     panel.hidden = true;
     Object.values(buttons).forEach((b) => b.classList.remove('open'));
   }
   closeBtn.onclick = close;
 
-  function open(k: Mode) {
-    stopOffline?.();
-    stopOffline = null;
+  function open(k: Mode, markId?: string) {
+    stopPanels();
+    // попередня панель могла лишити свої обробники на тілі панелі
+    body.onclick = null;
+    body.onchange = null;
     mode = k;
     panel.hidden = false;
     Object.entries(buttons).forEach(([n, b]) => b.classList.toggle('open', n === k));
     if (k === 'search') { body.innerHTML = ''; renderSearch(true); }
     else if (k === 'filter') renderFilter();
     else if (k === 'nearby') renderNearby();
+    else if (k === 'marks') marksPanel = renderMarks(body, { map: ctl.map, setTitle: (x) => { title.textContent = x; }, editId: markId });
     else renderOfflinePanel();
   }
+  /** Відкрити панель «Мої мітки» на редагуванні мітки (натиснуто прапорець або щойно поставлено нову). */
+  function openMark(id: string) {
+    if (mode === 'marks' && marksPanel) marksPanel.edit(id);
+    else open('marks', id);
+  }
+  ctl.onMarkClick(openMark);
+  ctl.onLongPress((at) => openMark(addMark(at).id));
 
   // ---------- без інтернету ----------
   function renderOfflinePanel() {
     title.textContent = t('offline');
-    stopOffline?.();
+    stopPanels();
     stopOffline = renderOffline(body, { map: ctl.map, onBasemap: opts.onOfflineMap, close });
   }
 
   // ---------- пошук ----------
-  type Hit = { kind: 'place' | 'event'; id: string; label: string; sub: string; color: string; text: string; words: string[]; nlabel: string };
+  type Hit = { kind: 'place' | 'event'; id: string; label: string; sub: string; color: string; icon: string; text: string; words: string[]; nlabel: string };
   let index: Hit[] = [];
   let indexLang = '';
   function buildIndex() {
@@ -154,12 +171,12 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
       ...places.map((p) => {
         const per = periodById(p.periods[0]);
         const text = norm(`${p.name.uk} ${p.name.hu ?? ''} ${p.id.replace(/-/g, ' ')}`);
-        return { kind: 'place' as const, id: p.id, label: lt(p.name), nlabel: norm(lt(p.name)), sub: `${typeLabel(p.type)} · ${lt(per?.name)}`, color: per?.color ?? '#6b7280', text, words: text.split(/[^\p{L}\p{N}]+/u) };
+        return { kind: 'place' as const, id: p.id, label: lt(p.name), nlabel: norm(lt(p.name)), sub: `${typeLabel(p.type)} · ${lt(per?.name)}`, color: per?.color ?? '#6b7280', icon: shapeSvg(SHAPE[p.type], per?.color ?? '#6b7280', !!p.vanished), text, words: text.split(/[^\p{L}\p{N}]+/u) };
       }),
       ...events.map((e) => {
         const per = periodById(e.period);
         const text = norm(`${e.title.uk} ${e.title.hu ?? ''} ${e.id.replace(/-/g, ' ')}`);
-        return { kind: 'event' as const, id: e.id, label: lt(e.title), nlabel: norm(lt(e.title)), sub: `${eventDate(e)} · ${lt(per?.name)}`, color: per?.color ?? '#6b7280', text, words: text.split(/[^\p{L}\p{N}]+/u) };
+        return { kind: 'event' as const, id: e.id, label: lt(e.title), nlabel: norm(lt(e.title)), sub: `${eventDate(e)} · ${lt(per?.name)}`, color: per?.color ?? '#6b7280', icon: `<span class="dot event" style="--c:${per?.color ?? '#6b7280'}"></span>`, text, words: text.split(/[^\p{L}\p{N}]+/u) };
       }),
     ];
   }
@@ -195,7 +212,7 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
       note.hidden = q.length > 0;
       list.innerHTML = q && !hits.length ? `<li class="mtool-empty">${esc(t('searchEmpty'))}</li>` : hits.map((h) => `
         <li><button type="button" data-kind="${h.kind}" data-id="${h.id}">
-          <span class="dot ${h.kind}" style="--c:${h.color}"></span>
+          ${h.icon}
           <span class="txt"><span class="nm">${esc(h.label)}</span><span class="sub">${h.kind === 'event' ? `${esc(t('events'))}: ` : ''}${esc(h.sub)}</span></span>
         </button></li>`).join('');
     };
@@ -230,7 +247,8 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
     const inPeriod = places.filter((p) => !per || p.periods.includes(per));
     const count = (x: PlaceType) => inPeriod.filter((p) => p.type === x && (!filter.vanishedOnly || p.vanished)).length;
     body.innerHTML = `
-      <div class="chips">${TYPES.map((x) => `<button type="button" class="chip ${filter.types.includes(x) ? 'on' : ''}" data-type="${x}">${esc(typeLabel(x))} <span class="cnt">${count(x)}</span></button>`).join('')}</div>
+      <p class="mtool-note">${esc(t('filterShapes'))}</p>
+      <div class="chips">${TYPES.map((x) => `<button type="button" class="chip ${filter.types.includes(x) ? 'on' : ''}" data-type="${x}">${shapeSvg(SHAPE[x], '#6b7280', false, 14)} ${esc(typeLabel(x))} <span class="cnt">${count(x)}</span></button>`).join('')}</div>
       <label class="mtool-check"><input type="checkbox" ${filter.vanishedOnly ? 'checked' : ''}> ${esc(t('filterVanished'))}</label>
       <button type="button" class="mtool-reset" ${filterActive(filter) ? '' : 'disabled'}>${esc(t('filterAll'))}</button>`;
     body.querySelectorAll<HTMLButtonElement>('.chip').forEach((b) => {
@@ -262,7 +280,7 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
       <ul class="mtool-list">${list.map(({ p, d, b }) => {
         const c = periodById(p.periods[0])?.color ?? '#6b7280';
         return `<li><button type="button" data-id="${p.id}">
-          <span class="dot ${p.vanished ? 'vanished' : ''}" style="--c:${c}"></span>
+          ${shapeSvg(SHAPE[p.type], c, !!p.vanished)}
           <span class="txt"><span class="nm">${esc(lt(p.name))}</span><span class="sub">${esc(typeLabel(p.type))}</span></span>
           <span class="dist">${fmtDist(d)}<span class="dir"><span class="arr" style="transform:rotate(${Math.round(b)}deg)">↑</span>${dirs[Math.round(b / 45) % 8]}</span></span>
         </button></li>`;
@@ -318,6 +336,7 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
       if (mode === 'search') renderSearch();
       else if (mode === 'filter') renderFilter();
       else if (mode === 'nearby') { title.textContent = t('nearby'); drawNearby(); }
+      else if (mode === 'marks') marksPanel?.refresh();
       else if (mode === 'offline') renderOfflinePanel();
     },
     close,

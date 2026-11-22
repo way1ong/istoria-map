@@ -43,5 +43,18 @@
       "url": "https://zenon.dainst.org/Record/001045831",
       "note": "Повний текст не читано; зміст відповідає звітам RKM 2000–2001."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Kastell_G%C3%B6d-B%C3%B3csa%C3%BAjtelep_-_Luftbildprojektion.png",
+      "author": "Mediatus",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kastell_G%C3%B6d-B%C3%B3csa%C3%BAjtelep_-_Luftbildprojektion.png",
+      "caption": {
+        "uk": "Обрис форту, відомий з аерофотознімків, нанесений на сучасну мапу; рисунок 2011 року за публікацією Zsolt Mráv",
+        "hu": "A légi felvételekről ismert erődkörvonal mai térképre vetítve; 2011-es rajz Mráv Zsolt közleménye alapján"
+      }
+    }
   ]
 }

@@ -28,5 +28,18 @@
       "url": "https://hu.wikipedia.org/wiki/Fen%C3%A9kpuszta",
       "note": "Розмір і дата фортеці, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Keszthely-Fen%C3%A9kpuszta_%28Castellum%29_-_%C3%A9p%C3%BCletmaradv%C3%A1nyok_a_r%C3%B3mai_korb%C3%B3l.jpg",
+      "author": "Erh-Ani",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Keszthely-Fen%C3%A9kpuszta_%28Castellum%29_-_%C3%A9p%C3%BCletmaradv%C3%A1nyok_a_r%C3%B3mai_korb%C3%B3l.jpg",
+      "caption": {
+        "uk": "Рештки західної круглої вежі південної брами пізньоримської фортеці, 29 травня 2013 року",
+        "hu": "A késő római erőd déli kapujának nyugati kerek tornya, 2013. május 29."
+      }
+    }
   ]
 }

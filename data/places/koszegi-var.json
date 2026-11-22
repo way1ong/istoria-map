@@ -28,5 +28,18 @@
       "url": "https://hu.wikipedia.org/wiki/K%C5%91szegi_v%C3%A1r",
       "note": "Облога 1532, Jurisics, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Jurisics_Mikl%C3%B3s_V%C3%A1r.jpg",
+      "author": "PhilippHuet99",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Jurisics_Mikl%C3%B3s_V%C3%A1r.jpg",
+      "caption": {
+        "uk": "Замок Юришича в Кьосезі з повітря, 20 березня 2020 року",
+        "hu": "A kőszegi Jurisics Miklós vár légi fotón, 2020. március 20."
+      }
+    }
   ]
 }

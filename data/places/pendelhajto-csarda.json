@@ -43,5 +43,18 @@
       "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.73762&lon=19.18567",
       "note": "Нині на цьому місці: вулиця Kiscsörögi utca, Csörögiszőlők (Csörög). Дані © учасники OpenStreetMap, ODbL."
     }
+  ],
+  "photos": [
+    {
+      "url": "photos/pendelhajto-csarda-spezialkarte.jpg",
+      "author": "K. u. k. Militärgeographisches Institut",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Obuda,_(Budapest)._NYPL1226598.tiff",
+      "caption": {
+        "uk": "Корчма «Pendelhajtó» з позначкою «W.H.» (Wirtshaus) на аркуші Spezialkarte 15:XX 1904 року (виправлено до 1910; скан NYPL)",
+        "hu": "A „Pendelhajtó” vendéglő „W.H.” (Wirtshaus) jelöléssel a Spezialkarte 15:XX 1904-es lapján (1910-ig javítva; szkennelt példány: NYPL)"
+      }
+    }
   ]
 }

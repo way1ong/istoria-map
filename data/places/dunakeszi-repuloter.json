@@ -38,5 +38,18 @@
       "url": "https://nominatim.openstreetmap.org/search?q=Dunakeszi+rep%C3%BCl%C5%91t%C3%A9r&format=jsonv2",
       "note": "47.6131, 19.1431; округлено. Дані © учасники OpenStreetMap, ODbL."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Dunakeszi_1966%2C_airport%2C_airplanes%2C_aerial_photo_Fortepan_84566.jpg",
+      "author": "FOTO:FORTEPAN / MHSZ",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Dunakeszi_1966%2C_airport%2C_airplanes%2C_aerial_photo_Fortepan_84566.jpg",
+      "caption": {
+        "uk": "Аеродром Dunakeszi з літаками й планерами, знімок з повітря, 1966 рік",
+        "hu": "A dunakeszi repülőtér repülőgépekkel és vitorlázógépekkel, légi felvétel, 1966"
+      }
+    }
   ]
 }

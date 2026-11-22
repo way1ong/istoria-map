@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Feldebr%C5%91",
       "note": "Крипта, рід Aba, координати села."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Feldebr%C5%91%2C_r%C3%B3mai_katolikus_templom_2023_03.jpg",
+      "author": "Pasztilla aka Attila Terbócs",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Feldebr%C5%91%2C_r%C3%B3mai_katolikus_templom_2023_03.jpg",
+      "caption": {
+        "uk": "Римо-католицька церква у Фелдебрьо, 23 жовтня 2023 року",
+        "hu": "A feldebrői római katolikus templom, 2023. október 23."
+      }
+    }
   ]
 }

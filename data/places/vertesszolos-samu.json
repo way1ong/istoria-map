@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Samu_%28el%C5%91ember%29",
       "note": "Вік, рік знахідки, дослідники, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/V%C3%A9rtessz%C5%91l%C5%91s_paleolitic_locality_site_I_view.JPG",
+      "author": "Ajznbony",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A9rtessz%C5%91l%C5%91s_paleolitic_locality_site_I_view.JPG",
+      "caption": {
+        "uk": "Палеолітична стоянка у Вертешсьолеші, загальний вигляд ділянки I, 8 червня 2010 року",
+        "hu": "A vértesszőlősi őskőkori lelőhely, az I. lelőhely látképe, 2010. június 8."
+      }
+    }
   ]
 }

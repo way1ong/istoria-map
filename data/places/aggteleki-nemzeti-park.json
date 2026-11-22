@@ -28,5 +28,18 @@
       "url": "https://hu.wikipedia.org/wiki/Aggteleki_Nemzeti_Park",
       "note": "1985, мета, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hungary_Baradla.jpg",
+      "author": "Wojsyl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Hungary_Baradla.jpg",
+      "caption": {
+        "uk": "Сталагміт у печері Барадла (Baradla) біля Jósvafő й Аґґтелека",
+        "hu": "Állócseppkő a Baradla-barlangban, Jósvafő / Aggtelek"
+      }
+    }
   ]
 }

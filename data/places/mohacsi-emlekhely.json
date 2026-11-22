@@ -33,5 +33,17 @@
       "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Moh%C3%A1csi%20Nemzeti%20Eml%C3%A9khely",
       "note": "Координати 45.9424, 18.6469 (округлено); дані © учасники OpenStreetMap, ODbL."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Mohacs_Monument_at_the_Battlefield_2004.JPG",
+      "author": "Neoneo13",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Mohacs_Monument_at_the_Battlefield_2004.JPG",
+      "caption": {
+        "uk": "Меморіал на полі битви під Могачем, літо 2004 року",
+        "hu": "A mohácsi csatatér emlékhelye, 2004 nyara"
+      }
+    }
   ]
 }

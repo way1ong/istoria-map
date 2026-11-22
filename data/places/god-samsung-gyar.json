@@ -18,8 +18,8 @@
     "hu": "2018-ban indult akkumulátorgyár a késő római erőd szomszédságában; zaj- és környezetvédelmi viták tárgya."
   },
   "description": {
-    "uk": "За статтею про Göd, 2018 року в місті розмістився завод акумуляторів Samsung. Стаття зазначає, що підприємство п'ять років працювало без дозволу на використання довкілля, а 2023 року комітатське управління видало дозвіл до 2033 року; між заводом і житловою зоною немає ні шумозахисної стіни, ні захисного лісу, і восени 2018 року під час розширення вирубано 25 га лісу. База Угорського національного музею фіксує археологічні спостереження на території заводу в 2016–2024 роках, адже пам'ятка Göd-Bócsaújtelep розташована на цій самій промисловій ділянці. Координати умовно збігаються з координатами форту.",
-    "hu": "A Gödről szóló szócikk szerint 2018-ban a városban telepedett le a Samsung akkumulátorgyára. A szócikk megjegyzi, hogy a vállalat öt évig környezethasználati engedély nélkül működött, 2023-ban pedig a vármegyei kormányhivatal 2033-ig szóló engedélyt adott ki; a gyár és a lakóövezet között nincs sem zajvédő fal, sem védőerdő, és 2018 őszén a bővítés során 25 ha erdőt vágtak ki. A Magyar Nemzeti Múzeum adatbázisa régészeti megfigyeléseket rögzít a gyár területén 2016–2024 között, mivel a Göd-Bócsaújtelep lelőhely ugyanezen az ipari területen fekszik. A koordináták feltételesen megegyeznek az erőd koordinátáival."
+    "uk": "За статтею про Göd, 2018 року в місті розмістився завод акумуляторів Samsung. Стаття зазначає, що підприємство п'ять років працювало без дозволу на використання довкілля, а 2023 року комітатське управління видало дозвіл до 2033 року; між заводом і житловою зоною немає ні шумозахисної стіни, ні захисного лісу, і восени 2018 року під час розширення вирубано 25 га лісу. База Угорського національного музею фіксує археологічні спостереження на території заводу в 2016–2024 роках, адже пам'ятка Göd-Bócsaújtelep розташована на цій самій промисловій ділянці. Координати — центр промислової ділянки заводу за OpenStreetMap.",
+    "hu": "A Gödről szóló szócikk szerint 2018-ban a városban telepedett le a Samsung akkumulátorgyára. A szócikk megjegyzi, hogy a vállalat öt évig környezethasználati engedély nélkül működött, 2023-ban pedig a vármegyei kormányhivatal 2033-ig szóló engedélyt adott ki; a gyár és a lakóövezet között nincs sem zajvédő fal, sem védőerdő, és 2018 őszén a bővítés során 25 ha erdőt vágtak ki. A Magyar Nemzeti Múzeum adatbázisa régészeti megfigyeléseket rögzít a gyár területén 2016–2024 között, mivel a Göd-Bócsaújtelep lelőhely ugyanezen az ipari területen fekszik. A koordináták a gyár ipari területének központját jelölik az OpenStreetMap szerint."
   },
   "sources": [
     {
@@ -36,6 +36,19 @@
       "title": "Nominatim (OpenStreetMap): Samsung, Alsógöd, Göd",
       "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Samsung+SDI+G%C3%B6d",
       "note": "Центр промислової ділянки «Samsung» (relation 16364462): 47.6746, 19.1625 (округлено); дані © учасники OpenStreetMap, ODbL. Раніше картка мала координати форту, що лежить приблизно за 1 км на північ."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Hungary_G%C3%B6d_with_Samsung_IMG_0201_E77.JPG",
+      "author": "Bjoertvedt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Hungary_G%C3%B6d_with_Samsung_IMG_0201_E77.JPG",
+      "caption": {
+        "uk": "Завод Samsung у Göd з повітря, 3 вересня 2015 року",
+        "hu": "A gödi Samsung-gyár a levegőből, 2015. szeptember 3."
+      }
     }
   ]
 }

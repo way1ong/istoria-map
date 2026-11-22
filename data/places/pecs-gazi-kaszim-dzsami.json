@@ -29,5 +29,18 @@
       "url": "https://hu.wikipedia.org/wiki/G%C3%A1zi_K%C3%A1szim_pasa_dzs%C3%A1mija",
       "note": "Датування, паша Касим, статус, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/R%C3%A9gi_t%C3%B6r%C3%B6k_dzs%C3%A1mi_%2818015._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "author": "Naki77",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:R%C3%A9gi_t%C3%B6r%C3%B6k_dzs%C3%A1mi_%2818015._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29.jpg",
+      "caption": {
+        "uk": "Стара турецька мечеть на площі Széchenyi tér у Печі, 24 серпня 2011 року",
+        "hu": "A régi török dzsámi, Pécs, Széchenyi tér, 2011. augusztus 24."
+      }
+    }
   ]
 }

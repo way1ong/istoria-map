@@ -19,8 +19,8 @@
     "hu": "Csárda Vác északi szélén, az 1885-ös lapon „Buki cs.” felirattal; a Buki név Kisvác egyik részének nevében él tovább."
   },
   "description": {
-    "uk": "На аркуші 1885 року між Дунаєм і дорогою на північ від Вацу, південніше корчми «Kőhíd cs.» і цегельні «Ziegel H.», підписано «Buki cs.». За статтею про Вац, Buki нині є частиною району Kisvác (Felsőváros); у даних OpenStreetMap квартал Buki позначено трохи північніше. Корчми в сучасних даних немає; за зворотним геокодуванням місце нині припадає на спортивний майданчик біля вулиці Pázmány Péter utca. Координати зняті з мапи з точністю близько 50 м.",
-    "hu": "Az 1885-ös lapon a Duna és a Vácról észak felé vezető út között, a „Kőhíd cs.” csárdától és a „Ziegel H.” téglaháztól délre „Buki cs.” felirat áll. A Vácról szóló szócikk szerint Buki ma Kisvác (Felsőváros) része; az OpenStreetMap-adatokban a Buki városrész kissé északabbra van jelölve. A csárdának a mai adatokban nincs nyoma; a fordított geokódolás szerint helye ma a Pázmány Péter utca melletti sportpályára esik. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
+    "uk": "На аркуші 1885 року між Дунаєм і дорогою на північ від Вацу, південніше корчми «Kőhíd cs.» і цегельні «Ziegel Fb.», підписано «Buki cs.». За статтею про Вац, Buki нині є частиною району Kisvác (Felsőváros); у даних OpenStreetMap квартал Buki позначено трохи північніше. Корчми в сучасних даних немає; за зворотним геокодуванням місце нині припадає на спортивний майданчик біля вулиці Pázmány Péter utca. Координати зняті з мапи з точністю близько 50 м.",
+    "hu": "Az 1885-ös lapon a Duna és a Vácról észak felé vezető út között, a „Kőhíd cs.” csárdától és a „Ziegel Fb.” téglagyártól délre „Buki cs.” felirat áll. A Vácról szóló szócikk szerint Buki ma Kisvác (Felsőváros) része; az OpenStreetMap-adatokban a Buki városrész kissé északabbra van jelölve. A csárdának a mai adatokban nincs nyoma; a fordított geokódolás szerint helye ma a Pázmány Péter utca melletti sportpályára esik. A koordinátákat a térképről vettük mintegy 50 m pontossággal."
   },
   "sources": [
     {
@@ -37,6 +37,19 @@
       "title": "Nominatim (OpenStreetMap): зворотне геокодування",
       "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.79574&lon=19.11038",
       "note": "Нині на цьому місці: спортивний майданчик біля Pázmány Péter utca (Vác). Дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "photos/vac-buki-csarda-spezialkarte.jpg",
+      "author": "K. u. k. Militärgeographisches Institut",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Nograd_und_Waitzen._NYPL1226564.tiff",
+      "caption": {
+        "uk": "Корчма «Buki cs.» на північній околиці Вацу на аркуші Spezialkarte 14:XX 1885 року (виправлено до 1912; скан NYPL)",
+        "hu": "A „Buki cs.” (csárda) Vác északi szélén a Spezialkarte 14:XX 1885-ös lapján (1912-ig javítva; szkennelt példány: NYPL)"
+      }
     }
   ]
 }

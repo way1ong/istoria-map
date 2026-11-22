@@ -28,5 +28,18 @@
       "url": "https://hu.wikipedia.org/wiki/Tatai_v%C3%A1r",
       "note": "Сигізмунд, Матяш, 1543, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Tata-var.jpg",
+      "author": "Markgyore",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Tata-var.jpg",
+      "caption": {
+        "uk": "Татайський замок, 17 червня 2018 року",
+        "hu": "A tatai vár látképe, 2018. június 17."
+      }
+    }
   ]
 }

@@ -32,5 +32,18 @@
       "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=P%C3%A1kozd",
       "note": "Координати 47.2171, 18.5437 (округлено); дані © учасники OpenStreetMap, ODbL."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Pakozd_1848_Battle_Memorial_02.jpg",
+      "author": "Pasztilla aka Attila Terbócs",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Pakozd_1848_Battle_Memorial_02.jpg",
+      "caption": {
+        "uk": "Новий пам'ятник (1951) битві при Пакозді 1848 року, 29 травня 2010 року",
+        "hu": "Az 1848-as pákozdi csata új emlékműve (1951), 2010. május 29."
+      }
+    }
   ]
 }

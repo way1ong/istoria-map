@@ -52,6 +52,7 @@ const dict = {
     vanished: 'Нині не існує',
     compareHint: 'Рухайте будь-яку з мап: друга йде за нею. Хрестик посередині показує ту саму точку на обох.',
     bordersNote: 'Кордони бл. {year} р. (приблизно; пунктир = сучасні межі).',
+    osmContrib: '© учасники OpenStreetMap',
     bordersNoteBce: 'Кордони бл. {year} р. до н. е. (приблизно; пунктир = сучасні межі).',
     typeFarmstead: 'хутір, майор',
     typeInn: 'корчма',
@@ -138,6 +139,38 @@ const dict = {
     netOff: 'Немає інтернету: показано мапу з пристрою.',
     glLost: 'Мапа зникла: браузер тимчасово забрав у неї графіку (так буває, коли телефону бракує пам\'яті).',
     glReload: 'Перезавантажити мапу',
+    trackOn: 'Стеження за місцем увімкнено: точка рухається разом з вами, екран не гасне.',
+    routeHere: 'Маршрут сюди',
+    filterShapes: 'Форма мітки показує тип місця, колір — період.',
+    marks: 'Мої мітки',
+    markDefault: 'Мітка',
+    markHere: 'Там, де я стою',
+    markCenter: 'У центрі мапи',
+    markHint: 'Або затримайте палець на мапі в потрібному місці. Мітки зберігаються лише на цьому пристрої: щоб не втратити їх, вивантажуйте у файл.',
+    markEmpty: 'Міток ще немає.',
+    markLocating: 'Визначаю місце…',
+    markNoGps: 'Не вдалося визначити місце. Перевірте, чи ввімкнено GPS і чи дозволено сайту доступ до місця.',
+    markName: 'Назва',
+    markNote: 'Нотатка',
+    markNotePh: 'Що тут варто запам\'ятати',
+    markColor: 'Колір прапорця',
+    markColor_red: 'червоний',
+    markColor_blue: 'синій',
+    markColor_green: 'зелений',
+    markColor_yellow: 'жовтий',
+    markAll: 'Усі мітки',
+    markShow: 'Показати на мапі',
+    markMove: 'Перенести в центр мапи',
+    markDelete: 'Видалити',
+    markConfirmDelete: 'Видалити мітку «{name}»?',
+    markExport: 'Вивантажити у файл',
+    markShare: 'Поділитися файлом',
+    markImport: 'Завантажити з файлу',
+    markImported: 'Додано міток: {n}. Пропущено (уже є або не точки): {m}.',
+    markImportBad: 'Це не файл міток (потрібен GeoJSON).',
+    markSaveFail: 'Браузер не дав зберегти мітку (приватний режим або немає місця).',
+    markCount: 'Міток: {n}',
+    markAcc: 'точність GPS ± {n} м',
     glWait: 'Браузер ще не повернув графіку. Мапа перезавантажиться сама, щойно графіка з\'явиться.',
     glFailTitle: 'Мапа не запустилася',
     glFail: 'Браузер зараз не дає сторінці графіки (WebGL). Так буває кілька секунд після збою графіки на телефоні; мапа запуститься сама, щойно графіка повернеться.',
@@ -217,6 +250,7 @@ const dict = {
     vanished: 'Ma már nem létezik',
     compareHint: 'Mozgassa bármelyik térképet: a másik követi. A középső kereszt ugyanazt a pontot mutatja mindkettőn.',
     bordersNote: 'Határok kb. {year} körül (hozzávetőleges; szaggatott = mai határok).',
+    osmContrib: '© OpenStreetMap közreműködők',
     bordersNoteBce: 'Határok kb. i. e. {year} körül (hozzávetőleges; szaggatott = mai határok).',
     typeFarmstead: 'major, tanya',
     typeInn: 'csárda',
@@ -303,6 +337,38 @@ const dict = {
     netOff: 'Nincs internet: a készüléken tárolt térkép látszik.',
     glLost: 'A térkép eltűnt: a böngésző átmenetileg elvette tőle a grafikát (ez akkor fordul elő, ha a telefonnak kevés a memóriája).',
     glReload: 'Térkép újratöltése',
+    trackOn: 'Helykövetés bekapcsolva: a pont együtt mozog Önnel, a képernyő nem alszik el.',
+    routeHere: 'Útvonal ide',
+    filterShapes: 'A jel alakja a hely típusát, a színe a korszakot mutatja.',
+    marks: 'Saját jelölőim',
+    markDefault: 'Jelölő',
+    markHere: 'Ahol most állok',
+    markCenter: 'A térkép közepén',
+    markHint: 'Vagy tartsa az ujját a térképen a kívánt helyen. A jelölők csak ezen az eszközön tárolódnak: mentse őket fájlba, hogy ne vesszenek el.',
+    markEmpty: 'Még nincs jelölő.',
+    markLocating: 'Helymeghatározás…',
+    markNoGps: 'Nem sikerült meghatározni a helyet. Ellenőrizze, hogy a GPS be van-e kapcsolva, és az oldal hozzáférhet-e a helyadatokhoz.',
+    markName: 'Név',
+    markNote: 'Jegyzet',
+    markNotePh: 'Mit érdemes itt megjegyezni',
+    markColor: 'A zászló színe',
+    markColor_red: 'piros',
+    markColor_blue: 'kék',
+    markColor_green: 'zöld',
+    markColor_yellow: 'sárga',
+    markAll: 'Minden jelölő',
+    markShow: 'Megmutatás a térképen',
+    markMove: 'Áthelyezés a térkép közepére',
+    markDelete: 'Törlés',
+    markConfirmDelete: 'Törli a(z) „{name}” jelölőt?',
+    markExport: 'Mentés fájlba',
+    markShare: 'Fájl megosztása',
+    markImport: 'Betöltés fájlból',
+    markImported: 'Hozzáadott jelölők: {n}. Kihagyva (már megvan vagy nem pont): {m}.',
+    markImportBad: 'Ez nem jelölőfájl (GeoJSON szükséges).',
+    markSaveFail: 'A böngésző nem engedte menteni a jelölőt (privát mód vagy nincs hely).',
+    markCount: 'Jelölők: {n}',
+    markAcc: 'GPS-pontosság ± {n} m',
     glWait: 'A böngésző még nem adta vissza a grafikát. A térkép magától újratöltődik, amint a grafika elérhető.',
     glFailTitle: 'A térkép nem indult el',
     glFail: 'A böngésző most nem ad grafikát (WebGL) az oldalnak. Ez a telefon grafikai hibája után néhány másodpercig előfordul; a térkép magától elindul, amint a grafika visszatér.',
@@ -367,8 +433,21 @@ export function lt(text: LText | undefined): string {
   return (lang === 'hu' && text.hu) || text.uk;
 }
 
+/** Рік числом; від 10 000 — з розрядами через вузький нерозривний пробіл («350 000»). */
+export function groupYear(n: number): string {
+  const s = String(Math.abs(n));
+  return s.length > 4 ? s.replace(/\B(?=(\d{3})+(?!\d))/g, '\u202f') : s;
+}
+
 export function formatYear(year: number | null): string {
   if (year === null) return t('toPresent');
-  if (year < 0) return getLang() === 'hu' ? `${t('bce')} ${-year}` : `${-year} ${t('bce')}`;
+  if (year < 0) return getLang() === 'hu' ? `${t('bce')} ${groupYear(year)}` : `${groupYear(year)} ${t('bce')}`;
   return String(year);
+}
+
+/** Роки події: «1241», «1526–1541», «400 до н. е.»; коли обидва до н. е., позначка одна: «5480–5000 до н. е.». */
+export function formatYearRange(from: number, to?: number | null): string {
+  if (to === undefined || to === null || to === from) return formatYear(from);
+  if (from < 0 && to < 0) return getLang() === 'hu' ? `${t('bce')} ${groupYear(from)}–${groupYear(to)}` : `${groupYear(from)}–${groupYear(to)} ${t('bce')}`;
+  return `${formatYear(from)}–${formatYear(to)}`;
 }

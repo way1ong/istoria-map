@@ -29,5 +29,18 @@
       "url": "https://hu.wikipedia.org/wiki/Cegl%C3%A9d",
       "note": "Розташування, середньовічний шлях, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Cegled_Calvinist_great_church.jpg",
+      "author": "Alex Barrow",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Cegled_Calvinist_great_church.jpg",
+      "caption": {
+        "uk": "Реформатська Велика церква в Цеґледі, 20 травня 2008 року",
+        "hu": "A ceglédi református nagytemplom, 2008. május 20."
+      }
+    }
   ]
 }

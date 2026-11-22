@@ -35,5 +35,18 @@
       "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Tokaj",
       "note": "Координати 48.1236, 21.4114 (округлено); дані © учасники OpenStreetMap, ODbL."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/TokajHetszoloFotoThalerTamas.jpg",
+      "author": "Thaler Tamas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:TokajHetszoloFotoThalerTamas.jpg",
+      "caption": {
+        "uk": "Виноградники маєтку Tokaj-Hétszőlő, 8 червня 2018 року",
+        "hu": "A Tokaj-Hétszőlő Szőlőbirtok, 2018. június 8."
+      }
+    }
   ]
 }

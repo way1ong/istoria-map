@@ -1,0 +1,39 @@
+{
+  "id": "rezkor-kezdete",
+  "title": {
+    "uk": "Початок мідної доби: перші мідні знаряддя",
+    "hu": "A rézkor kezdete: az első rézeszközök"
+  },
+  "date": {
+    "from": "-4500",
+    "to": "-4000",
+    "precision": "approximate"
+  },
+  "period": "prehistory",
+  "places": [],
+  "summary": {
+    "uk": "Наприкінці V тисячоліття до н. е. в Карпатській улоговині з'явилися зброя і знаряддя з міді; тоді ж на сході Альфельду склалася тисаполгарська культура.",
+    "hu": "Az i. e. 5. évezred végén jelentek meg a Kárpát-medencében a rézből készült fegyverek és eszközök; ekkor alakult ki az Alföld keleti felén a tiszapolgári kultúra."
+  },
+  "description": {
+    "uk": "За оглядовою статтею про давню історію Карпатської улоговини, появу мідної зброї та знарядь тут відносять до кінця V тисячоліття до н. е. Тисаполгарська культура, що склалася наприкінці тисячоліття (у статті: розквіт приблизно в 4500/4400–4000 роках до н. е.), охоплювала східну половину Альфельду й західну частину Трансільванії. Її люди селилися переважно біля річок, часто на узвишшях над заплавою, не укріплювали своїх осель і жили передусім зі скотарства; у ранню мідну добу з'явилися цвинтарі, відокремлені від поселень, а кількість речей у могилі показувала становище померлого. Далі була бодроґкерестурська культура (IV тисячоліття), поширена в усій середній частині улоговини; мідні й золоті речі з її пам'яток, здебільшого сокири й прикраси, свідчать про розвинену обробку металу. У мідну добу в ужиток увійшли плуг, ярмо, двоколісний віз, запряжений волами, а згодом і чотириколісний.\n\nВ околиці Göd мідну добу представляють: у Ваці поселення бодроґкерестурської культури на нинішній площі Szentháromság tér і знахідки баденської культури в Derecske-dűlő, у Dunakeszi знахідки з Koplya-tető, Hegyrejáró dűlő і з будівництва дороги M2.\n\nДати в картці умовні: час розквіту тисаполгарської культури за оглядовою статтею.",
+    "hu": "A Kárpát-medence korai történetéről szóló áttekintő szócikk szerint a rézből készült fegyverek és eszközök kárpát-medencei megjelenése az i. e. 5. évezred végére tehető. Az évezred végén kialakuló tiszapolgári kultúra (a szócikk szerint virágkora kb. i. e. 4500/4400–4000) az Alföld keleti felét és Erdély nyugati részét foglalta magában. Népe általában folyók mellett, gyakran az ártérből kiemelkedő magaslatokon lakott, szállásait nem erősítette meg, és főként állattenyésztésből élt; a korai rézkorban jöttek létre a lakóhelytől elkülönített temetők, ahol a mellékletek mennyisége az elhunyt társadalmi helyzetét jelezte. Ezt követte a bodrogkeresztúri kultúra (i. e. 4. évezred), amely a medence egész középső részén jelen volt; hagyatékának réz- és aranytárgyai, jellemzően szekercék és ékszerek, fejlett fémművességről tanúskodnak. A rézkorban került használatba az eke, az iga, a szarvasmarhák vontatta taliga, később pedig a négykerekű szekér.\n\nGöd környékén a rézkort Vácon a bodrogkeresztúri kultúra telepe a mai Szentháromság téren és a badeni kultúra leletei a Derecske-dűlőben, Dunakeszin pedig a Koplya-tető, a Hegyrejáró dűlő és az M2-es út építési területének leletei képviselik.\n\nA kártya dátumai hozzávetőlegesek: a tiszapolgári kultúra virágkora az áttekintő szócikk szerint."
+  },
+  "sources": [
+    {
+      "title": "A Kárpát-medence története a honfoglalásig – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/A_K%C3%A1rp%C3%A1t-medence_t%C3%B6rt%C3%A9nete_a_honfoglal%C3%A1sig",
+      "note": "Розділ про мідну добу (Kőrézkor): поява мідних знарядь наприкінці V тисячоліття до н. е., тисаполгарська й бодроґкерестурська культури."
+    },
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділ «Őskor»: поселення бодроґкерестурської культури на Szentháromság tér, знахідки баденської культури в Derecske-dűlő."
+    },
+    {
+      "title": "Dunakeszi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Dunakeszi",
+      "note": "Розділ «Dunakeszi térsége az őskorban»: знахідки мідної доби з Koplya-tető, Hegyrejáró dűlő і будівництва дороги M2."
+    }
+  ]
+}

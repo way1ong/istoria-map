@@ -37,6 +37,24 @@
       "title": "Nominatim (OpenStreetMap): зворотне геокодування",
       "url": "https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=18&lat=47.68587&lon=19.13007",
       "note": "Нині на цьому місці: вулиця Török Ignác utca, Alsógöd. Дані © учасники OpenStreetMap, ODbL."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Feneketlen-tó, Göd",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Feneketlen-t%C3%B3%2C+G%C3%B6d",
+      "note": "Озеро Feneketlen-tó (47.6849, 19.1302) лежить приблизно за 115 м на південь від позначки печі. Дані © учасники OpenStreetMap, ODbL."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Feneketlen_g%C3%B6l%C3%BC%2C_2020_G%C3%B6d.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Feneketlen_g%C3%B6l%C3%BC%2C_2020_G%C3%B6d.jpg",
+      "caption": {
+        "uk": "Озеро Feneketlen-tó в Alsógöd, приблизно за 100 м на південь від позначки печі на старій мапі; в описі фото на Вікісховищі його названо озером глиняного кар'єру (agyagbányató). Червень 2020 року",
+        "hu": "A Feneketlen-tó Alsógödön, mintegy 100 m-re délre a régi térkép téglaégető-jelétől; a Wikimedia Commons fényképleírása agyagbányatónak nevezi. 2020. június"
+      }
     }
   ]
 }

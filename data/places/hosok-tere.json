@@ -34,5 +34,18 @@
       "url": "https://hu.wikipedia.org/wiki/M1-es_metr%C3%B3vonal_%28Budapest%29",
       "note": "Відкриття M1 1896 року як першої підземної залізниці континентальної Європи."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Heroes_Square_Budapest_2010_01.jpg",
+      "author": "Petr Šmerkl, Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Heroes_Square_Budapest_2010_01.jpg",
+      "caption": {
+        "uk": "Площа Героїв у Будапешті, 2010 рік",
+        "hu": "A budapesti Hősök tere, 2010"
+      }
+    }
   ]
 }

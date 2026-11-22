@@ -29,5 +29,17 @@
       "url": "https://hu.wikipedia.org/wiki/Hortob%C3%A1gyi_Nemzeti_Park",
       "note": "Дата створення, площа, ЮНЕСКО 1999, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Hungarian_Grey_Cattle.jpg",
+      "author": "Németh László (Nl74)",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Hungarian_Grey_Cattle.jpg",
+      "caption": {
+        "uk": "Угорська сіра худоба в Національному парку Гортобадь, 6 липня 2006 року",
+        "hu": "Magyar szürke marhák a Hortobágyi Nemzeti Parkban, 2006. július 6."
+      }
+    }
   ]
 }

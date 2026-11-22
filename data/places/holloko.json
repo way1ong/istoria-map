@@ -29,5 +29,18 @@
       "url": "https://hu.wikipedia.org/wiki/Holl%C3%B3k%C5%91",
       "note": "ЮНЕСКО 1987, датування села і замку, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Holl%C3%B3k%C5%91_%C3%93falu_F%C5%91_utca_%28r%C3%A9szlet%29_002.jpg",
+      "author": "Krzyżówki",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Holl%C3%B3k%C5%91_%C3%93falu_F%C5%91_utca_%28r%C3%A9szlet%29_002.jpg",
+      "caption": {
+        "uk": "Старе село (Ófalu) в Голлокьо, вулиця Kossuth Lajos utca, 2 травня 2007 року",
+        "hu": "Hollókő, Ófalu, a Kossuth Lajos utca részlete, 2007. május 2."
+      }
+    }
   ]
 }

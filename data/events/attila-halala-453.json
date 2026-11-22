@@ -1,0 +1,35 @@
+{
+  "id": "attila-halala-453",
+  "title": {
+    "uk": "Смерть Аттіли й розпад держави гунів",
+    "hu": "Attila halála és a hun birodalom szétesése"
+  },
+  "date": {
+    "from": "0453",
+    "precision": "exact"
+  },
+  "period": "migration",
+  "places": [
+    "nagyszeksos"
+  ],
+  "summary": {
+    "uk": "453 року помер Аттіла, і держава гунів розпалася; її місце в Карпатській улоговині посіли германські королівства, що ворогували між собою.",
+    "hu": "453-ban meghalt Attila, és a hunok birodalma szétesett; helyét a Kárpát-medencében az egymással marakodó germán királyságok vették át."
+  },
+  "description": {
+    "uk": "За оглядовою статтею про давню історію Карпатської улоговини, напади Аттіли струсонули Римську імперію, але 451 року в битві на Каталаунських полях римський полководець Аецій зупинив гунське військо. Після смерті Аттіли (453) держава гунів розпалася, а її місце посіли германські королівства, що ворогували між собою. Після краху гунської держави улоговиною ціле століття володіли племена готів, герулів, гепідів і лангобардів, доки її не зайняли авари (оглядова стаття називає 567 рік; див. окрему подію про прихід аварів).\n\nДе саме помер і де похований Аттіла, ця стаття не каже. На мапі подію прив'язано до місця знахідки скарбу з Nagyszéksós біля Сеґеда: це найбільший золотий скарб гунської доби Подунав'я (окрема картка), а не місце смерті Аттіли.",
+    "hu": "A Kárpát-medence korai történetéről szóló áttekintő szócikk szerint Attila támadásai megrázták a Római Birodalmat, 451-ben azonban a catalaunumi csatában Aëtius római hadvezér megállította a hun sereget. Attila halála (453) után a hunok birodalma szétesett, helyét az egymással marakodó germán királyságok vették át. A hun birodalom összeomlása után a Kárpát-medencét egy évszázadon át a gótok, herulok, gepidák és longobárdok törzsei uralták, míg végül az avarok vették birtokba (az áttekintő szócikk 567-et ír; lásd az avarok érkezéséről szóló külön eseményt).\n\nHogy Attila pontosan hol halt meg és hol temették el, arról ez a szócikk nem szól. A térképen az esemény a Szeged melletti nagyszéksósi lelet lelőhelyéhez kapcsolódik: ez a Duna-vidék hun korának legnagyobb aranykincse (külön kártya), nem Attila halálának helye."
+  },
+  "sources": [
+    {
+      "title": "A Kárpát-medence története a honfoglalásig – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/A_K%C3%A1rp%C3%A1t-medence_t%C3%B6rt%C3%A9nete_a_honfoglal%C3%A1sig",
+      "note": "Розділ про гунів: битва 451 року, смерть Аттіли 453 року, розпад держави, германські королівства; вступ: готи, герули, гепіди, лангобарди, авари 567 року."
+    },
+    {
+      "title": "Nagyszéksósi lelet – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagysz%C3%A9ks%C3%B3si_lelet",
+      "note": "Найбільший золотий скарб гунської доби Подунав'я (картка місця)."
+    }
+  ]
+}

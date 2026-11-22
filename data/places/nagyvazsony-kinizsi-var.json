@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Kinizsi-v%C3%A1r",
       "note": "Засновник і дата, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Nagyv%C3%A1zsony_v%C3%A1ra.jpg",
+      "author": "Inritter",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Nagyv%C3%A1zsony_v%C3%A1ra.jpg",
+      "caption": {
+        "uk": "Замок у Надьважоні з повітря, 22 вересня 2018 року",
+        "hu": "Nagyvázsony vára a levegőből, 2018. szeptember 22."
+      }
+    }
   ]
 }

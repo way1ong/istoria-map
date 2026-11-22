@@ -1,0 +1,34 @@
+{
+  "id": "hunok-pannoniaban-433",
+  "title": {
+    "uk": "Гуни опановують Паннонію",
+    "hu": "Pannonia hun kézre kerül"
+  },
+  "date": {
+    "from": "0409",
+    "to": "0433",
+    "precision": "exact"
+  },
+  "period": "migration",
+  "places": [],
+  "summary": {
+    "uk": "409 року римляни віддали гунам східну половину Паннонії, а до 433 року втратили всю провінцію: держава гунів уперше об'єднала східну й західну половини Карпатської улоговини.",
+    "hu": "409-ben a rómaiak Pannonia keleti felét engedték át a hunoknak, 433-ra pedig az egész tartományt elveszítették: a hunok birodalma első ízben egyesítette a Kárpát-medence keleti és nyugati felét."
+  },
+  "description": {
+    "uk": "За оглядовою статтею про давню історію Карпатської улоговини, наприкінці IV століття сюди, рятуючись від гунів, прийшли аланські й германські племена, а на зламі століть у Волощині та в улоговині поставили свої намети й самі гунські князі з дружинами; за кілька десятиліть гуни підкорили край. 401 року одне крило гунського війська, обійшовши Карпати з півночі, напало на вандалів і змусило їх тікати. Римляни 409 року поступилися гунам східною половиною Паннонії, а до 433 року втратили всю провінцію; так східну й західну половини улоговини вперше об'єднала одна держава.\n\nСтаття про Вац пише, що в другій половині V і першій половині VI століття в околиці міста на довший чи коротший час осідали гуни, гепіди, готи, вандали, скіри та лангобарди, але тривалої влади ніхто з них не створив. Про гунську знахідку з околиці Göd див. подію «Гунська кінська жертва в Göd».",
+    "hu": "A Kárpát-medence korai történetéről szóló áttekintő szócikk szerint a 4. század végén a hunok elől menekülő alán és germán törzsek költöztek a Kárpát-medencébe, a századfordulón pedig maguk a hun fejedelmek és kíséretük is a Havasalföldön, illetve a Kárpát-medencében ütötték fel sátraikat; néhány évtizeden belül uralmuk alá vonták a térséget. 401-ben a hun sereg egyik szárnya a Kárpátokat északról megkerülve megtámadta és megszalasztotta a vandálokat. A rómaiak 409-ben Pannonia keleti felét engedték át a hunoknak, 433-ra pedig az egész tartományt elveszítették; így a medence keleti és nyugati felét első ízben egyesítette egy birodalom.\n\nA Vácról szóló szócikk szerint az 5. század második és a 6. század első felében hosszabb-rövidebb ideig megtelepedtek a város környékén a hunok, gepidák, gótok, vandálok, szkírek és langobárdok, tartós uralmat azonban egyikük sem tudott létrehozni. A Göd környéki hun kori leletről lásd a „Hun kori lóáldozat Gödön” eseményt."
+  },
+  "sources": [
+    {
+      "title": "A Kárpát-medence története a honfoglalásig – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/A_K%C3%A1rp%C3%A1t-medence_t%C3%B6rt%C3%A9nete_a_honfoglal%C3%A1sig",
+      "note": "Вступ і розділ про гунів: 401 рік, 409 рік (східна половина Паннонії), 433 рік (уся провінція)."
+    },
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділ про добу переселення народів: гуни, гепіди, готи, вандали, скіри й лангобарди в околиці міста."
+    }
+  ]
+}
