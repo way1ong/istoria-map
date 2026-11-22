@@ -137,9 +137,12 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     const busy = !!job && !running;
     const r = !running ? lastResult.area : undefined;
     const msg = r && r.res !== 'ok' && r.res !== 'aborted' ? t(r.res === 'quota' ? 'offErrQuota' : r.res === 'net' ? 'offErrNet' : 'offErr') : '';
+    // Кнопка з'являється, лише коли ділянку справді можна зберегти; чому не можна — пише рядок стану вище
+    // (наблизьте мапу, уже збережена, завелика, потрібен інтернет) або примітка про інше завантаження.
     const button = running
       ? `<button type="button" class="off-btn" data-act="stop">${esc(t('offStop'))}</button>`
-      : `<button type="button" class="off-btn primary" data-act="area-save" ${canSave && online && !busy ? '' : 'disabled'} ${busy ? `title="${esc(t('offBusy'))}"` : ''}>${esc(t('offAreaSave'))}</button>`;
+      : canSave && online && !busy ? `<button type="button" class="off-btn primary" data-act="area-save">${esc(t('offAreaSave'))}</button>` : '';
+    const wait = !running && canSave && online && busy ? `<p class="off-note">${esc(t('offBusy'))}</p>` : '';
     const list = savedAreas().map((a) => {
       const [w, h] = areaKm(a.bbox);
       const name = areaName(a.label, a.placeId) || `${km(w)} × ${km(h)} ${t('unitKm')}`;
@@ -152,7 +155,8 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
       <p class="off-note">${esc(t('offAreasNote'))}</p>
       <div class="off-state">${state}</div>
       ${msg ? `<p class="off-err">${esc(msg)}</p>` : ''}
-      <div class="off-btns">${button}</div>
+      ${wait}
+      ${button ? `<div class="off-btns">${button}</div>` : ''}
       ${list ? `<details class="off-saved" ${areasOpen ? 'open' : ''}>
         <summary><span class="off-saved-t">${esc(t('offAreaSaved').replace('{n}', String(savedAreas().length)))}</span><span class="off-size">${esc(t('offAreasSum').replace('{size}', fmtBytes(total)))}</span></summary>
         <ul class="off-area-list">${list}</ul>
@@ -181,26 +185,34 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
       const size = id === 'photos' ? '' : m ? fmtBytes(m.bytes) : inst ? fmtBytes(inst.bytes) : '';
       const note = t(`packNote_${id}` as Key).replace('{date}', fmtDate(m?.date ?? inst?.date)).replace('{n}', String(photos.files.length));
       const canDl = online && !!m && !job;
-      const dlTitle = !online ? t('offNeedNet') : job && !running ? t('offBusy') : '';
-      const btn = (act: string, label: string, enabled = true, title = '') =>
-        `<button type="button" class="off-btn ${act === 'dl' ? 'primary' : ''}" data-act="${act}" data-id="${id}" ${enabled ? '' : 'disabled'} ${title ? `title="${esc(title)}"` : ''}>${esc(label)}</button>`;
+      // Кнопки завантаження з'являються, лише коли завантажити справді можна; інакше замість вимкненої кнопки —
+      // причина словами (на телефоні підказки при наведенні немає).
+      const why = !online ? t('offNeedNet') : job && !running ? t('offBusy') : '';
+      const btn = (act: string, label: string) =>
+        `<button type="button" class="off-btn ${act === 'dl' ? 'primary' : ''}" data-act="${act}" data-id="${id}">${esc(label)}</button>`;
+      const dl = (label: string) => (canDl ? btn('dl', label) : '');
       let state = '';
       let buttons = '';
+      let wanted = false;
       if (running && job) {
         state = `<progress max="1" value="0"></progress><span class="off-pct"></span>`;
         buttons = btn('stop', t('offStop'));
       } else if (inst && m && inst.version !== m.version) {
         state = `<span class="off-ok">${esc(t('offOutdated'))}</span> · ${fmtBytes(inst.bytes)}`;
-        buttons = btn('dl', t('offUpdate'), canDl, dlTitle) + btn('del', t('offDelete'));
+        buttons = dl(t('offUpdate')) + btn('del', t('offDelete'));
+        wanted = true;
       } else if (inst) {
         state = `<span class="off-ok">✓ ${esc(t('offReady'))}</span> · ${fmtBytes(inst.bytes)}`;
         buttons = btn('del', t('offDelete'));
       } else if (pend && (!m || pend.version === m.version)) {
         state = esc(t('offPaused').replace('{pct}', pct(pend.total ? pend.done / pend.total : 0)));
-        buttons = btn('dl', t('offResume'), canDl, dlTitle) + btn('del', t('offDelete'));
+        buttons = dl(t('offResume')) + btn('del', t('offDelete'));
+        wanted = true;
       } else {
-        buttons = btn('dl', t('offDownload'), canDl, dlTitle);
+        buttons = dl(t('offDownload'));
+        wanted = true;
       }
+      const blocked = wanted && !canDl && why ? `<p class="off-note">${esc(why)}</p>` : '';
       const r = !running ? lastResult[id] : undefined;
       const msg = r && r.res !== 'ok' && r.res !== 'aborted'
         ? t(r.res === 'quota' ? 'offErrQuota' : r.res === 'net' ? 'offErrNet' : 'offErr')
@@ -210,7 +222,8 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
         <p class="off-note">${esc(note)}</p>
         ${state ? `<div class="off-state">${state}</div>` : ''}
         ${msg ? `<p class="off-err">${esc(msg)}</p>` : ''}
-        <div class="off-btns">${buttons}</div>
+        ${blocked}
+        ${buttons ? `<div class="off-btns">${buttons}</div>` : ''}
       </li>`;
       // ділянки в повній якості — одразу після огляду старих мап
       return id === 'oldmaps' ? li + areaSection(online, job, total) : li;

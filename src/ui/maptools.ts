@@ -192,10 +192,10 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
         <div><dt>${esc(t('measureLength'))}</dt><dd>${esc(fmtLength(measure.length()))}</dd></div>
         ${n >= 3 ? `<div><dt>${esc(t('measureArea'))}</dt><dd>${esc(fmtArea(measure.area()))}</dd></div><div><dt>${esc(t('measurePerimeter'))}</dt><dd>${esc(fmtLength(measure.perimeter()))}</dd></div>` : ''}
       </dl>
-      <div class="off-btns">
-        <button type="button" class="off-btn" data-act="undo" ${n ? '' : 'disabled'}>${esc(t('measureUndo'))}</button>
-        <button type="button" class="off-btn" data-act="clear" ${n ? '' : 'disabled'}>${esc(t('measureClear'))}</button>
-      </div>`;
+      ${n ? `<div class="off-btns">
+        <button type="button" class="off-btn" data-act="undo">${esc(t('measureUndo'))}</button>
+        <button type="button" class="off-btn" data-act="clear">${esc(t('measureClear'))}</button>
+      </div>` : ''}`;
   }
   function renderMeasure() {
     title.textContent = t('measure');
@@ -312,7 +312,7 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
       <p class="mtool-note">${esc(t('filterShapes'))}</p>
       <div class="chips">${TYPES.map((x) => `<button type="button" class="chip ${filter.types.includes(x) ? 'on' : ''}" data-type="${x}">${shapeSvg(SHAPE[x], '#6b7280', false, 14)} ${esc(typeLabel(x))} <span class="cnt">${count(x)}</span></button>`).join('')}</div>
       <label class="mtool-check"><input type="checkbox" ${filter.vanishedOnly ? 'checked' : ''}> ${esc(t('filterVanished'))}</label>
-      <button type="button" class="mtool-reset" ${filterActive(filter) ? '' : 'disabled'}>${esc(t('filterAll'))}</button>`;
+      ${filterActive(filter) ? `<button type="button" class="mtool-reset">${esc(t('filterAll'))}</button>` : ''}`;
     body.querySelectorAll<HTMLButtonElement>('.chip').forEach((b) => {
       b.onclick = () => {
         const x = b.dataset.type as PlaceType;
@@ -322,7 +322,9 @@ export function mountMapTools(ctl: MapController, host: HTMLElement, opts: Opts)
       };
     });
     body.querySelector<HTMLInputElement>('.mtool-check input')!.onchange = (e) => { setFilter({ ...filter, vanishedOnly: (e.target as HTMLInputElement).checked }); renderFilter(); };
-    body.querySelector<HTMLButtonElement>('.mtool-reset')!.onclick = () => { setFilter({ types: [], vanishedOnly: false }); renderFilter(); };
+    // «Усі типи» є лише тоді, коли фільтр діє: без фільтра скидати нічого
+    const reset = body.querySelector<HTMLButtonElement>('.mtool-reset');
+    if (reset) reset.onclick = () => { setFilter({ types: [], vanishedOnly: false }); renderFilter(); };
   }
 
   // ---------- що поруч ----------

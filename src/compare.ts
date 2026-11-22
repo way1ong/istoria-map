@@ -48,7 +48,7 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   container.innerHTML = `
     <div class="cmp-bar">
       <select class="cmp-map">${mapChoices(rasterMaps, hm?.id).map((c) => `<option value="${c.value}" ${c.value === hm?.id ? 'selected' : ''}>${c.label}</option>`).join('')}</select>
-      <select class="cmp-base" aria-label="${t('modernMap')}">${availableBasemaps().map((b) => `<option value="${b.id}" ${b.id === base.id ? 'selected' : ''}>${lt(b.short) || lt(b.title)}</option>`).join('')}</select>
+      ${availableBasemaps().length > 1 && navigator.onLine !== false ? `<select class="cmp-base" aria-label="${t('modernMap')}">${availableBasemaps().map((b) => `<option value="${b.id}" ${b.id === base.id ? 'selected' : ''}>${lt(b.short) || lt(b.title)}</option>`).join('')}</select>` : ''}
     </div>
     <div class="cmp-pane cmp-top"><div class="cmp-map-el"></div><div class="cmp-cross"></div><span class="cmp-tag">${t('oldMap')}</span></div>
     <div class="cmp-pane cmp-bottom"><div class="cmp-map-el"></div><div class="cmp-cross"></div><span class="cmp-tag">${t('modernMap')}</span></div>
@@ -113,7 +113,9 @@ export function mountCompare(container: HTMLElement, opts: { mapId?: string; per
   }
 
   container.querySelector<HTMLSelectElement>('.cmp-map')!.onchange = (e) => opts.onChange({ map: (e.target as HTMLSelectElement).value, base: base.id });
-  container.querySelector<HTMLSelectElement>('.cmp-base')!.onchange = (e) => opts.onChange({ map: hm?.id ?? '', base: (e.target as HTMLSelectElement).value });
+  // вибору підкладки немає без інтернету (інші не завантажаться) і коли підкладка одна
+  const baseSel = container.querySelector<HTMLSelectElement>('.cmp-base');
+  if (baseSel) baseSel.onchange = (e) => opts.onChange({ map: hm?.id ?? '', base: (e.target as HTMLSelectElement).value });
 
   const ro = new ResizeObserver(() => { top.resize(); bot.resize(); });
   ro.observe(container);

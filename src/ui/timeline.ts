@@ -16,7 +16,8 @@ function yearAt(pos: number): { periodIndex: number; year: number } {
 }
 
 /**
- * Повзунок за роками: ліворуч кнопка «Усі», далі назва періоду з роком і сам повзунок.
+ * Повзунок за роками: назва періоду з роком і сам повзунок; ліворуч кнопка «Усі періоди» — лише коли
+ * період вибрано (повернутися до всіх). Поки показано всі періоди, замість назви періоду стоїть підказка.
  * Переміщення в межах періоду змінює лише рік у підписі; перехід межі періоду перемикає період.
  */
 /** Поточний рік повзунка (для шару кордонів). */
@@ -29,15 +30,15 @@ export function renderTimeline(el: HTMLElement, current: string | null, onChange
   if (idx >= 0 && Math.floor(position / STEPS) !== idx) position = idx * STEPS + STEPS / 2;
   const max = periods.length * STEPS - 1;
   el.innerHTML = `
-    <button class="tl-all ${current === null ? 'active' : ''}">${t('allPeriods')}</button>
+    ${current === null ? '' : `<button class="tl-all">${t('allPeriods')}</button>`}
     <div class="tl-main">
       <div class="tl-label"></div>
-      <input class="tl-range" type="range" min="0" max="${max}" step="1" value="${Math.round(position)}" aria-label="timeline" />
+      <input class="tl-range" type="range" min="0" max="${max}" step="1" value="${current === null ? 0 : Math.round(position)}" aria-label="timeline" />
       <div class="tl-ticks">${periods.map((p) => `<span style="--c:${p.color}" title="${lt(p.name)}"></span>`).join('')}</div>
     </div>`;
   const label = el.querySelector<HTMLElement>('.tl-label')!;
   const range = el.querySelector<HTMLInputElement>('.tl-range')!;
-  const all = el.querySelector<HTMLButtonElement>('.tl-all')!;
+  const all = el.querySelector<HTMLButtonElement>('.tl-all');
 
   const paint = (pos: number) => {
     const { periodIndex, year } = yearAt(pos);
@@ -46,8 +47,15 @@ export function renderTimeline(el: HTMLElement, current: string | null, onChange
     el.style.setProperty('--c', p.color);
     range.style.setProperty('--c', p.color);
   };
-  paint(position);
-  if (current === null) el.classList.add('tl-all-mode'); else el.classList.remove('tl-all-mode');
+  if (current === null) {
+    // показано всі періоди: рік і назва періоду тут лише збивали б з пантелику, тому й бігунок стоїть на початку
+    label.innerHTML = `<b>${t('allPeriods')}</b> <span class="yr">· ${t('tlHint')}</span>`;
+    el.style.removeProperty('--c');
+    range.style.removeProperty('--c');
+  } else {
+    paint(position);
+  }
+  el.classList.toggle('tl-all-mode', current === null);
 
   range.oninput = () => {
     position = Number(range.value);
@@ -57,5 +65,5 @@ export function renderTimeline(el: HTMLElement, current: string | null, onChange
     if (id !== current) onChange(id);
     else onYear?.(year);
   };
-  all.onclick = () => onChange(null);
+  if (all) all.onclick = () => onChange(null);
 }

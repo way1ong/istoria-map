@@ -64,7 +64,7 @@ export function renderTracks(body: HTMLElement, opts: { map: MLMap; setTitle(s: 
       <div class="off-btns mk-add">
         ${r
           ? `<button type="button" class="off-btn tr-stop" data-act="stop"><span class="tr-dot"></span> ${esc(t('trackStop'))}</button>`
-          : `<button type="button" class="off-btn primary" data-act="rec">${esc(t('trackRec'))}</button>`}
+          : 'geolocation' in navigator ? `<button type="button" class="off-btn primary" data-act="rec">${esc(t('trackRec'))}</button>` : ''}
         <button type="button" class="off-btn" data-act="import">${esc(t('markImport'))}</button>
         <input type="file" class="mk-file-input" accept=".gpx,.geojson,.json,application/gpx+xml,application/geo+json,application/json,text/xml,application/xml" multiple hidden />
       </div>
