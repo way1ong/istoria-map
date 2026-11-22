@@ -1,0 +1,44 @@
+{
+  "id": "karoly-robert-koronazasa-1310",
+  "title": {
+    "uk": "Карла Роберта короновано Святою короною",
+    "hu": "Károly Róbert megkoronázása a Szent Koronával"
+  },
+  "date": {
+    "from": "1310-08-27",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [
+    "szekesfehervar-kiralyi-bazilika",
+    "matyas-templom"
+  ],
+  "summary": {
+    "uk": "27 серпня 1310 року у Фегерварі естергомський архієпископ утретє коронував Карла Роберта з дому Анжу, цього разу Святою короною, яку повернув трансільванський воєвода László Kán. Лише ця коронація була з усіх поглядів чинною.",
+    "hu": "1310. augusztus 27-én Fehérvárott az esztergomi érsek harmadszor koronázta meg az Anjou-házi Károly Róbertet, ezúttal a Kán László erdélyi vajda által visszaadott Szent Koronával. Csak ez a koronázás volt minden szempontból érvényes."
+  },
+  "description": {
+    "uk": "За статтею про короля, Карла Роберта коронували тричі. Уперше навесні 1301 року в Естергомі принагідною короною; цю коронацію майже всі вважали недійсною. Трон тим часом дістався спершу чеському королевичу Вацлаву, а коли той 9 жовтня 1305 року зрікся його в місті Brünn, баварському герцогові Оттону, якому Вацлав передав корону й коронаційні відзнаки. 1307 року трансільванський воєвода László Kán схопив Оттона й забрав відзнаки собі.\n\n27 листопада 1308 року папський легат Gentilis скликав у Буді загальні збори; історики вважають 1308 рік, рік зборів, що чинно обрали Карла королем, початком його правління. 15 червня 1309 року Карла коронували вдруге, у Буді, в церкві Успіння Богородиці (нинішня церква Матяша), але не Святою короною, а виготовленою на замовлення легата: справжня ще лишалася у воєводи. Юридично й ця коронація була недійсною, хоча більшість саме від цього дня вважає Карла законним королем.\n\nЛише 8 квітня 1310 року в Сеґеді László Kán визнав Карла своїм володарем і повернув корону, і 27 серпня 1310 року у Фегерварі естергомський архієпископ коронував його втретє, вже з усіх поглядів чинно. Магнат Máté Csák на коронацію не з'явився і далі пустошив королівські маєтки; до його смерті 1321 року король не панував над більшою частиною північних комітатів.",
+    "hu": "A királyról szóló szócikk szerint Károly Róbertet háromszor koronázták meg. Először 1301 tavaszán Esztergomban egy alkalmi koronával; ezt a koronázást gyakorlatilag mindenki érvénytelennek tekintette. A trón közben előbb Vencel cseh hercegé lett, majd amikor ő 1305. október 9-én Brünnben lemondott, Ottó bajor hercegé, akinek Vencel átadta a koronát és a koronázási jelvényeket. 1307-ben Kán László erdélyi vajda elfogta Ottót, és a jelvényeket magánál tartotta.\n\n1308. november 27-én Gentilis pápai legátus Budán országos gyűlést tartott; a történettudomány 1308-at, az őt érvényesen királlyá választó országgyűlés évét tekinti uralkodása kezdetének. 1309. június 15-én másodszor is megkoronázták Budán, a Nagyboldogasszony-templomban (a mai Mátyás-templomban), de nem a Szent Koronával, hanem egy Gentilis által készíttetettel: az igazi még mindig a vajdánál volt. Jogilag ez a koronázás is érvénytelen volt, a többség mégis e naptól tekinti Károlyt törvényes királynak.\n\nKán László végül 1310. április 8-án Szegeden fogadta el Károlyt törvényes urának, és visszaadta a koronát; 1310. augusztus 27-én Fehérvárott az esztergomi érsek harmadszor, immár minden szempontból érvényesen koronázta meg. Csák Máté tartományúr a koronázáson nem jelent meg, és tovább dúlta a királyi birtokokat; 1321-es haláláig a király nem uralta a Felvidék nagyobb részét."
+  },
+  "sources": [
+    {
+      "title": "I. Károly magyar király – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/I._K%C3%A1roly_magyar_kir%C3%A1ly",
+      "note": "Вступ, таблиця коронацій і розділи «Károly, Vencel és Ottó versengése», «Második koronázás», «Harmadik koronázás», «A Felvidék»."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/A_Romkert_l%C3%A9gi_felv%C3%A9tele%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:A_Romkert_l%C3%A9gi_felv%C3%A9tele%2C_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r.jpg",
+      "caption": {
+        "uk": "Руїнний сад Székesfehérvár з повітря",
+        "hu": "A székesfehérvári Romkert légi felvétele"
+      }
+    }
+  ]
+}

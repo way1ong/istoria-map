@@ -1,0 +1,44 @@
+{
+  "id": "maria-terezia-koronazasa-1741",
+  "title": {
+    "uk": "Коронація Марії Терезії в Пожоні й «Життя і кров!»",
+    "hu": "Mária Terézia pozsonyi koronázása és a „Vitam et sanguinem”"
+  },
+  "date": {
+    "from": "1741-06-25",
+    "to": "1741-09-11",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [
+    "pozsony-szent-marton-dom"
+  ],
+  "summary": {
+    "uk": "25 червня 1741 року Марію Терезію короновано угорською королевою в соборі Святого Мартина в Пожоні. 11 вересня вона звернулася до державних зборів по збройну допомогу, і, за переказом, дворяни відповіли вигуком «Життя і кров за нашого короля!».",
+    "hu": "1741. június 25-én a pozsonyi Szent Márton-dómban magyar királynővé koronázták Mária Teréziát. Szeptember 11-én fegyveres segítséget kért az országgyűléstől, és a hagyomány szerint a nemesek így feleltek: „Életünket és vérünket királyunkért!”"
+  },
+  "description": {
+    "uk": "За статтею про королеву, її сорокарічне правління почалося зі смертю батька, Карла III, 1740 року. Попри Прагматичну санкцію, спадкування по жіночій лінії не визнали Пруссія, Баварія й Франція: наприкінці 1740 року Пруссія без оголошення війни напала на Сілезію, і почалася війна за австрійську спадщину, що тривала до 1748 року. Угорською королевою Марію Терезію короновано 25 червня 1741 року в соборі Святого Мартина в Пожоні.\n\n11 вересня 1741 року, через два роки після програної турецької війни й дванадцяти років без державних зборів, королева звернулася до скликаних у Пожоні станів, щоб вони допомогли зброєю врятувати її корону. Спершу стани опиралися. Тоді вона сама прийшла на збори в жалобі, з малим сином Йосифом на руках, і виголосила промову; після неї, як переказують, присутні дворяни одностайно вигукнули: «Vitam et sanguinem pro rege nostro!» («Життя і кров за нашого короля!»). Стаття подає цей вигук із застереженням «нібито». Її чоловік, Франц Лотаринзький, присягнув перед угорськими станами в Пожоні 21 вересня 1741 року як співправитель, але коронований не був.\n\nВійна коштувала Габсбургам Сілезії, проте Аахенський мир 1748 року зберіг єдність їхньої держави.",
+    "hu": "A királynőről szóló szócikk szerint negyven évig tartó uralkodása apja, III. Károly 1740-es halálával kezdődött. A Pragmatica sanctio ellenére a nőági örökösödést Poroszország, Bajorország és Franciaország is elutasította: Poroszország 1740 végén hadüzenet nélkül megtámadta Sziléziát, és megkezdődött az 1748-ig tartó osztrák örökösödési háború. Mária Teréziát 1741. június 25-én koronázták magyar királynővé a pozsonyi Szent Márton-dómban.\n\n1741. szeptember 11-én, két évvel egy vesztes török háború és tizenkét éves törvényhozási kényszerszünet után a királynő a Pozsonyba összehívott rendekhez fordult, hogy segítsenek koronáját fegyverrel megmenteni. A rendek kezdetben ellenálltak. Ekkor személyesen jelent meg az országgyűlésen, gyászruhában, karján a gyermek Józseffel, és beszédet mondott; ezután – a szócikk szerint állítólag – a jelenlévő nemesek egybehangzóan így kiáltottak: „Vitam et sanguinem pro rege nostro!” („Életünket és vérünket királyunkért!”). Férje, Lotaringiai Ferenc 1741. szeptember 21-én társuralkodóként esküt tett Pozsonyban a magyar rendek előtt, de nem koronázták meg.\n\nA háborúban a Habsburgok elveszítették Sziléziát, az 1748-as aacheni béke azonban megőrizte birodalmuk egységét."
+  },
+  "sources": [
+    {
+      "title": "Mária Terézia magyar királynő – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/M%C3%A1ria_Ter%C3%A9zia_magyar_kir%C3%A1lyn%C5%91",
+      "note": "Таблиця (коронація 25 червня 1741 року в соборі Святого Мартина), вступ і розділ «Osztrák örökösödési háború»: звернення до зборів 11 вересня 1741 року, вигук із застереженням «állítólag», присяга Франца 21 вересня."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Bratislava_-_St._Martins_Cathedral.jpg",
+      "author": "J_Makk",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Bratislava_-_St._Martins_Cathedral.jpg",
+      "caption": {
+        "uk": "Собор Св. Мартина в Пожоні",
+        "hu": "A pozsonyi Szent Márton-dóm"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "arpad-haz-kihalasa-1301",
+  "title": {
+    "uk": "Смерть Андраша III: династія Арпадів згасає",
+    "hu": "III. András halála: az Árpád-ház kihalása"
+  },
+  "date": {
+    "from": "1301-01-14",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [
+    "budai-varnegyed"
+  ],
+  "summary": {
+    "uk": "14 січня 1301 року в Буді несподівано помер бездітний король Андраш III, «остання золота гілочка» роду святого Іштвана. Династія Арпадів по чоловічій лінії згасла, і за трон почали змагатися іноземні династії.",
+    "hu": "1301. január 14-én Budán váratlanul meghalt a gyermektelen III. András király, Szent István nemzetségének „utolsó aranyágacskája”. Az Árpád-ház férfiágon kihalt, és a trónért idegen dinasztiák kezdtek versengeni."
+  },
+  "description": {
+    "uk": "За статтею про короля, Андраш III (народився близько 1265 року у Венеції) правив з 1290 року й до останніх днів займався державними справами: ще 13 січня 1301 року він видав грамоту черницям з острова Маргіт, а 14 січня несподівано помер у Буді. Незадовго перед тим, наприкінці 1300 року, померла його мати й головна політична опора Tomasina Morosini. У середньовічних джерелах і пізнішій літературі трималася чутка, що їх обох отруїли прихильники Анжу; сучасні історики медицини вважають імовірнішою швидкоплинну заразну хворобу невідомого походження. Поховали короля в церкві Святого Іоанна в Буді.\n\nЗі смертю бездітного Андраша династія Арпадів після майже чотирьохсот років правління згасла по чоловічій лінії. Його колишній прихильник, палатин István з роду Ákos, у грамоті 1303 року назвав короля «останньою золотою гілочкою», що по батьківській лінії виросла з роду, стовбура і крові святого короля Іштвана.\n\nЗа статтею про Карла Роберта, вже навесні 1301 року прихильники привезли юного Карла з дому Анжу до Естергома, де архієпископ Gergely Bicskei ще до 13 травня коронував його принагідною короною; більшість знаті визнала цю коронацію недійсною і обрала королем чеського королевича Вацлава, якого 27 серпня 1301 року короновано Святою короною у Фегерварі. Боротьба за трон тривала до 1310 року (див. подію про коронацію Карла Роберта).",
+    "hu": "A királyról szóló szócikk szerint III. András (Velencében született 1265 körül) 1290-től uralkodott, és az utolsó pillanatig intézte az államügyeket: 1301. január 13-án még oklevelet adott ki a Margit-szigeti apácáknak, január 14-én pedig váratlanul meghalt Budán. Röviddel előtte, 1300 végén hunyt el édesanyja és legfőbb politikai támasza, Morosini Tomasina. A középkori forrásokban és a későbbi történetírásban is tartotta magát a szóbeszéd, hogy mindkettőjüket az Anjou-pártiak mérgezték meg; a modern orvostörténeti kutatások szerint valószínűbb egy gyors lefolyású, ismeretlen eredetű járványos betegség. A királyt a budai Szent János-templomban temették el.\n\nA gyermektelen András halálával az Árpád-ház csaknem négyszáz évnyi uralkodás után férfiágon kihalt. Egykori híve, Ákos nembeli István nádor egy 1303-as oklevelében „utolsó aranyágacskának” nevezte, amely atyai ágon Szent István király nemzetségéből, törzséből és véréből sarjadt.\n\nA Károly Róbertről szóló szócikk szerint hívei már 1301 tavaszán Esztergomba vitték az ifjú Anjou Károlyt, ahol Bicskei Gergely érsek még május 13-a előtt megkoronázta egy alkalmi koronával; a nemesség többsége ezt érvénytelennek mondta ki, és Vencel cseh herceget választotta királlyá, akit 1301. augusztus 27-én Fehérvárott a Szent Koronával koronáztak meg. A trónharc 1310-ig tartott (lásd a Károly Róbert koronázásáról szóló eseményt)."
+  },
+  "sources": [
+    {
+      "title": "III. András magyar király – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/III._Andr%C3%A1s_magyar_kir%C3%A1ly",
+      "note": "Вступ і розділ «Halála»: дата й місце смерті, чутка про отруєння, «остання золота гілочка», місце поховання (таблиця)."
+    },
+    {
+      "title": "I. Károly magyar király – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/I._K%C3%A1roly_magyar_kir%C3%A1ly",
+      "note": "Розділ «Érkezése, első koronázása (1301)»: коронація Карла в Естергомі до 13 травня і коронація Вацлава 27 серпня 1301 року."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "visegrad-kiralyi-szekhely-1323",
+  "title": {
+    "uk": "Королівський двір переїжджає до Вишеграда",
+    "hu": "A királyi székhely Visegrádra költözik"
+  },
+  "date": {
+    "from": "1323",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [
+    "visegradi-kiralyi-palota"
+  ],
+  "summary": {
+    "uk": "У першій половині 1323 року Карл Роберт переніс королівську резиденцію з Темешвара до Вишеграда й звів у місті королівський дім. Вишеград лишався столицею королівства до 1405–1408 років.",
+    "hu": "1323 első felében Károly Róbert Temesvárról Visegrádra helyezte át a királyi székhelyet, és a városban királyi házat építtetett. Visegrád 1405–1408-ig maradt a királyság székvárosa."
+  },
+  "description": {
+    "uk": "За статтею про короля, після третьої коронації Карл Роберт ще довго мусив тримати двір у Темешварі, далеко від володінь магнатів: Вишеград він відібрав у Máté Csák лише 1316 року, а більшість північних комітатів повернулася під його владу щойно після смерті магната 1321 року. У першій половині 1323 року королівську резиденцію, яку доти з примусу тримали в Темешварі, перенесено до Вишеграда; після цього король разом з магістром скарбу Demeter Nekcsei почав великі господарські реформи.\n\nЗа статтями про Вишеград і його палац, король збудував у місті королівський дім, який «Ілюстрована хроніка» вперше згадує як місце замаху Felicián Záh на королівську родину 1330 року. Людовик I у кілька етапів розбудував цей дім у палац; будівля, руїни якої видно нині, постала в останній чверті XIV століття, почасти вже за Сигізмунда. Палац правильного плану мав розміри 123 на 123 метри. Між 1405 і 1408 роками Сигізмунд переніс резиденцію до Буди, і вишеградський палац став заміською резиденцією.",
+    "hu": "A királyról szóló szócikk szerint Károly Róbert harmadik koronázása után még sokáig kénytelen volt Temesvárott, a tartományurak hatalmi körzeteitől távol tartani udvarát: Visegrádot csak 1316-ban vette el Csák Mátétól, a Felvidék nagyobb része pedig csak a nagyúr 1321-es halála után került az ellenőrzése alá. 1323 első felében az addig kényszerűségből Temesváron tartott királyi székhely átkerült Visegrádra; ezután a király tárnokmestere, Nekcsei Demeter segítségével nagy léptékű gazdasági reformokba kezdett.\n\nA Visegrádról és a palotáról szóló szócikkek szerint a király a városban királyi házat építtetett, amelyet a Képes krónika először az 1330-as, Záh Felicián által a királyi család ellen megkísérelt merénylet színhelyeként említ. I. Lajos több lépésben palotává bővítette; a ma romjaiban álló épület a 14. század utolsó negyedében épült, részben már Zsigmond uralkodása alatt. A szabályos elrendezésű palota 123 × 123 méteres volt. 1405 és 1408 között Zsigmond a székhelyét Budára helyezte át, a visegrádi palota ettől kezdve vidéki rezidenciává vált."
+  },
+  "sources": [
+    {
+      "title": "I. Károly magyar király – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/I._K%C3%A1roly_magyar_kir%C3%A1ly",
+      "note": "Розділи «A Felvidék» і «Politikai és gazdasági konszolidáció»: Вишеград відібрано 1316 року, резиденцію перенесено в першій половині 1323 року."
+    },
+    {
+      "title": "Királyi palota (Visegrád) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kir%C3%A1lyi_palota_(Visegr%C3%A1d)",
+      "note": "Розділ «Története»: королівський дім, замах 1330 року, розбудова, розміри, перенесення резиденції до Буди в 1405–1408 роках."
+    },
+    {
+      "title": "Visegrád – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Visegr%C3%A1d",
+      "note": "Вступ: з 1323 до 1408 року столиця королівства."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Kir%C3%A1lyi_palota_maradv%C3%A1nyai_%287594._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_6.jpg",
+      "author": "Elamy",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:Kir%C3%A1lyi_palota_maradv%C3%A1nyai_%287594._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_6.jpg",
+      "caption": {
+        "uk": "Рештки королівського палацу у Вишеграді, 14 серпня 2011 року",
+        "hu": "A királyi palota maradványai, Visegrád, 2011. augusztus 14."
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "szent-korona-elrablasa-1440",
+  "title": {
+    "uk": "Викрадення Святої корони з Вишеграда",
+    "hu": "A Szent Korona elrablása Visegrádról"
+  },
+  "date": {
+    "from": "1440-02-20",
+    "to": "1440-05-15",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [
+    "szekesfehervar-kiralyi-bazilika"
+  ],
+  "coords": [
+    18.98056,
+    47.79361
+  ],
+  "summary": {
+    "uk": "У ніч з 20 на 21 лютого 1440 року придворна дама Kottanner Jánosné за наказом королеви-вдови Єлизавети викрала Святу корону зі скарбниці вишеградського замку. 15 травня 1440 року в Секешфегерварі короновано її сина, немовля Ласло V.",
+    "hu": "1440. február 20-ról 21-re virradó éjszaka Kottanner Jánosné udvarhölgy Erzsébet özvegy királyné utasítására elrabolta a Szent Koronát a visegrádi vár kincseskamrájából. 1440. május 15-én Székesfehérvárott megkoronázták fiát, a csecsemő V. Lászlót."
+  },
+  "description": {
+    "uk": "За статтею про вишеградський замок, за Сигізмунда Люксембурзького корону зберігали у п'ятикутній старій вежі верхнього замку. За статтею про Kottanner Jánosné (уроджену Ilona Wolfram, близько 1400 – після 1470), вона була придворною дамою королеви Єлизавети Люксембурзької й нянею її доньки; після смерті короля Альберта 27 жовтня 1439 року стала помічницею королеви-вдови. Саме вона влаштувала викрадення корони зі скарбниці вишеградського замку в ніч з 20 на 21 лютого 1440 року й повезла її на санях до Комаромського замку, де одразу після її приїзду королева з її допомогою народила сина, майбутнього Ласло V. Корона була потрібна, щоб коронувати дитину.\n\nНа коронації в Секешфегерварі 15 травня 1440 року Kottanner тримала немовля-короля на руках. Про ці події вона залишила спогади за 1439–1440 роки, видані, зокрема, угорською під назвою «A korona elrablása» («Викрадення корони»).\n\nПодію прив'язано до коронаційної базиліки в Секешфегерварі; верхній замок Вишеграда, звідки взято корону, окремої картки не має.",
+    "hu": "A visegrádi várról szóló szócikk szerint Luxemburgi Zsigmond uralkodása idején a koronát a felsővár ötszögletű öregtornyában őrizték. A Kottanner Jánosnéról (született Wolfram Ilona, 1400 körül – 1470 után) szóló szócikk szerint Luxemburgi Erzsébet királyné udvarhölgye és leányának szárazdajkája volt; Albert király 1439. október 27-i halála után az özvegy királyné segítője lett. Ő szervezte meg a Szent Korona elrablását a visegrádi vár kincseskamrájából 1440. február 20-ról 21-re virradó éjszaka, és vitte a koronát szánon a komáromi várba, ahol érkezése után az ő segédletével szülte meg a királyné fiát, a későbbi V. Lászlót. A koronára azért volt szükség, hogy a gyermeket megkoronázhassák.\n\nAz 1440. május 15-i székesfehérvári koronázáson Kottannerné tartotta karján a csecsemő királyt. Az eseményekről 1439–1440-es emlékiratot hagyott hátra, amely magyarul „A korona elrablása” címmel is megjelent.\n\nAz esemény a székesfehérvári koronázóbazilikához kapcsolódik; a visegrádi felsővárnak, ahonnan a koronát elvitték, nincs külön kártyája."
+  },
+  "sources": [
+    {
+      "title": "Kottanner Jánosné – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kottanner_J%C3%A1nosn%C3%A9",
+      "note": "Вступ і розділ «Élete»: викрадення 20–21 лютого 1440 року, Комаром, коронація 15 травня 1440 року; видання спогадів."
+    },
+    {
+      "title": "Visegrádi vár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Visegr%C3%A1di_v%C3%A1r",
+      "note": "Розділ про історію: корону зберігали в п'ятикутній вежі верхнього замку; координати замку (47°47′37″ пн. ш., 18°58′50″ сх. д.)."
+    },
+    {
+      "title": "Visegrád – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Visegr%C3%A1d",
+      "note": "Розділ «Neves személyek»: викрадення в ніч з 20 на 21 лютого 1440 року."
+    }
+  ]
+}

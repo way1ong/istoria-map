@@ -1,0 +1,50 @@
+{
+  "id": "bathori-miklos-vaci-puspok-1474",
+  "title": {
+    "uk": "Єпископ-гуманіст Miklós Báthori у Ваці",
+    "hu": "Báthori Miklós, a humanista váci püspök"
+  },
+  "date": {
+    "from": "1474",
+    "to": "1506",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [
+    "vac-ferences-templom-var",
+    "nogradi-var"
+  ],
+  "summary": {
+    "uk": "Від 1474 року до смерті 24 лютого 1506 року вацьким єпископом був гуманіст Miklós Báthori. Він тримав у Ваці ренесансний двір, наймав для своїх будов майстрів з будайського палацу, а після смерті Матяша заснував школу з італійськими професорами.",
+    "hu": "1474-től 1506. február 24-i haláláig a humanista Báthori Miklós volt a váci püspök. Vácott reneszánsz udvart tartott, építkezéseire a budai palotában dolgozó mestereket fogadta fel, Mátyás halála után pedig főiskolát alapított itáliai professzorokkal."
+  },
+  "description": {
+    "uk": "За статтею про єпископа, Miklós Báthori з Ecsed (1435? – 1506) навчався в Болоньї як учень Galeotto Marzio; від 1469 року він був обраним сремським єпископом, від 1474 року до смерті вацьким. З італійськими гуманістами, яких пізнав на навчанні, він листувався й запрошував їх до Угорщини: Marsilio Ficino присвятив йому філософську працю, а Francesco Bandini був його другом. Король Матяш спершу високо його цінував. Для своїх будов у Ваці єпископ найняв майстрів, що працювали в будайському палаці; він безнастанно вчився і свого Цицерона брав із собою навіть на королівську раду. Його ренесансний двір набув особливої ваги після смерті естергомського архієпископа János Vitéz 1472 року: гуманісти тоді охочіше бували у Ваці, ніж в Естергомі чи Буді. На початку 1480-х років король, однак, розгнівався на нього.\n\nБудував він і у своїх ноґрадських маєтках: Ноґрадський замок розширив і зміцнив за проєктом італійця Jakab Traguinus. Після смерті Матяша заснував у Ваці школу, де всі науки викладали знані італійські професори, зокрема Pescennio Francesco Negro і Bernardino d'Udine.\n\nПомер він 24 лютого 1506 року. Уламок його надгробка знайшли вмурованим у трапезній францисканського монастиря у Ваці; напис відомий із запису тієї доби. Більшість його будов загинула. З його бібліотеки достеменно відома одна книга, «Тускуланські бесіди» Цицерона. За статтями про єпископа і про Вац, завдяки йому місто пережило мирний розквіт, якому поклало край лише турецьке завоювання.",
+    "hu": "A püspökről szóló szócikk szerint ecsedi Báthori Miklós (1435? – 1506) Bolognában tanult Galeotto Marzio tanítványaként; 1469-től választott szerémi püspök, 1474-től haláláig váci püspök volt. Az Itáliában megismert humanistákkal levelezett, és Magyarországra hívta őket: Marsilio Ficino filozófiai munkáját ajánlotta neki, Francesco Bandini a barátja volt. Mátyás király kezdetben nagyra becsülte. Váci építkezéseire a budai palotában dolgozó mestereket fogadta fel; állandóan képezte magát, Ciceróját még a királyi tanácsba is magával vitte. Reneszánsz udvarának jelentősége különösen megnőtt Vitéz János esztergomi érsek 1472-es halála után: a humanisták ekkor már szívesebben tartózkodtak Vácott, mint Esztergomban vagy Budán. Az 1480-as évek elején azonban a király megharagudott rá.\n\nNógrádi birtokain is építkezett: a nógrádi várat az itáliai származású Traguinus Jakab tervei alapján kibővíttette és megerősíttette. Mátyás halála után Vácott főiskolát alapított, ahol az összes tudományt híres itáliai professzorok tanították, köztük Pescennio Francesco Negro és Bernardino d'Udine.\n\n1506. február 24-én hunyt el. Sírkövének egy töredékére a váci ferences templom refektóriumába beépítve találtak rá; feliratát egy korabeli feljegyzésből ismerjük. Építkezéseinek nagy része elpusztult. Könyvtárának egyetlen hiteles darabja Cicero Tusculumi beszélgetései. A püspökről és a Vácról szóló szócikkek szerint tevékenysége nyomán a város békés virágzásnak indult, aminek csak a török hódítás vetett véget."
+  },
+  "sources": [
+    {
+      "title": "Báthori Miklós (váci püspök) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/B%C3%A1thori_Mikl%C3%B3s_(v%C3%A1ci_p%C3%BCsp%C3%B6k)",
+      "note": "Розділи «Élete» і «Jelentősége»: навчання, єпископство з 1474 року, двір, будови у Ваці й Ноґраді, школа, смерть 24 лютого 1506 року, надгробок."
+    },
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Розділи «Középkor» і «Váchoz kötődő személyek»: єпископ запрошував до міста скульпторів, художників і архітекторів; ренесансний двір у 1474–1506 роках."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Holy_Cross_church._Fasade%2C_2015_V%C3%A1c.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Holy_Cross_church._Fasade,_2015_V%C3%A1c.jpg",
+      "caption": {
+        "uk": "Фасад францисканської церкви, 2015",
+        "hu": "A ferences templom homlokzata, 2015"
+      }
+    }
+  ]
+}

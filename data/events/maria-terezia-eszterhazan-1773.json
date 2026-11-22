@@ -1,0 +1,48 @@
+{
+  "id": "maria-terezia-eszterhazan-1773",
+  "title": {
+    "uk": "Марія Терезія в Естергазі",
+    "hu": "Mária Terézia Eszterházán"
+  },
+  "date": {
+    "from": "1773",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [
+    "fertod-esterhazy-kastely"
+  ],
+  "summary": {
+    "uk": "1773 року королева Марія Терезія гостювала в палаці князя Miklós Esterházy «Пишного» в Естергазі (нині Фертьод). Під час її відвідин тамтешні свята з операми, полюваннями й феєрверками сягнули вершини.",
+    "hu": "1773-ban Mária Terézia királynő „Fényes” Esterházy Miklós herceg eszterházi (ma fertődi) kastélyában vendégeskedett. Látogatása idején érték el csúcspontjukat az ottani, operákkal, vadászatokkal és tűzijátékokkal kísért ünnepségek."
+  },
+  "description": {
+    "uk": "За статтею про палац, на його місці стояв мисливський замок, який 1762 року на замовлення князя Miklós Esterházy цілком перебудували на панську резиденцію; коли 1766 року палац був готовий, довкола виросло нове поселення, Естергаза (Eszterháza), нині частина Фертьода. Над ансамблем працювало кілька архітекторів, але його творцем був, по суті, сам князь; розквіт палацу тривав від 1768 до 1790 року. Перше велике свято влаштували 1770 року, коли князь показав свій двір віденській аристократії.\n\nЗа статтею про князя, від 1770 року в новому палаці постійно влаштовували пишні «естергазівські забави»: за три дні свята показували опери, були полювання, бенкети, бали й феєрверки. Естергаза стала осередком театру, музики й образотворчого мистецтва; концертмейстером князівського двору був славетний Joseph Haydn, а сам князь чудово грав на баритоні (baryton, струнний інструмент; його інструмент зберігає Угорський національний музей). Вершини ці видовищні свята сягнули під час відвідин королеви Марії Терезії.\n\nКімнату, в якій королева зупинялася 1773 року, звуть кімнатою Марії Терезії; після її відвідин вона лишалася недоторканою до 1945 року. Князь помер 1790 року у Відні, залишивши величезні борги.",
+    "hu": "A kastélyról szóló szócikk szerint helyén vadászkastély állt, amelyet 1762-ben Esterházy Miklós herceg megbízásából teljesen átformáltak, és főúri pompájú kastéllyá építettek át; mire 1766-ban elkészült, körülötte új település született, Eszterháza, ma Fertőd része. Az együttesen több építész dolgozott, de alkotója lényegében maga a herceg volt; a kastély fénykora 1768-tól 1790-ig tartott. Az első nagyszabású ünnepséget 1770-ben rendezték, amikor a herceg bemutatta udvartartását a bécsi arisztokráciának.\n\nA hercegről szóló szócikk szerint az új kastélyban 1770-től kezdve folyamatosan tartottak nagyszabású Esterházy-vigasságokat: a háromnapos ünnep alatt operákat mutattak be, vadászatokat, lakomákat, táncestélyeket és tűzijátékokat rendeztek. Eszterháza a színművészet, a zene és a képzőművészetek központjává vált; a hercegi udvar hangversenymestere az európai hírű Joseph Haydn volt, a herceg maga is remek barytonjátékos volt (hangszerét a Magyar Nemzeti Múzeum őrzi). A látványos ünnepségek Mária Terézia királynő látogatása idején érték el csúcspontjukat.\n\nAzt a szobát, amelyben a királynő 1773-ban megszállt, Mária Terézia-szobának nevezik; látogatása után 1945-ig érintetlen állapotban maradt meg. A herceg 1790-ben hunyt el Bécsben, hatalmas adósságokat hagyva maga után."
+  },
+  "sources": [
+    {
+      "title": "Esterházy-kastély (Fertőd) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Esterh%C3%A1zy-kast%C3%A9ly_(Fert%C5%91d)",
+      "note": "Вступ і розділи «Története», «A kastély belső részei»: перебудова 1762 року, палац готовий 1766 року, розквіт 1768–1790, кімната Марії Терезії (1773)."
+    },
+    {
+      "title": "Esterházy Miklós József – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Esterh%C3%A1zy_Mikl%C3%B3s_J%C3%B3zsef",
+      "note": "Розділ «A pompakedvelő herceg»: свята від 1770 року, Haydn, вершина свят під час відвідин королеви, смерть 1790 року."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Aerial_image_of_Esterh%C3%A1zy_Palace%2C_Fert%C5%91d_%28view_from_the_southeast%29.jpg",
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Esterh%C3%A1zy_Palace%2C_Fert%C5%91d_%28view_from_the_southeast%29.jpg",
+      "caption": {
+        "uk": "Палац Естергазі у Фертьоді з повітря, вид з південного сходу, 28 червня 2026 року",
+        "hu": "A fertődi Esterházy-kastély légi felvételen, délkeletről, 2026. június 28."
+      }
+    }
+  ]
+}

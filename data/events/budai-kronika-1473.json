@@ -1,0 +1,30 @@
+{
+  "id": "budai-kronika-1473",
+  "title": {
+    "uk": "Перша друкована книга в Угорщині: «Будайська хроніка»",
+    "hu": "Az első magyarországi nyomtatott könyv: a Budai krónika"
+  },
+  "date": {
+    "from": "1473-06-05",
+    "precision": "exact"
+  },
+  "period": "late-medieval",
+  "places": [
+    "budai-varnegyed"
+  ],
+  "summary": {
+    "uk": "5 червня 1473 року, напередодні П'ятидесятниці, друкар András Hess закінчив у Буді «Chronica Hungarorum», першу книгу, надруковану в Угорщині. Його друкарня в Будайському замку працювала від 1472 року.",
+    "hu": "1473. június 5-én, pünkösd előestéjén Hess András nyomdász Budán befejezte a Chronica Hungarorumot, az első Magyarországon nyomtatott könyvet. Nyomdája 1472-től működött a budai Várban."
+  },
+  "description": {
+    "uk": "За статтею про друкаря, András Hess, імовірно німець за походженням, працював у римській друкарні Lauer. До Буди його запросив будайський пробст László Karai, учений віце-канцлер короля Матяша, за дорученням естергомського архієпископа János Vitéz; дослідники називають пізню весну 1471 або 1472 року, а в лютому 1472 року Hess ще напевно був у Римі. Діставши 2000 срібних форинтів підтримки, він 1472 року облаштував у Буді першу й тоді єдину в країні друкарню; Угорщина випередила цим більшість європейських держав. Karai дав йому житло в Будайському замку, на місці нинішньої площі Hess András tér.\n\n«Chronica Hungarorum» («Будайська хроніка») вийшла 5 червня 1473 року: 67 аркушів латиною, заокругленою антиквою на товстому білому папері, імовірно з Південної Німеччини. Книга ґрунтується на хронікальній компіляції XIV століття й розповідає історію угорців від початків до молдавського походу Матяша 1468 року. Вона закінчується словами «Finita Bude anno Domini MCCCCLXXIII in vigilia penthecostes: per Andream Hess» («Закінчено в Буді року Божого 1473 напередодні П'ятидесятниці Андреасом Гессом»); цим реченням починається історія угорського друкарства. Першу присвяту, найпевніше, призначали архієпископові Vitéz, але через несприятливі політичні обставини книгу присвячено Karai.\n\nВ Угорщині примірники зберігають Національна бібліотека імені Сечені й Університетська бібліотека ELTE, ще вісім є за кордоном. Після 1473 року слідів друкарні немає; останнім її виданням вважають недатований збірник з твором Василія Великого.",
+    "hu": "A nyomdászról szóló szócikk szerint a valószínűleg német származású Hess András a római Lauer-nyomdában dolgozott. Budára Karai László budai prépost, Mátyás király tudós alkancellárja hívta el Vitéz János esztergomi érsek megbízásából; a kutatók 1471 vagy 1472 késő tavaszát említik, 1472 februárjában Hess még biztosan Rómában volt. 2000 ezüst forint támogatással 1472-ben állította fel Budán az ország legelső és akkor még egyetlen nyomdáját, amellyel Magyarország a legtöbb európai államot megelőzte. Karai szállást biztosított számára a budai Várban, a mai Hess András téren.\n\nA Chronica Hungarorum (Budai krónika) 1473. június 5-én jelent meg: 67 levél latin nyelven, kerekített antikva betűkkel, valószínűleg dél-németországi vastag fehér papíron. A mű a 14. századi krónikakompozíción alapul, és a magyar történetet a kezdetektől Mátyás 1468-as moldvai hadjáratáig tárgyalja. Záró sora: „Finita Bude anno Domini MCCCCLXXIII in vigilia penthecostes: per Andream Hess” („Befejeződött Budán az Úr 1473. esztendejében pünkösd előestéjén Hess András által”); ezzel a mondattal kezdődik a hazai nyomdászat története. Első ajánlása valószínűleg Vitéz érseknek szólt, de a kedvezőtlen belpolitikai helyzet miatt a könyv ajánlása Karaihoz szól.\n\nMagyarországon az Országos Széchényi Könyvtár és az ELTE Egyetemi Könyvtára őriz példányt, további nyolc külföldi gyűjteményekben található. 1473 után a nyomda működésének nincs nyoma; utolsó kiadványának egy évszám nélküli, Nagy Szent Vazul művét tartalmazó nyomtatványt tartanak."
+  },
+  "sources": [
+    {
+      "title": "Hess András – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Hess_Andr%C3%A1s",
+      "note": "Розділи «Életpályája», «Chronica Hungarorum» і «De legendis poetis»: запрошення до Буди, друкарня 1472 року, дата виходу, обсяг, колофон, примірники."
+    }
+  ]
+}

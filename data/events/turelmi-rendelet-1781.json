@@ -1,0 +1,49 @@
+{
+  "id": "turelmi-rendelet-1781",
+  "title": {
+    "uk": "Указ Йосифа II про віротерпимість і розпуск споглядальних орденів",
+    "hu": "II. József türelmi rendelete és a szemlélődő rendek feloszlatása"
+  },
+  "date": {
+    "from": "1781-10-25",
+    "to": "1782-01-12",
+    "precision": "exact"
+  },
+  "period": "habsburg-18",
+  "places": [
+    "majk-remeteseg"
+  ],
+  "summary": {
+    "uk": "25 жовтня 1781 року Йосиф II дозволив лютеранам, кальвіністам і православним вільніше сповідувати віру й обіймати посади. 12 січня 1782 року він розпустив чернечі ордени, що не навчали, не лікували й не займалися наукою: закрито близько 140 монастирів, серед них скит камальдулів у Majk.",
+    "hu": "1781. október 25-én II. József szabadabb vallásgyakorlást és hivatalviselést engedélyezett az evangélikusoknak, reformátusoknak és görögkeletieknek. 1782. január 12-én feloszlatta azokat a szerzetesrendeket, amelyek nem tanítottak, nem gyógyítottak és nem foglalkoztak tudománnyal: mintegy 140 kolostor szűnt meg, köztük a majki kamalduli remeteség."
+  },
+  "description": {
+    "uk": "За статтею про указ, «толеранційний патент» від 25 жовтня 1781 року був одним з перших і найважливіших заходів Йосифа II. Лютеранам, кальвіністам і православним він дозволив вільніше, ніж доти, сповідувати віру: там, де жило щонайменше сто некатолицьких родин, вони могли власним коштом заснувати й утримувати громаду і навіть збудувати церкву, але без вежі й дзвона та з входом не з дороги (сам дозвіл на будівництво церков, за статтею, з'явився щойно 1786 року). На службі вірян цих конфесій більше не мали утискати. Указ упорядкував і становище дітей з мішаних шлюбів: якщо мати протестантка, доньки стають протестантками, в усіх інших випадках дітей хрестять католиками. Того ж року врегульовано становище близько 83 тисяч угорських євреїв.\n\nЩе того самого року імператор затримав церковні прибутки, що йшли до Рима, і запровадив придворну перевірку папських булл перед оголошенням. Указом про секуляризацію від 12 січня 1782 року він розпустив споглядальні чернечі ордени, які не займалися навчанням, лікуванням чи наукою; закрито близько 140 монастирів, а їхнє майно передано до Релігійного фонду. Втручався він навіть у порядок свят, меси й виховання священників.\n\nЗа статтею про пам'ятки в Majk, камальдулів оселив там 1733 року József Esterházy; 1782 року, коли скит закрили, в його будиночках-келіях жило лише 15 пустельників, а в головній будівлі рід Esterházy згодом влаштував мисливський замок. Після смерті Йосифа II його наступник Леопольд II 7 листопада 1790 року підтвердив указ про віротерпимість, а стаття XXVI законів 1791 року закріпила його законом уже без обмежень для протестантів.",
+    "hu": "A rendeletről szóló szócikk szerint az 1781. október 25-i türelmi rendelet II. József egyik első és legfontosabb intézkedése volt. Az evangélikusoknak, reformátusoknak és görögkeletieknek az addiginál szabadabb vallásgyakorlást engedélyezett: ahol legalább száz nem katolikus család élt, saját költségükön gyülekezetet létesíthettek és tarthattak fenn, sőt templomot is építhettek, de torony és harang nélkül, nem közútról nyíló bejárattal (magára a templomépítési rendeletre a szócikk szerint csak 1786-ban került sor). E felekezetek hívei a hivatali pályán ezentúl nem szenvedhettek megkülönböztetést. A rendelet a vegyes házasságból született gyermekek helyzetét is rendezte: ha az anya protestáns, a lánygyermek is protestáns lesz, minden más esetben katolikusnak kell megkeresztelni. Ugyanebben az évben rendezték a mintegy 83 000 magyarországi zsidó helyzetét is.\n\nA császár még ugyanabban az évben zárolta a Rómának küldött egyházi jövedelmeket, és bevezette a pápai bullák kihirdetés előtti udvari ellenőrzését. Az 1782. január 12-i szekularizációs rendelettel feloszlatta a szemlélődő szerzetesrendeket, amelyek nem foglalkoztak tanítással, gyógyítással vagy tudománnyal; mintegy 140 kolostor szűnt meg, vagyonuk a Vallásalapba került. Még az ünnepek, a mise és a papnevelés rendjébe is beavatkozott.\n\nA majki műemlékegyüttesről szóló szócikk szerint a kamalduliakat 1733-ban Esterházy József telepítette oda; 1782-ben, a kolostor megszüntetésének évében csak 15 remete lakott a cellaházakban, a főépületben pedig az Esterházyak később vadászkastélyt alakítottak ki. II. József halála után utóda, II. Lipót 1790. november 7-én megerősítette a türelmi rendeletet, az 1791: XXVI. törvénycikk pedig törvénybe foglalta, immár a protestánsokat sújtó megszorítások nélkül."
+  },
+  "sources": [
+    {
+      "title": "Türelmi rendelet – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/T%C3%BCrelmi_rendelet",
+      "note": "Вступ і розділи «Tartalma», «Hatása»: дата 25 жовтня 1781 року, зміст, становище євреїв, указ про секуляризацію 12 січня 1782 року, підтвердження 1790 і закон 1791 року."
+    },
+    {
+      "title": "Majki műemlékegyüttes – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Majki_m%C5%B1eml%C3%A9kegy%C3%BCttes",
+      "note": "Вступ і розділ «A kamalduliak Majkon»: камальдули з 1733 року, 15 пустельників 1782 року, розпуск за указом Йосифа II, мисливський замок."
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/D%C3%ADszk%C3%BAt_Majkon.jpg",
+      "author": "Wg1017",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:D%C3%ADszk%C3%BAt_Majkon.jpg",
+      "caption": {
+        "uk": "Декоративний колодязь у Majk",
+        "hu": "Díszkút Majkon"
+      }
+    }
+  ]
+}
