@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Esterh%C3%A1zy-kast%C3%A9ly_%28Fert%C5%91d%29",
       "note": "Датування, замовник, архітектори, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Aerial_image_of_Esterh%C3%A1zy_Palace%2C_Fert%C5%91d_%28view_from_the_southeast%29.jpg",
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Esterh%C3%A1zy_Palace%2C_Fert%C5%91d_%28view_from_the_southeast%29.jpg",
+      "caption": {
+        "uk": "Палац Естергазі у Фертьоді з повітря, вид з південного сходу, 28 червня 2026 року",
+        "hu": "A fertődi Esterházy-kastély légi felvételen, délkeletről, 2026. június 28."
+      }
+    }
   ]
 }

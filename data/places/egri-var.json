@@ -29,5 +29,18 @@
       "url": "https://hu.wikipedia.org/wiki/Egri_v%C3%A1r",
       "note": "1552, Dobó, 1596, статус 2014, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Er%C5%91drendszer_romjai_%2817237._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_2.jpg",
+      "author": "Mykee78",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:Er%C5%91drendszer_romjai_%2817237._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_2.jpg",
+      "caption": {
+        "uk": "Егерська фортеця: руїни системи укріплень, 16 жовтня 2011 року",
+        "hu": "Az egri vár: az erődrendszer romjai, 2011. október 16."
+      }
+    }
   ]
 }

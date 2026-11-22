@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/B%C5%91s%E2%80%93nagymarosi_v%C3%ADzl%C3%A9pcs%C5%91",
       "note": "Хронологія 1989–1997, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Gab%C4%8D%C3%ADkovo%E2%80%93Nagymaros_locks_and_hydroelectric_power_station.JPG",
+      "author": "Kiwiev",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Gab%C4%8D%C3%ADkovo%E2%80%93Nagymaros_locks_and_hydroelectric_power_station.JPG",
+      "caption": {
+        "uk": "Шлюзи й гідроелектростанція гідровузла Ґабчиково–Надьмарош у сильний вітер, 6 грудня 2013 року",
+        "hu": "A bős–nagymarosi vízlépcső zsilipjei és vízerőműve erős szélben, 2013. december 6."
+      }
+    }
   ]
 }

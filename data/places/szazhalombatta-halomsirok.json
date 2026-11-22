@@ -28,5 +28,17 @@
       "url": "https://hu.wikipedia.org/wiki/Sz%C3%A1zhalombatta",
       "note": "Походження назви, табір Matrica, координати міста."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Sz%C3%A1zhalombattai_haloms%C3%ADr.jpg",
+      "author": "Peyerk",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Sz%C3%A1zhalombattai_haloms%C3%ADr.jpg",
+      "caption": {
+        "uk": "Курган № 115, розкопаний для показу, в археологічному парку Сасгаломбатти (Százhalombatta), 2009 рік",
+        "hu": "A bemutatásra feltárt 115. számú halomsír a százhalombattai régészeti parkban, 2009"
+      }
+    }
   ]
 }

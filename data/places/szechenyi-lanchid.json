@@ -29,5 +29,18 @@
       "url": "https://hu.wikipedia.org/wiki/Sz%C3%A9chenyi_l%C3%A1nch%C3%ADd",
       "note": "Ініціатор, фінансування, інженери, дати, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Sz%C3%A9chenyi_L%C3%A1nch%C3%ADd_%C3%A9jjel.jpg",
+      "author": "János Ecsedy",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Sz%C3%A9chenyi_L%C3%A1nch%C3%ADd_%C3%A9jjel.jpg",
+      "caption": {
+        "uk": "Ланцюговий міст Сечені вночі, 19 березня 2015 року",
+        "hu": "A Széchenyi lánchíd éjjel, 2015. március 19."
+      }
+    }
   ]
 }

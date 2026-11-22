@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Corvin_k%C3%B6z",
       "note": "Роль у 1956, командувачі, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Corvin_%28Kisfaludy%29_k%C3%B6z%2C_Corvin_mozi._Fortepan_24782.jpg",
+      "author": "FOTO:FORTEPAN / Nagy Gyula",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Corvin_%28Kisfaludy%29_k%C3%B6z%2C_Corvin_mozi._Fortepan_24782.jpg",
+      "caption": {
+        "uk": "Корвін кьоз (Corvin köz), кінотеатр Corvin, 1956 рік",
+        "hu": "Corvin (Kisfaludy) köz, Corvin mozi, 1956"
+      }
+    }
   ]
 }

@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Szt%C3%A1lin-szobor_%28Budapest%29",
       "note": "Роки, доля постаменту, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Szt%C3%A1lin_szobor_Budapest.jpg",
+      "author": "FOTO:FORTEPAN / Nagy Gyula",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szt%C3%A1lin_szobor_Budapest.jpg",
+      "caption": {
+        "uk": "Пам'ятник Сталіну в Будапешті, 1953 рік",
+        "hu": "A Sztálin-szobor Budapesten, 1953"
+      }
+    }
   ]
 }

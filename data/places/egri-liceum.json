@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/L%C3%ADceum_%28Eger%29",
       "note": "Barkóczy 1761, Eszterházy 1762, обсерваторія, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Lyceum%2C_Eger_2014.JPG",
+      "author": "Rakás",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Lyceum%2C_Eger_2014.JPG",
+      "caption": {
+        "uk": "Ліцей в Егері, 19 вересня 2014 року",
+        "hu": "A Líceum, Eger, 2014. szeptember 19."
+      }
+    }
   ]
 }

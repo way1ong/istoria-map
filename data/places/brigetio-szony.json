@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Brigetio",
       "note": "Розташування, розмір табору, легіони, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Roman_sarcophagus_and_Elementary_school_at_the_Szabads%C3%A1g_Square%2C_Kom%C3%A1rom%2C_Hungary.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Roman_sarcophagus_and_Elementary_school_at_the_Szabads%C3%A1g_Square%2C_Kom%C3%A1rom%2C_Hungary.jpg",
+      "caption": {
+        "uk": "Римські саркофаги Бригеціо перед школою імені Petőfi на площі Szabadság tér у Комаромі, 2015 рік",
+        "hu": "Brigetiói római szarkofágok a Petőfi Sándor Általános Iskola előtt, Komárom, Szabadság tér, 2015"
+      }
+    }
   ]
 }

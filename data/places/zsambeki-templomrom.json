@@ -28,5 +28,18 @@
       "url": "https://hu.wikipedia.org/wiki/Zs%C3%A1mb%C3%A9ki_templomrom",
       "note": "Датування, землетрус 1763, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Zs%C3%A1mb%C3%A9ki_templom_%282025.10%29_-_1.jpg",
+      "author": "OrionNimrod",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Zs%C3%A1mb%C3%A9ki_templom_%282025.10%29_-_1.jpg",
+      "caption": {
+        "uk": "Руїни церкви премонстратського монастиря в Жамбеку, 12 жовтня 2025 року",
+        "hu": "A zsámbéki templomrom, a premontrei bazilika és kolostor romjai, 2025. október 12."
+      }
+    }
   ]
 }

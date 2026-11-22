@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Savoyai-kast%C3%A9ly",
       "note": "Замовник, архітектор, 1736, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Savoyai_mansion%2C_facade%2C_2018_R%C3%A1ckeve.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Savoyai_mansion%2C_facade%2C_2018_R%C3%A1ckeve.jpg",
+      "caption": {
+        "uk": "Фасад палацу Савойського в Ракеве, липень 2018 року",
+        "hu": "A ráckevei Savoyai-kastély homlokzata, 2018. július"
+      }
+    }
   ]
 }

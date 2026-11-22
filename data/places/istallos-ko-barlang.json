@@ -27,5 +27,18 @@
       "url": "https://hu.wikipedia.org/wiki/Ist%C3%A1ll%C3%B3s-k%C5%91i-barlang",
       "note": "Культура, склад знахідок, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Szilv%C3%A1sv%C3%A1rad%2C_Ist%C3%A1ll%C3%B3s-k%C5%91i-barlang_2.jpg",
+      "author": "Christo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szilv%C3%A1sv%C3%A1rad%2C_Ist%C3%A1ll%C3%B3s-k%C5%91i-barlang_2.jpg",
+      "caption": {
+        "uk": "Печера Ішталлош-кьо біля Szilvásvárad, 2013 рік",
+        "hu": "Szilvásvárad, Istállós-kői-barlang, 2013"
+      }
+    }
   ]
 }

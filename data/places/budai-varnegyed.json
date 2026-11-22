@@ -32,5 +32,18 @@
       "url": "https://hu.wikipedia.org/wiki/Budai_V%C3%A1rnegyed",
       "note": "Бела IV, Матяш, ЮНЕСКО 1987, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Buda--Castles01.jpg",
+      "author": "Civertan",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "source": "https://commons.wikimedia.org/wiki/File:Buda--Castles01.jpg",
+      "caption": {
+        "uk": "Будайський замок з повітря",
+        "hu": "A budai vár légi felvételen"
+      }
+    }
   ]
 }

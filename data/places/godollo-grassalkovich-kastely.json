@@ -29,5 +29,18 @@
       "url": "https://hu.wikipedia.org/wiki/Grassalkovich-kast%C3%A9ly_%28G%C3%B6d%C3%B6ll%C5%91%29",
       "note": "Дати будівництва, архітектор, 1867, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Schloss_G%C3%B6d%C3%B6ll%C5%91_Ungarn.jpg",
+      "author": "oPPÁRÉ",
+      "license": "CC BY-SA 2.5 hu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/hu/",
+      "source": "https://commons.wikimedia.org/wiki/File:Schloss_G%C3%B6d%C3%B6ll%C5%91_Ungarn.jpg",
+      "caption": {
+        "uk": "Палац у Ґеделле, 8 жовтня 2011 року",
+        "hu": "A gödöllői kastély, 2011. október 8."
+      }
+    }
   ]
 }

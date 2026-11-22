@@ -29,5 +29,18 @@
       "url": "https://hu.wikipedia.org/wiki/Esztergomi_v%C3%A1r",
       "note": "Ґеза, коронація Іштвана, статуси, координати."
     }
+  ],
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Esztergom%2C_Castle.jpg",
+      "author": "Batomi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Esztergom%2C_Castle.jpg",
+      "caption": {
+        "uk": "Естергомський замок, 24 березня 2011 року",
+        "hu": "Az esztergomi vár, 2011. március 24."
+      }
+    }
   ]
 }
