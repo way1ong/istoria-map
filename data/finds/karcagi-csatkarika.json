@@ -1,0 +1,63 @@
+{
+  "id": "karcagi-csatkarika",
+  "name": {
+    "uk": "Пряжка з Карцаґа (Karcagi csatkarika)",
+    "hu": "Karcagi csatkarika"
+  },
+  "type": "find",
+  "coords": [
+    20.85,
+    47.383
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "late-medieval"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "how": "excavation",
+      "note": {
+        "uk": "у 170-й могилі кунського могильника Orgondaszentmiklós; року джерело не називає",
+        "hu": "az orgondaszentmiklósi kun temető 170. sírjából; az évet a forrás nem közli"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музей Damjanich János, Сольнок",
+          "hu": "Damjanich János Múzeum, Szolnok"
+        }
+      }
+    ],
+    "spotNote": {
+      "uk": "Могильник лежить на околиці Berekfürdő; мітка стоїть у центрі цього села",
+      "hu": "A temető Berekfürdő külterületén fekszik; a jelölő a község központjában áll"
+    }
+  },
+  "summary": {
+    "uk": "Бронзова пряжка XIV століття діаметром 4,9 см з вибитим довкола написом, знайдена в могилі кунського цвинтаря Orgondaszentmiklós біля Карцаґа (нині околиця Berekfürdő).",
+    "hu": "14. századi, 4,9 cm átmérőjű bronz csatkarika körbefutó, beütögetett felirattal; a Karcag melletti orgondaszentmiklósi kun temető (ma Berekfürdő külterülete) egyik sírjából került elő."
+  },
+  "description": {
+    "uk": "Пряжку знайдено під час наукових розкопок. Вона завширшки 1 см; знаки напису вибито пуансоном у бронзовій пластині. Дехто вважає напис однією з найцікавіших пам'яток секейсько-угорського рунічного письма; дослідник-аматор Géza Varga бачить у ньому ряд знаків, схожих на знаки секейського письма. Пряжку можна побачити в музеї Damjanich János у Сольноку.",
+    "hu": "A csat hiteles ásatáson került elő. 1 cm széles; a felirat jeleit poncolással ütögették a bronzlemezbe. Egyes vélemények szerint a székely–magyar rovás egyik legérdekesebb írásemléke; Varga Géza amatőr kutató szerint a leleten a székely írás jeleihez hasonló jelsorozat látható. A szolnoki Damjanich János Múzeumban tekinthető meg."
+  },
+  "sources": [
+    {
+      "title": "Karcagi csatkarika – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Karcagi_csatkarika",
+      "note": "Місце й обставини знахідки, опис, музей."
+    },
+    {
+      "title": "Szentgyörgyvölgyi tehénszobor – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szentgy%C3%B6rgyv%C3%B6lgyi_teh%C3%A9nszobor",
+      "note": "Géza Varga названий дослідником-аматором історії письма."
+    },
+    {
+      "title": "Berekfürdő – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Berekf%C3%BCrd%C5%91",
+      "note": "Координати села."
+    }
+  ]
+}

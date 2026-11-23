@@ -5,9 +5,12 @@
 import type { ExpressionSpecification, Map as MLMap } from 'maplibre-gl';
 import type { PlaceType } from './types';
 
-export type Shape = 'circle' | 'square' | 'diamond' | 'triangle' | 'triangle-down' | 'cross' | 'star' | 'house';
+export type Shape = 'circle' | 'square' | 'diamond' | 'triangle' | 'triangle-down' | 'cross' | 'star' | 'house' | 'xmark';
 
-/** Форма за типом місця. Хутори, корчми й млини — «будиночок»; «інше» ділить коло з містами й селами. */
+/**
+ * Форма за типом місця. Хутори, корчми й млини — «будиночок»; «інше» ділить коло з містами й селами;
+ * знахідки — косий хрест, як позначка місця знахідки на археологічних мапах.
+ */
 export const SHAPE: Record<PlaceType, Shape> = {
   settlement: 'circle',
   other: 'circle',
@@ -20,6 +23,7 @@ export const SHAPE: Record<PlaceType, Shape> = {
   farmstead: 'house',
   inn: 'house',
   mill: 'house',
+  find: 'xmark',
 };
 
 /** П'ятипроменева зірка з центром (12; 12,6). */
@@ -43,6 +47,8 @@ export const SHAPE_PATH: Record<Shape, string> = {
   cross: 'M9 3h6v6h6v6h-6v6h-6v-6H3V9h6Z',
   star: starPath(),
   house: 'M12 3.2L20.2 10.4V20H3.8V10.4Z',
+  // хрест церков, повернутий на 45°
+  xmark: 'M16.24 3.51L20.49 7.76L16.24 12L20.49 16.24L16.24 20.49L12 16.24L7.76 20.49L3.51 16.24L7.76 12L3.51 7.76L7.76 3.51L12 7.76Z',
 };
 
 /** Значок для списків і легенди (SVG в рядку тексту). */

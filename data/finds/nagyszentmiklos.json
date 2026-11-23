@@ -1,0 +1,74 @@
+{
+  "id": "nagyszentmiklos",
+  "name": {
+    "uk": "Скарб з Надьсентміклоша (Nagyszentmiklósi kincs)",
+    "hu": "Nagyszentmiklósi kincs"
+  },
+  "type": "find",
+  "coords": [
+    20.624,
+    46.071
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "migration"
+  ],
+  "find": {
+    "kind": "hoard",
+    "found": {
+      "date": "1799-07-03",
+      "precision": "exact",
+      "how": "chance",
+      "note": {
+        "uk": "сербський селянин Vuin Neru натрапив на скарб, копаючи у дворі рів для огорожі",
+        "hu": "Vuin Neru szerb parasztgazda a háza udvarán, kerítésigazításhoz árkot ásva bukkant rá"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музей історії мистецтв (Kunsthistorisches Museum), Відень",
+          "hu": "Kunsthistorisches Museum, Bécs"
+        }
+      }
+    ],
+    "abroad": true,
+    "spotNote": {
+      "uk": "Місто лежить у Румунії, біля угорського кордону",
+      "hu": "A város Romániában, a magyar határ közelében fekszik"
+    }
+  },
+  "summary": {
+    "uk": "23 золоті посудини загальною вагою майже 10 кг, знайдені 3 липня 1799 року на околиці Nagyszentmiklós (нині Sânnicolau Mare, Румунія); імовірно, частина аварської князівської скарбниці. Зберігається у Відні.",
+    "hu": "23 aranyedény, összsúlyuk majdnem 10 kg; 1799. július 3-án került elő Nagyszentmiklós (ma Sânnicolau Mare, Románia) határában. Valószínűleg az avar fejedelmi kincstár része volt. Bécsben őrzik."
+  },
+  "description": {
+    "uk": "Від появи скарбу його походження є предметом гострих суперечок, бо більшість посудин не могли зробити в один час і в одній майстерні; імовірно, це була частина аварської князівської скарбниці, схована в останні дні каганату. На посудинах численні рунічні написи.\n\nЗа тогочасними актами, скарб потрапив до Відня лише наприкінці вересня: дорогою він пройшов через руки грецьких і віденських купців до Пешта, де його зібрав міський суддя János Boráros. 1 жовтня 1799 року за розпорядженням короля Ференца I скарб передано до віденської Імператорської збірки старожитностей; нині його зберігає Музей історії мистецтв. В Угорщині його виставляли 1884 і 2002 року.",
+    "hu": "Előkerülése óta eredete heves viták tárgya, mivel az edények többségét nem egyazon időben és műhelyben készíthették; valószínűleg az avar fejedelmi kincstár része volt, amelyet a kaganátus végnapjaiban rejtettek el. Az aranyedényeken számos rovásfelirat látható.\n\nAz egykori akták szerint a kincs csak szeptember végére jutott Bécsbe: útja görög és bécsi kereskedők kezén át vezetett Pestig, ahol Boráros János városbíró szedte össze. 1799. október 1-jén I. Ferenc király intézkedésére a bécsi Császári és Királyi Régiségtárba került; ma a Kunsthistorisches Museum őrzi. Magyarországon 1884-ben és 2002-ben állították ki."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/KHM_Wien_VIIIb_11_-_Bull%27s_head_bowl%2C_Treasure_of_Nagyszentmikl%C3%B3s.jpg",
+      "author": "невідомий автор",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:KHM_Wien_VIIIb_11_-_Bull%27s_head_bowl%2C_Treasure_of_Nagyszentmikl%C3%B3s.jpg",
+      "caption": {
+        "uk": "Чаша з головою бика зі скарбу Надьсентміклоша (KHM Wien)",
+        "hu": "Bikafejes csésze a nagyszentmiklósi kincsből (KHM Wien)"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nagyszentmiklósi kincs – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagyszentmikl%C3%B3si_kincs",
+      "note": "Дата й обставини знахідки, склад скарбу, шлях до Відня, виставки в Угорщині."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Sânnicolau Mare",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=S%C3%A2nnicolau%20Mare",
+      "note": "Координати центру міста 46.071, 20.624 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

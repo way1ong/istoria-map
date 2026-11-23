@@ -1,0 +1,42 @@
+{
+  "id": "tokorcsi-eremkincs",
+  "name": {
+    "uk": "Токорчський монетний скарб (Tokorcsi éremkincs)",
+    "hu": "Tokorcsi római kori éremkincs"
+  },
+  "type": "find",
+  "coords": [
+    17.087,
+    47.278
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "find": {
+    "kind": "coins",
+    "found": {
+      "date": "1982",
+      "precision": "exact",
+      "note": {
+        "uk": "на околиці села, у великій бронзовій посудині",
+        "hu": "a község határában, egy nagyméretű bronzedényben"
+      }
+    }
+  },
+  "summary": {
+    "uk": "10 789 бронзових монет і сільськогосподарські знаряддя у великій бронзовій посудині, закопані близько 378 року; знайдені 1982 року на околиці Tokorcs.",
+    "hu": "10 789 bronzérme és mezőgazdasági eszközök egy nagyméretű bronzedényben, amelyet 378 körül ástak el; 1982-ben került elő Tokorcs határában."
+  },
+  "description": {
+    "uk": "Разом з монетами в посудині лежали нижній камінь жорен, леміш, кайла, залізний дзвоник та інші знаряддя. Історики вважають, що скарб сховали близько 378 року через дедалі сильніші напади народів доби переселення. Завдяки цій знахідці назву села знають дослідники римської доби й за межами Угорщини.",
+    "hu": "Az érmék mellett őrlőkő alsó része, ekevas, csákányok, vaskolomp és más eszközök voltak az edényben. A történészek szerint a kincset 378 körül, a népvándorlás kori népek egyre erősödő támadásai miatt rejthették el. A leletnek köszönhetően a falu neve a római korral foglalkozók körében nemzetközileg is ismert."
+  },
+  "sources": [
+    {
+      "title": "Tokorcs – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tokorcs",
+      "note": "Знахідка 1982 року, склад, час сховання; координати села."
+    }
+  ]
+}

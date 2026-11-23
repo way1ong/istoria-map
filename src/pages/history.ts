@@ -1,4 +1,4 @@
-import { eventById, events, periodById, periodText, periods, placeById, places, routes, routesForEvent } from '../data';
+import { eventById, events, finds, periodById, periodText, periods, placeById, places, routes, routesForEvent } from '../data';
 import { formatYear, getLang, lt, t } from '../i18n';
 import { eventCard, md, placeCard } from '../ui/render';
 
@@ -19,7 +19,9 @@ export function periodPage(id: string): string {
   const p = periodById(id);
   if (!p) return `<p class="empty">${t('notFound')}</p>`;
   const text = periodText(id, getLang());
-  const pl = places.filter((x) => x.periods.includes(id));
+  // знахідки (data/finds) — окремим переліком: вони теж лежать серед місць, але мають свою сторінку
+  const pl = places.filter((x) => x.periods.includes(id) && x.type !== 'find');
+  const fd = finds.filter((x) => x.periods.includes(id));
   const ev = events.filter((x) => x.period === id);
   const an = routes.filter((r) => r.animation?.event && r.features.some((f) => f.properties.period === id));
   const list = (items: { href: string; title: string; sub: string }[]) =>
@@ -34,6 +36,7 @@ export function periodPage(id: string): string {
     <a class="btn" href="#/map?period=${p.id}">${t('showOnMap')}</a>
     <div class="prose">${text ? md(text) : `<p class="empty">${t('noText')}</p>`}</div>
     ${pl.length ? `<h2>${t('places')}</h2>` : ''}${list(pl.map((x) => ({ href: `#/place/${x.id}`, title: lt(x.name), sub: lt(x.summary) })))}
+    ${fd.length ? `<h2>${t('tabFinds')}</h2>` : ''}${list(fd.map((x) => ({ href: `#/find/${x.id}`, title: lt(x.name), sub: lt(x.summary) })))}
     ${ev.length ? `<h2>${t('events')}</h2>` : ''}${list(ev.map((x) => ({ href: `#/event/${x.id}`, title: lt(x.title), sub: lt(x.summary) })))}
     ${an.length ? `<h2>${t('animations')}</h2>` : ''}${list(an.map((x) => ({ href: `#/event/${x.animation!.event}`, title: lt(x.animation!.title), sub: lt(x.animation!.note) })))}
   `;

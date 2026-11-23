@@ -1,0 +1,53 @@
+{
+  "id": "benyi-kincs",
+  "name": {
+    "uk": "Бенський скарб солідів (Bényi kincs)",
+    "hu": "Bényi kincs"
+  },
+  "type": "find",
+  "coords": [
+    18.642,
+    47.922
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "migration"
+  ],
+  "find": {
+    "kind": "coins",
+    "found": {
+      "date": "1964-09",
+      "precision": "exact",
+      "how": "excavation",
+      "note": {
+        "uk": "під час археологічних розкопок, якими керував Jozef Paulík",
+        "hu": "a Jozef Paulík vezette régészeti feltárás során"
+      }
+    },
+    "abroad": true,
+    "spotNote": {
+      "uk": "Село лежить у Словаччині",
+      "hu": "A falu Szlovákiában fekszik"
+    }
+  },
+  "summary": {
+    "uk": "108 золотих візантійських солідів у біконічній посудині без орнаменту, знайдені у вересні 1964 року в селі Bény (нині Bíňa, Словаччина) на глибині 50–65 см; сховані близько середини V століття.",
+    "hu": "108 bizánci arany solidus egy bikónikus, díszítetlen edényben; 1964 szeptemberében került elő Bényben (ma Bíňa, Szlovákia), kb. 50–65 cm mélyen. Az 5. század közepe táján rejtették el."
+  },
+  "description": {
+    "uk": "Крім монет візантійських імператорів та членів їхніх родин (Аркадій, Феодосій II), у скарбі є монети західноримських імператорів (Гонорій, Валентиніан III). Наймолодша карбована 443 року, тож скарб сховали близько середини V століття. За складом і кількістю монет це унікальна знахідка для території нинішньої Словаччини; імовірно, він пов'язаний з даниною, яку платили гунам.",
+    "hu": "A bizánci császárok és családtagjaik (Arcadius, II. Theodosius) veretei mellett nyugatrómai császárok (Honorius, III. Valentinianus) pénzei is vannak a kincsben. A legfiatalabb veret 443-ból való, így az elrejtés ideje az 5. század közepére tehető. Összetétele és az érmék mennyisége alapján egyedülálló lelet a mai Szlovákia területén; valószínűleg a hunoknak fizetett adóval függ össze."
+  },
+  "sources": [
+    {
+      "title": "Bényi kincs – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/B%C3%A9nyi_kincs",
+      "note": "Знахідка 1964 року, склад і датування скарбу."
+    },
+    {
+      "title": "Bény (Szlovákia) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/B%C3%A9ny_%28Szlov%C3%A1kia%29",
+      "note": "108 золотих солідів середини V століття; координати села."
+    }
+  ]
+}

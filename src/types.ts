@@ -38,6 +38,8 @@ export type PlaceType =
   | 'mill'
   /** Укріплення світових війн: окопи, рови, бункери, опорні пункти. */
   | 'military'
+  /** Знахідка (data/finds/*.json): скарб, поховання, окрема річ; на мапі — місце, де її знайдено. */
+  | 'find'
   | 'other';
 
 /** Ілюстрація в тексті (data/illustrations.json): як фото, але автора можна дати двома мовами («невідомий автор»). */
@@ -71,9 +73,53 @@ export interface Place {
   description?: LText;
   photos?: Photo[];
   sources: Source[];
+  /** Лише для знахідок (type: 'find', файли data/finds/*.json). */
+  find?: FindInfo;
 }
 
 export type DatePrecision = 'exact' | 'approximate' | 'tradition';
+
+/** Вид знахідки: скарб, монети, поховання, жертвоприношення, окрема річ, рештки людини. */
+export type FindKind = 'hoard' | 'coins' | 'burial' | 'ritual' | 'object' | 'remains';
+/** Як знайдено: розкопки, випадково (оранка, будівництво, земляні роботи), металошукачем разом з музеєм, обставини невідомі. */
+export type FindHow = 'excavation' | 'chance' | 'detector' | 'unknown';
+
+/** Де зберігається знахідка. */
+export interface FindKeeper {
+  name: LText;
+  /** id картки місця (музею), якщо вона є в data/places. */
+  place?: string;
+  /** [довгота, широта] музею, якщо картки місця немає: для посилання «Маршрут до музею». */
+  coords?: [number, number];
+  note?: LText;
+}
+
+export interface FindInfo {
+  kind: FindKind;
+  /**
+   * Коли і як знайдено. Дата — як у подіях: "1799", "1926-04", "1971-03-05". Чого джерела не кажуть, того не пишуть:
+   * без року немає date і precision, без відомих обставин — how; тоді в картці лишається решта (хоча б примітка).
+   */
+  found: { date?: string; to?: string; precision?: DatePrecision; how?: FindHow; note?: LText };
+  /** Де зберігається; якщо джерела цього не кажуть, поле не пишуть — у картці буде «у використаних джерелах не сказано». */
+  keptAt?: FindKeeper[];
+  /** Доля знахідки, якщо вона втрачена чи розпорошена. */
+  fate?: LText;
+  /** Місце знахідки нині за кордоном Угорщини. */
+  abroad?: boolean;
+  /** Точне місце знахідки загальновідоме й відкрите для відвідувачів (музей, пам'ятка) — лише тоді coordsPrecision може бути exact. */
+  spotPublic?: boolean;
+  /** Пояснення до місця на мапі (напр. «місце знахідки достеменно невідоме»). */
+  spotNote?: LText;
+}
+
+/** Знахідка — це місце з типом find і блоком find. */
+export type Find = Place & { type: 'find'; find: FindInfo };
+
+/** data/finds.json: вступ до розділу «Знахідки» (Markdown). */
+export interface FindsDoc {
+  intro: LText;
+}
 
 export interface HistEvent {
   id: string;

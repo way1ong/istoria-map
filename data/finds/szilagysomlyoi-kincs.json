@@ -1,0 +1,89 @@
+{
+  "id": "szilagysomlyoi-kincs",
+  "name": {
+    "uk": "Скарб із Сіладьшомльо (Szilágysomlyói kincs)",
+    "hu": "Szilágysomlyói kincs"
+  },
+  "type": "find",
+  "coords": [
+    22.8,
+    47.23
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "roman-barbaricum",
+    "migration"
+  ],
+  "find": {
+    "kind": "hoard",
+    "found": {
+      "date": "1797-08-03",
+      "precision": "exact",
+      "how": "chance",
+      "note": {
+        "uk": "першу частину знайшли двоє хлопчиків-пастухів; другу — 1889 року неподалік",
+        "hu": "az első részt két pásztorgyerek találta; a másodikat 1889-ben, nem messze"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музей історії мистецтв (Kunsthistorisches Museum), Відень",
+          "hu": "Kunsthistorisches Museum, Bécs"
+        },
+        "note": {
+          "uk": "перша знахідка",
+          "hu": "az első lelet"
+        }
+      },
+      {
+        "name": {
+          "uk": "Угорський національний музей, Будапешт",
+          "hu": "Magyar Nemzeti Múzeum, Budapest"
+        },
+        "place": "magyar-nemzeti-muzeum",
+        "note": {
+          "uk": "друга знахідка",
+          "hu": "a második lelet"
+        }
+      }
+    ],
+    "abroad": true,
+    "spotNote": {
+      "uk": "Місто лежить у Румунії",
+      "hu": "A város Romániában fekszik"
+    }
+  },
+  "summary": {
+    "uk": "Скарб золотих речей, знайдений двома частинами 1797 і 1889 року біля Szilágysomlyó (нині Șimleu Silvaniei, Румунія): римські медальйони III–IV століть, великий ланцюг, фібули з кольоровим камінням і золоті чаші.",
+    "hu": "Aranytárgyakból álló kincs, amely két részletben, 1797-ben és 1889-ben került elő Szilágysomlyón (ma Șimleu Silvaniei, Románia): 3–4. századi római medalionok, nagy nyaklánc, köves fibulák és aranycsészék."
+  },
+  "description": {
+    "uk": "Першу частину 3 серпня 1797 року знайшли двоє хлопчиків-пастухів. У ній були римські медальйони III і IV століть, великий ланцюг, пряжка й дрібніші золоті речі; на бажання віденського двору їх придбав Joseph Hilarius Eckhel. Медальйони, імовірно, були дарунками германським володарям. 1889 року неподалік знайшли другу частину: вісім пар срібних фібул, обкладених золотом і оздоблених кольоровим камінням, кілька золотих чаш, золоте кільце й уламки інших фібул.\n\nПершу знахідку можна побачити у віденському Музеї історії мистецтв, другу — в Угорському національному музеї.",
+    "hu": "Az első részt 1797. augusztus 3-án két pásztorgyerek találta meg. 3. és 4. századi római medalionok, egy nagyméretű nyaklánc, egy övkapocs és kisebb aranytárgyak voltak benne; a bécsi udvar kívánságára Joseph Hilarius Eckhel vásárolta meg őket. A medalionok valószínűleg germán uralkodóknak szánt ajándékok voltak. 1889-ben, nem messze az első lelet helyétől, újabb tárgyak kerültek elő: nyolc pár ezüstből készült, aranylemezzel bevont, színes kövekkel díszített fibula, néhány aranycsésze, egy aranykarika és további fibulák töredékei.\n\nAz első lelet a bécsi Kunsthistorisches Museumban, a második a Magyar Nemzeti Múzeumban látható."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Szilagysomlyo_2-20b.jpg",
+      "author": "József Hampel",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Szilagysomlyo_2-20b.jpg",
+      "caption": {
+        "uk": "Річ зі скарбу; ілюстрація з праці József Hampel, 1905",
+        "hu": "A kincs egyik darabja; illusztráció Hampel József művéből, 1905"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Szilágysomlyói kincs – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szil%C3%A1gysomly%C3%B3i_kincs",
+      "note": "Обидві знахідки, їхній склад і місця зберігання."
+    },
+    {
+      "title": "Szilágysomlyó – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szil%C3%A1gysomly%C3%B3",
+      "note": "Координати міста."
+    }
+  ]
+}

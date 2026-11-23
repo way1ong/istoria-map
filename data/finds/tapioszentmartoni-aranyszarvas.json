@@ -1,0 +1,85 @@
+{
+  "id": "tapioszentmartoni-aranyszarvas",
+  "name": {
+    "uk": "Золотий олень з Тапіосентмартона (Tápiószentmártoni aranyszarvas)",
+    "hu": "Tápiószentmártoni aranyszarvas"
+  },
+  "type": "find",
+  "coords": [
+    19.748,
+    47.34
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory"
+  ],
+  "find": {
+    "kind": "burial",
+    "found": {
+      "date": "1923",
+      "precision": "exact",
+      "how": "excavation",
+      "note": {
+        "uk": "у князівському похованні, розкопаному на околиці села",
+        "hu": "a község határában feltárt fejedelmi sírban"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Угорський національний музей, Будапешт",
+          "hu": "Magyar Nemzeti Múzeum, Budapest"
+        },
+        "place": "magyar-nemzeti-muzeum"
+      },
+      {
+        "name": {
+          "uk": "Музей Blaskovich, Tápiószele",
+          "hu": "Blaskovich Múzeum, Tápiószele"
+        },
+        "note": {
+          "uk": "копія",
+          "hu": "másolat"
+        }
+      }
+    ]
+  },
+  "summary": {
+    "uk": "Скіфська оздоба щита у вигляді оленя з електруму, природного сплаву золота й срібла; знайдена 1923 року в князівському похованні на околиці Tápiószentmárton. Одна з найвідоміших пам'яток скіфської доби в Угорщині.",
+    "hu": "Szarvas alakú szkíta pajzsdísz elektrumból, az arany és az ezüst természetes ötvözetéből; 1923-ban került elő a község határában feltárt fejedelmi sírból. Az ország egyik legismertebb szkíta kori emléke."
+  },
+  "description": {
+    "uk": "Оригінал зберігається в Угорському національному музеї, копія — у музеї Blaskovich у Tápiószele. Разом з оленем із Zöldhalompuszta він належить до скіфських знахідок Угорщини, важливих і у світовому масштабі; обидві оздоби датують залізною добою, VI століттям до н. е.",
+    "hu": "Eredetije a Magyar Nemzeti Múzeumban, másolata a tápiószelei Blaskovich Múzeumban látható. A zöldhalompusztai szarvassal együtt világviszonylatban is jelentős magyarországi szkíta lelet; mindkét pajzsdíszt a vaskorra, a Kr. e. 6. századra keltezik."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Scythian_gold_stag.jpg",
+      "author": "Elekes Andor",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Scythian_gold_stag.jpg",
+      "caption": {
+        "uk": "Золотий олень з Tápiószentmárton",
+        "hu": "A tápiószentmártoni aranyszarvas"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tápiószentmárton – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/T%C3%A1pi%C3%B3szentm%C3%A1rton",
+      "note": "Знахідка 1923 року, електрум, оригінал і копія; координати села."
+    },
+    {
+      "title": "Szkíta művészet – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szk%C3%ADta_m%C5%B1v%C3%A9szet",
+      "note": "Значення знахідок з Zöldhalompuszta й Tápiószentmárton."
+    },
+    {
+      "title": "Magyar Nemzeti Múzeum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Magyar_Nemzeti_M%C3%BAzeum",
+      "note": "Підпис до оздоб: залізна доба, VI століття до н. е."
+    }
+  ]
+}

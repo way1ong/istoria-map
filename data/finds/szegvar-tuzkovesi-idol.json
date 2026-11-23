@@ -1,0 +1,75 @@
+{
+  "id": "szegvar-tuzkovesi-idol",
+  "name": {
+    "uk": "Сеґварський «бог із серпом» (Sarlós isten)",
+    "hu": "Szegvár-tűzkövesi idol (Sarlós isten)"
+  },
+  "type": "find",
+  "coords": [
+    20.233,
+    46.58
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "date": "1954",
+      "to": "1969",
+      "precision": "approximate",
+      "how": "excavation",
+      "note": {
+        "uk": "розкопки поселення Szegvár-Tűzköves під керівництвом József Csalog 1954–1969 років",
+        "hu": "a szegvár-tűzkövesi település Csalog József vezette, 1954–69 közötti ásatásai"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музей Koszta József, Сентеш",
+          "hu": "Koszta József Múzeum, Szentes"
+        }
+      }
+    ]
+  },
+  "summary": {
+    "uk": "Глиняна фігурка чоловіка, що сидить із серпом на плечі, з пізньонеолітичного поселення культури Тиси (5000–4400 до н. е.) у Szegvár-Tűzköves; найвідоміша з п'яти фігурок, знайдених у Сеґварі.",
+    "hu": "Vállára hajló sarlót tartó, ülő férfit ábrázoló agyagszobrocska a késő neolitikus Tisza-kultúra (Kr. e. 5000–4400) szegvár-tűzkövesi településéről; a Szegváron talált öt szobrocska közül a legismertebb."
+  },
+  "description": {
+    "uk": "Першу й другу фігурки знайдено в будинках E та F поселення, яке 1954–1969 років досліджували під керівництвом археолога й етнографа József Csalog. Друга зображає жінку на низькому ослінчику; третя, теж жінка на троні, була випадковою знахідкою; четверту знайдено 1978 року під час розкопок Katalin Hegedűs, п'яту, «бога з сокирою», — 1989 року.\n\nПоява чоловічих божеств серед фігурок культури Тиси відбиває зміни в господарстві, суспільстві й віруваннях. За тлумаченням János Makkay, «бог із серпом» міг бути доісторичним прообразом божества, яке в міфах Давнього Сходу й Греції серпом розділяє Небо й Землю.",
+    "hu": "Az első és a második szobrocska a település E, illetve F házából került elő; a telepet 1954–69 között Csalog József régész-néprajzkutató vezetésével kutatták. A második alacsony zsámolyon ülő nőalak; a harmadik, szintén trónuson ülő nőalak szórványlelet volt; a negyedik 1978-ban, Hegedűs Katalin ásatásán, az ötödik, a „Baltás Isten” 1989-ben került elő.\n\nA férfi istenségek megjelenése a Tisza-kultúra idolplasztikájában a gazdaság, a társadalom és a hitvilág változását tükrözi. Makkay János értelmezése szerint a Sarlós Isten az ókori keleti és görög mitológia Eget és Földet sarlóval elválasztó istenségének őskori előképe lehetett."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Ceramic_figure_of_seated_man_with_mask_and_sickle_-_Koszta_J%C3%B3zsef_Museum_59.1.1.jpg",
+      "author": "CryolophosaurusEllioti",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Ceramic_figure_of_seated_man_with_mask_and_sickle_-_Koszta_J%C3%B3zsef_Museum_59.1.1.jpg",
+      "caption": {
+        "uk": "Фігурка чоловіка із серпом зі збірки музею Koszta József (знімок з виїзної виставки)",
+        "hu": "A sarlós férfialak a Koszta József Múzeum gyűjteményéből (vendégkiállításon készült felvétel)"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Szegvár-tűzkövesi idol – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szegv%C3%A1r-t%C5%B1zk%C3%B6vesi_idol",
+      "note": "П'ять фігурок, розкопки 1954–1969 і 1978 років, тлумачення Makkay."
+    },
+    {
+      "title": "Koszta József Múzeum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Koszta_J%C3%B3zsef_M%C3%BAzeum",
+      "note": "Фігурку зберігає музей у Сентеші."
+    },
+    {
+      "title": "Szegvár – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szegv%C3%A1r",
+      "note": "Координати села."
+    }
+  ]
+}

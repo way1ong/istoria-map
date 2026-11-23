@@ -1,0 +1,57 @@
+{
+  "id": "banai-tarsolylemez",
+  "name": {
+    "uk": "Пластина ташки з Бани (Banai tarsolylemez)",
+    "hu": "Banai tarsolylemez"
+  },
+  "type": "find",
+  "coords": [
+    17.921,
+    47.65
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "arpad"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "date": "1956-03",
+      "precision": "exact",
+      "how": "chance",
+      "note": {
+        "uk": "двоє чоловіків знайшли її під час добування гравію, в одній з могил могильника доби здобуття батьківщини",
+        "hu": "ketten kavicsbányászás közben találták, egy honfoglalás kori temető egyik sírjában"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Угорський національний музей, Будапешт",
+          "hu": "Magyar Nemzeti Múzeum, Budapest"
+        },
+        "place": "magyar-nemzeti-muzeum"
+      }
+    ]
+  },
+  "summary": {
+    "uk": "Срібна оздобна пластина шкіряної ташки угорського вершника X століття, з мідною підкладкою, розміром 117 × 115 мм; знайдена в березні 1956 року біля села Bana.",
+    "hu": "10. századi magyar lovas bőrtarsolyának ezüst díszlemeze vörösréz hátlappal, 117 × 115 mm; 1956 márciusában került elő Bana határában."
+  },
+  "description": {
+    "uk": "Пластину знайшли на пагорбі Ördögásta-hegy під час добування гравію, в одній з могил могильника доби здобуття батьківщини. Її вкриває нескінченна сітка з пальмет: стрічки утворюють ромби, у кожному з яких сидить пучок із п'яти листків.\n\nТашку носили на поясі зі зброєю; у ній тримали кресало, кремінь, трут та інші дрібниці. Щитоподібні пластини заввишки 10–13 см і завширшки 8–11 см прикрашали кришки ташок чоловіків з тогочасної верхівки й указували на ранг власника. Першу таку пластину знайшли влітку 1868 року в Galgóc під час копання рову.",
+    "hu": "A lemezt az Ördögásta-hegyen találták kavicsbányászás közben, egy honfoglalás kori temető egyik sírjában. Végtelen hálóba szőtt palmetták díszítik: a szalagok rombuszokat alkotnak, mindegyikben ötlevelű levélcsokor ül.\n\nA tarsolyt a fegyverövön hordták; a tűzkészséget (csiholó, kova, tapló) és más apró tárgyakat tartották benne. A 10–13 cm magas, 8–11 cm széles, pajzs alakú díszlemezek a korabeli elit férfi tagjainak tarsolyfedelét díszítették, és viselőjük rangját jelezték. Az első tarsolylemez 1868 nyarán Galgócon, árokásáskor került elő."
+  },
+  "sources": [
+    {
+      "title": "Banai tarsolylemez – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Banai_tarsolylemez",
+      "note": "Знахідка 1956 року, матеріал, розміри, орнамент; призначення ташок і пластин; перша пластина з Galgóc 1868 року."
+    },
+    {
+      "title": "Bana – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Bana",
+      "note": "Пагорб Ördögásta-hegy, 1956, Угорський національний музей; координати села."
+    }
+  ]
+}

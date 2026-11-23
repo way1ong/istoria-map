@@ -1,11 +1,17 @@
-import type { Basemap, HistEvent, HistMap, Illustration, MapSeries, Period, Place, RouteCollection, Tool, ToolsDoc } from './types';
+import type { Basemap, Find, FindsDoc, HistEvent, HistMap, Illustration, MapSeries, Period, Place, RouteCollection, Tool, ToolsDoc } from './types';
 import periodsJson from '../data/periods.json';
 import basemapsJson from '../data/basemaps.json';
 import toolsJson from '../data/tools.json';
 import mapSeriesJson from '../data/map-series.json';
 import illustrationsJson from '../data/illustrations.json';
+import findsJson from '../data/finds.json';
 
 const placeModules = import.meta.glob<Place>('../data/places/*.json', {
+  eager: true,
+  import: 'default',
+});
+/** Знахідки (data/finds/*.json): ті самі поля, що в місць, плюс блок find. */
+const findModules = import.meta.glob<Find>('../data/finds/*.json', {
   eager: true,
   import: 'default',
 });
@@ -49,7 +55,18 @@ export const illustrations: Record<string, Illustration> = (illustrationsJson as
 export function illustrationById(id: string): Illustration | undefined {
   return Object.prototype.hasOwnProperty.call(illustrations, id) ? illustrations[id] : undefined;
 }
-export const places: Place[] = Object.values(placeModules);
+/** Вступ до розділу «Знахідки» (data/finds.json). */
+export const findsDoc: FindsDoc = findsJson as FindsDoc;
+const periodIndex = (id: string) => periods.findIndex((p) => p.id === id);
+/** Знахідки в порядку періодів, усередині періоду — за назвою. */
+export const finds: Find[] = Object.values(findModules).sort(
+  (a, b) => periodIndex(a.periods[0]) - periodIndex(b.periods[0]) || a.name.uk.localeCompare(b.name.uk, 'uk'),
+);
+export function findById(id: string): Find | undefined {
+  return finds.find((x) => x.id === id);
+}
+/** Місця разом зі знахідками: на мапі, у пошуку й у «Що поруч» знахідка поводиться як місце з власною формою мітки. */
+export const places: Place[] = [...Object.values(placeModules), ...finds];
 export const basemaps: Basemap[] = (basemapsJson as { basemaps: Basemap[] }).basemaps
   // Підкладки з {key} в адресі доступні лише із заповненим ключем.
   .filter((b) => !(b.tiles ?? []).some((u) => u.includes('{key}')) || (b.key ?? '').trim() !== '')

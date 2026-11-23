@@ -14,7 +14,7 @@ import { createMeasure, type Measure } from '../measure';
 import { isRecording, onTracksChange } from '../tracks';
 
 /** Порядок фішок у фільтрі. */
-export const TYPES: PlaceType[] = ['castle', 'military', 'church', 'archaeological', 'monument', 'settlement', 'nature', 'farmstead', 'inn', 'mill', 'other'];
+export const TYPES: PlaceType[] = ['castle', 'military', 'church', 'archaeological', 'find', 'monument', 'settlement', 'nature', 'farmstead', 'inn', 'mill', 'other'];
 const LS_KEY = 'istoria.placeFilter';
 
 export function loadFilter(): PlaceFilter {

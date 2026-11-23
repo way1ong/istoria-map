@@ -1,0 +1,60 @@
+{
+  "id": "ujfehertoi-aranykincs",
+  "name": {
+    "uk": "Уйфегертівський золотий скарб (Újfehértói aranykincs)",
+    "hu": "Újfehértói aranykincs"
+  },
+  "type": "find",
+  "coords": [
+    21.683,
+    47.8
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "ottoman"
+  ],
+  "find": {
+    "kind": "coins",
+    "found": {
+      "date": "2002-04",
+      "precision": "exact",
+      "how": "chance",
+      "note": {
+        "uk": "господар натрапив на монети під час роботи в городі, ледве за 20 см під землею, і повідомив музей",
+        "hu": "egy gazda kerti munka közben, alig 20 cm mélyen találta az érméket, és értesítette a múzeumot"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музей Jósa András, Ніредьгаза",
+          "hu": "Jósa András Múzeum, Nyíregyháza"
+        },
+        "note": {
+          "uk": "у сейфовій залі; монети видно з обох боків",
+          "hu": "a trezorteremben; az érmék mindkét oldala megtekinthető"
+        }
+      }
+    ]
+  },
+  "summary": {
+    "uk": "261 золота монета 1436–1684 років загальною вагою близько 1,3 кг, знайдена у квітні 2002 року в городі в Újfehértó; один з найважливіших монетних скарбів Центральної Європи XV–XVII століть.",
+    "hu": "261 aranyérme 1436 és 1684 közötti évekből, összsúlyuk kb. 1,3 kg; 2002 áprilisában kerti munka közben került elő Újfehértón. A közép-európai numizmatika egyik legjelentősebb lelete a 15–17. századból."
+  },
+  "description": {
+    "uk": "Знахідники повідомили музей Jósa András у Ніредьгазі й попросили не називати їхніх імен. Археологи ще два тижні досліджували місце й зібрали загалом 261 золоту монету. Найдавніша — золотий форинт Сигізмунда Люксембурзького, карбований у Nagyszeben (1436), наймолодша — золота монета Леопольда I, карбована 1684 року в Körmöcbánya. Найбільше монет походить з Угорського королівства (132); решта — з Трансільванії, Австрії, Зальцбурга, німецьких земель і міст, Польщі, Нідерландів, Венеції, Швеції та інших країн. Є й рідкісні монети кратної ваги, зокрема десятикратний золотий форинт Дьєрдя I Ракоці, у якому 35 г щирого золота.\n\nІмовірно, це був маєток багатого купця, який сховав його біля тогочасного токайського торгового шляху, може, коли в 1684–1685 роках розпадалося Верхньоугорське князівство Імре Текелі, і вже не зміг по нього повернутися. Скарб оцінили у 103 мільйони форинтів, знахідники отримали 10 мільйонів форинтів винагороди. Наукове опрацювання завершили 2008 року.",
+    "hu": "A megtalálók értesítették a nyíregyházi Jósa András Múzeumot, és nevük elhallgatását kérték. A régészek még két hétig vizsgálták a helyet, és összesen 261 aranypénzt találtak. A legkorábbi Luxemburgi Zsigmond nagyszebeni aranyforintja (1436), a legkésőbbi I. Lipót 1684-ben Körmöcbányán vert aranypénze. A legtöbb érme a Magyar Királyság területéről származik (132 db); a többi Erdélyből, Ausztriából, Salzburgból, német tartományokból és városokból, Lengyelországból, Németalföldről, Velencéből, Svédországból és más országokból. Ritka, többszörös súlyban vert aranyak is vannak köztük, például I. Rákóczi György tízszeres aranyforintja, amely 35 gramm színaranyat tartalmaz.\n\nA kincs valószínűleg egy gazdag kereskedő vagyona volt, aki az akkori tokaji kereskedelmi út mellett rejtette el, talán Thököly Imre felső-magyarországi fejedelemségének 1684–85-ös szétesése idején, és már nem tudott visszamenni érte. A kincset 103 millió forintra értékelték, a megtalálók 10 millió forint jutalmat kaptak. Tudományos feldolgozása 2008-ra fejeződött be."
+  },
+  "sources": [
+    {
+      "title": "Újfehértói aranykincs – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/%C3%9Ajfeh%C3%A9rt%C3%B3i_aranykincs",
+      "note": "Обставини знахідки, склад, оцінка, винагорода, зберігання."
+    },
+    {
+      "title": "Újfehértó – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/%C3%9Ajfeh%C3%A9rt%C3%B3",
+      "note": "Координати міста."
+    }
+  ]
+}

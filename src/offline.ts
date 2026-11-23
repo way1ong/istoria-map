@@ -12,7 +12,7 @@
 // бере з того самого сховища; мапу Угорщини й шрифти читають напряму обробники адрес pmtiles:// і offline:// —
 // вони працюють і тоді, коли service worker ще не встановився.
 import { addProtocol, type AddProtocolAction } from 'maplibre-gl';
-import { events, illustrations, places, tools } from './data';
+import { events, finds, illustrations, places, tools } from './data';
 import { storeClear, storeDelete, storeGet, storeKeys, storePut, storeSizes, storeSupported } from './store';
 import { thumbUrl } from './ui/render';
 
@@ -69,14 +69,14 @@ const hashStr = (s: string) => {
   return (h >>> 0).toString(16);
 };
 
-/** Пакет фото: мініатюри (як їх показують картки) усіх фото місць, подій та інструментів. */
+/** Пакет фото: мініатюри (як їх показують картки) усіх фото місць, знахідок, подій та інструментів. */
 export function photosManifest(): PackManifest {
   const urls = new Set<string>();
   for (const x of [...places, ...events, ...tools]) for (const ph of x.photos ?? []) urls.add(thumbUrl(ph.url));
   // ілюстрації в текстах «Історії» й «Ландшафту» (data/illustrations.json)
   for (const ill of Object.values(illustrations)) urls.add(thumbUrl(ill.url));
-  // на сторінці «Інструменти» картки показують першу фотографію меншою мініатюрою
-  for (const x of tools) if (x.photos?.[0]) urls.add(thumbUrl(x.photos[0].url, 330));
+  // на сторінках «Інструменти» і «Знахідки» картки показують першу фотографію меншою мініатюрою
+  for (const x of [...tools, ...finds]) if (x.photos?.[0]) urls.add(thumbUrl(x.photos[0].url, 330));
   const files = [...urls].filter((u) => u.startsWith('https://thumb.wikimedia.org/')).sort().map((u): FileEntry => [u, 0]);
   return { version: hashStr(files.map((f) => f[0]).join('\n')), bytes: 0, files };
 }

@@ -1,0 +1,67 @@
+{
+  "id": "torteli-hun-ust",
+  "name": {
+    "uk": "Гунський казан з Тьортеля (Törteli hun üst)",
+    "hu": "Törteli hun üst"
+  },
+  "type": "find",
+  "coords": [
+    19.933,
+    47.117
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "migration"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "note": {
+        "uk": "обставин і року знахідки використані джерела не називають",
+        "hu": "az előkerülés körülményeit és évét a felhasznált források nem közlik"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Угорський національний музей, Будапешт",
+          "hu": "Magyar Nemzeti Múzeum, Budapest"
+        },
+        "place": "magyar-nemzeti-muzeum"
+      }
+    ]
+  },
+  "summary": {
+    "uk": "Гунський жертовний бронзовий казан початку V століття, який стаття про село називає найбільшим у світі; зберігається в Угорському національному музеї.",
+    "hu": "5. század eleji hun áldozati bronzüst, amelyet a község szócikke a világ legnagyobb méretűjeként említ; a Magyar Nemzeti Múzeumban látható."
+  },
+  "description": {
+    "uk": "Бронзові казани, відлиті з двох або чотирьох частин і спаяні, належать до найвідоміших речей гунської доби; їх знаходять від Внутрішньої Азії до Франції, і це відбиває шлях гунів. В Угорщині цілі казани відомі з Törtel, Hőgyész і Rádpuszta.",
+    "hu": "A két vagy négy darabban öntött, majd összeforrasztott bronzüstök a hun kor legismertebb tárgyai közé tartoznak; Belső-Ázsiától Franciaországig terjedő előfordulásuk a hunok mozgási terét tükrözi. Magyarországon Törtelről, Hőgyészről és Rádpusztáról ismertek ép példányok."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Replica_of_the_hun_cauldron_from_T%C3%B6rtel_%281%29.jpg",
+      "author": "Elekes Andor",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Replica_of_the_hun_cauldron_from_T%C3%B6rtel_%281%29.jpg",
+      "caption": {
+        "uk": "Копія гунського казана з Törtel",
+        "hu": "A törteli hun üst másolata"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Törtel – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/T%C3%B6rtel",
+      "note": "Казан початку V століття, музей; координати села."
+    },
+    {
+      "title": "Hun művészet – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Hun_m%C5%B1v%C3%A9szet",
+      "note": "Гунські бронзові казани, їхнє поширення; цілі казани з Угорщини."
+    }
+  ]
+}

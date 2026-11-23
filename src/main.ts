@@ -4,7 +4,7 @@ import './ui/lightbox';
 
 import { registerSW } from 'virtual:pwa-register';
 import { availableBasemaps } from './basemap';
-import { histMaps, placeById, places, routesForEvent } from './data';
+import { findById, histMaps, placeById, places, routesForEvent } from './data';
 import { mountAnimation, type AnimHandle } from './anim';
 import { mountCompare, type CompareHandle } from './compare';
 import { getLang, lt, setLang, t } from './i18n';
@@ -13,6 +13,7 @@ import { dropSavedView, showGlFailure, takeSavedView, watchContextLoss } from '.
 import { mapChoices } from './oldmap';
 import { chronologyPage } from './pages/chronology';
 import { eventPage, historyIndex, periodPage, placePage } from './pages/history';
+import { findPage, findsIndex } from './pages/finds';
 import { landscapePage, mountLandscape } from './pages/landscape';
 import { toolPage, toolsIndex } from './pages/tools';
 import { navigate, onRoute, type Route } from './router';
@@ -31,7 +32,7 @@ const app = document.getElementById('app')!;
 app.innerHTML = `
   <header class="topbar">
     <h1 id="title"></h1>
-    <nav class="tabs"><button id="tab-map"></button><button id="tab-history"></button><button id="tab-compare"></button><button id="tab-landscape"></button><button id="tab-tools"></button></nav>
+    <nav class="tabs"><button id="tab-map"></button><button id="tab-history"></button><button id="tab-compare"></button><button id="tab-landscape"></button><button id="tab-finds"></button><button id="tab-tools"></button></nav>
     <select id="nav-select" class="nav-select"></select>
     <div class="lang"><button data-lang="uk">UK</button><button data-lang="hu">HU</button></div>
   </header>
@@ -122,19 +123,20 @@ function ensureMap(): MapController | null {
   return mapCtl;
 }
 
-type Section = 'map' | 'history' | 'compare' | 'landscape' | 'tools';
-const SECTIONS: Section[] = ['map', 'history', 'compare', 'landscape', 'tools'];
+type Section = 'map' | 'history' | 'compare' | 'landscape' | 'finds' | 'tools';
+const SECTIONS: Section[] = ['map', 'history', 'compare', 'landscape', 'finds', 'tools'];
 const sectionLabel: Record<Section, () => string> = {
-  map: () => t('tabMap'), history: () => t('tabHistory'), compare: () => t('tabCompare'), landscape: () => t('tabLandscape'), tools: () => t('tabTools'),
+  map: () => t('tabMap'), history: () => t('tabHistory'), compare: () => t('tabCompare'), landscape: () => t('tabLandscape'), finds: () => t('tabFinds'), tools: () => t('tabTools'),
 };
 function currentSection(): Section {
   if (route.page === 'map' || route.page === 'compare' || route.page === 'landscape') return route.page;
   if (route.page === 'tools' || route.page === 'tool') return 'tools';
+  if (route.page === 'finds' || route.page === 'find') return 'finds';
   return 'history';
 }
 function goSection(s: Section) {
   const q = state.period ? `?period=${state.period}` : '';
-  navigate({ map: `#/map${q}`, history: '#/history', compare: `#/compare${q}`, landscape: '#/landscape', tools: '#/tools' }[s]);
+  navigate({ map: `#/map${q}`, history: '#/history', compare: `#/compare${q}`, landscape: '#/landscape', finds: '#/finds', tools: '#/tools' }[s]);
 }
 
 function renderChrome() {
@@ -285,7 +287,20 @@ function render() {
     case 'history': page.innerHTML = historyIndex(); break;
     case 'period': page.innerHTML = periodPage(route.id); break;
     case 'chronology': page.innerHTML = chronologyPage(route.period); break;
-    case 'place': page.innerHTML = placePage(route.id); break;
+    case 'place':
+      // знахідка має власну сторінку в розділі «Знахідки»
+      if (findById(route.id)) { location.replace(`#/find/${route.id}`); return; }
+      page.innerHTML = placePage(route.id);
+      break;
+    case 'finds': {
+      page.innerHTML = findsIndex(route.kind, route.period, route.how);
+      // на телефоні фішки періодів — один рядок, що гортається вбік: вибрану показуємо, навіть якщо вона за краєм
+      const nav = page.querySelector<HTMLElement>('.finds-periods');
+      const act = nav?.querySelector<HTMLElement>('.chip.active');
+      if (nav && act) nav.scrollLeft += act.getBoundingClientRect().left - nav.getBoundingClientRect().left - 48;
+      break;
+    }
+    case 'find': page.innerHTML = findPage(route.id); break;
     case 'tools': page.innerHTML = toolsIndex(route.audience); break;
     case 'tool': page.innerHTML = toolPage(route.id); break;
     case 'landscape': page.innerHTML = landscapePage(); mountLandscape(page); break;

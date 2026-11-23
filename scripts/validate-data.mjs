@@ -80,22 +80,19 @@ if (periodsDoc) {
     });
 }
 
-// places
+// places і finds: знахідка (data/finds) — це місце з типом find і блоком find; на мапі вони показуються разом
 const placeIds = new Set();
 const placeTypes = ['settlement', 'archaeological', 'church', 'castle', 'military', 'monument', 'nature', 'farmstead', 'inn', 'mill', 'other'];
-for (const { file, path, name } of listJson('places')) {
-  const p = readJson(path);
-  if (!p) continue;
+// рік до 6 цифр: події палеоліту (сотні тисяч років до н. е.)
+const dateRe = /^-?\d{1,6}(-\d{2}(-\d{2})?)?$/;
+function checkPlace(file, p, name) {
   if (p.id !== name) err(file, `id "${p.id}" має збігатися з назвою файлу "${name}"`);
+  if (placeIds.has(p.id)) err(file, `id "${p.id}" уже є серед місць чи знахідок (назви файлів у data/places і data/finds не мають повторюватися)`);
   placeIds.add(p.id);
   if (!isLText(p.name)) err(file, 'name.uk відсутній');
-  if (!placeTypes.includes(p.type)) err(file, `type має бути одним із: ${placeTypes.join(', ')}`);
   checkCoords(file, p.coords);
   if (!['exact', 'approximate', 'settlement'].includes(p.coordsPrecision))
     err(file, 'coordsPrecision має бути exact | approximate | settlement');
-  const openCoords = (p.sources ?? []).some((s) => /координати опубліковані відкрито/i.test(s?.note ?? ''));
-  if (p.type === 'archaeological' && p.coordsPrecision === 'exact' && !openCoords)
-    err(file, 'археологічна пам\'ятка з coordsPrecision "exact": додайте в note джерела фразу «Координати опубліковані відкрито» з поясненням, або змініть на approximate/settlement');
   if (!Array.isArray(p.periods) || p.periods.length === 0) err(file, 'periods порожній');
   else p.periods.forEach((id) => periodIds.has(id) || err(file, `невідомий період "${id}"`));
   if (!isLText(p.summary)) err(file, 'summary.uk відсутній');
@@ -104,11 +101,71 @@ for (const { file, path, name } of listJson('places')) {
   checkPhotos(file, p.photos);
   checkSources(file, p.sources);
 }
+for (const { file, path, name } of listJson('places')) {
+  const p = readJson(path);
+  if (!p) continue;
+  checkPlace(file, p, name);
+  if (!placeTypes.includes(p.type)) err(file, `type має бути одним із: ${placeTypes.join(', ')} (знахідки лежать у data/finds)`);
+  if (p.find !== undefined) err(file, 'блок find буває лише у файлах data/finds');
+  const openCoords = (p.sources ?? []).some((s) => /координати опубліковані відкрито/i.test(s?.note ?? ''));
+  if (p.type === 'archaeological' && p.coordsPrecision === 'exact' && !openCoords)
+    err(file, 'археологічна пам\'ятка з coordsPrecision "exact": додайте в note джерела фразу «Координати опубліковані відкрито» з поясненням, або змініть на approximate/settlement');
+}
+
+// finds: data/finds.json (вступ до розділу) і data/finds/<id>.json (знахідки)
+const sitePlaceIds = new Set(placeIds);
+const findKinds = ['hoard', 'coins', 'burial', 'ritual', 'object', 'remains'];
+const findHows = ['excavation', 'chance', 'detector', 'unknown'];
+// музей може бути й за кордоном (Відень, Лондон): межі лише від переплутаних довготи й широти
+const EUROPE = [-10, 40, 35, 60];
+const findFiles = listJson('finds');
+const findsDocPath = join(root, 'finds.json');
+if (findFiles.length || existsSync(findsDocPath)) {
+  const doc = existsSync(findsDocPath) ? readJson(findsDocPath) : null;
+  if (!doc) err('data/finds.json', 'файл потрібен, коли є data/finds/*.json');
+  else if (!isLText(doc.intro)) err('data/finds.json', 'intro.uk відсутній');
+}
+for (const { file, path, name } of findFiles) {
+  const p = readJson(path);
+  if (!p) continue;
+  checkPlace(file, p, name);
+  if (p.type !== 'find') err(file, 'type має бути "find"');
+  if (p.vanished !== undefined) err(file, 'vanished для знахідок не використовується');
+  const f = p.find;
+  if (!f || typeof f !== 'object') { err(file, 'блок find відсутній'); continue; }
+  if (!findKinds.includes(f.kind)) err(file, `find.kind має бути одним із: ${findKinds.join(', ')}`);
+  const d = f.found;
+  if (!d || typeof d !== 'object') err(file, 'find.found відсутній');
+  // рік знахідки джерела називають не завжди: тоді дати й точності немає, лишається спосіб (how) і примітка
+  if (d?.date !== undefined && (typeof d.date !== 'string' || !dateRe.test(d.date))) err(file, 'find.found.date має бути рядком виду "1799", "1926-04" або "1971-03-05"');
+  if (d?.to !== undefined && (d.date === undefined || !dateRe.test(d.to))) err(file, 'find.found.to у неправильному форматі (і лише разом з date)');
+  if (d?.date !== undefined && !['exact', 'approximate', 'tradition'].includes(d?.precision)) err(file, 'find.found.precision має бути exact | approximate | tradition');
+  if (d?.date === undefined && d?.precision !== undefined) err(file, 'find.found.precision без date не потрібен');
+  if (d?.how !== undefined && !findHows.includes(d.how)) err(file, `find.found.how має бути одним із: ${findHows.join(', ')}`);
+  if (d && d.date === undefined && d.how === undefined && !isLText(d.note)) err(file, 'find.found: потрібне хоча б одне з date, how, note');
+  if (d?.note !== undefined && !isLText(d.note)) err(file, 'find.found.note.uk відсутній');
+  if (f.keptAt !== undefined) {
+    if (!Array.isArray(f.keptAt) || f.keptAt.length === 0) err(file, 'find.keptAt має бути непорожнім масивом (або приберіть поле, якщо джерела не кажуть, де зберігається знахідка)');
+    else f.keptAt.forEach((k, i) => {
+      if (!isLText(k?.name)) err(file, `find.keptAt[${i}].name.uk відсутній`);
+      if (k?.place !== undefined && !sitePlaceIds.has(k.place)) err(file, `find.keptAt[${i}].place: немає місця "${k.place}" у data/places`);
+      if (k?.coords !== undefined) checkCoords(file, k.coords, `find.keptAt[${i}].coords`, EUROPE);
+      if (k?.note !== undefined && !isLText(k.note)) err(file, `find.keptAt[${i}].note.uk відсутній`);
+    });
+  }
+  if (f.fate !== undefined && !isLText(f.fate)) err(file, 'find.fate.uk відсутній');
+  for (const k of ['abroad', 'spotPublic']) if (f[k] !== undefined && typeof f[k] !== 'boolean') err(file, `find.${k} має бути true/false`);
+  if (f.spotNote !== undefined && !isLText(f.spotNote)) err(file, 'find.spotNote.uk відсутній');
+  // Місце знахідки не показуємо точніше, ніж у відкритому джерелі: точна мітка — лише для загальновідомих місць,
+  // відкритих для відвідувачів (музей, пам'ятка); решта — центр населеного пункту або приблизно, до 3 знаків.
+  if (p.coordsPrecision === 'exact' && f.spotPublic !== true)
+    err(file, 'знахідка з coordsPrecision "exact": це дозволено лише з find.spotPublic: true (місце загальновідоме й відкрите для відвідувачів); інакше settlement або approximate');
+  if (p.coordsPrecision !== 'exact' && Array.isArray(p.coords) && p.coords.some((n) => typeof n === 'number' && Math.abs(n * 1000 - Math.round(n * 1000)) > 1e-6))
+    err(file, 'coords знахідки без точного місця округлюйте до 3 знаків після коми');
+}
 
 // events
 const eventIds = new Set();
-// рік до 6 цифр: події палеоліту (сотні тисяч років до н. е.)
-const dateRe = /^-?\d{1,6}(-\d{2}(-\d{2})?)?$/;
 for (const { file, path, name } of listJson('events')) {
   const e = readJson(path);
   if (!e) continue;
@@ -257,8 +314,8 @@ for (const { file, path, name } of listJson('maps')) {
       for (const k of ['license', 'attribution']) if (typeof g?.[k] !== 'string' || !g[k].trim()) err(`data/${m.url}`, `${k} відсутній`);
     }
   } else if (m.legend !== undefined) err(file, 'legend буває лише в мап type: geojson');
-  if (m.placeTypes !== undefined && (!Array.isArray(m.placeTypes) || m.placeTypes.length === 0 || m.placeTypes.some((x) => !placeTypes.includes(x))))
-    err(file, `placeTypes має бути непорожнім масивом типів місць: ${placeTypes.join(', ')}`);
+  if (m.placeTypes !== undefined && (!Array.isArray(m.placeTypes) || m.placeTypes.length === 0 || m.placeTypes.some((x) => ![...placeTypes, 'find'].includes(x))))
+    err(file, `placeTypes має бути непорожнім масивом типів місць: ${[...placeTypes, 'find'].join(', ')}`);
   if (m.type === 'image') {
     if (!Array.isArray(m.coordinates) || m.coordinates.length !== 4) err(file, 'coordinates: потрібно 4 кути [NW, NE, SE, SW]');
     else m.coordinates.forEach((c, i) => checkCoords(file, c, `coordinates[${i}]`, MAP_REGION));
@@ -455,4 +512,4 @@ if (errors.length) {
   for (const e of errors) console.error(' - ' + e);
   process.exit(1);
 }
-console.log(`Дані перевірено: ${periodIds.size} періодів, ${placeIds.size} місць, ${listJson("events").length} подій, ${listJson("maps").length} мап, ${existsSync(routesDir) ? readdirSync(routesDir).filter((f) => f.endsWith(".geojson")).length : 0} анімацій, ${bordersCount} років кордонів, ${toolFiles.length} інструментів.`);
+console.log(`Дані перевірено: ${periodIds.size} періодів, ${sitePlaceIds.size} місць, ${findFiles.length} знахідок, ${listJson("events").length} подій, ${listJson("maps").length} мап, ${existsSync(routesDir) ? readdirSync(routesDir).filter((f) => f.endsWith(".geojson")).length : 0} анімацій, ${bordersCount} років кордонів, ${toolFiles.length} інструментів.`);

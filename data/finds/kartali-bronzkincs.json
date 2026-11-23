@@ -1,0 +1,60 @@
+{
+  "id": "kartali-bronzkincs",
+  "name": {
+    "uk": "Бронзовий скарб з Карталя (Kartali bronzkincs)",
+    "hu": "Kartali késő bronzkori bronzkincs"
+  },
+  "type": "find",
+  "coords": [
+    19.528,
+    47.667
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory"
+  ],
+  "find": {
+    "kind": "hoard",
+    "found": {
+      "date": "2019-09",
+      "precision": "exact",
+      "how": "detector",
+      "note": {
+        "uk": "двоє пошуковців-волонтерів, що співпрацюють з музеєм, повідомили про бронзові речі й черепки; у жовтні музей розкопав схованку",
+        "hu": "a múzeummal együttműködő két önkéntes fémkeresős jelezte a bronztárgyakat és kerámiatöredékeket; októberben a múzeum feltárta a depót"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музейний центр Ferenczy (Ferenczy Múzeumi Centrum), Сентендре",
+          "hu": "Ferenczy Múzeumi Centrum, Szentendre"
+        }
+      }
+    ],
+    "spotNote": {
+      "uk": "Музей описує місце як схил пагорба на південь від села",
+      "hu": "A múzeum a helyet a falutól délre fekvő domboldalként írja le"
+    }
+  },
+  "summary": {
+    "uk": "93 бронзові предмети загальною вагою 15,932 кг, закопані між 1100 і 900 роками до н. е.: зброя, сокири, серпи, прикраси й сировина для лиття. Знайдені 2019 року біля Карталя пошуковцями-волонтерами й музеєм.",
+    "hu": "93 bronztárgy, összesen 15,932 kg, amelyet Kr. e. 1100–900 között rejtettek a földbe: fegyverek, balták, sarlók, ékszerek és öntési nyersanyag. 2019-ben Kartal határában önkéntes fémkeresősök és a múzeum találták."
+  },
+  "description": {
+    "uk": "Наприкінці вересня 2019 року двоє волонтерів-пошуковців, які співпрацюють з Музейним центром Ferenczy, повідомили, що на околиці Карталя знайшли бронзові речі й уламки посуду. На початку жовтня археологи заклали на цьому місці розкоп 2,4 × 1,4 м. На глибині 25–38 см лежали шістнадцять предметів, зрушених знахідниками, а на глибині 38–48 см, у первісному положенні, — уламки посудини й ще сімдесят сім бронзових речей на площі близько 40 × 30 см, у кілька шарів. Довкола більше нічого не було, тож скарб, імовірно, закопали осторонь від тогочасних поселень.\n\nУ скарбі уламок меча й наконечник списа, десять втульчастих сокир, сокира з крильцями, серпи, долото, два браслети, спіраль, каблучка, шпилька й диск; 11,455 кг, тобто близько 72 % ваги, — це уламки, зливки й шматки литва. Сокири з Y-подібними ребрами датують скарб періодами Ha A2–Ha B1, тобто 1100–900 роками до н. е. Від початку 2000-х років такі скарби дедалі частіше тлумачать як жертовні дари.",
+    "hu": "2019 szeptemberének végén a Ferenczy Múzeumi Centrummal együttműködő két önkéntes fémkeresős jelezte, hogy Kartal határában bronztárgyakat és kerámiatöredékeket talált. Október elején a régészek 2,4 × 1,4 m-es szelvényt nyitottak a helyen. 25–38 cm mélyen a találók által kimozdított tizenhat tárgy feküdt, 38–48 cm mélyen pedig eredeti helyzetben egy edény töredékei és további hetvenhét bronztárgy, kb. 40 × 30 cm-es területen, több rétegben. A környéken más lelet nem került elő, így a depót valószínűleg a korabeli településektől távolabb ásták el.\n\nA kincsben egy kard töredéke és egy lándzsahegy, tíz tokosbalta, egy szárnyasbalta, sarlók, egy tokosvéső, két karperec, egy spiráltekercs, egy gyűrű, egy tű és egy korong volt; 11,455 kg, a teljes súly mintegy 72%-a bronztöredék, öntecs és öntőrög. Az Y-bordás tokosbalták a Ha A2–Ha B1 időszakra, azaz Kr. e. 1100–900 közé keltezik a depót. A 2000-es évek óta az ilyen kincseket egyre inkább áldozati, fogadalmi felajánlásként értelmezik."
+  },
+  "sources": [
+    {
+      "title": "Mellár B. – Patay R., Késő bronzkori bronzkincs Kartalról. In: Kincskeresés, kaland, tudomány. Közösségi régészeti projektek Pest megyében. Ferenczy Múzeumi Centrum, Szentendre 2021, 44–49",
+      "url": "https://real.mtak.hu/89623/1/KKT_regeszeti_kiadvany_20210805.pdf",
+      "note": "Усі факти про знахідку, розкоп, склад і датування скарбу."
+    },
+    {
+      "title": "Kartal (település) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kartal_%28telep%C3%BCl%C3%A9s%29",
+      "note": "Координати села."
+    }
+  ]
+}

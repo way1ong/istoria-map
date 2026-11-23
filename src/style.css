@@ -47,12 +47,15 @@ header.topbar h1 { font-size: 16px; margin: 0; flex: 1 1 0; min-width: 0; white-
 .lang button { padding: 6px 6px; border-radius: 8px; color: var(--muted); font-weight: 600; white-space: nowrap; }
 /* Поле вибору розділу: на телефонах замість рядка вкладок */
 .nav-select { display: none; font: inherit; font-weight: 600; font-size: 15px; color: var(--fg); background: var(--line); border: none; border-radius: 8px; padding: 7px 8px; min-width: 0; max-width: 100%; }
-/* Вузькі екрани: заголовок ховається, вкладки замінює поле вибору, перемикач мови лишається в рядку */
+/* Вузькі екрани: вкладки замінює поле вибору, перемикач мови лишається в рядку. Шість вкладок українською
+   займають 565 px, тож разом із заголовком і мовою їм потрібно понад 760 px. */
+@media (max-width: 760px) {
+  .tabs { display: none; }
+  .nav-select { display: block; flex: none; max-width: 56vw; }
+}
 @media (max-width: 600px) {
   header.topbar { gap: 6px; padding: 0 8px; padding-top: env(safe-area-inset-top); }
   header.topbar h1 { font-size: 15px; }
-  .tabs { display: none; }
-  .nav-select { display: block; flex: none; max-width: 56vw; }
   .lang button { padding: 6px 5px; font-size: 14px; }
 }
 /* Найвужчі екрани: лише поле вибору й мова */
@@ -207,6 +210,36 @@ figcaption { font-size: 12px; color: var(--muted); }
 .page .lead { font-size: 17px; }
 .tool-nav { display: flex; justify-content: space-between; gap: 12px; margin: 24px 0 8px; font-size: 14px; }
 .tool-nav a { text-decoration: none; }
+
+/* Розділ «Знахідки»: відомості про знахідку (картка на мапі й сторінка), позначки, заголовки періодів у переліку */
+.find-facts { margin: 8px 0 10px; display: grid; gap: 8px; font-size: 14px; line-height: 1.4; }
+.find-facts div { display: grid; grid-template-columns: 9.5em minmax(0, 1fr); gap: 2px 10px; }
+.find-facts dt { color: var(--muted); }
+.find-facts dd { margin: 0; overflow-wrap: anywhere; }
+.find-facts ul { margin: 0; padding-left: 18px; }
+@media (max-width: 480px) {
+  .find-facts div { grid-template-columns: minmax(0, 1fr); }
+  .find-facts dt { font-size: 12px; }
+}
+.badge-abroad { background: var(--card); color: var(--fg); border: 1.5px solid var(--muted); }
+.who-row .badge { font-size: 11px; }
+.page h2.find-period { border-left: 6px solid var(--c); padding-left: 10px; }
+.find-period span { font-weight: 400; font-size: 14px; color: var(--muted); margin-left: 4px; white-space: nowrap; }
+.finds-intro > :first-child { margin-top: 0; }
+.finds-intro p { margin: 6px 0; }
+.finds-intro details { margin: 4px 0 2px; }
+.finds-intro summary { cursor: pointer; color: var(--accent); font-size: 14px; }
+/* картка знахідки без фото: значок мітки кольором періоду */
+.page .tool-card .find-thumb-empty { display: grid; place-items: center; background: color-mix(in srgb, var(--c) 14%, var(--card)); }
+.badge-det { background: var(--card); color: var(--accent); border: 1.5px solid var(--accent); }
+.chip-det { border-style: dashed; border-color: var(--accent); }
+.chip-det.active { background: var(--accent); border-color: var(--accent); border-style: solid; color: #fff; }
+/* на телефоні фішки періодів — одним рядком, що гортається вбік: перелік знахідок починається вище */
+@media (max-width: 600px) {
+  .finds-periods { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-right: -16px; padding-right: 16px; }
+  .finds-periods::-webkit-scrollbar { display: none; }
+  .finds-periods .chip { flex: none; white-space: nowrap; }
+}
 
 /* Розділ «Ландшафт» */
 .page .jump { position: sticky; top: -16px; z-index: 2; display: flex; gap: 8px; align-items: center; padding: 24px 0 8px; margin: -16px 0 8px; background: var(--bg); border-bottom: 1px solid var(--line); font-size: 14px; color: var(--muted); }
