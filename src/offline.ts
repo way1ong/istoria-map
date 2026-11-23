@@ -1,31 +1,39 @@
-// Робота без інтернету: пакети файлів у кеші браузера (Cache Storage) і читання з них мапи Угорщини.
+// Робота без інтернету: пакети файлів у сховищі браузера і читання з них мапи Угорщини.
+//
+// Файли лежать у базі IndexedDB (src/store.ts), а не в Cache Storage: кеші спільні для всіх сайтів з однієї адреси,
+// і сусідній сайт може їх стерти (CLAUDE.md, п. 35). Те, що завантажили до цієї зміни, переноситься з давніх кешів
+// само (migrateLegacy), а поки переноситься — читається й звідти.
 //
 // Пакети: basemap — сучасна мапа (частини файлу PMTiles, стиль, шрифти), generalkarte — тайли генеральної
 // мапи ~1910, oldmaps — запасні зображення старих мап (огляд Spezialkarte, аркуші біля Göd, Ліпскі),
 // photos — мініатюри фото карток. Перелік файлів дає offline/packs.json (його створює
 // scripts/offline/packs-plugin.mjs під час збірки), перелік фото — самі дані карток.
-// Тайли generalkarte, зображення старих мап і фото service worker (vite.config.ts) бере з тих самих кешів;
-// мапу Угорщини й шрифти читають напряму обробники адрес pmtiles:// і offline:// — вони працюють і тоді,
-// коли service worker ще не встановився.
+// Тайли generalkarte, зображення старих мап і фото service worker (vite.config.ts, public/sw-extra.js)
+// бере з того самого сховища; мапу Угорщини й шрифти читають напряму обробники адрес pmtiles:// і offline:// —
+// вони працюють і тоді, коли service worker ще не встановився.
 import { addProtocol, type AddProtocolAction } from 'maplibre-gl';
 import { events, illustrations, places, tools } from './data';
+import { storeClear, storeDelete, storeGet, storeKeys, storePut, storeSizes, storeSupported } from './store';
 import { thumbUrl } from './ui/render';
 
 export type PackId = 'basemap' | 'generalkarte' | 'oldmaps' | 'photos';
 export const PACK_IDS: PackId[] = ['basemap', 'generalkarte', 'oldmaps', 'photos'];
-/** Назви кешів; ті самі назви — у правилах service worker у vite.config.ts. */
-export const CACHE_NAME: Record<PackId, string> = {
+/** Розділи сховища: пакети й збережені ділянки старих мап (src/offlineareas.ts). */
+export type PackBucket = PackId | 'iiif';
+/** Давні кеші (до 23.11.2026 пакети лежали в Cache Storage); ті самі назви — у public/sw-extra.js. */
+export const LEGACY_CACHE: Record<PackBucket, string> = {
   basemap: 'istoria-offline-basemap',
   generalkarte: 'istoria-offline-generalkarte',
   oldmaps: 'istoria-offline-oldmaps',
   photos: 'istoria-offline-photos',
+  iiif: 'istoria-offline-iiif',
 };
 
 /** Корінь сайту, напр. https://way1ong.github.io/istoria-map/ */
 const SITE = new URL(import.meta.env.BASE_URL, location.href).href;
 export const siteUrl = (path: string) => new URL(path, SITE).href;
-/** Cache Storage є лише на https (і localhost). */
-export const offlineSupported = () => typeof caches !== 'undefined';
+/** Потрібні IndexedDB і service worker; останній (як і Cache Storage) є лише на https і localhost. */
+export const offlineSupported = () => storeSupported() && typeof caches !== 'undefined';
 
 /** [шлях від кореня сайту або повна адреса, розмір у байтах (0 — невідомий)] */
 type FileEntry = [string, number];
@@ -117,10 +125,9 @@ const emit = () => listeners.forEach((cb) => cb());
 // ---------- завантажене зникло ----------
 const LOST_KEY = 'istoria.offline.lost';
 /**
- * Позначка «завантажене раніше зникло зі сховища». Кеші браузера спільні для всіх сайтів з однієї адреси
- * (на GitHub Pages це всі сайти одного власника: way1ong.github.io/…), тож стерти їх може не лише сам браузер,
- * коли бракує місця, а й сусідній сайт, який прибирає «зайві» кеші. Панель показує пояснення, доки його
- * не закриють або не завантажать щось знову.
+ * Позначка «завантажене раніше зникло зі сховища»: браузер може стерти дані сайту, коли на пристрої бракує місця,
+ * або їх очищує сама людина. (Сусідні сайти з тієї самої адреси, які стирали давні кеші, до бази IndexedDB
+ * не дістають.) Панель показує пояснення, доки його не закриють або не завантажать щось знову.
  */
 export const offlineLost = (): boolean => readLS<number>(LOST_KEY) !== null;
 export function setOfflineLost(v: boolean): void {
@@ -129,8 +136,63 @@ export function setOfflineLost(v: boolean): void {
   emit();
 }
 
-// ---------- читання мапи Угорщини з кешу ----------
-/** Джерело для бібліотеки pmtiles: шматки файлу беруться з частин, що лежать у кеші браузера. */
+// ---------- давні кеші ----------
+/** Розділи, чий давній кеш ще може існувати (після перенесення чи перевірки розділ звідси зникає). */
+const legacyLeft = new Set<PackBucket>(['basemap', 'generalkarte', 'oldmaps', 'photos', 'iiif']);
+
+/** Файл пакета: зі сховища, а якщо давній кеш ще не перенесено — з нього. */
+export async function packBlob(bucket: PackBucket, url: string): Promise<Blob | undefined> {
+  const blob = await storeGet(bucket, url);
+  if (blob) return blob;
+  if (!legacyLeft.has(bucket) || typeof caches === 'undefined') return undefined;
+  return (await caches.match(url, { cacheName: LEGACY_CACHE[bucket], ignoreVary: true }).catch(() => undefined))?.blob();
+}
+
+/** Адреси файлів розділу — у сховищі й у ще не перенесеному давньому кеші. */
+export async function packKeys(bucket: PackBucket): Promise<Set<string>> {
+  const keys = new Set(await storeKeys(bucket));
+  if (legacyLeft.has(bucket) && typeof caches !== 'undefined' && await caches.has(LEGACY_CACHE[bucket])) {
+    for (const r of await (await caches.open(LEGACY_CACHE[bucket])).keys()) keys.add(r.url);
+  }
+  return keys;
+}
+
+type LegacyEntry = (bucket: PackBucket, url: string, res: Response) => Promise<boolean>;
+let legacyEntry: LegacyEntry | null = null;
+/** Записи давнього кешу, які переносяться не як файли (переліки тайлів ділянок — src/offlineareas.ts). */
+export function onLegacyEntry(fn: LegacyEntry): void { legacyEntry = fn; }
+
+let migrateP: Promise<void> | null = null;
+/**
+ * Перенести завантажене з давніх кешів у сховище (один раз, у тлі): файл записується в базу й одразу прибирається
+ * з кешу, тож зайвого місця це майже не займає. Якщо щось не вдалося, давній кеш лишається й читається далі.
+ */
+export function migrateLegacy(): Promise<void> {
+  migrateP ??= (async () => {
+    if (!offlineSupported()) { legacyLeft.clear(); return; }
+    for (const bucket of [...legacyLeft]) {
+      const name = LEGACY_CACHE[bucket];
+      try {
+        if (await caches.has(name)) {
+          const cache = await caches.open(name);
+          for (const req of await cache.keys()) {
+            const res = await cache.match(req);
+            if (res && !(await legacyEntry?.(bucket, req.url, res.clone()))) await storePut(bucket, req.url, await res.blob());
+            await cache.delete(req);
+          }
+          await caches.delete(name);
+        }
+        legacyLeft.delete(bucket);
+      } catch (e) {
+        console.warn('Перенесення завантаженого в нове сховище:', name, e);
+      }
+    }
+  })();
+  return migrateP;
+}
+
+// ---------- читання мапи Угорщини зі сховища ----------
+/** Джерело для бібліотеки pmtiles: шматки файлу беруться з частин, що лежать у сховищі браузера. */
 class CachedPartsSource {
   private starts: number[] = [];
   private total = 0;
@@ -144,10 +206,10 @@ class CachedPartsSource {
     if (b) this.blobs.delete(i); // перенести в кінець (найсвіжіший)
     else {
       const url = siteUrl(this.parts[i][0]);
-      b = caches.match(url, { ignoreVary: true }).then((r) => {
-        if (!r) throw new Error(`немає в кеші: ${url}`);
-        // відповідь з кешу — посилання на файл на диску, у пам'ять він не читається
-        return r.blob();
+      b = packBlob('basemap', url).then((blob) => {
+        if (!blob) throw new Error(`немає у сховищі: ${url}`);
+        // Blob зі сховища — посилання на файл на диску, у пам'ять він не читається
+        return blob;
       });
       b.catch(() => { if (this.blobs.get(i) === b) this.blobs.delete(i); });
     }
@@ -173,7 +235,7 @@ let pmtilesProto: Promise<AddProtocolAction> | null = null;
 function resetOfflineSource() { pmtilesProto = null; }
 
 if (offlineSupported()) {
-  // pmtiles://offline-hungary — мапа Угорщини з частин у кеші (бібліотека pmtiles вантажиться лише тоді)
+  // pmtiles://offline-hungary — мапа Угорщини з частин у сховищі (бібліотека pmtiles вантажиться лише тоді)
   addProtocol('pmtiles', async (params, ac) => {
     if (!pmtilesProto) {
       const p = import('pmtiles').then(({ PMTiles, Protocol }) => {
@@ -187,11 +249,12 @@ if (offlineSupported()) {
     return (await pmtilesProto)(params, ac);
   });
 }
-// offline://<шлях від кореня сайту> — стиль і шрифти: з кешу пакета, а якщо їх там немає — із сайту
+// offline://<шлях від кореня сайту> — стиль і шрифти: зі сховища пакета, а якщо їх там немає — із сайту
 addProtocol('offline', async (params, ac) => {
   const url = siteUrl(params.url.slice('offline://'.length));
-  let res = offlineSupported() ? await caches.match(url, { ignoreVary: true }) : undefined;
-  if (!res) res = await fetch(url, { signal: ac.signal });
+  const blob = offlineSupported() ? await packBlob('basemap', url).catch(() => undefined) : undefined;
+  if (blob) return { data: params.type === 'json' ? JSON.parse(await blob.text()) : await blob.arrayBuffer() };
+  const res = await fetch(url, { signal: ac.signal });
   if (!res.ok) throw new Error(`${res.status}: ${url}`);
   return { data: params.type === 'json' ? await res.json() : await res.arrayBuffer() };
 });
@@ -239,23 +302,27 @@ const sleep = (ms: number, signal: AbortSignal) => new Promise<void>((res, rej) 
   signal.addEventListener('abort', () => { clearTimeout(id); rej(signal.reason); }, { once: true });
 });
 
-/** Завантажити один файл у кеш, рахуючи байти на льоту; розмір перевіряється, якщо відомий. */
-export async function fetchInto(cache: Cache, url: string, expected: number, signal: AbortSignal, onBytes: (n: number) => void): Promise<number> {
+/** Завантажити один файл у сховище, рахуючи байти на льоту; розмір перевіряється, якщо відомий. */
+export async function fetchInto(bucket: PackBucket, url: string, expected: number, signal: AbortSignal, onBytes: (n: number) => void): Promise<number> {
   for (let attempt = 0; ; attempt++) {
     let got = 0;
     try {
-      // no-store: файл іде лише в кеш пакета, без другої копії в звичайному кеші браузера
+      // no-store: файл іде лише у сховище пакета, без другої копії в звичайному кеші браузера
       const res = await fetch(url, { signal, cache: 'no-store', mode: 'cors', credentials: 'omit' });
       if (res.status === 429 || res.status >= 500) throw new Retry(`${res.status}`);
       if (!res.ok || !res.body) throw new Error(`${res.status}: ${url}`);
-      const counter = new TransformStream<Uint8Array, Uint8Array>({
-        transform(chunk, ctl) { got += chunk.byteLength; onBytes(chunk.byteLength); ctl.enqueue(chunk); },
-      });
-      await cache.put(url, new Response(res.body.pipeThrough(counter), { status: 200, headers: res.headers }));
-      if (expected > 0 && got !== expected) {
-        await cache.delete(url);
-        throw new Retry(`розмір ${got} замість ${expected}`);
+      const chunks: Uint8Array<ArrayBuffer>[] = [];
+      const reader = res.body.getReader();
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        got += value.byteLength;
+        onBytes(value.byteLength);
+        chunks.push(value as Uint8Array<ArrayBuffer>);
       }
+      if (expected > 0 && got !== expected) throw new Retry(`розмір ${got} замість ${expected}`);
+      // найбільші файли — частини мапи по 16 МіБ; у пам'яті вони лише до запису
+      await storePut(bucket, url, new Blob(chunks, { type: res.headers.get('content-type') ?? '' }));
       return got;
     } catch (e) {
       onBytes(-got);
@@ -283,8 +350,9 @@ export async function downloadPack(id: PackId): Promise<DownloadResult> {
     const m = id === 'photos' ? photosManifest() : (await loadManifest())[id];
     // браузер не стиратиме дані сам, якщо дозволить (у Chrome — для встановленого застосунку)
     await navigator.storage?.persist?.().catch(() => false);
-    const cache = await caches.open(CACHE_NAME[id]);
-    const have = new Set((await cache.keys()).map((r) => r.url));
+    // давній кеш (якщо є) спершу має перейти в сховище: далі рахуємо лише те, що лежить там
+    await migrateLegacy();
+    const have = new Set(await storeKeys(id));
     // перелік, який переписується повністю, і перелік, де беремо лише відсутні файли
     const over = id === 'photos' ? [] : m.files;
     const incr = id === 'photos' ? m.files : m.parts ?? [];
@@ -309,7 +377,7 @@ export async function downloadPack(id: PackId): Promise<DownloadResult> {
       while (next < tasks.length && !abort.signal.aborted) {
         const t = tasks[next++];
         try {
-          await fetchInto(cache, siteUrl(t.f[0]), t.f[1], abort.signal, (b) => { if (!current.byCount) { current.done += b; tick(); } });
+          await fetchInto(id, siteUrl(t.f[0]), t.f[1], abort.signal, (b) => { if (!current.byCount) { current.done += b; tick(); } });
           if (current.byCount) { current.done++; tick(); }
           if (t.i >= 0) {
             doneFlags[t.i] = true;
@@ -330,13 +398,13 @@ export async function downloadPack(id: PackId): Promise<DownloadResult> {
     save();
     if (fatal) throw fatal;
     if (abort.signal.aborted) return 'aborted';
-    // прибрати з кешу те, чого в новій версії вже немає (старі частини мапи, фото видалених карток)
+    // прибрати зі сховища те, чого в новій версії вже немає (старі частини мапи, фото видалених карток)
     const keep = new Set(all.map(([p]) => siteUrl(p)));
-    for (const r of await cache.keys()) if (!keep.has(r.url)) await cache.delete(r);
+    for (const url of await storeKeys(id)) if (!keep.has(url)) await storeDelete(id, url);
     let bytes = m.bytes;
     if (id === 'photos') {
       bytes = 0;
-      for (const r of await cache.keys()) bytes += (await (await cache.match(r))?.blob())?.size ?? 0;
+      for (const n of (await storeSizes(id)).values()) bytes += n;
     }
     writeLS(lsKey(id), { version: m.version, bytes, files: all.length - current.failed, date: m.date, parts: m.parts } satisfies Installed);
     writeLS(pendKey(id), null);
@@ -363,7 +431,10 @@ export function stopDownload() { job?.abort.abort('stop'); }
 
 export async function deletePack(id: PackId): Promise<void> {
   if (job?.id === id) job.abort.abort('stop');
-  if (offlineSupported()) await caches.delete(CACHE_NAME[id]);
+  if (offlineSupported()) {
+    await storeClear(id);
+    await caches.delete(LEGACY_CACHE[id]);
+  }
   writeLS(lsKey(id), null);
   writeLS(pendKey(id), null);
   if (id === 'basemap') resetOfflineSource();
@@ -371,9 +442,9 @@ export async function deletePack(id: PackId): Promise<void> {
 }
 
 /**
- * Перевірка після запуску: кеш міг стерти браузер, коли бракувало місця, або інший сайт з тієї самої адреси.
- * Тоді позначка «встановлено» знімається, щоб не вмикати мапу, якої вже немає, і ставиться позначка
- * «завантажене зникло» — для пояснення людині. Повертає true, якщо щось змінилось.
+ * Перевірка після запуску: сховище міг стерти браузер, коли бракувало місця (а давній кеш — ще й інший сайт
+ * з тієї самої адреси). Тоді позначка «встановлено» знімається, щоб не вмикати мапу, якої вже немає, і ставиться
+ * позначка «завантажене зникло» — для пояснення людині. Повертає true, якщо щось змінилось.
  */
 export async function verifyInstalled(): Promise<boolean> {
   if (!offlineSupported()) return false;
@@ -381,11 +452,9 @@ export async function verifyInstalled(): Promise<boolean> {
   for (const id of PACK_IDS) {
     const inst = installed(id);
     if (!inst) continue;
-    let ok = await caches.has(CACHE_NAME[id]);
-    if (ok && id === 'basemap') {
-      const have = new Set((await (await caches.open(CACHE_NAME[id])).keys()).map((r) => r.url));
-      ok = (inst.parts ?? []).every(([p]) => have.has(siteUrl(p)));
-    }
+    const have = await packKeys(id);
+    let ok = have.size > 0;
+    if (ok && id === 'basemap') ok = (inst.parts ?? []).every(([p]) => have.has(siteUrl(p)));
     if (!ok) { writeLS(lsKey(id), null); changed = true; }
   }
   if (changed) { writeLS(LOST_KEY, Date.now()); resetOfflineSource(); emit(); }

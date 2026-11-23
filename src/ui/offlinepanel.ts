@@ -182,7 +182,9 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
       const pend = pending(id);
       const running = job?.id === id;
       const size = id === 'photos' ? '' : m ? fmtBytes(m.bytes) : inst ? fmtBytes(inst.bytes) : '';
-      const note = t(`packNote_${id}` as Key).replace('{date}', fmtDate(m?.date ?? inst?.date)).replace('{n}', String(photos.files.length));
+      // без мережі дата даних мапи невідома (перелік пакетів не завантажився) — тоді її просто не пишемо
+      const date = fmtDate(m?.date ?? inst?.date);
+      const note = t(`packNote_${id}` as Key).replace(date ? '{date}' : ', {date}', date).replace('{n}', String(photos.files.length));
       const canDl = online && !!m && !job;
       // Кнопки завантаження з'являються, лише коли завантажити справді можна; інакше замість вимкненої кнопки —
       // причина словами (на телефоні підказки при наведенні немає).

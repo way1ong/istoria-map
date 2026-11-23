@@ -1,13 +1,18 @@
 // Старі мапи в повній якості без інтернету: для вибраних ділянок оригінали Spezialkarte й мапи Ліпскі
-// (тайли з серверів IIIF бібліотек — саме ті адреси, які запитує Allmaps) зберігаються в кеші браузера.
+// (тайли з серверів IIIF бібліотек — саме ті адреси, які запитує Allmaps) зберігаються у сховищі браузера
+// (розділ iiif бази IndexedDB, src/store.ts; до 23.11.2026 — кеш Cache Storage, який міг стерти сусідній сайт).
 // Service worker (vite.config.ts) віддає їх Allmaps і без мережі, а з мережею — замість повторного завантаження.
 // Цілу країну так не зберегти: аркуш IOS у повній роздільності важить ~130 МБ, тому — ділянками.
 import { histMaps, mapSeries, places } from './data';
-import { beginJob, endJob, failureKind, fetchInto, offlineSupported, setOfflineLost, siteUrl, tickJob, type DownloadResult } from './offline';
+import {
+  beginJob, endJob, failureKind, fetchInto, migrateLegacy, offlineSupported, onLegacyEntry, packBlob, packKeys, setOfflineLost, siteUrl, tickJob,
+  type DownloadResult, type PackBucket,
+} from './offline';
+import { metaDelete, metaGet, metaSet, storeClear, storeDelete, storePut, storeSizes } from './store';
 import type { Place } from './types';
 
-/** Кеш ділянок; та сама назва — у правилі service worker для серверів IIIF. */
-export const IIIF_CACHE = 'istoria-offline-iiif';
+/** Розділ сховища з тайлами ділянок; з нього ж читає правило service worker для серверів IIIF. */
+const IIIF: PackBucket = 'iiif';
 type BBox = [number, number, number, number];
 
 export interface SavedArea {
@@ -102,14 +107,9 @@ let storageP: Promise<number> | null = null;
 export function areasStorage(): Promise<number> {
   if (!storageP) {
     storageP = (async () => {
-      if (!offlineSupported() || !(await caches.has(IIIF_CACHE))) return 0;
-      const cache = await caches.open(IIIF_CACHE);
+      if (!offlineSupported()) return 0;
       let sum = 0;
-      for (const r of await cache.keys()) {
-        const res = await cache.match(r);
-        const n = Number(res?.headers.get('content-length'));
-        sum += Number.isFinite(n) && n > 0 ? n : (await res?.blob())?.size ?? 0;
-      }
+      for (const n of (await storeSizes(IIIF)).values()) sum += n;
       return sum;
     })();
   }
@@ -150,20 +150,22 @@ function georefPaths(): string[] {
   return [...new Set([...mapSeries.map((s) => s.georef), ...histMaps.map((m) => m.georef)].filter((x): x is string => !!x))];
 }
 
-/** Відповідь з кешу (якщо є), інакше з мережі — і тоді покласти її в кеш ділянок. */
-async function cachedJson(url: string, cache: Cache): Promise<unknown> {
-  const hit = await cache.match(url, { ignoreVary: true });
-  if (hit) return hit.json();
-  const res = await fetch(url, { mode: 'cors', credentials: 'omit' });
+/** Файл зі сховища ділянок (якщо є), інакше з мережі — і тоді покласти його туди. */
+async function cachedJson(url: string): Promise<unknown> {
+  const hit = await packBlob(IIIF, url);
+  if (hit) return JSON.parse(await hit.text());
+  // no-store: правило service worker для серверів IIIF такі запити пропускає, і в сховище файл кладемо самі
+  const res = await fetch(url, { mode: 'cors', credentials: 'omit', cache: 'no-store' });
   if (!res.ok) throw new Error(`${res.status}: ${url}`);
-  await cache.put(url, res.clone());
-  return res.json();
+  const blob = await res.blob();
+  await storePut(IIIF, url, blob);
+  return JSON.parse(await blob.text());
 }
 
-async function loadItems(cache: Cache): Promise<GeoItem[]> {
+async function loadItems(): Promise<GeoItem[]> {
   const out: GeoItem[] = [];
   for (const path of georefPaths()) {
-    const page = await cachedJson(siteUrl(path), cache) as { items?: { target: { source: { id: string } }; body: { features: { properties: { resourceCoords: [number, number] }; geometry: { coordinates: [number, number] } }[] } }[] };
+    const page = await cachedJson(siteUrl(path)) as { items?: { target: { source: { id: string } }; body: { features: { properties: { resourceCoords: [number, number] }; geometry: { coordinates: [number, number] } }[] } }[] };
     for (const it of page.items ?? []) {
       const gcps = it.body.features.map((f) => ({ px: f.properties.resourceCoords, geo: f.geometry.coordinates }));
       const lons = gcps.map((g) => g.geo[0]), lats = gcps.map((g) => g.geo[1]);
@@ -229,14 +231,13 @@ export interface AreaPlan {
  * рівнів піраміди IIIF, що покривають ділянку (з невеликим запасом). info.json аркушів кешуються заодно.
  */
 export async function planArea(bbox: BBox): Promise<AreaPlan> {
-  const cache = await caches.open(IIIF_CACHE);
-  const items = (await loadItems(cache)).filter((it) => it.bbox[0] < bbox[2] && it.bbox[2] > bbox[0] && it.bbox[1] < bbox[3] && it.bbox[3] > bbox[1]);
+  const items = (await loadItems()).filter((it) => it.bbox[0] < bbox[2] && it.bbox[2] > bbox[0] && it.bbox[1] < bbox[3] && it.bbox[3] > bbox[1]);
   const { Image } = await import('@allmaps/iiif-parser');
   const tiles = new Set<string>();
-  const have = new Set((await cache.keys()).map((r) => r.url));
+  const have = await packKeys(IIIF);
   let estBytes = 0, newBytes = 0, newTiles = 0;
   for (const it of items) {
-    const image = Image.parse(await cachedJson(`${it.service}/info.json`, cache));
+    const image = Image.parse(await cachedJson(`${it.service}/info.json`));
     // ділянка, обрізана межами аркуша, у пікселях скана (рамка аркуша — з опорних точок)
     const w = Math.max(bbox[0], it.bbox[0]), s = Math.max(bbox[1], it.bbox[1]), e = Math.min(bbox[2], it.bbox[2]), n = Math.min(bbox[3], it.bbox[3]);
     const f = localAffine(it, [(w + e) / 2, (s + n) / 2]);
@@ -261,7 +262,18 @@ export async function planArea(bbox: BBox): Promise<AreaPlan> {
   return { bbox, tiles: [...tiles], images: items.length, estBytes, newTiles, newBytes };
 }
 
-const listUrl = (id: string) => siteUrl(`offline/areas/${id}.json`);
+/** Перелік тайлів ділянки лежить у сховку meta під цією назвою (раніше — у кеші за адресою offline/areas/<id>.json). */
+const listKey = (id: string) => `area:${id}`;
+const tilesOf = async (id: string) => (await metaGet<string[]>(listKey(id))) ?? [];
+const LEGACY_LIST = /\/offline\/areas\/([^/]+)\.json$/;
+
+// Під час перенесення давнього кешу (migrateLegacy у src/offline.ts) переліки тайлів стають записами meta
+onLegacyEntry(async (bucket, url, res) => {
+  const m = bucket === IIIF ? LEGACY_LIST.exec(url) : null;
+  if (!m) return false;
+  await metaSet(listKey(m[1]), await res.json());
+  return true;
+});
 
 /**
  * Зберегти ділянку: info.json усіх аркушів (щоб Allmaps без мережі знав про всі аркуші) і тайли ділянки.
@@ -273,10 +285,10 @@ export async function downloadArea(plan: AreaPlan, label?: string): Promise<Down
   if (!job) return 'error';
   try {
     await navigator.storage?.persist?.().catch(() => false);
-    const cache = await caches.open(IIIF_CACHE);
+    await migrateLegacy();
     // info.json усіх аркушів: маленькі, а без них Allmaps без мережі не відкриє решту аркушів
-    const items = await loadItems(cache);
-    const have = new Set((await cache.keys()).map((r) => r.url));
+    const items = await loadItems();
+    const have = await packKeys(IIIF);
     const infos = items.map((it) => `${it.service}/info.json`).filter((u) => !have.has(u));
     const tiles = plan.tiles.filter((u) => !have.has(u));
     job.total = infos.length + plan.tiles.length;
@@ -288,7 +300,7 @@ export async function downloadArea(plan: AreaPlan, label?: string): Promise<Down
         while (next < list.length && !job.abort.signal.aborted) {
           const url = list[next++];
           try {
-            job.bytes += await fetchInto(cache, url, 0, job.abort.signal, () => {});
+            job.bytes += await fetchInto(IIIF, url, 0, job.abort.signal, () => {});
             job.done++;
             tickJob();
           } catch (e) {
@@ -307,9 +319,10 @@ export async function downloadArea(plan: AreaPlan, label?: string): Promise<Down
     if (fatal) throw fatal;
     if (job.abort.signal.aborted) return 'aborted';
     const id = `a${Date.now().toString(36)}`;
-    await cache.put(listUrl(id), new Response(JSON.stringify(plan.tiles), { headers: { 'content-type': 'application/json' } }));
+    await metaSet(listKey(id), plan.tiles);
+    const sizes = await storeSizes(IIIF);
     let bytes = 0;
-    for (const u of plan.tiles) bytes += (await (await cache.match(u, { ignoreVary: true }))?.blob())?.size ?? 0;
+    for (const u of plan.tiles) bytes += sizes.get(u) ?? 0;
     const area: SavedArea = { id, bbox: plan.bbox, label, placeId: nearestPlace(plan.bbox)?.id, bytes, tiles: plan.tiles.length, date: new Date().toISOString().slice(0, 10) };
     saveAreas([...savedAreas(), area]);
     storageP = null;
@@ -328,20 +341,23 @@ export async function deleteArea(id: string): Promise<void> {
   saveAreas(rest);
   storageP = null;
   if (!offlineSupported()) return;
-  const cache = await caches.open(IIIF_CACHE);
-  const list = async (aid: string) => ((await (await cache.match(listUrl(aid)))?.json()) ?? []) as string[];
+  await migrateLegacy();
   const keep = new Set<string>();
-  for (const a of rest) for (const u of await list(a.id)) keep.add(u);
-  for (const u of await list(id)) if (!keep.has(u)) await cache.delete(u, { ignoreVary: true });
-  await cache.delete(listUrl(id));
-  if (!rest.length) await caches.delete(IIIF_CACHE);
+  for (const a of rest) for (const u of await tilesOf(a.id)) keep.add(u);
+  for (const u of await tilesOf(id)) if (!keep.has(u)) await storeDelete(IIIF, u);
+  await metaDelete(listKey(id));
+  // остання ділянка — прибираємо й дрібні службові файли (описи аркушів)
+  if (!rest.length) await storeClear(IIIF);
   storageP = null;
 }
 
-/** Кеш міг стерти браузер, коли бракувало місця, або інший сайт з тієї самої адреси: тоді збережених ділянок більше немає. */
+/**
+ * Сховище міг стерти браузер, коли бракувало місця (а давній кеш — ще й інший сайт з тієї самої адреси):
+ * тоді збережених ділянок більше немає.
+ */
 export async function verifyAreas(): Promise<boolean> {
   if (!offlineSupported() || !savedAreas().length) return false;
-  if (await caches.has(IIIF_CACHE)) return false;
+  if ((await packKeys(IIIF)).size > 0) return false;
   saveAreas([]);
   storageP = null;
   setOfflineLost(true);
