@@ -1,0 +1,78 @@
+{
+  "id": "seuso-kincs",
+  "name": {
+    "uk": "Скарб Севсо (Seuso-kincs)",
+    "hu": "Seuso-kincs"
+  },
+  "type": "find",
+  "coords": [
+    18.341,
+    47.091
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "find": {
+    "kind": "hoard",
+    "found": {
+      "date": "1976",
+      "precision": "approximate",
+      "how": "unknown",
+      "note": {
+        "uk": "скарб викопали незаконно в середині 1970-х років біля Polgárdi й Kőszárhegy; точного місця й подробиць не встановлено",
+        "hu": "a kincset az 1970-es évek közepén illegálisan ásták ki Polgárdi és Kőszárhegy környékén; a pontos hely és a részletek nem ismertek"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Угорський національний музей, Будапешт",
+          "hu": "Magyar Nemzeti Múzeum, Budapest"
+        },
+        "place": "magyar-nemzeti-muzeum",
+        "note": {
+          "uk": "постійна виставка «Pannonia fénye», відкрита 28 червня 2019 року",
+          "hu": "a 2019. június 28-án megnyílt „Pannonia fénye” állandó kiállítás"
+        }
+      }
+    ],
+    "spotNote": {
+      "uk": "Точне місце знахідки невідоме; за непрямими свідченнями, скарб було сховано на схилі гори Kőszár-hegy",
+      "hu": "A pontos lelőhely nem ismert; közvetett bizonyítékok szerint a kincset a Kőszár-hegy oldalában rejtették el"
+    }
+  },
+  "summary": {
+    "uk": "Срібний бенкетний набір пізньоримської доби (350–450 роки) з провінції Паннонія Валерія: чотирнадцять відомих предметів загальною вагою близько 68,5 кг. Знайдений у середині 1970-х років біля Polgárdi; від 2014 і 2017 років знову в Угорщині.",
+    "hu": "Késő római (350–450 közötti) díszes ezüst lakomakészlet Pannonia Valeria provinciából: tizennégy ismert darabja összesen kb. 68,5 kg. Az 1970-es évek közepén került elő Polgárdi környékén; 2014 és 2017 óta ismét Magyarországon van."
+  },
+  "description": {
+    "uk": "До набору входять глеки, тарелі, приладдя для миття рук і скринька для пахощів; більшість посудин прикрашено рельєфами з міфологічними сюжетами. Скарб названо за власником, згаданим у латинському написі на позолоченій «мисливській» тарелі: «Нехай ці посудини, Севсо, служать тобі багато століть і стануть гідно в пригоді твоїм нащадкам». На тій самій тарелі є напис Pelso — римська назва Балатону, який допоміг пов'язати скарб з Паннонією.\n\nНайімовірніше, скарб знайшов 1976 року робітник місцевого каменярного кар'єру; після його загадкової смерті 1980 року слід срібла загубився. Через Відень і Лондон воно потрапило на ринок старожитностей, 1990 року його показали в Нью-Йорку, а далі точилися довгі суди за право власності. У березні 2014 року до Угорщини повернулися перші сім предметів, у липні 2017 року оголошено про повернення ще семи; за право зберігати скарб держава заплатила 15 мільйонів євро 2014 року і 8,6 мільярда форинтів 2017 року.\n\nАрхеологи вважають, що до того самого скарбу належить срібна складана підставка на чотирьох ніжках, знайдена ще 1878 року на тому самому виноградному пагорбі біля Polgárdi.",
+    "hu": "A készlethez kancsók, tálak, kézmosókészlet és illatszeres szelence tartozik; a legtöbb edényt mitológiai jelenetek domborművei díszítik. Nevét az aranyozott „vadásztál” latin feliratában megnevezett tulajdonosáról kapta: „Maradjanak meg neked sok évszázadon át ezek az edények, Seuso, és utódaidnak is méltón a hasznára váljanak”. Ugyanezen a tálon olvasható a Pelso felirat, a Balaton római neve, amely segített a kincset Pannoniához kötni.\n\nA leletet valószínűleg 1976-ban találta meg a helyi kőbánya egyik munkása; 1980-as rejtélyes halála után az ezüsttárgyaknak nyomuk veszett. Bécsen és Londonon át a műkincspiacra kerültek, 1990-ben New Yorkban mutatták be, majd hosszú pereskedés folyt a tulajdonjogról. 2014 márciusában az első hét darab tért vissza Magyarországra, 2017 júliusában jelentették be a további hét hazatérését; az őrzési jogért az állam 2014-ben 15 millió eurót, 2017-ben 8,6 milliárd forintot fizetett.\n\nA régészek szerint ugyanehhez a kincshez tartozik az a négylábú, összecsukható ezüstállvány, amelyet még 1878-ban találtak ugyanazon a Polgárdi melletti szőlőhegyen."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Vad%C3%A1sz_t%C3%A1l_-_Seuso_ki%C3%A1ll%C3%ADt%C3%A1s%2C_Orsz%C3%A1gh%C3%A1z_%283%29.JPG",
+      "author": "Derzsi Elekes Andor",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Vad%C3%A1sz_t%C3%A1l_-_Seuso_ki%C3%A1ll%C3%ADt%C3%A1s%2C_Orsz%C3%A1gh%C3%A1z_%283%29.JPG",
+      "caption": {
+        "uk": "«Мисливська» таріль з написом про Севсо на виставці в будинку Парламенту, 2014",
+        "hu": "A vadásztál a Seuso-felirattal az Országházban rendezett kiállításon, 2014"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Seuso-kincs – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Seuso-kincs",
+      "note": "Склад і вага скарбу, напис, історія знахідки, судів і повернення, виставка в музеї."
+    },
+    {
+      "title": "Kőszárhegy – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/K%C5%91sz%C3%A1rhegy",
+      "note": "Непрямі свідчення про схил гори Kőszár-hegy; координати села."
+    }
+  ]
+}

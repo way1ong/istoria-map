@@ -1,0 +1,55 @@
+{
+  "id": "hajdusamsoni-kincs",
+  "name": {
+    "uk": "Гайдушамшонський скарб (Hajdúsámsoni kincs)",
+    "hu": "Hajdúsámsoni kincs"
+  },
+  "type": "find",
+  "coords": [
+    21.767,
+    47.6
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory"
+  ],
+  "find": {
+    "kind": "hoard",
+    "found": {
+      "date": "1907",
+      "precision": "exact"
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музей Déri, Дебрецен",
+          "hu": "Déri Múzeum, Debrecen"
+        }
+      }
+    ]
+  },
+  "summary": {
+    "uk": "Скарб бронзової доби, знайдений 1907 року: оздоблений меч і дванадцять бойових сокир. Виставлений у музеї Déri в Дебрецені.",
+    "hu": "1907-ben előkerült bronzkori kincs: díszes kard és tizenkét harci balta. A debreceni Déri Múzeumban van kiállítva."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/First_Hajd%C3%BAs%C3%A1mson_Hoard_-_D%C3%A9ri_Museum.jpg",
+      "author": "CryolophosaurusEllioti",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:First_Hajd%C3%BAs%C3%A1mson_Hoard_-_D%C3%A9ri_Museum.jpg",
+      "caption": {
+        "uk": "Меч і сокири гайдушамшонського скарбу зі збірки музею Déri (знімок з виїзної виставки)",
+        "hu": "A hajdúsámsoni kincs kardja és baltái a Déri Múzeum gyűjteményéből (vendégkiállításon készült felvétel)"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hajdúsámson – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Hajd%C3%BAs%C3%A1mson",
+      "note": "Знахідка 1907 року, склад скарбу, музей Déri; координати міста."
+    }
+  ]
+}

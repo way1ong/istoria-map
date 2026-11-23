@@ -1,0 +1,65 @@
+{
+  "id": "ujlengyel-vatya-eremlelet",
+  "name": {
+    "uk": "Монетний скарб із середньовічного села Vatya (Újlengyel)",
+    "hu": "Újlengyel–Vatya középkori éremlelet"
+  },
+  "type": "find",
+  "coords": [
+    19.452,
+    47.229
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "late-medieval"
+  ],
+  "find": {
+    "kind": "coins",
+    "found": {
+      "date": "2017",
+      "to": "2019",
+      "precision": "exact",
+      "how": "detector",
+      "note": {
+        "uk": "перші монети знайшли волонтери музею й Товариства громадської археології; 22 листопада 2019 року музей провів рятівні розкопки",
+        "hu": "az első érméket a múzeum és a Közösségi Régészeti Egyesület önkéntesei találták; 2019. november 22-én a múzeum mentő feltárást végzett"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музейний центр Ferenczy (Ferenczy Múzeumi Centrum), Сентендре",
+          "hu": "Ferenczy Múzeumi Centrum, Szentendre"
+        },
+        "note": {
+          "uk": "нумізматична збірка",
+          "hu": "Numizmatikai Gyűjtemény"
+        }
+      }
+    ],
+    "spotNote": {
+      "uk": "Музей пов'язує місце зі зниклим селом Vatya на околиці Újlengyel",
+      "hu": "A múzeum a helyet az Újlengyel határában elpusztult Vatya faluval azonosítja"
+    }
+  },
+  "summary": {
+    "uk": "155 дрібних монет XV століття, здебільшого часів короля Сигізмунда; наймолодшу карбовано 1455 року. Знайдені 2017–2019 років волонтерами з металошукачами й музеєм на місці зниклого середньовічного села Vatya біля Újlengyel.",
+    "hu": "155 darab 15. századi aprópénz, többségük Zsigmond király korából; a legkésőbbi 1455-ös veret. 2017–2019-ben önkéntes fémkeresősök és a múzeum találták az elpusztult középkori Vatya falu helyén, Újlengyel határában."
+  },
+  "description": {
+    "uk": "Перші монети, вивернуті на поверхню глибокою оранкою, знайшли волонтери Музейного центру Ferenczy й Товариства громадської археології; серед них були злиплі між собою, тож археологи запідозрили скарб. Рятівні розкопки відбулися 22 листопада 2019 року за участі восьми волонтерів. На ділянці 5 × 5 м розораний ґрунт знімали шарами по 8–10 см, щоразу перевіряючи металошукачем і записуючи місце кожної монети. Монети лежали розсіяно: первісне місце схованки оранка знищила.\n\nУ скарбі 141 монета Сигізмунда (1387–1437) — парвуси, дукати й один денарій з дуже малим умістом срібла, одна монета Альберта, три — Єлизавети, карбовані від імені Ласло V, п'ять — Владислава I, дві — Яноша Гуняді й одна — Ласло V. Злиплі монети, імовірно, лежали в гаманці з органічного матеріалу. За грамотами й мапами XVIII–XIX століть місце ототожнили із селом Vatya, згаданим у дарчій грамоті короля Сигізмунда 1415 року. Скарбу з таким часом сховання в медьє Пешт доти не траплялося; причини, з якої його сховали й не забрали, джерела не розкривають.",
+    "hu": "Az első, mélyszántással a felszínre került érméket a Ferenczy Múzeumi Centrum és a Közösségi Régészeti Egyesület önkéntesei találták; több összetapadt darab volt köztük, ezért a régészek kincsleletre gyanakodtak. A mentő feltárásra 2019. november 22-én került sor nyolc önkéntes segítségével. Az 5 × 5 m-es szelvényben a bolygatott humuszt 8–10 cm-es rétegenként bontották, minden szintet fémkeresővel vizsgáltak át, és minden érme helyét rögzítették. Az érmék szórtan feküdtek: az elrejtés eredeti helyét a szántás megsemmisítette.\n\nA leletben 141 Zsigmond-kori (1387–1437) veret van — parvusok, ducatok és egy denár, igen csekély ezüsttartalommal —, továbbá Albert egy, Erzsébet V. László nevére vert három, I. Ulászló öt, Hunyadi János két és V. László egy pénze. Az összetapadt érmék valószínűleg szerves anyagból készült erszényben voltak. Oklevelek és 18–19. századi térképek alapján a helyet a Zsigmond király 1415-ös adománylevelében említett Vatya faluval azonosították. Pest megyéből addig nem került elő hasonló záródású lelet; elrejtésének és földben maradásának okáról a források hallgatnak."
+  },
+  "sources": [
+    {
+      "title": "Nagy B., Éremlelet a középkori Vatya településről (Pest megye). In: Kincskeresés, kaland, tudomány. Közösségi régészeti projektek Pest megyében. Ferenczy Múzeumi Centrum, Szentendre 2021, 80–87",
+      "url": "https://real.mtak.hu/89623/1/KKT_regeszeti_kiadvany_20210805.pdf",
+      "note": "Усі факти про знахідку, рятівні розкопки, склад скарбу й ототожнення села."
+    },
+    {
+      "title": "Újlengyel – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/%C3%9Ajlengyel",
+      "note": "Координати села."
+    }
+  ]
+}

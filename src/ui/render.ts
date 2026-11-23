@@ -1,6 +1,6 @@
 import { marked } from 'marked';
-import { illustrationById, periodById } from '../data';
-import { formatYear, formatYearRange, getLang, groupYear, lt, t } from '../i18n';
+import { illustrationById, periodById, placeById } from '../data';
+import { formatYear, formatYearRange, getLang, groupYear, lt, t, type Key } from '../i18n';
 import type { CoordsPrecision, DatePrecision, HistEvent, Photo, Place, Source } from '../types';
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
@@ -178,15 +178,76 @@ function photoStrip(list: Photo[], group: string): string {
   return `<div class="ph-strip">${list.map((p) => `<img class="ph-thumb" crossorigin="anonymous" src="${esc(thumbUrl(p.url))}" data-orig="${esc(p.url)}" onerror="${IMG_FALLBACK}" alt="${esc(lt(p.caption) || '')}" loading="lazy" ${lbAttrs(p, group)} />`).join('')}</div>`;
 }
 
+/** Дата словами: «1799», «березень 1926», «5 березня 1971»; угорською «1971. március 5.». */
+export function niceDate(s: string): string {
+  const m = /^(-?)(\d{1,6})(?:-(\d{2}))?(?:-(\d{2}))?$/.exec(s);
+  if (!m) return s;
+  const year = m[1] ? formatYear(-Number(m[2])) : groupYear(Number(m[2]));
+  if (!m[3]) return year;
+  const i = Number(m[3]) - 1;
+  const hu = getLang() === 'hu';
+  if (!m[4]) {
+    const mon = t('monthsNom').split(',')[i] ?? m[3];
+    return hu ? `${year}. ${mon}` : `${mon} ${year}`;
+  }
+  const mon = t('monthsGen').split(',')[i] ?? m[3];
+  return hu ? `${year}. ${mon} ${Number(m[4])}.` : `${Number(m[4])} ${mon} ${year}`;
+}
+
+/**
+ * Відомості про знахідку (блок find у data/finds/*.json): коли і як знайдено, де зберігається, що означає мітка на мапі.
+ * Мітка знахідки здебільшого стоїть у центрі населеного пункту — про це сказано словами, без числових координат.
+ */
+export function findFacts(p: Place): string {
+  const f = p.find;
+  if (!f) return '';
+  const d = f.found;
+  // «1799, випадково: копаючи рів» — рік, спосіб і примітка; чого джерела не кажуть, того в рядку немає
+  const when = d.date ? `${niceDate(d.date)}${d.to ? `–${niceDate(d.to)}` : ''}${!d.precision || d.precision === 'exact' ? '' : ` (${precisionLabel(d.precision)})`}` : '';
+  const head = [when, d.how ? t(`fh_${d.how}` as Key) : ''].filter(Boolean).join(', ');
+  const found = [head, lt(d.note)].filter(Boolean).join(': ');
+  const keepers = (f.keptAt ?? []).map((k) => {
+    const link = k.place && placeById(k.place)
+      ? `<a href="#/map?place=${esc(k.place)}">${t('findMuseumOnMap')}</a>`
+      : k.coords ? `<a ${routeAttrs(k.coords[1], k.coords[0], lt(k.name))}>${t('findRouteMuseum')}</a>` : '';
+    return `${esc(lt(k.name))}${lt(k.note) ? ` — ${esc(lt(k.note))}` : ''}${link ? ` (${link})` : ''}`;
+  });
+  const spot = `${t(`findSpot_${p.coordsPrecision}` as Key)}${lt(f.spotNote) ? `. ${lt(f.spotNote)}` : ''}`;
+  const row = (dt: string, dd: string) => `<div><dt>${dt}</dt><dd>${dd}</dd></div>`;
+  return `<dl class="find-facts">
+    ${row(t('findFound'), esc(found))}
+    ${keepers.length ? row(t('findKept'), keepers.length === 1 ? keepers[0] : `<ul>${keepers.map((k) => `<li>${k}</li>`).join('')}</ul>`) : ''}
+    ${lt(f.fate) ? row(t('findFate'), esc(lt(f.fate))) : ''}
+    ${!keepers.length && !lt(f.fate) ? row(t('findKept'), t('findKeptUnknown')) : ''}
+    ${row(t('findSpot'), esc(spot))}
+  </dl>`;
+}
+
+/**
+ * Позначки знахідки поруч з періодом: вид (скарб, поховання…), «металошукач + музей» для знахідок пошуковців,
+ * які працювали разом з музеєм, і «нині за кордоном» (short — коротко, для карток переліку).
+ */
+export function findBadges(p: Place, short = false): string {
+  const f = p.find;
+  if (!f) return '';
+  return `<span class="badge cat-badge">${t(`fk1_${f.kind}` as Key)}</span> ${f.found.how === 'detector' ? `<span class="badge badge-det">${t('findDet')}</span> ` : ''}${
+    f.abroad ? `<span class="badge badge-abroad">${t(short ? 'findAbroadShort' : 'findAbroad')}</span> ` : ''}`;
+}
+
 export function placeCard(p: Place, full: boolean): string {
+  const f = p.find;
+  // Знахідка: замість числових координат — пояснення, що означає мітка; «Маршрут сюди» лише тоді, коли місце
+  // загальновідоме й відкрите (музей, пам'ятка): мітка в центрі села — це не місце знахідки.
+  const exact = p.coordsPrecision === 'exact';
   return `
     <h2>${esc(lt(p.name))}</h2>
-    <div class="meta">${p.vanished ? `<span class="badge badge-vanished">${t('vanished')}</span> ` : ''}${periodBadges(p.periods)}</div>
+    <div class="meta">${p.vanished ? `<span class="badge badge-vanished">${t('vanished')}</span> ` : ''}${findBadges(p)}${periodBadges(p.periods)}</div>
     ${!full && p.photos?.length ? photoStrip(p.photos, `place-${p.id}`) : ''}
     <p>${esc(lt(p.summary))}</p>
     ${full ? `<div class="prose">${md(lt(p.description))}</div>${photos(p.photos, `place-${p.id}`)}` : ''}
-    <p class="meta">${coordsLine(p.coords, p.coordsPrecision)}</p>
-    <div class="card-btns">${full ? '' : `<a class="btn" href="#/place/${p.id}">${t('openCard')}</a>`}<a class="btn btn-alt" ${routeAttrs(p.coords[1], p.coords[0], lt(p.name))}>${t('routeHere')}</a></div>
+    ${f ? findFacts(p) : ''}
+    ${!f || exact ? `<p class="meta">${coordsLine(p.coords, p.coordsPrecision)}</p>` : ''}
+    <div class="card-btns">${full ? '' : `<a class="btn" href="#/${f ? 'find' : 'place'}/${p.id}">${t('openCard')}</a>`}${!f || exact ? `<a class="btn btn-alt" ${routeAttrs(p.coords[1], p.coords[0], lt(p.name))}>${t('routeHere')}</a>` : ''}</div>
     ${full ? sourcesList(p.sources) : ''}
   `;
 }

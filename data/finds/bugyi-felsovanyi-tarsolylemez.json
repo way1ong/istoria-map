@@ -1,0 +1,60 @@
+{
+  "id": "bugyi-felsovanyi-tarsolylemez",
+  "name": {
+    "uk": "Пластина ташки з Бугі (Bugyi-Felsővány)",
+    "hu": "Bugyi-felsőványi tarsolylemez"
+  },
+  "type": "find",
+  "coords": [
+    19.15,
+    47.223
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "arpad"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "date": "2011",
+      "precision": "exact",
+      "how": "detector",
+      "note": {
+        "uk": "пошуковці з Dabas знайшли на розораному пагорбі срібні оздоби й кістки та повідомили музей; пластину відкрили під час розкопок за кілька тижнів",
+        "hu": "dabasi fémkeresősök a szántott dombtetőn ezüst ruhadíszeket és csontokat találtak, és értesítették a múzeumot; a lemez a néhány héttel későbbi ásatáson került elő"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музейний центр Ferenczy (Ferenczy Múzeumi Centrum), Сентендре",
+          "hu": "Ferenczy Múzeumi Centrum, Szentendre"
+        }
+      }
+    ],
+    "spotNote": {
+      "uk": "Музей називає місце Bugyi-Felsővány: це піщаний пагорб на околиці села",
+      "hu": "A múzeum a helyet Bugyi-Felsőványként említi: homokdomb a község határában"
+    }
+  },
+  "summary": {
+    "uk": "Позолочена срібна пластина ташки з поховання кінного лучника X століття в Bugyi-Felsővány; перша й досі єдина така пластина з медьє Пешт. Знайдена 2011 року завдяки пошуковцям, які повідомили про місце музей.",
+    "hu": "Aranyozott ezüst tarsolylemez egy 10. századi lovas-íjas harcos sírjából Bugyi-Felsőványon; Pest megyében az első és eddig egyetlen. 2011-ben került elő, mert a helyet megtaláló fémkeresősök értesítették a múzeumot."
+  },
+  "description": {
+    "uk": "Напровесні 2011 року гурт пошуковців з Dabas обстежив металошукачами піщаний пагорб, який руйнують ерозія й глибока оранка. На розораній поверхні лежали розкидані людські кістки й багато позолочених срібних оздоб одягу. Знахідники передали речі музеєві, запропонували допомогу, і за кілька тижнів почалися рятівні розкопки. У розвідковій траншеї на вершині пагорба одразу проступили плями могил.\n\nВ одній глибшій могилі, якої не зачепив плуг, лежав кінний лучник: на поясі збереглися позолочені срібні бляшки й кришка ташки з пластиною, поруч — рештки коня й спорядження лучника. Музей наголошує, що головна цінність знахідки не в сріблі, а в тому, що її вдалося дослідити на місці, з усім оточенням; без повідомлення про пагорб вона майже напевно стала б здобиччю плуга чи грабіжників. Розкопки могильника продовжили того ж року і восени 2020 року.",
+    "hu": "2011 kora tavaszán egy dabasi társaság fémkeresővel járta be a homokdombot, amelyet az erózió és a mélyszántás pusztít. A szántott felszínen szétszórt emberi csontok és nagyszámú aranyozott ezüst ruhaveret hevert. A megtalálók a leleteket átadták a múzeumnak, segítséget ajánlottak, és néhány héten belül megkezdődött a leletmentő ásatás. A dombtetőn húzott kutatóárokban azonnal sírfoltok rajzolódtak ki.\n\nAz egyik mélyebb, az ekétől megmenekült sírban lovas-íjas harcos feküdt: derekánál aranyozott ezüst veretes öve és tarsolyának fedőlemeze került elő, mellette lovának maradványai és íjászfelszerelése. A múzeum hangsúlyozza: a lelet legnagyobb értéke nem az ezüst, hanem az, hogy eredeti helyén, teljes összefüggésében sikerült megmenteni; a lelőhely bejelentése nélkül szinte biztosan az eke vagy a sírrablók áldozata lett volna. A temető feltárását még abban az évben, majd 2020 őszén folytatták."
+  },
+  "sources": [
+    {
+      "title": "Füredi Á., Honfoglalás kori tarsolylemez a bugyi-felsőványi temetőből. In: Kincskeresés, kaland, tudomány. Közösségi régészeti projektek Pest megyében. Ferenczy Múzeumi Centrum, Szentendre 2021, 50–59",
+      "url": "https://real.mtak.hu/89623/1/KKT_regeszeti_kiadvany_20210805.pdf",
+      "note": "Усі факти про знахідку, розкопки й поховання."
+    },
+    {
+      "title": "Bugyi (település) – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Bugyi_%28telep%C3%BCl%C3%A9s%29",
+      "note": "Координати села."
+    }
+  ]
+}

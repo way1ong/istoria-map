@@ -1,0 +1,70 @@
+{
+  "id": "kunbabonyi-fejedelmi-sir",
+  "name": {
+    "uk": "Поховання аварського володаря з Кунбабоня (Kunbábonyi avar fejedelmi sír)",
+    "hu": "Kunbábonyi avar fejedelmi sír"
+  },
+  "type": "find",
+  "coords": [
+    19.215,
+    47.02
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "migration"
+  ],
+  "find": {
+    "kind": "burial",
+    "found": {
+      "date": "1971",
+      "precision": "exact",
+      "how": "excavation",
+      "note": {
+        "uk": "поховання відкрили в піщаному кар'єрі; розкопки Elvira H. Tóth 1971–1972 років",
+        "hu": "a sír a homokbányában került elő; H. Tóth Elvira 1971–1972-es ásatása"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музей Katona József, Кечкемет",
+          "hu": "Kecskeméti Katona József Múzeum"
+        }
+      }
+    ],
+    "spotNote": {
+      "uk": "Мітка стоїть у Kunbábony, частині міста Kunszentmiklós",
+      "hu": "A jelölő Kunbábonyban, Kunszentmiklós városrészében áll"
+    }
+  },
+  "summary": {
+    "uk": "Поховання аварського володаря, розкопане на початку 1970-х років у піщаному кар'єрі в Kunbábony: 155 предметів, здебільшого золотих (2,4 кг).",
+    "hu": "Avar fejedelmi sír, amelyet az 1970-es évek elején tártak fel a kunbábonyi homokbányában: 155 tárgy, többségében aranyból (2,4 kg)."
+  },
+  "description": {
+    "uk": "Поховання стало великою археологічною сенсацією 1970-х років. Його дослідила Elvira H. Tóth, яка разом з чоловіком, Attila Horváth, три з половиною десятиліття працювала в кечкеметському музеї; у Kunbábony вона вела розкопки 1971–1972 років. Знахідка досі належить до найважливіших скарбів музею Katona József.",
+    "hu": "A sír feltárása az 1970-es évek nagy régészeti szenzációja volt. H. Tóth Elvira tárta fel, aki férjével, Horváth Attilával három és fél évtizeden át dolgozott a kecskeméti múzeumban; Kunbábonyban 1971–1972-ben ásatott. A leletegyüttes ma is a Katona József Múzeum egyik legfontosabb kincse."
+  },
+  "sources": [
+    {
+      "title": "Kunszentmiklós – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kunszentmikl%C3%B3s",
+      "note": "Поховання аварського володаря в піщаному кар'єрі Kunbábony, сенсація 1970-х років."
+    },
+    {
+      "title": "Kecskeméti Katona József Múzeum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Kecskem%C3%A9ti_Katona_J%C3%B3zsef_M%C3%BAzeum",
+      "note": "155 предметів, здебільшого золотих (2,4 кг); розкопки Elvira H. Tóth і Attila Horváth."
+    },
+    {
+      "title": "H. Tóth Elvira – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/H._T%C3%B3th_Elvira",
+      "note": "Розкопки в Kunbábony 1971–1972 років."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Kunbábony",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Kunb%C3%A1bony",
+      "note": "Координати частини міста Kunszentmiklós (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

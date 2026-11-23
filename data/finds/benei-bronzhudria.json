@@ -1,0 +1,54 @@
+{
+  "id": "benei-bronzhudria",
+  "name": {
+    "uk": "Бронзова гідрія з Бене (Benei bronzhüdria)",
+    "hu": "Benei bronzhüdria"
+  },
+  "type": "find",
+  "coords": [
+    22.757,
+    48.166
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "note": {
+        "uk": "на околиці села, у руслі Боржави біля мосту дороги Ужгород–Рахів; року знахідки джерела не називають",
+        "hu": "a település határában, a Borzsa medrében, az Ungvár–Rahó országút hídjánál; az előkerülés évét a források nem közlik"
+      }
+    },
+    "fate": {
+      "uk": "27 лютого 1906 року сільський нотар Lajos Schtrantz подарував посудину Трансільванському національному музеєві (Erdélyi Nemzeti Múzeum), де її внесли до каталогу збірки монет і старожитностей під номером I.6094. Де вона зберігається нині, використані джерела не кажуть.",
+      "hu": "1906. február 27-én Schtrantz Lajos körjegyző az Erdélyi Nemzeti Múzeumnak adományozta, ahol az Érem- és Régiségtárban I.6094 számon katalogizálták. Mai őrzési helyét a felhasznált források nem közlik."
+    },
+    "abroad": true,
+    "spotNote": {
+      "uk": "Село лежить в Україні, на Закарпатті",
+      "hu": "A falu Ukrajnában, Kárpátalján fekszik"
+    }
+  },
+  "summary": {
+    "uk": "Антична грецька бронзова посудина для води середини V століття до н. е., заввишки 42 см, знайдена біля села Бене на Закарпатті, на правому березі Боржави.",
+    "hu": "Az i. e. 5. század közepére keltezhető antik görög bronz víztartó edény, 42 cm magas; a kárpátaljai Bene határában, a Borzsa jobb partján került elő."
+  },
+  "description": {
+    "uk": "Бене лежить приблизно за 13 км на південний схід від Берегового. Посудина відлита з бронзи, найбільший діаметр 32 см; має два горизонтальні вушка для перенесення і третє, вертикальне, щоб зручніше виливати воду. Вушка оздоблено сиренами на підставці з пальметами й спіральними стрічками; схоже зображення відоме з бронзової амфори, знайденої у Вульчі. Місце виготовлення поки не встановлено. Тулуб відлито одним шматком, а денце було приклепане й не збереглося.",
+    "hu": "Bene Beregszásztól mintegy 13 km-re délkeletre fekszik. A bronzból öntött edény legnagyobb átmérője 32 cm; két vízszintes szállítófüle és egy harmadik, függőleges, a kiöntést könnyítő füle van. Fülei palmettás, spirális szalagos alapzaton álló szirének; az ábrázolás párhuzama egy Vulciban előkerült bronzamforáról ismert. Előállítási helye egyelőre bizonytalan. Testét egyetlen öntvényből készítették, talpa eredetileg szegecselt volt, és nem került elő."
+  },
+  "sources": [
+    {
+      "title": "Benei bronzhüdria – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Benei_bronzh%C3%BCdria",
+      "note": "Місце знахідки, опис, розміри, дарунок музеєві 1906 року."
+    },
+    {
+      "title": "Bene – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Bene",
+      "note": "Гідрія походить з русла Боржави; координати села."
+    }
+  ]
+}

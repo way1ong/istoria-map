@@ -1,0 +1,53 @@
+{
+  "id": "esku-teri-sisak",
+  "name": {
+    "uk": "Шолом з площі Eskü tér (Eskü téri sisak)",
+    "hu": "Eskü téri sisak"
+  },
+  "type": "find",
+  "coords": [
+    19.051,
+    47.496
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "how": "chance",
+      "note": {
+        "uk": "на пештському боці під час будівництва мосту Erzsébet híd; року джерело не називає",
+        "hu": "a pesti oldalon, az Erzsébet híd építésekor; az évet a forrás nem közli"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Будапештський історичний музей (Budapesti Történeti Múzeum)",
+          "hu": "Budapesti Történeti Múzeum"
+        }
+      }
+    ],
+    "spotNote": {
+      "uk": "Мітка стоїть біля картки форту Contra-Aquincum, з якого походить шолом",
+      "hu": "A jelölő Contra-Aquincum kártyája mellett áll, ahonnan a sisak származik"
+    }
+  },
+  "summary": {
+    "uk": "Залізний шолом кінця IV століття, покритий позолоченими срібними пластинами, виготовлений у паннонській майстерні; походить з форту Contra-Aquincum на пештському березі.",
+    "hu": "A 4. század végén egy pannoniai műhelyben készült vassisak, aranyozott ezüstlemezekkel borítva; a pesti parton állt Contra-Aquincumból származik."
+  },
+  "description": {
+    "uk": "На шоломі є римські написи й фігурні зображення, а також геометричні мотиви германського походження. Його знайшли на пештському боці під час будівництва мосту Erzsébet híd. Шолом можна побачити в Будапештському історичному музеї.",
+    "hu": "A sisakon római feliratok és alakos ábrázolások, valamint germán eredetű geometrikus motívumok láthatók. A pesti oldalon került elő az Erzsébet híd építésekor. A Budapesti Történeti Múzeumban tekinthető meg."
+  },
+  "sources": [
+    {
+      "title": "Eskü téri sisak – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Esk%C3%BC_t%C3%A9ri_sisak",
+      "note": "Опис шолома, обставини знахідки, музей."
+    }
+  ]
+}

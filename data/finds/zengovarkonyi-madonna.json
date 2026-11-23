@@ -1,0 +1,54 @@
+{
+  "id": "zengovarkonyi-madonna",
+  "name": {
+    "uk": "Зенґьоварконьська «мадонна» (Zengővárkonyi madonna)",
+    "hu": "Zengővárkonyi madonna"
+  },
+  "type": "find",
+  "coords": [
+    18.431,
+    46.173
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "how": "excavation",
+      "note": {
+        "uk": "розкопки János Dombay 1941–1943 років і після війни; року знахідки самої фігурки джерела не називають",
+        "hu": "Dombay János 1941–43-as és háború utáni ásatásai; a szobrocska előkerülésének évét a források nem közlik"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музей Janus Pannonius, Печ",
+          "hu": "Janus Pannonius Múzeum, Pécs"
+        }
+      }
+    ]
+  },
+  "summary": {
+    "uk": "Маленька глиняна фігурка богині родючості з пізньонеолітичного поселення лендєльської культури біля Zengővárkony; цю культуру датують близько 40 століття до н. е.",
+    "hu": "A termékenység istennőjét ábrázoló kis agyagszobrocska a Zengővárkony mellett feltárt késő neolitikus település, a lengyeli kultúra népének alkotása; a kultúra korát az i. e. 40. század körülre teszik."
+  },
+  "description": {
+    "uk": "Великий доісторичний могильник у Zengővárkony розкопав János Dombay 1941–1943 років і після війни. Значення поселення перевершило сподівання й змінило уявлення про лендєльську культуру; його навіть згадують як окреме культурне коло. За фігуркою дослідники припускали, що громада жила за материнським правом.",
+    "hu": "A zengővárkonyi nagy őskori temetőt Dombay János tárta fel 1941–43 között és a háború után. A település jelentősége messze felülmúlta a várakozásokat, és átformálta a lengyeli kultúráról alkotott képet; önálló kultúrkörként is említik. A szobrocska alapján a kutatók arra következtettek, hogy a közösség anyajogú társadalomban élt."
+  },
+  "sources": [
+    {
+      "title": "Zengővárkonyi madonna – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Zeng%C5%91v%C3%A1rkonyi_madonna",
+      "note": "Опис фігурки, лендєльська культура, розкопки Dombay."
+    },
+    {
+      "title": "Zengővárkony – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Zeng%C5%91v%C3%A1rkony",
+      "note": "Фігурку зберігає Janus Pannonius Múzeum у Печі; координати села."
+    }
+  ]
+}

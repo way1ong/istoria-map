@@ -1,0 +1,76 @@
+{
+  "id": "kokenydomb",
+  "name": {
+    "uk": "Кекенідомбська «Венера» (Kökénydombi vénusz)",
+    "hu": "Kökénydombi vénusz"
+  },
+  "type": "find",
+  "coords": [
+    20.258,
+    46.382
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "how": "excavation",
+      "note": {
+        "uk": "імовірно, під час розкопок János Banner 1929–1944 років (музей називає Kökénydomb серед місць цих розкопок); року знахідки джерела не називають",
+        "hu": "valószínűleg Banner János 1929–1944 közötti ásatásain (a múzeum Kökénydombot ezek helyszínei között említi); a lelet évét a források nem közlik"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музей Tornyai János, Годмезевашаргей",
+          "hu": "Tornyai János Múzeum, Hódmezővásárhely"
+        }
+      }
+    ],
+    "spotNote": {
+      "uk": "Мітка стоїть на хуторі Kopáncs біля Годмезевашаргея",
+      "hu": "A jelölő a Hódmezővásárhely melletti Kopáncson áll"
+    }
+  },
+  "summary": {
+    "uk": "Глиняна посудина заввишки 23 см у вигляді жінки, що сидить на ослінчику, з культури Тиси першої половини V тисячоліття до н. е. Знайдена на Kopáncs-Kökénydomb біля Годмезевашаргея.",
+    "hu": "23 cm magas agyagedény, zsámolyon ülő nőalakot ábrázol; a tiszai kultúrából, az i. e. 5. évezred első feléből való. A Hódmezővásárhely melletti Kopáncs-Kökénydombon került elő."
+  },
+  "description": {
+    "uk": "Тіло фігури вкривають геометричні візерунки, які, можливо, позначають одяг; від голови зберігся лише уламок. Разом з нею знайшли схожу, але гірше збережену посудину; обидві могли зображати богиню-матір. Це одні з найвизначніших пам'яток новокам'яної скульптури в Угорщині.\n\nKökénydomb був одним з місць, де 1929–1944 років вів розкопки археолог János Banner; з тих розкопок на околицях Годмезевашаргея походить близько 40 тисяч предметів неоліту в збірці музею Tornyai János.",
+    "hu": "A testet geometrikus minták borítják, amelyek talán a ruhát jelzik; a fejnek csak töredéke maradt fenn. Vele együtt egy hasonló, de töredékesebb edény is előkerült; mindkettő anyaistennőt ábrázolhatott. A magyarországi újkőkori szobrászat jelentős emlékei.\n\nKökénydomb egyike volt azoknak a helyeknek, ahol Banner János régész 1929 és 1944 között ásatott; a Hódmezővásárhely környéki ásatásokból a Tornyai János Múzeum mintegy 40 ezer darabos neolitikus anyaga származik."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/K%C3%B6k%C3%A9nydombi_V%C3%A9nus%2C_fot%C3%B3_Thaler_Tam%C3%A1s.jpg",
+      "author": "Thaler Tamas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:K%C3%B6k%C3%A9nydombi_V%C3%A9nus%2C_fot%C3%B3_Thaler_Tam%C3%A1s.jpg",
+      "caption": {
+        "uk": "Кекенідомбська «Венера»",
+        "hu": "A kökénydombi vénusz"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kökénydombi vénusz – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/K%C3%B6k%C3%A9nydombi_v%C3%A9nusz",
+      "note": "Опис посудини, культура Тиси, місце знахідки, музей."
+    },
+    {
+      "title": "Tornyai János Múzeum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tornyai_J%C3%A1nos_M%C3%BAzeum",
+      "note": "Розкопки János Banner 1929–1944 років (серед місць — Kökénydomb), близько 40 тисяч предметів неоліту."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Kopáncs, Hódmezővásárhely",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=Kop%C3%A1ncs%2C%20H%C3%B3dmez%C5%91v%C3%A1s%C3%A1rhely",
+      "note": "Координати хутора 46.382, 20.258 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

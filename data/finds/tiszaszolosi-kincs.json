@@ -1,0 +1,47 @@
+{
+  "id": "tiszaszolosi-kincs",
+  "name": {
+    "uk": "Тисасьольоський скарб (Tiszaszőlősi kincs)",
+    "hu": "Tiszaszőlősi kincs"
+  },
+  "type": "find",
+  "coords": [
+    20.719,
+    47.559
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory"
+  ],
+  "find": {
+    "kind": "hoard",
+    "found": {
+      "date": "1839",
+      "precision": "exact",
+      "how": "chance",
+      "note": {
+        "uk": "після обвалу берега й повені: жінки, що поверталися зі збирання колосків, помітили блискучі речі, вимиті водою",
+        "hu": "partomlás és árvíz után: kalászszedésből hazatérő asszonyok vették észre az áradás kimosta csillogó tárgyakat"
+      }
+    },
+    "fate": {
+      "uk": "Значна частина скарбу розійшлася по руках і для науки втрачена; золотий нагрудник зберігається у Відні.",
+      "hu": "A kincs jelentős része elkallódott; egy aranyvért Bécsben található."
+    }
+  },
+  "summary": {
+    "uk": "Скарб золотих речей мідної доби, який улітку 1839 року повінь вимила з берега біля Tiszaszőlős; стаття про село називає його найбагатшим золотим скарбом, будь-коли знайденим на землі Угорщини.",
+    "hu": "Rézkori aranykincs, amelyet 1839 nyarán az áradás mosott ki a partoldalból Tiszaszőlős határában; a község szócikke a Magyarország földjén valaha talált leggazdagabb aranykincsnek nevezi."
+  },
+  "description": {
+    "uk": "Улітку 1839 року кілька жінок-кріпачок поверталися польовою дорогою між заплавою й урочищем Aszóhát і помітили, що остання повінь вимила з берега блискучі предмети. Знахідку пов'язують і з обвалом берега біля Nagyaszó. Значна частина речей потрапила до людей, які не розуміли їхньої цінності, і для науки пропала. Золотий нагрудник з цього скарбу, що, найімовірніше, належав вождеві мідної доби, зберігається у Відні.",
+    "hu": "1839 nyarán néhány jobbágyasszony az ártér és az Aszóhát közötti dűlőúton tartott hazafelé, amikor észrevették, hogy a legutóbbi áradás csillogó tárgyakat mosott ki a partoldalból. A lelet előkerülését a Nagyaszó melletti partoldal leomlásához is kötik. A tárgyak jelentős része olyan emberek kezére jutott, akik nem ismerték fel értéküket, így a tudomány számára elveszett. A kincsből egy aranyvért, amely minden bizonnyal egy rézkori fejedelemé volt, Bécsben található."
+  },
+  "sources": [
+    {
+      "title": "Tiszaszőlős – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tiszasz%C5%91l%C5%91s",
+      "note": "Знахідка 1839 року, доля скарбу, нагрудник у Відні; координати села."
+    }
+  ]
+}

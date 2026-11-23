@@ -1,0 +1,58 @@
+{
+  "id": "god-hun-nyeregveretek",
+  "name": {
+    "uk": "Гунська кінська жертва у форті Göd",
+    "hu": "Hun lóáldozat a gödi erődben"
+  },
+  "type": "find",
+  "coords": [
+    19.163,
+    47.686
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "migration"
+  ],
+  "find": {
+    "kind": "ritual",
+    "found": {
+      "date": "2001",
+      "to": "2002",
+      "precision": "exact",
+      "how": "excavation",
+      "note": {
+        "uk": "розкопки недобудованого пізньоримського форту під керівництвом Zsolt Mráv",
+        "hu": "a befejezetlen késő római erőd Mráv Zsolt vezette ásatása"
+      }
+    },
+    "spotNote": {
+      "uk": "Мітка стоїть біля картки форту Göd-Bócsaújtelep; точного місця рову не показано",
+      "hu": "A jelölő a göd-bócsaújtelepi erőd kártyája mellett áll; az árok pontos helyét nem mutatjuk"
+    }
+  },
+  "summary": {
+    "uk": "Череп і кістки ніг коня разом з уламками позолочених срібних оковок сідла, накриті римською цеглою, у водовідвідному рові недобудованого римського форту в Göd. Археологи тлумачать знахідку як гунський обряд «кінської шкури», приблизно на півстоліття пізніший від форту.",
+    "hu": "Ló koponyája és lábcsontjai aranyozott ezüst nyeregveretek töredékeivel, római téglákkal lefedve, a befejezetlen gödi római erőd vízelvezető árkában. A régészek a leletet az erődnél mintegy fél évszázaddal későbbi hun „lóbőrös” szertartásként értelmezik."
+  },
+  "description": {
+    "uk": "За звітом розкопок 2001 року, на дні римського рову, що спускався до Дунаю на північний схід від першої вежі, знайдено дрібні уламки позолочених срібних пластин із пунсонним лускатим орнаментом, накриті спершу цілими й битими римськими цеглинами, а потім камінням. Zsolt Mráv датував пластини приблизно на півстоліття пізніше від форту і за великим розміром орнаменту й кістками коня поруч визнав їх не окуттям піхов, а оббивкою луки чи дощок сідла. 2002 року в продовженні рову знайшли ще уламки пластин і кістки коня, серед них череп.\n\nУ публікації 2021 року Mráv, Mozgai і Bárány описують комплекс як гунське ритуальне депонування в закритому контексті. Оскільки знайдено лише череп, зуби й кістки ніг, а частина з них походить із верхніх шарів, вони реконструюють обряд «кінської шкури»: шкуру з черепом і ногами якийсь час виставляли на місці. Це типовий степовий обряд, який можна розуміти як жертву при похованні.\n\nПро сам форт — у картці [Göd-Bócsaújtelep](#/place/god-bocsaujtelep-fort), про обряд — у картці події [«Гунська кінська жертва в Göd»](#/event/god-hun-loaldozat).",
+    "hu": "A 2001-es ásatási jelentés szerint az első toronytól északkeletre a Dunához lefutó római árok alján poncolt pikkelymintás, aranyozott ezüstlemezek apró töredékeit találták, amelyeket előbb ép és tört római téglák, majd kövek fedtek. Mráv Zsolt a lemezeket az erődnél mintegy fél évszázaddal későbbre keltezte, és a minta nagy mérete, valamint a mellettük lévő lócsontok alapján nem hüvelyveretnek, hanem nyeregkápa vagy nyeregdeszkák borításának ismerte fel. 2002-ben az árok folytatásában további lemeztöredékeket és lócsontokat találtak, köztük egy koponyát.\n\nEgy 2021-es publikációban Mráv, Mozgai és Bárány az együttest zárt kontextusú hun rituális deponálásként írja le. Mivel csak koponya, fogak és lábcsontok kerültek elő, és ezek egy része a felső rétegekből származik, a „lóbőr” szertartást rekonstruálják: a koponyával és a lábakkal együtt lenyúzott bőrt egy ideig a helyszínen kiállították. Ez tipikus sztyeppei rítus, amely temetkezési áldozatként értelmezhető.\n\nMagáról az erődről a [Göd-Bócsaújtelep](#/place/god-bocsaujtelep-fort) kártya, a szertartásról a [„Hun lóáldozat Gödön”](#/event/god-hun-loaldozat) esemény kártyája szól."
+  },
+  "sources": [
+    {
+      "title": "Mráv Zs., Göd, Bócsaújtelep. Régészeti Kutatások Magyarországon 2001, № 102",
+      "url": "https://archeodatabase.hnm.hu/en/node/3785",
+      "note": "Файл 10356_God_2001_RKM.pdf у картці пам'ятки. Знахідка пластин у рові, датування на півстоліття пізніше від форту."
+    },
+    {
+      "title": "Mráv Zs., Göd, Bócsaújtelep, késő római erőd. Régészeti Kutatások Magyarországon 2002, № 101",
+      "url": "https://archeodatabase.hnm.hu/en/node/3785",
+      "note": "Файл 10356_God_2002_RKM.pdf. Кістки коня, череп, пограбоване поховання."
+    },
+    {
+      "title": "Mráv Zs., Mozgai V., Bárány A., Fragments of Silver-Gilt Saddle Plates and Horse Bones Buried in a Late Roman Ditch at Göd (Pest County, Hungary). In: Attila's Europe? Hungarian National Museum, 2021",
+      "url": "https://real.mtak.hu/139274/",
+      "note": "Анотація: обряд «кінської шкури», жертва при похованні."
+    }
+  ]
+}

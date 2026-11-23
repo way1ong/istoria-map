@@ -1,0 +1,84 @@
+{
+  "id": "zoldhalompusztai-aranyszarvas",
+  "name": {
+    "uk": "Золотий олень із Зьолдгаломпусти (Zöldhalompusztai aranyszarvas)",
+    "hu": "Zöldhalompusztai aranyszarvas"
+  },
+  "type": "find",
+  "coords": [
+    20.768,
+    47.887
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory"
+  ],
+  "find": {
+    "kind": "burial",
+    "found": {
+      "date": "1928-04",
+      "precision": "exact",
+      "how": "chance",
+      "note": {
+        "uk": "гробарі, копаючи могилу на родинному цвинтарі землевласника, натрапили в попелястій землі на спалені кістки, золоті ґудзики, оленя й ланцюг",
+        "hu": "a földbirtokos családi temetőjében sírt ásó sírásók a hamus földben égett csontokra, aranygombokra, az aranyszarvasra és egy aranyláncra bukkantak"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Угорський національний музей, Будапешт",
+          "hu": "Magyar Nemzeti Múzeum, Budapest"
+        },
+        "place": "magyar-nemzeti-muzeum"
+      }
+    ],
+    "spotNote": {
+      "uk": "Zöldhalompuszta нині належить до села Csincse; мітка стоїть у центрі цього села",
+      "hu": "Zöldhalompuszta ma Csincséhez tartozik; a jelölő ennek a falunak a központjában áll"
+    }
+  },
+  "summary": {
+    "uk": "Скіфська золота оздоба щита у вигляді оленя завдовжки 37 см, найбільший з відомих скіфських золотих оленів (залізна доба, VI століття до н. е.); знайдена у квітні 1928 року на Zöldhalompuszta.",
+    "hu": "Szarvas alakú szkíta arany pajzsdísz, 37 cm hosszú, az eddig ismert legnagyobb szkíta aranyszarvas (vaskor, Kr. e. 6. század); 1928 áprilisában került elő Zöldhalompusztán."
+  },
+  "description": {
+    "uk": "У 1920-х роках пуста належала родині Kubik, яка мала тут родинний цвинтар. У квітні 1928 року, перед похороном землевласника, гробарі помітили в попелястій землі спалені кістки, з-поміж яких показалися золоті ґудзики, далі — золота фігура оленя, а під нею ще й золотий ланцюг. Того ж року розкопки на місці провів археолог Nándor Fettich. Разом з оленем з Tápiószentmárton це одна з найважливіших скіфських знахідок Угорщини.\n\nZöldhalompuszta лежить за 10 км від Mezőkeresztes; до 1 січня 1995 року вона належала до цього міста, а відтоді — до села Csincse.",
+    "hu": "Az 1920-as években a puszta a Kubik család birtoka volt, itt volt a család temetkezési helye. 1928 áprilisában, a földbirtokos temetése előtt a sírásók égett csontokra figyeltek fel a hamus földben, a csontok közül aranygombok tűntek elő, majd meglátták az arany szarvasalakot, alatta pedig egy aranyláncot. Az ásatást még abban az évben Fettich Nándor régész vezette. A tápiószentmártoni szarvassal együtt a legjelentősebb hazai szkíta leletek közé tartozik.\n\nZöldhalompuszta Mezőkeresztestől 10 km-re fekszik; 1995. január 1-jéig Mezőkereszteshez tartozott, azóta Csincse része."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Gold_stag_appliqu%C3%A9_-_Hungarian_National_Museum_2.1929.1.jpg",
+      "author": "CryolophosaurusEllioti",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Gold_stag_appliqu%C3%A9_-_Hungarian_National_Museum_2.1929.1.jpg",
+      "caption": {
+        "uk": "Золотий олень із Zöldhalompuszta зі збірки Угорського національного музею (знімок з виїзної виставки)",
+        "hu": "A zöldhalompusztai aranyszarvas a Magyar Nemzeti Múzeum gyűjteményéből (vendégkiállításon készült felvétel)"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Zöldhalompuszta – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Z%C3%B6ldhalompuszta",
+      "note": "Обставини знахідки 1928 року, розкопки Fettich, належність пусти."
+    },
+    {
+      "title": "Magyar Nemzeti Múzeum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Magyar_Nemzeti_M%C3%BAzeum",
+      "note": "Підпис до оздоб: довжина 37 см, найбільший з відомих; залізна доба, VI століття до н. е."
+    },
+    {
+      "title": "Szkíta művészet – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szk%C3%ADta_m%C5%B1v%C3%A9szet",
+      "note": "Олені з Zöldhalompuszta й Tápiószentmárton в Угорському національному музеї."
+    },
+    {
+      "title": "Csincse – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Csincse",
+      "note": "Координати села."
+    }
+  ]
+}

@@ -1,10 +1,42 @@
 {
   "id": "vac-szarvas-hegy-menedek",
-  "name": { "uk": "Сховище часів монгольської навали на горі Szarvas-hegy (Naszály)", "hu": "Tatárjárás kori menedékhely a Szarvas-hegyen" },
-  "type": "archaeological",
-  "coords": [19.139, 47.836],
+  "name": {
+    "uk": "Скарби зі сховку на горі Szarvas-hegy біля Вацу (1241)",
+    "hu": "Tatárjárás kori menedékhely és kincsleletek a váci Szarvas-hegyen"
+  },
+  "type": "find",
+  "coords": [
+    19.139,
+    47.836
+  ],
   "coordsPrecision": "approximate",
-  "periods": ["migration", "arpad"],
+  "periods": [
+    "arpad"
+  ],
+  "find": {
+    "kind": "hoard",
+    "found": {
+      "date": "2019-03",
+      "precision": "exact",
+      "how": "detector",
+      "note": {
+        "uk": "вацький пошуковець-любитель знайшов перші монети й повідомив музей; у вересні 2019 року музеї провели розкопки",
+        "hu": "egy váci amatőr fémkeresős találta az első érméket, és értesítette a múzeumot; 2019 szeptemberében a múzeumok ásatást végeztek"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музейний центр Ferenczy (Ferenczy Múzeumi Centrum), Сентендре",
+          "hu": "Ferenczy Múzeumi Centrum, Szentendre"
+        }
+      }
+    ],
+    "spotNote": {
+      "uk": "Мітка стоїть на вершині гори, а не на місці знахідки",
+      "hu": "A jelölő a hegy csúcsán áll, nem a lelőhelyen"
+    }
+  },
   "summary": {
     "uk": "Непомітна печера під скельним гребенем на північному схилі Naszály, де 1241 року мешканці навколишніх сіл ховали скарби монет і залізні знаряддя. Знайдено 2019 року шукачем-любителем, досліджено музеями Вацу і Сентендре. Координати приблизні (вершина гори).",
     "hu": "Rejtett barlang a Naszály északi oldalán, a Szarvas-hegy sziklagerince alatt, ahol 1241-ben a környező falvak lakói érmeket és vaseszközöket rejtettek el. 2019-ben hobbi fémkeresős találta, a váci és szentendrei múzeum kutatta. A koordináták hozzávetőlegesek (a hegy csúcsa)."
@@ -13,8 +45,29 @@
     "uk": "У березні 2019 року вацький шукач-любитель із металошукачем біля підніжжя скельного гребеня Szarvas-hegy знайшов ґудзик, мідну монету Бели III і 52 денари 1170–1240 років (угорські, кельнські, трірські, фрізахські); згодом з друзями ще 31 монету, залізні тесла-мотики й сокири, бронзову двовуху посудинку і черепки. Знахідки передано Музейному центру Ferenczy. У скелі ховається печера завглибшки близько 2,5 м з долівкою 2 × 3 м (у реєстрі природоохоронного органу Középső Zsomboly), придатна для родини з трьох–п'яти осіб.\n\nОбстеження і дводенні планові розкопки у вересні 2019 року (музей Tragor Ignác, Музейний центр Ferenczy, волонтери Товариства громадської археології, студенти) виявили щонайменше чотири схованки за кілька метрів одна від одної: два скарби монет, два депозити залізних знарядь, між ними кераміку XIII століття і кістки тварин. Культурного шару немає, тож перебування було тимчасовим; суворе місце пояснюється лише кризою. У заповненні печери знайдено й ліплений посуд та римську бронзову оковку, тож її використовували і в пізньоримську та ранньосередньовічну добу. Зі скелі видно місце середньовічного села Gyada (MRT 9: 31/22) і його ставок.\n\nЦя пам'ятка приклад того, як знахідка з металошукачем, вчасно передана музею, стала науковим відкриттям: стаття опублікована у збірці про громадську археологію комітату Пешт. Точне місце не публікується; координати тут відповідають вершині Szarvas-hegy за OpenStreetMap.",
     "hu": "2019 márciusában egy váci amatőr kereső fémkeresővel a Szarvas-hegy sziklagerincének lábánál egy gombot, III. Béla rézérméjét és 52, 1170–1240 közötti dénárt (magyar, kölni, trieri, friesachi) talált; később barátaival további 31 érmét, vas szalukapákat és fejszéket, egy kétfülű bronz edénykét és cserepeket. A leleteket a Ferenczy Múzeumi Centrumnak adták át. A sziklában egy mintegy 2,5 m mély, 2 × 3 m-es aljzatú barlang rejtőzik (a természetvédelmi hatóság nyilvántartásában Középső Zsomboly), amely három–öt fős család számára alkalmas.\n\nA 2019 szeptemberi terepbejárás és kétnapos tervásatás (Tragor Ignác Múzeum, Ferenczy Múzeumi Centrum, a Közösségi Régészeti Egyesület önkéntesei, egyetemi hallgatók) legalább négy, egymástól néhány méterre lévő rejtekhelyet tárt fel: két érmekincset, két vaseszköz-depót, közöttük XIII. századi kerámiát és állatcsontokat. Kultúrréteg nincs, tehát az ott-tartózkodás ideiglenes volt; a zord helyet csak válsághelyzet magyarázza. A barlang kitöltésében kézzel formált edényeket és római bronzveretet is találtak, így a késő római és a kora középkori időszakban is használták. A szikláról látszik a középkori Gyada falu helye (MRT 9: 31/22) és tava.\n\nEz a lelőhely példa arra, hogyan vált tudományos felfedezéssé egy időben a múzeumnak átadott fémkeresős lelet: a cikk a Pest megyei közösségi régészetről szóló kötetben jelent meg. A pontos hely nem kerül nyilvánosságra; az itteni koordináták a Szarvas-hegy csúcsának felelnek meg az OpenStreetMap alapján."
   },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/V%C3%A1c%2C_Nasz%C3%A1ly%2C_kil%C3%A1t%C3%A1s%2C_1.jpg",
+      "author": "Random photos 1989",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A1c%2C_Nasz%C3%A1ly%2C_kil%C3%A1t%C3%A1s%2C_1.jpg",
+      "caption": {
+        "uk": "Краєвид з гори Naszály над Вацом, 2021",
+        "hu": "Kilátás a Vác fölötti Naszályról, 2021"
+      }
+    }
+  ],
   "sources": [
-    { "title": "Mag H., Rácz T. Á., Tatárjárás kori menedékhely a váci Szarvas-hegyen. In: Kincskeresés, kaland, tudomány. Közösségi régészeti projektek Pest megyében. Ferenczy Múzeumi Centrum, Szentendre 2021", "url": "https://real.mtak.hu/89623/1/KKT_regeszeti_kiadvany_20210805.pdf", "note": "Сторінки 59 і далі. Усі факти про знахідку й розкопки." },
-    { "title": "Nominatim (OpenStreetMap): Szarvas-hegy, Vác", "url": "https://nominatim.openstreetmap.org/search?q=Szarvas-hegy%2C+V%C3%A1c&format=jsonv2", "note": "Вершина 47.8357, 19.1392; тут округлено до 3 знаків. Дані © учасники OpenStreetMap, ODbL." }
+    {
+      "title": "Mag H., Rácz T. Á., Tatárjárás kori menedékhely a váci Szarvas-hegyen. In: Kincskeresés, kaland, tudomány. Közösségi régészeti projektek Pest megyében. Ferenczy Múzeumi Centrum, Szentendre 2021",
+      "url": "https://real.mtak.hu/89623/1/KKT_regeszeti_kiadvany_20210805.pdf",
+      "note": "Сторінки 59 і далі. Усі факти про знахідку й розкопки."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Szarvas-hegy, Vác",
+      "url": "https://nominatim.openstreetmap.org/search?q=Szarvas-hegy%2C+V%C3%A1c&format=jsonv2",
+      "note": "Вершина 47.8357, 19.1392; тут округлено до 3 знаків. Дані © учасники OpenStreetMap, ODbL."
+    }
   ]
 }

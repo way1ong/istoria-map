@@ -1,0 +1,64 @@
+{
+  "id": "nagyszeksos",
+  "name": {
+    "uk": "Надьсексошська знахідка: гунське золото (Nagyszéksósi lelet)",
+    "hu": "Nagyszéksósi lelet"
+  },
+  "type": "find",
+  "coords": [
+    20.05,
+    46.183
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "migration"
+  ],
+  "find": {
+    "kind": "ritual",
+    "found": {
+      "date": "1926",
+      "precision": "exact",
+      "how": "chance",
+      "note": {
+        "uk": "п'ятирічний хлопчик, садячи квіти у винограднику, знайшов золоту гривню; окремі речі траплялися тут ще на початку 1910-х років, а музей досліджував місце 1926 і 1934 року",
+        "hu": "egy ötéves kisfiú virágültetés közben arany nyakperecet talált a szőlőben; egyes tárgyak már az 1910-es évek elején előkerültek, a múzeum 1926-ban és 1934-ben kutatta a helyet"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музей Móra Ferenc, Сеґед",
+          "hu": "Móra Ferenc Múzeum, Szeged"
+        },
+        "note": {
+          "uk": "155 предметів; зберігаються в сейфі, їх показують на тимчасових виставках",
+          "hu": "155 tárgy; páncélszekrényben őrzik, időszaki kiállításokon mutatják be"
+        }
+      }
+    ],
+    "spotNote": {
+      "uk": "Пустка Nagyszéksós лежить на околиці Röszke; мітка стоїть у центрі цього села",
+      "hu": "Nagyszéksós-puszta Röszke határában fekszik; a jelölő a község központjában áll"
+    }
+  },
+  "summary": {
+    "uk": "Найбільша золота знахідка гунської доби в Подунав'ї: понад 200 предметів, серед них суцільна золота гривня вагою 407 г. Частинами виходила на світ від початку 1910-х років на пустці Nagyszéksós, нині на околиці Röszke.",
+    "hu": "A hun kori Duna-vidék legnagyobb aranylelete: több mint 200 tárgy, köztük egy 407 grammos tömör arany nyakperec. Az 1910-es évek elejétől részletekben került elő a ma Röszke határában lévő Nagyszéksós-pusztán."
+  },
+  "description": {
+    "uk": "Золоті речі знаходили тут ще на початку 1910-х років: діти гралися ними й вимінювали їх у школі на яблука й печений гарбуз. 1926 року п'ятирічний хлопчик, садячи квіти у винограднику біля батьківського хутора, знайшов золоту гривню. Її мали за мідну, розігнули на іграшкову паличку, і дитина її загубила; під час молотьби гривню знайшов тракторист, який пішов до ювеліра, а той — до директора сеґедського музею Ferenc Móra. Móra одразу приїхав на хутір і знайшов у землі ще багато золотих речей, але глибоко копати господар не дозволив, щоб не чіпали виноградника. 1934 року, коли виноградник вирубали, музей дослідив ділянку близько 50 × 50 м на півтора метра завглибшки й у навіяному піску на глибині 40–80 см знайшов ще багато золота; власникові заплатили його вартість.\n\nСеред речей, частина яких сильно обгоріла, дев'ять пряжок з перегородчастою оздобою, наконечники ременів, рештки одягу із золотом, золоті окуття мечів і кинджалів, оздоби кінської збруї й уламки золотих посудин. Довго знахідку вважали кремаційним похованням гунського вельможі; тепер її тлумачать як рештки поминальної жертви на вогнищі, яке розпалювали осторонь від таємної могили. Найімовірнішим часом вважають добу великого короля Руги; не відкидають і зв'язку з похороном Аттіли.\n\nПід час війни директор музею вивіз скарб у наплічнику до Національного музею, а після війни Сеґед отримав його назад; кілька речей потрапили до приватної збірки.",
+    "hu": "Aranytárgyakat már az 1910-es évek elején találtak itt: a gyerekek játszottak velük, és az iskolában almáért, sült tökért cserélték el őket. 1926-ban egy ötéves kisfiú a szülei tanyájához tartozó szőlőben virágültetés közben arany nyakperecet talált. Réznek vélték, kiegyenesítették játékpálcának, és a gyerek elvesztette; csépléskor egy traktoros találta meg, aki ékszerészhez fordult, ő pedig Móra Ferenchez, a szegedi múzeum igazgatójához. Móra azonnal kiment a tanyára, és sok további aranytárgyat talált, de mélyre nem áshatott, mert a gazda nem engedte megbolygatni a szőlőt. 1934-ben, a szőlő kivágása után a múzeum másfél méter mélyen átkutatta a körülbelül 50 × 50 méteres területet, és a szélfútta homokban, 40–80 cm mélyen sok aranytárgyat talált; a tulajdonosnak az arany értékének megfelelő térítést fizettek.\n\nA részben erősen megégett tárgyak között kilenc rekeszdíszes csat, szíjvégek, arannyal díszített ruhák maradványai, kardok és tőrök aranydíszei, lószerszámdíszek és aranyedények töredékei vannak. Sokáig egy hun előkelő hamvasztásos sírjának tartották; ma halotti áldozat, a titkos sírtól távol gyújtott máglya maradványának tekintik. Legvalószínűbbnek Ruga nagykirály korát tartják; azt sem zárják ki, hogy Attila halotti áldozatának maradványa.\n\nA háború idején a múzeum igazgatója hátizsákban menekítette a kincset a Nemzeti Múzeumba, a háború után Szeged visszakapta; néhány darab magángyűjteménybe került."
+  },
+  "sources": [
+    {
+      "title": "Nagyszéksósi lelet – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagysz%C3%A9ks%C3%B3si_lelet",
+      "note": "Історія знахідки 1910-х, 1926 і 1934 років, склад, тлумачення, доля під час війни, зберігання."
+    },
+    {
+      "title": "Nominatim (OpenStreetMap): Röszke",
+      "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&q=R%C3%B6szke",
+      "note": "Координати центру села 46.183, 20.05 (округлено); дані © учасники OpenStreetMap, ODbL."
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import type { ToolUser } from './types';
+import type { FindHow, FindKind, ToolUser } from './types';
 
 export type Route =
   | { page: 'map'; period?: string; place?: string }
@@ -10,7 +10,15 @@ export type Route =
   | { page: 'tools'; audience?: ToolUser }
   | { page: 'tool'; id: string }
   | { page: 'landscape' }
+  | { page: 'finds'; kind?: FindKind; period?: string; how?: FindHow }
+  | { page: 'find'; id: string }
   | { page: 'chronology'; period?: string };
+
+/** Види знахідок у порядку фішок розділу «Знахідки». */
+export const FIND_KINDS: FindKind[] = ['hoard', 'coins', 'burial', 'ritual', 'object', 'remains'];
+
+/** Способи, якими знайдено річ (find.found.how). */
+export const FIND_HOWS: FindHow[] = ['excavation', 'chance', 'detector', 'unknown'];
 
 export function parseRoute(hash: string): Route {
   const clean = hash.replace(/^#\/?/, '');
@@ -36,6 +44,18 @@ export function parseRoute(hash: string): Route {
       return parts[1] ? { page: 'tool', id: parts[1] } : { page: 'tools' };
     case 'landscape':
       return { page: 'landscape' };
+    case 'finds': {
+      const k = params.get('kind');
+      const h = params.get('how');
+      return {
+        page: 'finds',
+        kind: FIND_KINDS.includes(k as FindKind) ? (k as FindKind) : undefined,
+        period: params.get('period') ?? undefined,
+        how: FIND_HOWS.includes(h as FindHow) ? (h as FindHow) : undefined,
+      };
+    }
+    case 'find':
+      return parts[1] ? { page: 'find', id: parts[1] } : { page: 'finds' };
     case 'chronology':
       return { page: 'chronology', period: params.get('period') ?? undefined };
     default:

@@ -1,0 +1,79 @@
+{
+  "id": "vaci-mumiak",
+  "name": {
+    "uk": "Вацькі мумії (Váci múmiák)",
+    "hu": "Váci múmiák"
+  },
+  "type": "find",
+  "coords": [
+    19.124,
+    47.775
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "habsburg-18",
+    "long-19"
+  ],
+  "find": {
+    "kind": "remains",
+    "found": {
+      "date": "1994",
+      "precision": "exact",
+      "how": "chance",
+      "note": {
+        "uk": "під час реставрації церкви; дослідження вела робоча група музею Tragor Ignác",
+        "hu": "a templom felújítása során; a feltárást a váci Tragor Ignác Múzeum munkacsoportja végezte"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Виставка «Memento Mori» музею Tragor Ignác, Вац",
+          "hu": "A Tragor Ignác Múzeum „Memento Mori” kiállítása, Vác"
+        }
+      }
+    ],
+    "spotNote": {
+      "uk": "Мітка стоїть біля картки церкви, у крипті якої знайдено мумії",
+      "hu": "A jelölő annak a templomnak a kártyája mellett áll, amelynek kriptájában a múmiák előkerültek"
+    }
+  },
+  "summary": {
+    "uk": "265 природно муміфікованих тіл і кістки ще 40 людей у розписаних дерев'яних трунах, знайдені 1994 року в крипті домініканської церкви у Ваці, де ховали в 1731–1838 роках.",
+    "hu": "265 természetes úton mumifikálódott holttest és további 40 személy csontmaradványai díszes fakoporsókban; 1994-ben kerültek elő a váci domonkos templom kriptájából, ahol 1731 és 1838 között temetkeztek."
+  },
+  "description": {
+    "uk": "Труни стояли рядами й одна на одній; на більшості написано ім'я чи монограму, дату смерті, а подекуди й інші відомості, тож дослідники встановили, хто більшість похованих — переважно заможні містяни й духовні особи. Тіл ніхто не бальзамував: у крипті тримається 8–11 °C і легкий рух повітря, труни зроблено із соснового дерева, а тіла обсипано стружкою, яка вбирала вологу.\n\nСеред похованих 107 жінок, 119 чоловіків і 38 осіб, стать яких визначити не вдалося. Внутрішні органи здебільшого збереглися, тому мумії вивчають антропологи, патологи й генетики. Сліди туберкульозу знайдено у 89 % тіл, хоча причиною смерті він був лише для 35 %; збудника з часів до антибіотиків досліджують разом Угорський природничий музей і науковці з Лондона та Єрусалима. За зубним каменем видно, що їли переважно картоплю й кукурудзу, а м'ясо рідко.\n\nПро церкву — у картці [Fehérek temploma](#/place/vac-feherek-temploma).",
+    "hu": "A koporsók sorban és egymásra helyezve álltak; a legtöbbön feltüntették a nevet vagy monogramot, a halál dátumát, néhol más adatokat is, így a kutatók az eltemetettek többségét azonosítani tudták — főleg tehetősebb polgárok és egyházi személyek voltak. A testeket nem balzsamozták: a kriptában 8–11 °C és enyhe légmozgás van, a koporsók fenyőfából készültek, a testek köré faforgácsot szórtak, amely felszívta a nedvességet.\n\nAz eltemetettek között 107 nő, 119 férfi és 38 megállapíthatatlan nemű személy van. A belső szervek nagyrészt megőrződtek, ezért a múmiákat antropológusok, patológusok és genetikusok vizsgálják. A tuberkulózis nyomai a testek 89%-ában kimutathatók, bár csak 35%-uknál volt a halál közvetlen oka; az antibiotikumok előtti kórokozót a Magyar Természettudományi Múzeum londoni és jeruzsálemi kutatókkal együtt vizsgálja. A fogkő alapján főleg burgonyát és kukoricát ettek, húst ritkán.\n\nA templomról a [Fehérek temploma](#/place/vac-feherek-temploma) kártya szól."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Memento_Mori_Museum._-_V%C3%A1c%2C_Hungary.JPG",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Memento_Mori_Museum._-_V%C3%A1c%2C_Hungary.JPG",
+      "caption": {
+        "uk": "Будинок на площі Március 15. tér 19 у Ваці, де міститься виставка «Memento Mori», 2015",
+        "hu": "A váci Március 15. tér 19. alatti ház, a „Memento Mori” kiállítás helye, 2015"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Váci múmiák – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1ci_m%C3%BAmi%C3%A1k",
+      "note": "Знахідка 1994 року, кількість тіл, крипти 1731–1838 років, умови в крипті, дослідження."
+    },
+    {
+      "title": "Fehérek temploma – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Feh%C3%A9rek_temploma",
+      "note": "Координати церкви."
+    },
+    {
+      "title": "Vác – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/V%C3%A1c",
+      "note": "Виставка «Memento Mori» музею Tragor Ignác."
+    }
+  ]
+}

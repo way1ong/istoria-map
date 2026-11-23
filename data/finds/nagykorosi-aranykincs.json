@@ -1,0 +1,60 @@
+{
+  "id": "nagykorosi-aranykincs",
+  "name": {
+    "uk": "Золотий скарб бронзової доби з Надькьореша (Nagykőrös)",
+    "hu": "Nagykőrösi középső bronzkori aranykincs"
+  },
+  "type": "find",
+  "coords": [
+    19.784,
+    47.033
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory"
+  ],
+  "find": {
+    "kind": "hoard",
+    "found": {
+      "date": "2020-08",
+      "precision": "exact",
+      "how": "detector",
+      "note": {
+        "uk": "член Товариства громадської археології знайшов золоті речі на щойно зораному полі й передав їх музеєві; у вересні музей провів рятівні розкопки",
+        "hu": "a Közösségi Régészeti Egyesület egyik tagja frissen szántott területen találta az aranytárgyakat, és átadta a múzeumnak; szeptemberben a múzeum leletmentést végzett"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музейний центр Ferenczy (Ferenczy Múzeumi Centrum), Сентендре",
+          "hu": "Ferenczy Múzeumi Centrum, Szentendre"
+        }
+      }
+    ],
+    "spotNote": {
+      "uk": "Музей описує місце лише як пагорб на околиці міста",
+      "hu": "A múzeum a helyet csak a város határában lévő dombhátként írja le"
+    }
+  },
+  "summary": {
+    "uk": "71 золота прикраса загальною вагою 89,27 г, знайдена 2020 року на околиці Надькьореша пошуковцем з металошукачем і музейними археологами; середня бронзова доба, імовірно, 1700–1500 роки до н. е.",
+    "hu": "71 arany ékszer, összsúlyuk 89,27 g; 2020-ban Nagykőrös határában egy fémkeresős önkéntes és a múzeum régészei találták. Középső bronzkor, valószínűleg Kr. e. 1700–1500."
+  },
+  "description": {
+    "uk": "У другій половині серпня 2020 року член Товариства громадської археології (Közösségi Régészeti Egyesület) повідомив Музейному центру Ferenczy, що на щойно зораному полі біля Надькьореша знайшов багато старожитностей, і передав 34 золоті предмети, зібрані металошукачем на поверхні й на глибині 10–20 см. Місце виявилося досі невідомою, не внесеною до реєстру пам'яткою. На початку вересня музей разом з вісімнадцятьма членами товариства три дні вів рятівні розкопки: розораний шар завтовшки 30–32 см перевірили металошукачем і просіяли, а місце кожної знахідки записали. Разом зібрано 71 золотий предмет: 6 конічних прикрас, 12 ґудзиків у формі кульового сегмента, 40 біконічних намистин, 10 дротиків і 3 уламки.\n\nПодібні речі відомі з поховань і скарбів середньої бронзової доби (2000/1900–1400 до н. е.); автор публікації обережно датує знахідку 1700–1500 роками до н. е., коли довкола Надькьореша жили громади культури Ватя. Імовірно, це частина скарбу, розтягнутого оранкою; як і чому його сховали, з'ясувати не вдалося. Під ним лежали сліди давнішого поселення баденської культури, яке зі скарбом не пов'язане.",
+    "hu": "2020 augusztusának második felében a Közösségi Régészeti Egyesület egyik tagja értesítette a Ferenczy Múzeumi Centrumot, hogy Nagykőrös határában, frissen szántott területen számos régészeti leletet talált, és átadott 34 aranytárgyat, amelyeket fémkeresővel a felszínen és 10–20 cm mélységben gyűjtött. A lelőhely addig ismeretlen, nyilvántartásba nem vett volt. Szeptember elején a múzeum az egyesület tizennyolc tagjával három napig leletmentést végzett: a 30–32 cm vastag szántott réteget fémkeresővel átvizsgálták és átszitálták, a tárgyak helyét pontosan rögzítették. Összesen 71 aranytárgy került elő: 6 kúp alakú dísz, 12 gömbszelet alakú gomb, 40 kettőskúp alakú gyöngy, 10 drót és 3 töredék.\n\nHasonló tárgyak a középső bronzkor (Kr. e. 2000/1900–1400) temetkezéseiből és kincsleleteiből ismertek; a közlés szerzője óvatosan Kr. e. 1700–1500 körülre keltezi a leletet, amikor Nagykőrös környékén a Vatya-kultúra közösségei éltek. Valószínűleg egy szántással széthúzott kincslelet része; elrejtésének körülményeit nem sikerült tisztázni. Alatta egy idősebb, a badeni kultúrához tartozó település nyomai kerültek elő, amelyeknek a kincshez nincs közük."
+  },
+  "sources": [
+    {
+      "title": "Patay R., Középső bronzkori aranykincs Pest megyéből. In: Kincskeresés, kaland, tudomány. Közösségi régészeti projektek Pest megyében. Ferenczy Múzeumi Centrum, Szentendre 2021, 38–43",
+      "url": "https://real.mtak.hu/89623/1/KKT_regeszeti_kiadvany_20210805.pdf",
+      "note": "Усі факти про знахідку, рятівні розкопки, склад і датування."
+    },
+    {
+      "title": "Nagykőrös – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nagyk%C5%91r%C3%B6s",
+      "note": "Координати міста."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "tuzseri-tarsolylemez",
+  "name": {
+    "uk": "Пластина ташки з Тужера (Tuzséri tarsolylemez)",
+    "hu": "Tuzséri tarsolylemez"
+  },
+  "type": "find",
+  "coords": [
+    22.12,
+    48.336
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "arpad"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "date": "1900",
+      "precision": "exact",
+      "how": "chance",
+      "note": {
+        "uk": "шість могил відкрили, коли землю перекопували під виноградник; розкопки провели András Jósa і László Vidovich",
+        "hu": "a hat sír szőlőtelepítés előtti földforgatáskor került elő; az ásatást Jósa András és Vidovich László végezte"
+      }
+    }
+  },
+  "summary": {
+    "uk": "Гладенька срібна пластина ташки з мідною підкладкою з шостої могили могильника доби здобуття батьківщини в Tuzsér; у ташці лежали кремінь і ножик з кістяним руків'ям.",
+    "hu": "Sima, dísztelen ezüst tarsolylemez vörösréz hátlappal a tuzséri honfoglalás kori temető 6. sírjából; a tarsolyban tűzkövet és egy csontnyelű kis vaskést találtak."
+  },
+  "description": {
+    "uk": "Шість могил доби здобуття батьківщини знайшли 1900 року на піщаному пагорбі Boszorkány-hegy, коли землю перекопували під виноградник; вони лежали одним рядом на відстані 1,5–2 м одна від одної. Розкопки провели лікар і археолог András Jósa та головний повітовий суддя László Vidovich. Найбагатшою була шоста могила. По краях пластини йдуть цвяшки з опуклими голівками, а на осі вгорі й унизу — по дві розетки. Шкіру ташки спершу вкрили тонкою залізною пластиною, яка тримала форму, тому срібна оздоба збереглася цілою.",
+    "hu": "A hat honfoglalás kori sír 1900-ban került elő a Boszorkány-hegy homokdombján, amikor a földet szőlőtelepítéshez megforgatták; egyetlen sorban, egymástól 1,5–2 m-re feküdtek. Az ásatást Jósa András régész-orvos és Vidovich László főszolgabíró végezte. A leggazdagabb a 6. sír volt. A lemez szélein körben domború fejű szögecskék, középtengelyében alul és felül két-két rozetta látható. A tarsoly bőrét előbb vékony vaslemezzel borították, amely megmerevítette, így a díszítő ezüstlemez is épen maradt."
+  },
+  "sources": [
+    {
+      "title": "Tuzséri tarsolylemez – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tuzs%C3%A9ri_tarsolylemez",
+      "note": "Знахідка 1900 року, шість могил, опис пластини й ташки, дослідники."
+    },
+    {
+      "title": "Tuzsér – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Tuzs%C3%A9r",
+      "note": "Шоста могила — найбагатша; координати села."
+    }
+  ]
+}

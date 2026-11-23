@@ -1,0 +1,77 @@
+{
+  "id": "aquincumi-viziorgona",
+  "name": {
+    "uk": "Аквінкумський водяний орган (Aquincumi víziorgona)",
+    "hu": "Aquincumi víziorgona"
+  },
+  "type": "find",
+  "coords": [
+    19.049,
+    47.567
+  ],
+  "coordsPrecision": "approximate",
+  "periods": [
+    "roman-barbaricum"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "date": "1931",
+      "precision": "exact",
+      "how": "excavation",
+      "note": {
+        "uk": "Lajos Nagy знайшов рештки органа в підвалі будинку пожежної колегії, коли розкопували південну браму міста",
+        "hu": "Nagy Lajos a tűzoltó-kollégium székházának pincéjében találta meg a maradványokat, amikor a déli városkaput tárták fel"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Аквінкумський музей (Aquincumi Múzeum), Будапешт",
+          "hu": "Aquincumi Múzeum, Budapest"
+        },
+        "place": "aquincum",
+        "note": {
+          "uk": "на постійній виставці — реконструкція інструмента",
+          "hu": "az állandó kiállításon a hangszer rekonstrukciója látható"
+        }
+      }
+    ],
+    "spotNote": {
+      "uk": "Орган знайдено в цивільному місті Аквінкума; мітка стоїть біля картки Аквінкума",
+      "hu": "Az orgona az aquincumi polgárvárosban került elő; a jelölő Aquincum kártyája mellett áll"
+    }
+  },
+  "summary": {
+    "uk": "Рештки органа, який 228 року подарували пожежній колегії Аквінкума: близько 400 металевих деталей, знайдених 1931 року. До цієї знахідки про будову таких інструментів знали лише із зображень та описів.",
+    "hu": "Annak az orgonának a maradványai, amelyet 228-ban ajándékoztak az aquincumi tűzoltó-kollégiumnak: mintegy 400 fém alkatrész, 1931-ben került elő. Előkerüléséig az ilyen hangszerek felépítésére csak ábrázolásokból és leírásokból lehetett következtetni."
+  },
+  "description": {
+    "uk": "Напис на бронзовій табличці повідомляє, що інструмент (hydra) власним коштом подарував колегії Gaius Iulius Viatorinus, член міської ради Аквінкума й очільник колегії, за консульства Модеста й Проба, тобто 228 року. Орган був невеликий і переносний, мав 52 трубки в чотири ряди по 13. За назвою він мав працювати від води, але знайдені деталі радше вказують на міхи, тож про його дію сперечаються досі.\n\nУ III столітті будинок колегії згорів, орган упав у підвал, і його засипало уламками. Під час Другої світової війни частина деталей пропала, тепер їх ледве 300. Реконструкцію можна побачити й почути в Аквінкумському музеї: верхню частину 1935 року виготовила печська фірма Angster, нижню зроблено 1988 року.",
+    "hu": "A bronz táblácska felirata szerint a hangszert (hydra) saját vagyonából Gaius Iulius Viatorinus, Aquincum városi tanácsának tagja, a kollégium parancsnoka ajándékozta a testületnek Modestus és Probus konzulsága idején, azaz 228-ban. Az orgona kisméretű és hordozható volt, 52 sípja négy sorban, soronként 13 síppal állt. Neve alapján vízzel működött, a megtalált alkatrészek azonban inkább légfújtatós szerkezetre utalnak, ezért működése ma is vita tárgya.\n\nA 3. században a székház leégett, az orgona a pincébe zuhant, és a törmelék betemette. A második világháború alatt számos darabja elveszett, ma alig 300 van meg. Rekonstrukciója az Aquincumi Múzeumban látható és hallható: felső részét 1935-ben a pécsi Angster cég készítette, alsó része 1988-ban készült."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/AquincM6.jpg",
+      "author": "Vadaro",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:AquincM6.jpg",
+      "caption": {
+        "uk": "Реконструкція органа на постійній виставці Аквінкумського музею, 2007",
+        "hu": "Az orgona rekonstrukciója az Aquincumi Múzeum állandó kiállításán, 2007"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Aquincumi víziorgona – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Aquincumi_v%C3%ADziorgona",
+      "note": "Знахідка 1931 року, напис 228 року, будова, пожежа, реконструкція."
+    },
+    {
+      "title": "Aquincumi Múzeum – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Aquincumi_M%C3%BAzeum",
+      "note": "Розкопки Lajos Nagy 1931 року; реконструкція на постійній виставці."
+    }
+  ]
+}

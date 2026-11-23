@@ -1,0 +1,46 @@
+{
+  "id": "csornai-diadem",
+  "name": {
+    "uk": "Чорнанська діадема (Csornai diadém)",
+    "hu": "Csornai hun diadém"
+  },
+  "type": "find",
+  "coords": [
+    17.25,
+    47.617
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "migration"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "how": "chance",
+      "note": {
+        "uk": "у глиняному кар'єрі цегельні чорнанського препозитства; року джерело не називає",
+        "hu": "a csornai prépostsági téglagyár agyaggödrében; az évet a forrás nem közli"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Угорський національний музей, Будапешт",
+          "hu": "Magyar Nemzeti Múzeum, Budapest"
+        },
+        "place": "magyar-nemzeti-muzeum"
+      }
+    ]
+  },
+  "summary": {
+    "uk": "Золота діадема гунського вельможі з доби переселення народів, знайдена в глиняному кар'єрі цегельні в Чорні; її можна побачити в Угорському національному музеї.",
+    "hu": "Népvándorlás kori, aranyból készült hun fejedelmi diadém, amelyet a csornai prépostsági téglagyár agyaggödrében találtak; a Magyar Nemzeti Múzeumban látható."
+  },
+  "sources": [
+    {
+      "title": "Csorna – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Csorna",
+      "note": "Діадема з глиняного кар'єру цегельні препозитства, музей; координати міста."
+    }
+  ]
+}

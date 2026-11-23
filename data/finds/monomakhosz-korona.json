@@ -1,0 +1,75 @@
+{
+  "id": "monomakhosz-korona",
+  "name": {
+    "uk": "Корона Мономаха (Monomakhosz-korona)",
+    "hu": "Monomakhosz-korona"
+  },
+  "type": "find",
+  "coords": [
+    18.118,
+    48.238
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "arpad"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "date": "1860",
+      "to": "1861",
+      "precision": "exact",
+      "how": "chance",
+      "note": {
+        "uk": "емальовані пластини виорано плугом",
+        "hu": "a zománclemezeket az eke szántotta ki"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Угорський національний музей, Будапешт",
+          "hu": "Magyar Nemzeti Múzeum, Budapest"
+        },
+        "place": "magyar-nemzeti-muzeum"
+      }
+    ],
+    "abroad": true,
+    "spotNote": {
+      "uk": "Село лежить у Словаччині",
+      "hu": "A falu Szlovákiában fekszik"
+    }
+  },
+  "summary": {
+    "uk": "Візантійський вінець із шести пластин з перегородчастою емаллю, виготовлений між 1042 і 1050 роками; пластини виорано 1860 і 1861 року в Nyitraivánka (нині Ivanka pri Nitre, Словаччина).",
+    "hu": "Hat rekeszzománcos lemezből álló bizánci fejék, 1042 és 1050 között készült; lemezeit 1860-ban és 1861-ben szántották ki Nyitraivánkán (ma Ivanka pri Nitre, Szlovákia)."
+  },
+  "description": {
+    "uk": "Корону замовив візантійський імператор Костянтин Мономах. На пластинах зображено його самого, його дружину, імператрицю Зою, та її сестру Феодору, а також танцівниць і алегоричні постаті Чесноти й Вірності; отже, корону зроблено за їхнього спільного правління. Імовірно, це жіноча корона; припускають, що її отримав від імператора король Андраш I. Одразу після знахідки з кількох пластин зробили копію, яку в Британському музеї виставляли як оригінал, доки підробку не викрили.",
+    "hu": "A koronát Kónsztantinosz Monomakhosz bizánci császár készíttette. Lemezei a császárt, feleségét, Zoé császárnőt és annak nővérét, Theodórát, valamint táncoló nőalakokat és az Erény és a Hűség allegorikus alakját ábrázolják; tehát együttes uralkodásuk idején készült. Valószínűleg női korona; feltételezések szerint I. András király kapta a császártól. Előkerülése után egyes lemezeiről rögtön másolat készült, amelyet a British Museumban eredetiként állítottak ki, amíg a hamisítványt le nem leplezték."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Monomacho%27s_crown_-_circa_1042_Budapest.JPG",
+      "author": "Andrew massyn",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Monomacho%27s_crown_-_circa_1042_Budapest.JPG",
+      "caption": {
+        "uk": "Пластини корони Мономаха в Угорському національному музеї, 2008",
+        "hu": "A Monomakhosz-korona lemezei a Magyar Nemzeti Múzeumban, 2008"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Monomakhosz-korona – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Monomakhosz-korona",
+      "note": "Опис, датування, зображені особи, копія в Британському музеї; у переліку джерел — публікація János Érdy 1861 року про емалі, виорані 1860 і 1861 року."
+    },
+    {
+      "title": "Nyitraivánka – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Nyitraiv%C3%A1nka",
+      "note": "Корону знайдено на околиці села; координати."
+    }
+  ]
+}

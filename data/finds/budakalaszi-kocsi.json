@@ -1,0 +1,74 @@
+{
+  "id": "budakalaszi-kocsi",
+  "name": {
+    "uk": "Будакаласький віз (Budakalászi kocsi)",
+    "hu": "Budakalászi kocsi"
+  },
+  "type": "find",
+  "coords": [
+    19.046,
+    47.622
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "date": "1953",
+      "precision": "exact",
+      "how": "excavation",
+      "note": {
+        "uk": "в одній з могил могильника баденської культури, розкопаного на території гравійного кар'єру",
+        "hu": "a kavicsbánya területén feltárt badeni temető egyik sírjából"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Музейний центр Ferenczy (Ferenczy Múzeumi Centrum), Сентендре",
+          "hu": "Ferenczy Múzeumi Centrum, Szentendre"
+        }
+      }
+    ]
+  },
+  "summary": {
+    "uk": "Маленька глиняна посудина у вигляді чотириколісного воза, імовірно, найдавніше зображення воза в Європі; знайдена 1953 року в могилі баденської культури в Будакаласі.",
+    "hu": "Négykerekű kocsit formázó kis agyagedény, Európa alighanem legrégibb kocsiábrázolása; 1953-ban került elő egy badeni sírból Budakalászon."
+  },
+  "description": {
+    "uk": "Боки посудини прикрашає прокреслений геометричний візерунок. Стаття угорської Вікіпедії датує її останньою чвертю III тисячоліття до н. е.; саму баденську культуру музейне видання 2021 року відносить до 3400–2900/2800 років до н. е. Знахідка свідчить, що Карпатський басейн був важливою ланкою в поширенні колеса з Месопотамії. Призначення посудини невідоме; імовірно, вона служила для обрядів. Це одна з найвідоміших археологічних знахідок Угорщини.",
+    "hu": "Az edény oldalait bekarcolt geometrikus minta díszíti. A magyar Wikipédia szócikke az i. e. 3. évezred utolsó negyedére keltezi; magát a badeni kultúrát egy 2021-es múzeumi kiadvány Kr. e. 3400–2900/2800 közé teszi. A lelet azt tanúsítja, hogy a Kárpát-medence fontos állomás volt a kerék Mezopotámiából való elterjedésében. Rendeltetése ismeretlen, valószínűleg kultikus célokat szolgált. Magyarország legismertebb régészeti leletei közé tartozik."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/%27Kupferzeit_Wagen%27_von_Zolt%C3%A1n_Jov%C3%A1n%2C_2022_Budakal%C3%A1sz.jpg",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:%27Kupferzeit_Wagen%27_von_Zolt%C3%A1n_Jov%C3%A1n%2C_2022_Budakal%C3%A1sz.jpg",
+      "caption": {
+        "uk": "Пам'ятник «Віз мідної доби» в Будакаласі (Zoltán Jován, 2012), зроблений за зразком знахідки",
+        "hu": "A „Rézkori kocsi” szobor Budakalászon (Jován Zoltán, 2012), a lelet mintájára"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Budakalászi kocsi – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Budakal%C3%A1szi_kocsi",
+      "note": "Знахідка 1953 року, опис, датування, музей."
+    },
+    {
+      "title": "Budakalász – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Budakal%C3%A1sz",
+      "note": "Гравійний кар'єр, 1953; координати міста."
+    },
+    {
+      "title": "Patay R., Középső bronzkori aranykincs Pest megyéből. In: Kincskeresés, kaland, tudomány. Közösségi régészeti projektek Pest megyében. Ferenczy Múzeumi Centrum, Szentendre 2021, 38–43",
+      "url": "https://real.mtak.hu/89623/1/KKT_regeszeti_kiadvany_20210805.pdf",
+      "note": "Датування баденської культури: 3400–2900/2800 до н. е."
+    }
+  ]
+}

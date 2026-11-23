@@ -1,0 +1,84 @@
+{
+  "id": "szentgyorgyvolgyi-tehenszobor",
+  "name": {
+    "uk": "Фігурка корови з Сентдьордьвельдя (Szentgyörgyvölgyi tehénszobor)",
+    "hu": "Szentgyörgyvölgyi tehénszobor"
+  },
+  "type": "find",
+  "coords": [
+    16.409,
+    46.726
+  ],
+  "coordsPrecision": "settlement",
+  "periods": [
+    "prehistory"
+  ],
+  "find": {
+    "kind": "object",
+    "found": {
+      "date": "1995",
+      "precision": "exact",
+      "how": "excavation",
+      "note": {
+        "uk": "розкопки неолітичного поселення на пагорбі Pityer-domb під керівництвом Eszter Bánffy",
+        "hu": "a Pityer-dombi neolitikus település Bánffy Eszter vezette ásatása"
+      }
+    },
+    "keptAt": [
+      {
+        "name": {
+          "uk": "Угорський національний музей, Будапешт",
+          "hu": "Magyar Nemzeti Múzeum, Budapest"
+        },
+        "place": "magyar-nemzeti-muzeum",
+        "note": {
+          "uk": "на археологічній виставці; за інвентарем належить музеєві в Залаеґерсеґу",
+          "hu": "a régészeti kiállításon; a zalaegerszegi múzeum leltárában szerepel"
+        }
+      },
+      {
+        "name": {
+          "uk": "Sindümúzeum, Velemér",
+          "hu": "Sindümúzeum, Velemér"
+        },
+        "note": {
+          "uk": "автентична копія",
+          "hu": "hiteles másolat"
+        }
+      }
+    ]
+  },
+  "summary": {
+    "uk": "Фігурка корови з випаленої глини завдовжки близько 10 см, знайдена 1995 року на неолітичному поселенні культури лінійно-стрічкової кераміки; її датують приблизно 5500 роком до н. е.",
+    "hu": "Kb. 10 cm hosszú, égetett agyag tehénszobrocska, amely 1995-ben került elő a vonaldíszes kerámia kultúrájának neolitikus településén; kb. i. e. 5500-ra keltezik."
+  },
+  "description": {
+    "uk": "Поселення віком близько 7500 років помітили під час планового обстеження місцевості, а потім розкопали; розкопками на пагорбі Pityer-domb між Szentgyörgyvölgy і Márokföld керувала археологиня Eszter Bánffy. Фігурка темно-червона, на ній прокреслено лінії, типові для геометричного орнаменту тієї культури; такі фігурки археологи вважають приладдям обрядів. Кілька будівель неолітичного села відтворено в сусідньому Csesztreg.",
+    "hu": "A mintegy 7500 éves települést tervszerű terepbejárás során ismerték fel, majd feltárták; a Szentgyörgyvölgy és Márokföld közötti Pityer-dombon folyó ásatást Bánffy Eszter régész vezette. A sötétvörösre égetett szobrocskán a kultúrára jellemző geometrikus vonaldíszek láthatók; az ilyen szobrocskákat a régészek a vallásos tevékenység kellékének tekintik. A neolitikus falu néhány épületét a közeli Csesztregen rekonstruálták."
+  },
+  "photos": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Szentgy%C3%B6rgyv%C3%B6lgy_cow_%281%29.jpg",
+      "author": "Derzsi Elekes Andor",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Szentgy%C3%B6rgyv%C3%B6lgy_cow_%281%29.jpg",
+      "caption": {
+        "uk": "Автентична копія фігурки в музеї Sindümúzeum у Velemér, 2015",
+        "hu": "A szobrocska hiteles másolata a veleméri Sindümúzeumban, 2015"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Szentgyörgyvölgyi tehénszobor – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szentgy%C3%B6rgyv%C3%B6lgyi_teh%C3%A9nszobor",
+      "note": "Знахідка 1995 року, датування, де зберігається, копія у Velemér."
+    },
+    {
+      "title": "Szentgyörgyvölgy – Wikipédia (hu)",
+      "url": "https://hu.wikipedia.org/wiki/Szentgy%C3%B6rgyv%C3%B6lgy",
+      "note": "Пагорб Pityer-domb між Szentgyörgyvölgy і Márokföld; координати села."
+    }
+  ]
+}
