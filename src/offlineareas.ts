@@ -3,7 +3,7 @@
 // Service worker (vite.config.ts) віддає їх Allmaps і без мережі, а з мережею — замість повторного завантаження.
 // Цілу країну так не зберегти: аркуш IOS у повній роздільності важить ~130 МБ, тому — ділянками.
 import { histMaps, mapSeries, places } from './data';
-import { beginJob, endJob, failureKind, fetchInto, offlineSupported, siteUrl, tickJob, type DownloadResult } from './offline';
+import { beginJob, endJob, failureKind, fetchInto, offlineSupported, setOfflineLost, siteUrl, tickJob, type DownloadResult } from './offline';
 import type { Place } from './types';
 
 /** Кеш ділянок; та сама назва — у правилі service worker для серверів IIIF. */
@@ -313,6 +313,7 @@ export async function downloadArea(plan: AreaPlan, label?: string): Promise<Down
     const area: SavedArea = { id, bbox: plan.bbox, label, placeId: nearestPlace(plan.bbox)?.id, bytes, tiles: plan.tiles.length, date: new Date().toISOString().slice(0, 10) };
     saveAreas([...savedAreas(), area]);
     storageP = null;
+    setOfflineLost(false);
     return 'ok';
   } catch (e) {
     return failureKind(e);
@@ -337,11 +338,12 @@ export async function deleteArea(id: string): Promise<void> {
   storageP = null;
 }
 
-/** Браузер міг стерти кеш, коли бракувало місця: тоді збережених ділянок більше немає. */
+/** Кеш міг стерти браузер, коли бракувало місця, або інший сайт з тієї самої адреси: тоді збережених ділянок більше немає. */
 export async function verifyAreas(): Promise<boolean> {
   if (!offlineSupported() || !savedAreas().length) return false;
   if (await caches.has(IIIF_CACHE)) return false;
   saveAreas([]);
   storageP = null;
+  setOfflineLost(true);
   return true;
 }

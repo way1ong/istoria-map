@@ -333,6 +333,10 @@ figcaption { font-size: 12px; color: var(--muted); }
 .off-pct { flex: none; font-variant-numeric: tabular-nums; color: var(--muted); font-size: 12px; }
 .off-ok { color: var(--ok); font-weight: 600; }
 .off-err { margin: 4px 0; font-size: 12px; color: var(--err); }
+/* «завантажене раніше зникло»: помітна рамка, хрестик закриває */
+.off-lost { display: flex; align-items: flex-start; gap: 4px; margin: 0 0 8px; padding: 8px 4px 8px 10px; border: 1px solid var(--err); border-radius: 8px; font-size: 13px; line-height: 1.35; }
+.off-lost span { flex: 1; min-width: 0; }
+.off-lost-x { flex: none; font-size: 20px; line-height: 1; padding: 0 8px; color: var(--muted); }
 .off-btns { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
 .off-btn { font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); cursor: pointer; }
 .off-btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }

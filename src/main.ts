@@ -22,6 +22,7 @@ import { filterActive, mountMapTools, TYPES } from './ui/maptools';
 import { toast } from './ui/toast';
 import { offlineMapReady, verifyInstalled } from './offline';
 import { verifyAreas } from './offlineareas';
+import { healAppCache } from './swheal';
 import type { PlaceFilter } from './map';
 
 setLang(getLang());
@@ -417,22 +418,32 @@ onRoute((r) => {
 });
 
 netNotice();
-// браузер міг стерти завантажені мапи, коли бракувало місця
-void verifyAreas();
-void verifyInstalled().then((changed) => {
-  if (!changed) return;
-  mapCtl?.networkChanged();
-  if (mapCtl) renderBasemapCtl(mapCtl);
-});
 
 // Service worker: застосунок відкривається без інтернету; нову версію ставимо, коли людина погодиться.
-const updateSW = registerSW({
-  immediate: true,
-  onNeedRefresh() {
-    toast(t('updateReady'), { action: t('updateNow'), onAction: () => void updateSW(true), ms: 0 });
-  },
-  onRegisteredSW(_url, reg) {
-    // встановлений застосунок може бути відкритий днями: раз на годину перевіряємо, чи є нова версія
-    if (reg) setInterval(() => { if (navigator.onLine) void reg.update(); }, 60 * 60 * 1000);
-  },
+function startSW() {
+  const updateSW = registerSW({
+    immediate: true,
+    onNeedRefresh() {
+      toast(t('updateReady'), { action: t('updateNow'), onAction: () => void updateSW(true), ms: 0 });
+    },
+    onRegisteredSW(_url, reg) {
+      // встановлений застосунок може бути відкритий днями: раз на годину перевіряємо, чи є нова версія
+      if (reg) setInterval(() => { if (navigator.onLine) void reg.update(); }, 60 * 60 * 1000);
+    },
+  });
+}
+
+// Сховище браузера спільне для всіх сайтів з однієї адреси, тож кеші може стерти не лише сам браузер, а й сусідній
+// сайт. Спершу — чи цілі файли самого застосунку: якщо ні, сторінка перезавантажиться й service worker поставиться
+// заново (src/swheal.ts). Далі — чи на місці завантажені мапи й збережені ділянки; якщо зникли, кажемо про це.
+void healAppCache().then((reloading) => {
+  if (reloading) return;
+  startSW();
+  void Promise.all([verifyAreas(), verifyInstalled()]).then(([areasLost, packsLost]) => {
+    if (packsLost) {
+      mapCtl?.networkChanged();
+      if (mapCtl) renderBasemapCtl(mapCtl);
+    }
+    if (areasLost || packsLost) toast(t('offLost'), { action: t('more'), onAction: openOfflineTools, ms: 0 });
+  });
 });

@@ -114,6 +114,21 @@ export function onOfflineChange(cb: () => void): () => void {
 }
 const emit = () => listeners.forEach((cb) => cb());
 
+// ---------- завантажене зникло ----------
+const LOST_KEY = 'istoria.offline.lost';
+/**
+ * Позначка «завантажене раніше зникло зі сховища». Кеші браузера спільні для всіх сайтів з однієї адреси
+ * (на GitHub Pages це всі сайти одного власника: way1ong.github.io/…), тож стерти їх може не лише сам браузер,
+ * коли бракує місця, а й сусідній сайт, який прибирає «зайві» кеші. Панель показує пояснення, доки його
+ * не закриють або не завантажать щось знову.
+ */
+export const offlineLost = (): boolean => readLS<number>(LOST_KEY) !== null;
+export function setOfflineLost(v: boolean): void {
+  if (offlineLost() === v) return;
+  writeLS(LOST_KEY, v ? Date.now() : null);
+  emit();
+}
+
 // ---------- читання мапи Угорщини з кешу ----------
 /** Джерело для бібліотеки pmtiles: шматки файлу беруться з частин, що лежать у кеші браузера. */
 class CachedPartsSource {
@@ -325,6 +340,7 @@ export async function downloadPack(id: PackId): Promise<DownloadResult> {
     }
     writeLS(lsKey(id), { version: m.version, bytes, files: all.length - current.failed, date: m.date, parts: m.parts } satisfies Installed);
     writeLS(pendKey(id), null);
+    writeLS(LOST_KEY, null);
     if (id === 'basemap') resetOfflineSource();
     return 'ok';
   } catch (e) {
@@ -355,8 +371,9 @@ export async function deletePack(id: PackId): Promise<void> {
 }
 
 /**
- * Перевірка після запуску: браузер міг стерти кеш, коли бракувало місця. Тоді позначка «встановлено»
- * знімається, щоб не вмикати мапу, якої вже немає. Повертає true, якщо щось змінилось.
+ * Перевірка після запуску: кеш міг стерти браузер, коли бракувало місця, або інший сайт з тієї самої адреси.
+ * Тоді позначка «встановлено» знімається, щоб не вмикати мапу, якої вже немає, і ставиться позначка
+ * «завантажене зникло» — для пояснення людині. Повертає true, якщо щось змінилось.
  */
 export async function verifyInstalled(): Promise<boolean> {
   if (!offlineSupported()) return false;
@@ -371,7 +388,7 @@ export async function verifyInstalled(): Promise<boolean> {
     }
     if (!ok) { writeLS(lsKey(id), null); changed = true; }
   }
-  if (changed) { resetOfflineSource(); emit(); }
+  if (changed) { writeLS(LOST_KEY, Date.now()); resetOfflineSource(); emit(); }
   return changed;
 }
 

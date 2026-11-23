@@ -4,8 +4,8 @@ import type { Map as MLMap } from 'maplibre-gl';
 import { getLang, lt, t, type Key } from '../i18n';
 import { canInstall, isStandalone, onInstallChange, promptInstall } from '../install';
 import {
-  currentJob, deletePack, downloadPack, installed, loadManifest, offlineSupported, onOfflineChange, PACK_IDS, pending,
-  photosManifest, stopDownload, storageInfo, type DownloadResult, type PackId, type PackManifest, type PacksManifest,
+  currentJob, deletePack, downloadPack, installed, loadManifest, offlineLost, offlineSupported, onOfflineChange, PACK_IDS, pending,
+  photosManifest, setOfflineLost, stopDownload, storageInfo, type DownloadResult, type PackId, type PackManifest, type PacksManifest,
 } from '../offline';
 import { areaKm, areasOutline, areasStorage, deleteArea, downloadArea, nearestPlace, peekAreas, planArea, savedAreas, setAreasOutline, type AreaPlan } from '../offlineareas';
 import { placeById } from '../data';
@@ -242,7 +242,13 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     const outline = savedAreas().length
       ? `<label class="off-check off-check-top"><input type="checkbox" data-act="areas-outline" ${areasOutline() ? 'checked' : ''} /> ${esc(t('offAreasOutline'))}</label>`
       : '';
+    // Завантажене раніше зникло (стер браузер або інший сайт з тієї самої адреси): пояснення висить, доки його
+    // не закриють чи не завантажать щось знову.
+    const lost = offlineLost()
+      ? `<p class="off-lost"><span>${esc(t('offLostNote'))}</span><button type="button" class="off-lost-x" data-act="lost-ok" aria-label="${esc(t('close'))}">×</button></p>`
+      : '';
     body.innerHTML = `
+      ${lost}
       ${outline}
       <p class="off-net ${online ? 'on' : 'off'}">${esc(t(online ? 'offOnline' : 'offOffline'))}</p>
       ${offlineSupported() ? `<p class="mtool-note">${esc(t('offIntro'))}</p><ul class="off-packs">${packs}</ul>${storage}` : `<p class="mtool-note">${esc(t('offNoSupport'))}</p>`}
@@ -268,6 +274,7 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     const id = b.dataset.id as PackId;
     const act = b.dataset.act;
     if (act === 'install') { void promptInstall().then(draw); return; }
+    if (act === 'lost-ok') { setOfflineLost(false); return; }
     if (act === 'stop') { stopDownload(); return; }
     if (act === 'area-save' && view.plan) {
       const plan = view.plan;
