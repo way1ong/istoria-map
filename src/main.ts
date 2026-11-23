@@ -20,8 +20,9 @@ import { placeCard } from './ui/render';
 import { currentYear, renderTimeline } from './ui/timeline';
 import { filterActive, mountMapTools, TYPES } from './ui/maptools';
 import { toast } from './ui/toast';
-import { offlineMapReady, verifyInstalled } from './offline';
+import { migrateLegacy, offlineMapReady, verifyInstalled } from './offline';
 import { verifyAreas } from './offlineareas';
+import { healAppCache } from './swheal';
 import type { PlaceFilter } from './map';
 
 setLang(getLang());
@@ -417,22 +418,47 @@ onRoute((r) => {
 });
 
 netNotice();
-// браузер міг стерти завантажені мапи, коли бракувало місця
-void verifyAreas();
-void verifyInstalled().then((changed) => {
-  if (!changed) return;
-  mapCtl?.networkChanged();
-  if (mapCtl) renderBasemapCtl(mapCtl);
-});
 
 // Service worker: застосунок відкривається без інтернету; нову версію ставимо, коли людина погодиться.
-const updateSW = registerSW({
-  immediate: true,
-  onNeedRefresh() {
-    toast(t('updateReady'), { action: t('updateNow'), onAction: () => void updateSW(true), ms: 0 });
-  },
-  onRegisteredSW(_url, reg) {
-    // встановлений застосунок може бути відкритий днями: раз на годину перевіряємо, чи є нова версія
-    if (reg) setInterval(() => { if (navigator.onLine) void reg.update(); }, 60 * 60 * 1000);
-  },
+function startSW() {
+  // Після «Оновити» новий service worker бере сторінку під керування, і її треба перезавантажити, щоб запрацював новий
+  // код. Бібліотека робить це сама лише тоді, коли сторінка вже була під керуванням у мить запуску; якщо застосунок
+  // щойно встановився в цій самій вкладці, вона не перезавантажує — тому стежимо самі.
+  let updating = false;
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.addEventListener('controllerchange', () => { if (updating) location.reload(); });
+  }
+  const updateSW = registerSW({
+    immediate: true,
+    onNeedRefresh() {
+      toast(t('updateReady'), { action: t('updateNow'), onAction: () => { updating = true; void updateSW(true); }, ms: 0 });
+    },
+    onRegisteredSW(_url, reg) {
+      // встановлений застосунок може бути відкритий днями: раз на годину перевіряємо, чи є нова версія
+      if (reg) setInterval(() => { if (navigator.onLine) void reg.update(); }, 60 * 60 * 1000);
+    },
+  });
+}
+
+// Сховище браузера спільне для всіх сайтів з однієї адреси, тож кеші може стерти не лише сам браузер, а й сусідній
+// сайт (CLAUDE.md, п. 35). Файли застосунку service worker відновлює сам із запасної копії, без мережі
+// (public/sw-extra.js); якщо копії немає, а кеш порожній — сторінка перезавантажиться й service worker
+// поставиться заново (src/swheal.ts). Завантажені мапи й ділянки лежать у базі IndexedDB, якої такі сайти не чіпають:
+// спершу туди переноситься завантажене раніше (з давніх кешів), потім перевіряємо, чи все на місці.
+void healAppCache().then((reloading) => {
+  if (reloading) return;
+  startSW();
+  void migrateLegacy()
+    .then(() => Promise.all([verifyAreas(), verifyInstalled()]))
+    .then(([areasLost, packsLost]) => {
+      if (packsLost) {
+        mapCtl?.networkChanged();
+        if (mapCtl) renderBasemapCtl(mapCtl);
+      }
+      if (areasLost || packsLost) toast(t('offLost'), { action: t('more'), onAction: openOfflineTools, ms: 0 });
+    });
+  // запасну копію файлів застосунку робить service worker; після запуску просимо її оновити
+  if ('serviceWorker' in navigator) {
+    void navigator.serviceWorker.ready.then((reg) => reg.active?.postMessage({ type: 'istoria-backup' })).catch(() => undefined);
+  }
 });
