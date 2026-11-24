@@ -21,6 +21,17 @@ window.addEventListener('appinstalled', () => {
   emit();
 });
 
+/**
+ * Де відкрито сторінку — від цього залежить підказка, як встановити застосунок. На iPhone й iPad браузер сам
+ * встановлення не пропонує (події beforeinstallprompt там немає): сайт додають на початковий екран через «Поділитися».
+ * iPad з iPadOS 13+ називає себе комп'ютером Mac, тому його впізнаємо за сенсорним екраном.
+ */
+export function installPlatform(): 'ios' | 'android' | 'desktop' {
+  const ua = navigator.userAgent;
+  if (/iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) return 'ios';
+  return /Android/.test(ua) ? 'android' : 'desktop';
+}
+
 /** Чи може браузер показати вікно встановлення просто зараз. */
 export const canInstall = () => deferred !== null;
 
