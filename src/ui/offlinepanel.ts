@@ -2,7 +2,7 @@
 // (src/offlineareas.ts), місце на пристрої, встановлення застосунку.
 import type { Map as MLMap } from 'maplibre-gl';
 import { getLang, lt, t, type Key } from '../i18n';
-import { canInstall, isStandalone, onInstallChange, promptInstall } from '../install';
+import { canInstall, installPlatform, isStandalone, onInstallChange, promptInstall } from '../install';
 import {
   currentJob, deletePack, downloadPack, installed, loadManifest, offlineLost, offlineSupported, onOfflineChange, PACK_IDS, pending,
   photosManifest, setOfflineLost, stopDownload, storageInfo, type DownloadResult, type PackId, type PackManifest, type PacksManifest,
@@ -32,6 +32,12 @@ const km = (x: number) => (x < 10 ? x.toFixed(1).replace('.', ',') : String(Math
 const AREAS_OPEN_KEY = 'istoria.offline.areasOpen';
 let areasOpen = (() => {
   try { return localStorage.getItem(AREAS_OPEN_KEY) === '1'; } catch { return false; }
+})();
+
+/** Кроки встановлення на iPhone типово розгорнуті; якщо людина їх згорнула — так і лишаються. */
+const IOS_HELP_KEY = 'istoria.offline.iosHelpOpen';
+let iosHelpOpen = (() => {
+  try { return localStorage.getItem(IOS_HELP_KEY) !== '0'; } catch { return true; }
 })();
 
 /** «біля Göd»: назва з підписів мапи, інакше найближче населене місце з карток (без пояснення після коми). */
@@ -233,11 +239,20 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
     const storage = st.usage !== undefined && st.quota
       ? `<p class="mtool-note">${esc(t('offStorage').replace('{used}', fmtBytes(st.usage)).replace('{quota}', fmtBytes(st.quota)))} ${esc(t(st.persisted ? 'offPersistYes' : 'offPersistNo'))}</p>`
       : '';
+    // Встановлення: кнопка, якщо браузер уміє встановити сам (Chrome, Edge); інакше підказка саме для цього пристрою.
+    // На iPhone кнопки не буває, тож там — кроки через «Поділитися», і стоять вони вгорі панелі: пакети варто
+    // завантажувати вже у встановленому застосунку. Список згортається, стан пам'ятається.
+    const platform = installPlatform();
+    const ios = platform === 'ios' && !isStandalone();
     const install = isStandalone()
       ? `<p class="mtool-note">✓ ${esc(t('installed'))}</p>`
-      : canInstall()
-        ? `<button type="button" class="off-btn primary off-install" data-act="install">${esc(t('install'))}</button>`
-        : `<p class="mtool-note">${esc(t('installHint'))}</p>`;
+      : ios
+        ? `<details class="off-ios" ${iosHelpOpen ? 'open' : ''}><summary>${esc(t('installIosTitle'))}</summary>
+            <ol class="off-steps">${(['installIos1', 'installIos2', 'installIos3', 'installIos4'] as const).map((k) => `<li>${esc(t(k))}</li>`).join('')}</ol>
+            <p class="off-note">${esc(t('installIosNote'))}</p></details>`
+        : canInstall()
+          ? `<button type="button" class="off-btn primary off-install" data-act="install">${esc(t('install'))}</button>`
+          : `<p class="mtool-note">${esc(t('installWhy'))} ${esc(t(platform === 'android' ? 'installHintAndroid' : 'installHintDesktop'))}</p>`;
 
     // Перемикач рамок збережених ділянок — першим рядком панелі, щоб не шукати його внизу розділу про старі мапи.
     // Лише він вирішує, чи видно рамки на мапі (малює їх src/map.ts); без збережених ділянок його немає.
@@ -251,10 +266,11 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
       : '';
     body.innerHTML = `
       ${lost}
+      ${ios ? `<div class="off-install-box off-install-top">${install}</div>` : ''}
       ${outline}
       <p class="off-net ${online ? 'on' : 'off'}">${esc(t(online ? 'offOnline' : 'offOffline'))}</p>
       ${offlineSupported() ? `<p class="mtool-note">${esc(t('offIntro'))}</p><ul class="off-packs">${packs}</ul>${storage}` : `<p class="mtool-note">${esc(t('offNoSupport'))}</p>`}
-      <div class="off-install-box">${install}</div>`;
+      ${ios ? '' : `<div class="off-install-box">${install}</div>`}`;
     progress();
   };
   /** Хід завантаження оновлюємо на місці, щоб натискання «Зупинити» не губилося через перемальовування. */
@@ -323,9 +339,14 @@ export function renderOffline(body: HTMLElement, opts: { map: MLMap; onBasemap()
   // подія toggle не спливає — ловимо на етапі перехоплення; draw() перемальовує панель і бере стан звідси
   const onToggle = (e: Event) => {
     const d = e.target;
-    if (!(d instanceof HTMLDetailsElement) || !d.classList.contains('off-saved')) return;
-    areasOpen = d.open;
-    try { localStorage.setItem(AREAS_OPEN_KEY, areasOpen ? '1' : '0'); } catch { /* приватний режим */ }
+    if (!(d instanceof HTMLDetailsElement)) return;
+    if (d.classList.contains('off-saved')) {
+      areasOpen = d.open;
+      try { localStorage.setItem(AREAS_OPEN_KEY, areasOpen ? '1' : '0'); } catch { /* приватний режим */ }
+    } else if (d.classList.contains('off-ios')) {
+      iosHelpOpen = d.open;
+      try { localStorage.setItem(IOS_HELP_KEY, iosHelpOpen ? '1' : '0'); } catch { /* приватний режим */ }
+    }
   };
   body.addEventListener('toggle', onToggle, true);
   // перемикач «Показувати рамки збережених ділянок» угорі панелі (рамки малює src/map.ts)

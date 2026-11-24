@@ -20,7 +20,8 @@ import { navigate, onRoute, type Route } from './router';
 import { placeCard } from './ui/render';
 import { currentYear, renderTimeline } from './ui/timeline';
 import { filterActive, mountMapTools, TYPES } from './ui/maptools';
-import { toast } from './ui/toast';
+import { toast, toastVisible } from './ui/toast';
+import { installPlatform, isStandalone } from './install';
 import { migrateLegacy, offlineMapReady, verifyInstalled } from './offline';
 import { verifyAreas } from './offlineareas';
 import { healAppCache } from './swheal';
@@ -433,6 +434,20 @@ onRoute((r) => {
 });
 
 netNotice();
+
+// iPhone: браузер сам встановлення не пропонує, і кнопки для цього немає — мапу додають на початковий екран через
+// «Поділитися». Один раз підказуємо, що так можна, і ведемо до кроків у панелі «Без інтернету». Якщо в цю мить
+// висить інше повідомлення (нова версія, немає мережі), не затираємо його — підкажемо наступного разу.
+const IOS_TIP_KEY = 'istoria.iosInstallTip';
+if (installPlatform() === 'ios' && !isStandalone()) {
+  window.setTimeout(() => {
+    try {
+      if (localStorage.getItem(IOS_TIP_KEY) || toastVisible()) return;
+      localStorage.setItem(IOS_TIP_KEY, '1');
+    } catch { return; /* приватний режим: без пам'яті підказка з'являлась би щоразу */ }
+    toast(t('installIosTip'), { action: t('installIosTipHow'), onAction: openOfflineTools, ms: 12000 });
+  }, 5000);
+}
 
 // Service worker: застосунок відкривається без інтернету; нову версію ставимо, коли людина погодиться.
 function startSW() {

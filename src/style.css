@@ -393,6 +393,14 @@ figcaption { font-size: 12px; color: var(--muted); }
 .off-area-list .off-btn { flex: none; padding: 5px 9px; font-size: 12px; }
 .off-install-box { border-top: 1px solid var(--line); margin-top: 6px; padding-top: 8px; }
 .off-install { width: 100%; padding: 9px 12px; }
+/* Кроки встановлення на iPhone: стоять угорі панелі «Без інтернету» й згортаються (на iPhone кнопки встановлення немає) */
+.off-install-top { border-top: none; margin-top: 0; padding-top: 0; border-bottom: 1px solid var(--line); margin-bottom: 8px; padding-bottom: 4px; }
+.off-ios > summary { display: flex; align-items: center; gap: 8px; min-height: 40px; padding: 4px 0; cursor: pointer; list-style: none; font-size: 14px; font-weight: 700; -webkit-tap-highlight-color: transparent; }
+.off-ios > summary::-webkit-details-marker { display: none; }
+.off-ios > summary::before { content: ''; flex: none; width: 7px; height: 7px; margin: 0 3px 0 4px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(-45deg); transition: transform .15s; }
+.off-ios[open] > summary::before { transform: rotate(45deg); }
+.off-steps { margin: 0 0 6px; padding-left: 24px; font-size: 13.5px; line-height: 1.4; }
+.off-steps li { margin: 5px 0; }
 
 /* поле підкладок без пунктів (мапа не запустилася) не показуємо */
 .basemap-select:empty { display: none; }

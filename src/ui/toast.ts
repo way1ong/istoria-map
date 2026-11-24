@@ -40,6 +40,9 @@ export function toast(msg: string, opts: { action?: string; onAction?: () => voi
   return ++seq;
 }
 
+/** Чи зараз на екрані висить повідомлення (нове його затерло б). */
+export const toastVisible = (): boolean => !!el && !el.hidden;
+
 /** Сховати повідомлення з цим номером, якщо його ще не замінило інше. */
 export function hideToast(id: number): void {
   if (el && id === seq) { clearTimeout(timer); el.hidden = true; }
